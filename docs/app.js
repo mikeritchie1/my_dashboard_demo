@@ -288,27 +288,63 @@ function specialDayElement(day, items, isToday) {
     }
 
     const list = document.createElement("ul");
-    for (const item of items) {
+    for (const venueGroup of groupItemsByVenue(items)) {
       const listItem = document.createElement("li");
-      if (item.url) {
+      const venue = document.createElement("strong");
+      venue.textContent = venueGroup.venue;
+      listItem.append(venue);
+
+      if (venueGroup.items.length === 1 && venueGroup.items[0].url) {
+        listItem.textContent = "";
         const link = document.createElement("a");
-        link.href = item.url;
+        link.href = venueGroup.items[0].url;
         link.target = "_blank";
         link.rel = "noreferrer";
-        link.textContent = item.description || item.title;
+        link.textContent = `${venueGroup.venue} - ${venueGroup.items[0].deal || venueGroup.items[0].description || ""}`;
         listItem.append(link);
-      } else {
-        const venue = document.createElement("strong");
-        venue.textContent = item.venue || item.title;
+      } else if (venueGroup.items.length === 1) {
         const deal = document.createElement("span");
-        deal.textContent = item.deal ? ` - ${item.deal}` : ` - ${item.description || ""}`;
-        listItem.append(venue, deal);
+        deal.textContent = ` - ${venueGroup.items[0].deal || venueGroup.items[0].description || ""}`;
+        listItem.append(deal);
+      } else {
+        const nested = document.createElement("ul");
+        nested.className = "special-deal-list";
+        for (const item of venueGroup.items) {
+          const nestedItem = document.createElement("li");
+          if (item.url) {
+            const link = document.createElement("a");
+            link.href = item.url;
+            link.target = "_blank";
+            link.rel = "noreferrer";
+            link.textContent = item.deal || item.description || item.title;
+            nestedItem.append(link);
+          } else {
+            nestedItem.textContent = item.deal || item.description || item.title;
+          }
+          nested.append(nestedItem);
+        }
+        listItem.append(nested);
       }
       list.append(listItem);
     }
 
     section.append(list);
     return section;
+}
+
+function groupItemsByVenue(items) {
+  const groups = [];
+  const byVenue = new Map();
+  for (const item of items) {
+    const venue = item.venue || item.title || "Special";
+    if (!byVenue.has(venue)) {
+      const group = { venue, items: [] };
+      byVenue.set(venue, group);
+      groups.push(group);
+    }
+    byVenue.get(venue).items.push(item);
+  }
+  return groups;
 }
 
 function render() {

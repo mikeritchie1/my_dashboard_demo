@@ -276,6 +276,10 @@ td.card-number {
   padding-left: 20px;
 }
 
+.special-deal-list {
+  margin-top: 6px !important;
+}
+
 .special-group li {
   color: #475467;
 }
