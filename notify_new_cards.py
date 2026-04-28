@@ -11,14 +11,46 @@ from email.message import EmailMessage
 from pathlib import Path
 
 
-CURRENT_REPORT = Path("all_stores_missing_available.csv")
-PREVIOUS_REPORT = Path(".scrape/previous_all_stores_missing_available.csv")
+REPORT_PREFIXES = {
+    "all": "all_stores_missing_available",
+    "bigbang": "big_bang_missing_available",
+    "bigbangshop": "big_bang_missing_available",
+    "knightly": "knightly_missing_available",
+    "knightlygaming": "knightly_missing_available",
+    "marvellous": "marvellous_missing_available",
+    "marvelloushobbies": "marvellous_missing_available",
+    "tanuki": "tanuki_missing_available",
+    "tanukitrader": "tanuki_missing_available",
+}
+
+LATEST_NEW_CARDS = Path(".scrape/latest_new_cards.txt")
 MATCH_KEY = ("card_number", "store", "url")
 
 
-def run_scraper() -> None:
+def normalized_store(value: str) -> str:
+    return value.lower().replace("-", "").replace("_", "")
+
+
+def report_prefix(store: str) -> str:
+    store_key = normalized_store(store)
+    try:
+        return REPORT_PREFIXES[store_key]
+    except KeyError as error:
+        choices = ", ".join(sorted(REPORT_PREFIXES))
+        raise RuntimeError(f"Unknown store {store!r}. Use one of: {choices}") from error
+
+
+def current_report(store: str) -> Path:
+    return Path(f"{report_prefix(store)}.csv")
+
+
+def previous_report(store: str) -> Path:
+    return Path(f".scrape/previous_{report_prefix(store)}.csv")
+
+
+def run_scraper(store: str) -> None:
     subprocess.run(
-        [sys.executable, "find_missing_cards.py", "all"],
+        [sys.executable, "find_missing_cards.py", store],
         check=True,
     )
 
@@ -61,9 +93,9 @@ def card_line(row: dict[str, str]) -> str:
     return f"{summary}\n{url}" if url else summary
 
 
-def email_body(rows: list[dict[str, str]]) -> str:
+def email_body(rows: list[dict[str, str]], store: str) -> str:
     lines = [
-        f"New missing cards available: {len(rows)}",
+        f"New missing cards available for {store}: {len(rows)}",
         "",
     ]
     for index, row in enumerate(rows, start=1):
@@ -79,7 +111,12 @@ def env_required(name: str) -> str:
     return value
 
 
-def send_email(rows: list[dict[str, str]]) -> None:
+def write_latest_text(body: str) -> None:
+    LATEST_NEW_CARDS.parent.mkdir(parents=True, exist_ok=True)
+    LATEST_NEW_CARDS.write_text(body, encoding="utf-8")
+
+
+def send_email(rows: list[dict[str, str]], store: str) -> None:
     smtp_host = env_required("SMTP_HOST")
     smtp_port = int(os.environ.get("SMTP_PORT", "587"))
     smtp_user = env_required("SMTP_USER")
@@ -88,10 +125,10 @@ def send_email(rows: list[dict[str, str]]) -> None:
     email_from = os.environ.get("EMAIL_FROM", "").strip() or smtp_user
 
     message = EmailMessage()
-    message["Subject"] = f"One Piece cards: {len(rows)} new available"
+    message["Subject"] = f"One Piece cards: {len(rows)} new available ({store})"
     message["From"] = email_from
     message["To"] = email_to
-    message.set_content(email_body(rows))
+    message.set_content(email_body(rows, store))
 
     with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as smtp:
         smtp.starttls()
@@ -99,9 +136,9 @@ def send_email(rows: list[dict[str, str]]) -> None:
         smtp.send_message(message)
 
 
-def update_snapshot() -> None:
-    PREVIOUS_REPORT.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(CURRENT_REPORT, PREVIOUS_REPORT)
+def update_snapshot(current: Path, previous: Path) -> None:
+    previous.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(current, previous)
 
 
 def main() -> int:
@@ -111,31 +148,43 @@ def main() -> int:
         action="store_true",
         help="Compare existing CSV files without running the scraper first.",
     )
+    parser.add_argument(
+        "--store",
+        default=os.environ.get("CARD_STORE", "all"),
+        help="Store to check: all, knightly, bigbang, marvellous, or tanuki.",
+    )
     args = parser.parse_args()
+    store = normalized_store(args.store)
+    current = current_report(store)
+    previous = previous_report(store)
 
     if not args.no_scrape:
-        run_scraper()
+        run_scraper(store)
 
-    if not CURRENT_REPORT.exists():
-        print(f"Could not find current report: {CURRENT_REPORT}", file=sys.stderr)
+    if not current.exists():
+        print(f"Could not find current report: {current}", file=sys.stderr)
         return 2
 
-    today = read_rows(CURRENT_REPORT)
-    previous = read_rows(PREVIOUS_REPORT)
+    today = read_rows(current)
+    previous_rows = read_rows(previous)
 
-    if not previous:
-        update_snapshot()
-        print("No previous snapshot found. Saved today's report as the baseline.")
+    if not previous_rows:
+        write_latest_text(f"No previous snapshot found for {store}. Saved today's report as the baseline.\n")
+        update_snapshot(current, previous)
+        print(f"No previous snapshot found for {store}. Saved today's report as the baseline.")
         return 0
 
-    additions = new_rows(today, previous)
+    additions = new_rows(today, previous_rows)
     if not additions:
-        update_snapshot()
-        print("No new cards found. Snapshot updated.")
+        write_latest_text(f"No new cards found for {store}.\n")
+        update_snapshot(current, previous)
+        print(f"No new cards found for {store}. Snapshot updated.")
         return 0
 
-    send_email(additions)
-    update_snapshot()
+    body = email_body(additions, store)
+    write_latest_text(body)
+    send_email(additions, store)
+    update_snapshot(current, previous)
     print(f"Sent email for {len(additions)} new card listing(s). Snapshot updated.")
     return 0
 
