@@ -3,6 +3,7 @@ const NEW_CARDS_PATH = "data/new_missing_cards.json";
 const RELEASES_PATH = "data/pahe_latest.json";
 const COMING_SOON_PATH = "data/coming_soon.json";
 const SPECIALS_PATH = "data/specials.json";
+const QUICKET_EVENTS_PATH = "data/quicket_events.json";
 
 const state = {
   rows: [],
@@ -28,6 +29,7 @@ const elements = {
   specialsList: document.querySelector("#specials-list"),
   specialsMap: document.querySelector("#specials-map"),
   specialsMapRange: document.querySelector("#specials-map-range"),
+  quicketEventsList: document.querySelector("#quicket-events-list"),
 };
 
 let specialsMap;
@@ -113,6 +115,25 @@ function displayDate(value) {
     timeZone: "UTC",
   }).format(date);
   return `${ordinal(day)} ${monthName} ${year}`;
+}
+
+function displayDateTime(value) {
+  if (!value) {
+    return "Date unknown";
+  }
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+  return new Intl.DateTimeFormat("en-ZA", {
+    weekday: "short",
+    day: "2-digit",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+    timeZone: "Africa/Johannesburg",
+  }).format(date);
 }
 
 function rowKey(row) {
@@ -275,6 +296,50 @@ function renderSpecials(payload) {
     }
 
     elements.specialsList.append(specialDayElement(day, dayItems, day === today));
+  }
+}
+
+function renderQuicketEvents(events) {
+  if (!events.length) {
+    elements.quicketEventsList.innerHTML = '<p class="empty">No Quicket events found.</p>';
+    return;
+  }
+
+  elements.quicketEventsList.innerHTML = "";
+  for (const event of events) {
+    const card = document.createElement("a");
+    card.className = "event-card";
+    card.href = event.url;
+    card.target = "_blank";
+    card.rel = "noreferrer";
+
+    const image = document.createElement("img");
+    image.src = event.image || "";
+    image.alt = event.title || "Quicket event";
+    image.loading = "lazy";
+
+    const details = document.createElement("div");
+    details.className = "event-card-body";
+
+    const date = document.createElement("span");
+    date.className = "event-date";
+    date.textContent = displayDateTime(event.start);
+
+    const title = document.createElement("strong");
+    title.textContent = event.title || "Untitled event";
+
+    const venue = document.createElement("span");
+    venue.className = "event-venue";
+    venue.textContent = [event.venue, event.locality].filter(Boolean).join(", ");
+
+    details.append(date, title, venue);
+    if (event.image) {
+      card.append(image, details);
+    } else {
+      card.classList.add("event-card-no-image");
+      card.append(details);
+    }
+    elements.quicketEventsList.append(card);
   }
 }
 
@@ -506,6 +571,18 @@ async function loadSpecials() {
   }
 }
 
+async function loadQuicketEvents() {
+  try {
+    const response = await fetch(QUICKET_EVENTS_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${QUICKET_EVENTS_PATH}`);
+    }
+    renderQuicketEvents(await response.json());
+  } catch (error) {
+    elements.quicketEventsList.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
 async function load() {
   try {
     const response = await fetch(CSV_PATH, { cache: "no-store" });
@@ -566,3 +643,4 @@ load();
 loadReleases();
 loadComingSoon();
 loadSpecials();
+loadQuicketEvents();
