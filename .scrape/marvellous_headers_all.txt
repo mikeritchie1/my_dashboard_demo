@@ -1,0 +1,21 @@
+HTTP/1.1 200 OK
+Date: Tue, 28 Apr 2026 08:01:51 GMT
+Server: Apache
+X-Robots-Tag: noindex
+X-Content-Type-Options: nosniff
+Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link, Cart-Token
+Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type, Cart-Token, Nonce
+X-WP-Total: 5935
+X-WP-TotalPages: 60
+Link: <https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page=2#038;page=1&#038;category%5B0%5D=36>; rel="next"
+Allow: GET
+Access-Control-Allow-Methods: OPTIONS, GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Credentials: true
+Vary: Origin,Accept-Encoding
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Upgrade: h2,h2c
+Connection: Upgrade
+Last-Modified: Tue, 28 Apr 2026 08:01:41 GMT
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
