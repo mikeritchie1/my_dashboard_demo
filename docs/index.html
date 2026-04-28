@@ -9,14 +9,24 @@
   <body>
     <header class="topbar">
       <div>
-        <p class="eyebrow">One Piece</p>
-        <h1>Missing Cards Dashboard</h1>
+        <p class="eyebrow">Dashboard</p>
+        <h1>My Watchlist</h1>
       </div>
-      <a class="source-link" href="data/all_stores_missing_available.csv">CSV</a>
+      <div class="header-actions">
+        <label>
+          Section
+          <select id="section-filter">
+            <option value="one-piece">One Piece cards</option>
+            <option value="events">Events</option>
+          </select>
+        </label>
+        <a class="source-link" href="data/all_stores_missing_available.csv">CSV</a>
+      </div>
     </header>
 
     <main>
-      <section class="summary-grid" aria-label="Summary">
+      <section id="one-piece-section">
+        <section class="summary-grid" aria-label="Summary">
         <div class="metric">
           <span class="metric-label">Listings</span>
           <strong id="listing-count">0</strong>
@@ -33,46 +43,60 @@
           <span class="metric-label">Cheapest</span>
           <strong id="cheapest-price">R 0.00</strong>
         </div>
+        </section>
+
+        <section class="controls" aria-label="Filters">
+          <label>
+            Search
+            <input id="search" type="search" placeholder="Card, name, rarity, store">
+          </label>
+          <label>
+            Store
+            <select id="store-filter">
+              <option value="">All stores</option>
+            </select>
+          </label>
+          <label>
+            Rarity
+            <select id="rarity-filter">
+              <option value="">All rarities</option>
+            </select>
+          </label>
+          <label>
+            Min price
+            <input id="min-price" type="number" min="0" step="1" value="0">
+          </label>
+          <label>
+            Max price
+            <input id="max-price" type="number" min="0" step="1" value="200">
+          </label>
+        </section>
+
+        <section class="table-shell" aria-label="Missing card listings">
+          <table>
+            <thead>
+              <tr>
+                <th>Card</th>
+                <th>Price</th>
+                <th>Name</th>
+                <th>Rarity</th>
+                <th>Store</th>
+                <th>Stock</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="cards-body">
+              <tr>
+                <td colspan="7" class="empty">Loading cards...</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
 
-      <section class="controls" aria-label="Filters">
-        <label>
-          Search
-          <input id="search" type="search" placeholder="Card, name, rarity, store">
-        </label>
-        <label>
-          Store
-          <select id="store-filter">
-            <option value="">All stores</option>
-          </select>
-        </label>
-        <label>
-          Rarity
-          <select id="rarity-filter">
-            <option value="">All rarities</option>
-          </select>
-        </label>
-      </section>
-
-      <section class="table-shell" aria-label="Missing card listings">
-        <table>
-          <thead>
-            <tr>
-              <th>Card</th>
-              <th>Price</th>
-              <th>Name</th>
-              <th>Rarity</th>
-              <th>Store</th>
-              <th>Stock</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody id="cards-body">
-            <tr>
-              <td colspan="7" class="empty">Loading cards...</td>
-            </tr>
-          </tbody>
-        </table>
+      <section id="events-section" class="placeholder-section" hidden>
+        <h2>Events</h2>
+        <p>Event data will appear here once that collector is added.</p>
       </section>
     </main>
 

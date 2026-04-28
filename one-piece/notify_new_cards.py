@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import os
 import shutil
 import smtplib
@@ -26,6 +27,7 @@ REPORT_PREFIXES = {
 }
 
 LATEST_NEW_CARDS = Path(".scrape/latest_new_cards.txt")
+NEW_CARDS_JSON = ONE_PIECE_DATA_DIR / "new_missing_cards.json"
 MATCH_KEY = ("card_number", "store", "url")
 
 
@@ -67,6 +69,10 @@ def read_rows(path: Path) -> list[dict[str, str]]:
 
 def row_key(row: dict[str, str]) -> tuple[str, ...]:
     return tuple((row.get(field) or "").strip() for field in MATCH_KEY)
+
+
+def row_key_id(row: dict[str, str]) -> str:
+    return "|".join(row_key(row))
 
 
 def new_rows(today: list[dict[str, str]], previous: list[dict[str, str]]) -> list[dict[str, str]]:
@@ -133,6 +139,16 @@ def write_latest_text(body: str) -> None:
     LATEST_NEW_CARDS.write_text(body, encoding="utf-8")
 
 
+def write_new_cards_json(rows: list[dict[str, str]]) -> None:
+    NEW_CARDS_JSON.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "match_key": list(MATCH_KEY),
+        "keys": [row_key_id(row) for row in rows],
+        "rows": rows,
+    }
+    NEW_CARDS_JSON.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+
 def send_email(
     rows: list[dict[str, str]],
     store: str,
@@ -186,6 +202,11 @@ def main() -> int:
         default=os.environ.get("CARD_NOTIFY_MODE", "new"),
         help="Use 'new' to email only new listings, or 'all' to email every current listing.",
     )
+    parser.add_argument(
+        "--no-email",
+        action="store_true",
+        help="Write output files and update snapshots without sending email.",
+    )
     args = parser.parse_args()
     store = normalized_store(args.store)
     mode = args.mode
@@ -202,14 +223,17 @@ def main() -> int:
     today = read_rows(current)
     previous_rows = read_rows(previous)
     additions = new_rows(today, previous_rows) if previous_rows else []
+    write_new_cards_json(additions)
 
     if mode == "all":
         body = email_body(today, store, mode, additions)
         write_latest_text(body)
-        send_email(today, store, mode, additions)
+        if not args.no_email:
+            send_email(today, store, mode, additions)
         update_snapshot(current, previous)
+        action = "Prepared report" if args.no_email else "Sent email"
         print(
-            f"Sent email for {len(additions)} new and "
+            f"{action} for {len(additions)} new and "
             f"{len(today)} total card listing(s). Snapshot updated."
         )
         return 0
@@ -228,9 +252,11 @@ def main() -> int:
 
     body = email_body(additions, store, mode)
     write_latest_text(body)
-    send_email(additions, store, mode)
+    if not args.no_email:
+        send_email(additions, store, mode)
     update_snapshot(current, previous)
-    print(f"Sent email for {len(additions)} new card listing(s). Snapshot updated.")
+    action = "Prepared report" if args.no_email else "Sent email"
+    print(f"{action} for {len(additions)} new card listing(s). Snapshot updated.")
     return 0
 
 

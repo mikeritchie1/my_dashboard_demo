@@ -1,0 +1,9 @@
+{
+  "match_key": [
+    "card_number",
+    "store",
+    "url"
+  ],
+  "keys": [],
+  "rows": []
+}

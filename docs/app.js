@@ -1,13 +1,21 @@
 const CSV_PATH = "data/all_stores_missing_available.csv";
+const NEW_CARDS_PATH = "data/new_missing_cards.json";
 
 const state = {
   rows: [],
+  newCardKeys: new Set(),
   search: "",
   store: "",
   rarity: "",
+  minPrice: 0,
+  maxPrice: 200,
+  section: "one-piece",
 };
 
 const elements = {
+  onePieceSection: document.querySelector("#one-piece-section"),
+  eventsSection: document.querySelector("#events-section"),
+  sectionFilter: document.querySelector("#section-filter"),
   body: document.querySelector("#cards-body"),
   listingCount: document.querySelector("#listing-count"),
   cardCount: document.querySelector("#card-count"),
@@ -16,6 +24,8 @@ const elements = {
   search: document.querySelector("#search"),
   storeFilter: document.querySelector("#store-filter"),
   rarityFilter: document.querySelector("#rarity-filter"),
+  minPrice: document.querySelector("#min-price"),
+  maxPrice: document.querySelector("#max-price"),
 };
 
 function parseCsv(text) {
@@ -67,6 +77,10 @@ function money(value) {
   return `R ${amount.toFixed(2)}`;
 }
 
+function rowKey(row) {
+  return [row.card_number, row.store, row.url].map((value) => (value || "").trim()).join("|");
+}
+
 function unique(values) {
   return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b));
 }
@@ -84,8 +98,11 @@ function optionList(select, values, label) {
 function filteredRows() {
   const term = state.search.trim().toLowerCase();
   return state.rows.filter((row) => {
+    const price = Number.parseFloat(row.price || "0");
     const matchesStore = !state.store || row.store === state.store;
     const matchesRarity = !state.rarity || row.rarity === state.rarity;
+    const matchesMinPrice = !Number.isFinite(state.minPrice) || price >= state.minPrice;
+    const matchesMaxPrice = !Number.isFinite(state.maxPrice) || price <= state.maxPrice;
     const haystack = [
       row.card_number,
       row.title,
@@ -97,7 +114,7 @@ function filteredRows() {
       .join(" ")
       .toLowerCase();
     const matchesSearch = !term || haystack.includes(term);
-    return matchesStore && matchesRarity && matchesSearch;
+    return matchesStore && matchesRarity && matchesMinPrice && matchesMaxPrice && matchesSearch;
   });
 }
 
@@ -121,6 +138,10 @@ function renderTable(rows) {
   elements.body.innerHTML = "";
   for (const row of rows) {
     const tr = document.createElement("tr");
+    const isNew = state.newCardKeys.has(rowKey(row));
+    if (isNew) {
+      tr.classList.add("new-card-row");
+    }
     tr.innerHTML = `
       <td class="card-number"></td>
       <td class="price"></td>
@@ -139,6 +160,13 @@ function renderTable(rows) {
     cells[4].textContent = row.store;
     cells[5].textContent = row.stock || "-";
 
+    if (isNew) {
+      const badge = document.createElement("span");
+      badge.className = "new-badge";
+      badge.textContent = "New";
+      cells[2].prepend(badge);
+    }
+
     const link = document.createElement("a");
     link.className = "buy-link";
     link.href = row.url;
@@ -152,6 +180,13 @@ function renderTable(rows) {
 }
 
 function render() {
+  elements.onePieceSection.hidden = state.section !== "one-piece";
+  elements.eventsSection.hidden = state.section !== "events";
+
+  if (state.section !== "one-piece") {
+    return;
+  }
+
   const rows = filteredRows().sort((left, right) => {
     const price = Number.parseFloat(left.price || "0") - Number.parseFloat(right.price || "0");
     if (price !== 0) {
@@ -173,6 +208,15 @@ async function load() {
       throw new Error(`Could not load ${CSV_PATH}`);
     }
     state.rows = parseCsv(await response.text());
+    try {
+      const newCardsResponse = await fetch(NEW_CARDS_PATH, { cache: "no-store" });
+      if (newCardsResponse.ok) {
+        const payload = await newCardsResponse.json();
+        state.newCardKeys = new Set(payload.keys || []);
+      }
+    } catch {
+      state.newCardKeys = new Set();
+    }
     optionList(elements.storeFilter, unique(state.rows.map((row) => row.store)), "All stores");
     optionList(elements.rarityFilter, unique(state.rows.map((row) => row.rarity)), "All rarities");
     render();
@@ -193,6 +237,21 @@ elements.storeFilter.addEventListener("change", (event) => {
 
 elements.rarityFilter.addEventListener("change", (event) => {
   state.rarity = event.target.value;
+  render();
+});
+
+elements.minPrice.addEventListener("input", (event) => {
+  state.minPrice = event.target.value === "" ? Number.NEGATIVE_INFINITY : Number(event.target.value);
+  render();
+});
+
+elements.maxPrice.addEventListener("input", (event) => {
+  state.maxPrice = event.target.value === "" ? Number.POSITIVE_INFINITY : Number(event.target.value);
+  render();
+});
+
+elements.sectionFilter.addEventListener("change", (event) => {
+  state.section = event.target.value;
   render();
 });
 
