@@ -2,7 +2,7 @@ name: Daily card check
 
 on:
   schedule:
-    - cron: "13 9 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
