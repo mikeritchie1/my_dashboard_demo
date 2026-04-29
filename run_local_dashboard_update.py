@@ -18,6 +18,7 @@ TASKS = {
     "events": [
         [sys.executable, "events/scrape_quicket_events.py"],
         [sys.executable, "events/scrape_webtickets_events.py"],
+        [sys.executable, "events/scrape_google_calendar.py"],
     ],
     "releases": [[sys.executable, "release-radar/scrape_releases.py"]],
     "coming-soon": [[sys.executable, "release-radar/scrape_coming_soon.py"]],

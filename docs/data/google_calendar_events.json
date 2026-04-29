@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-04-29T12:51:33.985880+02:00",
+  "items": [
+    {
+      "source_calendar_id": "0g3a09rbfv6p1840rbvbhtfff4@group.calendar.google.com",
+      "type": "birthday",
+      "title": "Test's Birthday",
+      "date": "2026-04-30",
+      "start": "2026-04-30",
+      "end": "2026-05-01",
+      "location": "",
+      "description": "",
+      "url": "https://www.google.com/calendar/event?eid=MWRzNHRldDZuM3FwMXNzc2ZidXVtNWVpaTggMGczYTA5cmJmdjZwMTg0MHJidmJodGZmZjRAZw"
+    },
+    {
+      "source_calendar_id": "0g3a09rbfv6p1840rbvbhtfff4@group.calendar.google.com",
+      "type": "birthday",
+      "title": "Another Birthday",
+      "date": "2026-05-01",
+      "start": "2026-05-01",
+      "end": "2026-05-02",
+      "location": "",
+      "description": "",
+      "url": "https://www.google.com/calendar/event?eid=NDZsZDdvYzgzdDlvbW0xbDdocWZ2dXZpNGogMGczYTA5cmJmdjZwMTg0MHJidmJodGZmZjRAZw"
+    },
+    {
+      "source_calendar_id": "0g3a09rbfv6p1840rbvbhtfff4@group.calendar.google.com",
+      "type": "birthday",
+      "title": "John's Birthday",
+      "date": "2026-05-24",
+      "start": "2026-05-24",
+      "end": "2026-05-25",
+      "location": "",
+      "description": "",
+      "url": "https://www.google.com/calendar/event?eid=NmZnNWY2Ym90aXEwYjkwdDlmcDUybjNkbzNfMjAyNjA1MjQgMGczYTA5cmJmdjZwMTg0MHJidmJodGZmZjRAZw"
+    }
+  ]
+}

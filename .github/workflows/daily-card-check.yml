@@ -69,6 +69,13 @@ jobs:
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'events' }}
         run: python events/scrape_webtickets_events.py
 
+      - name: Run Google calendar events
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'events' }}
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_CALENDAR_IDS: ${{ secrets.GOOGLE_CALENDAR_IDS }}
+        run: python events/scrape_google_calendar.py
+
       - name: Update dashboard data
         run: |
           mkdir -p docs/data

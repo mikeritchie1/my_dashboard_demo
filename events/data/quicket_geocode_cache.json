@@ -286,5 +286,37 @@
   "event_url::https://www.quicket.co.za/events/365064-district-six-museum-december-2026-admission-tickets/": {
     "lat": -33.9277354,
     "lng": 18.423694
+  },
+  "event_url::https://www.quicket.co.za/events/371432-libation-bakery-presents-seasons/": {
+    "lat": -33.9290951,
+    "lng": 18.4109802
+  },
+  "event_url::https://www.quicket.co.za/events/367939-timeless-classics-rooftop-party/": {
+    "lat": -33.9247609,
+    "lng": 18.4139544
+  },
+  "event_url::https://www.quicket.co.za/events/356448-mbali-gudazi-presents-black-dont-crack/": {
+    "lat": -33.9331281,
+    "lng": 18.4667991
+  },
+  "event_url::https://www.quicket.co.za/events/363281-koos-kombuis/": {
+    "lat": -34.0974058,
+    "lng": 18.3778069
+  },
+  "event_url::https://www.quicket.co.za/events/371816-the-soul-affair/": {
+    "lat": -33.9187221,
+    "lng": 18.5477701
+  },
+  "event_url::https://www.quicket.co.za/events/362550-album-launch-at-woodstock-brewery/": {
+    "lat": -33.9275068,
+    "lng": 18.4537733
+  },
+  "event_url::https://www.quicket.co.za/events/373346-suits-sneakers-presents-get-fired-last-with-rich-mulholland-cape-town-edition/": {
+    "lat": -33.9280753,
+    "lng": 18.4401817
+  },
+  "event_url::https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/": {
+    "lat": -33.9277354,
+    "lng": 18.423694
   }
 }

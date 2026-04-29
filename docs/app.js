@@ -8,6 +8,7 @@ const WEATHER_PATH =
   "https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Africa%2FJohannesburg&forecast_days=7";
 const HOLIDAYS_PATH = "https://date.nager.at/api/v3/publicholidays/{year}/ZA";
 const METADATA_PATH = "data/metadata.json";
+const GOOGLE_CALENDAR_EVENTS_PATH = "data/google_calendar_events.json";
 
 const state = {
   rows: [],
@@ -406,19 +407,31 @@ function renderWeather(payload) {
     min: daily.temperature_2m_min[index],
   }));
 
-  loadHolidaysForDates(items.map((item) => item.date))
-    .then((holidayByDate) => {
+  Promise.all([
+    loadHolidaysForDates(items.map((item) => item.date)),
+    loadCalendarEventsByDate(items.map((item) => item.date)),
+  ])
+    .then(([holidayByDate, calendarByDate]) => {
       elements.weatherCards.innerHTML = "";
       for (const item of items) {
         const card = document.createElement("article");
         card.className = "weather-card";
         const holidayName = holidayByDate.get(item.date) || "";
         const holidayHtml = holidayName ? `<p class="weather-holiday">${holidayName}</p>` : "";
+        const calendarItems = calendarByDate.get(item.date) || [];
+        const calendarHtml = calendarItems
+          .slice(0, 2)
+          .map((entry) => {
+            const cls = entry.type === "birthday" ? "weather-birthday" : "weather-calendar";
+            return `<p class="${cls}">${entry.title}</p>`;
+          })
+          .join("");
         card.innerHTML = `
           <p class="weather-day">${weatherDayLabel(item.date)}</p>
           <p class="weather-icon">${weatherIcon(item.code)}</p>
           <p class="weather-temp">${Math.round(item.max)}° / ${Math.round(item.min)}°</p>
           ${holidayHtml}
+          ${calendarHtml}
         `;
         elements.weatherCards.append(card);
       }
@@ -457,6 +470,34 @@ async function loadHolidaysForDates(dateStrings) {
     }
   }
   return holidayByDate;
+}
+
+async function loadCalendarEventsByDate(dateStrings) {
+  const byDate = new Map();
+  try {
+    const response = await fetch(GOOGLE_CALENDAR_EVENTS_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      return byDate;
+    }
+    const payload = await response.json();
+    const items = Array.isArray(payload?.items) ? payload.items : [];
+    for (const item of items) {
+      const date = item.date || (item.start || "").split("T")[0];
+      if (!date || !dateStrings.includes(date) || item.type === "error") {
+        continue;
+      }
+      if (!byDate.has(date)) {
+        byDate.set(date, []);
+      }
+      byDate.get(date).push({
+        type: item.type || "calendar",
+        title: item.title || "Calendar event",
+      });
+    }
+  } catch {
+    return byDate;
+  }
+  return byDate;
 }
 function renderSpecials(payload) {
   state.specialsPayload = payload;

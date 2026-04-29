@@ -145,6 +145,33 @@ main {
   display: inline-block;
 }
 
+.weather-calendar,
+.weather-birthday {
+  margin: 4px 0 0;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.3;
+  padding: 2px 6px;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.weather-calendar {
+  color: #0b4f8a;
+  background: #dbeafe;
+  border: 1px solid #93c5fd;
+}
+
+.weather-birthday {
+  color: #7a5a00;
+  background: #fff4c2;
+  border: 1px solid #f0d777;
+}
+
 .dashboard-section {
   margin-bottom: 14px;
   background: var(--panel);
