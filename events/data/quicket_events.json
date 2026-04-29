@@ -1,20 +1,5 @@
 [
   {
-    "title": "Art Under the Bed 2026 - Cape Town 29 April - 2 May 2026",
-    "start": "2026-04-29T08:00:00+02:00",
-    "end": "2026-05-02T13:00:00+02:00",
-    "venue": "10 Serpentine Road, Oranjezicht, Cape Town",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0902427_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/368985-art-under-the-bed-2026-cape-town-29-april-2-may-2026/",
-    "lat": -34.2532491,
-    "lng": 18.4522507
-  },
-  {
     "title": "PRINCE ALBERT JOURNEY TO JAZZ",
     "start": "2026-04-30T06:00:00+02:00",
     "end": "2026-05-03T12:00:00+02:00",
@@ -180,6 +165,21 @@
     "lng": 18.4292907
   },
   {
+    "title": "Surreal Sessions & Friends",
+    "start": "2026-05-02T16:00:00+02:00",
+    "end": "2026-05-03T00:00:00+02:00",
+    "venue": "Hexagon",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "13 Prestwich Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0897841_247_247.png",
+    "url": "https://www.quicket.co.za/events/367330-surreal-sessions-friends/",
+    "lat": -33.9457175,
+    "lng": 18.4679472
+  },
+  {
     "title": "Night of the stars",
     "start": "2026-05-02T19:00:00+02:00",
     "end": "2026-05-03T02:00:00+02:00",
@@ -193,6 +193,21 @@
     "url": "https://www.quicket.co.za/events/365533-night-of-the-stars/",
     "lat": -33.915806,
     "lng": 18.4184727
+  },
+  {
+    "title": "THE SOUL AFFAIR",
+    "start": "2026-05-02T20:00:00+02:00",
+    "end": "2026-05-03T03:00:00+02:00",
+    "venue": "Destino GrandWest",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "1 Jakes Gerwel Drive, , Ruyterwacht, 7460, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0910772_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/371816-the-soul-affair/",
+    "lat": -33.9288301,
+    "lng": 18.4172197
   },
   {
     "title": "VWS Trail Challenge 2026",
@@ -731,21 +746,6 @@
     "currency": "",
     "image": "https://images.quicket.co.za/0893385_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/365064-district-six-museum-december-2026-admission-tickets/",
-    "lat": -33.9278161,
-    "lng": 18.4237518
-  },
-  {
-    "title": "DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS",
-    "start": "2027-01-02T09:00:00+02:00",
-    "end": "2027-01-30T15:00:00+02:00",
-    "venue": "25A Buitenkant St",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0893392_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/",
     "lat": -33.9278161,
     "lng": 18.4237518
   }
