@@ -49,6 +49,7 @@ const elements = {
   mapCategoryFilters: document.querySelector("#map-category-filters"),
   mapDetailPanel: document.querySelector("#map-detail-panel"),
   quicketEventsList: document.querySelector("#quicket-events-list"),
+  todayDate: document.querySelector("#today-date"),
 };
 
 let specialsMap;
@@ -303,6 +304,20 @@ function renderPosters(container, items, emptyText) {
     link.append(image, title);
     container.append(link);
   }
+}
+
+function setHeaderDate() {
+  if (!elements.todayDate) {
+    return;
+  }
+  const now = new Date();
+  elements.todayDate.textContent = new Intl.DateTimeFormat("en-ZA", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "Africa/Johannesburg",
+  }).format(now);
 }
 
 function weatherIcon(weatherCode) {
@@ -1222,6 +1237,7 @@ elements.mapSourceEvents.addEventListener("change", (event) => {
 });
 
 load();
+setHeaderDate();
 loadWeather();
 loadReleases();
 loadComingSoon();
