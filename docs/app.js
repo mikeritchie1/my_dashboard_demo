@@ -307,24 +307,24 @@ function renderPosters(container, items, emptyText) {
 
 function weatherIcon(weatherCode) {
   if (weatherCode === 0) {
-    return "☀";
+    return "🌞";
   }
   if ([1, 2, 3].includes(weatherCode)) {
-    return "⛅";
+    return "🌤️";
   }
   if ([45, 48].includes(weatherCode)) {
-    return "🌫";
+    return "🌫️";
   }
   if ([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82].includes(weatherCode)) {
-    return "🌧";
+    return "🌧️";
   }
   if ([71, 73, 75, 77, 85, 86].includes(weatherCode)) {
-    return "❄";
+    return "❄️";
   }
   if ([95, 96, 99].includes(weatherCode)) {
-    return "⛈";
+    return "⛈️";
   }
-  return "☁";
+  return "☁️";
 }
 
 function weatherDayLabel(dateValue) {
