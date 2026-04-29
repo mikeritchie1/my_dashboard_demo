@@ -65,6 +65,7 @@ let hasAutoFitMap = true;
 let forceNextMapFit = false;
 let selectedMapItemKey = "";
 let currentMapItems = [];
+let mapMarkersByKey = new Map();
 const markerIcons = {
   places: L.icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
@@ -815,6 +816,41 @@ function mapItemKey(item) {
   return `${item.source}:${item.title}:${item.lat}:${item.lng}`;
 }
 
+function venueKey(value) {
+  return normalizeVenue(value || "");
+}
+
+function focusSpecialOnMap(venueName) {
+  if (!specialsMap || !venueName) {
+    return;
+  }
+  const key = venueKey(venueName);
+  const selectedItem =
+    currentMapItems.find((item) => item.source === "specials" && venueKey(item.title) === key) ||
+    currentMapItems.find((item) => item.source === "places" && venueKey(item.title) === key) ||
+    null;
+  const marker = mapMarkersByKey.get(`specials:${key}`) || mapMarkersByKey.get(`places:${key}`);
+  if (marker) {
+    const latLng = marker.getLatLng();
+    specialsMap.setView(latLng, 14, { animate: true });
+    marker.openPopup();
+    if (selectedItem) {
+      selectedMapItemKey = mapItemKey(selectedItem);
+      renderMapDetail(selectedItem);
+    }
+    return;
+  }
+  const locations = state.specialsPayload?.locations || {};
+  const location = locationForVenue(venueName, locations);
+  if (location) {
+    specialsMap.setView([location.lat, location.lng], 14, { animate: true });
+    if (selectedItem) {
+      selectedMapItemKey = mapItemKey(selectedItem);
+      renderMapDetail(selectedItem);
+    }
+  }
+}
+
 function eventListCard(event) {
   const when = displayDateTime(event.start);
   const where = [event.venue, event.locality].filter(Boolean).join(", ");
@@ -1063,6 +1099,7 @@ function renderMap() {
   }
 
   specialsMarkerLayer.clearLayers();
+  mapMarkersByKey = new Map();
   const mapItems = buildMapItems();
   currentMapItems = mapItems;
   if (!mapItems.length) {
@@ -1093,6 +1130,9 @@ function renderMap() {
     const marker = L.marker([item.lat, item.lng], { icon }).bindPopup(
       `<strong>${title}</strong><p>${sourceLabel}</p><ul>${details}</ul>`,
     );
+    if (item.source === "specials" || item.source === "places") {
+      mapMarkersByKey.set(`${item.source}:${venueKey(item.title)}`, marker);
+    }
     marker.on("click", () => {
       selectedMapItemKey = mapItemKey(item);
       renderMapDetail(item);
@@ -1125,67 +1165,65 @@ function renderMap() {
 }
 
 function specialDayElement(day, items, isToday) {
-    const section = document.createElement("section");
-    section.className = "special-group";
-    if (isToday) {
-      section.classList.add("today-special-group");
-    }
+  const section = document.createElement("section");
+  section.className = "special-group";
+  if (isToday) {
+    section.classList.add("today-special-group");
+  }
 
-    const heading = document.createElement("h4");
-    heading.textContent = isToday ? `Today (${day})` : day;
-    section.append(heading);
+  const heading = document.createElement("h4");
+  heading.textContent = isToday ? `Today (${day})` : day;
+  section.append(heading);
 
-    if (!items.length) {
-      const empty = document.createElement("p");
-      empty.className = "special-empty";
-      empty.textContent = "No specials listed.";
-      section.append(empty);
-      return section;
-    }
+  const rail = document.createElement("div");
+  rail.className = "special-cards-rail";
+  const track = document.createElement("div");
+  track.className = "special-cards-track";
 
-    const list = document.createElement("ul");
-    for (const venueGroup of groupItemsByVenue(items)) {
-      const listItem = document.createElement("li");
-      const venue = document.createElement("strong");
-      venue.textContent = venueGroup.venue;
-      listItem.append(venue);
+  if (!items.length) {
+    const empty = document.createElement("p");
+    empty.className = "special-empty";
+    empty.textContent = "No specials listed.";
+    track.append(empty);
+    rail.append(track);
+    section.append(rail);
+    return section;
+  }
 
-      if (venueGroup.items.length === 1 && venueGroup.items[0].url) {
-        listItem.textContent = "";
+  for (const venueGroup of groupItemsByVenue(items)) {
+    const card = document.createElement("article");
+    card.className = "special-card";
+    card.style.cursor = "pointer";
+    card.addEventListener("click", () => {
+      focusSpecialOnMap(venueGroup.venue);
+    });
+
+    const title = document.createElement("h5");
+    title.textContent = venueGroup.venue;
+    card.append(title);
+
+    for (const item of venueGroup.items) {
+      const line = document.createElement("p");
+      const text = item.deal || item.description || item.title;
+      if (item.url) {
         const link = document.createElement("a");
-        link.href = venueGroup.items[0].url;
+        link.href = item.url;
         link.target = "_blank";
         link.rel = "noreferrer";
-        link.textContent = `${venueGroup.venue} - ${venueGroup.items[0].deal || venueGroup.items[0].description || ""}`;
-        listItem.append(link);
-      } else if (venueGroup.items.length === 1) {
-        const deal = document.createElement("span");
-        deal.textContent = ` - ${venueGroup.items[0].deal || venueGroup.items[0].description || ""}`;
-        listItem.append(deal);
+        link.textContent = text;
+        line.append(link);
       } else {
-        const nested = document.createElement("ul");
-        nested.className = "special-deal-list";
-        for (const item of venueGroup.items) {
-          const nestedItem = document.createElement("li");
-          if (item.url) {
-            const link = document.createElement("a");
-            link.href = item.url;
-            link.target = "_blank";
-            link.rel = "noreferrer";
-            link.textContent = item.deal || item.description || item.title;
-            nestedItem.append(link);
-          } else {
-            nestedItem.textContent = item.deal || item.description || item.title;
-          }
-          nested.append(nestedItem);
-        }
-        listItem.append(nested);
+        line.textContent = text;
       }
-      list.append(listItem);
+      card.append(line);
     }
 
-    section.append(list);
-    return section;
+    track.append(card);
+  }
+
+  rail.append(track);
+  section.append(rail);
+  return section;
 }
 
 function groupItemsByVenue(items) {
