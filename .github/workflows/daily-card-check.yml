@@ -65,6 +65,10 @@ jobs:
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'events' }}
         run: python events/scrape_quicket_events.py
 
+      - name: Run Webtickets events
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'events' }}
+        run: python events/scrape_webtickets_events.py
+
       - name: Update dashboard data
         run: |
           mkdir -p docs/data

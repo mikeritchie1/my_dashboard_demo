@@ -50,7 +50,7 @@ const elements = {
 
 let specialsMap;
 let specialsMarkerLayer;
-let hasAutoFitMap = false;
+let hasAutoFitMap = true;
 let forceNextMapFit = false;
 let selectedMapItemKey = "";
 let currentMapItems = [];
@@ -1128,7 +1128,6 @@ elements.maxPrice.addEventListener("input", (event) => {
 
 elements.specialsMapRange.addEventListener("change", (event) => {
   state.specialsMapRange = event.target.value;
-  forceNextMapFit = true;
   renderMap();
 });
 
@@ -1144,9 +1143,6 @@ elements.mapSourceSpecials.addEventListener("change", (event) => {
 
 elements.mapSourceEvents.addEventListener("change", (event) => {
   state.mapSources.events = event.target.checked;
-  if (event.target.checked) {
-    forceNextMapFit = true;
-  }
   renderMap();
 });
 

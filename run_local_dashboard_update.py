@@ -13,7 +13,10 @@ DOCS_DATA_DIR = REPO_DIR / "docs" / "data"
 TASKS = {
     "cards": [[sys.executable, "one-piece/notify_new_cards.py", "--store", "all", "--mode", "all", "--no-email"]],
     "specials": [[sys.executable, "events/scrape_specials.py"]],
-    "events": [[sys.executable, "events/scrape_quicket_events.py"]],
+    "events": [
+        [sys.executable, "events/scrape_quicket_events.py"],
+        [sys.executable, "events/scrape_webtickets_events.py"],
+    ],
     "releases": [[sys.executable, "release-radar/scrape_releases.py"]],
     "coming-soon": [[sys.executable, "release-radar/scrape_coming_soon.py"]],
 }

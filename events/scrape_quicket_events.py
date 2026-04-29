@@ -5,6 +5,7 @@ import html
 import json
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -122,6 +123,39 @@ def save_geocode_cache(cache: dict[str, dict[str, float]]) -> None:
     GEOCODE_CACHE_OUTPUT.write_text(json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+def fetch_event_page(url: str) -> str:
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "Mozilla/5.0 (compatible; my-dashboard/1.0)",
+            "Accept": "text/html,application/xhtml+xml",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return response.read().decode("utf-8", errors="replace")
+
+
+def parse_coords_from_event_page(page_html: str) -> dict[str, float] | None:
+    patterns = [
+        r"maps\?q=(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
+        r"destination=(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
+        r"markers=.*?\|(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, page_html, flags=re.IGNORECASE)
+        if not match:
+            continue
+        try:
+            lat = float(match.group(1))
+            lng = float(match.group(2))
+        except (TypeError, ValueError):
+            continue
+        if abs(lat) < 0.000001 and abs(lng) < 0.000001:
+            continue
+        return {"lat": lat, "lng": lng}
+    return None
+
+
 def geocode_query_for_event(event: dict) -> str:
     bits = [
         event.get("venue", ""),
@@ -185,6 +219,31 @@ def add_coordinates(events: list[dict]) -> None:
     cache = load_geocode_cache()
     cache_changed = False
     for event in events:
+        event_url = (event.get("url") or "").strip()
+        event_cache_key = f"event_url::{event_url}"
+
+        if event_url:
+            cached_event_coords = cache.get(event_cache_key)
+            if cached_event_coords:
+                lat = float(cached_event_coords["lat"])
+                lng = float(cached_event_coords["lng"])
+                if not (abs(lat) < 0.000001 and abs(lng) < 0.000001):
+                    event["lat"] = lat
+                    event["lng"] = lng
+                    continue
+
+            try:
+                event_html = fetch_event_page(event_url)
+                page_coords = parse_coords_from_event_page(event_html)
+                if page_coords:
+                    event["lat"] = page_coords["lat"]
+                    event["lng"] = page_coords["lng"]
+                    cache[event_cache_key] = page_coords
+                    cache_changed = True
+                    continue
+            except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
+                pass
+
         resolved = False
         for query in geocode_queries_for_event(event):
             cached = cache.get(query)
