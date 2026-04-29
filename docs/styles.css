@@ -426,6 +426,23 @@ td.card-number {
   margin-top: 12px;
 }
 
+.map-locate-button {
+  min-height: 34px;
+  padding: 6px 10px;
+  margin: 0 0 8px;
+  color: var(--accent-strong);
+  background: #eef3f7;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.map-locate-button:hover {
+  background: #e4edf5;
+}
+
 .map-filter-title {
   margin: 0 0 8px;
   color: var(--muted);

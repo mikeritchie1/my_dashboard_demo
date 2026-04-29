@@ -46,6 +46,7 @@ const elements = {
   mapSourcePlaces: document.querySelector("#map-source-places"),
   mapSourceSpecials: document.querySelector("#map-source-specials"),
   mapSourceEvents: document.querySelector("#map-source-events"),
+  locateMe: document.querySelector("#locate-me"),
   mapTypeFilters: document.querySelector("#map-type-filters"),
   mapCategoryFilters: document.querySelector("#map-category-filters"),
   mapDetailPanel: document.querySelector("#map-detail-panel"),
@@ -55,6 +56,8 @@ const elements = {
 
 let specialsMap;
 let specialsMarkerLayer;
+let myLocationMarker;
+let myLocationLatLng = null;
 let hasAutoFitMap = true;
 let forceNextMapFit = false;
 let selectedMapItemKey = "";
@@ -78,6 +81,14 @@ const markerIcons = {
   }),
   events: L.icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png",
+    shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  }),
+  myLocation: L.icon({
+    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
     shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -1150,6 +1161,48 @@ async function loadReleases() {
   }
 }
 
+function showMyLocation() {
+  if (!navigator.geolocation) {
+    alert("Location is not available in this browser.");
+    return;
+  }
+  if (!specialsMap) {
+    renderMap();
+  }
+  if (myLocationMarker) {
+    const markerPos = myLocationMarker.getLatLng();
+    specialsMap.setView(markerPos, 13, { animate: true });
+    myLocationMarker.openPopup();
+  } else if (myLocationLatLng) {
+    specialsMap.setView(myLocationLatLng, 13, { animate: true });
+  }
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      const lat = position.coords.latitude;
+      const lng = position.coords.longitude;
+      myLocationLatLng = [lat, lng];
+      if (myLocationMarker) {
+        myLocationMarker.setLatLng(myLocationLatLng);
+      } else {
+        myLocationMarker = L.marker(myLocationLatLng, {
+          icon: markerIcons.myLocation,
+        }).bindPopup("<strong>You are here</strong>", { autoPan: false });
+        myLocationMarker.addTo(specialsMap);
+      }
+      specialsMap.setView(myLocationLatLng, 13, { animate: true });
+      myLocationMarker.openPopup();
+    },
+    () => {
+      alert("Could not get your location. Check browser location permissions.");
+    },
+    {
+      enableHighAccuracy: true,
+      timeout: 15000,
+      maximumAge: 60000,
+    },
+  );
+}
+
 async function loadWeather() {
   try {
     const response = await fetch(WEATHER_PATH, { cache: "no-store" });
@@ -1275,6 +1328,10 @@ elements.mapSourceEvents.addEventListener("change", (event) => {
   state.mapSources.events = event.target.checked;
   renderMap();
 });
+
+if (elements.locateMe) {
+  elements.locateMe.addEventListener("click", showMyLocation);
+}
 
 load();
 setHeaderDate();
