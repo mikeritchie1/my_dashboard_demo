@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Watch Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="styles.css?v=20260430-51">
+    <link rel="stylesheet" href="styles.css?v=20260430-62">
   </head>
   <body>
     <header class="topbar">
@@ -117,14 +117,16 @@
           <span class="section-hint">Now watching + watch history</span>
         </summary>
         <div class="section-content">
-          <div class="watchlist-tabs" role="tablist" aria-label="Watchlist type">
-            <button id="watchlist-tab-movies" type="button" class="watchlist-tab is-selected" data-watch-type="movie" aria-pressed="true">Movies</button>
-            <button id="watchlist-tab-series" type="button" class="watchlist-tab" data-watch-type="series" aria-pressed="false">Series</button>
+          <div class="watchlist-selector" aria-label="Watchlist media and categories">
+            <div id="watchlist-media-buttons" class="watchlist-media-buttons" role="group" aria-label="Media"></div>
+            <div id="watchlist-category-buttons" class="watchlist-category-buttons" role="group" aria-label="Categories"></div>
           </div>
-          <h3 class="subsection-title">Currently watching</h3>
-          <div id="watchlist-current" class="watchlist-current">
-            <p class="empty">Loading current watchlist...</p>
-          </div>
+          <section id="watchlist-current-section">
+            <h3 id="watchlist-current-title" class="subsection-title">Currently watching</h3>
+            <div id="watchlist-current" class="watchlist-current">
+              <p class="empty">Loading current watchlist...</p>
+            </div>
+          </section>
           <details id="watchlist-history-panel" class="subsection-panel watchlist-history-panel" open>
             <summary id="watchlist-history-summary">Movies watched</summary>
             <div class="watchlist-history-shell">
@@ -147,6 +149,13 @@
                     <option value="default">Default order</option>
                     <option value="score">Score</option>
                     <option value="release_date">Release date</option>
+                  </select>
+                </label>
+                <label>
+                  Opinion
+                  <select id="watchlist-opinion-filter">
+                    <option value="all">All</option>
+                    <option value="loved">Loved</option>
                   </select>
                 </label>
               </section>
@@ -222,6 +231,6 @@
     </aside>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=20260430-54"></script>
+    <script src="app.js?v=20260430-60"></script>
   </body>
 </html>

@@ -11,6 +11,22 @@ const HOLIDAYS_PATH = "https://date.nager.at/api/v3/publicholidays/{year}/ZA";
 const METADATA_PATH = "data/metadata.json";
 const GOOGLE_CALENDAR_EVENTS_PATH = "data/google_calendar_events.json";
 const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const WATCHLIST_MEDIA_CONFIG = {
+  screen: { label: "Movies + Series", types: ["movie", "series"] },
+  anime: { label: "Anime", types: ["anime_movie", "anime_series"] },
+  games: { label: "Games", types: ["game_aaa", "game_indie", "game_coop", "game_couch_coop", "game_lan"] },
+};
+const WATCHLIST_TYPE_LABELS = {
+  movie: "Movie",
+  series: "Series",
+  anime_movie: "Anime Movie",
+  anime_series: "Anime Series",
+  game_aaa: "AAA",
+  game_indie: "Indie",
+  game_coop: "Co-op",
+  game_couch_coop: "Couch Co-op",
+  game_lan: "LAN",
+};
 
 const state = {
   rows: [],
@@ -35,11 +51,13 @@ const state = {
   weatherPayload: null,
   customStartDate: "",
   customEndDate: "",
+  watchlistActiveMedia: "screen",
   watchlistTypes: new Set(["movie"]),
   watchlistPayload: null,
   watchlistYearFilter: "all",
   watchlistGenreFilter: "all",
   watchlistSort: "default",
+  watchlistOpinionFilter: "all",
 };
 
 const elements = {
@@ -57,8 +75,11 @@ const elements = {
   watchlistYearFilter: document.querySelector("#watchlist-year-filter"),
   watchlistGenreFilter: document.querySelector("#watchlist-genre-filter"),
   watchlistSort: document.querySelector("#watchlist-sort"),
-  watchlistTabMovies: document.querySelector("#watchlist-tab-movies"),
-  watchlistTabSeries: document.querySelector("#watchlist-tab-series"),
+  watchlistOpinionFilter: document.querySelector("#watchlist-opinion-filter"),
+  watchlistCurrentSection: document.querySelector("#watchlist-current-section"),
+  watchlistCurrentTitle: document.querySelector("#watchlist-current-title"),
+  watchlistMediaButtons: document.querySelector("#watchlist-media-buttons"),
+  watchlistCategoryButtons: document.querySelector("#watchlist-category-buttons"),
   watchlistDetailPanel: document.querySelector("#watchlist-detail-panel"),
   watchlistDetailContent: document.querySelector("#watchlist-detail-content"),
   watchlistDetailClose: document.querySelector("#watchlist-detail-close"),
@@ -400,9 +421,33 @@ function safeWatchTitle(item) {
 
 function safeWatchType(item) {
   const rawType = typeof item === "object" && item ? String(item.type || "") : "";
-  const lowered = rawType.toLowerCase();
-  if (lowered === "series" || lowered === "movie") {
-    return lowered;
+  const lowered = rawType.toLowerCase().trim().replace(/[\s-]+/g, "_");
+  if (lowered === "movie" || lowered === "movies") {
+    return "movie";
+  }
+  if (lowered === "series" || lowered === "tv_series") {
+    return "series";
+  }
+  if (lowered === "anime" || lowered === "anime_series") {
+    return "anime_series";
+  }
+  if (lowered === "anime_movie" || lowered === "anime_movies") {
+    return "anime_movie";
+  }
+  if (lowered === "aaa" || lowered === "game_aaa") {
+    return "game_aaa";
+  }
+  if (lowered === "indie" || lowered === "game_indie") {
+    return "game_indie";
+  }
+  if (lowered === "coop" || lowered === "co_op" || lowered === "game_coop") {
+    return "game_coop";
+  }
+  if (lowered === "couch_coop" || lowered === "game_couch_coop") {
+    return "game_couch_coop";
+  }
+  if (lowered === "lan" || lowered === "lan_games" || lowered === "game_lan") {
+    return "game_lan";
   }
   return "";
 }
@@ -415,15 +460,87 @@ function watchlistHasType(type) {
   return state.watchlistTypes.has(type);
 }
 
-function toggleWatchlistType(type) {
-  if (watchlistHasType(type)) {
-    if (state.watchlistTypes.size === 1) {
-      return;
+function mediaForType(type) {
+  for (const [media, config] of Object.entries(WATCHLIST_MEDIA_CONFIG)) {
+    if (config.types.includes(type)) {
+      return media;
     }
-    state.watchlistTypes.delete(type);
+  }
+  return "screen";
+}
+
+function ensureWatchlistSelection() {
+  if (state.watchlistTypes.size) {
+    return;
+  }
+  const fallback = WATCHLIST_MEDIA_CONFIG[state.watchlistActiveMedia]?.types?.[0] || "movie";
+  state.watchlistTypes = new Set([fallback]);
+}
+
+function toggleWatchlistType(type) {
+  const media = mediaForType(type);
+  if (media !== state.watchlistActiveMedia) {
+    state.watchlistActiveMedia = media;
+    state.watchlistTypes = new Set([type]);
+    return;
+  }
+  if (watchlistHasType(type)) {
+    if (state.watchlistTypes.size > 1) {
+      state.watchlistTypes.delete(type);
+    }
   } else {
     state.watchlistTypes.add(type);
   }
+  ensureWatchlistSelection();
+}
+
+function setWatchlistMedia(media) {
+  if (!WATCHLIST_MEDIA_CONFIG[media]) {
+    return;
+  }
+  if (state.watchlistActiveMedia === media) {
+    ensureWatchlistSelection();
+    return;
+  }
+  state.watchlistActiveMedia = media;
+  const defaultType = WATCHLIST_MEDIA_CONFIG[media].types[0];
+  state.watchlistTypes = new Set([defaultType]);
+  state.watchlistGenreFilter = "all";
+}
+
+function renderWatchlistSelectorControls() {
+  if (!elements.watchlistMediaButtons || !elements.watchlistCategoryButtons) {
+    return;
+  }
+
+  elements.watchlistMediaButtons.innerHTML = Object.entries(WATCHLIST_MEDIA_CONFIG)
+    .map(
+      ([media, config]) => `
+        <button
+          id="watchlist-media-${media}"
+          type="button"
+          class="watchlist-media-button${state.watchlistActiveMedia === media ? " is-selected" : ""}"
+          data-watch-media="${media}"
+          aria-pressed="${state.watchlistActiveMedia === media ? "true" : "false"}"
+        >${escapeHtml(config.label)}</button>
+      `,
+    )
+    .join("");
+
+  const activeConfig = WATCHLIST_MEDIA_CONFIG[state.watchlistActiveMedia] || WATCHLIST_MEDIA_CONFIG.screen;
+  elements.watchlistCategoryButtons.innerHTML = activeConfig.types
+    .map((type) => {
+      const selected = watchlistHasType(type);
+      return `
+        <button
+          type="button"
+          class="watchlist-category-button${selected ? " is-selected" : ""}"
+          data-watch-type="${type}"
+          aria-pressed="${selected ? "true" : "false"}"
+        >${escapeHtml(WATCHLIST_TYPE_LABELS[type] || type)}</button>
+      `;
+    })
+    .join("");
 }
 
 function escapeHtml(value) {
@@ -437,13 +554,7 @@ function escapeHtml(value) {
 
 function watchTypeLabel(item) {
   const type = safeWatchType(item);
-  if (type === "series") {
-    return "Series";
-  }
-  if (type === "movie") {
-    return "Movie";
-  }
-  return "Title";
+  return WATCHLIST_TYPE_LABELS[type] || "Title";
 }
 
 function movieLookupKey(title) {
@@ -486,7 +597,7 @@ function renderWatchlistTitleCard(type, title, payload, item = null) {
     ? `<img class="watchlist-entry-poster" src="${posterUrl}" alt="${safeTitle} poster" loading="lazy">`
     : '<div class="watchlist-entry-poster watchlist-entry-poster-empty">No poster</div>';
 
-  const badgeLabel = type === "series" ? "Series" : "Movie";
+  const badgeLabel = WATCHLIST_TYPE_LABELS[type] || "Title";
   return `
     <button
       type="button"
@@ -511,13 +622,59 @@ function joinList(values) {
   return values.filter(Boolean).join(", ");
 }
 
-function watchlistHistoryLabel() {
-  const hasMovies = watchlistHasType("movie");
-  const hasSeries = watchlistHasType("series");
-  if (hasMovies && hasSeries) {
-    return "Movies and series watched";
+function findWatchlistItem(payload, type, title) {
+  const normalizedType = String(type || "").trim();
+  const normalizedTitle = String(title || "").trim().toLowerCase();
+  if (!normalizedType || !normalizedTitle) {
+    return null;
   }
-  return hasSeries ? "Series watched" : "Movies watched";
+
+  const current = payload?.currently_watching || {};
+  const gameBucket = current.games && typeof current.games === "object" ? current.games : {};
+  const sourceByType = {
+    movie: Array.isArray(current.movies) ? current.movies : [],
+    series: Array.isArray(current.series) ? current.series : [],
+    anime_series: Array.isArray(current.anime_series || current.anime) ? (current.anime_series || current.anime) : [],
+    anime_movie: Array.isArray(current.anime_movies || current.anime_movie) ? (current.anime_movies || current.anime_movie) : [],
+    game_aaa: Array.isArray(current.game_aaa || gameBucket.aaa) ? (current.game_aaa || gameBucket.aaa) : [],
+    game_indie: Array.isArray(current.game_indie || gameBucket.indie) ? (current.game_indie || gameBucket.indie) : [],
+    game_coop: Array.isArray(current.game_coop || gameBucket.coop) ? (current.game_coop || gameBucket.coop) : [],
+    game_couch_coop: Array.isArray(current.game_couch_coop || gameBucket.couch_coop) ? (current.game_couch_coop || gameBucket.couch_coop) : [],
+    game_lan: Array.isArray(current.game_lan || gameBucket.lan) ? (current.game_lan || gameBucket.lan) : [],
+  };
+
+  for (const item of sourceByType[normalizedType] || []) {
+    if (safeWatchTitle(item).toLowerCase() === normalizedTitle) {
+      return item;
+    }
+  }
+
+  for (const group of payload?.history_by_year || []) {
+    for (const entry of group?.entries || []) {
+      if ((safeWatchType(entry) || "movie") !== normalizedType) {
+        continue;
+      }
+      if (safeWatchTitle(entry).toLowerCase() === normalizedTitle) {
+        return entry;
+      }
+    }
+  }
+
+  return null;
+}
+
+function watchlistHistoryLabel() {
+  const labels = [...state.watchlistTypes].map((type) => WATCHLIST_TYPE_LABELS[type]).filter(Boolean);
+  if (!labels.length) {
+    return "Watched";
+  }
+  if (labels.length === 1) {
+    return `${labels[0]} watched`;
+  }
+  if (labels.length === 2) {
+    return `${labels[0]} and ${labels[1]} watched`;
+  }
+  return `${labels.slice(0, -1).join(", ")} and ${labels[labels.length - 1]} watched`;
 }
 
 function compareReleaseDateDescending(left, right, payload) {
@@ -536,7 +693,7 @@ function compareScoreDescending(left, right, payload) {
 }
 
 function watchlistGenres(payload) {
-  if (!watchlistHasType("movie") && !watchlistHasType("series")) {
+  if (!state.watchlistTypes.size) {
     return [];
   }
   const genres = new Set();
@@ -612,6 +769,10 @@ function updateWatchlistFilterOptions(payload) {
   if (elements.watchlistSort) {
     elements.watchlistSort.value = state.watchlistSort;
   }
+
+  if (elements.watchlistOpinionFilter) {
+    elements.watchlistOpinionFilter.value = state.watchlistOpinionFilter;
+  }
 }
 
 function filteredWatchlistHistory(payload) {
@@ -629,6 +790,15 @@ function filteredWatchlistHistory(payload) {
     let entries = Array.isArray(group?.entries) ? [...group.entries].reverse() : [];
     entries = entries
       .filter((entry) => watchlistHasType(safeWatchType(entry) || "movie"))
+      .filter((entry) => {
+        if (state.watchlistOpinionFilter === "all") {
+          return true;
+        }
+        if (state.watchlistOpinionFilter === "loved") {
+          return safeWatchLoved(entry);
+        }
+        return true;
+      })
       .filter((entry) => {
         const entryType = safeWatchType(entry) || "movie";
         if (state.watchlistGenreFilter === "all") {
@@ -687,9 +857,13 @@ function openWatchlistDetail(type, title) {
   const trailerUrl = String(details.trailer_url || "").trim();
   const tmdbUrl = String(details.tmdb_url || "").trim();
   const safeTitle = escapeHtml(title);
-  const safeLabel = escapeHtml(type === "series" ? "Series" : "Movie");
-
-  const metaBits = [releaseDate, type === "series" ? seasonsText : runtime, genres].filter(Boolean);
+  const safeLabel = escapeHtml(WATCHLIST_TYPE_LABELS[type] || "Title");
+  const sourceItem = findWatchlistItem(state.watchlistPayload, type, title);
+  const loved = safeWatchLoved(sourceItem);
+  const lovedBadge = loved ? '<span class="watchlist-loved-badge">Loved</span>' : "";
+  const isSeriesLike = type === "series" || type === "anime_series";
+  const isMovieLike = type === "movie" || type === "anime_movie";
+  const metaBits = [releaseDate, isMovieLike ? runtime : isSeriesLike ? seasonsText : "", genres].filter(Boolean);
   const posterHtml = posterUrl
     ? `<img class="watchlist-detail-poster" src="${posterUrl}" alt="${safeTitle} poster">`
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
@@ -698,12 +872,12 @@ function openWatchlistDetail(type, title) {
     <div class="watchlist-detail-layout">
       ${posterHtml}
       <div class="watchlist-detail-body">
-        <p class="watchlist-detail-kicker">${safeLabel}</p>
+        <p class="watchlist-detail-kicker">${safeLabel}${lovedBadge}</p>
         <h3>${safeTitle}</h3>
         <p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>
         ${metaBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(metaBits.join(" • "))}</p>` : ""}
         <p class="watchlist-detail-description">${escapeHtml(description)}</p>
-        <p><strong>${type === "series" ? "Creators" : "Directors"}:</strong> ${escapeHtml(directors)}</p>
+        <p><strong>${isMovieLike ? "Directors" : "Creators"}:</strong> ${escapeHtml(directors)}</p>
         <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>
         <div class="watchlist-detail-links">
           ${trailerUrl ? `<a href="${trailerUrl}" target="_blank" rel="noreferrer">Trailer</a>` : ""}
@@ -714,24 +888,43 @@ function openWatchlistDetail(type, title) {
   `;
   elements.watchlistDetailPanel.hidden = false;
   elements.watchlistDetailPanel.classList.add("is-open");
+  elements.watchlistDetailPanel.classList.toggle("is-loved", loved);
   document.body.classList.add("watchlist-detail-open");
 }
 
 function renderWatchlistCurrent(payload) {
   const current = payload?.currently_watching || {};
-  const movies = Array.isArray(current.movies) ? current.movies.filter(Boolean) : [];
-  const series = Array.isArray(current.series) ? current.series.filter(Boolean) : [];
-  const sections = [];
-  if (watchlistHasType("movie") && movies.length) {
-    sections.push({ type: "movie", heading: "Movies", items: movies });
-  }
-  if (watchlistHasType("series") && series.length) {
-    sections.push({ type: "series", heading: "Series", items: series });
+  const asItems = (value) => (Array.isArray(value) ? value.filter(Boolean) : []);
+  const gameBucket = current.games && typeof current.games === "object" ? current.games : {};
+  const sourceByType = {
+    movie: asItems(current.movies),
+    series: asItems(current.series),
+    anime_series: asItems(current.anime_series || current.anime),
+    anime_movie: asItems(current.anime_movies || current.anime_movie),
+    game_aaa: asItems(current.game_aaa || gameBucket.aaa),
+    game_indie: asItems(current.game_indie || gameBucket.indie),
+    game_coop: asItems(current.game_coop || gameBucket.coop),
+    game_couch_coop: asItems(current.game_couch_coop || gameBucket.couch_coop),
+    game_lan: asItems(current.game_lan || gameBucket.lan),
+  };
+  const sections = [...state.watchlistTypes]
+    .map((type) => ({ type, heading: WATCHLIST_TYPE_LABELS[type] || "Titles", items: sourceByType[type] || [] }))
+    .filter((section) => section.items.length);
+  const hasGames = [...state.watchlistTypes].some((type) => type.startsWith("game_"));
+
+  if (elements.watchlistCurrentTitle) {
+    elements.watchlistCurrentTitle.textContent = hasGames ? "Currently playing" : "Currently watching";
   }
 
   if (!sections.length) {
-    elements.watchlistCurrent.innerHTML = '<p class="empty">No current titles listed.</p>';
+    if (elements.watchlistCurrentSection) {
+      elements.watchlistCurrentSection.hidden = true;
+    }
+    elements.watchlistCurrent.innerHTML = "";
     return;
+  }
+  if (elements.watchlistCurrentSection) {
+    elements.watchlistCurrentSection.hidden = false;
   }
 
   elements.watchlistCurrent.innerHTML = sections
@@ -809,23 +1002,32 @@ function renderWatchlistHistory(payload) {
   }
 }
 
-function applyWatchlistTabState() {
-  if (!elements.watchlistTabMovies || !elements.watchlistTabSeries) {
+function renderWatchlistSelectorState() {
+  if (!elements.watchlistMediaButtons || !elements.watchlistCategoryButtons) {
     return;
   }
-  const isMovies = watchlistHasType("movie");
-  const isSeries = watchlistHasType("series");
-  elements.watchlistTabMovies.classList.toggle("is-selected", isMovies);
-  elements.watchlistTabSeries.classList.toggle("is-selected", isSeries);
-  elements.watchlistTabMovies.setAttribute("aria-pressed", isMovies ? "true" : "false");
-  elements.watchlistTabSeries.setAttribute("aria-pressed", isSeries ? "true" : "false");
+
+  elements.watchlistMediaButtons.querySelectorAll(".watchlist-media-button").forEach((button) => {
+    const media = button.dataset.watchMedia || "";
+    const selected = media === state.watchlistActiveMedia;
+    button.classList.toggle("is-selected", selected);
+    button.setAttribute("aria-pressed", selected ? "true" : "false");
+  });
+
+  elements.watchlistCategoryButtons.querySelectorAll(".watchlist-category-button").forEach((button) => {
+    const type = button.dataset.watchType || "";
+    const selected = watchlistHasType(type);
+    button.classList.toggle("is-selected", selected);
+    button.setAttribute("aria-pressed", selected ? "true" : "false");
+  });
 }
 
 function renderWatchlistAll() {
   if (!state.watchlistPayload) {
     return;
   }
-  applyWatchlistTabState();
+  renderWatchlistSelectorControls();
+  renderWatchlistSelectorState();
   renderWatchlistCurrent(state.watchlistPayload);
   renderWatchlistHistory(state.watchlistPayload);
 }
@@ -2256,19 +2458,29 @@ if (elements.themeToggle) {
   });
 }
 
-if (elements.watchlistTabMovies) {
-  elements.watchlistTabMovies.addEventListener("click", () => {
-    toggleWatchlistType("movie");
-    if (!watchlistHasType("movie")) {
-      state.watchlistGenreFilter = "all";
+if (elements.watchlistMediaButtons) {
+  elements.watchlistMediaButtons.addEventListener("click", (event) => {
+    const button = event.target.closest(".watchlist-media-button");
+    if (!button) {
+      return;
     }
+    const media = button.dataset.watchMedia || "screen";
+    setWatchlistMedia(media);
     renderWatchlistAll();
   });
 }
 
-if (elements.watchlistTabSeries) {
-  elements.watchlistTabSeries.addEventListener("click", () => {
-    toggleWatchlistType("series");
+if (elements.watchlistCategoryButtons) {
+  elements.watchlistCategoryButtons.addEventListener("click", (event) => {
+    const button = event.target.closest(".watchlist-category-button");
+    if (!button) {
+      return;
+    }
+    const type = button.dataset.watchType || "";
+    if (!type) {
+      return;
+    }
+    toggleWatchlistType(type);
     renderWatchlistAll();
   });
 }
@@ -2290,6 +2502,13 @@ if (elements.watchlistGenreFilter) {
 if (elements.watchlistSort) {
   elements.watchlistSort.addEventListener("change", (event) => {
     state.watchlistSort = event.target.value || "default";
+    renderWatchlistAll();
+  });
+}
+
+if (elements.watchlistOpinionFilter) {
+  elements.watchlistOpinionFilter.addEventListener("change", (event) => {
+    state.watchlistOpinionFilter = event.target.value || "all";
     renderWatchlistAll();
   });
 }
@@ -2317,6 +2536,7 @@ if (elements.watchlistDetailClose && elements.watchlistDetailPanel) {
   elements.watchlistDetailClose.addEventListener("click", () => {
     elements.watchlistDetailPanel.hidden = true;
     elements.watchlistDetailPanel.classList.remove("is-open");
+    elements.watchlistDetailPanel.classList.remove("is-loved");
     document.body.classList.remove("watchlist-detail-open");
   });
 }
