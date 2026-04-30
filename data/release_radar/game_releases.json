@@ -1,0 +1,591 @@
+{
+  "source": "https://api.rawg.io/api/games",
+  "new_releases": [
+    {
+      "title": "Saros",
+      "url": "https://rawg.io/games/saros",
+      "image": "https://media.rawg.io/media/games/be8/be86ee5cf3a427c784efec1661f9b194.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": "PlayStation 5"
+    },
+    {
+      "title": "Invincible VS",
+      "url": "https://rawg.io/games/invincible-vs",
+      "image": "https://media.rawg.io/media/screenshots/fdf/fdfec2a343d751fec655f551146976cb.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Heroes of Might & Magic: Olden Era",
+      "url": "https://rawg.io/games/heroes-of-might-magic-olden-era",
+      "image": "https://media.rawg.io/media/screenshots/69e/69ece38d22dcc1c44de7ddb7901a1a41.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "inKonbini: One Store. Many Stories",
+      "url": "https://rawg.io/games/inkonbini-one-store-many-stories",
+      "image": "https://media.rawg.io/media/games/a24/a24a8acc39da3c992cbe9fb33a36dfd5.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Forbidden Solitaire",
+      "url": "https://rawg.io/games/forbidden-solitaire",
+      "image": "https://media.rawg.io/media/screenshots/748/7485dd9175996dc1870ea23978dbca9e.jpg",
+      "release_date": "2026-04-29",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Industria 2",
+      "url": "https://rawg.io/games/industria-2",
+      "image": "https://media.rawg.io/media/games/98d/98d30eda32c6bc5f4468092cef226a89.jpg",
+      "release_date": "2026-04-29",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Far Far West",
+      "url": "https://rawg.io/games/far-far-west",
+      "image": "https://media.rawg.io/media/screenshots/b1c/b1c249429ecaf020027f327c87ecd49c.jpg",
+      "release_date": "2026-04-28",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Aphelion",
+      "url": "https://rawg.io/games/aphelion-2",
+      "image": "https://media.rawg.io/media/games/ecc/ecc6e59e4bc50409d844fdc1607e86a9.jpg",
+      "release_date": "2026-04-28",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Aphelion (2026)",
+      "url": "https://rawg.io/games/aphelion-2026",
+      "image": "https://media.rawg.io/media/screenshots/244/244dd3c455dce7c97d5cd98d07ee3529.jpg",
+      "release_date": "2026-04-28",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Elementallis",
+      "url": "https://rawg.io/games/elementallis-2",
+      "image": "https://media.rawg.io/media/screenshots/c0a/c0a0cc0680ddca9ed649e0cbf225ee70.jpg",
+      "release_date": "2026-04-27",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "The Last Gas Station",
+      "url": "https://rawg.io/games/the-last-gas-station",
+      "image": "https://media.rawg.io/media/games/d89/d8977be708cb6a72662fd2478b326847.jpg",
+      "release_date": "2026-04-27",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Aphelion (2025)",
+      "url": "https://rawg.io/games/aphelion-2025",
+      "image": "https://media.rawg.io/media/screenshots/2d8/2d8f3476543b2554f2e5e3884ce83886.jpg",
+      "release_date": "2026-04-26",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox One"
+    },
+    {
+      "title": "Femboy Hell",
+      "url": "https://rawg.io/games/femboy-hell",
+      "image": "https://media.rawg.io/media/screenshots/cab/cabf8393c1c4ae231c62c2a21c137986.jpg",
+      "release_date": "2026-04-25",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Vending Machine Co",
+      "url": "https://rawg.io/games/vending-machine-co",
+      "image": "https://media.rawg.io/media/screenshots/4b2/4b2c5c0ff809a51655fb7d45bf266d54.jpg",
+      "release_date": "2026-04-25",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Flock Around",
+      "url": "https://rawg.io/games/flock-around",
+      "image": "https://media.rawg.io/media/screenshots/770/770efb0b873b30b3be56eb2307769358.jpg",
+      "release_date": "2026-04-24",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Frontier Paladin",
+      "url": "https://rawg.io/games/frontier-paladin",
+      "image": "https://media.rawg.io/media/screenshots/22b/22b03af85087449d34f6c657fddeedf9.jpg",
+      "release_date": "2026-04-24",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "The Bible Roguelike Deckbuilder",
+      "url": "https://rawg.io/games/the-bible-roguelike-deckbuilder",
+      "image": "https://media.rawg.io/media/screenshots/002/0028c593e6f592979d197b7dcb2fb5cf.jpg",
+      "release_date": "2026-04-23",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Titanium Court",
+      "url": "https://rawg.io/games/titanium-court",
+      "image": "https://media.rawg.io/media/screenshots/b72/b72f58e3aa490b5abb88d9b6881151d9.jpg",
+      "release_date": "2026-04-22",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
+    },
+    {
+      "title": "Kumitantei: Old-School Slaughter",
+      "url": "https://rawg.io/games/kumitantei-old-school-slaughter",
+      "image": "https://media.rawg.io/media/screenshots/97c/97c5c6820512a8945dacdf26a661816c.jpg",
+      "release_date": "2026-04-22",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Vampire Crawlers",
+      "url": "https://rawg.io/games/vampire-crawlers",
+      "image": "https://media.rawg.io/media/games/3c1/3c184acddad8d9f1a35903fc4dc1f389.jpg",
+      "release_date": "2026-04-21",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Tides of Tomorrow",
+      "url": "https://rawg.io/games/tides-of-tomorrow",
+      "image": "https://media.rawg.io/media/games/56a/56ab44625e81c0346a954544c5caf9fb.jpg",
+      "release_date": "2026-04-21",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "All Hail the Orb",
+      "url": "https://rawg.io/games/all-hail-the-orb",
+      "image": "https://media.rawg.io/media/screenshots/3ae/3aeba8f913d15d1ad06c00cab91e1372.jpg",
+      "release_date": "2026-04-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Bonereader Demo",
+      "url": "https://rawg.io/games/bonereader-demo",
+      "image": "https://media.rawg.io/media/screenshots/6c0/6c0921bcf88ee6ffe51cfbd4e29dc141.jpg",
+      "release_date": "2026-04-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Bylina",
+      "url": "https://rawg.io/games/bylina",
+      "image": "https://media.rawg.io/media/games/df9/df969a3d9f61273ffa35a7b4d5be9875.jpg",
+      "release_date": "2026-04-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "A Tragedy in Elvish",
+      "url": "https://rawg.io/games/a-tragedy-in-elvish",
+      "image": "https://media.rawg.io/media/screenshots/23e/23e1cb57906d43d4ad4b267136c0f9de.jpg",
+      "release_date": "2026-04-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Pragmata",
+      "url": "https://rawg.io/games/pragmata",
+      "image": "https://media.rawg.io/media/games/019/0192f08452e0d8ead71940e90a3cdf70.jpg",
+      "release_date": "2026-04-17",
+      "rating": "4.6",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "The Ember Guardian",
+      "url": "https://rawg.io/games/the-ember-guardian",
+      "image": "https://media.rawg.io/media/screenshots/007/00725f5b675581e0bf134ad899bdfe52.jpg",
+      "release_date": "2026-04-17",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Cleaning Up!",
+      "url": "https://rawg.io/games/cleaning-up-2",
+      "image": "https://media.rawg.io/media/screenshots/02c/02c9b1234aa2282f2e2c9dad84958310.jpg",
+      "release_date": "2026-04-16",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Ground Zero (2026)",
+      "url": "https://rawg.io/games/ground-zero-2026",
+      "image": "https://media.rawg.io/media/screenshots/ebc/ebcec3a3b064ac245d14786edc074c8c.jpg",
+      "release_date": "2026-04-16",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Sintopia",
+      "url": "https://rawg.io/games/sintopia",
+      "image": "https://media.rawg.io/media/screenshots/1ce/1ce02ddabe467987e43c3dc19c9603f0.jpg",
+      "release_date": "2026-04-16",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "MOUSE: P.I. For Hire",
+      "url": "https://rawg.io/games/mouse-pi-for-hire",
+      "image": "https://media.rawg.io/media/games/cf1/cf13436dea02745b8844d98bfa887740.jpg",
+      "release_date": "2026-04-16",
+      "rating": "3.7",
+      "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4"
+    },
+    {
+      "title": "M\u041eUSE",
+      "url": "https://rawg.io/games/mouse-3",
+      "image": "https://media.rawg.io/media/screenshots/f47/f47de914dea47278808fdb39dac48273.jpg",
+      "release_date": "2026-04-16",
+      "rating": "3.6",
+      "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4"
+    },
+    {
+      "title": "Cthulhu: The Cosmic Abyss",
+      "url": "https://rawg.io/games/cthulhu-the-cosmic-abyss",
+      "image": "https://media.rawg.io/media/games/3c1/3c1dcc78fc1618fb9b829fd9f7c50ab9.jpg",
+      "release_date": "2026-04-15",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Steel Workers (Itch)",
+      "url": "https://rawg.io/games/steel-workers-itch",
+      "image": "https://media.rawg.io/media/screenshots/917/917ec11cce77d9d42a131de3153b4c15.jpg",
+      "release_date": "2026-04-15",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Smash it Wild: Tactical Volleyball Roguelike",
+      "url": "https://rawg.io/games/smash-it-wild-tactical-volleyball-roguelike",
+      "image": "https://media.rawg.io/media/screenshots/7a1/7a1aaeaa79f6305f27ef887ae5721f94.jpg",
+      "release_date": "2026-04-15",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "ShantyTown",
+      "url": "https://rawg.io/games/shantytown",
+      "image": "https://media.rawg.io/media/screenshots/da9/da9eb6072a786ad4e59e7c5214f11b3b.jpg",
+      "release_date": "2026-04-15",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Replaced",
+      "url": "https://rawg.io/games/replaced",
+      "image": "https://media.rawg.io/media/games/041/041e04184322bc859d617b790d8bfab9.jpg",
+      "release_date": "2026-04-14",
+      "rating": "3.6",
+      "platforms": "PC, Xbox One, Xbox Series S/X"
+    },
+    {
+      "title": "Sable's Grimoire 2",
+      "url": "https://rawg.io/games/sables-grimoire-2",
+      "image": "https://media.rawg.io/media/screenshots/03b/03b321bc91c89ed71598abd78d37275f.jpg",
+      "release_date": "2026-04-13",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "Regions of Ruin: Runegate",
+      "url": "https://rawg.io/games/regions-of-ruin-runegate",
+      "image": "https://media.rawg.io/media/screenshots/d3e/d3ec5f78ab1b11afa7b315953040f447.jpg",
+      "release_date": "2026-04-13",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
+    },
+    {
+      "title": "product_title_1709550644",
+      "url": "https://rawg.io/games/product_title_1709550644",
+      "image": "https://media.rawg.io/media/screenshots/70e/70e33f66d24aa4d0b27d350fb157bf68.jpg",
+      "release_date": "2026-04-13",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
+    },
+    {
+      "title": "Dead End Streets",
+      "url": "https://rawg.io/games/dead-end-streets",
+      "image": "https://media.rawg.io/media/screenshots/8ab/8ab38cbd43161bc9436558f6eb2fb9bd.jpg",
+      "release_date": "2026-04-10",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "MINOS (2026)",
+      "url": "https://rawg.io/games/minos-2026",
+      "image": "https://media.rawg.io/media/screenshots/2c8/2c84757f96f385ae345cb5c7fcabc981.jpg",
+      "release_date": "2026-04-09",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Arcadia Fallen II",
+      "url": "https://rawg.io/games/arcadia-fallen-ii",
+      "image": "https://media.rawg.io/media/screenshots/1db/1db02be099abda846541e517f6181e58.jpg",
+      "release_date": "2026-04-08",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "Lay of the Land",
+      "url": "https://rawg.io/games/lay-of-the-land",
+      "image": "https://media.rawg.io/media/screenshots/c16/c163df72fbc433933a53e867c13f5f19.jpg",
+      "release_date": "2026-04-08",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Samson",
+      "url": "https://rawg.io/games/samson",
+      "image": "https://media.rawg.io/media/games/89d/89dd76fda9a181482f32fc02f3f63164.jpeg",
+      "release_date": "2026-04-08",
+      "rating": "1.8",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "\u3010\u30af\u30e9\u30a6\u30c9\u30d5\u30a1\u30f3\u30c7\u30a3\u30f3\u30b0\u30fb\u30b9\u30c8\u30ec\u30c3\u30c1\u30b4\u30fc\u30eb\u7279\u5178\u30bd\u30d5\u30c8\u3011\u9244\u9053\u306b\u3063\u307d\u3093\uff01\u9650\u5b9a\u7279\u5225\u7248 for \u30ba\u30a4\u30ad\u30de\u30b9\u30b3\u30f3PRO",
+      "url": "https://rawg.io/games/kuraudohuandeingusutoretsuchigorute-dian-sohuto-ti",
+      "image": "https://media.rawg.io/media/screenshots/23b/23b5248f341eaae22b21017d40d5516b.jpg",
+      "release_date": "2026-04-08",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Cult Vacui",
+      "url": "https://rawg.io/games/cult-vacui",
+      "image": "https://media.rawg.io/media/screenshots/37f/37f7a3e15a9ada9b6be2bde853654506.jpg",
+      "release_date": "2026-04-08",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "Subversive Memories",
+      "url": "https://rawg.io/games/subversive-memories",
+      "image": "https://media.rawg.io/media/screenshots/3b8/3b80fec3c54b07e467031d0b933473c2.jpg",
+      "release_date": "2026-04-08",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "The Spotter: Dig or Die",
+      "url": "https://rawg.io/games/the-spotter-dig-or-die",
+      "image": "https://media.rawg.io/media/screenshots/77c/77c8192cb72b80e48e7047e106051321.jpg",
+      "release_date": "2026-04-07",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "People of Note",
+      "url": "https://rawg.io/games/people-of-note",
+      "image": "https://media.rawg.io/media/games/335/335d372799451b3ef5312c9dc532702a.jpg",
+      "release_date": "2026-04-07",
+      "rating": "0.0",
+      "platforms": "PC"
+    }
+  ],
+  "coming_soon": [
+    {
+      "title": "MOTORSLICE",
+      "url": "https://rawg.io/games/motorslice",
+      "image": "https://media.rawg.io/media/screenshots/781/781e814ff47631b425e8f4136804d95f.jpg",
+      "release_date": "2026-05-04",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Mixtape (2025)",
+      "url": "https://rawg.io/games/mixtape-2025",
+      "image": "https://media.rawg.io/media/screenshots/2e1/2e1a19d938c0e7a4a396924125923c38.jpg",
+      "release_date": "2026-05-07",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Mixtape",
+      "url": "https://rawg.io/games/mixtape",
+      "image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
+      "release_date": "2026-05-07",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Will: Follow the Light",
+      "url": "https://rawg.io/games/will-follow-the-light",
+      "image": "https://media.rawg.io/media/games/300/3001ccfd69be0255b346e1b03269008c.jpg",
+      "release_date": "2026-05-07",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Clockwork Ambrosia",
+      "url": "https://rawg.io/games/clockwork-ambrosia",
+      "image": "https://media.rawg.io/media/screenshots/3ef/3ef0787f01a9fd890ff7949fb49f8a8f.jpg",
+      "release_date": "2026-05-12",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Directive 8020",
+      "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
+      "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
+      "release_date": "2026-05-12",
+      "rating": "2.3",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Outbound",
+      "url": "https://rawg.io/games/outbound",
+      "image": "https://media.rawg.io/media/games/851/851cf64d1e55bc8f98e617bc38d7f5f2.jpg",
+      "release_date": "2026-05-14",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Corsairs - Battle of the Caribbean",
+      "url": "https://rawg.io/games/corsairs-battle-of-the-caribbean",
+      "image": "https://media.rawg.io/media/screenshots/ac0/ac0157a39c43d49bf2662e441f9a1322.jpg",
+      "release_date": "2026-05-17",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Forza Horizon 6",
+      "url": "https://rawg.io/games/forza-horizon-6",
+      "image": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
+      "release_date": "2026-05-19",
+      "rating": "0.0",
+      "platforms": "PC, Xbox Series S/X"
+    },
+    {
+      "title": "ZERO PARADES: For Dead Spies",
+      "url": "https://rawg.io/games/zero-parades-for-dead-spies",
+      "image": "https://media.rawg.io/media/screenshots/c86/c86f732afb067a071a46293c65833fa3.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Coffee Talk Tokyo",
+      "url": "https://rawg.io/games/coffee-talk-tokyo",
+      "image": "https://media.rawg.io/media/screenshots/8ee/8eed3221af05ce5dc058bc1ecf148695.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Phonopolis",
+      "url": "https://rawg.io/games/phonopolis",
+      "image": "https://media.rawg.io/media/games/044/044e2732dc470c41a6a2ac074bdf7fb0.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
+    },
+    {
+      "title": "Bubsy 4D",
+      "url": "https://rawg.io/games/bubsy-4d",
+      "image": "https://media.rawg.io/media/screenshots/3f5/3f56e79671e3e144fefb3ad30e924c2d.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
+      "title": "Yoshi and the Mysterious Book",
+      "url": "https://rawg.io/games/yoshi-and-the-mysterious-book",
+      "image": "https://media.rawg.io/media/games/25a/25a256ab63823d3ed3eea8207730d074.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "Nintendo Switch"
+    },
+    {
+      "title": "Lego Batman: Legacy of the Dark Knight",
+      "url": "https://rawg.io/games/lego-batman-legacy-of-the-dark-knight",
+      "image": "https://media.rawg.io/media/games/69a/69a6a1097f82210dbf8583f8e0d09123.jpg",
+      "release_date": "2026-05-22",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
+      "title": "007 First Light",
+      "url": "https://rawg.io/games/007-first-light",
+      "image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
+      "release_date": "2026-05-27",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
+      "title": "Eternal Palace Sakura",
+      "url": "https://rawg.io/games/eternal-palace-sakura",
+      "image": "https://media.rawg.io/media/screenshots/693/693a515d1be6b244afeac62c7e3194ae.jpg",
+      "release_date": "2026-06-01",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "The 7th Guest Remake",
+      "url": "https://rawg.io/games/the-7th-guest-remake",
+      "image": "https://media.rawg.io/media/screenshots/ef6/ef64a3aed53dccd10019ea72c3fcfd92.jpg",
+      "release_date": "2026-06-03",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Gothic 1 Remake",
+      "url": "https://rawg.io/games/gothic-1-remake",
+      "image": "https://media.rawg.io/media/games/f24/f24d20c6fddb77fe83d39cbfd7d4687f.jpg",
+      "release_date": "2026-06-05",
+      "rating": "3.4",
+      "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4"
+    },
+    {
+      "title": "The Adventures of Elliot: The Millennium Tales",
+      "url": "https://rawg.io/games/the-adventures-of-elliot-the-millenium-tales",
+      "image": "https://media.rawg.io/media/screenshots/a7a/a7aed08ad87bacbc7b6b7bec1aba4094.jpg",
+      "release_date": "2026-06-18",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
+      "title": "Assassin's Creed Back Flag Resynced",
+      "url": "https://rawg.io/games/assassins-creed-back-flag-resynced",
+      "image": "https://media.rawg.io/media/screenshots/990/99088f6f170459244defd7afd9fce096.jpg",
+      "release_date": "2026-07-09",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Splatoon Raiders",
+      "url": "https://rawg.io/games/splatoon-raiders",
+      "image": "https://media.rawg.io/media/games/818/8186b959ba7c061024ec3f4ad23e4496.jpg",
+      "release_date": "2026-07-23",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Truxton Extreme",
+      "url": "https://rawg.io/games/truxton-extreme",
+      "image": "https://media.rawg.io/media/screenshots/16d/16d5119ee87b3a1f22d29f7ef07b3b6c.jpg",
+      "release_date": "2026-07-29",
+      "rating": "0.0",
+      "platforms": "PC"
+    }
+  ]
+}

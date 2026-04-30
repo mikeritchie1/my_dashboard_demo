@@ -2,6 +2,7 @@
 const NEW_CARDS_PATH = "../data/one_piece/new_missing_cards.json";
 const RELEASES_PATH = "../data/release_radar/pahe_latest.json";
 const COMING_SOON_PATH = "../data/release_radar/coming_soon.json";
+const GAME_RELEASES_PATH = "../data/release_radar/game_releases.json";
 const WATCHLIST_PATH = "../data/media/watchlist.json";
 const SPECIALS_PATH = "../data/events/specials.json";
 const QUICKET_EVENTS_PATH = "../data/events/quicket_events.json";
@@ -69,6 +70,8 @@ const elements = {
   maxPrice: document.querySelector("#max-price"),
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
+  gameReleaseGrid: document.querySelector("#game-release-grid"),
+  gameComingSoonGrid: document.querySelector("#game-coming-soon-grid"),
   watchlistCurrent: document.querySelector("#watchlist-current"),
   watchlistHistory: document.querySelector("#watchlist-history"),
   watchlistHistorySummary: document.querySelector("#watchlist-history-summary"),
@@ -2302,9 +2305,98 @@ async function loadComingSoon() {
       throw new Error(`Could not load ${COMING_SOON_PATH}`);
     }
     const payload = await response.json();
-    renderPosters(elements.comingSoonGrid, payload.items || [], "No coming soon movies found.");
+    const items = Array.isArray(payload.items) ? [...payload.items] : [];
+    items.sort((left, right) => {
+      const leftDate = String(left?.release_date || "");
+      const rightDate = String(right?.release_date || "");
+      if (!leftDate && !rightDate) {
+        return 0;
+      }
+      if (!leftDate) {
+        return 1;
+      }
+      if (!rightDate) {
+        return -1;
+      }
+      return leftDate.localeCompare(rightDate);
+    });
+    renderPosters(elements.comingSoonGrid, items, "No coming soon movies found.");
   } catch (error) {
     elements.comingSoonGrid.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
+async function loadGameReleases() {
+  try {
+    const response = await fetch(GAME_RELEASES_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${GAME_RELEASES_PATH}`);
+    }
+    const payload = await response.json();
+    const allItems = Array.isArray(payload.items) ? [...payload.items] : [];
+    const newReleases = Array.isArray(payload.new_releases) ? [...payload.new_releases] : [];
+    const comingSoon = Array.isArray(payload.coming_soon) ? [...payload.coming_soon] : [];
+    const hasSplitBuckets = newReleases.length || comingSoon.length;
+
+    const sortByDateAsc = (items) => items.sort((left, right) => {
+      const leftDate = String(left?.release_date || "");
+      const rightDate = String(right?.release_date || "");
+      if (!leftDate && !rightDate) {
+        return 0;
+      }
+      if (!leftDate) {
+        return 1;
+      }
+      if (!rightDate) {
+        return -1;
+      }
+      return leftDate.localeCompare(rightDate);
+    });
+    const sortByDateDesc = (items) => items.sort((left, right) => {
+      const leftDate = String(left?.release_date || "");
+      const rightDate = String(right?.release_date || "");
+      if (!leftDate && !rightDate) {
+        return 0;
+      }
+      if (!leftDate) {
+        return 1;
+      }
+      if (!rightDate) {
+        return -1;
+      }
+      return rightDate.localeCompare(leftDate);
+    });
+
+    let releasedItems = [];
+    let upcomingItems = [];
+    if (hasSplitBuckets) {
+      releasedItems = sortByDateDesc(newReleases);
+      upcomingItems = sortByDateAsc(comingSoon);
+    } else {
+      sortByDateAsc(allItems);
+      const today = new Date();
+      for (const item of allItems) {
+        const rawDate = String(item?.release_date || "").trim();
+        if (!rawDate) {
+          upcomingItems.push(item);
+          continue;
+        }
+        const parsed = new Date(`${rawDate}T00:00:00`);
+        if (Number.isNaN(parsed.getTime()) || parsed > today) {
+          upcomingItems.push(item);
+        } else {
+          releasedItems.push(item);
+        }
+      }
+      sortByDateDesc(releasedItems);
+      sortByDateAsc(upcomingItems);
+    }
+
+    renderPosters(elements.gameReleaseGrid, releasedItems, "No new game releases found.");
+    renderPosters(elements.gameComingSoonGrid, upcomingItems, "No upcoming games found.");
+  } catch (error) {
+    elements.gameReleaseGrid.innerHTML = `<p class="empty">${error.message}</p>`;
+    elements.gameComingSoonGrid.innerHTML = `<p class="empty">${error.message}</p>`;
   }
 }
 
@@ -2554,6 +2646,7 @@ loadMetadata();
 loadWeather();
 loadReleases();
 loadComingSoon();
+loadGameReleases();
 loadWatchlist();
 loadSpecials();
 loadQuicketEvents();

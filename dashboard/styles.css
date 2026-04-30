@@ -1083,15 +1083,19 @@ td.card-number {
 }
 
 .poster-grid {
-  display: grid;
-  grid-template-columns: repeat(10, minmax(72px, 1fr));
+  display: flex;
+  flex-wrap: nowrap;
   gap: 8px;
   padding-top: 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-right: 4px;
 }
 
 .poster-card {
   position: relative;
   display: block;
+  flex: 0 0 110px;
   aspect-ratio: 110 / 153;
   overflow: hidden;
   background: #101828;

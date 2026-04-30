@@ -15,6 +15,8 @@ from env import get as env_get
 SOURCE_URL = env_get("SCRAPE_RELEASES_SOURCE_URL", "https://pahe.ink/")
 DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "release_radar"
 OUTPUT_FILE = DATA_DIR / "pahe_latest.json"
+FETCH_LIMIT = max(1, int(env_get("SCRAPE_RELEASES_FETCH_LIMIT", "10") or "10"))
+MAX_ITEMS = max(FETCH_LIMIT, int(env_get("SCRAPE_RELEASES_MAX_ITEMS", "120") or "120"))
 
 
 class PosterGridParser(HTMLParser):
@@ -76,10 +78,41 @@ def fetch_html(url: str) -> str:
         return response.read().decode("utf-8", errors="replace")
 
 
-def scrape_latest(limit: int = 10) -> list[dict[str, str]]:
+def scrape_latest(limit: int = FETCH_LIMIT) -> list[dict[str, str]]:
     parser = PosterGridParser()
     parser.feed(fetch_html(SOURCE_URL))
     return parser.items[:limit]
+
+
+def load_existing_items() -> list[dict[str, str]]:
+    if not OUTPUT_FILE.exists():
+        return []
+    try:
+        payload = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    items = payload.get("items", [])
+    return items if isinstance(items, list) else []
+
+
+def item_key(item: dict[str, str]) -> str:
+    url = str(item.get("url") or "").strip()
+    title = str(item.get("title") or "").strip()
+    return url or title
+
+
+def merge_items(new_items: list[dict[str, str]], existing_items: list[dict[str, str]], max_items: int) -> list[dict[str, str]]:
+    merged: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for item in [*new_items, *existing_items]:
+        key = item_key(item)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        merged.append(item)
+        if len(merged) >= max_items:
+            break
+    return merged
 
 
 def write_latest(items: list[dict[str, str]]) -> None:
@@ -92,9 +125,11 @@ def write_latest(items: list[dict[str, str]]) -> None:
 
 
 def main() -> int:
-    items = scrape_latest()
+    new_items = scrape_latest(FETCH_LIMIT)
+    existing_items = load_existing_items()
+    items = merge_items(new_items, existing_items, MAX_ITEMS)
     write_latest(items)
-    print(f"Wrote {len(items)} release radar item(s) to {OUTPUT_FILE}")
+    print(f"Wrote {len(items)} release radar item(s) to {OUTPUT_FILE} (fetched {len(new_items)} new candidates)")
     return 0
 
 
