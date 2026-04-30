@@ -127,7 +127,7 @@
         {
           "type": "movie",
           "title": "Predator: Badlands",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -157,7 +157,7 @@
         {
           "type": "movie",
           "title": "Marty Supreme",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -202,7 +202,7 @@
         {
           "type": "movie",
           "title": "Secret of NIMH",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -242,7 +242,7 @@
         {
           "type": "movie",
           "title": "Send Help",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -252,7 +252,7 @@
         {
           "type": "movie",
           "title": "The Naked Gun",
-          "loved": false
+          "loved": true
         },
         {
           "type": "series",
@@ -387,7 +387,7 @@
         {
           "type": "movie",
           "title": "Nosferatu",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -407,7 +407,7 @@
         {
           "type": "movie",
           "title": "Mad God",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -427,12 +427,12 @@
         {
           "type": "movie",
           "title": "Sinners",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
           "title": "The Wild Robot",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -452,7 +452,7 @@
         {
           "type": "movie",
           "title": "Kpop Demon Hunters",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -472,7 +472,7 @@
         {
           "type": "movie",
           "title": "Fired Up",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -692,7 +692,7 @@
         {
           "type": "movie",
           "title": "Apocalypse Now",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -722,7 +722,7 @@
         {
           "type": "movie",
           "title": "Arcadian",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -732,7 +732,7 @@
         {
           "type": "movie",
           "title": "Godzilla Minus One",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -762,12 +762,12 @@
         {
           "type": "movie",
           "title": "Happy Gilmore",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
           "title": "Water Boy",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -867,7 +867,7 @@
         {
           "type": "movie",
           "title": "Furiosa: A Mad Max Saga",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -887,7 +887,7 @@
         {
           "type": "movie",
           "title": "Watchmen",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -907,7 +907,7 @@
         {
           "type": "movie",
           "title": "Deadpool and Wolverine",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -927,7 +927,7 @@
         {
           "type": "movie",
           "title": "The Substance",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -942,7 +942,7 @@
         {
           "type": "movie",
           "title": "Smile 2",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1097,7 +1097,7 @@
         {
           "type": "movie",
           "title": "It Follows",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1107,7 +1107,7 @@
         {
           "type": "movie",
           "title": "Coherence",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1137,7 +1137,7 @@
         {
           "type": "movie",
           "title": "Gladiator",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1147,27 +1147,22 @@
         {
           "type": "movie",
           "title": "Nightcrawler",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
           "title": "The Nice Guys",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
           "title": "What We Do in the Shadows",
-          "loved": false
-        },
-        {
-          "type": "movie",
-          "title": "Nightcrawler",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
           "title": "Super Bad",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1177,7 +1172,7 @@
         {
           "type": "movie",
           "title": "Tropic Thunder",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1207,7 +1202,7 @@
         {
           "type": "movie",
           "title": "Interstellar",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1242,12 +1237,12 @@
         {
           "type": "movie",
           "title": "Snowpiercer",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
           "title": "Whiplash",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1287,7 +1282,7 @@
         {
           "type": "movie",
           "title": "Barbarian",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1302,7 +1297,7 @@
         {
           "type": "movie",
           "title": "Prey",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1317,12 +1312,12 @@
         {
           "type": "movie",
           "title": "Hereditary",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
           "title": "Midsommar",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1347,7 +1342,7 @@
         {
           "type": "movie",
           "title": "Jojo Rabbit",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1387,7 +1382,7 @@
         {
           "type": "movie",
           "title": "Akira",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1492,7 +1487,7 @@
         {
           "type": "movie",
           "title": "Talk To Me",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1632,7 +1627,7 @@
         {
           "type": "movie",
           "title": "What We Do In The Shadows",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1657,7 +1652,7 @@
         {
           "type": "movie",
           "title": "The Big Lebowski",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1687,7 +1682,7 @@
         {
           "type": "movie",
           "title": "The Boat that Rocked",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1697,7 +1692,7 @@
         {
           "type": "movie",
           "title": "Smile",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1712,7 +1707,7 @@
         {
           "type": "movie",
           "title": "A Quiet Place",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -1722,7 +1717,7 @@
         {
           "type": "movie",
           "title": "Dead Pool",
-          "loved": false
+          "loved": true
         },
         {
           "type": "movie",
@@ -4229,6 +4224,59 @@
       "poster_url": "https://image.tmdb.org/t/p/w342/xDiXDfZwC6XYC6fxHI1jl3A3Ill.jpg",
       "directors": []
     },
+    "anime_series:cyberpunk edgerunners": {
+      "title": "Cyberpunk: Edgerunners",
+      "media_type": "anime_series",
+      "runtime_minutes": 25,
+      "genres": [
+        "Animation",
+        "Action & Adventure",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/tv/105248",
+      "description": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
+      "poster_url": "https://image.tmdb.org/t/p/w342/lqcDVZ8pyk08AVftMBildDR3QUK.jpg",
+      "tmdb_id": 105248,
+      "release_date": "2022-09-13",
+      "directors": [
+        "Rafał Jaki"
+      ],
+      "actors": [
+        "KENN"
+      ],
+      "number_of_seasons": 2,
+      "rating": 8.5,
+      "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
+      "trailer_url": "https://www.youtube.com/watch?v=JtqIas3bYhg"
+    },
+    "anime_series:dan da dan": {
+      "title": "Dan Da Dan",
+      "media_type": "anime_series",
+      "runtime_minutes": null,
+      "genres": [
+        "Animation",
+        "Action & Adventure",
+        "Comedy",
+        "Sci-Fi & Fantasy"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/tv/240411",
+      "description": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
+      "poster_url": "https://image.tmdb.org/t/p/w342/6qfZAOEUFIrbUH3JvePclx1nXzz.jpg",
+      "tmdb_id": 240411,
+      "release_date": "2024-10-04",
+      "directors": [],
+      "actors": [
+        "Shion Wakayama",
+        "Natsuki Hanae",
+        "Mayumi Tanaka",
+        "Nana Mizuki"
+      ],
+      "number_of_seasons": 1,
+      "rating": 8.5,
+      "overview": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
+      "trailer_url": "https://www.youtube.com/watch?v=pHLEyqsxZV8"
+    },
     "anime_series:death note": {
       "title": "Death Note",
       "media_type": "anime_series",
@@ -4410,6 +4458,27 @@
       "poster_url": "https://image.tmdb.org/t/p/w342/eobAuhCJA8oRp814V67WhezVXtQ.jpg",
       "directors": []
     },
+    "anime_series:jujutsu kaisen": {
+      "title": "Jujutsu Kaisen",
+      "media_type": "anime_series",
+      "runtime_minutes": 24,
+      "genres": [
+        "Animation",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/tv/95479",
+      "description": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
+      "poster_url": "https://image.tmdb.org/t/p/w342/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
+      "tmdb_id": 95479,
+      "release_date": "2020-10-03",
+      "directors": [],
+      "actors": [],
+      "number_of_seasons": 1,
+      "rating": 8.6,
+      "overview": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
+      "trailer_url": "https://www.youtube.com/watch?v=VpO6APNqY1c"
+    },
     "anime_series:mob psycho 100": {
       "title": "Mob Psycho 100?",
       "media_type": "anime_series",
@@ -4580,6 +4649,30 @@
         "Steven Maeda"
       ]
     },
+    "anime_series:one punch man": {
+      "title": "One Punch Man",
+      "media_type": "anime_series",
+      "runtime_minutes": 24,
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/tv/63926",
+      "description": "Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he’s become so strong that he’s practically invincible. In fact, he’s too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore. With his passion for being a hero lost along with his hair, yet still faced with new enemies every day, how much longer can he keep it going?",
+      "poster_url": "https://image.tmdb.org/t/p/w342/dT10AxJIXVvRwFAew4tt2RhzJrD.jpg",
+      "tmdb_id": 63926,
+      "release_date": "2015-10-05",
+      "directors": [],
+      "actors": [
+        "Makoto Furukawa"
+      ],
+      "number_of_seasons": 3,
+      "rating": 8.4,
+      "overview": "Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he’s become so strong that he’s practically invincible. In fact, he’s too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore. With his passion for being a hero lost along with his hair, yet still faced with new enemies every day, how much longer can he keep it going?",
+      "trailer_url": "https://www.youtube.com/watch?v=2JAElThbKrI"
+    },
     "anime_series:orb on the movements of the earth": {
       "title": "Orb: On the Movements of the Earth",
       "media_type": "anime_series",
@@ -4599,6 +4692,23 @@
       "number_of_seasons": 1,
       "poster_url": "https://image.tmdb.org/t/p/w342/crV1eBtpI5F4nlMwzrBrh4zZuFV.jpg",
       "directors": []
+    },
+    "anime_series:solo levelling": {
+      "title": "Solo Levelling",
+      "media_type": "anime_series",
+      "runtime_minutes": null,
+      "genres": null,
+      "tmdb_url": null,
+      "description": null,
+      "poster_url": null,
+      "tmdb_id": null,
+      "release_date": null,
+      "directors": null,
+      "actors": null,
+      "number_of_seasons": null,
+      "rating": null,
+      "overview": null,
+      "trailer_url": null
     },
     "anime_series:steins gate": {
       "title": "Steins Gate",
@@ -4659,6 +4769,37 @@
       "number_of_seasons": 4,
       "poster_url": "https://image.tmdb.org/t/p/w342/9m8bFIXPg26taNrFSXGwEORVACD.jpg",
       "directors": []
+    },
+    "anime_series:the promised neverland": {
+      "title": "The Promised Neverland",
+      "media_type": "anime_series",
+      "runtime_minutes": 23,
+      "genres": [
+        "Animation",
+        "Drama",
+        "Mystery",
+        "Sci-Fi & Fantasy"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/tv/83097",
+      "description": "Emma, Norman and Ray are the brightest kids at the Grace Field House orphanage. And under the care of the woman they refer to as “Mom,” all the kids have enjoyed a comfortable life. Good food, clean clothes and the perfect environment to learn—what more could an orphan ask for? One day, though, Emma and Norman uncover the dark truth of the outside world they are forbidden from seeing.",
+      "poster_url": "https://image.tmdb.org/t/p/w342/oBgRCpAbtMpk1v8wfdsIph7lPQE.jpg",
+      "tmdb_id": 83097,
+      "release_date": "2019-01-11",
+      "directors": [],
+      "actors": [
+        "Sumire Morohoshi",
+        "Mariya Ise",
+        "Shinei Ueki",
+        "Erisa Kuon",
+        "Lynn",
+        "Shizuka Ishigami",
+        "Ai Kayano",
+        "Mari Hino"
+      ],
+      "number_of_seasons": 2,
+      "rating": 8.3,
+      "overview": "Emma, Norman and Ray are the brightest kids at the Grace Field House orphanage. And under the care of the woman they refer to as “Mom,” all the kids have enjoyed a comfortable life. Good food, clean clothes and the perfect environment to learn—what more could an orphan ask for? One day, though, Emma and Norman uncover the dark truth of the outside world they are forbidden from seeing.",
+      "trailer_url": "https://www.youtube.com/watch?v=CV0p9X8878k"
     },
     "anime_series:tokyo ghoul": {
       "title": "Tokyo Ghoul",
@@ -8162,7 +8303,8 @@
         "Stanley Kubrick"
       ],
       "runtime_minutes": 137,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:a quiet place": {
       "title": "A Quiet Place",
@@ -8192,7 +8334,8 @@
         "John Krasinski"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:a quiet place 2": {
       "title": "A Quiet Place 2",
@@ -8223,7 +8366,8 @@
         "John Krasinski"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:a quiet place day one": {
       "title": "A Quiet Place: Day One",
@@ -8254,7 +8398,8 @@
         "Michael Sarnoski"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:a star is born": {
       "title": "A Star is Born",
@@ -8285,7 +8430,8 @@
         "Bradley Cooper"
       ],
       "runtime_minutes": 136,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:abigail": {
       "title": "Abigail",
@@ -8316,7 +8462,8 @@
         "Matt Bettinelli-Olpin"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:air": {
       "title": "Air",
@@ -8346,7 +8493,8 @@
         "Ben Affleck"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:akira": {
       "title": "Akira",
@@ -8377,7 +8525,8 @@
         "Katsuhiro Otomo"
       ],
       "runtime_minutes": 124,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:alien romulus": {
       "title": "Alien: Romulus",
@@ -8407,7 +8556,8 @@
         "Fede Álvarez"
       ],
       "runtime_minutes": 119,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:all quiet on the western front": {
       "title": "All Quiet on the Western Front",
@@ -8437,7 +8587,8 @@
         "Edward Berger"
       ],
       "runtime_minutes": 147,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:am i racist": {
       "title": "Am I Racist?",
@@ -8467,7 +8618,8 @@
         "Justin Folk"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:american made": {
       "title": "American Made",
@@ -8498,7 +8650,8 @@
         "Doug Liman"
       ],
       "runtime_minutes": 115,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:animal farm": {
       "title": "Animal Farm",
@@ -8530,7 +8683,8 @@
         "Andy Serkis"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:annihilation": {
       "title": "Annihilation",
@@ -8560,7 +8714,8 @@
         "Alex Garland"
       ],
       "runtime_minutes": 115,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:apocalypse now": {
       "title": "Apocalypse Now",
@@ -8590,7 +8745,8 @@
         "Francis Ford Coppola"
       ],
       "runtime_minutes": 147,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:arcadian": {
       "title": "Arcadian",
@@ -8621,7 +8777,8 @@
         "Benjamin Brewer"
       ],
       "runtime_minutes": 92,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:arrival": {
       "title": "Arrival",
@@ -8652,7 +8809,8 @@
         "Denis Villeneuve"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:avatar 3 fire and ash": {
       "title": "Avatar 3: Fire and Ash",
@@ -8683,7 +8841,8 @@
         "James Cameron"
       ],
       "runtime_minutes": 198,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:barbarian": {
       "title": "Barbarian",
@@ -8713,7 +8872,8 @@
         "Zach Cregger"
       ],
       "runtime_minutes": 103,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:beau is afraid": {
       "title": "Beau is Afraid",
@@ -8744,7 +8904,8 @@
         "Ari Aster"
       ],
       "runtime_minutes": 179,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:beavis and butthead do america": {
       "title": "Beavis and Butthead do America",
@@ -8777,7 +8938,8 @@
         "Mike Judge"
       ],
       "runtime_minutes": 81,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:beavis and butthead do the universe": {
       "title": "Beavis and Butthead do the Universe",
@@ -8810,7 +8972,8 @@
         "John Rice"
       ],
       "runtime_minutes": 86,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:beetlejuice": {
       "title": "Beetlejuice",
@@ -8841,7 +9004,8 @@
         "Tim Burton"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:beetlejuice beetlejuice": {
       "title": "Beetlejuice Beetlejuice",
@@ -8872,7 +9036,8 @@
         "Tim Burton"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:better man": {
       "title": "Better Man",
@@ -8902,7 +9067,8 @@
         "Michael Gracey"
       ],
       "runtime_minutes": 135,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:blackberry": {
       "title": "Blackberry",
@@ -8933,7 +9099,8 @@
         "Matt Johnson"
       ],
       "runtime_minutes": 120,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:blade runner 2049": {
       "title": "Blade Runner 2049",
@@ -8963,7 +9130,8 @@
         "Denis Villeneuve"
       ],
       "runtime_minutes": 164,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:bodies bodies bodies": {
       "title": "Bodies Bodies Bodies",
@@ -8995,7 +9163,8 @@
         "Halina Reijn"
       ],
       "runtime_minutes": 94,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:boy kills world": {
       "title": "Boy Kills World",
@@ -9026,7 +9195,8 @@
         "Moritz Mohr"
       ],
       "runtime_minutes": 111,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:bring her back": {
       "title": "Bring Her Back",
@@ -9056,7 +9226,8 @@
         "Danny Philippou"
       ],
       "runtime_minutes": 104,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:bugonia": {
       "title": "Bugonia",
@@ -9087,7 +9258,8 @@
         "Yorgos Lanthimos"
       ],
       "runtime_minutes": 119,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:burn after reading": {
       "title": "Burn After Reading",
@@ -9118,7 +9290,8 @@
         "Joel Coen"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:caught stealing": {
       "title": "Caught Stealing",
@@ -9149,7 +9322,8 @@
         "Darren Aronofsky"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:chip n dale rescue rangers": {
       "title": "Chip ’n Dale: Rescue Rangers",
@@ -9182,7 +9356,8 @@
         "Akiva Schaffer"
       ],
       "runtime_minutes": 99,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:civil war": {
       "title": "Civil War",
@@ -9213,7 +9388,8 @@
         "Alex Garland"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:climax": {
       "title": "Climax",
@@ -9244,7 +9420,8 @@
         "Gaspar Noé"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:coherence": {
       "title": "Coherence",
@@ -9274,7 +9451,8 @@
         "James Ward Byrkit"
       ],
       "runtime_minutes": 89,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:companion": {
       "title": "Companion",
@@ -9305,7 +9483,8 @@
         "Drew Hancock"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:conclave": {
       "title": "Conclave",
@@ -9335,7 +9514,8 @@
         "Edward Berger"
       ],
       "runtime_minutes": 120,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:cool world": {
       "title": "Cool World",
@@ -9366,7 +9546,8 @@
         "Ralph Bakshi"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:creed": {
       "title": "Creed",
@@ -9395,7 +9576,8 @@
         "Ryan Coogler"
       ],
       "runtime_minutes": 133,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:crimson peak": {
       "title": "Crimson Peak",
@@ -9427,7 +9609,8 @@
         "Guillermo del Toro"
       ],
       "runtime_minutes": 119,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:days later": {
       "title": "Days Later",
@@ -9458,7 +9641,8 @@
         "Danny Boyle"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dead pool": {
       "title": "Dead Pool",
@@ -9489,7 +9673,8 @@
         "Buddy Van Horn"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dead pool 2": {
       "title": "Dead Pool 2",
@@ -9518,7 +9703,8 @@
         "Gary Whitson"
       ],
       "runtime_minutes": 76,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:deadpool and wolverine": {
       "title": "Deadpool and Wolverine",
@@ -9549,7 +9735,8 @@
         "Shawn Levy"
       ],
       "runtime_minutes": 128,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:die hard": {
       "title": "Die Hard",
@@ -9579,7 +9766,8 @@
         "John McTiernan"
       ],
       "runtime_minutes": 132,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:die hard 2": {
       "title": "Die Hard 2",
@@ -9609,7 +9797,8 @@
         "Renny Harlin"
       ],
       "runtime_minutes": 124,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:die hard 3": {
       "title": "Die Hard 3",
@@ -9640,7 +9829,8 @@
         "Jim Wynorski"
       ],
       "runtime_minutes": 84,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:die hard 4": {
       "title": "Die Hard 4",
@@ -9670,7 +9860,8 @@
         "Len Wiseman"
       ],
       "runtime_minutes": 128,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dogma": {
       "title": "Dogma",
@@ -9701,7 +9892,8 @@
         "Kevin Smith"
       ],
       "runtime_minutes": 130,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dream scenario": {
       "title": "Dream Scenario",
@@ -9731,7 +9923,8 @@
         "Kristoffer Borgli"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:drive": {
       "title": "Drive",
@@ -9762,7 +9955,8 @@
         "Nicolas Winding Refn"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dune 2": {
       "title": "Dune 2",
@@ -9792,7 +9986,8 @@
         "Denis Villeneuve"
       ],
       "runtime_minutes": 167,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dungeons and dragons honor among thieves": {
       "title": "Dungeons and Dragons: Honor Among Thieves",
@@ -9824,7 +10019,8 @@
         "John Francis Daley"
       ],
       "runtime_minutes": 134,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:edward scissorhands": {
       "title": "Edward Scissorhands",
@@ -9855,7 +10051,8 @@
         "Tim Burton"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:eileen": {
       "title": "Eileen",
@@ -9885,7 +10082,8 @@
         "William Oldroyd"
       ],
       "runtime_minutes": 98,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:el camino a breaking bad movie": {
       "title": "El Camino: A Breaking Bad Movie",
@@ -9916,7 +10114,8 @@
         "Vince Gilligan"
       ],
       "runtime_minutes": 123,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:escape from pretoria": {
       "title": "Escape From Pretoria",
@@ -9947,7 +10146,8 @@
         "Francis Annan"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:eternal sunshine of the spotless mind": {
       "title": "Eternal Sunshine of the Spotless Mind",
@@ -9978,7 +10178,8 @@
         "Michel Gondry"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:evil dead rise": {
       "title": "Evil Dead Rise",
@@ -10008,7 +10209,8 @@
         "Lee Cronin"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:ex machina": {
       "title": "Ex Machina",
@@ -10038,7 +10240,8 @@
         "Alex Garland"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:exam": {
       "title": "Exam",
@@ -10068,7 +10271,8 @@
         "Stuart Hazeldine"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:extraction": {
       "title": "Extraction",
@@ -10098,7 +10302,8 @@
         "Sam Hargrave"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:f1": {
       "title": "F1",
@@ -10128,7 +10333,8 @@
         "Joseph Kosinski"
       ],
       "runtime_minutes": 156,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:fackham hall": {
       "title": "Fackham Hall",
@@ -10157,7 +10363,8 @@
         "Jim O'Hanlon"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:fair play": {
       "title": "Fair Play",
@@ -10188,7 +10395,8 @@
         "Chloe Domont"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:fargo": {
       "title": "Fargo",
@@ -10219,7 +10427,8 @@
         "Joel Coen"
       ],
       "runtime_minutes": 98,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:fired up": {
       "title": "Fired Up",
@@ -10248,7 +10457,8 @@
         "Will Gluck"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:flow": {
       "title": "Flow",
@@ -10271,7 +10481,8 @@
         "Gints Zilbalodis"
       ],
       "runtime_minutes": 85,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:fokofpolisiekar forgive them for they know not what they do": {
       "title": "Fokofpolisiekar: Forgive Them for They Know Not What They Do",
@@ -10290,7 +10501,8 @@
       "description": "A South African documentary film about 5 young Afrikaans punk rockers that transformed a generation during a unique time in history - in one of the most reluctantly complex and evolving societies of the 21st century. The film follows the story of the band over 4 years as they forge a place for themselves and their fans in the new South Africa, in the process challenging the stigmas and expectations placed on them by their Afrikaner heritage, the church and tradition. Through the death threats and Christian backlash, they stood tall - sentries for the right to identity and freedom of thought. A story that transcends language and culture; and bravely faces a truth, that most would've left in darkness.",
       "directors": [],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:frankenstein": {
       "title": "Frankenstein",
@@ -10321,7 +10533,8 @@
         "Guillermo del Toro"
       ],
       "runtime_minutes": 150,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:freakier friday": {
       "title": "Freakier Friday",
@@ -10353,7 +10566,8 @@
         "Nisha Ganatra"
       ],
       "runtime_minutes": 110,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:friendship": {
       "title": "Friendship",
@@ -10382,7 +10596,8 @@
         "Andrew DeYoung"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:furiosa a mad max saga": {
       "title": "Furiosa: A Mad Max Saga",
@@ -10413,7 +10628,8 @@
         "George Miller"
       ],
       "runtime_minutes": 149,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:galaxy quest": {
       "title": "Galaxy Quest",
@@ -10444,7 +10660,8 @@
         "Dean Parisot"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:get hard": {
       "title": "Get Hard",
@@ -10473,7 +10690,8 @@
         "Etan Cohen"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:gladiator": {
       "title": "Gladiator",
@@ -10504,7 +10722,8 @@
         "Ridley Scott"
       ],
       "runtime_minutes": 155,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:gladiator 2": {
       "title": "Gladiator 2",
@@ -10535,7 +10754,8 @@
         "Ridley Scott"
       ],
       "runtime_minutes": 148,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:glass onion": {
       "title": "Glass Onion",
@@ -10566,7 +10786,8 @@
         "Rian Johnson"
       ],
       "runtime_minutes": 140,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:godzilla minus one": {
       "title": "Godzilla Minus One",
@@ -10597,7 +10818,8 @@
         "Takashi Yamazaki"
       ],
       "runtime_minutes": 125,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:good fortune": {
       "title": "Good Fortune",
@@ -10627,7 +10849,8 @@
         "Aziz Ansari"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:good luck have fun dont die": {
       "title": "Good Luck, Have Fun, Don’t Die",
@@ -10658,7 +10881,8 @@
         "Gore Verbinski"
       ],
       "runtime_minutes": 134,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:gran torismo": {
       "title": "Gran Torismo",
@@ -10674,7 +10898,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:green room": {
       "title": "Green Room",
@@ -10703,7 +10928,8 @@
         "François Truffaut"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:guardians of the galaxy vol 3": {
       "title": "Guardians of the Galaxy Vol. 3",
@@ -10734,7 +10960,8 @@
         "James Gunn"
       ],
       "runtime_minutes": 150,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:guillermo del toros pinocchio": {
       "title": "Guillermo del Toro's Pinocchio",
@@ -10767,7 +10994,8 @@
         "Guillermo del Toro"
       ],
       "runtime_minutes": 117,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:happy gilmore": {
       "title": "Happy Gilmore",
@@ -10796,7 +11024,8 @@
         "Dennis Dugan"
       ],
       "runtime_minutes": 92,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:happy gilmore 2": {
       "title": "Happy Gilmore 2",
@@ -10825,7 +11054,8 @@
         "Kyle Newacheck"
       ],
       "runtime_minutes": 118,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:her": {
       "title": "Her",
@@ -10856,7 +11086,8 @@
         "Spike Jonze"
       ],
       "runtime_minutes": 126,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:hereditary": {
       "title": "Hereditary",
@@ -10887,7 +11118,8 @@
         "Ari Aster"
       ],
       "runtime_minutes": 128,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:heretic": {
       "title": "Heretic",
@@ -10918,7 +11150,8 @@
         "Bryan Woods"
       ],
       "runtime_minutes": 111,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:hoppers": {
       "title": "Hoppers",
@@ -10951,7 +11184,8 @@
         "Daniel Chong"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:how to train your dragon live action": {
       "title": "How to Train Your Dragon Live Action",
@@ -10967,7 +11201,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:i like movies": {
       "title": "I Like Movies!",
@@ -10997,7 +11232,8 @@
         "Chandler Levack"
       ],
       "runtime_minutes": 99,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:i saw the tv glow": {
       "title": "I Saw The TV Glow",
@@ -11027,7 +11263,8 @@
         "Jane Schoenbrun"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:idiocracy": {
       "title": "Idiocracy",
@@ -11058,7 +11295,8 @@
         "Mike Judge"
       ],
       "runtime_minutes": 84,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:inside": {
       "title": "Inside",
@@ -11091,7 +11329,8 @@
         "Pete Docter"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:inside out": {
       "title": "Inside Out",
@@ -11124,7 +11363,8 @@
         "Pete Docter"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:inside out 2": {
       "title": "Inside Out 2",
@@ -11156,7 +11396,8 @@
         "Kelsey Mann"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:interstellar": {
       "title": "Interstellar",
@@ -11187,7 +11428,8 @@
         "Christopher Nolan"
       ],
       "runtime_minutes": 169,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:iron lung": {
       "title": "Iron Lung",
@@ -11218,7 +11460,8 @@
         "Mark Fischbach"
       ],
       "runtime_minutes": 125,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:it follows": {
       "title": "It Follows",
@@ -11248,7 +11491,8 @@
         "David Robert Mitchell"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:jacobs ladder": {
       "title": "Jacob’s Ladder",
@@ -11279,7 +11523,8 @@
         "Adrian Lyne"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:jojo rabbit": {
       "title": "Jojo Rabbit",
@@ -11310,7 +11555,8 @@
         "Taika Waititi"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:joker": {
       "title": "Joker",
@@ -11341,7 +11587,8 @@
         "Todd Phillips"
       ],
       "runtime_minutes": 122,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:joker folie à deux": {
       "title": "Joker: Folie à Deux",
@@ -11372,7 +11619,8 @@
         "Todd Phillips"
       ],
       "runtime_minutes": 138,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:jungle": {
       "title": "Jungle",
@@ -11403,7 +11651,8 @@
         "Greg McLean"
       ],
       "runtime_minutes": 115,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:kingdom of the planet of the apes": {
       "title": "Kingdom of the Planet of the Apes",
@@ -11434,7 +11683,8 @@
         "Wes Ball"
       ],
       "runtime_minutes": 145,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:knock at the cabin": {
       "title": "Knock at the Cabin",
@@ -11465,7 +11715,8 @@
         "M. Night Shyamalan"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:kpop demon hunters": {
       "title": "Kpop Demon Hunters",
@@ -11498,7 +11749,8 @@
         "Chris Appelhans"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:late night with the devil": {
       "title": "Late Night with the Devil",
@@ -11528,7 +11780,8 @@
         "Colin Cairnes"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:leave the world behind": {
       "title": "Leave The World Behind",
@@ -11559,7 +11812,8 @@
         "Sam Esmail"
       ],
       "runtime_minutes": 140,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:leon": {
       "title": "Leon",
@@ -11590,7 +11844,8 @@
         "Luc Besson"
       ],
       "runtime_minutes": 111,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:licorice pizza": {
       "title": "Licorice Pizza",
@@ -11621,7 +11876,8 @@
         "Paul Thomas Anderson"
       ],
       "runtime_minutes": 133,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:lilo and stitch live action": {
       "title": "Lilo and Stitch Live Action",
@@ -11637,7 +11893,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:longlegs": {
       "title": "Longlegs",
@@ -11668,7 +11925,8 @@
         "Osgood Perkins"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:lord of the flies": {
       "title": "Lord of the Flies",
@@ -11699,7 +11957,8 @@
         "Harry Hook"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:love lies bleeding": {
       "title": "Love Lies Bleeding",
@@ -11730,7 +11989,8 @@
         "Rose Glass"
       ],
       "runtime_minutes": 104,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mad god": {
       "title": "Mad God",
@@ -11762,7 +12022,8 @@
         "Phil Tippett"
       ],
       "runtime_minutes": 84,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mandy": {
       "title": "Mandy",
@@ -11793,7 +12054,8 @@
         "Panos Cosmatos"
       ],
       "runtime_minutes": 122,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:marty supreme": {
       "title": "Marty Supreme",
@@ -11823,7 +12085,8 @@
         "Josh Safdie"
       ],
       "runtime_minutes": 150,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:maxxxine": {
       "title": "MaXXXine",
@@ -11853,7 +12116,8 @@
         "Ti West"
       ],
       "runtime_minutes": 103,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mean creek": {
       "title": "Mean Creek",
@@ -11883,7 +12147,8 @@
         "Jacob Aaron Estes"
       ],
       "runtime_minutes": 90,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mean girls": {
       "title": "Mean Girls",
@@ -11913,7 +12178,8 @@
         "Mark Waters"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:memories": {
       "title": "Memories",
@@ -11946,7 +12212,8 @@
         "Tensai Okamura"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mickey 17": {
       "title": "Mickey 17",
@@ -11977,7 +12244,8 @@
         "Bong Joon Ho"
       ],
       "runtime_minutes": 137,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:midsommar": {
       "title": "Midsommar",
@@ -12008,7 +12276,8 @@
         "Ari Aster"
       ],
       "runtime_minutes": 147,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:monkey man": {
       "title": "Monkey Man",
@@ -12038,7 +12307,8 @@
         "Dev Patel"
       ],
       "runtime_minutes": 122,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mother": {
       "title": "Mother!",
@@ -12068,7 +12338,8 @@
         "Darren Aronofsky"
       ],
       "runtime_minutes": 121,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mr monks last case a monk movie": {
       "title": "Mr. Monk's Last Case: A Monk Movie",
@@ -12100,7 +12371,8 @@
         "Randall Zisk"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mystic river": {
       "title": "Mystic River",
@@ -12132,7 +12404,8 @@
         "Clint Eastwood"
       ],
       "runtime_minutes": 138,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:natural born killers": {
       "title": "Natural Born Killers",
@@ -12163,7 +12436,8 @@
         "Oliver Stone"
       ],
       "runtime_minutes": 119,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:next goal wins": {
       "title": "Next Goal Wins",
@@ -12193,7 +12467,8 @@
         "Taika Waititi"
       ],
       "runtime_minutes": 104,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:nightcrawler": {
       "title": "Nightcrawler",
@@ -12224,7 +12499,8 @@
         "Dan Gilroy"
       ],
       "runtime_minutes": 118,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:nights at freddies": {
       "title": "Nights at Freddies",
@@ -12240,7 +12516,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:nirvana the band the show the movie": {
       "title": "Nirvana The Band The Show The Movie",
@@ -12256,7 +12533,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:no one will save you": {
       "title": "No One Will Save You",
@@ -12286,7 +12564,8 @@
         "Brian Duffield"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:nobody 2": {
       "title": "Nobody 2",
@@ -12317,7 +12596,8 @@
         "Timo Tjahjanto"
       ],
       "runtime_minutes": 89,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:nosferatu": {
       "title": "Nosferatu",
@@ -12347,7 +12627,8 @@
         "Robert Eggers"
       ],
       "runtime_minutes": 133,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:now you see me now you dont": {
       "title": "Now You See Me: Now You Don't",
@@ -12377,7 +12658,8 @@
         "Ruben Fleischer"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:oddity": {
       "title": "Oddity",
@@ -12407,7 +12689,8 @@
         "Damian McCarthy"
       ],
       "runtime_minutes": 98,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:office space": {
       "title": "Office Space",
@@ -12436,7 +12719,8 @@
         "Mike Judge"
       ],
       "runtime_minutes": 90,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:one battle after another": {
       "title": "One Battle After Another",
@@ -12467,7 +12751,8 @@
         "Paul Thomas Anderson"
       ],
       "runtime_minutes": 162,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:one flew over the cuckoos nest": {
       "title": "One Flew Over The Cuckoo’s Nest",
@@ -12496,7 +12781,8 @@
         "Miloš Forman"
       ],
       "runtime_minutes": 133,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:palm springs": {
       "title": "Palm Springs",
@@ -12527,7 +12813,8 @@
         "Max Barbakow"
       ],
       "runtime_minutes": 90,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:passengers": {
       "title": "Passengers",
@@ -12558,7 +12845,8 @@
         "Morten Tyldum"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:peaky blinders the immortal man": {
       "title": "Peaky Blinders: The Immortal Man",
@@ -12588,7 +12876,8 @@
         "Tom Harper"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:pearl": {
       "title": "Pearl",
@@ -12618,7 +12907,8 @@
         "Ti West"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:perfume": {
       "title": "Perfume",
@@ -12648,7 +12938,8 @@
         "Michael Rymer"
       ],
       "runtime_minutes": 106,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:poor things": {
       "title": "Poor Things",
@@ -12679,7 +12970,8 @@
         "Yorgos Lanthimos"
       ],
       "runtime_minutes": 141,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:popstar never stop never stopping": {
       "title": "Popstar: Never Stop Never Stopping",
@@ -12710,7 +13002,8 @@
         "Jorma Taccone"
       ],
       "runtime_minutes": 86,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:predator badlands": {
       "title": "Predator: Badlands",
@@ -12741,7 +13034,8 @@
         "Dan Trachtenberg"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:predator killer of killers": {
       "title": "Predator: Killer of Killers",
@@ -12773,7 +13067,8 @@
         "Dan Trachtenberg"
       ],
       "runtime_minutes": 85,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:prey": {
       "title": "Prey",
@@ -12804,7 +13099,8 @@
         "Dan Trachtenberg"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:prisoners": {
       "title": "Prisoners",
@@ -12835,7 +13131,8 @@
         "Denis Villeneuve"
       ],
       "runtime_minutes": 153,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:project hail mary": {
       "title": "Project Hail Mary",
@@ -12866,7 +13163,8 @@
         "Christopher Miller"
       ],
       "runtime_minutes": 157,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:rango": {
       "title": "Rango",
@@ -12899,7 +13197,8 @@
         "Gore Verbinski"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:ready or not 2 here i come": {
       "title": "Ready Or Not 2: Here I Come",
@@ -12930,7 +13229,8 @@
         "Tyler Gillett"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:renfield": {
       "title": "Renfield",
@@ -12961,7 +13261,8 @@
         "Chris McKay"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:ricky stanicky": {
       "title": "Ricky Stanicky",
@@ -12990,7 +13291,8 @@
         "Peter Farrelly"
       ],
       "runtime_minutes": 114,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:road house": {
       "title": "Road House",
@@ -13021,7 +13323,8 @@
         "Doug Liman"
       ],
       "runtime_minutes": 121,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:romy and michelles high school reunion": {
       "title": "Romy and Michelle’s High School Reunion",
@@ -13050,7 +13353,8 @@
         "David Mirkin"
       ],
       "runtime_minutes": 92,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:roofman": {
       "title": "Roofman",
@@ -13081,7 +13385,8 @@
         "Derek Cianfrance"
       ],
       "runtime_minutes": 126,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:saint maud": {
       "title": "Saint Maud",
@@ -13112,7 +13417,8 @@
         "Rose Glass"
       ],
       "runtime_minutes": 85,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:saltburn": {
       "title": "Saltburn",
@@ -13143,7 +13449,8 @@
         "Emerald Fennell"
       ],
       "runtime_minutes": 131,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:scream 6": {
       "title": "Scream 6",
@@ -13175,7 +13482,8 @@
         "Matt Bettinelli-Olpin"
       ],
       "runtime_minutes": 123,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:secret of nimh": {
       "title": "Secret of NIMH",
@@ -13210,7 +13518,8 @@
         "Don Bluth"
       ],
       "runtime_minutes": 83,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:self reliance": {
       "title": "Self Reliance",
@@ -13240,7 +13549,8 @@
         "Jake Johnson"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:send help": {
       "title": "Send Help",
@@ -13271,7 +13581,8 @@
         "Sam Raimi"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:significant other": {
       "title": "Significant Other",
@@ -13304,7 +13615,8 @@
         "Dan Berk"
       ],
       "runtime_minutes": 85,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:sinners": {
       "title": "Sinners",
@@ -13335,7 +13647,8 @@
         "Ryan Coogler"
       ],
       "runtime_minutes": 138,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:sisu": {
       "title": "Sisu",
@@ -13366,7 +13679,8 @@
         "Jalmari Helander"
       ],
       "runtime_minutes": 89,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:smile": {
       "title": "Smile",
@@ -13396,7 +13710,8 @@
         "Parker Finn"
       ],
       "runtime_minutes": 115,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:smile 2": {
       "title": "Smile 2",
@@ -13427,7 +13742,8 @@
         "Parker Finn"
       ],
       "runtime_minutes": 127,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:snack shack": {
       "title": "Snack Shack",
@@ -13456,7 +13772,8 @@
         "Adam Rehmeier"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:snowpiercer": {
       "title": "Snowpiercer",
@@ -13487,7 +13804,8 @@
         "Bong Joon Ho"
       ],
       "runtime_minutes": 127,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:sonic the hedgehog 3": {
       "title": "Sonic the Hedgehog 3",
@@ -13519,7 +13837,8 @@
         "Jeff Fowler"
       ],
       "runtime_minutes": 110,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:space balls": {
       "title": "Space Balls",
@@ -13549,7 +13868,8 @@
         "Mel Brooks"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:speak no evil": {
       "title": "Speak No Evil",
@@ -13579,7 +13899,8 @@
         "James Watkins"
       ],
       "runtime_minutes": 110,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:speak no evil 2024": {
       "title": "Speak No Evil 2024",
@@ -13595,7 +13916,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:starship trooper": {
       "title": "Starship Trooper",
@@ -13627,7 +13949,8 @@
         "Paul Verhoeven"
       ],
       "runtime_minutes": 129,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:stopmotion": {
       "title": "Stopmotion",
@@ -13657,7 +13980,8 @@
         "Robert Morgan"
       ],
       "runtime_minutes": 94,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:straight outta compton": {
       "title": "Straight Outta Compton",
@@ -13688,7 +14012,8 @@
         "F. Gary Gray"
       ],
       "runtime_minutes": 147,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:strange darling": {
       "title": "Strange Darling",
@@ -13718,7 +14043,8 @@
         "JT Mollner"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:strays": {
       "title": "Strays",
@@ -13748,7 +14074,8 @@
         "Josh Greenbaum"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:super bad": {
       "title": "Super Bad",
@@ -13764,7 +14091,8 @@
       "description": "The film tells the story of a socially awkward boy",
       "directors": [],
       "runtime_minutes": 8,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:super mario galaxy": {
       "title": "Super Mario Galaxy",
@@ -13798,7 +14126,8 @@
         "Michael Jelenic"
       ],
       "runtime_minutes": 98,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:superman 2025": {
       "title": "Superman 2025",
@@ -13814,7 +14143,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:sweeney todd the demon barber of fleet street": {
       "title": "Sweeney Todd: The Demon Barber of Fleet Street",
@@ -13844,7 +14174,8 @@
         "Tim Burton"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:tag": {
       "title": "Tag",
@@ -13874,7 +14205,8 @@
         "Jeff Tomsic"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:talk to me": {
       "title": "Talk To Me",
@@ -13905,7 +14237,8 @@
         "Danny Philippou"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:taxi driver": {
       "title": "Taxi Driver",
@@ -13935,7 +14268,8 @@
         "Martin Scorsese"
       ],
       "runtime_minutes": 114,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:teenage mutant ninja turtles": {
       "title": "Teenage Mutant Ninja Turtles",
@@ -13967,7 +14301,8 @@
         "Jonathan Liebesman"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:thanksgiving": {
       "title": "Thanksgiving",
@@ -13997,7 +14332,8 @@
         "Eli Roth"
       ],
       "runtime_minutes": 106,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the age of disclosure": {
       "title": "The Age of Disclosure",
@@ -14026,7 +14362,8 @@
         "Dan Farah"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the artifice girl": {
       "title": "The Artifice Girl",
@@ -14057,7 +14394,8 @@
         "Franklin Ritch"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the assessment": {
       "title": "The Assessment",
@@ -14088,7 +14426,8 @@
         "Fleur Fortuné"
       ],
       "runtime_minutes": 114,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the babadook": {
       "title": "The Babadook",
@@ -14118,7 +14457,8 @@
         "Jennifer Kent"
       ],
       "runtime_minutes": 94,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the ballad of buster scruggs": {
       "title": "The Ballad of Buster Scruggs",
@@ -14150,7 +14490,8 @@
         "Ethan Coen"
       ],
       "runtime_minutes": 132,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the ballad of wallis island": {
       "title": "The Ballad of Wallis Island",
@@ -14181,7 +14522,8 @@
         "James Griffiths"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the beekeeper": {
       "title": "The Beekeeper",
@@ -14212,7 +14554,8 @@
         "David Ayer"
       ],
       "runtime_minutes": 106,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the big lebowski": {
       "title": "The Big Lebowski",
@@ -14242,7 +14585,8 @@
         "Joel Coen"
       ],
       "runtime_minutes": 117,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the bikeriders": {
       "title": "The Bikeriders",
@@ -14272,7 +14616,8 @@
         "Jeff Nichols"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the blackening": {
       "title": "The Blackening",
@@ -14302,7 +14647,8 @@
         "Tim Story"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the boat that rocked": {
       "title": "The Boat that Rocked",
@@ -14332,7 +14678,8 @@
         "Richard Curtis"
       ],
       "runtime_minutes": 135,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the boogeyman": {
       "title": "The Boogeyman",
@@ -14361,7 +14708,8 @@
         "Rob Savage"
       ],
       "runtime_minutes": 99,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the conjuring": {
       "title": "The Conjuring",
@@ -14391,7 +14739,8 @@
         "James Wan"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the conjuring 2": {
       "title": "The Conjuring 2",
@@ -14420,7 +14769,8 @@
         "James Wan"
       ],
       "runtime_minutes": 134,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the covenant": {
       "title": "The Covenant",
@@ -14452,7 +14802,8 @@
         "Renny Harlin"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the croods": {
       "title": "The Croods",
@@ -14485,7 +14836,8 @@
         "Chris Sanders"
       ],
       "runtime_minutes": 99,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the endless": {
       "title": "The Endless",
@@ -14517,7 +14869,8 @@
         "Justin Benson"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the equalizer 3": {
       "title": "The Equalizer 3",
@@ -14548,7 +14901,8 @@
         "Antoine Fuqua"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the fall guy": {
       "title": "The Fall Guy",
@@ -14579,7 +14933,8 @@
         "David Leitch"
       ],
       "runtime_minutes": 127,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the frog prince": {
       "title": "The Frog Prince",
@@ -14610,7 +14965,8 @@
         "Jackson Hunsicker"
       ],
       "runtime_minutes": 86,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the game": {
       "title": "The Game",
@@ -14642,7 +14998,8 @@
         "Morten Tyldum"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the godfather": {
       "title": "The Godfather",
@@ -14672,7 +15029,8 @@
         "Francis Ford Coppola"
       ],
       "runtime_minutes": 175,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the godfather 2": {
       "title": "The Godfather 2",
@@ -14702,7 +15060,8 @@
         "Francis Ford Coppola"
       ],
       "runtime_minutes": 202,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the gorge": {
       "title": "The Gorge",
@@ -14733,7 +15092,8 @@
         "Scott Derrickson"
       ],
       "runtime_minutes": 128,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the green mile": {
       "title": "The Green Mile",
@@ -14764,7 +15124,8 @@
         "Frank Darabont"
       ],
       "runtime_minutes": 189,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the happening": {
       "title": "The Happening",
@@ -14794,7 +15155,8 @@
         "M. Night Shyamalan"
       ],
       "runtime_minutes": 90,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the housemaid": {
       "title": "The Housemaid",
@@ -14824,7 +15186,8 @@
         "Paul Feig"
       ],
       "runtime_minutes": 131,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the invitation": {
       "title": "The Invitation",
@@ -14854,7 +15217,8 @@
         "Jessica M. Thompson"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the iron claw": {
       "title": "The Iron Claw",
@@ -14884,7 +15248,8 @@
         "Sean Durkin"
       ],
       "runtime_minutes": 132,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the killing of a sacred deer": {
       "title": "The Killing of a Sacred Deer",
@@ -14915,7 +15280,8 @@
         "Yorgos Lanthimos"
       ],
       "runtime_minutes": 121,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the last voyage of the demeter": {
       "title": "The Last Voyage of the Demeter",
@@ -14945,7 +15311,8 @@
         "André Øvredal"
       ],
       "runtime_minutes": 119,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the life of chuck": {
       "title": "The Life of Chuck",
@@ -14975,7 +15342,8 @@
         "Mike Flanagan"
       ],
       "runtime_minutes": 111,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the long walk": {
       "title": "The Long Walk",
@@ -15006,7 +15374,8 @@
         "Francis Lawrence"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the meg 2": {
       "title": "The Meg 2",
@@ -15037,7 +15406,8 @@
         "Ben Wheatley"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the menu": {
       "title": "The Menu",
@@ -15067,7 +15437,8 @@
         "Mark Mylod"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the ministry of ungentlemanly warfare": {
       "title": "The Ministry of Ungentlemanly Warfare",
@@ -15098,7 +15469,8 @@
         "Guy Ritchie"
       ],
       "runtime_minutes": 120,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the monkey": {
       "title": "The Monkey",
@@ -15128,7 +15500,8 @@
         "Osgood Perkins"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the naked gun": {
       "title": "The Naked Gun",
@@ -15159,7 +15532,8 @@
         "Akiva Schaffer"
       ],
       "runtime_minutes": 85,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the nice guys": {
       "title": "The Nice Guys",
@@ -15190,7 +15564,8 @@
         "Shane Black"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the northman": {
       "title": "The Northman",
@@ -15221,7 +15596,8 @@
         "Robert Eggers"
       ],
       "runtime_minutes": 137,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the phoenician scheme": {
       "title": "The Phoenician Scheme",
@@ -15252,7 +15628,8 @@
         "Wes Anderson"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the prestige": {
       "title": "The Prestige",
@@ -15283,7 +15660,8 @@
         "Christopher Nolan"
       ],
       "runtime_minutes": 130,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the retirement plan": {
       "title": "The Retirement Plan",
@@ -15314,7 +15692,8 @@
         "Tim Brown"
       ],
       "runtime_minutes": 103,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the revenant": {
       "title": "The Revenant",
@@ -15345,7 +15724,8 @@
         "Alejandro G. Iñárritu"
       ],
       "runtime_minutes": 157,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the running man": {
       "title": "The Running Man",
@@ -15376,7 +15756,8 @@
         "Edgar Wright"
       ],
       "runtime_minutes": 133,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the substance": {
       "title": "The Substance",
@@ -15407,7 +15788,8 @@
         "Coralie Fargeat"
       ],
       "runtime_minutes": 141,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the super mario bros": {
       "title": "The Super Mario Bros.",
@@ -15441,7 +15823,8 @@
         "Michael Jelenic"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the surfer": {
       "title": "The Surfer",
@@ -15471,7 +15854,8 @@
         "Lorcan Finnegan"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the thing": {
       "title": "The Thing",
@@ -15502,7 +15886,8 @@
         "John Carpenter"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the vast of night": {
       "title": "The Vast of Night",
@@ -15534,7 +15919,8 @@
         "Andrew Patterson"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the visit": {
       "title": "The Visit",
@@ -15564,7 +15950,8 @@
         "M. Night Shyamalan"
       ],
       "runtime_minutes": 94,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the wedding singer": {
       "title": "The Wedding Singer",
@@ -15594,7 +15981,8 @@
         "Frank Coraci"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the wild robot": {
       "title": "The Wild Robot",
@@ -15626,7 +16014,8 @@
         "Chris Sanders"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the witch": {
       "title": "The Witch",
@@ -15655,7 +16044,8 @@
         "Robert Eggers"
       ],
       "runtime_minutes": 92,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the wonderful world of henry sugar": {
       "title": "The Wonderful World of Henry Sugar",
@@ -15685,7 +16075,8 @@
         "Wes Anderson"
       ],
       "runtime_minutes": 39,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the worlds end": {
       "title": "The World’s End",
@@ -15716,7 +16107,8 @@
         "Gore Verbinski"
       ],
       "runtime_minutes": 169,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the zone of interest": {
       "title": "The Zone of Interest",
@@ -15747,7 +16139,8 @@
         "Jonathan Glazer"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:theatre camp": {
       "title": "Theatre Camp",
@@ -15769,7 +16162,8 @@
         "Didier malherbe"
       ],
       "runtime_minutes": 60,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:they cloned tyrone": {
       "title": "They Cloned Tyrone",
@@ -15800,7 +16194,8 @@
         "Juel Taylor"
       ],
       "runtime_minutes": 122,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:this place rules": {
       "title": "This Place Rules",
@@ -15828,7 +16223,8 @@
         "Andrew Callaghan"
       ],
       "runtime_minutes": 82,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:titane": {
       "title": "Titane",
@@ -15859,7 +16255,8 @@
         "Julia Ducournau"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:together": {
       "title": "Together",
@@ -15889,7 +16286,8 @@
         "Michael Shanks"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:top gun maverick": {
       "title": "Top Gun: Maverick",
@@ -15919,7 +16317,8 @@
         "Joseph Kosinski"
       ],
       "runtime_minutes": 131,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:totally killer": {
       "title": "Totally Killer",
@@ -15950,7 +16349,8 @@
         "Nahnatchka Khan"
       ],
       "runtime_minutes": 104,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:transformers one": {
       "title": "Transformers One",
@@ -15982,7 +16382,8 @@
         "Josh Cooley"
       ],
       "runtime_minutes": 104,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:triangle of sadness": {
       "title": "Triangle of Sadness",
@@ -16012,7 +16413,8 @@
         "Ruben Östlund"
       ],
       "runtime_minutes": 147,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:tropic thunder": {
       "title": "Tropic Thunder",
@@ -16044,7 +16446,8 @@
         "Ben Stiller"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:tusk": {
       "title": "Tusk",
@@ -16074,7 +16477,8 @@
         "Kevin Smith"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:under the silver lake": {
       "title": "Under The Silver Lake",
@@ -16105,7 +16509,8 @@
         "David Robert Mitchell"
       ],
       "runtime_minutes": 139,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:unfrosted": {
       "title": "Unfrosted",
@@ -16135,7 +16540,8 @@
         "Jerry Seinfeld"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:valley uprising": {
       "title": "Valley Uprising",
@@ -16168,7 +16574,8 @@
         "Peter Mortimer"
       ],
       "runtime_minutes": 99,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:vesper": {
       "title": "Vesper",
@@ -16201,7 +16608,8 @@
         "Bruno Samper"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:wake up dead man a knives out mystery": {
       "title": "Wake Up Dead Man: A Knives Out Mystery",
@@ -16232,7 +16640,8 @@
         "Rian Johnson"
       ],
       "runtime_minutes": 145,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:wallace and gromit vengeance most fowl": {
       "title": "Wallace and Gromit:  Vengeance Most Fowl",
@@ -16265,7 +16674,8 @@
         "Merlin Crossingham"
       ],
       "runtime_minutes": 79,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:war dogs": {
       "title": "War Dogs",
@@ -16296,7 +16706,8 @@
         "Todd Phillips"
       ],
       "runtime_minutes": 114,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:warfare": {
       "title": "Warfare",
@@ -16327,7 +16738,8 @@
         "Alex Garland"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:watchmen": {
       "title": "Watchmen",
@@ -16358,7 +16770,8 @@
         "Zack Snyder"
       ],
       "runtime_minutes": 163,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:water boy": {
       "title": "Water Boy",
@@ -16381,7 +16794,8 @@
         "Fayzullo Fayz"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:weapons": {
       "title": "Weapons",
@@ -16411,7 +16825,8 @@
         "Zach Cregger"
       ],
       "runtime_minutes": 129,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:what is a woman": {
       "title": "What is a Woman?",
@@ -16440,7 +16855,8 @@
         "Justin Folk"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:what we do in the shadows": {
       "title": "What We Do In The Shadows",
@@ -16471,7 +16887,8 @@
         "Jemaine Clement"
       ],
       "runtime_minutes": 86,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:when evil lurks": {
       "title": "When Evil Lurks",
@@ -16501,7 +16918,8 @@
         "Demián Rugna"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:whiplash": {
       "title": "Whiplash",
@@ -16532,7 +16950,8 @@
         "Damien Chazelle"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:wolfs": {
       "title": "Wolfs",
@@ -16562,7 +16981,8 @@
         "Jon Watts"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:woman of the hour": {
       "title": "Woman of the Hour",
@@ -16593,7 +17013,8 @@
         "Anna Kendrick"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:wonka": {
       "title": "Wonka",
@@ -16624,7 +17045,8 @@
         "Paul King"
       ],
       "runtime_minutes": 117,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:x": {
       "title": "X",
@@ -16655,7 +17077,8 @@
         "Louis Leterrier"
       ],
       "runtime_minutes": 142,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:years later": {
       "title": "Years Later",
@@ -16686,7 +17109,8 @@
         "Danny Boyle"
       ],
       "runtime_minutes": 115,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:years later the bone temple": {
       "title": "Years Later: The Bone Temple",
@@ -16717,7 +17141,8 @@
         "Nia DaCosta"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:yesterday": {
       "title": "Yesterday",
@@ -16749,7 +17174,8 @@
         "Danny Boyle"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:you wont be alone": {
       "title": "You Won't Be Alone",
@@ -16779,7 +17205,8 @@
         "Goran Stolevski"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:zodiac": {
       "title": "Zodiac",
@@ -16810,7 +17237,8 @@
         "David Fincher"
       ],
       "runtime_minutes": 157,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:zootopia 2": {
       "title": "Zootopia 2",
@@ -16844,7 +17272,8 @@
         "Byron Howard"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "mr monks last case a monk movie": {
       "title": "Mr. Monk's Last Case: A Monk Movie",
@@ -23528,152 +23957,6 @@
         "Byron Howard"
       ],
       "runtime_minutes": 108
-    },
-    "anime_series:cyberpunk edgerunners": {
-      "title": "Cyberpunk: Edgerunners",
-      "media_type": "anime_series",
-      "runtime_minutes": 25,
-      "genres": [
-        "Animation",
-        "Action & Adventure",
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
-      "tmdb_url": "https://www.themoviedb.org/tv/105248",
-      "description": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
-      "poster_url": "https://image.tmdb.org/t/p/w342/lqcDVZ8pyk08AVftMBildDR3QUK.jpg",
-      "tmdb_id": 105248,
-      "release_date": "2022-09-13",
-      "directors": [
-        "Rafał Jaki"
-      ],
-      "actors": [
-        "KENN"
-      ],
-      "number_of_seasons": 2,
-      "rating": 8.5,
-      "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
-      "trailer_url": "https://www.youtube.com/watch?v=JtqIas3bYhg"
-    },
-    "anime_series:dan da dan": {
-      "title": "Dan Da Dan",
-      "media_type": "anime_series",
-      "runtime_minutes": null,
-      "genres": [
-        "Animation",
-        "Action & Adventure",
-        "Comedy",
-        "Sci-Fi & Fantasy"
-      ],
-      "tmdb_url": "https://www.themoviedb.org/tv/240411",
-      "description": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
-      "poster_url": "https://image.tmdb.org/t/p/w342/6qfZAOEUFIrbUH3JvePclx1nXzz.jpg",
-      "tmdb_id": 240411,
-      "release_date": "2024-10-04",
-      "directors": [],
-      "actors": [
-        "Shion Wakayama",
-        "Natsuki Hanae",
-        "Mayumi Tanaka",
-        "Nana Mizuki"
-      ],
-      "number_of_seasons": 1,
-      "rating": 8.5,
-      "overview": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
-      "trailer_url": "https://www.youtube.com/watch?v=pHLEyqsxZV8"
-    },
-    "anime_series:jujutsu kaisen": {
-      "title": "Jujutsu Kaisen",
-      "media_type": "anime_series",
-      "runtime_minutes": 24,
-      "genres": [
-        "Animation",
-        "Action & Adventure",
-        "Sci-Fi & Fantasy"
-      ],
-      "tmdb_url": "https://www.themoviedb.org/tv/95479",
-      "description": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
-      "poster_url": "https://image.tmdb.org/t/p/w342/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
-      "tmdb_id": 95479,
-      "release_date": "2020-10-03",
-      "directors": [],
-      "actors": [],
-      "number_of_seasons": 1,
-      "rating": 8.6,
-      "overview": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
-      "trailer_url": "https://www.youtube.com/watch?v=VpO6APNqY1c"
-    },
-    "anime_series:one punch man": {
-      "title": "One Punch Man",
-      "media_type": "anime_series",
-      "runtime_minutes": 24,
-      "genres": [
-        "Animation",
-        "Comedy",
-        "Action & Adventure",
-        "Sci-Fi & Fantasy"
-      ],
-      "tmdb_url": "https://www.themoviedb.org/tv/63926",
-      "description": "Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he’s become so strong that he’s practically invincible. In fact, he’s too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore. With his passion for being a hero lost along with his hair, yet still faced with new enemies every day, how much longer can he keep it going?",
-      "poster_url": "https://image.tmdb.org/t/p/w342/dT10AxJIXVvRwFAew4tt2RhzJrD.jpg",
-      "tmdb_id": 63926,
-      "release_date": "2015-10-05",
-      "directors": [],
-      "actors": [
-        "Makoto Furukawa"
-      ],
-      "number_of_seasons": 3,
-      "rating": 8.4,
-      "overview": "Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he’s become so strong that he’s practically invincible. In fact, he’s too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore. With his passion for being a hero lost along with his hair, yet still faced with new enemies every day, how much longer can he keep it going?",
-      "trailer_url": "https://www.youtube.com/watch?v=2JAElThbKrI"
-    },
-    "anime_series:solo levelling": {
-      "title": "Solo Levelling",
-      "media_type": "anime_series",
-      "runtime_minutes": null,
-      "genres": null,
-      "tmdb_url": null,
-      "description": null,
-      "poster_url": null,
-      "tmdb_id": null,
-      "release_date": null,
-      "directors": null,
-      "actors": null,
-      "number_of_seasons": null,
-      "rating": null,
-      "overview": null,
-      "trailer_url": null
-    },
-    "anime_series:the promised neverland": {
-      "title": "The Promised Neverland",
-      "media_type": "anime_series",
-      "runtime_minutes": 23,
-      "genres": [
-        "Animation",
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
-      "tmdb_url": "https://www.themoviedb.org/tv/83097",
-      "description": "Emma, Norman and Ray are the brightest kids at the Grace Field House orphanage. And under the care of the woman they refer to as “Mom,” all the kids have enjoyed a comfortable life. Good food, clean clothes and the perfect environment to learn—what more could an orphan ask for? One day, though, Emma and Norman uncover the dark truth of the outside world they are forbidden from seeing.",
-      "poster_url": "https://image.tmdb.org/t/p/w342/oBgRCpAbtMpk1v8wfdsIph7lPQE.jpg",
-      "tmdb_id": 83097,
-      "release_date": "2019-01-11",
-      "directors": [],
-      "actors": [
-        "Sumire Morohoshi",
-        "Mariya Ise",
-        "Shinei Ueki",
-        "Erisa Kuon",
-        "Lynn",
-        "Shizuka Ishigami",
-        "Ai Kayano",
-        "Mari Hino"
-      ],
-      "number_of_seasons": 2,
-      "rating": 8.3,
-      "overview": "Emma, Norman and Ray are the brightest kids at the Grace Field House orphanage. And under the care of the woman they refer to as “Mom,” all the kids have enjoyed a comfortable life. Good food, clean clothes and the perfect environment to learn—what more could an orphan ask for? One day, though, Emma and Norman uncover the dark truth of the outside world they are forbidden from seeing.",
-      "trailer_url": "https://www.youtube.com/watch?v=CV0p9X8878k"
     }
   },
   "watchlist_details": {
@@ -25652,6 +25935,59 @@
       "poster_url": "https://image.tmdb.org/t/p/w342/xDiXDfZwC6XYC6fxHI1jl3A3Ill.jpg",
       "directors": []
     },
+    "anime_series:cyberpunk edgerunners": {
+      "title": "Cyberpunk: Edgerunners",
+      "media_type": "anime_series",
+      "runtime_minutes": 25,
+      "genres": [
+        "Animation",
+        "Action & Adventure",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/tv/105248",
+      "description": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
+      "poster_url": "https://image.tmdb.org/t/p/w342/lqcDVZ8pyk08AVftMBildDR3QUK.jpg",
+      "tmdb_id": 105248,
+      "release_date": "2022-09-13",
+      "directors": [
+        "Rafał Jaki"
+      ],
+      "actors": [
+        "KENN"
+      ],
+      "number_of_seasons": 2,
+      "rating": 8.5,
+      "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
+      "trailer_url": "https://www.youtube.com/watch?v=JtqIas3bYhg"
+    },
+    "anime_series:dan da dan": {
+      "title": "Dan Da Dan",
+      "media_type": "anime_series",
+      "runtime_minutes": null,
+      "genres": [
+        "Animation",
+        "Action & Adventure",
+        "Comedy",
+        "Sci-Fi & Fantasy"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/tv/240411",
+      "description": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
+      "poster_url": "https://image.tmdb.org/t/p/w342/6qfZAOEUFIrbUH3JvePclx1nXzz.jpg",
+      "tmdb_id": 240411,
+      "release_date": "2024-10-04",
+      "directors": [],
+      "actors": [
+        "Shion Wakayama",
+        "Natsuki Hanae",
+        "Mayumi Tanaka",
+        "Nana Mizuki"
+      ],
+      "number_of_seasons": 1,
+      "rating": 8.5,
+      "overview": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
+      "trailer_url": "https://www.youtube.com/watch?v=pHLEyqsxZV8"
+    },
     "anime_series:death note": {
       "title": "Death Note",
       "media_type": "anime_series",
@@ -25833,6 +26169,27 @@
       "poster_url": "https://image.tmdb.org/t/p/w342/eobAuhCJA8oRp814V67WhezVXtQ.jpg",
       "directors": []
     },
+    "anime_series:jujutsu kaisen": {
+      "title": "Jujutsu Kaisen",
+      "media_type": "anime_series",
+      "runtime_minutes": 24,
+      "genres": [
+        "Animation",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/tv/95479",
+      "description": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
+      "poster_url": "https://image.tmdb.org/t/p/w342/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
+      "tmdb_id": 95479,
+      "release_date": "2020-10-03",
+      "directors": [],
+      "actors": [],
+      "number_of_seasons": 1,
+      "rating": 8.6,
+      "overview": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
+      "trailer_url": "https://www.youtube.com/watch?v=VpO6APNqY1c"
+    },
     "anime_series:mob psycho 100": {
       "title": "Mob Psycho 100?",
       "media_type": "anime_series",
@@ -26003,6 +26360,30 @@
         "Steven Maeda"
       ]
     },
+    "anime_series:one punch man": {
+      "title": "One Punch Man",
+      "media_type": "anime_series",
+      "runtime_minutes": 24,
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/tv/63926",
+      "description": "Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he’s become so strong that he’s practically invincible. In fact, he’s too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore. With his passion for being a hero lost along with his hair, yet still faced with new enemies every day, how much longer can he keep it going?",
+      "poster_url": "https://image.tmdb.org/t/p/w342/dT10AxJIXVvRwFAew4tt2RhzJrD.jpg",
+      "tmdb_id": 63926,
+      "release_date": "2015-10-05",
+      "directors": [],
+      "actors": [
+        "Makoto Furukawa"
+      ],
+      "number_of_seasons": 3,
+      "rating": 8.4,
+      "overview": "Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he’s become so strong that he’s practically invincible. In fact, he’s too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore. With his passion for being a hero lost along with his hair, yet still faced with new enemies every day, how much longer can he keep it going?",
+      "trailer_url": "https://www.youtube.com/watch?v=2JAElThbKrI"
+    },
     "anime_series:orb on the movements of the earth": {
       "title": "Orb: On the Movements of the Earth",
       "media_type": "anime_series",
@@ -26022,6 +26403,23 @@
       "number_of_seasons": 1,
       "poster_url": "https://image.tmdb.org/t/p/w342/crV1eBtpI5F4nlMwzrBrh4zZuFV.jpg",
       "directors": []
+    },
+    "anime_series:solo levelling": {
+      "title": "Solo Levelling",
+      "media_type": "anime_series",
+      "runtime_minutes": null,
+      "genres": null,
+      "tmdb_url": null,
+      "description": null,
+      "poster_url": null,
+      "tmdb_id": null,
+      "release_date": null,
+      "directors": null,
+      "actors": null,
+      "number_of_seasons": null,
+      "rating": null,
+      "overview": null,
+      "trailer_url": null
     },
     "anime_series:steins gate": {
       "title": "Steins Gate",
@@ -26082,6 +26480,37 @@
       "number_of_seasons": 4,
       "poster_url": "https://image.tmdb.org/t/p/w342/9m8bFIXPg26taNrFSXGwEORVACD.jpg",
       "directors": []
+    },
+    "anime_series:the promised neverland": {
+      "title": "The Promised Neverland",
+      "media_type": "anime_series",
+      "runtime_minutes": 23,
+      "genres": [
+        "Animation",
+        "Drama",
+        "Mystery",
+        "Sci-Fi & Fantasy"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/tv/83097",
+      "description": "Emma, Norman and Ray are the brightest kids at the Grace Field House orphanage. And under the care of the woman they refer to as “Mom,” all the kids have enjoyed a comfortable life. Good food, clean clothes and the perfect environment to learn—what more could an orphan ask for? One day, though, Emma and Norman uncover the dark truth of the outside world they are forbidden from seeing.",
+      "poster_url": "https://image.tmdb.org/t/p/w342/oBgRCpAbtMpk1v8wfdsIph7lPQE.jpg",
+      "tmdb_id": 83097,
+      "release_date": "2019-01-11",
+      "directors": [],
+      "actors": [
+        "Sumire Morohoshi",
+        "Mariya Ise",
+        "Shinei Ueki",
+        "Erisa Kuon",
+        "Lynn",
+        "Shizuka Ishigami",
+        "Ai Kayano",
+        "Mari Hino"
+      ],
+      "number_of_seasons": 2,
+      "rating": 8.3,
+      "overview": "Emma, Norman and Ray are the brightest kids at the Grace Field House orphanage. And under the care of the woman they refer to as “Mom,” all the kids have enjoyed a comfortable life. Good food, clean clothes and the perfect environment to learn—what more could an orphan ask for? One day, though, Emma and Norman uncover the dark truth of the outside world they are forbidden from seeing.",
+      "trailer_url": "https://www.youtube.com/watch?v=CV0p9X8878k"
     },
     "anime_series:tokyo ghoul": {
       "title": "Tokyo Ghoul",
@@ -29585,7 +30014,8 @@
         "Stanley Kubrick"
       ],
       "runtime_minutes": 137,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:a quiet place": {
       "title": "A Quiet Place",
@@ -29615,7 +30045,8 @@
         "John Krasinski"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:a quiet place 2": {
       "title": "A Quiet Place 2",
@@ -29646,7 +30077,8 @@
         "John Krasinski"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:a quiet place day one": {
       "title": "A Quiet Place: Day One",
@@ -29677,7 +30109,8 @@
         "Michael Sarnoski"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:a star is born": {
       "title": "A Star is Born",
@@ -29708,7 +30141,8 @@
         "Bradley Cooper"
       ],
       "runtime_minutes": 136,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:abigail": {
       "title": "Abigail",
@@ -29739,7 +30173,8 @@
         "Matt Bettinelli-Olpin"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:air": {
       "title": "Air",
@@ -29769,7 +30204,8 @@
         "Ben Affleck"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:akira": {
       "title": "Akira",
@@ -29800,7 +30236,8 @@
         "Katsuhiro Otomo"
       ],
       "runtime_minutes": 124,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:alien romulus": {
       "title": "Alien: Romulus",
@@ -29830,7 +30267,8 @@
         "Fede Álvarez"
       ],
       "runtime_minutes": 119,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:all quiet on the western front": {
       "title": "All Quiet on the Western Front",
@@ -29860,7 +30298,8 @@
         "Edward Berger"
       ],
       "runtime_minutes": 147,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:am i racist": {
       "title": "Am I Racist?",
@@ -29890,7 +30329,8 @@
         "Justin Folk"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:american made": {
       "title": "American Made",
@@ -29921,7 +30361,8 @@
         "Doug Liman"
       ],
       "runtime_minutes": 115,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:animal farm": {
       "title": "Animal Farm",
@@ -29953,7 +30394,8 @@
         "Andy Serkis"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:annihilation": {
       "title": "Annihilation",
@@ -29983,7 +30425,8 @@
         "Alex Garland"
       ],
       "runtime_minutes": 115,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:apocalypse now": {
       "title": "Apocalypse Now",
@@ -30013,7 +30456,8 @@
         "Francis Ford Coppola"
       ],
       "runtime_minutes": 147,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:arcadian": {
       "title": "Arcadian",
@@ -30044,7 +30488,8 @@
         "Benjamin Brewer"
       ],
       "runtime_minutes": 92,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:arrival": {
       "title": "Arrival",
@@ -30075,7 +30520,8 @@
         "Denis Villeneuve"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:avatar 3 fire and ash": {
       "title": "Avatar 3: Fire and Ash",
@@ -30106,7 +30552,8 @@
         "James Cameron"
       ],
       "runtime_minutes": 198,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:barbarian": {
       "title": "Barbarian",
@@ -30136,7 +30583,8 @@
         "Zach Cregger"
       ],
       "runtime_minutes": 103,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:beau is afraid": {
       "title": "Beau is Afraid",
@@ -30167,7 +30615,8 @@
         "Ari Aster"
       ],
       "runtime_minutes": 179,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:beavis and butthead do america": {
       "title": "Beavis and Butthead do America",
@@ -30200,7 +30649,8 @@
         "Mike Judge"
       ],
       "runtime_minutes": 81,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:beavis and butthead do the universe": {
       "title": "Beavis and Butthead do the Universe",
@@ -30233,7 +30683,8 @@
         "John Rice"
       ],
       "runtime_minutes": 86,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:beetlejuice": {
       "title": "Beetlejuice",
@@ -30264,7 +30715,8 @@
         "Tim Burton"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:beetlejuice beetlejuice": {
       "title": "Beetlejuice Beetlejuice",
@@ -30295,7 +30747,8 @@
         "Tim Burton"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:better man": {
       "title": "Better Man",
@@ -30325,7 +30778,8 @@
         "Michael Gracey"
       ],
       "runtime_minutes": 135,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:blackberry": {
       "title": "Blackberry",
@@ -30356,7 +30810,8 @@
         "Matt Johnson"
       ],
       "runtime_minutes": 120,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:blade runner 2049": {
       "title": "Blade Runner 2049",
@@ -30386,7 +30841,8 @@
         "Denis Villeneuve"
       ],
       "runtime_minutes": 164,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:bodies bodies bodies": {
       "title": "Bodies Bodies Bodies",
@@ -30418,7 +30874,8 @@
         "Halina Reijn"
       ],
       "runtime_minutes": 94,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:boy kills world": {
       "title": "Boy Kills World",
@@ -30449,7 +30906,8 @@
         "Moritz Mohr"
       ],
       "runtime_minutes": 111,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:bring her back": {
       "title": "Bring Her Back",
@@ -30479,7 +30937,8 @@
         "Danny Philippou"
       ],
       "runtime_minutes": 104,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:bugonia": {
       "title": "Bugonia",
@@ -30510,7 +30969,8 @@
         "Yorgos Lanthimos"
       ],
       "runtime_minutes": 119,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:burn after reading": {
       "title": "Burn After Reading",
@@ -30541,7 +31001,8 @@
         "Joel Coen"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:caught stealing": {
       "title": "Caught Stealing",
@@ -30572,7 +31033,8 @@
         "Darren Aronofsky"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:chip n dale rescue rangers": {
       "title": "Chip ’n Dale: Rescue Rangers",
@@ -30605,7 +31067,8 @@
         "Akiva Schaffer"
       ],
       "runtime_minutes": 99,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:civil war": {
       "title": "Civil War",
@@ -30636,7 +31099,8 @@
         "Alex Garland"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:climax": {
       "title": "Climax",
@@ -30667,7 +31131,8 @@
         "Gaspar Noé"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:coherence": {
       "title": "Coherence",
@@ -30697,7 +31162,8 @@
         "James Ward Byrkit"
       ],
       "runtime_minutes": 89,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:companion": {
       "title": "Companion",
@@ -30728,7 +31194,8 @@
         "Drew Hancock"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:conclave": {
       "title": "Conclave",
@@ -30758,7 +31225,8 @@
         "Edward Berger"
       ],
       "runtime_minutes": 120,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:cool world": {
       "title": "Cool World",
@@ -30789,7 +31257,8 @@
         "Ralph Bakshi"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:creed": {
       "title": "Creed",
@@ -30818,7 +31287,8 @@
         "Ryan Coogler"
       ],
       "runtime_minutes": 133,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:crimson peak": {
       "title": "Crimson Peak",
@@ -30850,7 +31320,8 @@
         "Guillermo del Toro"
       ],
       "runtime_minutes": 119,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:days later": {
       "title": "Days Later",
@@ -30881,7 +31352,8 @@
         "Danny Boyle"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dead pool": {
       "title": "Dead Pool",
@@ -30912,7 +31384,8 @@
         "Buddy Van Horn"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dead pool 2": {
       "title": "Dead Pool 2",
@@ -30941,7 +31414,8 @@
         "Gary Whitson"
       ],
       "runtime_minutes": 76,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:deadpool and wolverine": {
       "title": "Deadpool and Wolverine",
@@ -30972,7 +31446,8 @@
         "Shawn Levy"
       ],
       "runtime_minutes": 128,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:die hard": {
       "title": "Die Hard",
@@ -31002,7 +31477,8 @@
         "John McTiernan"
       ],
       "runtime_minutes": 132,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:die hard 2": {
       "title": "Die Hard 2",
@@ -31032,7 +31508,8 @@
         "Renny Harlin"
       ],
       "runtime_minutes": 124,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:die hard 3": {
       "title": "Die Hard 3",
@@ -31063,7 +31540,8 @@
         "Jim Wynorski"
       ],
       "runtime_minutes": 84,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:die hard 4": {
       "title": "Die Hard 4",
@@ -31093,7 +31571,8 @@
         "Len Wiseman"
       ],
       "runtime_minutes": 128,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dogma": {
       "title": "Dogma",
@@ -31124,7 +31603,8 @@
         "Kevin Smith"
       ],
       "runtime_minutes": 130,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dream scenario": {
       "title": "Dream Scenario",
@@ -31154,7 +31634,8 @@
         "Kristoffer Borgli"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:drive": {
       "title": "Drive",
@@ -31185,7 +31666,8 @@
         "Nicolas Winding Refn"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dune 2": {
       "title": "Dune 2",
@@ -31215,7 +31697,8 @@
         "Denis Villeneuve"
       ],
       "runtime_minutes": 167,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:dungeons and dragons honor among thieves": {
       "title": "Dungeons and Dragons: Honor Among Thieves",
@@ -31247,7 +31730,8 @@
         "John Francis Daley"
       ],
       "runtime_minutes": 134,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:edward scissorhands": {
       "title": "Edward Scissorhands",
@@ -31278,7 +31762,8 @@
         "Tim Burton"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:eileen": {
       "title": "Eileen",
@@ -31308,7 +31793,8 @@
         "William Oldroyd"
       ],
       "runtime_minutes": 98,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:el camino a breaking bad movie": {
       "title": "El Camino: A Breaking Bad Movie",
@@ -31339,7 +31825,8 @@
         "Vince Gilligan"
       ],
       "runtime_minutes": 123,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:escape from pretoria": {
       "title": "Escape From Pretoria",
@@ -31370,7 +31857,8 @@
         "Francis Annan"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:eternal sunshine of the spotless mind": {
       "title": "Eternal Sunshine of the Spotless Mind",
@@ -31401,7 +31889,8 @@
         "Michel Gondry"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:evil dead rise": {
       "title": "Evil Dead Rise",
@@ -31431,7 +31920,8 @@
         "Lee Cronin"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:ex machina": {
       "title": "Ex Machina",
@@ -31461,7 +31951,8 @@
         "Alex Garland"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:exam": {
       "title": "Exam",
@@ -31491,7 +31982,8 @@
         "Stuart Hazeldine"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:extraction": {
       "title": "Extraction",
@@ -31521,7 +32013,8 @@
         "Sam Hargrave"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:f1": {
       "title": "F1",
@@ -31551,7 +32044,8 @@
         "Joseph Kosinski"
       ],
       "runtime_minutes": 156,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:fackham hall": {
       "title": "Fackham Hall",
@@ -31580,7 +32074,8 @@
         "Jim O'Hanlon"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:fair play": {
       "title": "Fair Play",
@@ -31611,7 +32106,8 @@
         "Chloe Domont"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:fargo": {
       "title": "Fargo",
@@ -31642,7 +32138,8 @@
         "Joel Coen"
       ],
       "runtime_minutes": 98,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:fired up": {
       "title": "Fired Up",
@@ -31671,7 +32168,8 @@
         "Will Gluck"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:flow": {
       "title": "Flow",
@@ -31694,7 +32192,8 @@
         "Gints Zilbalodis"
       ],
       "runtime_minutes": 85,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:fokofpolisiekar forgive them for they know not what they do": {
       "title": "Fokofpolisiekar: Forgive Them for They Know Not What They Do",
@@ -31713,7 +32212,8 @@
       "description": "A South African documentary film about 5 young Afrikaans punk rockers that transformed a generation during a unique time in history - in one of the most reluctantly complex and evolving societies of the 21st century. The film follows the story of the band over 4 years as they forge a place for themselves and their fans in the new South Africa, in the process challenging the stigmas and expectations placed on them by their Afrikaner heritage, the church and tradition. Through the death threats and Christian backlash, they stood tall - sentries for the right to identity and freedom of thought. A story that transcends language and culture; and bravely faces a truth, that most would've left in darkness.",
       "directors": [],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:frankenstein": {
       "title": "Frankenstein",
@@ -31744,7 +32244,8 @@
         "Guillermo del Toro"
       ],
       "runtime_minutes": 150,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:freakier friday": {
       "title": "Freakier Friday",
@@ -31776,7 +32277,8 @@
         "Nisha Ganatra"
       ],
       "runtime_minutes": 110,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:friendship": {
       "title": "Friendship",
@@ -31805,7 +32307,8 @@
         "Andrew DeYoung"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:furiosa a mad max saga": {
       "title": "Furiosa: A Mad Max Saga",
@@ -31836,7 +32339,8 @@
         "George Miller"
       ],
       "runtime_minutes": 149,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:galaxy quest": {
       "title": "Galaxy Quest",
@@ -31867,7 +32371,8 @@
         "Dean Parisot"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:get hard": {
       "title": "Get Hard",
@@ -31896,7 +32401,8 @@
         "Etan Cohen"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:gladiator": {
       "title": "Gladiator",
@@ -31927,7 +32433,8 @@
         "Ridley Scott"
       ],
       "runtime_minutes": 155,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:gladiator 2": {
       "title": "Gladiator 2",
@@ -31958,7 +32465,8 @@
         "Ridley Scott"
       ],
       "runtime_minutes": 148,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:glass onion": {
       "title": "Glass Onion",
@@ -31989,7 +32497,8 @@
         "Rian Johnson"
       ],
       "runtime_minutes": 140,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:godzilla minus one": {
       "title": "Godzilla Minus One",
@@ -32020,7 +32529,8 @@
         "Takashi Yamazaki"
       ],
       "runtime_minutes": 125,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:good fortune": {
       "title": "Good Fortune",
@@ -32050,7 +32560,8 @@
         "Aziz Ansari"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:good luck have fun dont die": {
       "title": "Good Luck, Have Fun, Don’t Die",
@@ -32081,7 +32592,8 @@
         "Gore Verbinski"
       ],
       "runtime_minutes": 134,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:gran torismo": {
       "title": "Gran Torismo",
@@ -32097,7 +32609,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:green room": {
       "title": "Green Room",
@@ -32126,7 +32639,8 @@
         "François Truffaut"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:guardians of the galaxy vol 3": {
       "title": "Guardians of the Galaxy Vol. 3",
@@ -32157,7 +32671,8 @@
         "James Gunn"
       ],
       "runtime_minutes": 150,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:guillermo del toros pinocchio": {
       "title": "Guillermo del Toro's Pinocchio",
@@ -32190,7 +32705,8 @@
         "Guillermo del Toro"
       ],
       "runtime_minutes": 117,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:happy gilmore": {
       "title": "Happy Gilmore",
@@ -32219,7 +32735,8 @@
         "Dennis Dugan"
       ],
       "runtime_minutes": 92,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:happy gilmore 2": {
       "title": "Happy Gilmore 2",
@@ -32248,7 +32765,8 @@
         "Kyle Newacheck"
       ],
       "runtime_minutes": 118,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:her": {
       "title": "Her",
@@ -32279,7 +32797,8 @@
         "Spike Jonze"
       ],
       "runtime_minutes": 126,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:hereditary": {
       "title": "Hereditary",
@@ -32310,7 +32829,8 @@
         "Ari Aster"
       ],
       "runtime_minutes": 128,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:heretic": {
       "title": "Heretic",
@@ -32341,7 +32861,8 @@
         "Bryan Woods"
       ],
       "runtime_minutes": 111,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:hoppers": {
       "title": "Hoppers",
@@ -32374,7 +32895,8 @@
         "Daniel Chong"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:how to train your dragon live action": {
       "title": "How to Train Your Dragon Live Action",
@@ -32390,7 +32912,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:i like movies": {
       "title": "I Like Movies!",
@@ -32420,7 +32943,8 @@
         "Chandler Levack"
       ],
       "runtime_minutes": 99,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:i saw the tv glow": {
       "title": "I Saw The TV Glow",
@@ -32450,7 +32974,8 @@
         "Jane Schoenbrun"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:idiocracy": {
       "title": "Idiocracy",
@@ -32481,7 +33006,8 @@
         "Mike Judge"
       ],
       "runtime_minutes": 84,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:inside": {
       "title": "Inside",
@@ -32514,7 +33040,8 @@
         "Pete Docter"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:inside out": {
       "title": "Inside Out",
@@ -32547,7 +33074,8 @@
         "Pete Docter"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:inside out 2": {
       "title": "Inside Out 2",
@@ -32579,7 +33107,8 @@
         "Kelsey Mann"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:interstellar": {
       "title": "Interstellar",
@@ -32610,7 +33139,8 @@
         "Christopher Nolan"
       ],
       "runtime_minutes": 169,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:iron lung": {
       "title": "Iron Lung",
@@ -32641,7 +33171,8 @@
         "Mark Fischbach"
       ],
       "runtime_minutes": 125,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:it follows": {
       "title": "It Follows",
@@ -32671,7 +33202,8 @@
         "David Robert Mitchell"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:jacobs ladder": {
       "title": "Jacob’s Ladder",
@@ -32702,7 +33234,8 @@
         "Adrian Lyne"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:jojo rabbit": {
       "title": "Jojo Rabbit",
@@ -32733,7 +33266,8 @@
         "Taika Waititi"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:joker": {
       "title": "Joker",
@@ -32764,7 +33298,8 @@
         "Todd Phillips"
       ],
       "runtime_minutes": 122,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:joker folie à deux": {
       "title": "Joker: Folie à Deux",
@@ -32795,7 +33330,8 @@
         "Todd Phillips"
       ],
       "runtime_minutes": 138,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:jungle": {
       "title": "Jungle",
@@ -32826,7 +33362,8 @@
         "Greg McLean"
       ],
       "runtime_minutes": 115,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:kingdom of the planet of the apes": {
       "title": "Kingdom of the Planet of the Apes",
@@ -32857,7 +33394,8 @@
         "Wes Ball"
       ],
       "runtime_minutes": 145,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:knock at the cabin": {
       "title": "Knock at the Cabin",
@@ -32888,7 +33426,8 @@
         "M. Night Shyamalan"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:kpop demon hunters": {
       "title": "Kpop Demon Hunters",
@@ -32921,7 +33460,8 @@
         "Chris Appelhans"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:late night with the devil": {
       "title": "Late Night with the Devil",
@@ -32951,7 +33491,8 @@
         "Colin Cairnes"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:leave the world behind": {
       "title": "Leave The World Behind",
@@ -32982,7 +33523,8 @@
         "Sam Esmail"
       ],
       "runtime_minutes": 140,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:leon": {
       "title": "Leon",
@@ -33013,7 +33555,8 @@
         "Luc Besson"
       ],
       "runtime_minutes": 111,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:licorice pizza": {
       "title": "Licorice Pizza",
@@ -33044,7 +33587,8 @@
         "Paul Thomas Anderson"
       ],
       "runtime_minutes": 133,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:lilo and stitch live action": {
       "title": "Lilo and Stitch Live Action",
@@ -33060,7 +33604,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:longlegs": {
       "title": "Longlegs",
@@ -33091,7 +33636,8 @@
         "Osgood Perkins"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:lord of the flies": {
       "title": "Lord of the Flies",
@@ -33122,7 +33668,8 @@
         "Harry Hook"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:love lies bleeding": {
       "title": "Love Lies Bleeding",
@@ -33153,7 +33700,8 @@
         "Rose Glass"
       ],
       "runtime_minutes": 104,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mad god": {
       "title": "Mad God",
@@ -33185,7 +33733,8 @@
         "Phil Tippett"
       ],
       "runtime_minutes": 84,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mandy": {
       "title": "Mandy",
@@ -33216,7 +33765,8 @@
         "Panos Cosmatos"
       ],
       "runtime_minutes": 122,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:marty supreme": {
       "title": "Marty Supreme",
@@ -33246,7 +33796,8 @@
         "Josh Safdie"
       ],
       "runtime_minutes": 150,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:maxxxine": {
       "title": "MaXXXine",
@@ -33276,7 +33827,8 @@
         "Ti West"
       ],
       "runtime_minutes": 103,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mean creek": {
       "title": "Mean Creek",
@@ -33306,7 +33858,8 @@
         "Jacob Aaron Estes"
       ],
       "runtime_minutes": 90,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mean girls": {
       "title": "Mean Girls",
@@ -33336,7 +33889,8 @@
         "Mark Waters"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:memories": {
       "title": "Memories",
@@ -33369,7 +33923,8 @@
         "Tensai Okamura"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mickey 17": {
       "title": "Mickey 17",
@@ -33400,7 +33955,8 @@
         "Bong Joon Ho"
       ],
       "runtime_minutes": 137,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:midsommar": {
       "title": "Midsommar",
@@ -33431,7 +33987,8 @@
         "Ari Aster"
       ],
       "runtime_minutes": 147,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:monkey man": {
       "title": "Monkey Man",
@@ -33461,7 +34018,8 @@
         "Dev Patel"
       ],
       "runtime_minutes": 122,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mother": {
       "title": "Mother!",
@@ -33491,7 +34049,8 @@
         "Darren Aronofsky"
       ],
       "runtime_minutes": 121,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mr monks last case a monk movie": {
       "title": "Mr. Monk's Last Case: A Monk Movie",
@@ -33523,7 +34082,8 @@
         "Randall Zisk"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:mystic river": {
       "title": "Mystic River",
@@ -33555,7 +34115,8 @@
         "Clint Eastwood"
       ],
       "runtime_minutes": 138,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:natural born killers": {
       "title": "Natural Born Killers",
@@ -33586,7 +34147,8 @@
         "Oliver Stone"
       ],
       "runtime_minutes": 119,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:next goal wins": {
       "title": "Next Goal Wins",
@@ -33616,7 +34178,8 @@
         "Taika Waititi"
       ],
       "runtime_minutes": 104,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:nightcrawler": {
       "title": "Nightcrawler",
@@ -33647,7 +34210,8 @@
         "Dan Gilroy"
       ],
       "runtime_minutes": 118,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:nights at freddies": {
       "title": "Nights at Freddies",
@@ -33663,7 +34227,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:nirvana the band the show the movie": {
       "title": "Nirvana The Band The Show The Movie",
@@ -33679,7 +34244,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:no one will save you": {
       "title": "No One Will Save You",
@@ -33709,7 +34275,8 @@
         "Brian Duffield"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:nobody 2": {
       "title": "Nobody 2",
@@ -33740,7 +34307,8 @@
         "Timo Tjahjanto"
       ],
       "runtime_minutes": 89,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:nosferatu": {
       "title": "Nosferatu",
@@ -33770,7 +34338,8 @@
         "Robert Eggers"
       ],
       "runtime_minutes": 133,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:now you see me now you dont": {
       "title": "Now You See Me: Now You Don't",
@@ -33800,7 +34369,8 @@
         "Ruben Fleischer"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:oddity": {
       "title": "Oddity",
@@ -33830,7 +34400,8 @@
         "Damian McCarthy"
       ],
       "runtime_minutes": 98,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:office space": {
       "title": "Office Space",
@@ -33859,7 +34430,8 @@
         "Mike Judge"
       ],
       "runtime_minutes": 90,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:one battle after another": {
       "title": "One Battle After Another",
@@ -33890,7 +34462,8 @@
         "Paul Thomas Anderson"
       ],
       "runtime_minutes": 162,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:one flew over the cuckoos nest": {
       "title": "One Flew Over The Cuckoo’s Nest",
@@ -33919,7 +34492,8 @@
         "Miloš Forman"
       ],
       "runtime_minutes": 133,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:palm springs": {
       "title": "Palm Springs",
@@ -33950,7 +34524,8 @@
         "Max Barbakow"
       ],
       "runtime_minutes": 90,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:passengers": {
       "title": "Passengers",
@@ -33981,7 +34556,8 @@
         "Morten Tyldum"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:peaky blinders the immortal man": {
       "title": "Peaky Blinders: The Immortal Man",
@@ -34011,7 +34587,8 @@
         "Tom Harper"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:pearl": {
       "title": "Pearl",
@@ -34041,7 +34618,8 @@
         "Ti West"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:perfume": {
       "title": "Perfume",
@@ -34071,7 +34649,8 @@
         "Michael Rymer"
       ],
       "runtime_minutes": 106,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:poor things": {
       "title": "Poor Things",
@@ -34102,7 +34681,8 @@
         "Yorgos Lanthimos"
       ],
       "runtime_minutes": 141,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:popstar never stop never stopping": {
       "title": "Popstar: Never Stop Never Stopping",
@@ -34133,7 +34713,8 @@
         "Jorma Taccone"
       ],
       "runtime_minutes": 86,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:predator badlands": {
       "title": "Predator: Badlands",
@@ -34164,7 +34745,8 @@
         "Dan Trachtenberg"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:predator killer of killers": {
       "title": "Predator: Killer of Killers",
@@ -34196,7 +34778,8 @@
         "Dan Trachtenberg"
       ],
       "runtime_minutes": 85,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:prey": {
       "title": "Prey",
@@ -34227,7 +34810,8 @@
         "Dan Trachtenberg"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:prisoners": {
       "title": "Prisoners",
@@ -34258,7 +34842,8 @@
         "Denis Villeneuve"
       ],
       "runtime_minutes": 153,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:project hail mary": {
       "title": "Project Hail Mary",
@@ -34289,7 +34874,8 @@
         "Christopher Miller"
       ],
       "runtime_minutes": 157,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:rango": {
       "title": "Rango",
@@ -34322,7 +34908,8 @@
         "Gore Verbinski"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:ready or not 2 here i come": {
       "title": "Ready Or Not 2: Here I Come",
@@ -34353,7 +34940,8 @@
         "Tyler Gillett"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:renfield": {
       "title": "Renfield",
@@ -34384,7 +34972,8 @@
         "Chris McKay"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:ricky stanicky": {
       "title": "Ricky Stanicky",
@@ -34413,7 +35002,8 @@
         "Peter Farrelly"
       ],
       "runtime_minutes": 114,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:road house": {
       "title": "Road House",
@@ -34444,7 +35034,8 @@
         "Doug Liman"
       ],
       "runtime_minutes": 121,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:romy and michelles high school reunion": {
       "title": "Romy and Michelle’s High School Reunion",
@@ -34473,7 +35064,8 @@
         "David Mirkin"
       ],
       "runtime_minutes": 92,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:roofman": {
       "title": "Roofman",
@@ -34504,7 +35096,8 @@
         "Derek Cianfrance"
       ],
       "runtime_minutes": 126,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:saint maud": {
       "title": "Saint Maud",
@@ -34535,7 +35128,8 @@
         "Rose Glass"
       ],
       "runtime_minutes": 85,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:saltburn": {
       "title": "Saltburn",
@@ -34566,7 +35160,8 @@
         "Emerald Fennell"
       ],
       "runtime_minutes": 131,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:scream 6": {
       "title": "Scream 6",
@@ -34598,7 +35193,8 @@
         "Matt Bettinelli-Olpin"
       ],
       "runtime_minutes": 123,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:secret of nimh": {
       "title": "Secret of NIMH",
@@ -34633,7 +35229,8 @@
         "Don Bluth"
       ],
       "runtime_minutes": 83,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:self reliance": {
       "title": "Self Reliance",
@@ -34663,7 +35260,8 @@
         "Jake Johnson"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:send help": {
       "title": "Send Help",
@@ -34694,7 +35292,8 @@
         "Sam Raimi"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:significant other": {
       "title": "Significant Other",
@@ -34727,7 +35326,8 @@
         "Dan Berk"
       ],
       "runtime_minutes": 85,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:sinners": {
       "title": "Sinners",
@@ -34758,7 +35358,8 @@
         "Ryan Coogler"
       ],
       "runtime_minutes": 138,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:sisu": {
       "title": "Sisu",
@@ -34789,7 +35390,8 @@
         "Jalmari Helander"
       ],
       "runtime_minutes": 89,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:smile": {
       "title": "Smile",
@@ -34819,7 +35421,8 @@
         "Parker Finn"
       ],
       "runtime_minutes": 115,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:smile 2": {
       "title": "Smile 2",
@@ -34850,7 +35453,8 @@
         "Parker Finn"
       ],
       "runtime_minutes": 127,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:snack shack": {
       "title": "Snack Shack",
@@ -34879,7 +35483,8 @@
         "Adam Rehmeier"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:snowpiercer": {
       "title": "Snowpiercer",
@@ -34910,7 +35515,8 @@
         "Bong Joon Ho"
       ],
       "runtime_minutes": 127,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:sonic the hedgehog 3": {
       "title": "Sonic the Hedgehog 3",
@@ -34942,7 +35548,8 @@
         "Jeff Fowler"
       ],
       "runtime_minutes": 110,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:space balls": {
       "title": "Space Balls",
@@ -34972,7 +35579,8 @@
         "Mel Brooks"
       ],
       "runtime_minutes": 96,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:speak no evil": {
       "title": "Speak No Evil",
@@ -35002,7 +35610,8 @@
         "James Watkins"
       ],
       "runtime_minutes": 110,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:speak no evil 2024": {
       "title": "Speak No Evil 2024",
@@ -35018,7 +35627,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:starship trooper": {
       "title": "Starship Trooper",
@@ -35050,7 +35660,8 @@
         "Paul Verhoeven"
       ],
       "runtime_minutes": 129,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:stopmotion": {
       "title": "Stopmotion",
@@ -35080,7 +35691,8 @@
         "Robert Morgan"
       ],
       "runtime_minutes": 94,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:straight outta compton": {
       "title": "Straight Outta Compton",
@@ -35111,7 +35723,8 @@
         "F. Gary Gray"
       ],
       "runtime_minutes": 147,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:strange darling": {
       "title": "Strange Darling",
@@ -35141,7 +35754,8 @@
         "JT Mollner"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:strays": {
       "title": "Strays",
@@ -35171,7 +35785,8 @@
         "Josh Greenbaum"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:super bad": {
       "title": "Super Bad",
@@ -35187,7 +35802,8 @@
       "description": "The film tells the story of a socially awkward boy",
       "directors": [],
       "runtime_minutes": 8,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:super mario galaxy": {
       "title": "Super Mario Galaxy",
@@ -35221,7 +35837,8 @@
         "Michael Jelenic"
       ],
       "runtime_minutes": 98,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:superman 2025": {
       "title": "Superman 2025",
@@ -35237,7 +35854,8 @@
       "description": null,
       "directors": null,
       "runtime_minutes": null,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:sweeney todd the demon barber of fleet street": {
       "title": "Sweeney Todd: The Demon Barber of Fleet Street",
@@ -35267,7 +35885,8 @@
         "Tim Burton"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:tag": {
       "title": "Tag",
@@ -35297,7 +35916,8 @@
         "Jeff Tomsic"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:talk to me": {
       "title": "Talk To Me",
@@ -35328,7 +35948,8 @@
         "Danny Philippou"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:taxi driver": {
       "title": "Taxi Driver",
@@ -35358,7 +35979,8 @@
         "Martin Scorsese"
       ],
       "runtime_minutes": 114,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:teenage mutant ninja turtles": {
       "title": "Teenage Mutant Ninja Turtles",
@@ -35390,7 +36012,8 @@
         "Jonathan Liebesman"
       ],
       "runtime_minutes": 101,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:thanksgiving": {
       "title": "Thanksgiving",
@@ -35420,7 +36043,8 @@
         "Eli Roth"
       ],
       "runtime_minutes": 106,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the age of disclosure": {
       "title": "The Age of Disclosure",
@@ -35449,7 +36073,8 @@
         "Dan Farah"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the artifice girl": {
       "title": "The Artifice Girl",
@@ -35480,7 +36105,8 @@
         "Franklin Ritch"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the assessment": {
       "title": "The Assessment",
@@ -35511,7 +36137,8 @@
         "Fleur Fortuné"
       ],
       "runtime_minutes": 114,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the babadook": {
       "title": "The Babadook",
@@ -35541,7 +36168,8 @@
         "Jennifer Kent"
       ],
       "runtime_minutes": 94,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the ballad of buster scruggs": {
       "title": "The Ballad of Buster Scruggs",
@@ -35573,7 +36201,8 @@
         "Ethan Coen"
       ],
       "runtime_minutes": 132,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the ballad of wallis island": {
       "title": "The Ballad of Wallis Island",
@@ -35604,7 +36233,8 @@
         "James Griffiths"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the beekeeper": {
       "title": "The Beekeeper",
@@ -35635,7 +36265,8 @@
         "David Ayer"
       ],
       "runtime_minutes": 106,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the big lebowski": {
       "title": "The Big Lebowski",
@@ -35665,7 +36296,8 @@
         "Joel Coen"
       ],
       "runtime_minutes": 117,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the bikeriders": {
       "title": "The Bikeriders",
@@ -35695,7 +36327,8 @@
         "Jeff Nichols"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the blackening": {
       "title": "The Blackening",
@@ -35725,7 +36358,8 @@
         "Tim Story"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the boat that rocked": {
       "title": "The Boat that Rocked",
@@ -35755,7 +36389,8 @@
         "Richard Curtis"
       ],
       "runtime_minutes": 135,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the boogeyman": {
       "title": "The Boogeyman",
@@ -35784,7 +36419,8 @@
         "Rob Savage"
       ],
       "runtime_minutes": 99,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the conjuring": {
       "title": "The Conjuring",
@@ -35814,7 +36450,8 @@
         "James Wan"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the conjuring 2": {
       "title": "The Conjuring 2",
@@ -35843,7 +36480,8 @@
         "James Wan"
       ],
       "runtime_minutes": 134,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the covenant": {
       "title": "The Covenant",
@@ -35875,7 +36513,8 @@
         "Renny Harlin"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the croods": {
       "title": "The Croods",
@@ -35908,7 +36547,8 @@
         "Chris Sanders"
       ],
       "runtime_minutes": 99,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the endless": {
       "title": "The Endless",
@@ -35940,7 +36580,8 @@
         "Justin Benson"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the equalizer 3": {
       "title": "The Equalizer 3",
@@ -35971,7 +36612,8 @@
         "Antoine Fuqua"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the fall guy": {
       "title": "The Fall Guy",
@@ -36002,7 +36644,8 @@
         "David Leitch"
       ],
       "runtime_minutes": 127,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the frog prince": {
       "title": "The Frog Prince",
@@ -36033,7 +36676,8 @@
         "Jackson Hunsicker"
       ],
       "runtime_minutes": 86,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the game": {
       "title": "The Game",
@@ -36065,7 +36709,8 @@
         "Morten Tyldum"
       ],
       "runtime_minutes": 113,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the godfather": {
       "title": "The Godfather",
@@ -36095,7 +36740,8 @@
         "Francis Ford Coppola"
       ],
       "runtime_minutes": 175,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the godfather 2": {
       "title": "The Godfather 2",
@@ -36125,7 +36771,8 @@
         "Francis Ford Coppola"
       ],
       "runtime_minutes": 202,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the gorge": {
       "title": "The Gorge",
@@ -36156,7 +36803,8 @@
         "Scott Derrickson"
       ],
       "runtime_minutes": 128,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the green mile": {
       "title": "The Green Mile",
@@ -36187,7 +36835,8 @@
         "Frank Darabont"
       ],
       "runtime_minutes": 189,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the happening": {
       "title": "The Happening",
@@ -36217,7 +36866,8 @@
         "M. Night Shyamalan"
       ],
       "runtime_minutes": 90,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the housemaid": {
       "title": "The Housemaid",
@@ -36247,7 +36897,8 @@
         "Paul Feig"
       ],
       "runtime_minutes": 131,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the invitation": {
       "title": "The Invitation",
@@ -36277,7 +36928,8 @@
         "Jessica M. Thompson"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the iron claw": {
       "title": "The Iron Claw",
@@ -36307,7 +36959,8 @@
         "Sean Durkin"
       ],
       "runtime_minutes": 132,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the killing of a sacred deer": {
       "title": "The Killing of a Sacred Deer",
@@ -36338,7 +36991,8 @@
         "Yorgos Lanthimos"
       ],
       "runtime_minutes": 121,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the last voyage of the demeter": {
       "title": "The Last Voyage of the Demeter",
@@ -36368,7 +37022,8 @@
         "André Øvredal"
       ],
       "runtime_minutes": 119,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the life of chuck": {
       "title": "The Life of Chuck",
@@ -36398,7 +37053,8 @@
         "Mike Flanagan"
       ],
       "runtime_minutes": 111,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the long walk": {
       "title": "The Long Walk",
@@ -36429,7 +37085,8 @@
         "Francis Lawrence"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the meg 2": {
       "title": "The Meg 2",
@@ -36460,7 +37117,8 @@
         "Ben Wheatley"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the menu": {
       "title": "The Menu",
@@ -36490,7 +37148,8 @@
         "Mark Mylod"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the ministry of ungentlemanly warfare": {
       "title": "The Ministry of Ungentlemanly Warfare",
@@ -36521,7 +37180,8 @@
         "Guy Ritchie"
       ],
       "runtime_minutes": 120,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the monkey": {
       "title": "The Monkey",
@@ -36551,7 +37211,8 @@
         "Osgood Perkins"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the naked gun": {
       "title": "The Naked Gun",
@@ -36582,7 +37243,8 @@
         "Akiva Schaffer"
       ],
       "runtime_minutes": 85,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the nice guys": {
       "title": "The Nice Guys",
@@ -36613,7 +37275,8 @@
         "Shane Black"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the northman": {
       "title": "The Northman",
@@ -36644,7 +37307,8 @@
         "Robert Eggers"
       ],
       "runtime_minutes": 137,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the phoenician scheme": {
       "title": "The Phoenician Scheme",
@@ -36675,7 +37339,8 @@
         "Wes Anderson"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the prestige": {
       "title": "The Prestige",
@@ -36706,7 +37371,8 @@
         "Christopher Nolan"
       ],
       "runtime_minutes": 130,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the retirement plan": {
       "title": "The Retirement Plan",
@@ -36737,7 +37403,8 @@
         "Tim Brown"
       ],
       "runtime_minutes": 103,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the revenant": {
       "title": "The Revenant",
@@ -36768,7 +37435,8 @@
         "Alejandro G. Iñárritu"
       ],
       "runtime_minutes": 157,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the running man": {
       "title": "The Running Man",
@@ -36799,7 +37467,8 @@
         "Edgar Wright"
       ],
       "runtime_minutes": 133,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the substance": {
       "title": "The Substance",
@@ -36830,7 +37499,8 @@
         "Coralie Fargeat"
       ],
       "runtime_minutes": 141,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the super mario bros": {
       "title": "The Super Mario Bros.",
@@ -36864,7 +37534,8 @@
         "Michael Jelenic"
       ],
       "runtime_minutes": 93,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the surfer": {
       "title": "The Surfer",
@@ -36894,7 +37565,8 @@
         "Lorcan Finnegan"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the thing": {
       "title": "The Thing",
@@ -36925,7 +37597,8 @@
         "John Carpenter"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the vast of night": {
       "title": "The Vast of Night",
@@ -36957,7 +37630,8 @@
         "Andrew Patterson"
       ],
       "runtime_minutes": 91,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the visit": {
       "title": "The Visit",
@@ -36987,7 +37661,8 @@
         "M. Night Shyamalan"
       ],
       "runtime_minutes": 94,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the wedding singer": {
       "title": "The Wedding Singer",
@@ -37017,7 +37692,8 @@
         "Frank Coraci"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the wild robot": {
       "title": "The Wild Robot",
@@ -37049,7 +37725,8 @@
         "Chris Sanders"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the witch": {
       "title": "The Witch",
@@ -37078,7 +37755,8 @@
         "Robert Eggers"
       ],
       "runtime_minutes": 92,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the wonderful world of henry sugar": {
       "title": "The Wonderful World of Henry Sugar",
@@ -37108,7 +37786,8 @@
         "Wes Anderson"
       ],
       "runtime_minutes": 39,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the worlds end": {
       "title": "The World’s End",
@@ -37139,7 +37818,8 @@
         "Gore Verbinski"
       ],
       "runtime_minutes": 169,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:the zone of interest": {
       "title": "The Zone of Interest",
@@ -37170,7 +37850,8 @@
         "Jonathan Glazer"
       ],
       "runtime_minutes": 105,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:theatre camp": {
       "title": "Theatre Camp",
@@ -37192,7 +37873,8 @@
         "Didier malherbe"
       ],
       "runtime_minutes": 60,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:they cloned tyrone": {
       "title": "They Cloned Tyrone",
@@ -37223,7 +37905,8 @@
         "Juel Taylor"
       ],
       "runtime_minutes": 122,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:this place rules": {
       "title": "This Place Rules",
@@ -37251,7 +37934,8 @@
         "Andrew Callaghan"
       ],
       "runtime_minutes": 82,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:titane": {
       "title": "Titane",
@@ -37282,7 +37966,8 @@
         "Julia Ducournau"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:together": {
       "title": "Together",
@@ -37312,7 +37997,8 @@
         "Michael Shanks"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:top gun maverick": {
       "title": "Top Gun: Maverick",
@@ -37342,7 +38028,8 @@
         "Joseph Kosinski"
       ],
       "runtime_minutes": 131,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:totally killer": {
       "title": "Totally Killer",
@@ -37373,7 +38060,8 @@
         "Nahnatchka Khan"
       ],
       "runtime_minutes": 104,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:transformers one": {
       "title": "Transformers One",
@@ -37405,7 +38093,8 @@
         "Josh Cooley"
       ],
       "runtime_minutes": 104,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:triangle of sadness": {
       "title": "Triangle of Sadness",
@@ -37435,7 +38124,8 @@
         "Ruben Östlund"
       ],
       "runtime_minutes": 147,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:tropic thunder": {
       "title": "Tropic Thunder",
@@ -37467,7 +38157,8 @@
         "Ben Stiller"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:tusk": {
       "title": "Tusk",
@@ -37497,7 +38188,8 @@
         "Kevin Smith"
       ],
       "runtime_minutes": 102,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:under the silver lake": {
       "title": "Under The Silver Lake",
@@ -37528,7 +38220,8 @@
         "David Robert Mitchell"
       ],
       "runtime_minutes": 139,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:unfrosted": {
       "title": "Unfrosted",
@@ -37558,7 +38251,8 @@
         "Jerry Seinfeld"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:valley uprising": {
       "title": "Valley Uprising",
@@ -37591,7 +38285,8 @@
         "Peter Mortimer"
       ],
       "runtime_minutes": 99,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:vesper": {
       "title": "Vesper",
@@ -37624,7 +38319,8 @@
         "Bruno Samper"
       ],
       "runtime_minutes": 112,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:wake up dead man a knives out mystery": {
       "title": "Wake Up Dead Man: A Knives Out Mystery",
@@ -37655,7 +38351,8 @@
         "Rian Johnson"
       ],
       "runtime_minutes": 145,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:wallace and gromit vengeance most fowl": {
       "title": "Wallace and Gromit:  Vengeance Most Fowl",
@@ -37688,7 +38385,8 @@
         "Merlin Crossingham"
       ],
       "runtime_minutes": 79,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:war dogs": {
       "title": "War Dogs",
@@ -37719,7 +38417,8 @@
         "Todd Phillips"
       ],
       "runtime_minutes": 114,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:warfare": {
       "title": "Warfare",
@@ -37750,7 +38449,8 @@
         "Alex Garland"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:watchmen": {
       "title": "Watchmen",
@@ -37781,7 +38481,8 @@
         "Zack Snyder"
       ],
       "runtime_minutes": 163,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:water boy": {
       "title": "Water Boy",
@@ -37804,7 +38505,8 @@
         "Fayzullo Fayz"
       ],
       "runtime_minutes": 97,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:weapons": {
       "title": "Weapons",
@@ -37834,7 +38536,8 @@
         "Zach Cregger"
       ],
       "runtime_minutes": 129,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:what is a woman": {
       "title": "What is a Woman?",
@@ -37863,7 +38566,8 @@
         "Justin Folk"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:what we do in the shadows": {
       "title": "What We Do In The Shadows",
@@ -37894,7 +38598,8 @@
         "Jemaine Clement"
       ],
       "runtime_minutes": 86,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:when evil lurks": {
       "title": "When Evil Lurks",
@@ -37924,7 +38629,8 @@
         "Demián Rugna"
       ],
       "runtime_minutes": 100,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:whiplash": {
       "title": "Whiplash",
@@ -37955,7 +38661,8 @@
         "Damien Chazelle"
       ],
       "runtime_minutes": 107,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:wolfs": {
       "title": "Wolfs",
@@ -37985,7 +38692,8 @@
         "Jon Watts"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:woman of the hour": {
       "title": "Woman of the Hour",
@@ -38016,7 +38724,8 @@
         "Anna Kendrick"
       ],
       "runtime_minutes": 95,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:wonka": {
       "title": "Wonka",
@@ -38047,7 +38756,8 @@
         "Paul King"
       ],
       "runtime_minutes": 117,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:x": {
       "title": "X",
@@ -38078,7 +38788,8 @@
         "Louis Leterrier"
       ],
       "runtime_minutes": 142,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:years later": {
       "title": "Years Later",
@@ -38109,7 +38820,8 @@
         "Danny Boyle"
       ],
       "runtime_minutes": 115,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:years later the bone temple": {
       "title": "Years Later: The Bone Temple",
@@ -38140,7 +38852,8 @@
         "Nia DaCosta"
       ],
       "runtime_minutes": 109,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:yesterday": {
       "title": "Yesterday",
@@ -38172,7 +38885,8 @@
         "Danny Boyle"
       ],
       "runtime_minutes": 116,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:you wont be alone": {
       "title": "You Won't Be Alone",
@@ -38202,7 +38916,8 @@
         "Goran Stolevski"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:zodiac": {
       "title": "Zodiac",
@@ -38233,7 +38948,8 @@
         "David Fincher"
       ],
       "runtime_minutes": 157,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "movie:zootopia 2": {
       "title": "Zootopia 2",
@@ -38267,7 +38983,8 @@
         "Byron Howard"
       ],
       "runtime_minutes": 108,
-      "media_type": "movie"
+      "media_type": "movie",
+      "number_of_seasons": null
     },
     "mr monks last case a monk movie": {
       "title": "Mr. Monk's Last Case: A Monk Movie",
@@ -44951,158 +45668,12 @@
         "Byron Howard"
       ],
       "runtime_minutes": 108
-    },
-    "anime_series:cyberpunk edgerunners": {
-      "title": "Cyberpunk: Edgerunners",
-      "media_type": "anime_series",
-      "runtime_minutes": 25,
-      "genres": [
-        "Animation",
-        "Action & Adventure",
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
-      "tmdb_url": "https://www.themoviedb.org/tv/105248",
-      "description": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
-      "poster_url": "https://image.tmdb.org/t/p/w342/lqcDVZ8pyk08AVftMBildDR3QUK.jpg",
-      "tmdb_id": 105248,
-      "release_date": "2022-09-13",
-      "directors": [
-        "Rafał Jaki"
-      ],
-      "actors": [
-        "KENN"
-      ],
-      "number_of_seasons": 2,
-      "rating": 8.5,
-      "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
-      "trailer_url": "https://www.youtube.com/watch?v=JtqIas3bYhg"
-    },
-    "anime_series:dan da dan": {
-      "title": "Dan Da Dan",
-      "media_type": "anime_series",
-      "runtime_minutes": null,
-      "genres": [
-        "Animation",
-        "Action & Adventure",
-        "Comedy",
-        "Sci-Fi & Fantasy"
-      ],
-      "tmdb_url": "https://www.themoviedb.org/tv/240411",
-      "description": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
-      "poster_url": "https://image.tmdb.org/t/p/w342/6qfZAOEUFIrbUH3JvePclx1nXzz.jpg",
-      "tmdb_id": 240411,
-      "release_date": "2024-10-04",
-      "directors": [],
-      "actors": [
-        "Shion Wakayama",
-        "Natsuki Hanae",
-        "Mayumi Tanaka",
-        "Nana Mizuki"
-      ],
-      "number_of_seasons": 1,
-      "rating": 8.5,
-      "overview": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
-      "trailer_url": "https://www.youtube.com/watch?v=pHLEyqsxZV8"
-    },
-    "anime_series:jujutsu kaisen": {
-      "title": "Jujutsu Kaisen",
-      "media_type": "anime_series",
-      "runtime_minutes": 24,
-      "genres": [
-        "Animation",
-        "Action & Adventure",
-        "Sci-Fi & Fantasy"
-      ],
-      "tmdb_url": "https://www.themoviedb.org/tv/95479",
-      "description": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
-      "poster_url": "https://image.tmdb.org/t/p/w342/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
-      "tmdb_id": 95479,
-      "release_date": "2020-10-03",
-      "directors": [],
-      "actors": [],
-      "number_of_seasons": 1,
-      "rating": 8.6,
-      "overview": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
-      "trailer_url": "https://www.youtube.com/watch?v=VpO6APNqY1c"
-    },
-    "anime_series:one punch man": {
-      "title": "One Punch Man",
-      "media_type": "anime_series",
-      "runtime_minutes": 24,
-      "genres": [
-        "Animation",
-        "Comedy",
-        "Action & Adventure",
-        "Sci-Fi & Fantasy"
-      ],
-      "tmdb_url": "https://www.themoviedb.org/tv/63926",
-      "description": "Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he’s become so strong that he’s practically invincible. In fact, he’s too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore. With his passion for being a hero lost along with his hair, yet still faced with new enemies every day, how much longer can he keep it going?",
-      "poster_url": "https://image.tmdb.org/t/p/w342/dT10AxJIXVvRwFAew4tt2RhzJrD.jpg",
-      "tmdb_id": 63926,
-      "release_date": "2015-10-05",
-      "directors": [],
-      "actors": [
-        "Makoto Furukawa"
-      ],
-      "number_of_seasons": 3,
-      "rating": 8.4,
-      "overview": "Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he’s become so strong that he’s practically invincible. In fact, he’s too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore. With his passion for being a hero lost along with his hair, yet still faced with new enemies every day, how much longer can he keep it going?",
-      "trailer_url": "https://www.youtube.com/watch?v=2JAElThbKrI"
-    },
-    "anime_series:solo levelling": {
-      "title": "Solo Levelling",
-      "media_type": "anime_series",
-      "runtime_minutes": null,
-      "genres": null,
-      "tmdb_url": null,
-      "description": null,
-      "poster_url": null,
-      "tmdb_id": null,
-      "release_date": null,
-      "directors": null,
-      "actors": null,
-      "number_of_seasons": null,
-      "rating": null,
-      "overview": null,
-      "trailer_url": null
-    },
-    "anime_series:the promised neverland": {
-      "title": "The Promised Neverland",
-      "media_type": "anime_series",
-      "runtime_minutes": 23,
-      "genres": [
-        "Animation",
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
-      "tmdb_url": "https://www.themoviedb.org/tv/83097",
-      "description": "Emma, Norman and Ray are the brightest kids at the Grace Field House orphanage. And under the care of the woman they refer to as “Mom,” all the kids have enjoyed a comfortable life. Good food, clean clothes and the perfect environment to learn—what more could an orphan ask for? One day, though, Emma and Norman uncover the dark truth of the outside world they are forbidden from seeing.",
-      "poster_url": "https://image.tmdb.org/t/p/w342/oBgRCpAbtMpk1v8wfdsIph7lPQE.jpg",
-      "tmdb_id": 83097,
-      "release_date": "2019-01-11",
-      "directors": [],
-      "actors": [
-        "Sumire Morohoshi",
-        "Mariya Ise",
-        "Shinei Ueki",
-        "Erisa Kuon",
-        "Lynn",
-        "Shizuka Ishigami",
-        "Ai Kayano",
-        "Mari Hino"
-      ],
-      "number_of_seasons": 2,
-      "rating": 8.3,
-      "overview": "Emma, Norman and Ray are the brightest kids at the Grace Field House orphanage. And under the care of the woman they refer to as “Mom,” all the kids have enjoyed a comfortable life. Good food, clean clothes and the perfect environment to learn—what more could an orphan ask for? One day, though, Emma and Norman uncover the dark truth of the outside world they are forbidden from seeing.",
-      "trailer_url": "https://www.youtube.com/watch?v=CV0p9X8878k"
     }
   },
   "enrichment_progress": {
     "status": "completed",
-    "processed": 74,
-    "total": 74,
+    "processed": 437,
+    "total": 437,
     "percent": 100,
     "current_title": ""
   }

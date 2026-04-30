@@ -2,7 +2,7 @@
 
 This project now has:
 - `services/` for scraper/service code
-- `dashboard/` for frontend files
+- `docs/` for frontend files
 - `data/` as the single source of runtime data (no duplicate copies)
 
 ## Structure
@@ -11,9 +11,9 @@ This project now has:
 - [services/media](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/media): media/watchlist scraper
 - [services/one_piece](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/one_piece): One Piece card scraping and change detection
 - [services/release_radar](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/release_radar): release/coming-soon scrapers
-- [dashboard/index.html](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/dashboard/index.html): dashboard page
-- [dashboard/app.js](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/dashboard/app.js): dashboard logic
-- [dashboard/styles.css](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/dashboard/styles.css): dashboard styles
+- [docs/index.html](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/docs/index.html): dashboard page
+- [docs/app.js](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/docs/app.js): dashboard logic
+- [docs/styles.css](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/docs/styles.css): dashboard styles
 - [data/events](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/events): events + specials JSON
 - [data/media](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/media): media/watchlist JSON + caches
 - [data/one_piece](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/one_piece): One Piece CSV/JSON
@@ -50,10 +50,10 @@ python -m http.server 8080
 
 Open:
 
-`http://localhost:8080/dashboard/`
+`http://localhost:8080/docs/`
 
 ## Notes
 
-- There is no data mirroring to dashboard anymore.
+- There is no data mirroring to docs anymore.
 - Dashboard reads directly from `../data/...` paths.
 - `.md` and `.txt` report outputs were removed where unused.
