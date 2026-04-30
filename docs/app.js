@@ -6,6 +6,7 @@ const GAME_RELEASES_PATH = "./data/release_radar/game_releases.json";
 const WATCHLIST_PATH = "./data/media/watchlist.json";
 const GAMESLIST_PATH = "./data/media/gameslist.json";
 const WATCHLIST_MOVIE_DETAILS_PATH = "./data/media/watchlist_movie_details.json";
+const GAMES_DETAILS_PATH = "./data/media/games_details.json";
 const SPECIALS_PATH = "./data/events/specials.json";
 const QUICKET_EVENTS_PATH = "./data/events/quicket_events.json";
 const WEATHER_PATH =
@@ -848,6 +849,9 @@ function openWatchlistDetail(type, title) {
   const description = String(details.description || details.overview || "").trim() || "No description yet.";
   const directors = joinList(details.directors) || "Unknown";
   const actors = joinList(details.actors) || "Unknown";
+  const publishers = joinList(details.publishers) || "Unknown";
+  const developers = joinList(details.developers) || "Unknown";
+  const platforms = joinList(details.platforms) || "";
   const genres = joinList(details.genres) || "";
   const releaseDate = String(details.release_date || "").trim();
   const runtime = Number.isFinite(Number(details.runtime_minutes)) ? `${Number(details.runtime_minutes)} min` : "";
@@ -855,6 +859,8 @@ function openWatchlistDetail(type, title) {
   const seasonsText = seasonsCount > 0 ? `${seasonsCount} ${seasonsCount === 1 ? "season" : "seasons"}` : "";
   const trailerUrl = String(details.trailer_url || "").trim();
   const tmdbUrl = String(details.tmdb_url || "").trim();
+  const rawgUrl = String(details.rawg_url || "").trim();
+  const websiteUrl = String(details.website_url || "").trim();
   const safeTitle = escapeHtml(title);
   const safeLabel = escapeHtml(WATCHLIST_TYPE_LABELS[type] || "Title");
   const sourceItem = findWatchlistItem(state.watchlistPayload, type, title);
@@ -862,7 +868,8 @@ function openWatchlistDetail(type, title) {
   const lovedBadge = loved ? '<span class="watchlist-loved-badge">Loved</span>' : "";
   const isSeriesLike = type === "series" || type === "anime_series";
   const isMovieLike = type === "movie" || type === "anime_movie";
-  const metaBits = [releaseDate, isMovieLike ? runtime : isSeriesLike ? seasonsText : "", genres].filter(Boolean);
+  const isGameLike = type.startsWith("game_");
+  const metaBits = [releaseDate, isMovieLike ? runtime : isSeriesLike ? seasonsText : "", genres, isGameLike ? platforms : ""].filter(Boolean);
   const posterHtml = posterUrl
     ? `<img class="watchlist-detail-poster" src="${posterUrl}" alt="${safeTitle} poster">`
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
@@ -876,11 +883,18 @@ function openWatchlistDetail(type, title) {
         <p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>
         ${metaBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(metaBits.join(" • "))}</p>` : ""}
         <p class="watchlist-detail-description">${escapeHtml(description)}</p>
-        <p><strong>${isMovieLike ? "Directors" : "Creators"}:</strong> ${escapeHtml(directors)}</p>
-        <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>
+        ${
+          isGameLike
+            ? `<p><strong>Publishers:</strong> ${escapeHtml(publishers)}</p>
+               <p><strong>Developers:</strong> ${escapeHtml(developers)}</p>`
+            : `<p><strong>${isMovieLike ? "Directors" : "Creators"}:</strong> ${escapeHtml(directors)}</p>
+               <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>`
+        }
         <div class="watchlist-detail-links">
           ${trailerUrl ? `<a href="${trailerUrl}" target="_blank" rel="noreferrer">Trailer</a>` : ""}
           ${tmdbUrl ? `<a href="${tmdbUrl}" target="_blank" rel="noreferrer">TMDB</a>` : ""}
+          ${rawgUrl ? `<a href="${rawgUrl}" target="_blank" rel="noreferrer">RAWG</a>` : ""}
+          ${websiteUrl ? `<a href="${websiteUrl}" target="_blank" rel="noreferrer">Website</a>` : ""}
         </div>
       </div>
     </div>
@@ -1031,10 +1045,11 @@ function renderWatchlistAll() {
 
 async function loadWatchlist() {
   try {
-    const [watchlistResponse, gameslistResponse, detailsResponse] = await Promise.all([
+    const [watchlistResponse, gameslistResponse, detailsResponse, gamesDetailsResponse] = await Promise.all([
       fetch(WATCHLIST_PATH, { cache: "no-store" }),
       fetch(GAMESLIST_PATH, { cache: "no-store" }),
       fetch(WATCHLIST_MOVIE_DETAILS_PATH, { cache: "no-store" }),
+      fetch(GAMES_DETAILS_PATH, { cache: "no-store" }),
     ]);
     if (!watchlistResponse.ok) {
       throw new Error(`Could not load ${WATCHLIST_PATH}`);
@@ -1052,12 +1067,12 @@ async function loadWatchlist() {
     const gamesHistory = Array.isArray(gamesPayload?.history_by_year) ? gamesPayload.history_by_year : [];
     mergedPayload.history_by_year = [...watchHistory, ...gamesHistory];
     state.watchlistPayload = mergedPayload;
-    if (detailsResponse.ok) {
-      const detailsPayload = await detailsResponse.json();
-      state.watchlistDetails = detailsPayload && typeof detailsPayload === "object" ? detailsPayload : {};
-    } else {
-      state.watchlistDetails = {};
-    }
+    const movieDetails = detailsResponse.ok ? await detailsResponse.json() : {};
+    const gameDetails = gamesDetailsResponse.ok ? await gamesDetailsResponse.json() : {};
+    state.watchlistDetails = {
+      ...(movieDetails && typeof movieDetails === "object" ? movieDetails : {}),
+      ...(gameDetails && typeof gameDetails === "object" ? gameDetails : {}),
+    };
     renderWatchlistAll();
   } catch (error) {
     elements.watchlistCurrent.innerHTML = `<p class="empty">${error.message}</p>`;

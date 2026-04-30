@@ -59,6 +59,8 @@ GAME_DETAIL_FIELDS = {
     "description",
     "genres",
     "platforms",
+    "publishers",
+    "developers",
     "website_url",
     "rawg_url",
 }
@@ -136,15 +138,17 @@ def tmdb_request(path: str, token: str, query: dict[str, str] | None = None) -> 
         return json.loads(response.read().decode("utf-8"))
 
 
-def rawg_request(query: dict[str, str]) -> dict:
+def rawg_request(query: dict[str, str], path_suffix: str = "") -> dict:
     api_key = secret("RAWG_API_KEY").strip()
     if not api_key:
         return {}
     params = dict(query)
     params["key"] = api_key
     query_string = urllib.parse.urlencode(params)
+    base = RAWG_API_BASE_URL.rstrip("/")
+    suffix = f"/{path_suffix.lstrip('/')}" if path_suffix else ""
     request = urllib.request.Request(
-        f"{RAWG_API_BASE_URL}?{query_string}",
+        f"{base}{suffix}?{query_string}",
         headers={
             "Accept": "application/json",
             "User-Agent": "Mozilla/5.0",
@@ -298,6 +302,12 @@ def clean_title(text: str) -> str:
 def movie_key(title: str) -> str:
     normalized = re.sub(r"\s+", " ", title).strip().lower()
     normalized = re.sub(r"[^\w\s]", "", normalized)
+    return normalized
+
+
+def rawg_title_key(title: str) -> str:
+    normalized = re.sub(r"[^\w\s]", " ", str(title or "").lower())
+    normalized = re.sub(r"\s+", " ", normalized).strip()
     return normalized
 
 
@@ -494,15 +504,16 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
 
 
 def game_type_from_label(label: str) -> str:
-    if any(token in label for token in {"single-player", "single player", "aaa", "triple aaa"}):
+    normalized = normalize_label(label)
+    if normalized in {"single-player", "single player", "aaa", "triple aaa"}:
         return "game_aaa"
-    if "indie" in label:
+    if normalized == "indie":
         return "game_indie"
-    if "couch" in label and "coop" in label:
+    if ("couch" in normalized) and re.search(r"\bco[\s-]?op\b", normalized):
         return "game_couch_coop"
-    if "co-op" in label or "coop" in label or "co op" in label:
+    if re.search(r"\bco[\s-]?op\b", normalized):
         return "game_coop"
-    if "lan" in label:
+    if normalized == "lan":
         return "game_lan"
     return ""
 
@@ -511,9 +522,26 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
     current_type = ""
     active_year = ""
     in_now_playing = False
+    seen_now_by_type = {
+        "game_aaa": False,
+        "game_indie": False,
+        "game_coop": False,
+        "game_couch_coop": False,
+        "game_lan": False,
+    }
     current_games = {"aaa": [], "indie": [], "coop": [], "couch_coop": [], "lan": []}
     years: dict[str, list[dict]] = {}
     skip_children_below_depth: int | None = None
+    in_lan_flat_mode = False
+    structural_labels = {
+        "now",
+        "now playing",
+        "currently playing",
+        "before",
+        "backlog",
+        "coming soon",
+        "maybe",
+    }
 
     for block, depth in flat_blocks:
         if skip_children_below_depth is not None:
@@ -530,19 +558,40 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
         cleaned_text = clean_title(text)
         label = normalize_label(cleaned_text)
         mapped_type = game_type_from_label(label)
-        if mapped_type:
+        is_section_label_block = block_type in {"heading_1", "heading_2", "heading_3", "toggle", "paragraph"} and (
+            block.get("has_children") or block_type.startswith("heading")
+        )
+        if mapped_type and is_section_label_block:
             current_type = mapped_type
             in_now_playing = False
+            in_lan_flat_mode = False
+            active_year = ""
+            continue
+
+        if label in {"lan games", "lan game"} and is_section_label_block:
+            current_type = "game_lan"
+            in_now_playing = False
+            in_lan_flat_mode = True
             active_year = ""
             continue
 
         if "now playing" in label or "currently playing" in label or label == "now":
             in_now_playing = True
+            in_lan_flat_mode = False
+            if current_type in seen_now_by_type:
+                seen_now_by_type[current_type] = True
             active_year = ""
             continue
 
         maybe_year = normalize_year_label(cleaned_text)
         if maybe_year:
+            if in_lan_flat_mode:
+                continue
+            # Only capture historical buckets before the first "Now Playing" in a section.
+            if current_type and seen_now_by_type.get(current_type, False):
+                in_now_playing = False
+                active_year = ""
+                continue
             in_now_playing = False
             active_year = maybe_year
             years.setdefault(active_year, [])
@@ -556,9 +605,11 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
         title = clean_title(text)
         if not title:
             continue
+        if normalize_label(title) in structural_labels:
+            continue
 
         entry = {"type": current_type, "title": title, "loved": is_bold}
-        if in_now_playing:
+        if in_now_playing or in_lan_flat_mode:
             if current_type == "game_aaa":
                 current_games["aaa"].append({"title": title, "loved": is_bold})
             elif current_type == "game_indie":
@@ -895,27 +946,39 @@ def fetch_game_detail(title: str, media_type: str) -> dict:
     payload = rawg_request(
         {
             "search": title,
-            "search_exact": "true",
-            "page_size": "5",
+            "page_size": "10",
         }
     )
     candidates = payload.get("results", []) if isinstance(payload, dict) else []
     if not isinstance(candidates, list) or not candidates:
         return result
 
-    first = candidates[0]
+    wanted = rawg_title_key(title)
+    ranked = []
+    for index, candidate in enumerate(candidates):
+        candidate_name = rawg_title_key(candidate.get("name") or "")
+        exact = 1 if candidate_name == wanted else 0
+        starts = 1 if candidate_name.startswith(wanted) and wanted else 0
+        rating_count = int(candidate.get("ratings_count") or 0)
+        ranked.append((exact, starts, rating_count, -index, candidate))
+    ranked.sort(reverse=True)
+    first = ranked[0][4]
+
     slug = str(first.get("slug") or "").strip()
-    image = str(first.get("background_image") or "").strip()
-    released = str(first.get("released") or "").strip()
-    rating = first.get("rating")
-    website = str(first.get("website") or "").strip()
+    details = rawg_request({}, path_suffix=slug) if slug else {}
+    chosen = details if isinstance(details, dict) and details else first
+
+    image = str(chosen.get("background_image") or first.get("background_image") or "").strip()
+    released = str(chosen.get("released") or first.get("released") or "").strip()
+    rating = chosen.get("rating", first.get("rating"))
+    website = str(chosen.get("website") or "").strip()
     genres = [
         str(item.get("name") or "").strip()
-        for item in (first.get("genres") or [])
+        for item in (chosen.get("genres") or first.get("genres") or [])
         if isinstance(item, dict) and str(item.get("name") or "").strip()
     ]
     platforms = []
-    for entry in first.get("platforms") or []:
+    for entry in (chosen.get("platforms") or first.get("platforms") or []):
         if not isinstance(entry, dict):
             continue
         platform = entry.get("platform")
@@ -924,8 +987,18 @@ def fetch_game_detail(title: str, media_type: str) -> dict:
         platform_name = str(platform.get("name") or "").strip()
         if platform_name:
             platforms.append(platform_name)
+    publishers = [
+        str(item.get("name") or "").strip()
+        for item in (chosen.get("publishers") or [])
+        if isinstance(item, dict) and str(item.get("name") or "").strip()
+    ]
+    developers = [
+        str(item.get("name") or "").strip()
+        for item in (chosen.get("developers") or [])
+        if isinstance(item, dict) and str(item.get("name") or "").strip()
+    ]
 
-    description = str(first.get("description_raw") or first.get("description") or "").strip()
+    description = str(chosen.get("description_raw") or chosen.get("description") or "").strip()
     if isinstance(rating, (int, float)):
         result["rating"] = round(float(rating), 1)
     else:
@@ -935,6 +1008,8 @@ def fetch_game_detail(title: str, media_type: str) -> dict:
     result["description"] = description
     result["genres"] = genres
     result["platforms"] = platforms[:8]
+    result["publishers"] = list(dict.fromkeys(publishers))[:6]
+    result["developers"] = list(dict.fromkeys(developers))[:6]
     result["website_url"] = website
     result["rawg_url"] = f"{RAWG_SITE_GAME_BASE_URL}/{slug}" if slug else ""
     return result
