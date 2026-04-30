@@ -22,6 +22,7 @@ TASKS = {
     ],
     "releases": [[sys.executable, "release-radar/scrape_releases.py"]],
     "coming-soon": [[sys.executable, "release-radar/scrape_coming_soon.py"]],
+    "watchlist": [[sys.executable, "events/scrape_watchlist.py"]],
 }
 
 

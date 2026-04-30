@@ -28,6 +28,9 @@
 :root[data-theme="dark"] .table-shell,
 :root[data-theme="dark"] .special-group,
 :root[data-theme="dark"] .special-card,
+:root[data-theme="dark"] .watchlist-current-card,
+:root[data-theme="dark"] .watchlist-year-group,
+:root[data-theme="dark"] .watchlist-entry,
 :root[data-theme="dark"] .subsection-panel,
 :root[data-theme="dark"] .map-sidebar,
 :root[data-theme="dark"] .map-detail-panel,
@@ -93,6 +96,37 @@
   border-color: #4f79b2;
   color: #cfe2ff;
   box-shadow: inset 0 0 0 1px #4f79b2;
+}
+
+:root[data-theme="dark"] .watchlist-tab {
+  background: #182339;
+  border-color: #314563;
+  color: #e6edf7;
+}
+
+:root[data-theme="dark"] .watchlist-tab:hover {
+  background: #1e2b45;
+}
+
+:root[data-theme="dark"] .watchlist-tab.is-selected {
+  background: #1f2f4f;
+  border-color: #4f79b2;
+  color: #cfe2ff;
+  box-shadow: inset 0 0 0 1px #4f79b2;
+}
+
+:root[data-theme="dark"] #watchlist-tab-movies.is-selected {
+  color: #ffd9c8;
+  border-color: #fdba74;
+  background: #4a2312;
+  box-shadow: inset 0 0 0 1px #fdba74;
+}
+
+:root[data-theme="dark"] #watchlist-tab-series.is-selected {
+  color: #d6e7ff;
+  border-color: #93c5fd;
+  background: #172d56;
+  box-shadow: inset 0 0 0 1px #93c5fd;
 }
 
 :root[data-theme="dark"] .today-special-group {
@@ -1133,6 +1167,175 @@ td.card-number {
   }
 }
 
+.watchlist-current {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding-top: 12px;
+}
+
+.watchlist-tabs {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.watchlist-tab {
+  min-height: 34px;
+  padding: 6px 12px;
+  color: #344054;
+  background: #fbfcfe;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.watchlist-tab:hover {
+  background: #eef3f9;
+}
+
+.watchlist-tab.is-selected {
+  color: #0b4f8a;
+  border-color: #2f6fad;
+  background: #e6f0fb;
+  box-shadow: inset 0 0 0 1px #2f6fad;
+}
+
+#watchlist-tab-movies.is-selected {
+  color: #7a2e0e;
+  border-color: #c2410c;
+  background: #fff1e8;
+  box-shadow: inset 0 0 0 1px #c2410c;
+}
+
+#watchlist-tab-series.is-selected {
+  color: #0b4f8a;
+  border-color: #1d4ed8;
+  background: #e8f0ff;
+  box-shadow: inset 0 0 0 1px #1d4ed8;
+}
+
+.watchlist-current-card {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfe;
+}
+
+.watchlist-current-card h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #344054;
+}
+
+.watchlist-current-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 8px;
+}
+
+.watchlist-current-entry {
+  min-height: 74px;
+}
+
+.watchlist-history {
+  display: grid;
+  gap: 10px;
+  padding-top: 12px;
+}
+
+.watchlist-year-group {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfe;
+}
+
+.watchlist-year-group summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.watchlist-year-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.watchlist-year-group summary::before {
+  content: "+";
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  color: var(--accent-strong);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.watchlist-year-group[open] summary::before {
+  content: "-";
+}
+
+.watchlist-year-group summary {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.watchlist-year-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.watchlist-entry {
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.watchlist-entry-type {
+  margin: 0 0 4px;
+  color: #344054;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.watchlist-entry[data-watch-type="movie"] .watchlist-entry-type {
+  color: #9a3412;
+}
+
+.watchlist-entry[data-watch-type="series"] .watchlist-entry-type {
+  color: #1d4ed8;
+}
+
+:root[data-theme="dark"] .watchlist-entry[data-watch-type="movie"] .watchlist-entry-type {
+  color: #fdba74;
+}
+
+:root[data-theme="dark"] .watchlist-entry[data-watch-type="series"] .watchlist-entry-type {
+  color: #93c5fd;
+}
+
+.watchlist-entry-title {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 @media (max-width: 820px) {
   .topbar,
   .controls {
@@ -1175,5 +1378,9 @@ td.card-number {
 
   .poster-grid {
     grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
+  }
+
+  .watchlist-current {
+    grid-template-columns: 1fr;
   }
 }

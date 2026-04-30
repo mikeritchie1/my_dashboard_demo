@@ -2,6 +2,7 @@
 const NEW_CARDS_PATH = "data/new_missing_cards.json";
 const RELEASES_PATH = "data/pahe_latest.json";
 const COMING_SOON_PATH = "data/coming_soon.json";
+const WATCHLIST_PATH = "data/watchlist.json";
 const SPECIALS_PATH = "data/specials.json";
 const QUICKET_EVENTS_PATH = "data/quicket_events.json";
 const WEATHER_PATH =
@@ -34,6 +35,8 @@ const state = {
   weatherPayload: null,
   customStartDate: "",
   customEndDate: "",
+  watchlistType: "movie",
+  watchlistPayload: null,
 };
 
 const elements = {
@@ -45,6 +48,10 @@ const elements = {
   maxPrice: document.querySelector("#max-price"),
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
+  watchlistCurrent: document.querySelector("#watchlist-current"),
+  watchlistHistory: document.querySelector("#watchlist-history"),
+  watchlistTabMovies: document.querySelector("#watchlist-tab-movies"),
+  watchlistTabSeries: document.querySelector("#watchlist-tab-series"),
   weatherCards: document.querySelector("#weather-cards"),
   specialsList: document.querySelector("#specials-list"),
   specialsMap: document.querySelector("#specials-map"),
@@ -369,6 +376,159 @@ function setLastScrapedText(value) {
     timeZone: "Africa/Johannesburg",
   }).format(parsed);
   elements.lastScraped.textContent = `Last scraped: ${formatted}`;
+}
+
+function safeWatchTitle(item) {
+  if (typeof item === "string") {
+    return item.trim();
+  }
+  if (item && typeof item.title === "string") {
+    return item.title.trim();
+  }
+  return "";
+}
+
+function safeWatchType(item) {
+  const rawType = typeof item === "object" && item ? String(item.type || "") : "";
+  const lowered = rawType.toLowerCase();
+  if (lowered === "series" || lowered === "movie") {
+    return lowered;
+  }
+  return "";
+}
+
+function watchTypeLabel(item) {
+  const type = safeWatchType(item);
+  if (type === "series") {
+    return "Series";
+  }
+  if (type === "movie") {
+    return "Movie";
+  }
+  return "Title";
+}
+
+function renderWatchlistCurrent(payload) {
+  const current = payload?.currently_watching || {};
+  const movies = Array.isArray(current.movies) ? current.movies.filter(Boolean) : [];
+  const series = Array.isArray(current.series) ? current.series.filter(Boolean) : [];
+  const activeList = state.watchlistType === "series" ? series : movies;
+  const heading = state.watchlistType === "series" ? "Series" : "Movies";
+
+  if (!activeList.length) {
+    elements.watchlistCurrent.innerHTML = '<p class="empty">No current titles listed.</p>';
+    return;
+  }
+
+  const cards = activeList
+    .map((title) => {
+      const safeTitle = safeWatchTitle(title);
+      return `
+        <article class="watchlist-entry watchlist-current-entry" data-watch-type="${state.watchlistType}">
+          <p class="watchlist-entry-type">${heading}</p>
+          <p class="watchlist-entry-title">${safeTitle}</p>
+        </article>
+      `;
+    })
+    .join("");
+
+  elements.watchlistCurrent.innerHTML = `
+    <article class="watchlist-current-card">
+      <h4>${heading}</h4>
+      <div class="watchlist-current-grid">${cards}</div>
+    </article>
+  `;
+}
+
+function renderWatchlistHistory(payload) {
+  const history = Array.isArray(payload?.history_by_year) ? payload.history_by_year : [];
+  if (!history.length) {
+    elements.watchlistHistory.innerHTML = '<p class="empty">No watch history found.</p>';
+    return;
+  }
+
+  elements.watchlistHistory.innerHTML = "";
+  for (const group of history) {
+    const year = String(group?.year || "").trim();
+    const entries = Array.isArray(group?.entries) ? group.entries : [];
+    if (!year || !entries.length) {
+      continue;
+    }
+
+    const section = document.createElement("details");
+    section.className = "watchlist-year-group";
+    section.open = year === history[0]?.year;
+
+    const summary = document.createElement("summary");
+    summary.textContent = year;
+    section.append(summary);
+
+    const list = document.createElement("div");
+    list.className = "watchlist-year-list";
+    for (const entry of entries) {
+      const entryType = safeWatchType(entry) || "movie";
+      if (entryType !== state.watchlistType) {
+        continue;
+      }
+      const title = safeWatchTitle(entry);
+      if (!title) {
+        continue;
+      }
+      const item = document.createElement("article");
+      item.className = "watchlist-entry";
+      const typeLabel = watchTypeLabel(entry);
+      item.dataset.watchType = entryType;
+      item.innerHTML = `
+        <p class="watchlist-entry-type">${typeLabel}</p>
+        <p class="watchlist-entry-title">${title}</p>
+      `;
+      list.append(item);
+    }
+
+    if (!list.children.length) {
+      continue;
+    }
+    section.append(list);
+    elements.watchlistHistory.append(section);
+  }
+
+  if (!elements.watchlistHistory.children.length) {
+    elements.watchlistHistory.innerHTML = '<p class="empty">No watch history found.</p>';
+  }
+}
+
+function applyWatchlistTabState() {
+  if (!elements.watchlistTabMovies || !elements.watchlistTabSeries) {
+    return;
+  }
+  const isMovies = state.watchlistType === "movie";
+  elements.watchlistTabMovies.classList.toggle("is-selected", isMovies);
+  elements.watchlistTabSeries.classList.toggle("is-selected", !isMovies);
+  elements.watchlistTabMovies.setAttribute("aria-pressed", isMovies ? "true" : "false");
+  elements.watchlistTabSeries.setAttribute("aria-pressed", isMovies ? "false" : "true");
+}
+
+function renderWatchlistAll() {
+  if (!state.watchlistPayload) {
+    return;
+  }
+  applyWatchlistTabState();
+  renderWatchlistCurrent(state.watchlistPayload);
+  renderWatchlistHistory(state.watchlistPayload);
+}
+
+async function loadWatchlist() {
+  try {
+    const response = await fetch(WATCHLIST_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${WATCHLIST_PATH}`);
+    }
+    state.watchlistPayload = await response.json();
+    renderWatchlistAll();
+  } catch (error) {
+    elements.watchlistCurrent.innerHTML = `<p class="empty">${error.message}</p>`;
+    elements.watchlistHistory.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
 }
 
 function themeStorageKey() {
@@ -1783,6 +1943,20 @@ if (elements.themeToggle) {
   });
 }
 
+if (elements.watchlistTabMovies) {
+  elements.watchlistTabMovies.addEventListener("click", () => {
+    state.watchlistType = "movie";
+    renderWatchlistAll();
+  });
+}
+
+if (elements.watchlistTabSeries) {
+  elements.watchlistTabSeries.addEventListener("click", () => {
+    state.watchlistType = "series";
+    renderWatchlistAll();
+  });
+}
+
 const storedTheme = loadThemePreference();
 if (storedTheme) {
   applyTheme(storedTheme);
@@ -1796,6 +1970,7 @@ loadMetadata();
 loadWeather();
 loadReleases();
 loadComingSoon();
+loadWatchlist();
 loadSpecials();
 loadQuicketEvents();
 syncRangeButtons();

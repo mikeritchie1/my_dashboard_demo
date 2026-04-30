@@ -4,6 +4,7 @@ import json
 import os
 import re
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -139,6 +140,34 @@ def notion_request(path: str, token: str) -> dict:
             "Accept": "application/json",
             "User-Agent": "Mozilla/5.0",
         },
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_json_url(url: str) -> dict:
+    request = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_json_post(url: str, headers: dict[str, str], body: dict) -> dict:
+    request = urllib.request.Request(
+        url,
+        data=json.dumps(body).encode("utf-8"),
+        headers={
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0",
+            **headers,
+        },
+        method="POST",
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
@@ -324,13 +353,20 @@ def days_for_group(title: str) -> list[str]:
 
 
 def parse_location(text: str) -> dict | None:
-    match = re.match(
-        r"^\s*(?P<venue>[^:]+):\s*(?P<lat>-?\d+(?:\.\d+)?)\s*,\s*(?P<lng>-?\d+(?:\.\d+)?)(?:\s*;\s*\((?P<tags>[^)]*)\))?(?:\s*\|\s*(?P<url>https?://\S+))?",
-        text,
-    )
-    if not match:
+    cleaned = text.strip().lstrip("-").strip()
+    main_match = re.match(r"^(?P<venue>[^:]+):\s*(?P<lat>-?\d+(?:\.\d+)?)\s*,\s*(?P<lng>-?\d+(?:\.\d+)?)", cleaned)
+    if not main_match:
         return None
-    raw_tags = (match.group("tags") or "").strip()
+    venue = main_match.group("venue").strip()
+    lat = float(main_match.group("lat"))
+    lng = float(main_match.group("lng"))
+
+    tags_match = re.search(r"\((?P<tags>[^)]*)\)", cleaned)
+    raw_tags = (tags_match.group("tags") if tags_match else "").strip()
+    url_match = re.search(r"(https?://\S+)", cleaned)
+    raw_url = (url_match.group(1) if url_match else "").strip()
+    raw_url = raw_url.rstrip(").,")
+
     tags = [tag.strip().lower() for tag in raw_tags.split(",") if tag.strip()]
     allowed_types = allowed_location_tags()
     allowed_categories = allowed_location_category_tags()
@@ -341,13 +377,13 @@ def parse_location(text: str) -> dict | None:
         types = tags[:]
         categories = []
     return {
-        "venue": match.group("venue").strip(),
-        "lat": float(match.group("lat")),
-        "lng": float(match.group("lng")),
+        "venue": venue,
+        "lat": lat,
+        "lng": lng,
         "types": types,
         "categories": categories,
         "tags": list(dict.fromkeys(types + categories)),
-        "url": (match.group("url") or "").strip(),
+        "url": raw_url,
     }
 
 
@@ -406,6 +442,72 @@ def split_specials_and_locations(groups: list[dict]) -> tuple[list[dict], dict[s
         special_groups.append(group)
 
     return special_groups, locations
+
+
+def text_query_from_maps_url(url: str, fallback_name: str, lat: float, lng: float) -> str:
+    if url:
+        parsed = urllib.parse.urlparse(url)
+        query = urllib.parse.parse_qs(parsed.query).get("query", [""])[0].strip()
+        if query:
+            return urllib.parse.unquote_plus(query)
+    return f"{fallback_name} {lat},{lng}"
+
+
+def google_places_search_text_new(api_key: str, text_query: str, lat: float, lng: float) -> dict:
+    headers = {
+        "X-Goog-Api-Key": api_key,
+        "X-Goog-FieldMask": (
+            "places.id,places.displayName,places.rating,places.userRatingCount,"
+            "places.formattedAddress,places.googleMapsUri,places.websiteUri"
+        ),
+    }
+    body = {
+        "textQuery": text_query,
+        "pageSize": 1,
+        "locationBias": {
+            "circle": {
+                "center": {"latitude": lat, "longitude": lng},
+                "radius": 600.0,
+            }
+        },
+    }
+    payload = fetch_json_post("https://places.googleapis.com/v1/places:searchText", headers, body)
+    places = payload.get("places", []) if isinstance(payload, dict) else []
+    return places[0] if places else {}
+
+
+def enrich_locations_with_ratings(locations: dict[str, dict]) -> dict[str, dict]:
+    api_key = secret("GOOGLE_MAPS_API_KEY") or secret("GOOGLE_API_KEY")
+    if not api_key:
+        return locations
+
+    enriched: dict[str, dict] = {}
+    for venue, location in locations.items():
+        lat = location.get("lat")
+        lng = location.get("lng")
+        if not isinstance(lat, (float, int)) or not isinstance(lng, (float, int)):
+            enriched[venue] = location
+            continue
+        try:
+            query = text_query_from_maps_url(str(location.get("url", "")), venue, float(lat), float(lng))
+            place = google_places_search_text_new(api_key, query, float(lat), float(lng))
+            if not place:
+                enriched[venue] = location
+                continue
+            merged = dict(location)
+            merged["google_place_id"] = place.get("id", "")
+            merged["google_name"] = (place.get("displayName") or {}).get("text", "")
+            if place.get("rating") is not None:
+                merged["rating"] = place.get("rating")
+            if place.get("userRatingCount") is not None:
+                merged["user_ratings_total"] = place.get("userRatingCount")
+            merged["formatted_address"] = place.get("formattedAddress", "")
+            merged["google_maps_url"] = place.get("googleMapsUri", "") or str(location.get("url", ""))
+            merged["website"] = place.get("websiteUri", "")
+            enriched[venue] = merged
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError):
+            enriched[venue] = location
+    return enriched
 
 
 def specials_from_database(token: str, database_id: str) -> list[dict]:
@@ -488,6 +590,7 @@ def scrape_specials() -> dict:
         groups = legacy_groups
         if database_id:
             groups = specials_from_database(token, database_id)
+        locations = enrich_locations_with_ratings(locations)
         return {
             "source": PAGE_URL,
             "title": page_title(page),
