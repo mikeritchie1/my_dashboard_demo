@@ -7,13 +7,15 @@ This project now has:
 
 ## Structure
 
-- [services/events](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/events): watchlist, specials, and event scrapers
+- [services/events](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/events): events and specials scrapers
+- [services/media](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/media): media/watchlist scraper
 - [services/one_piece](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/one_piece): One Piece card scraping and change detection
 - [services/release_radar](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/release_radar): release/coming-soon scrapers
 - [dashboard/index.html](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/dashboard/index.html): dashboard page
 - [dashboard/app.js](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/dashboard/app.js): dashboard logic
 - [dashboard/styles.css](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/dashboard/styles.css): dashboard styles
-- [data/events](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/events): events/watchlist/specials JSON
+- [data/events](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/events): events + specials JSON
+- [data/media](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/media): media/watchlist JSON + caches
 - [data/one_piece](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/one_piece): One Piece CSV/JSON
 - [data/release_radar](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/release_radar): release JSON
 - [data/metadata.json](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/metadata.json): last scrape timestamp
@@ -35,7 +37,7 @@ python run_local_dashboard_update.py all
 Run one group:
 
 ```powershell
-python run_local_dashboard_update.py watchlist
+python run_local_dashboard_update.py media
 python run_local_dashboard_update.py events
 python run_local_dashboard_update.py cards
 ```

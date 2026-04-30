@@ -19,7 +19,7 @@ DEFAULT_WATCHLIST_PAGE_ID = "1d757df8191880aeb859c1402a2154c8"
 DEFAULT_WATCHLIST_URL = "https://www.notion.so/My-Watchlist-1d757df8191880aeb859c1402a2154c8"
 
 REPO_DIR = Path(__file__).resolve().parents[2]
-DATA_DIR = REPO_DIR / "data" / "events"
+DATA_DIR = REPO_DIR / "data" / "media"
 OUTPUT_FILE = DATA_DIR / "watchlist.json"
 MOVIE_DETAILS_CACHE_FILE = DATA_DIR / "watchlist_movie_details.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
