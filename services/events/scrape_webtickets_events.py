@@ -8,13 +8,14 @@ import urllib.request
 from pathlib import Path
 import sys
 
-sys.path.append(str(Path(__file__).resolve().parents[1]))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 
 
 BASE_URL = env_get("SCRAPE_WEBTICKETS_CATEGORY_URL_TEMPLATE", "https://www.webtickets.co.za/v2/category.aspx?itemid=1184162&location=9&when=anytime&page={page}")
 PAGE_PREFIX = env_get("SCRAPE_WEBTICKETS_PAGE_PREFIX", "https://www.webtickets.co.za/v2/")
-OUTPUT_DIR = Path(__file__).resolve().parent / "data"
+REPO_DIR = Path(__file__).resolve().parents[2]
+OUTPUT_DIR = REPO_DIR / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "webtickets_wc_events.json"
 
 

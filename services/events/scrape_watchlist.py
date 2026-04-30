@@ -10,7 +10,7 @@ import urllib.request
 from pathlib import Path
 import sys
 
-sys.path.append(str(Path(__file__).resolve().parents[1]))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 
 
@@ -18,12 +18,10 @@ NOTION_VERSION = "2022-06-28"
 DEFAULT_WATCHLIST_PAGE_ID = "1d757df8191880aeb859c1402a2154c8"
 DEFAULT_WATCHLIST_URL = "https://www.notion.so/My-Watchlist-1d757df8191880aeb859c1402a2154c8"
 
-REPO_DIR = Path(__file__).resolve().parents[1]
-DATA_DIR = Path(__file__).resolve().parent / "data"
+REPO_DIR = Path(__file__).resolve().parents[2]
+DATA_DIR = REPO_DIR / "data" / "events"
 OUTPUT_FILE = DATA_DIR / "watchlist.json"
 MOVIE_DETAILS_CACHE_FILE = DATA_DIR / "watchlist_movie_details.json"
-DOCS_DATA_DIR = REPO_DIR / "docs" / "data"
-DOCS_OUTPUT_FILE = DOCS_DATA_DIR / "watchlist.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 NOTION_API_BASE_URL = env_get("SCRAPE_NOTION_API_BASE_URL", "https://api.notion.com/v1")
 TMDB_API_BASE_URL = env_get("SCRAPE_TMDB_API_BASE_URL", "https://api.themoviedb.org/3")
@@ -388,10 +386,8 @@ def write_movie_details_cache(cache: dict[str, dict]) -> None:
 
 def write_payload(payload: dict) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
     serialized = json.dumps(payload, indent=2, ensure_ascii=False)
     OUTPUT_FILE.write_text(serialized, encoding="utf-8")
-    DOCS_OUTPUT_FILE.write_text(serialized, encoding="utf-8")
 
 
 def progress_bar(processed: int, total: int, width: int = 24) -> str:

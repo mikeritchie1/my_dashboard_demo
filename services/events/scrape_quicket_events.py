@@ -12,13 +12,14 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import sys
 
-sys.path.append(str(Path(__file__).resolve().parents[1]))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 
 
 BASE_URL = env_get("SCRAPE_QUICKET_EVENTS_URL_TEMPLATE", "https://www.quicket.co.za/events/{page}/")
 NOMINATIM_SEARCH_URL = env_get("SCRAPE_NOMINATIM_SEARCH_URL", "https://nominatim.openstreetmap.org/search")
-OUTPUT_DIR = Path(__file__).resolve().parent / "data"
+REPO_DIR = Path(__file__).resolve().parents[2]
+OUTPUT_DIR = REPO_DIR / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "quicket_events.json"
 GEOCODE_CACHE_OUTPUT = OUTPUT_DIR / "quicket_geocode_cache.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")

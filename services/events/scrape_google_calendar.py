@@ -8,13 +8,13 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import sys
 
-sys.path.append(str(Path(__file__).resolve().parents[1]))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 
 
-REPO_DIR = Path(__file__).resolve().parents[1]
+REPO_DIR = Path(__file__).resolve().parents[2]
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
-OUTPUT_DIR = Path(__file__).resolve().parent / "data"
+OUTPUT_DIR = REPO_DIR / "data" / "events"
 OUTPUT_FILE = OUTPUT_DIR / "google_calendar_events.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")
 GOOGLE_CALENDAR_API_BASE_URL = env_get("SCRAPE_GOOGLE_CALENDAR_API_BASE_URL", "https://www.googleapis.com/calendar/v3")

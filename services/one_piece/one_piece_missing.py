@@ -10,13 +10,13 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from zipfile import ZipFile
 
-sys.path.append(str(Path(__file__).resolve().parents[1]))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 
 
 ONE_PIECE_DIR = Path(__file__).resolve().parent
 WORKBOOK = ONE_PIECE_DIR / "One Piece Cards.xlsx"
-ONE_PIECE_DATA_DIR = ONE_PIECE_DIR / "data"
+ONE_PIECE_DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "one_piece"
 
 KNIGHTLY_COLLECTION_URL = env_get("SCRAPE_OP_KNIGHTLY_COLLECTION_URL", "https://www.knightlygaming.co.za/collections/one-piece-singles")
 KNIGHTLY_PRODUCTS_URL = KNIGHTLY_COLLECTION_URL + "/products.json?limit=250&page={page}"

@@ -9,7 +9,7 @@ import urllib.request
 from pathlib import Path
 import sys
 
-sys.path.append(str(Path(__file__).resolve().parents[1]))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 
 
@@ -21,8 +21,8 @@ PAGE_ID = "082fa9625a9f4f949d03a8d1517c76f8"
 SPECIALS_DATABASE_ID = "NOTION_SPECIALS_DATABASE_ID"
 SPECIALS_DATABASE_URL = "NOTION_SPECIALS_DATABASE_URL"
 DEFAULT_SPECIALS_DATABASE_ID = "35157df8191880f7accedf40168acee7"
-REPO_DIR = Path(__file__).resolve().parents[1]
-DATA_DIR = Path(__file__).resolve().parent / "data"
+REPO_DIR = Path(__file__).resolve().parents[2]
+DATA_DIR = REPO_DIR / "data" / "events"
 OUTPUT_FILE = DATA_DIR / "specials.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 TAGS_CONFIG_FILE = Path(__file__).resolve().parent / "allowed_location_tags.json"

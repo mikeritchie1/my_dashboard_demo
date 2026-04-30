@@ -13,7 +13,7 @@ from pathlib import Path
 
 
 ONE_PIECE_DIR = Path(__file__).resolve().parent
-ONE_PIECE_DATA_DIR = ONE_PIECE_DIR / "data"
+ONE_PIECE_DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "one_piece"
 REPORT_PREFIXES = {
     "all": "all_stores_missing_available",
     "bigbang": "big_bang_missing_available",

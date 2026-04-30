@@ -7,16 +7,16 @@ import urllib.request
 from pathlib import Path
 import sys
 
-sys.path.append(str(Path(__file__).resolve().parents[1]))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 
 
 API_URL = env_get("SCRAPE_TMDB_UPCOMING_API_URL", "https://api.themoviedb.org/3/movie/upcoming")
 IMAGE_BASE_URL = env_get("SCRAPE_TMDB_IMAGE_BASE_URL", "https://image.tmdb.org/t/p/w342")
 TMDB_SITE_MOVIE_BASE_URL = env_get("SCRAPE_TMDB_SITE_MOVIE_BASE_URL", "https://www.themoviedb.org/movie")
-DATA_DIR = Path(__file__).resolve().parent / "data"
+DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "release_radar"
 OUTPUT_FILE = DATA_DIR / "coming_soon.json"
-REPO_DIR = Path(__file__).resolve().parents[1]
+REPO_DIR = Path(__file__).resolve().parents[2]
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 
 

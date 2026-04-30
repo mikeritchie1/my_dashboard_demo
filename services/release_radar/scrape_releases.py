@@ -8,12 +8,12 @@ from html.parser import HTMLParser
 from pathlib import Path
 import sys
 
-sys.path.append(str(Path(__file__).resolve().parents[1]))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 
 
 SOURCE_URL = env_get("SCRAPE_RELEASES_SOURCE_URL", "https://pahe.ink/")
-DATA_DIR = Path(__file__).resolve().parent / "data"
+DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "release_radar"
 OUTPUT_FILE = DATA_DIR / "pahe_latest.json"
 
 

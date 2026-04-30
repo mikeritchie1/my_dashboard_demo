@@ -1,15 +1,15 @@
-ï»¿const CSV_PATH = "data/all_stores_missing_available.csv";
-const NEW_CARDS_PATH = "data/new_missing_cards.json";
-const RELEASES_PATH = "data/pahe_latest.json";
-const COMING_SOON_PATH = "data/coming_soon.json";
-const WATCHLIST_PATH = "data/watchlist.json";
-const SPECIALS_PATH = "data/specials.json";
-const QUICKET_EVENTS_PATH = "data/quicket_events.json";
+const CSV_PATH = "../data/one_piece/all_stores_missing_available.csv";
+const NEW_CARDS_PATH = "../data/one_piece/new_missing_cards.json";
+const RELEASES_PATH = "../data/release_radar/pahe_latest.json";
+const COMING_SOON_PATH = "../data/release_radar/coming_soon.json";
+const WATCHLIST_PATH = "../data/events/watchlist.json";
+const SPECIALS_PATH = "../data/events/specials.json";
+const QUICKET_EVENTS_PATH = "../data/events/quicket_events.json";
 const WEATHER_PATH =
   "https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Africa%2FJohannesburg&forecast_days=7";
 const HOLIDAYS_PATH = "https://date.nager.at/api/v3/publicholidays/{year}/ZA";
-const METADATA_PATH = "data/metadata.json";
-const GOOGLE_CALENDAR_EVENTS_PATH = "data/google_calendar_events.json";
+const METADATA_PATH = "../data/metadata.json";
+const GOOGLE_CALENDAR_EVENTS_PATH = "../data/events/google_calendar_events.json";
 const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const WATCHLIST_MEDIA_CONFIG = {
   screen: { label: "Movies + Series", types: ["movie", "series"] },
@@ -875,7 +875,7 @@ function openWatchlistDetail(type, title) {
         <p class="watchlist-detail-kicker">${safeLabel}${lovedBadge}</p>
         <h3>${safeTitle}</h3>
         <p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>
-        ${metaBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(metaBits.join(" â€¢ "))}</p>` : ""}
+        ${metaBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(metaBits.join(" • "))}</p>` : ""}
         <p class="watchlist-detail-description">${escapeHtml(description)}</p>
         <p><strong>${isMovieLike ? "Directors" : "Creators"}:</strong> ${escapeHtml(directors)}</p>
         <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>
@@ -1160,7 +1160,7 @@ function renderWeather(payload) {
         card.innerHTML = `
           <p class="weather-day">${weatherDayLabel(item.date)}</p>
           <p class="weather-icon">${weatherIcon(item.code)}</p>
-          <p class="weather-temp">${Math.round(item.max)}Â° / ${Math.round(item.min)}Â°</p>
+          <p class="weather-temp">${Math.round(item.max)}° / ${Math.round(item.min)}°</p>
           ${holidayHtml}
           ${calendarHtml}
         `;
@@ -1185,7 +1185,7 @@ function renderWeather(payload) {
         card.innerHTML = `
           <p class="weather-day">${weatherDayLabel(item.date)}</p>
           <p class="weather-icon">${weatherIcon(item.code)}</p>
-          <p class="weather-temp">${Math.round(item.max)}Â° / ${Math.round(item.min)}Â°</p>
+          <p class="weather-temp">${Math.round(item.max)}° / ${Math.round(item.min)}°</p>
         `;
         elements.weatherCards.append(card);
       }
@@ -2558,5 +2558,6 @@ loadWatchlist();
 loadSpecials();
 loadQuicketEvents();
 syncRangeButtons();
+
 
 
