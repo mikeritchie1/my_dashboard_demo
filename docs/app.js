@@ -52,6 +52,9 @@ const elements = {
   watchlistHistory: document.querySelector("#watchlist-history"),
   watchlistTabMovies: document.querySelector("#watchlist-tab-movies"),
   watchlistTabSeries: document.querySelector("#watchlist-tab-series"),
+  watchlistDetailPanel: document.querySelector("#watchlist-detail-panel"),
+  watchlistDetailContent: document.querySelector("#watchlist-detail-content"),
+  watchlistDetailClose: document.querySelector("#watchlist-detail-close"),
   weatherCards: document.querySelector("#weather-cards"),
   specialsList: document.querySelector("#specials-list"),
   specialsMap: document.querySelector("#specials-map"),
@@ -397,6 +400,15 @@ function safeWatchType(item) {
   return "";
 }
 
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function watchTypeLabel(item) {
   const type = safeWatchType(item);
   if (type === "series") {
@@ -406,6 +418,123 @@ function watchTypeLabel(item) {
     return "Movie";
   }
   return "Title";
+}
+
+function movieLookupKey(title) {
+  return String(title || "")
+    .toLowerCase()
+    .replace(/[^\w\s]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function movieDetailsForTitle(payload, title) {
+  const details = payload?.movie_details || {};
+  const key = movieLookupKey(title);
+  if (!key) {
+    return null;
+  }
+  const value = details[key];
+  if (!value || typeof value !== "object") {
+    return null;
+  }
+  return value;
+}
+
+function renderWatchlistTitleCard(type, title, payload) {
+  const movieDetails = type === "movie" ? movieDetailsForTitle(payload, title) : null;
+  const posterUrl = String(movieDetails?.poster_url || "").trim();
+  const ratingValue = movieDetails?.rating;
+  const hasRating = Number.isFinite(Number(ratingValue));
+  const ratingText = hasRating ? `${Number(ratingValue).toFixed(1)} / 10` : "No rating";
+  const safeTitle = escapeHtml(title);
+
+  const posterHtml = posterUrl
+    ? `<img class="watchlist-entry-poster" src="${posterUrl}" alt="${safeTitle} poster" loading="lazy">`
+    : '<div class="watchlist-entry-poster watchlist-entry-poster-empty">No poster</div>';
+
+  const badgeLabel = type === "series" ? "Series" : "Movie";
+  if (type === "movie") {
+    return `
+      <button
+        type="button"
+        class="watchlist-entry watchlist-current-entry watchlist-entry-button"
+        data-watch-type="${type}"
+        data-watch-title="${encodeURIComponent(title)}"
+      >
+        ${posterHtml}
+        <div class="watchlist-entry-body">
+          <p class="watchlist-entry-type">${badgeLabel}</p>
+          <p class="watchlist-entry-title">${safeTitle}</p>
+          <p class="watchlist-entry-rating">${ratingText}</p>
+        </div>
+      </button>
+    `;
+  }
+  return `
+    <article class="watchlist-entry watchlist-current-entry" data-watch-type="${type}">
+      ${posterHtml}
+      <div class="watchlist-entry-body">
+        <p class="watchlist-entry-type">${badgeLabel}</p>
+        <p class="watchlist-entry-title">${safeTitle}</p>
+        ${type === "movie" ? `<p class="watchlist-entry-rating">${ratingText}</p>` : ""}
+      </div>
+    </article>
+  `;
+}
+
+function joinList(values) {
+  if (!Array.isArray(values) || !values.length) {
+    return "";
+  }
+  return values.filter(Boolean).join(", ");
+}
+
+function openWatchlistMovieDetail(title) {
+  if (!elements.watchlistDetailPanel || !elements.watchlistDetailContent || !state.watchlistPayload) {
+    return;
+  }
+  const details = movieDetailsForTitle(state.watchlistPayload, title) || {};
+  const posterUrl = String(details.poster_url || "").trim();
+  const ratingValue = details.rating;
+  const hasRating = Number.isFinite(Number(ratingValue));
+  const ratingText = hasRating ? `${Number(ratingValue).toFixed(1)} / 10` : "No rating";
+  const description = String(details.description || details.overview || "").trim() || "No description yet.";
+  const directors = joinList(details.directors) || "Unknown";
+  const actors = joinList(details.actors) || "Unknown";
+  const genres = joinList(details.genres) || "";
+  const releaseDate = String(details.release_date || "").trim();
+  const runtime = Number.isFinite(Number(details.runtime_minutes)) ? `${Number(details.runtime_minutes)} min` : "";
+  const trailerUrl = String(details.trailer_url || "").trim();
+  const tmdbUrl = String(details.tmdb_url || "").trim();
+  const safeTitle = escapeHtml(title);
+
+  const metaBits = [releaseDate, runtime, genres].filter(Boolean);
+  const posterHtml = posterUrl
+    ? `<img class="watchlist-detail-poster" src="${posterUrl}" alt="${safeTitle} poster">`
+    : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
+
+  elements.watchlistDetailContent.innerHTML = `
+    <div class="watchlist-detail-layout">
+      ${posterHtml}
+      <div class="watchlist-detail-body">
+        <p class="watchlist-detail-kicker">Movie</p>
+        <h3>${safeTitle}</h3>
+        <p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>
+        ${metaBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(metaBits.join(" • "))}</p>` : ""}
+        <p class="watchlist-detail-description">${escapeHtml(description)}</p>
+        <p><strong>Directors:</strong> ${escapeHtml(directors)}</p>
+        <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>
+        <div class="watchlist-detail-links">
+          ${trailerUrl ? `<a href="${trailerUrl}" target="_blank" rel="noreferrer">Trailer</a>` : ""}
+          ${tmdbUrl ? `<a href="${tmdbUrl}" target="_blank" rel="noreferrer">TMDB</a>` : ""}
+        </div>
+      </div>
+    </div>
+  `;
+  elements.watchlistDetailPanel.hidden = false;
+  elements.watchlistDetailPanel.classList.add("is-open");
+  document.body.classList.add("watchlist-detail-open");
 }
 
 function renderWatchlistCurrent(payload) {
@@ -423,12 +552,7 @@ function renderWatchlistCurrent(payload) {
   const cards = activeList
     .map((title) => {
       const safeTitle = safeWatchTitle(title);
-      return `
-        <article class="watchlist-entry watchlist-current-entry" data-watch-type="${state.watchlistType}">
-          <p class="watchlist-entry-type">${heading}</p>
-          <p class="watchlist-entry-title">${safeTitle}</p>
-        </article>
-      `;
+      return renderWatchlistTitleCard(state.watchlistType, safeTitle, payload);
     })
     .join("");
 
@@ -450,7 +574,7 @@ function renderWatchlistHistory(payload) {
   elements.watchlistHistory.innerHTML = "";
   for (const group of history) {
     const year = String(group?.year || "").trim();
-    const entries = Array.isArray(group?.entries) ? group.entries : [];
+    const entries = Array.isArray(group?.entries) ? [...group.entries].reverse() : [];
     if (!year || !entries.length) {
       continue;
     }
@@ -474,15 +598,14 @@ function renderWatchlistHistory(payload) {
       if (!title) {
         continue;
       }
-      const item = document.createElement("article");
-      item.className = "watchlist-entry";
-      const typeLabel = watchTypeLabel(entry);
-      item.dataset.watchType = entryType;
-      item.innerHTML = `
-        <p class="watchlist-entry-type">${typeLabel}</p>
-        <p class="watchlist-entry-title">${title}</p>
-      `;
-      list.append(item);
+      const cardHtml = renderWatchlistTitleCard(entryType, title, payload);
+      const wrapper = document.createElement("div");
+      wrapper.innerHTML = cardHtml;
+      const card = wrapper.firstElementChild;
+      if (!card) {
+        continue;
+      }
+      list.append(card);
     }
 
     if (!list.children.length) {
@@ -1954,6 +2077,32 @@ if (elements.watchlistTabSeries) {
   elements.watchlistTabSeries.addEventListener("click", () => {
     state.watchlistType = "series";
     renderWatchlistAll();
+  });
+}
+
+for (const container of [elements.watchlistCurrent, elements.watchlistHistory]) {
+  if (!container) {
+    continue;
+  }
+  container.addEventListener("click", (event) => {
+    const button = event.target.closest(".watchlist-entry-button");
+    if (!button) {
+      return;
+    }
+    const encodedTitle = button.dataset.watchTitle || "";
+    const title = decodeURIComponent(encodedTitle);
+    if (!title) {
+      return;
+    }
+    openWatchlistMovieDetail(title);
+  });
+}
+
+if (elements.watchlistDetailClose && elements.watchlistDetailPanel) {
+  elements.watchlistDetailClose.addEventListener("click", () => {
+    elements.watchlistDetailPanel.hidden = true;
+    elements.watchlistDetailPanel.classList.remove("is-open");
+    document.body.classList.remove("watchlist-detail-open");
   });
 }
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Watch Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="styles.css?v=20260430-46">
+    <link rel="stylesheet" href="styles.css?v=20260430-49">
   </head>
   <body>
     <header class="topbar">
@@ -190,7 +190,12 @@
       </details>
     </main>
 
+    <aside id="watchlist-detail-panel" class="watchlist-detail-panel" hidden>
+      <button id="watchlist-detail-close" type="button" class="watchlist-detail-close" aria-label="Close">Close</button>
+      <div id="watchlist-detail-content" class="watchlist-detail-content"></div>
+    </aside>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=20260430-45"></script>
+    <script src="app.js?v=20260430-49"></script>
   </body>
 </html>

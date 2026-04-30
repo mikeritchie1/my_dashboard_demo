@@ -4,6 +4,7 @@ import json
 import os
 import re
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -15,7 +16,26 @@ DEFAULT_WATCHLIST_URL = "https://www.notion.so/My-Watchlist-1d757df8191880aeb859
 REPO_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = Path(__file__).resolve().parent / "data"
 OUTPUT_FILE = DATA_DIR / "watchlist.json"
+MOVIE_DETAILS_CACHE_FILE = DATA_DIR / "watchlist_movie_details.json"
+DOCS_DATA_DIR = REPO_DIR / "docs" / "data"
+DOCS_OUTPUT_FILE = DOCS_DATA_DIR / "watchlist.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
+TMDB_IMAGE_BASE = "https://image.tmdb.org/t/p/w342"
+TMDB_SITE_MOVIE_BASE = "https://www.themoviedb.org/movie"
+MOVIE_DETAIL_FIELDS = {
+    "tmdb_id",
+    "rating",
+    "poster_url",
+    "release_date",
+    "overview",
+    "description",
+    "runtime_minutes",
+    "directors",
+    "actors",
+    "trailer_url",
+    "genres",
+    "tmdb_url",
+}
 
 TEXT_BLOCK_TYPES = {
     "paragraph",
@@ -58,6 +78,22 @@ def notion_request(path: str, token: str) -> dict:
         headers={
             "Authorization": f"Bearer {token}",
             "Notion-Version": NOTION_VERSION,
+            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def tmdb_request(path: str, token: str, query: dict[str, str] | None = None) -> dict:
+    query_string = ""
+    if query:
+        query_string = "?" + urllib.parse.urlencode(query)
+    request = urllib.request.Request(
+        f"https://api.themoviedb.org/3/{path}{query_string}",
+        headers={
+            "Authorization": f"Bearer {token}",
             "Accept": "application/json",
             "User-Agent": "Mozilla/5.0",
         },
@@ -128,6 +164,12 @@ def clean_title(text: str) -> str:
     cleaned = re.sub(r"^\d+[\).\-\s]+", "", cleaned)
     cleaned = cleaned.strip("- ").strip()
     return cleaned
+
+
+def movie_key(title: str) -> str:
+    normalized = re.sub(r"\s+", " ", title).strip().lower()
+    normalized = re.sub(r"[^\w\s]", "", normalized)
+    return normalized
 
 
 def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
@@ -223,9 +265,223 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
     }
 
 
+def load_movie_details_cache() -> dict[str, dict]:
+    if not MOVIE_DETAILS_CACHE_FILE.exists():
+        return {}
+    try:
+        payload = json.loads(MOVIE_DETAILS_CACHE_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    if not isinstance(payload, dict):
+        return {}
+    return {str(key): value for key, value in payload.items() if isinstance(value, dict)}
+
+
+def write_movie_details_cache(cache: dict[str, dict]) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    ordered = {key: cache[key] for key in sorted(cache.keys())}
+    MOVIE_DETAILS_CACHE_FILE.write_text(json.dumps(ordered, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def write_payload(payload: dict) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    OUTPUT_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    serialized = json.dumps(payload, indent=2, ensure_ascii=False)
+    OUTPUT_FILE.write_text(serialized, encoding="utf-8")
+    DOCS_OUTPUT_FILE.write_text(serialized, encoding="utf-8")
+
+
+def progress_bar(processed: int, total: int, width: int = 24) -> str:
+    if total <= 0:
+        return "[" + ("-" * width) + "]"
+    ratio = max(0.0, min(1.0, processed / total))
+    filled = int(round(ratio * width))
+    return "[" + ("#" * filled) + ("-" * (width - filled)) + "]"
+
+
+def extract_movie_titles(payload: dict) -> list[str]:
+    titles: list[str] = []
+    current_movies = payload.get("currently_watching", {}).get("movies", [])
+    if isinstance(current_movies, list):
+        titles.extend(str(title).strip() for title in current_movies if str(title).strip())
+
+    for group in payload.get("history_by_year", []):
+        entries = group.get("entries", [])
+        if not isinstance(entries, list):
+            continue
+        for entry in entries:
+            if str(entry.get("type", "")).strip().lower() != "movie":
+                continue
+            title = str(entry.get("title", "")).strip()
+            if title:
+                titles.append(title)
+    return sorted(set(titles))
+
+
+def fetch_movie_detail(title: str, tmdb_token: str) -> dict:
+    result = {"title": title}
+    try:
+        search_payload = tmdb_request(
+            "search/movie",
+            tmdb_token,
+            {
+                "query": title,
+                "include_adult": "false",
+                "language": "en-US",
+                "page": "1",
+            },
+        )
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError):
+        return result
+
+    results = search_payload.get("results", [])
+    if not isinstance(results, list) or not results:
+        return result
+    first = results[0]
+    tmdb_id = first.get("id")
+    if not isinstance(tmdb_id, int):
+        return result
+
+    result["tmdb_id"] = tmdb_id
+
+    try:
+        details_payload = tmdb_request(
+            f"movie/{tmdb_id}",
+            tmdb_token,
+            {
+                "language": "en-US",
+                "append_to_response": "credits,videos",
+            },
+        )
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError):
+        details_payload = {}
+
+    chosen = details_payload if isinstance(details_payload, dict) and details_payload else first
+    poster_path = str(chosen.get("poster_path") or "").strip()
+    vote_average = chosen.get("vote_average")
+    release_date = str(chosen.get("release_date") or "").strip()
+    overview = str(chosen.get("overview") or "").strip()
+    runtime = chosen.get("runtime")
+
+    credits = details_payload.get("credits", {}) if isinstance(details_payload, dict) else {}
+    cast = credits.get("cast", []) if isinstance(credits, dict) else []
+    crew = credits.get("crew", []) if isinstance(credits, dict) else []
+    videos = details_payload.get("videos", {}) if isinstance(details_payload, dict) else {}
+    video_results = videos.get("results", []) if isinstance(videos, dict) else []
+    genres = details_payload.get("genres", []) if isinstance(details_payload, dict) else []
+
+    directors = [
+        str(person.get("name") or "").strip()
+        for person in crew
+        if str(person.get("job") or "").strip().lower() == "director" and str(person.get("name") or "").strip()
+    ]
+    actors = [
+        str(person.get("name") or "").strip()
+        for person in cast[:8]
+        if str(person.get("name") or "").strip()
+    ]
+    trailer_url = ""
+    for video in video_results:
+        if str(video.get("site") or "").strip().lower() != "youtube":
+            continue
+        video_type = str(video.get("type") or "").strip().lower()
+        if video_type not in {"trailer", "teaser"}:
+            continue
+        key = str(video.get("key") or "").strip()
+        if key:
+            trailer_url = f"https://www.youtube.com/watch?v={key}"
+            break
+
+    genre_names = [
+        str(genre.get("name") or "").strip()
+        for genre in genres
+        if str(genre.get("name") or "").strip()
+    ]
+
+    if isinstance(vote_average, (int, float)):
+        result["rating"] = round(float(vote_average), 1)
+    else:
+        result["rating"] = None
+    result["poster_url"] = f"{TMDB_IMAGE_BASE}{poster_path}" if poster_path else ""
+    result["release_date"] = release_date
+    result["overview"] = overview
+    result["description"] = overview
+    result["runtime_minutes"] = int(runtime) if isinstance(runtime, (int, float)) else None
+    result["directors"] = list(dict.fromkeys(directors))
+    result["actors"] = actors
+    result["trailer_url"] = trailer_url
+    result["genres"] = genre_names
+    result["tmdb_url"] = f"{TMDB_SITE_MOVIE_BASE}/{tmdb_id}"
+    return result
+
+
+def merge_movie_details(existing: dict, fetched: dict) -> dict:
+    merged = dict(existing)
+    merged.setdefault("title", str(existing.get("title") or fetched.get("title") or "").strip())
+    for key in MOVIE_DETAIL_FIELDS:
+        if key in merged:
+            continue
+        merged[key] = fetched.get(key)
+    return merged
+
+
+def movie_detail_needs_fetch(entry: dict) -> bool:
+    if not isinstance(entry, dict):
+        return True
+    return any(field not in entry for field in MOVIE_DETAIL_FIELDS)
+
+
+def enrich_payload_with_movie_details(payload: dict) -> dict:
+    tmdb_token = secret("TMDB_BEARER_TOKEN")
+    titles = extract_movie_titles(payload)
+    keys_in_use = {movie_key(title) for title in titles if movie_key(title)}
+    cache = load_movie_details_cache()
+
+    # Remove cache entries no longer present in watchlist.
+    cache = {key: value for key, value in cache.items() if key in keys_in_use}
+
+    total = len(titles)
+    processed = 0
+
+    def persist(status: str, current_title: str) -> None:
+        percent = int(round((processed / total) * 100)) if total else 100
+        payload["movie_details"] = cache
+        payload["enrichment_progress"] = {
+            "status": status,
+            "processed": processed,
+            "total": total,
+            "percent": percent,
+            "current_title": current_title,
+        }
+        write_movie_details_cache(cache)
+        write_payload(payload)
+
+    persist("running", "")
+
+    try:
+        for title in titles:
+            key = movie_key(title)
+            source = "cached"
+            if key:
+                existing = cache.get(key, {"title": title})
+                if movie_detail_needs_fetch(existing) and tmdb_token:
+                    fetched = fetch_movie_detail(title, tmdb_token)
+                    cache[key] = merge_movie_details(existing, fetched)
+                else:
+                    cache[key] = existing
+                source = "fetched"
+                if not movie_detail_needs_fetch(existing):
+                    source = "cached"
+            processed += 1
+            persist("running", title)
+            print(f"{progress_bar(processed, total)} {processed}/{total} {source}: {title}")
+    except KeyboardInterrupt:
+        persist("interrupted", "")
+        print("Interrupted: partial watchlist details were saved.")
+        return payload
+
+    persist("completed", "")
+    return payload
 
 
 def scrape_watchlist() -> dict:
@@ -239,6 +495,8 @@ def scrape_watchlist() -> dict:
             "error": "Missing NOTION_TOKEN",
             "currently_watching": {"movies": [], "series": []},
             "history_by_year": [],
+            "movie_details": {},
+            "enrichment_progress": {"status": "idle", "processed": 0, "total": 0, "percent": 0, "current_title": ""},
         }
 
     try:
@@ -247,7 +505,7 @@ def scrape_watchlist() -> dict:
         payload = parse_watchlist(flat)
         payload["source"] = page_url
         payload["page_id"] = page_id
-        return payload
+        return enrich_payload_with_movie_details(payload)
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")
         return {
@@ -255,6 +513,8 @@ def scrape_watchlist() -> dict:
             "error": f"Notion API error {error.code}: {detail}",
             "currently_watching": {"movies": [], "series": []},
             "history_by_year": [],
+            "movie_details": {},
+            "enrichment_progress": {"status": "idle", "processed": 0, "total": 0, "percent": 0, "current_title": ""},
         }
     except urllib.error.URLError as error:
         return {
@@ -262,6 +522,8 @@ def scrape_watchlist() -> dict:
             "error": f"Notion API network error: {error}",
             "currently_watching": {"movies": [], "series": []},
             "history_by_year": [],
+            "movie_details": {},
+            "enrichment_progress": {"status": "idle", "processed": 0, "total": 0, "percent": 0, "current_title": ""},
         }
 
 
