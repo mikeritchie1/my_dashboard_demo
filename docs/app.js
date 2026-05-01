@@ -7,6 +7,7 @@ const WATCHLIST_PATH = "./data/media/watchlist.json";
 const GAMESLIST_PATH = "./data/media/gameslist.json";
 const WATCHLIST_MOVIE_DETAILS_PATH = "./data/media/watchlist_movie_details.json";
 const GAMES_DETAILS_PATH = "./data/media/games_details.json";
+const NEWS_PATH = "./data/news/news.json";
 const CONFIG_PATH = "../config.json";
 const SPECIALS_PATH = "./data/events/specials.json";
 const QUICKET_EVENTS_PATH = "./data/events/quicket_events.json";
@@ -38,6 +39,14 @@ const DEFAULT_OPINION_LEVELS = [
   { level: 3, key: "mixed", defaultText: "Mixed", text: "Mixed", color: "#1976d2", aliases: ["Mixed"] },
   { level: 4, key: "liked", defaultText: "Liked", text: "Liked", color: "#7c3aed", aliases: ["Liked"] },
   { level: 5, key: "loved", defaultText: "Loved", text: "Loved", color: "#ff8a00", aliases: ["Loved"] },
+];
+const NEWS_CATEGORIES = [
+  { key: "all", label: "All" },
+  { key: "global", label: "Global" },
+  { key: "local", label: "Local" },
+  { key: "games", label: "Games" },
+  { key: "entertainment", label: "Entertainment" },
+  { key: "climbing", label: "Climbing" },
 ];
 
 const state = {
@@ -75,6 +84,10 @@ const state = {
   watchlistSearchFilter: "",
   opinionLevels: DEFAULT_OPINION_LEVELS,
   showOpinionIndicators: true,
+  newsAllItems: [],
+  newsItems: [],
+  selectedNewsId: "",
+  selectedNewsCategory: "all",
 };
 
 const elements = {
@@ -89,6 +102,9 @@ const elements = {
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
   gameReleaseGrid: document.querySelector("#game-release-grid"),
   gameComingSoonGrid: document.querySelector("#game-coming-soon-grid"),
+  newsList: document.querySelector("#news-list"),
+  newsDetail: document.querySelector("#news-detail"),
+  newsCategoryButtons: document.querySelector("#news-category-buttons"),
   watchlistCurrent: document.querySelector("#watchlist-current"),
   watchlistHistory: document.querySelector("#watchlist-history"),
   watchlistHistorySummary: document.querySelector("#watchlist-history-summary"),
@@ -406,6 +422,145 @@ function renderPosters(container, items, emptyText) {
     link.append(image, title);
     container.append(link);
   }
+}
+
+function formatNewsDate(value) {
+  const raw = String(value || "").trim();
+  if (!raw) {
+    return "";
+  }
+  const parsed = new Date(raw);
+  if (Number.isNaN(parsed.getTime())) {
+    return raw;
+  }
+  return new Intl.DateTimeFormat("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(parsed);
+}
+
+function safeNewsId(item, index) {
+  const explicit = String(item?.id || "").trim();
+  if (explicit) {
+    return explicit;
+  }
+  const title = String(item?.title || "").trim().toLowerCase();
+  const published = String(item?.published_at || item?.date || "").trim().toLowerCase();
+  const source = String(item?.source || "").trim().toLowerCase();
+  const fallback = `${title}|${published}|${source}`.replace(/\s+/g, "-");
+  return fallback || `news-${index}`;
+}
+
+function normalizeNewsCategory(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
+}
+
+function categoryThemeKey(item) {
+  const category = normalizeNewsCategory(item?.category);
+  if (NEWS_CATEGORIES.some((entry) => entry.key === category)) {
+    return category;
+  }
+  return "global";
+}
+
+function newsMetaText(item) {
+  return [item.source, item.category, formatNewsDate(item.published_at || item.date)].filter(Boolean).join(" • ");
+}
+
+function renderNewsCategoryControls() {
+  if (!elements.newsCategoryButtons) {
+    return;
+  }
+  elements.newsCategoryButtons.innerHTML = NEWS_CATEGORIES.map(
+    (item) => `
+      <button
+        type="button"
+        class="watchlist-category-button news-category-button news-category-${item.key}${state.selectedNewsCategory === item.key ? " is-selected" : ""}"
+        data-news-category="${item.key}"
+      >
+        ${item.label}
+      </button>
+    `,
+  ).join("");
+}
+
+function renderNewsDetail(item) {
+  if (!elements.newsDetail) {
+    return;
+  }
+  if (!item) {
+    elements.newsDetail.innerHTML = '<p class="empty">Click a news article to read more.</p>';
+    return;
+  }
+
+  const title = String(item.title || "Untitled article").trim();
+  const summary = String(item.summary || "").trim();
+  const body = String(item.body || item.content || "").trim();
+  const url = String(item.url || "").trim();
+  const imageUrl = String(item.image_url || item.image || "").trim();
+  const tags = Array.isArray(item.tags) ? item.tags.filter(Boolean) : [];
+  const tagHtml = tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
+  const imageHtml = imageUrl
+    ? `<img class="news-detail-image" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)} image" loading="lazy">`
+    : "";
+
+  elements.newsDetail.innerHTML = `
+    ${imageHtml}
+    <div class="news-detail-body news-theme-${categoryThemeKey(item)}">
+      <p class="news-meta">${escapeHtml(newsMetaText(item))}</p>
+      <h3>${escapeHtml(title)}</h3>
+      ${summary ? `<p class="news-summary">${escapeHtml(summary)}</p>` : ""}
+      ${body ? `<p>${escapeHtml(body)}</p>` : ""}
+      ${tagHtml ? `<div class="news-tags">${tagHtml}</div>` : ""}
+      ${url ? `<a class="news-link" href="${escapeHtml(url)}" target="_blank" rel="noreferrer">Open article</a>` : ""}
+    </div>
+  `;
+}
+
+function renderNews(items) {
+  if (!elements.newsList) {
+    return;
+  }
+  renderNewsCategoryControls();
+  const normalized = Array.isArray(items) ? items : [];
+  const filtered = state.selectedNewsCategory === "all"
+    ? normalized
+    : normalized.filter((item) => normalizeNewsCategory(item.category) === state.selectedNewsCategory);
+  if (!filtered.length) {
+    elements.newsList.innerHTML = '<p class="empty">No news articles found.</p>';
+    renderNewsDetail(null);
+    return;
+  }
+
+  state.newsItems = filtered.map((item, index) => ({ ...item, id: safeNewsId(item, index) }));
+  if (!state.selectedNewsId || !state.newsItems.some((item) => item.id === state.selectedNewsId)) {
+    state.selectedNewsId = state.newsItems[0].id;
+  }
+
+  elements.newsList.innerHTML = "";
+  for (const item of state.newsItems) {
+    const title = String(item.title || "Untitled article").trim();
+    const summary = String(item.summary || "").trim();
+    const selected = item.id === state.selectedNewsId;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `news-card news-theme-${categoryThemeKey(item)}${selected ? " is-selected" : ""}`;
+    button.dataset.newsId = item.id;
+    button.innerHTML = `
+      <span class="news-meta">${escapeHtml(newsMetaText(item))}</span>
+      <span class="news-card-title">${escapeHtml(title)}</span>
+      ${summary ? `<span class="news-card-summary">${escapeHtml(summary)}</span>` : ""}
+    `;
+    elements.newsList.append(button);
+  }
+
+  renderNewsDetail(state.newsItems.find((item) => item.id === state.selectedNewsId));
 }
 
 function setHeaderDate() {
@@ -2551,6 +2706,24 @@ async function loadReleases() {
   }
 }
 
+async function loadNews() {
+  if (!elements.newsList) {
+    return;
+  }
+  try {
+    const response = await fetch(NEWS_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${NEWS_PATH}`);
+    }
+    const payload = await response.json();
+    state.newsAllItems = Array.isArray(payload.items) ? payload.items : [];
+    renderNews(state.newsAllItems);
+  } catch (error) {
+    elements.newsList.innerHTML = `<p class="empty">${error.message}</p>`;
+    renderNewsDetail(null);
+  }
+}
+
 function showMyLocation() {
   if (!navigator.geolocation) {
     alert("Location is not available in this browser.");
@@ -2971,6 +3144,29 @@ for (const container of [elements.watchlistCurrent, elements.watchlistHistory]) 
   });
 }
 
+if (elements.newsList) {
+  elements.newsList.addEventListener("click", (event) => {
+    const card = event.target.closest(".news-card");
+    if (!card) {
+      return;
+    }
+    state.selectedNewsId = card.dataset.newsId || "";
+    renderNews(state.newsItems);
+  });
+}
+
+if (elements.newsCategoryButtons) {
+  elements.newsCategoryButtons.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-news-category]");
+    if (!button) {
+      return;
+    }
+    state.selectedNewsCategory = button.dataset.newsCategory || "all";
+    state.selectedNewsId = "";
+    renderNews(state.newsAllItems);
+  });
+}
+
 if (elements.watchlistDetailClose && elements.watchlistDetailPanel) {
   elements.watchlistDetailClose.addEventListener("click", () => {
     elements.watchlistDetailPanel.hidden = true;
@@ -3002,6 +3198,7 @@ loadWeather();
 loadReleases();
 loadComingSoon();
 loadGameReleases();
+loadNews();
 loadWatchlist();
 loadSpecials();
 loadQuicketEvents();

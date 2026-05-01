@@ -1,0 +1,102 @@
+{
+  "source": "placeholder",
+  "generated_at": "2026-05-01T00:00:00Z",
+  "items": [
+    {
+      "id": "example-tech-policy",
+      "title": "Streaming Services Test New Release Windows",
+      "source": "Example News",
+      "category": "Entertainment",
+      "published_at": "2026-05-01T08:30:00Z",
+      "url": "https://example.com/streaming-release-windows",
+      "image_url": "",
+      "summary": "Several platforms are experimenting with shorter windows between cinema, premium rental, and streaming availability.",
+      "body": "This placeholder article shows how longer article text will appear in the dashboard. A scraper can replace this body with the full article text, a cleaned excerpt, or notes from the source feed. The expanded view is designed for scanning first, then reading more detail without leaving the dashboard.",
+      "tags": ["Streaming", "Movies", "Industry"]
+    },
+    {
+      "id": "example-games-showcase",
+      "title": "Major Game Showcase Expected to Focus on Indies",
+      "source": "Example Gaming",
+      "category": "Games",
+      "published_at": "2026-04-30T18:00:00Z",
+      "url": "https://example.com/game-showcase-indies",
+      "image_url": "",
+      "summary": "Publishers are expected to highlight smaller games alongside a few larger platform announcements.",
+      "body": "Use this slot for gaming news, release announcements, patch notes, or any feed you decide to scrape later. The card layout supports source, category, date, summary, tags, and an external link.",
+      "tags": ["Games", "Showcase", "Indie"]
+    },
+    {
+      "id": "example-local-events",
+      "title": "Cape Town Weekend Guide Adds Late Night Screenings",
+      "source": "Example Local",
+      "category": "Local",
+      "published_at": "2026-04-29T12:15:00Z",
+      "url": "https://example.com/cape-town-screenings",
+      "image_url": "",
+      "summary": "A few venues are adding late screenings and themed events for the weekend.",
+      "body": "This is an example local article. If your scraper pulls from local sites, RSS feeds, or newsletters, this module can show those items alongside entertainment and gaming news.",
+      "tags": ["Cape Town", "Events", "Movies"]
+    },
+    {
+      "id": "example-global-ai-policy",
+      "title": "New Global AI Safety Framework Published by Coalition",
+      "source": "World Brief",
+      "category": "Global",
+      "published_at": "2026-04-28T09:10:00Z",
+      "url": "https://example.com/global-ai-framework",
+      "image_url": "",
+      "summary": "A coalition of regulators and labs published a draft framework focused on audits, incident reporting, and model access controls.",
+      "body": "This placeholder entry represents global technology policy updates. It is useful for testing how mixed categories appear and filter in the News module.",
+      "tags": ["AI", "Policy", "Global"]
+    },
+    {
+      "id": "example-climbing-gym",
+      "title": "City Climbing Gym Announces Monthly Route Reset Schedule",
+      "source": "Climb Dispatch",
+      "category": "Climbing",
+      "published_at": "2026-04-27T16:40:00Z",
+      "url": "https://example.com/route-reset-schedule",
+      "image_url": "",
+      "summary": "The gym published a new reset cadence by wall zone to help regulars plan sessions.",
+      "body": "A good climbing-focused placeholder for your future scrape sources. You can swap this with scraped entries from club updates, event pages, or climbing newsletters.",
+      "tags": ["Climbing", "Routes", "Training"]
+    },
+    {
+      "id": "example-games-patch",
+      "title": "Co-op Shooter Patch Adds Cross-Save and Rebalances Progression",
+      "source": "Patch Notes Daily",
+      "category": "Games",
+      "published_at": "2026-04-27T11:20:00Z",
+      "url": "https://example.com/coop-shooter-patch",
+      "image_url": "",
+      "summary": "A major update introduces cross-save and adjusts late-game reward pacing.",
+      "body": "Use this style for patch-note coverage. The detail panel gives enough room for concise summaries without forcing users to leave the dashboard first.",
+      "tags": ["Games", "Patch", "Co-op"]
+    },
+    {
+      "id": "example-ent-awards",
+      "title": "Studios Shift Award Campaign Strategy Toward Streaming Debuts",
+      "source": "Screen Trade",
+      "category": "Entertainment",
+      "published_at": "2026-04-26T20:05:00Z",
+      "url": "https://example.com/awards-streaming-shift",
+      "image_url": "",
+      "summary": "Campaign teams are reportedly prioritizing staggered rollout strategies across festivals and digital releases.",
+      "body": "This placeholder article gives the Entertainment filter more depth and helps test longer lists in the main module.",
+      "tags": ["Entertainment", "Awards", "Studios"]
+    },
+    {
+      "id": "example-local-transport",
+      "title": "Weekend Transport Plan Extended for Night Events Downtown",
+      "source": "Cape Bulletin",
+      "category": "Local",
+      "published_at": "2026-04-26T14:00:00Z",
+      "url": "https://example.com/weekend-transport-plan",
+      "image_url": "",
+      "summary": "The city confirmed extended routes to support evening events and reduce congestion in central zones.",
+      "body": "Another local placeholder showing how non-entertainment local updates can still live in the same stream and remain easy to filter.",
+      "tags": ["Local", "Transport", "Cape Town"]
+    }
+  ]
+}

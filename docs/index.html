@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Watch Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="styles.css?v=20260430-63">
+    <link rel="stylesheet" href="styles.css?v=20260430-72">
   </head>
   <body>
     <header class="topbar">
@@ -28,6 +28,49 @@
           <p class="empty">Loading weather...</p>
         </div>
       </section>
+
+      <details class="dashboard-section">
+        <summary>
+          <span>News</span>
+        </summary>
+        <div class="section-content">
+          <div class="watchlist-selector news-selector" aria-label="News categories">
+            <div id="news-category-buttons" class="watchlist-category-buttons" role="group" aria-label="News categories"></div>
+          </div>
+          <div class="news-layout">
+            <section id="news-list" class="news-list" aria-label="News articles">
+              <p class="empty">Loading news...</p>
+            </section>
+            <aside id="news-detail" class="news-detail-panel" aria-label="Selected news article">
+              <p class="empty">Click a news article to read more.</p>
+            </aside>
+          </div>
+        </div>
+      </details>
+
+      <details class="dashboard-section">
+        <summary>
+          <span>Release Radar</span>
+        </summary>
+        <div class="section-content">
+          <h3 class="subsection-title">NEW MOVIE RELEASES</h3>
+          <div id="release-grid" class="poster-grid">
+            <p class="empty">Loading releases...</p>
+          </div>
+          <h3 class="subsection-title">MOVIES COMING SOON</h3>
+          <div id="coming-soon-grid" class="poster-grid">
+            <p class="empty">Coming soon data has not been connected yet.</p>
+          </div>
+          <h3 class="subsection-title">NEW GAME RELEASES</h3>
+          <div id="game-release-grid" class="poster-grid">
+            <p class="empty">Game release data has not been connected yet.</p>
+          </div>
+          <h3 class="subsection-title">GAMES COMING SOON</h3>
+          <div id="game-coming-soon-grid" class="poster-grid">
+            <p class="empty">Game release data has not been connected yet.</p>
+          </div>
+        </div>
+      </details>
 
       <details class="dashboard-section">
         <summary>
@@ -91,30 +134,6 @@
               <p class="empty">Loading events...</p>
             </div>
           </details>
-        </div>
-      </details>
-
-      <details class="dashboard-section">
-        <summary>
-          <span>Release Radar</span>
-        </summary>
-        <div class="section-content">
-          <h3 class="subsection-title">NEW MOVIE RELEASES</h3>
-          <div id="release-grid" class="poster-grid">
-            <p class="empty">Loading releases...</p>
-          </div>
-          <h3 class="subsection-title">MOVIES COMING SOON</h3>
-          <div id="coming-soon-grid" class="poster-grid">
-            <p class="empty">Coming soon data has not been connected yet.</p>
-          </div>
-          <h3 class="subsection-title">NEW GAME RELEASES</h3>
-          <div id="game-release-grid" class="poster-grid">
-            <p class="empty">Game release data has not been connected yet.</p>
-          </div>
-          <h3 class="subsection-title">GAMES COMING SOON</h3>
-          <div id="game-coming-soon-grid" class="poster-grid">
-            <p class="empty">Game release data has not been connected yet.</p>
-          </div>
         </div>
       </details>
 
@@ -259,6 +278,6 @@
     </aside>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=20260430-61"></script>
+    <script src="app.js?v=20260430-64"></script>
   </body>
 </html>
