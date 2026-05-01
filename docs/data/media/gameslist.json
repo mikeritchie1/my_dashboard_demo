@@ -60,11 +60,43 @@
       ],
       "lan": [
         {
-          "title": "Black4Blood\nPummel Party\nRainbow Six Vegas 2\nGolf With Your Friends\nDead by Daylight",
+          "title": "Back 4 Blood",
           "opinion": ""
         },
         {
-          "title": "Overcooked\nOvercooked 2\nHalo 3\nPhasmaphobia\nWarcraft 3",
+          "title": "Pummel Party",
+          "opinion": ""
+        },
+        {
+          "title": "Rainbow Six Vegas 2",
+          "opinion": ""
+        },
+        {
+          "title": "Golf With Your Friends",
+          "opinion": ""
+        },
+        {
+          "title": "Dead by Daylight",
+          "opinion": ""
+        },
+        {
+          "title": "Overcooked",
+          "opinion": ""
+        },
+        {
+          "title": "Overcooked 2",
+          "opinion": ""
+        },
+        {
+          "title": "Halo 3",
+          "opinion": ""
+        },
+        {
+          "title": "Phasmaphobia",
+          "opinion": ""
+        },
+        {
+          "title": "Warcraft 3",
           "opinion": ""
         },
         {
@@ -322,17 +354,17 @@
         },
         {
           "type": "game_aaa",
-          "title": "Tony Hawk’s Pro Skater 3 + 4<<<",
+          "title": "Tony Hawk’s Pro Skater 3 + 4",
           "opinion": ""
         },
         {
           "type": "game_aaa",
           "title": "Split Fiction",
-          "opinion": ""
+          "opinion": "Loved"
         },
         {
           "type": "game_aaa",
-          "title": "Metal Gear Solid △: Snake Eater",
+          "title": "Metal Gear Solid Delta: Snake Eater",
           "opinion": ""
         },
         {
@@ -1507,7 +1539,7 @@
         },
         {
           "type": "game_aaa",
-          "title": "Tony Hawk’s Pro Skater 1 + 2",
+          "title": "Tony Hawk's Pro Skater 1 + 2",
           "opinion": ""
         },
         {
@@ -1577,7 +1609,7 @@
         },
         {
           "type": "game_aaa",
-          "title": "Back4Blood",
+          "title": "Back 4 Blood",
           "opinion": ""
         },
         {

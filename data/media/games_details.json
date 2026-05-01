@@ -388,21 +388,34 @@
     "playtime_hours": 0,
     "metacritic": null
   },
-  "game_aaa:back4blood": {
-    "title": "Back4Blood",
+  "game_aaa:back 4 blood": {
+    "title": "Back 4 Blood",
     "media_type": "game_aaa",
-    "rating": null,
-    "poster_url": null,
-    "platforms": null,
-    "website_url": null,
-    "release_date": null,
-    "description": null,
-    "genres": null,
-    "rawg_url": null,
-    "publishers": null,
-    "developers": null,
-    "playtime_hours": null,
-    "metacritic": null
+    "poster_url": "https://media.rawg.io/media/games/4fe/4feffcec6315c5f5a96442a8444431ca.jpg",
+    "developers": [
+      "Turtle Rock Studios"
+    ],
+    "website_url": "https://www.back4blood.com/",
+    "metacritic": 76,
+    "description": "Back 4 Blood is a thrilling cooperative first-person shooter from the creators of the critically acclaimed Left 4 Dead franchise. You are at the center of a war against the Ridden. These once-human hosts of a deadly parasite have turned into terrifying creatures bent on devouring what remains of civilization. With humanity’s extinction on the line, it’s up to you and your friends to take the fight to the enemy, eradicate the Ridden, and reclaim the world.",
+    "release_date": "2021-10-07",
+    "playtime_hours": 6,
+    "rating": 3.2,
+    "publishers": [
+      "Warner Bros. Interactive"
+    ],
+    "rawg_url": "https://rawg.io/games/back-4-blood",
+    "platforms": [
+      "Xbox Series S/X",
+      "Xbox One",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PC"
+    ],
+    "genres": [
+      "Action",
+      "Shooter"
+    ]
   },
   "game_aaa:baldurs gate 3": {
     "title": "Baldur’s Gate 3",
@@ -3554,30 +3567,31 @@
     ],
     "playtime_hours": 0
   },
-  "game_aaa:metal gear solid  snake eater": {
-    "title": "Metal Gear Solid △: Snake Eater",
+  "game_aaa:metal gear solid delta snake eater": {
+    "title": "Metal Gear Solid Delta: Snake Eater",
     "media_type": "game_aaa",
-    "rating": 4.4,
-    "poster_url": "https://media.rawg.io/media/screenshots/ae1/ae150b23dd1a1b6fa29b2b996a9d3b7c.jpg",
-    "platforms": [
-      "Nintendo 3DS"
+    "poster_url": "https://media.rawg.io/media/games/1c0/1c0548b761f7c4e4c0da71172b3362bf.jpg",
+    "developers": [
+      "Virtuos Games"
     ],
-    "website_url": "",
-    "release_date": "2012-02-21",
-    "description": "You are Snake, a government agent on a mission to regain control of a secret nuclear weapons base from terrorist hands. Lightly armed and facing an army of foes, Snake must avoid firefights in order to survive. If Snake can locate them he can utilize advanced hardware, ranging from silenced pistols to ground-to-air missiles. Enemies react to sight and sound - so stay quiet and stay in the shadows. State-of-the-art graphics: textures, transparencies, models and explosions. Taut, gripping story with multiple endings - a truly cinematic experience.",
-    "genres": [
-      "Action"
-    ],
-    "rawg_url": "https://rawg.io/games/metal-gear-solid-snake-eater-3d",
-    "metacritic": 94,
+    "website_url": "https://www.konami.com/mg/mgs3r/eu/en/",
+    "metacritic": null,
+    "description": "Discover the origin story of iconic military operative Snake and begin to unravel the plot of the legendary Metal Gear series. Metal Gear Solid Delta: Snake Eater brings unprecedented new graphics, immersive stealth action gameplay and sounds to its riveting story as players once again return to the world of Metal Gear.",
+    "release_date": "2025-08-28",
+    "playtime_hours": 0,
+    "rating": 3.6,
     "publishers": [
-      "Sony Computer Entertainment",
       "Konami"
     ],
-    "developers": [
-      "Konami Computer Entertainment Japan"
+    "rawg_url": "https://rawg.io/games/metal-gear-solid-delta-snake-eater",
+    "platforms": [
+      "Xbox Series S/X",
+      "PC",
+      "PlayStation 5"
     ],
-    "playtime_hours": 1
+    "genres": [
+      "Action"
+    ]
   },
   "game_aaa:metroid dread": {
     "title": "Metroid Dread",
@@ -10492,6 +10506,35 @@
     ],
     "playtime_hours": 1
   },
+  "game_lan:back 4 blood": {
+    "title": "Back 4 Blood",
+    "media_type": "game_lan",
+    "poster_url": "https://media.rawg.io/media/games/4fe/4feffcec6315c5f5a96442a8444431ca.jpg",
+    "developers": [
+      "Turtle Rock Studios"
+    ],
+    "website_url": "https://www.back4blood.com/",
+    "metacritic": 76,
+    "description": "Back 4 Blood is a thrilling cooperative first-person shooter from the creators of the critically acclaimed Left 4 Dead franchise. You are at the center of a war against the Ridden. These once-human hosts of a deadly parasite have turned into terrifying creatures bent on devouring what remains of civilization. With humanity’s extinction on the line, it’s up to you and your friends to take the fight to the enemy, eradicate the Ridden, and reclaim the world.",
+    "release_date": "2021-10-07",
+    "playtime_hours": 6,
+    "rating": 3.2,
+    "publishers": [
+      "Warner Bros. Interactive"
+    ],
+    "rawg_url": "https://rawg.io/games/back-4-blood",
+    "platforms": [
+      "Xbox Series S/X",
+      "Xbox One",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PC"
+    ],
+    "genres": [
+      "Action",
+      "Shooter"
+    ]
+  },
   "game_lan:black ops 2 zombie maps": {
     "title": "Black Ops 2 (Zombie Maps)",
     "media_type": "game_lan",
@@ -10528,11 +10571,9 @@
     ],
     "playtime_hours": 9
   },
-  "game_lan:black4blood pummel party rainbow six vegas 2 golf with your friends dead by daylight": {
-    "title": "Black4Blood\nPummel Party\nRainbow Six Vegas 2\nGolf With Your Friends\nDead by Daylight",
+  "game_lan:dead by daylight": {
+    "title": "Dead by Daylight",
     "media_type": "game_lan",
-    "rating": 3.5,
-    "poster_url": "https://media.rawg.io/media/games/e11/e11325e2f89151d31f612e38dee3b6a0.jpg",
     "platforms": [
       "Nintendo Switch",
       "PC",
@@ -10541,23 +10582,25 @@
       "PlayStation 5"
     ],
     "website_url": "http://www.deadbydaylight.com",
-    "genres": [
-      "Action"
-    ],
-    "description": "This asymmetric multiplayer horror game in which one of the players tries on the role of a brutal killer, while the other four try to escape. Survivors play with a third person perspective, and the killer uses the first-person camera. The game has no singleplayer. Players can choose from 13 survivors and 12 killers. Each of them differs from each other with own upgrades system and special actions. There is no need to be polite and cooperative - every player for himself. Each level is procedurally generated, and each new round is offering a unique experience. The game engine selects from 10 presets, The plot of the game tells a story about the supernatural being of The Entity, who created the world and populated it with serial killers. To save players have to perform a number of tasks, which include the repair of generators and other interactions with the items on the map. All actions with objects launch the so-called Skill Check - RNG that decides whether or not the action will be successful.",
-    "rawg_url": "https://rawg.io/games/dead-by-daylight",
-    "release_date": "2016-06-14",
     "developers": [
       "Behaviour Interactive",
       "Behaviour Digital"
     ],
+    "rawg_url": "https://rawg.io/games/dead-by-daylight",
+    "release_date": "2016-06-14",
+    "description": "This asymmetric multiplayer horror game in which one of the players tries on the role of a brutal killer, while the other four try to escape. Survivors play with a third person perspective, and the killer uses the first-person camera. The game has no singleplayer. Players can choose from 13 survivors and 12 killers. Each of them differs from each other with own upgrades system and special actions. There is no need to be polite and cooperative - every player for himself. Each level is procedurally generated, and each new round is offering a unique experience. The game engine selects from 10 presets, The plot of the game tells a story about the supernatural being of The Entity, who created the world and populated it with serial killers. To save players have to perform a number of tasks, which include the repair of generators and other interactions with the items on the map. All actions with objects launch the so-called Skill Check - RNG that decides whether or not the action will be successful.",
+    "playtime_hours": 10,
     "metacritic": 72,
+    "rating": 3.5,
+    "genres": [
+      "Action"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/e11/e11325e2f89151d31f612e38dee3b6a0.jpg",
     "publishers": [
       "Koch Media",
       "Behaviour Interactive",
       "Starbreeze Studios"
-    ],
-    "playtime_hours": 10
+    ]
   },
   "game_lan:fall guys": {
     "title": "Fall Guys",
@@ -10607,6 +10650,41 @@
     ],
     "playtime_hours": 7
   },
+  "game_lan:golf with your friends": {
+    "title": "Golf With Your Friends",
+    "media_type": "game_lan",
+    "platforms": [
+      "PC",
+      "Nintendo Switch",
+      "Xbox One",
+      "macOS",
+      "PlayStation 4",
+      "Linux"
+    ],
+    "website_url": "http://blacklightinteractive.com/",
+    "developers": [
+      "Team17 Digital",
+      "Blacklight Interactive®",
+      "Blacklight Interactive"
+    ],
+    "rawg_url": "https://rawg.io/games/golf-with-your-friends",
+    "release_date": "2016-01-29",
+    "description": "Golf With Your Friends is an entertaining, challenging, multiplayer mini golf game for up to 12 players. The game currently has 6 levels containing 18 holes each. The controls are simple and the game is designed for the user to be able to host or join a game within a few seconds. The game will be hosted on our servers where the user has the ability to add a password if so required or leave it open to the public.Key Features 6 Vibrant challenging levels containing 18 holes each, 108 holes in total. 12 Player multiplayer Ball customization Player created servers Steam invite",
+    "playtime_hours": 4,
+    "metacritic": 69,
+    "rating": 3.8,
+    "genres": [
+      "Sports",
+      "Casual",
+      "Indie"
+    ],
+    "poster_url": "https://media.rawg.io/media/screenshots/f5a/f5abab52c4d606551cd5ec3ab709e501.jpg",
+    "publishers": [
+      "Team17 Digital",
+      "Blacklight Interactive®",
+      "Blacklight Interactive"
+    ]
+  },
   "game_lan:grounded 2": {
     "title": "Grounded 2",
     "media_type": "game_lan",
@@ -10634,6 +10712,32 @@
     ],
     "playtime_hours": 12
   },
+  "game_lan:halo 3": {
+    "title": "Halo 3",
+    "media_type": "game_lan",
+    "platforms": [
+      "PC",
+      "Xbox 360",
+      "Xbox One"
+    ],
+    "website_url": "",
+    "developers": [
+      "Bungie"
+    ],
+    "rawg_url": "https://rawg.io/games/halo-3",
+    "release_date": "2007-09-25",
+    "description": "Halo 3 is a first-person shooter from Bungie and another installment in one of the most popular gaming universes. The third part of the franchise completes the story begun in Halo: Combat Evolved. The action takes place in years 2552-53, in which humanity colonized the distant boundaries of the universe and met the aliens The Covenant. As a result of the conflict, a war begins between two species. Play as the Master Chief, who suffers a crash in eastern Africa. He is found by his allies Johnson and the Arbiter and together they are sent to repel the alien aggressors. Halo 3 is a traditional first-person shooter, with a well-designed game world and mythology. The series is known for its multiplayer, which many consider the best in the genre. Matches can fit up to 16 people, who fight in several game modes. They are a variation on the Deathmatch and Capture the Flag modes. In addition to multiplayer battles, players can go through the campaign together with 3 friends in a cooperative mode.",
+    "playtime_hours": 2,
+    "metacritic": 91,
+    "rating": 4.4,
+    "genres": [
+      "Shooter"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/982/982ff61d574fed5e416cb1867b40d9b0.jpg",
+    "publishers": [
+      "Microsoft Studios"
+    ]
+  },
   "game_lan:killing floor 3": {
     "title": "Killing Floor 3",
     "media_type": "game_lan",
@@ -10658,28 +10762,68 @@
     ],
     "playtime_hours": 3
   },
-  "game_lan:overcooked overcooked 2 halo 3 phasmaphobia warcraft 3": {
-    "title": "Overcooked\nOvercooked 2\nHalo 3\nPhasmaphobia\nWarcraft 3",
+  "game_lan:overcooked": {
+    "title": "Overcooked",
     "media_type": "game_lan",
-    "rating": 4.5,
-    "poster_url": "https://media.rawg.io/media/games/667/667b4447a90c4896bfd48400ae76af28.jpg",
     "platforms": [
+      "PlayStation 4",
+      "Nintendo Switch",
+      "Xbox One",
+      "PC"
+    ],
+    "website_url": "http://www.ghosttowngames.com/overcooked",
+    "developers": [
+      "Team17 Digital",
+      "Ghost Town Games"
+    ],
+    "rawg_url": "https://rawg.io/games/overcooked",
+    "release_date": "2016-08-01",
+    "description": "Overcooked puts the player into the shoes of two restaurant chefs at once. Each level is a kitchen, and your goal is to cook a list of meals following the onscreen recipes. The time is limited, and there are restrictions on how much money the player can spend on the ingredients. The player controls two characters that can be switched at any time or ordered to do a list of actions. The kitchens are often set in the oddball places, such as a pirate ship, two speeding trucks, a pedestrian crosswalk, or an iceberg. The level elements are dynamic and may move or change during the gameplay. Tables and ovens can slide, and the cooks can fall off the level, though they will respawn shortly. There’s a story mode in which cooking is tied to the plot. The game is set in the Onion Kingdom that was attacked by an insatiable spaghetti monster. The chefs travel back in time to refine their cooking skills and feed the monster when it appears again. Since even in the single mode the player has to control two cooks, the game predictably has a co-op multiplayer and a competitive mode in which the players try to “outcook” each other. Both modes, however, are local, and there’s no online multiplayer.",
+    "playtime_hours": 4,
+    "metacritic": 81,
+    "rating": 4.1,
+    "genres": [
+      "Simulation",
+      "Arcade",
+      "Casual",
+      "Indie"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/270/270b412b66688081497b3d70c100b208.jpg",
+    "publishers": [
+      "Team17 Digital"
+    ]
+  },
+  "game_lan:overcooked 2": {
+    "title": "Overcooked 2",
+    "media_type": "game_lan",
+    "platforms": [
+      "Xbox One",
+      "PlayStation 4",
+      "Nintendo Switch",
+      "Linux",
       "PC",
       "macOS"
     ],
-    "website_url": "http://www.blizzard.com/war3/",
+    "website_url": "http://www.ghosttowngames.com/overcooked-2/",
+    "developers": [
+      "Team17 Digital",
+      "Ghost Town Games"
+    ],
+    "rawg_url": "https://rawg.io/games/overcooked-2",
+    "release_date": "2018-08-06",
+    "description": "Just UpdatedNEW GAME PLUS It's time for a new challenge! There's a 4th star to be collected, but it's not going to be easy. New Game Plus unlocks once all the story mode levels have been completed in Campaign, so get cooking. Review Scores Best Family/Social Game About the GameOvercooked returns with a brand-new helping of chaotic cooking action! Journey back to the Onion Kingdom and assemble your team of chefs in classic couch co-op or online play for up to four players. Hold onto your aprons … it’s time to save the world (again!) Out of the frying pan, into the fire… You’ve saved the world from the Ever Peckish. Now a new threat has arisen and it’s time to get back in the kitchen to stave off the hunger of The Unbread! ONLINE/LOCAL MULTIPLAYER MADNESS You’ll knead to work together (or against each other) to get the highest score in chaotic local and online multiplayer. FEAST YOUR EYES ON THIS Journey across a brand new overworld map by land, sea and air. Get cooking in new themes ranging from sushi restaurants, magic schools, mines and even alien planets! WHET YOUR APPETITE! Travel the land cooking up a range of new recipes that are sure to cater to any tastes, including sushi, cakes, burgers and pizzas. ROMAINE CALM! Travel through teleporters, across moving platforms and save time by throwing ingredients across dynamic kitchens that shift and evolve. Some kitchens even whisk your chefs away to new locations.",
+    "playtime_hours": 4,
+    "metacritic": 82,
+    "rating": 4.2,
     "genres": [
-      "Strategy"
+      "Action",
+      "Casual",
+      "Indie"
     ],
-    "description": "It has been nearly fifteen years since the war between the orcs and humans ended. An uneasy peace settled over the land while, for years, the drums of war were silent. Yet the kingdoms of men grew complacent in their victory - and slowly, the defeated orcish clans regrouped under the banner of a new visionary leader. Now a darker shadow has fallen over the world, threatening to extinguish all life - all hope. The drums of war play upon the winds once again - rising urgently towards the inevitable hour when the skies will rain fire - and the world will tremble before the coming of the Burning Legion. The Day of Judgment has come...",
-    "rawg_url": "https://rawg.io/games/warcraft-3-reign-of-chaos",
-    "release_date": "2002-07-03",
-    "developers": [],
-    "metacritic": 92,
+    "poster_url": "https://media.rawg.io/media/games/d11/d11470677a829e34562e95a4002c2c7f.jpg",
     "publishers": [
-      "Blizzard Entertainment"
-    ],
-    "playtime_hours": 0
+      "Team17 Digital"
+    ]
   },
   "game_lan:payday 2": {
     "title": "Payday 2",
@@ -10734,6 +10878,57 @@
     ],
     "playtime_hours": 0
   },
+  "game_lan:phasmaphobia": {
+    "title": "Phasmaphobia",
+    "media_type": "game_lan",
+    "platforms": [
+      "PC"
+    ],
+    "website_url": "http://kineticgames.co.uk/",
+    "developers": [
+      "Kinetic Games"
+    ],
+    "rawg_url": "https://rawg.io/games/phasmophobia",
+    "release_date": "2020-09-18",
+    "description": "Phasmophobia is a 4 player online co-op psychological horror where you and your team members of paranormal investigators will enter haunted locations filled with paranormal activity and gather as much evidence of the paranormal as you can. You will use your ghost hunting equipment to search for and record evidence of whatever ghost is haunting the location to sell onto a ghost removal team. You can choose to support your team by monitoring the location with CCTV cameras and motion sensors from the safety of the truck or head inside and get your hands dirty with the ghostly activity that will get increasingly hostile as time goes on. Immersive Experience: Realistic graphics and sounds as well as having minimal user interfaces will ensure a totally immersive experience that will keep you on your toes. Cross platform: Phasmophobia supports all players whether they have VR or not so can enjoy the game with your VR and non VR friends. Co-op multiplayer: Play alongside your friends with up to 4 players in this co-op horror where teamwork is key to your success. Unique Ghosts: Over 10 different types of Ghosts all with unique traits meaning each investigation will be different. Investigate: Use well known ghost hunting equipment such as EMF Readers, Spirit Boxes, Thermometers and Night Vision Cameras to find clues and gather as much paranormal evidence as you can. Full Voice Recognition: The Ghosts are listening! Use your actual voice to interact with the Ghosts through Ouija Boards and EVP Sessions using a Spirit Box.",
+    "playtime_hours": 6,
+    "metacritic": null,
+    "rating": 3.9,
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "poster_url": "https://media.rawg.io/media/screenshots/370/370895ff725d74e26b8d30389222b397.jpg",
+    "publishers": [
+      "Kinetic Games"
+    ]
+  },
+  "game_lan:pummel party": {
+    "title": "Pummel Party",
+    "media_type": "game_lan",
+    "platforms": [
+      "PC"
+    ],
+    "website_url": "http://www.rebuiltgames.com/",
+    "developers": [
+      "Rebuilt Games"
+    ],
+    "rawg_url": "https://rawg.io/games/pummel-party",
+    "release_date": "2018-09-20",
+    "description": "Pummel Party is a 4-player online and local-multiplayer party game. Pummel friends or AI using a wide array of absurd items in the board mode and compete to destroy friendships in the entertaining collection of minigames.ONLINE AND LOCAL MULTIPLAYERPlay how you want. Pummel Party allows 1 to 4 players to compete both online or locally on the same screen. Whether its online, or in person, it's all the same friendship ruining fun. BOARD MODEThere can only be one winner here, and you know it has to be you! Battle through hazardous terrain to acquire an arsenal of weapons and items and employ them however you can to make sure that you reign victorious over your friends. ITEMSIt's all out war! Use an array of absurd weapons and objects to claw your way to victory. From the simple 'Punching Glove' to the ridiculous 'Remote Controlled Eggplant' the items in Pummel Party will lead to many funny and rage enducing moments. It's never been easier or more satisfying to crush your friends aspirations of winning!MINIGAMESFrom simple nostalgic fun to unique and evolutionary Pummel Party contains a wide array of exciting minigames. Knock your friends in to the abyss in 'Snowy Spin', dig three dimensionally in 'Sandy Search' to be the first to find the treasure and make sure you're not holding the bomb when it goes off in 'Explosive Exchange'.MINIGAME MODEJust want to jump in to the action? Pummel Party includes a minigame mode so that you can get straight to the games!BOTSAlready destroyed all your friendships or just need to fill out your roster? Pummel Party includes full bot integration meaning you can still play or practice Pummel Party with any number of real players.",
+    "playtime_hours": 4,
+    "metacritic": null,
+    "rating": 3.9,
+    "genres": [
+      "Action",
+      "Casual",
+      "Indie"
+    ],
+    "poster_url": "https://media.rawg.io/media/screenshots/c96/c968a71ce3529528065cc27385c1e0a9.jpg",
+    "publishers": [
+      "Rebuilt Games"
+    ]
+  },
   "game_lan:rainbow six siege terrorist hunt": {
     "title": "Rainbow Six Siege (Terrorist Hunt)",
     "media_type": "game_lan",
@@ -10764,6 +10959,37 @@
       "Ubisoft Entertainment"
     ],
     "playtime_hours": 32
+  },
+  "game_lan:rainbow six vegas 2": {
+    "title": "Rainbow Six Vegas 2",
+    "media_type": "game_lan",
+    "platforms": [
+      "Xbox One",
+      "PC",
+      "PlayStation 4",
+      "Xbox Series S/X",
+      "PlayStation 5"
+    ],
+    "website_url": "http://rainbow6.ubi.com/",
+    "developers": [
+      "Ubisoft",
+      "Ubisoft Montreal",
+      "Sperasoft"
+    ],
+    "rawg_url": "https://rawg.io/games/tom-clancys-rainbow-six-siege-2",
+    "release_date": "2015-12-01",
+    "description": "The gameplay of the game is based on intense strategic battles between the Navigator and the defenders in a limited space. Locations in the game consist of a multi-level object (for example, a multi-storey building), inside which there are defenders, and the area around it, where the attackers begin. Destruction is at the head of the game mechanics. The surrounding objects are created with maximum realism, the degree of damage depends on the calibre of the bullets used by the players or on the total power of the laid explosives. Walls can be destroyed, creating new firing positions and shelters. Optimal use of the potential of destruction often becomes a guarantee of victory. Defenders can limit the ability of attackers to destroy, using kits to strengthen the walls and the device of some operatives. The primary game mode - multiplayer, normal or rating. During the game in the last mode, the player is assigned a certain rank, and parameters such as the ratio of kills/deaths and wins/losses are recorded in his profile displayed in the game.",
+    "playtime_hours": 32,
+    "metacritic": 75,
+    "rating": 3.9,
+    "genres": [
+      "Action",
+      "Shooter"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/b34/b3419c2706f8f8dbe40d08e23642ad06.jpg",
+    "publishers": [
+      "Ubisoft Entertainment"
+    ]
   },
   "game_lan:repo": {
     "title": "R.E.P.O",
@@ -10868,6 +11094,29 @@
       "Red Barrels"
     ],
     "playtime_hours": 8
+  },
+  "game_lan:warcraft 3": {
+    "title": "Warcraft 3",
+    "media_type": "game_lan",
+    "platforms": [
+      "PC",
+      "macOS"
+    ],
+    "website_url": "http://www.blizzard.com/war3/",
+    "developers": [],
+    "rawg_url": "https://rawg.io/games/warcraft-3-reign-of-chaos",
+    "release_date": "2002-07-03",
+    "description": "It has been nearly fifteen years since the war between the orcs and humans ended. An uneasy peace settled over the land while, for years, the drums of war were silent. Yet the kingdoms of men grew complacent in their victory - and slowly, the defeated orcish clans regrouped under the banner of a new visionary leader. Now a darker shadow has fallen over the world, threatening to extinguish all life - all hope. The drums of war play upon the winds once again - rising urgently towards the inevitable hour when the skies will rain fire - and the world will tremble before the coming of the Burning Legion. The Day of Judgment has come...",
+    "playtime_hours": 0,
+    "metacritic": 92,
+    "rating": 4.5,
+    "genres": [
+      "Strategy"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/667/667b4447a90c4896bfd48400ae76af28.jpg",
+    "publishers": [
+      "Blizzard Entertainment"
+    ]
   },
   "game_lan:whos your daddy": {
     "title": "Who’s Your Daddy?",

@@ -721,10 +721,10 @@ function watchlistRatingText(type, details = {}) {
       return `${(metacritic / 10).toFixed(1)} / 10`;
     }
     const rawgRating = Number(details?.rating);
-    if (Number.isFinite(rawgRating)) {
+    if (Number.isFinite(rawgRating) && rawgRating > 0) {
       return `${(rawgRating * 2).toFixed(1)} / 10`;
     }
-    return "No rating";
+    return "";
   }
   const ratingValue = Number(details?.rating);
   if (!Number.isFinite(ratingValue)) {
@@ -747,6 +747,7 @@ function renderWatchlistTitleCard(type, title, payload, item = null) {
     : '<div class="watchlist-entry-poster watchlist-entry-poster-empty">No poster</div>';
 
   const badgeLabel = watchlistTypeWithOpinionLabel(type, opinion);
+  const ratingHtml = ratingText ? `<p class="watchlist-entry-rating">${ratingText}</p>` : "";
   return `
     <button
       type="button"
@@ -759,7 +760,7 @@ function renderWatchlistTitleCard(type, title, payload, item = null) {
       <div class="watchlist-entry-body">
         <p class="watchlist-entry-type">${badgeLabel}</p>
         <p class="watchlist-entry-title">${safeTitle}</p>
-        <p class="watchlist-entry-rating">${ratingText}</p>
+        ${ratingHtml}
       </div>
     </button>
   `;
@@ -1101,6 +1102,7 @@ function openWatchlistDetail(type, title) {
   const posterHtml = posterUrl
     ? `<img class="watchlist-detail-poster" src="${posterUrl}" alt="${safeTitle} poster">`
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
+  const ratingHtml = ratingText ? `<p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>` : "";
 
   elements.watchlistDetailContent.innerHTML = `
     <div class="watchlist-detail-layout">
@@ -1108,7 +1110,7 @@ function openWatchlistDetail(type, title) {
       <div class="watchlist-detail-body">
         <p class="watchlist-detail-kicker">${safeLabel}</p>
         <h3>${safeTitle}</h3>
-        <p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>
+        ${ratingHtml}
         ${timingBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(timingBits.join(" • "))}</p>` : ""}
         ${genreLine ? `<p class="watchlist-detail-meta">${escapeHtml(genreLine)}</p>` : ""}
         <p class="watchlist-detail-description">${escapeHtml(description)}</p>
@@ -1219,13 +1221,13 @@ function renderWatchlistHistory(payload) {
       continue;
     }
 
-    const section = document.createElement("details");
+    const section = document.createElement("section");
     section.className = "watchlist-year-group";
-    section.open = year === history[0]?.year;
 
-    const summary = document.createElement("summary");
-    summary.textContent = `${year} (${entries.length})`;
-    section.append(summary);
+    const heading = document.createElement("h4");
+    heading.className = "watchlist-year-heading";
+    heading.textContent = `${year} (${entries.length})`;
+    section.append(heading);
 
     const list = document.createElement("div");
     list.className = "watchlist-year-list";

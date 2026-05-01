@@ -1384,37 +1384,8 @@ td.card-number {
   background: #fbfcfe;
 }
 
-.watchlist-year-group summary {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
+.watchlist-year-heading {
   margin: 0;
-}
-
-.watchlist-year-group summary::-webkit-details-marker {
-  display: none;
-}
-
-.watchlist-year-group summary::before {
-  content: "+";
-  display: inline-grid;
-  place-items: center;
-  width: 18px;
-  height: 18px;
-  color: var(--accent-strong);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: 14px;
-  line-height: 1;
-}
-
-.watchlist-year-group[open] summary::before {
-  content: "-";
-}
-
-.watchlist-year-group summary {
   font-size: 16px;
   font-weight: 900;
   color: var(--text);
