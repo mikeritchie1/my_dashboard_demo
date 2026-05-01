@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import os
 import re
@@ -61,6 +62,8 @@ GAME_DETAIL_FIELDS = {
     "platforms",
     "publishers",
     "developers",
+    "playtime_hours",
+    "metacritic",
     "website_url",
     "rawg_url",
 }
@@ -79,11 +82,12 @@ TEXT_BLOCK_TYPES = {
 }
 
 OPINION_EMOJI_MAP = {
-    "🔥": "Loved",
-    "👍": "Liked",
-    "🤔": "Mixed",
-    "👎": "Disliked",
-    "💀": "Hated",
+    "\U0001F525": "Loved",
+    "\U0001F44D": "Liked",
+    "\U0001F914": "Mixed",
+    "\U0001F610": "Mixed",
+    "\U0001F44E": "Disliked",
+    "\U0001F480": "Hated",
 }
 
 
@@ -310,11 +314,18 @@ def clean_title(text: str) -> str:
 def extract_title_and_opinion(text: str) -> tuple[str, str]:
     title = clean_title(text)
     opinion = ""
-    for emoji, mapped in OPINION_EMOJI_MAP.items():
-        if emoji in title:
-            title = title.replace(emoji, "").strip()
-            opinion = mapped
+    while title:
+        matched = False
+        for emoji, mapped in OPINION_EMOJI_MAP.items():
+            if title.endswith(emoji):
+                title = title[: -len(emoji)].rstrip()
+                if not opinion:
+                    opinion = mapped
+                matched = True
+                break
+        if not matched:
             break
+    title = re.sub(r"\s*\[\d{4}\]\s*$", "", title).strip()
     return title, opinion
 
 
@@ -990,6 +1001,8 @@ def fetch_game_detail(title: str, media_type: str) -> dict:
     image = str(chosen.get("background_image") or first.get("background_image") or "").strip()
     released = str(chosen.get("released") or first.get("released") or "").strip()
     rating = chosen.get("rating", first.get("rating"))
+    playtime = chosen.get("playtime", first.get("playtime"))
+    metacritic = chosen.get("metacritic", first.get("metacritic"))
     website = str(chosen.get("website") or "").strip()
     genres = [
         str(item.get("name") or "").strip()
@@ -1017,7 +1030,7 @@ def fetch_game_detail(title: str, media_type: str) -> dict:
         if isinstance(item, dict) and str(item.get("name") or "").strip()
     ]
 
-    description = str(chosen.get("description_raw") or chosen.get("description") or "").strip()
+    description = sanitize_html_text(chosen.get("description_raw") or chosen.get("description") or "")
     if isinstance(rating, (int, float)):
         result["rating"] = round(float(rating), 1)
     else:
@@ -1029,6 +1042,8 @@ def fetch_game_detail(title: str, media_type: str) -> dict:
     result["platforms"] = platforms[:8]
     result["publishers"] = list(dict.fromkeys(publishers))[:6]
     result["developers"] = list(dict.fromkeys(developers))[:6]
+    result["playtime_hours"] = int(playtime) if isinstance(playtime, (int, float)) else None
+    result["metacritic"] = int(metacritic) if isinstance(metacritic, (int, float)) else None
     result["website_url"] = website
     result["rawg_url"] = f"{RAWG_SITE_GAME_BASE_URL}/{slug}" if slug else ""
     return result
@@ -1038,10 +1053,30 @@ def merge_game_details(existing: dict, fetched: dict) -> dict:
     merged = dict(existing)
     merged.setdefault("title", str(existing.get("title") or fetched.get("title") or "").strip())
     for key in GAME_DETAIL_FIELDS:
-        if key in merged:
+        if not is_empty_detail_value(merged.get(key)):
             continue
         merged[key] = fetched.get(key)
     return merged
+
+
+def is_empty_detail_value(value: object) -> bool:
+    if value is None:
+        return True
+    if isinstance(value, str):
+        return not value.strip()
+    if isinstance(value, (list, dict)):
+        return not value
+    return False
+
+
+def sanitize_html_text(value: str) -> str:
+    text = html.unescape(str(value or ""))
+    text = re.sub(r"(?i)<br\s*/?>", "\n", text)
+    text = re.sub(r"(?is)<[^>]+>", " ", text)
+    text = re.sub(r"[ \t]+\n", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
 
 def normalize_cached_game_detail(entry: dict, media_type: str, title: str) -> dict:
@@ -1054,7 +1089,7 @@ def normalize_cached_game_detail(entry: dict, media_type: str, title: str) -> di
 def game_detail_needs_fetch(entry: dict) -> bool:
     if not isinstance(entry, dict):
         return True
-    return any(field not in entry for field in GAME_DETAIL_FIELDS)
+    return any(field not in entry or is_empty_detail_value(entry.get(field)) for field in GAME_DETAIL_FIELDS)
 
 
 def enrich_payload_with_movie_details(payload: dict, selected_types: set[str] | None = None, hard: bool = False) -> dict:

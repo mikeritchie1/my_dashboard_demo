@@ -1,0 +1,29 @@
+{
+  "opinion_levels": {
+    "level1": {
+      "default_text": "Hated",
+      "text": "Hated",
+      "color": "#ffffff"
+    },
+    "level2": {
+      "default_text": "Disliked",
+      "text": "Disliked",
+      "color": "#16a34a"
+    },
+    "level3": {
+      "default_text": "Mixed",
+      "text": "Mixed",
+      "color": "#1976d2"
+    },
+    "level4": {
+      "default_text": "Liked",
+      "text": "Liked",
+      "color": "#7c3aed"
+    },
+    "level5": {
+      "default_text": "Loved",
+      "text": "Loved",
+      "color": "#ff8a00"
+    }
+  }
+}

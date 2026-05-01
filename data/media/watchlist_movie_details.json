@@ -4489,21 +4489,6 @@
     ],
     "runtime_minutes": 97
   },
-  "gran torismo": {
-    "title": "Gran Torismo",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null
-  },
   "green room": {
     "title": "Green Room",
     "rating": 6.6,
@@ -4739,21 +4724,6 @@
       "Bryan Woods"
     ],
     "runtime_minutes": 111
-  },
-  "how to train your dragon live action": {
-    "title": "How to Train Your Dragon Live Action",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null
   },
   "i like movies": {
     "title": "I Like Movies!",
@@ -5357,21 +5327,6 @@
       "Paul Thomas Anderson"
     ],
     "runtime_minutes": 133
-  },
-  "lilo and stitch live action": {
-    "title": "Lilo and Stitch Live Action",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null
   },
   "longlegs": {
     "title": "Longlegs",
@@ -7946,6 +7901,37 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
+  "movie:five nights at freddys": {
+    "title": "Five Nights at Freddy's",
+    "media_type": "movie",
+    "overview": "One year since the supernatural nightmare at Freddy Fazbear's Pizza, the stories about what transpired there have been twisted into a campy local legend, inspiring the town's first ever Fazfest. With the truth kept from her, Abby sneaks out to reconnect with Freddy, Bonnie, Chica, and Foxy, setting into motion a terrifying series of events that will reveal dark secrets about the real origin of Freddy's, and unleash a decades-hidden horror.",
+    "runtime_minutes": 104,
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "actors": [
+      "Josh Hutcherson",
+      "Piper Rubio",
+      "Elizabeth Lail",
+      "Matthew Lillard",
+      "Freddy Carter",
+      "Wayne Knight",
+      "Mckenna Grace",
+      "David Andrew Calvillo"
+    ],
+    "directors": [
+      "Emma Tammi"
+    ],
+    "tmdb_id": 1228246,
+    "trailer_url": "https://www.youtube.com/watch?v=VWfTR7ptRsQ",
+    "poster_url": "https://image.tmdb.org/t/p/w342/udAxQEORq2I5wxI97N2TEqdhzBE.jpg",
+    "number_of_seasons": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/1228246",
+    "release_date": "2025-12-03",
+    "description": "One year since the supernatural nightmare at Freddy Fazbear's Pizza, the stories about what transpired there have been twisted into a campy local legend, inspiring the town's first ever Fazfest. With the truth kept from her, Abby sneaks out to reconnect with Freddy, Bonnie, Chica, and Foxy, setting into motion a terrifying series of events that will reveal dark secrets about the real origin of Freddy's, and unleash a decades-hidden horror.",
+    "rating": 6.7
+  },
   "movie:flow": {
     "title": "Flow",
     "rating": 8.1,
@@ -8370,22 +8356,37 @@
       "Comedy"
     ]
   },
-  "movie:gran torismo": {
-    "title": "Gran Torismo",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null,
+  "movie:gran turismo": {
+    "title": "Gran Turismo",
     "media_type": "movie",
-    "number_of_seasons": null
+    "overview": "The ultimate wish-fulfillment tale of a teenage Gran Turismo player whose gaming skills won him a series of Nissan competitions to become an actual professional racecar driver.",
+    "runtime_minutes": 135,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Action"
+    ],
+    "actors": [
+      "Archie Madekwe",
+      "David Harbour",
+      "Orlando Bloom",
+      "Djimon Hounsou",
+      "Darren Barnet",
+      "Maeve Courtier-Lilley",
+      "Geri Halliwell-Horner",
+      "Daniel Puig"
+    ],
+    "directors": [
+      "Neill Blomkamp"
+    ],
+    "tmdb_id": 980489,
+    "trailer_url": "https://www.youtube.com/watch?v=NZsBpoQZPUA",
+    "poster_url": "https://image.tmdb.org/t/p/w342/51tqzRtKMMZEYUpSYkrUE7v9ehm.jpg",
+    "number_of_seasons": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/980489",
+    "release_date": "2023-08-09",
+    "description": "The ultimate wish-fulfillment tale of a teenage Gran Turismo player whose gaming skills won him a series of Nissan competitions to become an actual professional racecar driver.",
+    "rating": 7.7
   },
   "movie:green room": {
     "title": "Green Room",
@@ -8673,22 +8674,22 @@
       "Science Fiction"
     ]
   },
-  "movie:how to train your dragon live action": {
-    "title": "How to Train Your Dragon Live Action",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
+  "movie:how to train your dragon liveaction collection": {
+    "title": "How to Train Your Dragon (Live-Action) Collection",
+    "media_type": "movie",
+    "overview": null,
+    "runtime_minutes": null,
     "genres": null,
     "actors": null,
-    "tmdb_url": null,
-    "description": null,
     "directors": null,
-    "runtime_minutes": null,
-    "media_type": "movie",
-    "number_of_seasons": null
+    "tmdb_id": null,
+    "trailer_url": null,
+    "poster_url": null,
+    "number_of_seasons": null,
+    "tmdb_url": null,
+    "release_date": null,
+    "description": null,
+    "rating": null
   },
   "movie:i like movies": {
     "title": "I Like Movies!",
@@ -9365,22 +9366,37 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:lilo and stitch live action": {
-    "title": "Lilo and Stitch Live Action",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null,
+  "movie:lilo  stitch": {
+    "title": "Lilo & Stitch",
     "media_type": "movie",
-    "number_of_seasons": null
+    "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
+    "runtime_minutes": 108,
+    "genres": [
+      "Family",
+      "Science Fiction",
+      "Comedy"
+    ],
+    "actors": [
+      "Maia Kealoha",
+      "Sydney Agudong",
+      "Chris Sanders",
+      "Zach Galifianakis",
+      "Billy Magnussen",
+      "Courtney B. Vance",
+      "Amy Hill",
+      "Tia Carrere"
+    ],
+    "directors": [
+      "Dean Fleischer Camp"
+    ],
+    "tmdb_id": 552524,
+    "trailer_url": "https://www.youtube.com/watch?v=zYqZ18i-ktE",
+    "poster_url": "https://image.tmdb.org/t/p/w342/ckQzKpQJO4ZQDCN5evdpKcfm7Ys.jpg",
+    "number_of_seasons": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/552524",
+    "release_date": "2025-05-17",
+    "description": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
+    "rating": 7.2
   },
   "movie:longlegs": {
     "title": "Longlegs",
@@ -9988,39 +10004,37 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:nights at freddies": {
-    "title": "Nights at Freddies",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null,
+  "movie:nirvanna the band the show the movie": {
+    "title": "Nirvanna The Band The Show The Movie",
     "media_type": "movie",
-    "number_of_seasons": null
-  },
-  "movie:nirvana the band the show the movie": {
-    "title": "Nirvana The Band The Show The Movie",
-    "media_type": "movie",
-    "overview": null,
-    "poster_url": null,
-    "genres": null,
-    "release_date": null,
-    "description": null,
+    "overview": "When their plan to book a show at the Rivoli goes horribly wrong, Matt and Jay accidentally travel back to the year 2008.",
+    "runtime_minutes": 100,
+    "genres": [
+      "Comedy",
+      "Science Fiction",
+      "Adventure"
+    ],
+    "actors": [
+      "Matt Johnson",
+      "Jay McCarrol",
+      "Ben Petrie",
+      "Ethan Eng",
+      "Michael Scott",
+      "Reid Janisse",
+      "Steve Hamelin",
+      "Luke Lalonde"
+    ],
+    "directors": [
+      "Matt Johnson"
+    ],
+    "tmdb_id": 1154538,
+    "trailer_url": "https://www.youtube.com/watch?v=y2K9ccMREOI",
+    "poster_url": "https://image.tmdb.org/t/p/w342/sm5TGX8WbnCd9Uo26cLyTxVwA1n.jpg",
     "number_of_seasons": null,
-    "tmdb_id": null,
-    "trailer_url": null,
-    "tmdb_url": null,
-    "runtime_minutes": null,
-    "directors": null,
-    "rating": null,
-    "actors": null
+    "tmdb_url": "https://www.themoviedb.org/movie/1154538",
+    "release_date": "2026-02-13",
+    "description": "When their plan to book a show at the Rivoli goes horribly wrong, Matt and Jay accidentally travel back to the year 2008.",
+    "rating": 7.5
   },
   "movie:no one will save you": {
     "title": "No One Will Save You",
@@ -11388,23 +11402,6 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:speak no evil 2024": {
-    "title": "Speak No Evil 2024",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null,
-    "media_type": "movie",
-    "number_of_seasons": null
-  },
   "movie:starship trooper": {
     "title": "Starship Trooper",
     "rating": 7.1,
@@ -11563,23 +11560,6 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:super bad": {
-    "title": "Super Bad",
-    "rating": 0.0,
-    "poster_url": "",
-    "tmdb_id": 1459448,
-    "release_date": "",
-    "overview": "The film tells the story of a socially awkward boy",
-    "trailer_url": "",
-    "genres": [],
-    "actors": [],
-    "tmdb_url": "https://www.themoviedb.org/movie/1459448",
-    "description": "The film tells the story of a socially awkward boy",
-    "directors": [],
-    "runtime_minutes": 8,
-    "media_type": "movie",
-    "number_of_seasons": null
-  },
   "movie:super mario galaxy": {
     "title": "Super Mario Galaxy",
     "media_type": "movie",
@@ -11615,22 +11595,67 @@
       "Luis Guzmán"
     ]
   },
-  "movie:superman 2025": {
-    "title": "Superman 2025",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null,
+  "movie:superbad": {
+    "title": "Superbad",
     "media_type": "movie",
-    "number_of_seasons": null
+    "overview": "Two co-dependent high school seniors are forced to deal with separation anxiety after their plan to stage a booze-soaked party goes awry.",
+    "runtime_minutes": 113,
+    "genres": [
+      "Comedy"
+    ],
+    "actors": [
+      "Jonah Hill",
+      "Michael Cera",
+      "Christopher Mintz-Plasse",
+      "Bill Hader",
+      "Seth Rogen",
+      "Martha MacIsaac",
+      "Emma Stone",
+      "Aviva Baumann"
+    ],
+    "directors": [
+      "Greg Mottola"
+    ],
+    "tmdb_id": 8363,
+    "trailer_url": "https://www.youtube.com/watch?v=MuhWxdD0qno",
+    "poster_url": "https://image.tmdb.org/t/p/w342/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg",
+    "number_of_seasons": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/8363",
+    "release_date": "2007-08-17",
+    "description": "Two co-dependent high school seniors are forced to deal with separation anxiety after their plan to stage a booze-soaked party goes awry.",
+    "rating": 7.3
+  },
+  "movie:superman": {
+    "title": "Superman",
+    "media_type": "movie",
+    "overview": "Superman, a journalist in Metropolis, embarks on a journey to reconcile his Kryptonian heritage with his human upbringing as Clark Kent.",
+    "runtime_minutes": 130,
+    "genres": [
+      "Science Fiction",
+      "Adventure",
+      "Action"
+    ],
+    "actors": [
+      "David Corenswet",
+      "Rachel Brosnahan",
+      "Nicholas Hoult",
+      "Edi Gathegi",
+      "Nathan Fillion",
+      "Isabela Merced",
+      "María Gabriela de Faría",
+      "Skyler Gisondo"
+    ],
+    "directors": [
+      "James Gunn"
+    ],
+    "tmdb_id": 1061474,
+    "trailer_url": "https://www.youtube.com/watch?v=MikgqM0LXr4",
+    "poster_url": "https://image.tmdb.org/t/p/w342/ldyfo0BKmz5rWtJJKCvwaNS4cJT.jpg",
+    "number_of_seasons": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/1061474",
+    "release_date": "2025-07-09",
+    "description": "Superman, a journalist in Metropolis, embarks on a journey to reconcile his Kryptonian heritage with his human upbringing as Clark Kent.",
+    "rating": 7.3
   },
   "movie:sweeney todd the demon barber of fleet street": {
     "title": "Sweeney Todd: The Demon Barber of Fleet Street",
@@ -14912,21 +14937,6 @@
     ],
     "runtime_minutes": 118
   },
-  "nights at freddies": {
-    "title": "Nights at Freddies",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null
-  },
   "no one will save you": {
     "title": "No One Will Save You",
     "rating": 6.7,
@@ -15918,22 +15928,29 @@
     ],
     "number_of_seasons": 2
   },
-  "series:aunt donnas coffee café": {
-    "title": "Aunt Donna’s Coffee Café",
+  "series:aunty donnas coffee cafe": {
+    "title": "Aunty Donna's Coffee Cafe",
     "media_type": "series",
-    "directors": null,
-    "description": null,
-    "tmdb_url": null,
-    "tmdb_id": null,
-    "poster_url": null,
-    "release_date": null,
-    "runtime_minutes": null,
-    "rating": null,
-    "trailer_url": null,
-    "overview": null,
-    "genres": null,
-    "actors": null,
-    "number_of_seasons": null
+    "overview": "Starring Aunty Donna's Mark Samual Bonanno, Broden Kelly, and Zachary Ruane, the high octane and unpredictable series follows the story of three best mates running a trendy cafe down one of Melbourne's less-than-iconic laneways.",
+    "runtime_minutes": 26,
+    "genres": [
+      "Comedy"
+    ],
+    "actors": [
+      "Mark Bonanno",
+      "Broden Kelly",
+      "Zachary Ruane",
+      "Gaby Seow"
+    ],
+    "directors": [],
+    "tmdb_id": 223980,
+    "trailer_url": "https://www.youtube.com/watch?v=jydZ9uXhhFI",
+    "poster_url": "https://image.tmdb.org/t/p/w342/oMEfhhwgodOCuYbw1gOFfl0Ona2.jpg",
+    "number_of_seasons": 1,
+    "tmdb_url": "https://www.themoviedb.org/tv/223980",
+    "release_date": "2023-04-12",
+    "description": "Starring Aunty Donna's Mark Samual Bonanno, Broden Kelly, and Zachary Ruane, the high octane and unpredictable series follows the story of three best mates running a trendy cafe down one of Melbourne's less-than-iconic laneways.",
+    "rating": 8.2
   },
   "series:baby reindeer": {
     "title": "Baby Reindeer",
@@ -16851,23 +16868,6 @@
     ],
     "number_of_seasons": 9
   },
-  "series:rings or power": {
-    "title": "Rings or Power",
-    "media_type": "series",
-    "directors": null,
-    "description": null,
-    "tmdb_url": null,
-    "tmdb_id": null,
-    "poster_url": null,
-    "release_date": null,
-    "runtime_minutes": null,
-    "rating": null,
-    "trailer_url": null,
-    "overview": null,
-    "genres": null,
-    "actors": null,
-    "number_of_seasons": null
-  },
   "series:scott pilgrim takes off": {
     "title": "Scott Pilgrim Takes Off",
     "media_type": "series",
@@ -17494,6 +17494,39 @@
     ],
     "number_of_seasons": 2
   },
+  "series:the lord of the rings the rings of power": {
+    "title": "The Lord of the Rings: The Rings of Power",
+    "media_type": "series",
+    "overview": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
+    "runtime_minutes": null,
+    "genres": [
+      "Action & Adventure",
+      "Sci-Fi & Fantasy",
+      "Drama"
+    ],
+    "actors": [
+      "Charlie Vickers",
+      "Morfydd Clark",
+      "Robert Aramayo",
+      "Charles Edwards",
+      "Owain Arthur",
+      "Sophia Nomvete",
+      "Daniel Weyman",
+      "Markella Kavenagh"
+    ],
+    "directors": [
+      "Patrick McKay",
+      "John D. Payne"
+    ],
+    "tmdb_id": 84773,
+    "trailer_url": "https://www.youtube.com/watch?v=x8UAUAuKNcU",
+    "poster_url": "https://image.tmdb.org/t/p/w342/kf5Hz70tjNAHg4swGDzOr9BfoZ1.jpg",
+    "number_of_seasons": 3,
+    "tmdb_url": "https://www.themoviedb.org/tv/84773",
+    "release_date": "2022-09-01",
+    "description": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
+    "rating": 7.2
+  },
   "series:the mentalist": {
     "title": "The Mentalist",
     "media_type": "series",
@@ -17743,22 +17776,27 @@
     ],
     "number_of_seasons": 3
   },
-  "series:world war ll from the frontlines": {
-    "title": "World War ll: From the Frontlines",
+  "series:world war ii from the frontlines": {
+    "title": "World War II: From the Frontlines",
     "media_type": "series",
-    "poster_url": null,
+    "overview": "Through vividly enhanced archival footage and voices from all sides of the conflict, this docuseries brings WWII to life like never before.",
     "runtime_minutes": null,
-    "description": null,
-    "tmdb_id": null,
-    "directors": null,
-    "tmdb_url": null,
-    "trailer_url": null,
-    "rating": null,
-    "genres": null,
-    "overview": null,
-    "release_date": null,
-    "actors": null,
-    "number_of_seasons": null
+    "genres": [
+      "Documentary",
+      "War & Politics"
+    ],
+    "actors": [
+      "John Boyega"
+    ],
+    "directors": [],
+    "tmdb_id": 233237,
+    "trailer_url": "https://www.youtube.com/watch?v=dz1rTZE9xgE",
+    "poster_url": "https://image.tmdb.org/t/p/w342/15wIhM1X6oRiId0tPPTVoXLT6mx.jpg",
+    "number_of_seasons": 1,
+    "tmdb_url": "https://www.themoviedb.org/tv/233237",
+    "release_date": "2023-12-07",
+    "description": "Through vividly enhanced archival footage and voices from all sides of the conflict, this docuseries brings WWII to life like never before.",
+    "rating": 7.9
   },
   "series:xmen 97": {
     "title": "X-Men ‘97",
@@ -18118,21 +18156,6 @@
     ],
     "runtime_minutes": 110
   },
-  "speak no evil 2024": {
-    "title": "Speak No Evil 2024",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null
-  },
   "starship trooper": {
     "title": "Starship Trooper",
     "rating": 7.1,
@@ -18280,36 +18303,6 @@
       "Josh Greenbaum"
     ],
     "runtime_minutes": 93
-  },
-  "super bad": {
-    "title": "Super Bad",
-    "rating": 0.0,
-    "poster_url": "",
-    "tmdb_id": 1459448,
-    "release_date": "",
-    "overview": "The film tells the story of a socially awkward boy",
-    "trailer_url": "",
-    "genres": [],
-    "actors": [],
-    "tmdb_url": "https://www.themoviedb.org/movie/1459448",
-    "description": "The film tells the story of a socially awkward boy",
-    "directors": [],
-    "runtime_minutes": 8
-  },
-  "superman 2025": {
-    "title": "Superman 2025",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null
   },
   "sweeney todd the demon barber of fleet street": {
     "title": "Sweeney Todd: The Demon Barber of Fleet Street",

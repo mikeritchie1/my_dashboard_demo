@@ -1438,8 +1438,8 @@ td.card-number {
 }
 
 .watchlist-entry.opinion-liked {
-  border-color: #16a34a;
-  box-shadow: inset 0 0 0 1px rgba(22, 163, 74, 0.22);
+  border-color: #7c3aed;
+  box-shadow: inset 0 0 0 1px rgba(124, 58, 237, 0.24);
 }
 
 .watchlist-entry.opinion-alright {
@@ -1457,13 +1457,13 @@ td.card-number {
 }
 
 .watchlist-entry[data-watch-opinion="liked"] {
-  border-color: #1976d2 !important;
-  box-shadow: inset 0 0 0 1px rgba(25, 118, 210, 0.42) !important;
+  border-color: #7c3aed !important;
+  box-shadow: inset 0 0 0 1px rgba(124, 58, 237, 0.42) !important;
 }
 
 .watchlist-entry[data-watch-opinion="mixed"] {
-  border-color: #9c3fe4 !important;
-  box-shadow: inset 0 0 0 1px rgba(156, 63, 228, 0.42) !important;
+  border-color: #1976d2 !important;
+  box-shadow: inset 0 0 0 1px rgba(25, 118, 210, 0.42) !important;
 }
 
 .watchlist-entry[data-watch-opinion="disliked"] {
@@ -1477,18 +1477,18 @@ td.card-number {
 }
 
 .watchlist-entry.opinion-mixed {
-  border-color: #a78bfa;
-  box-shadow: inset 0 0 0 1px rgba(167, 139, 250, 0.24);
+  border-color: #1976d2;
+  box-shadow: inset 0 0 0 1px rgba(25, 118, 210, 0.24);
 }
 
 .watchlist-entry.opinion-disliked {
-  border-color: #ef4444;
-  box-shadow: inset 0 0 0 1px rgba(239, 68, 68, 0.24);
+  border-color: #22ff00;
+  box-shadow: inset 0 0 0 1px rgba(34, 255, 0, 0.38);
 }
 
 .watchlist-entry.opinion-hated {
-  border-color: #111827;
-  box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.35);
+  border-color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.55);
 }
 
 .watchlist-entry-type {
@@ -1523,6 +1523,7 @@ td.card-number {
   vertical-align: middle;
   color: #334155;
   background: #f8fafc;
+  text-transform: none;
 }
 
 .watchlist-opinion-text.opinion-loved {
@@ -1532,9 +1533,9 @@ td.card-number {
 }
 
 .watchlist-opinion-text.opinion-liked {
-  color: #166534;
-  border-color: #16a34a;
-  background: #ecfdf3;
+  color: #6d28d9;
+  border-color: #7c3aed;
+  background: #f5f3ff;
 }
 
 .watchlist-opinion-text.opinion-alright {
@@ -1544,21 +1545,21 @@ td.card-number {
 }
 
 .watchlist-opinion-text.opinion-mixed {
-  color: #7c3aed;
-  border-color: #a78bfa;
-  background: #f5f3ff;
+  color: #1d4ed8;
+  border-color: #1976d2;
+  background: #eff6ff;
 }
 
 .watchlist-opinion-text.opinion-disliked {
-  color: #b91c1c;
-  border-color: #ef4444;
-  background: #fef2f2;
+  color: #166534;
+  border-color: #22ff00;
+  background: #ecfdf3;
 }
 
 .watchlist-opinion-text.opinion-hated {
-  color: #ffffff;
-  border-color: #111827;
-  background: #1f2937;
+  color: #111827;
+  border-color: #ffffff;
+  background: #ffffff;
 }
 
 .watchlist-entry[data-watch-type="movie"] .watchlist-entry-type {
@@ -1645,8 +1646,8 @@ td.card-number {
 }
 
 :root[data-theme="dark"] .watchlist-entry.opinion-liked {
-  border-color: #4ade80;
-  box-shadow: inset 0 0 0 1px rgba(74, 222, 128, 0.24);
+  border-color: #a78bfa;
+  box-shadow: inset 0 0 0 1px rgba(167, 139, 250, 0.44);
 }
 
 :root[data-theme="dark"] .watchlist-entry.opinion-alright {
@@ -1664,13 +1665,13 @@ td.card-number {
 }
 
 :root[data-theme="dark"] .watchlist-entry[data-watch-opinion="liked"] {
-  border-color: #4ea3ff !important;
-  box-shadow: inset 0 0 0 1px rgba(78, 163, 255, 0.46) !important;
+  border-color: #a78bfa !important;
+  box-shadow: inset 0 0 0 1px rgba(167, 139, 250, 0.44) !important;
 }
 
 :root[data-theme="dark"] .watchlist-entry[data-watch-opinion="mixed"] {
-  border-color: #be7dff !important;
-  box-shadow: inset 0 0 0 1px rgba(190, 125, 255, 0.44) !important;
+  border-color: #60a5fa !important;
+  box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.44) !important;
 }
 
 :root[data-theme="dark"] .watchlist-entry[data-watch-opinion="disliked"] {
@@ -1684,18 +1685,81 @@ td.card-number {
 }
 
 :root[data-theme="dark"] .watchlist-entry.opinion-mixed {
-  border-color: #c4b5fd;
-  box-shadow: inset 0 0 0 1px rgba(196, 181, 253, 0.24);
+  border-color: #60a5fa;
+  box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.44);
 }
 
 :root[data-theme="dark"] .watchlist-entry.opinion-disliked {
-  border-color: #f87171;
-  box-shadow: inset 0 0 0 1px rgba(248, 113, 113, 0.24);
+  border-color: #63ff4f;
+  box-shadow: inset 0 0 0 1px rgba(99, 255, 79, 0.4);
 }
 
 :root[data-theme="dark"] .watchlist-entry.opinion-hated {
-  border-color: #e5e7eb;
-  box-shadow: inset 0 0 0 1px rgba(229, 231, 235, 0.24);
+  border-color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+:root {
+  --opinion-loved: #ff8a00;
+  --opinion-liked: #7c3aed;
+  --opinion-mixed: #1976d2;
+  --opinion-disliked: #16a34a;
+  --opinion-hated: #ffffff;
+}
+
+.watchlist-entry[data-watch-opinion="loved"],
+.watchlist-detail-panel[data-watch-opinion="loved"] {
+  border-color: var(--opinion-loved) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 138, 0, 0.45) !important;
+}
+
+.watchlist-entry[data-watch-opinion="liked"],
+.watchlist-detail-panel[data-watch-opinion="liked"] {
+  border-color: var(--opinion-liked) !important;
+  box-shadow: inset 0 0 0 1px rgba(124, 58, 237, 0.42) !important;
+}
+
+.watchlist-entry[data-watch-opinion="mixed"],
+.watchlist-detail-panel[data-watch-opinion="mixed"] {
+  border-color: var(--opinion-mixed) !important;
+  box-shadow: inset 0 0 0 1px rgba(25, 118, 210, 0.42) !important;
+}
+
+.watchlist-entry[data-watch-opinion="disliked"],
+.watchlist-detail-panel[data-watch-opinion="disliked"] {
+  border-color: var(--opinion-disliked) !important;
+  box-shadow: inset 0 0 0 1px rgba(22, 163, 74, 0.42) !important;
+}
+
+.watchlist-entry[data-watch-opinion="hated"],
+.watchlist-detail-panel[data-watch-opinion="hated"] {
+  border-color: var(--opinion-hated) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.58) !important;
+}
+
+.watchlist-opinion-text.opinion-loved {
+  border-color: var(--opinion-loved);
+  color: #7a2e0e;
+}
+
+.watchlist-opinion-text.opinion-liked {
+  border-color: var(--opinion-liked);
+  color: #6d28d9;
+}
+
+.watchlist-opinion-text.opinion-mixed {
+  border-color: var(--opinion-mixed);
+  color: #1d4ed8;
+}
+
+.watchlist-opinion-text.opinion-disliked {
+  border-color: var(--opinion-disliked);
+  color: #166534;
+}
+
+.watchlist-opinion-text.opinion-hated {
+  border-color: var(--opinion-hated);
+  color: #111827;
 }
 
 :root[data-theme="dark"] .watchlist-loved-badge {

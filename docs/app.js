@@ -7,6 +7,7 @@ const WATCHLIST_PATH = "./data/media/watchlist.json";
 const GAMESLIST_PATH = "./data/media/gameslist.json";
 const WATCHLIST_MOVIE_DETAILS_PATH = "./data/media/watchlist_movie_details.json";
 const GAMES_DETAILS_PATH = "./data/media/games_details.json";
+const CONFIG_PATH = "../config.json";
 const SPECIALS_PATH = "./data/events/specials.json";
 const QUICKET_EVENTS_PATH = "./data/events/quicket_events.json";
 const WEATHER_PATH =
@@ -31,6 +32,13 @@ const WATCHLIST_TYPE_LABELS = {
   game_couch_coop: "Couch Co-op",
   game_lan: "LAN",
 };
+const DEFAULT_OPINION_LEVELS = [
+  { level: 1, key: "hated", defaultText: "Hated", text: "Hated", color: "#ffffff", aliases: ["Hated"] },
+  { level: 2, key: "disliked", defaultText: "Disliked", text: "Disliked", color: "#16a34a", aliases: ["Disliked"] },
+  { level: 3, key: "mixed", defaultText: "Mixed", text: "Mixed", color: "#1976d2", aliases: ["Mixed"] },
+  { level: 4, key: "liked", defaultText: "Liked", text: "Liked", color: "#7c3aed", aliases: ["Liked"] },
+  { level: 5, key: "loved", defaultText: "Loved", text: "Loved", color: "#ff8a00", aliases: ["Loved"] },
+];
 
 const state = {
   rows: [],
@@ -64,6 +72,7 @@ const state = {
   watchlistSort: "default",
   watchlistOpinionFilter: "all",
   watchlistSearchFilter: "",
+  opinionLevels: DEFAULT_OPINION_LEVELS,
 };
 
 const elements = {
@@ -237,6 +246,22 @@ function displayDate(value) {
     timeZone: "UTC",
   }).format(date);
   return `${ordinal(day)} ${monthName} ${year}`;
+}
+
+function displayDatePlain(value) {
+  if (!value) {
+    return "";
+  }
+  const [year, month, day] = value.split("-").map(Number);
+  if (!year || !month || !day) {
+    return value;
+  }
+  const date = new Date(Date.UTC(year, month - 1, day));
+  const monthName = new Intl.DateTimeFormat("en-ZA", {
+    month: "long",
+    timeZone: "UTC",
+  }).format(date);
+  return `${day} ${monthName} ${year}`;
 }
 
 function displayDateTime(value) {
@@ -433,6 +458,39 @@ function safeWatchTitle(item) {
   return "";
 }
 
+function normalizeOpinionKey(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[\s_-]+/g, "");
+}
+
+function configuredOpinionLevels() {
+  return Array.isArray(state.opinionLevels) && state.opinionLevels.length
+    ? state.opinionLevels
+    : DEFAULT_OPINION_LEVELS;
+}
+
+function opinionLevelForValue(value) {
+  const key = normalizeOpinionKey(value);
+  if (!key) {
+    return null;
+  }
+  return configuredOpinionLevels().find((level) =>
+    [level.key, level.defaultText, level.text, ...(level.aliases || [])].some((candidate) => normalizeOpinionKey(candidate) === key),
+  ) || null;
+}
+
+function opinionDisplayText(opinion) {
+  const level = opinionLevelForValue(opinion);
+  return level?.text || opinion || "";
+}
+
+function opinionCssKey(opinion) {
+  const level = opinionLevelForValue(opinion);
+  return level?.key || String(opinion || "").trim().toLowerCase();
+}
+
 function safeWatchType(item) {
   const rawType = typeof item === "object" && item ? String(item.type || "") : "";
   const lowered = rawType.toLowerCase().trim().replace(/[\s-]+/g, "_");
@@ -471,16 +529,9 @@ function safeWatchOpinion(item) {
     return "";
   }
   const raw = String(item.opinion || "").trim();
-  const lowered = raw.toLowerCase();
-  const opinionMap = {
-    loved: "Loved",
-    liked: "Liked",
-    mixed: "Mixed",
-    disliked: "Disliked",
-    hated: "Hated",
-  };
-  if (opinionMap[lowered]) {
-    return opinionMap[lowered];
+  const configured = opinionLevelForValue(raw);
+  if (configured) {
+    return configured.defaultText;
   }
   const title = String(item.title || "");
   if (title.includes("🔥")) {
@@ -490,6 +541,9 @@ function safeWatchOpinion(item) {
     return "Liked";
   }
   if (title.includes("🤔")) {
+    return "Mixed";
+  }
+  if (title.includes("😐")) {
     return "Mixed";
   }
   if (title.includes("👎")) {
@@ -502,6 +556,15 @@ function safeWatchOpinion(item) {
     return "Loved";
   }
   return "";
+}
+
+function watchlistTypeWithOpinionLabel(type, opinion) {
+  const typeLabel = escapeHtml(WATCHLIST_TYPE_LABELS[type] || "Title");
+  if (!opinion) {
+    return typeLabel;
+  }
+  const safeOpinion = escapeHtml(opinionDisplayText(opinion));
+  return `${typeLabel}<span class="watchlist-opinion-text opinion-${opinionCssKey(opinion)}">${safeOpinion}</span>`;
 }
 
 function watchlistHasType(type) {
@@ -593,6 +656,25 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
+function stripHtmlTags(value) {
+  const raw = String(value || "");
+  if (!raw.includes("<") && !raw.includes("&")) {
+    return raw.trim();
+  }
+  const unescaped = raw
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+  return unescaped
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function watchTypeLabel(item) {
   const type = safeWatchType(item);
   return WATCHLIST_TYPE_LABELS[type] || "Title";
@@ -624,28 +706,49 @@ function detailsForTitle(payload, type, title) {
   return value;
 }
 
+function watchlistRatingText(type, details = {}) {
+  const isGame = String(type || "").startsWith("game_");
+  if (isGame) {
+    const rawMetacritic = details?.metacritic;
+    const hasMetacritic = rawMetacritic !== null && rawMetacritic !== undefined && String(rawMetacritic).trim() !== "";
+    const metacritic = Number(rawMetacritic);
+    if (hasMetacritic && Number.isFinite(metacritic)) {
+      return `${(metacritic / 10).toFixed(1)} / 10`;
+    }
+    const rawgRating = Number(details?.rating);
+    if (Number.isFinite(rawgRating)) {
+      return `${(rawgRating * 2).toFixed(1)} / 10`;
+    }
+    return "No rating";
+  }
+  const ratingValue = Number(details?.rating);
+  if (!Number.isFinite(ratingValue)) {
+    return "No rating";
+  }
+  return `${ratingValue.toFixed(1)} / 10`;
+}
+
 function renderWatchlistTitleCard(type, title, payload, item = null) {
   const mediaDetails = detailsForTitle(payload, type, title);
   const posterUrl = String(mediaDetails?.poster_url || "").trim();
-  const ratingValue = mediaDetails?.rating;
-  const hasRating = Number.isFinite(Number(ratingValue));
-  const ratingText = hasRating ? `${Number(ratingValue).toFixed(1)} / 10` : "No rating";
+  const ratingText = watchlistRatingText(type, mediaDetails || {});
   const safeTitle = escapeHtml(title);
   const opinion = safeWatchOpinion(item);
-  const opinionClass = opinion ? ` opinion-${opinion.toLowerCase()}` : "";
+  const opinionKey = opinionCssKey(opinion);
+  const opinionClass = opinion ? ` opinion-${opinionKey}` : "";
 
   const posterHtml = posterUrl
     ? `<img class="watchlist-entry-poster" src="${posterUrl}" alt="${safeTitle} poster" loading="lazy">`
     : '<div class="watchlist-entry-poster watchlist-entry-poster-empty">No poster</div>';
 
-  const badgeLabel = WATCHLIST_TYPE_LABELS[type] || "Title";
+  const badgeLabel = watchlistTypeWithOpinionLabel(type, opinion);
   return `
     <button
       type="button"
       class="watchlist-entry watchlist-current-entry watchlist-entry-button${opinion === "Loved" ? " is-loved" : ""}${opinionClass}"
       data-watch-type="${type}"
       data-watch-title="${encodeURIComponent(title)}"
-      data-watch-opinion="${opinion.toLowerCase()}"
+      data-watch-opinion="${opinionKey}"
     >
       ${posterHtml}
       <div class="watchlist-entry-body">
@@ -760,9 +863,14 @@ function watchlistGenres(payload) {
 
 function watchlistYears(payload) {
   const years = [];
+  const seen = new Set();
   for (const group of payload?.history_by_year || []) {
     const year = String(group?.year || "").trim();
-    if (year) {
+    if (!year || year.toLowerCase() === "anime") {
+      continue;
+    }
+    if (!seen.has(year)) {
+      seen.add(year);
       years.push(year);
     }
   }
@@ -815,6 +923,18 @@ function updateWatchlistFilterOptions(payload) {
   }
 
   if (elements.watchlistOpinionFilter) {
+    const activeValue = state.watchlistOpinionFilter;
+    elements.watchlistOpinionFilter.innerHTML = '<option value="all">All opinions</option>';
+    for (const level of configuredOpinionLevels()) {
+      const option = document.createElement("option");
+      option.value = level.key;
+      option.textContent = level.text;
+      option.style.color = level.color;
+      if (activeValue === level.key) {
+        option.selected = true;
+      }
+      elements.watchlistOpinionFilter.append(option);
+    }
     elements.watchlistOpinionFilter.value = state.watchlistOpinionFilter;
   }
 }
@@ -845,10 +965,7 @@ function filteredWatchlistHistory(payload) {
         if (state.watchlistOpinionFilter === "all") {
           return true;
         }
-        if (state.watchlistOpinionFilter === "loved") {
-          return safeWatchOpinion(entry) === "Loved";
-        }
-        return true;
+        return opinionCssKey(safeWatchOpinion(entry)) === state.watchlistOpinionFilter;
       })
       .filter((entry) => {
         const entryType = safeWatchType(entry) || "movie";
@@ -894,17 +1011,17 @@ function openWatchlistDetail(type, title) {
   }
   const details = detailsForTitle(state.watchlistPayload, type, title) || {};
   const posterUrl = String(details.poster_url || "").trim();
-  const ratingValue = details.rating;
-  const hasRating = Number.isFinite(Number(ratingValue));
-  const ratingText = hasRating ? `${Number(ratingValue).toFixed(1)} / 10` : "No rating";
-  const description = String(details.description || details.overview || "").trim() || "No description yet.";
+  const ratingText = watchlistRatingText(type, details);
+  const description = stripHtmlTags(details.description || details.overview || "") || "No description yet.";
   const directors = joinList(details.directors) || "Unknown";
   const actors = joinList(details.actors) || "Unknown";
   const publishers = joinList(details.publishers) || "Unknown";
   const developers = joinList(details.developers) || "Unknown";
   const platforms = joinList(details.platforms) || "";
+  const playtimeValue = Number(details.playtime_hours);
+  const playtime = Number.isFinite(playtimeValue) && playtimeValue > 0 ? `${playtimeValue}h playtime` : "";
   const genres = joinList(details.genres) || "";
-  const releaseDate = String(details.release_date || "").trim();
+  const releaseDate = displayDatePlain(String(details.release_date || "").trim());
   const runtime = Number.isFinite(Number(details.runtime_minutes)) ? `${Number(details.runtime_minutes)} min` : "";
   const seasonsCount = Number.isFinite(Number(details.number_of_seasons)) ? Number(details.number_of_seasons) : 0;
   const seasonsText = seasonsCount > 0 ? `${seasonsCount} ${seasonsCount === 1 ? "season" : "seasons"}` : "";
@@ -913,14 +1030,20 @@ function openWatchlistDetail(type, title) {
   const rawgUrl = String(details.rawg_url || "").trim();
   const websiteUrl = String(details.website_url || "").trim();
   const safeTitle = escapeHtml(title);
-  const safeLabel = escapeHtml(WATCHLIST_TYPE_LABELS[type] || "Title");
   const sourceItem = findWatchlistItem(state.watchlistPayload, type, title);
   const opinion = safeWatchOpinion(sourceItem);
-  const opinionClass = opinion ? ` opinion-${opinion.toLowerCase()}` : "";
+  const opinionKey = opinionCssKey(opinion);
+  const opinionClass = opinion ? ` opinion-${opinionKey}` : "";
+  const safeLabel = watchlistTypeWithOpinionLabel(type, opinion);
   const isSeriesLike = type === "series" || type === "anime_series";
   const isMovieLike = type === "movie" || type === "anime_movie";
   const isGameLike = type.startsWith("game_");
-  const metaBits = [releaseDate, isMovieLike ? runtime : isSeriesLike ? seasonsText : "", genres, isGameLike ? platforms : ""].filter(Boolean);
+  const timingBits = [
+    releaseDate,
+    isMovieLike ? runtime : isSeriesLike ? seasonsText : "",
+    isGameLike ? playtime : "",
+  ].filter(Boolean);
+  const genreLine = genres;
   const posterHtml = posterUrl
     ? `<img class="watchlist-detail-poster" src="${posterUrl}" alt="${safeTitle} poster">`
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
@@ -932,12 +1055,14 @@ function openWatchlistDetail(type, title) {
         <p class="watchlist-detail-kicker">${safeLabel}</p>
         <h3>${safeTitle}</h3>
         <p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>
-        ${metaBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(metaBits.join(" • "))}</p>` : ""}
+        ${timingBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(timingBits.join(" • "))}</p>` : ""}
+        ${genreLine ? `<p class="watchlist-detail-meta">${escapeHtml(genreLine)}</p>` : ""}
         <p class="watchlist-detail-description">${escapeHtml(description)}</p>
         ${
           isGameLike
             ? `<p><strong>Publishers:</strong> ${escapeHtml(publishers)}</p>
-               <p><strong>Developers:</strong> ${escapeHtml(developers)}</p>`
+               <p><strong>Developers:</strong> ${escapeHtml(developers)}</p>
+               ${platforms ? `<p><strong>Platforms:</strong> ${escapeHtml(platforms)}</p>` : ""}`
             : `<p><strong>${isMovieLike ? "Directors" : "Creators"}:</strong> ${escapeHtml(directors)}</p>
                <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>`
         }
@@ -953,6 +1078,17 @@ function openWatchlistDetail(type, title) {
   elements.watchlistDetailPanel.hidden = false;
   elements.watchlistDetailPanel.classList.add("is-open");
   elements.watchlistDetailPanel.classList.toggle("is-loved", opinion === "Loved");
+  elements.watchlistDetailPanel.classList.remove(
+    "opinion-loved",
+    "opinion-liked",
+    "opinion-mixed",
+    "opinion-disliked",
+    "opinion-hated",
+  );
+  if (opinionClass) {
+    elements.watchlistDetailPanel.classList.add(opinionClass.trim());
+  }
+  elements.watchlistDetailPanel.dataset.watchOpinion = opinionKey;
   document.body.classList.add("watchlist-detail-open");
 }
 
@@ -1034,7 +1170,7 @@ function renderWatchlistHistory(payload) {
     section.open = year === history[0]?.year;
 
     const summary = document.createElement("summary");
-    summary.textContent = year;
+    summary.textContent = `${year} (${entries.length})`;
     section.append(summary);
 
     const list = document.createElement("div");
@@ -1100,14 +1236,51 @@ function renderWatchlistAll() {
   renderWatchlistHistory(state.watchlistPayload);
 }
 
+function loadOpinionLevelsFromEnv(payload) {
+  const configured = payload?.opinion_levels;
+  if (!configured || typeof configured !== "object") {
+    state.opinionLevels = DEFAULT_OPINION_LEVELS;
+    return;
+  }
+  state.opinionLevels = DEFAULT_OPINION_LEVELS.map((fallback) => {
+    const value = configured[`level${fallback.level}`] || {};
+    return {
+      ...fallback,
+      defaultText: String(value.default_text || fallback.defaultText).trim() || fallback.defaultText,
+      text: String(value.text || fallback.text).trim() || fallback.text,
+      color: String(value.color || fallback.color).trim() || fallback.color,
+      aliases: [fallback.defaultText, value.default_text].filter(Boolean),
+    };
+  });
+}
+
+function applyOpinionLevelStyles() {
+  const root = document.documentElement;
+  for (const level of configuredOpinionLevels()) {
+    root.style.setProperty(`--opinion-${level.key}`, level.color);
+    root.style.setProperty(`--opinion-level-${level.level}`, level.color);
+  }
+}
+
 async function loadWatchlist() {
   try {
-    const [watchlistResponse, gameslistResponse, detailsResponse, gamesDetailsResponse] = await Promise.all([
+    const [envResponse, watchlistResponse, gameslistResponse, detailsResponse, gamesDetailsResponse] = await Promise.all([
+      fetch(CONFIG_PATH, { cache: "no-store" }),
       fetch(WATCHLIST_PATH, { cache: "no-store" }),
       fetch(GAMESLIST_PATH, { cache: "no-store" }),
       fetch(WATCHLIST_MOVIE_DETAILS_PATH, { cache: "no-store" }),
       fetch(GAMES_DETAILS_PATH, { cache: "no-store" }),
     ]);
+    if (envResponse.ok) {
+      try {
+        loadOpinionLevelsFromEnv(await envResponse.json());
+      } catch {
+        loadOpinionLevelsFromEnv({});
+      }
+    } else {
+      loadOpinionLevelsFromEnv({});
+    }
+    applyOpinionLevelStyles();
     if (!watchlistResponse.ok) {
       throw new Error(`Could not load ${WATCHLIST_PATH}`);
     }
@@ -2724,6 +2897,14 @@ if (elements.watchlistDetailClose && elements.watchlistDetailPanel) {
     elements.watchlistDetailPanel.hidden = true;
     elements.watchlistDetailPanel.classList.remove("is-open");
     elements.watchlistDetailPanel.classList.remove("is-loved");
+    elements.watchlistDetailPanel.classList.remove(
+      "opinion-loved",
+      "opinion-liked",
+      "opinion-mixed",
+      "opinion-disliked",
+      "opinion-hated",
+    );
+    elements.watchlistDetailPanel.dataset.watchOpinion = "";
     document.body.classList.remove("watchlist-detail-open");
   });
 }
