@@ -844,6 +844,10 @@ function backlogEntries(payload) {
     series: Array.isArray(backlog.series) ? backlog.series : [],
     anime_movie: Array.isArray(backlog.anime_movies) ? backlog.anime_movies : [],
     anime_series: Array.isArray(backlog.anime_series) ? backlog.anime_series : [],
+    game_aaa: Array.isArray(backlog.game_aaa) ? backlog.game_aaa : [],
+    game_indie: Array.isArray(backlog.game_indie) ? backlog.game_indie : [],
+    game_coop: Array.isArray(backlog.game_coop) ? backlog.game_coop : [],
+    game_couch_coop: Array.isArray(backlog.game_couch_coop) ? backlog.game_couch_coop : [],
   };
   for (const [type, items] of Object.entries(byType)) {
     for (const item of items) {
@@ -1347,6 +1351,9 @@ async function loadWatchlist() {
     const watchHistory = Array.isArray(mergedPayload.history_by_year) ? mergedPayload.history_by_year : [];
     const gamesHistory = Array.isArray(gamesPayload?.history_by_year) ? gamesPayload.history_by_year : [];
     mergedPayload.history_by_year = [...watchHistory, ...gamesHistory];
+    const watchBacklog = mergedPayload.backlog && typeof mergedPayload.backlog === "object" ? mergedPayload.backlog : {};
+    const gamesBacklog = gamesPayload?.backlog && typeof gamesPayload.backlog === "object" ? gamesPayload.backlog : {};
+    mergedPayload.backlog = { ...watchBacklog, ...gamesBacklog };
     state.watchlistPayload = mergedPayload;
     const movieDetails = detailsResponse.ok ? await detailsResponse.json() : {};
     const gameDetails = gamesDetailsResponse.ok ? await gamesDetailsResponse.json() : {};

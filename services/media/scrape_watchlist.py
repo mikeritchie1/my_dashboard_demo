@@ -245,7 +245,7 @@ def should_descend(block: dict, depth: int, mode: str) -> bool:
         return False
 
     if mode == "games":
-        if label in {"now", "now playing", "currently playing", "before"}:
+        if label in {"now", "now playing", "currently playing", "before", "backlog", "coming soon"}:
             return True
         if is_year_heading(text):
             return True
@@ -392,6 +392,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
     in_currently_watching = False
     in_now_section = False
     in_backlog_section = False
+    backlog_container_depth: int | None = None
     in_must_watch = False
     domain_started: dict[str, bool] = {"movie": False, "series": False}
     skip_until_anime_for_parent: str | None = None
@@ -418,12 +419,24 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
         label = normalize_label(normalized_text)
         year = is_year_heading(text)
 
+        # Backlog should only include descendants of the Backlog toggle/list.
+        # If we return to the same depth (or higher) on another label, backlog ends.
+        if (
+            in_backlog_section
+            and backlog_container_depth is not None
+            and depth <= backlog_container_depth
+            and label != "backlog"
+        ):
+            in_backlog_section = False
+            backlog_container_depth = None
+
         if label in {"movies", "movie"}:
             parent_domain = "movie"
             current_domain = "movie"
             in_currently_watching = False
             in_now_section = False
             in_backlog_section = False
+            backlog_container_depth = None
             in_must_watch = False
             skip_until_anime_for_parent = None
             active_year = ""
@@ -434,6 +447,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = False
             in_now_section = False
             in_backlog_section = False
+            backlog_container_depth = None
             in_must_watch = False
             skip_until_anime_for_parent = None
             active_year = ""
@@ -444,6 +458,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = False
             in_now_section = False
             in_backlog_section = False
+            backlog_container_depth = None
             in_must_watch = False
             active_year = ""
             continue
@@ -456,6 +471,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = True
             in_now_section = False
             in_backlog_section = False
+            backlog_container_depth = None
             in_must_watch = False
             active_year = ""
             continue
@@ -463,6 +479,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = False
             in_now_section = True
             in_backlog_section = False
+            backlog_container_depth = None
             in_must_watch = False
             skip_until_anime_for_parent = parent_domain
             active_year = ""
@@ -471,18 +488,21 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = False
             in_now_section = False
             in_backlog_section = True
+            backlog_container_depth = depth
             in_must_watch = False
             active_year = ""
             continue
         if in_now_section and label == "must watch":
             in_currently_watching = True
             in_backlog_section = False
+            backlog_container_depth = None
             in_must_watch = True
             active_year = ""
             continue
         if in_now_section and label == "maybe":
             in_currently_watching = False
             in_backlog_section = False
+            backlog_container_depth = None
             in_must_watch = False
             active_year = ""
             continue
@@ -492,6 +512,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = False
             in_now_section = False
             in_backlog_section = False
+            backlog_container_depth = None
             in_must_watch = False
             active_year = year
             years.setdefault(active_year, [])
@@ -529,7 +550,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
                 current["movies"].append({"title": title, "opinion": opinion})
             continue
 
-        if in_backlog_section:
+        if in_backlog_section and backlog_container_depth is not None and depth > backlog_container_depth:
             if current_domain == "series":
                 backlog["series"].append({"title": title, "opinion": opinion})
             elif current_domain == "anime_movie":
@@ -582,6 +603,10 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
     current_type = ""
     active_year = ""
     in_now_playing = False
+    in_backlog_section = False
+    backlog_container_depth: int | None = None
+    in_coming_soon_section = False
+    coming_soon_container_depth: int | None = None
     seen_now_by_type = {
         "game_aaa": False,
         "game_indie": False,
@@ -590,6 +615,7 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
         "game_lan": False,
     }
     current_games = {"aaa": [], "indie": [], "coop": [], "couch_coop": [], "lan": []}
+    backlog_games = {"game_aaa": [], "game_indie": [], "game_coop": [], "game_couch_coop": []}
     years: dict[str, list[dict]] = {}
     skip_children_below_depth: int | None = None
     in_lan_flat_mode = False
@@ -618,12 +644,34 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
         cleaned_text = clean_title(text)
         label = normalize_label(cleaned_text)
         mapped_type = game_type_from_label(label)
+
+        if (
+            in_backlog_section
+            and backlog_container_depth is not None
+            and depth <= backlog_container_depth
+            and label != "backlog"
+        ):
+            in_backlog_section = False
+            backlog_container_depth = None
+        if (
+            in_coming_soon_section
+            and coming_soon_container_depth is not None
+            and depth <= coming_soon_container_depth
+            and label != "coming soon"
+        ):
+            in_coming_soon_section = False
+            coming_soon_container_depth = None
+
         is_section_label_block = block_type in {"heading_1", "heading_2", "heading_3", "toggle", "paragraph"} and (
             block.get("has_children") or block_type.startswith("heading")
         )
         if mapped_type and is_section_label_block:
             current_type = mapped_type
             in_now_playing = False
+            in_backlog_section = False
+            backlog_container_depth = None
+            in_coming_soon_section = False
+            coming_soon_container_depth = None
             in_lan_flat_mode = False
             active_year = ""
             continue
@@ -631,15 +679,43 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
         if label in {"lan games", "lan game"} and is_section_label_block:
             current_type = "game_lan"
             in_now_playing = False
+            in_backlog_section = False
+            backlog_container_depth = None
+            in_coming_soon_section = False
+            coming_soon_container_depth = None
             in_lan_flat_mode = True
             active_year = ""
             continue
 
         if "now playing" in label or "currently playing" in label or label == "now":
             in_now_playing = True
+            in_backlog_section = False
+            backlog_container_depth = None
+            in_coming_soon_section = False
+            coming_soon_container_depth = None
             in_lan_flat_mode = False
             if current_type in seen_now_by_type:
                 seen_now_by_type[current_type] = True
+            active_year = ""
+            continue
+
+        if label == "coming soon":
+            in_now_playing = False
+            in_backlog_section = False
+            backlog_container_depth = None
+            in_coming_soon_section = True
+            coming_soon_container_depth = depth
+            in_lan_flat_mode = False
+            active_year = ""
+            continue
+
+        if label == "backlog":
+            in_now_playing = False
+            in_backlog_section = True
+            backlog_container_depth = depth
+            in_coming_soon_section = False
+            coming_soon_container_depth = None
+            in_lan_flat_mode = False
             active_year = ""
             continue
 
@@ -650,9 +726,17 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
             # Only capture historical buckets before the first "Now Playing" in a section.
             if current_type and seen_now_by_type.get(current_type, False):
                 in_now_playing = False
+                in_backlog_section = False
+                backlog_container_depth = None
+                in_coming_soon_section = False
+                coming_soon_container_depth = None
                 active_year = ""
                 continue
             in_now_playing = False
+            in_backlog_section = False
+            backlog_container_depth = None
+            in_coming_soon_section = False
+            coming_soon_container_depth = None
             active_year = maybe_year
             years.setdefault(active_year, [])
             continue
@@ -669,6 +753,12 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
             continue
 
         entry = {"type": current_type, "title": title, "opinion": opinion}
+        if in_coming_soon_section:
+            continue
+        if in_backlog_section and backlog_container_depth is not None and depth > backlog_container_depth:
+            if current_type in backlog_games:
+                backlog_games[current_type].append({"title": title, "opinion": opinion})
+            continue
         if in_now_playing or in_lan_flat_mode:
             if current_type == "game_aaa":
                 current_games["aaa"].append({"title": title, "opinion": opinion})
@@ -701,6 +791,7 @@ def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
     return {
         "source": secret("NOTION_GAMES_PAGE_URL").strip() or DEFAULT_GAMES_URL,
         "currently_watching": {"games": current_games},
+        "backlog": backlog_games,
         "history_by_year": history_by_year,
     }
 
@@ -851,6 +942,10 @@ def extract_titles(payload: dict, media_type: str) -> list[str]:
         "series": "series",
         "anime_movie": "anime_movies",
         "anime_series": "anime_series",
+        "game_aaa": "game_aaa",
+        "game_indie": "game_indie",
+        "game_coop": "game_coop",
+        "game_couch_coop": "game_couch_coop",
     }
     backlog_key = backlog_key_map.get(media_type, "")
     backlog_items = backlog.get(backlog_key, []) if backlog_key else []
@@ -1137,7 +1232,9 @@ def normalize_cached_game_detail(entry: dict, media_type: str, title: str) -> di
 def game_detail_needs_fetch(entry: dict) -> bool:
     if not isinstance(entry, dict):
         return True
-    return any(field not in entry or is_empty_detail_value(entry.get(field)) for field in GAME_DETAIL_FIELDS)
+    # Mirror movie caching behavior: only refetch if required keys are missing.
+    # Some RAWG fields are legitimately empty for many games (e.g. website/publishers/metacritic).
+    return any(field not in entry for field in GAME_DETAIL_FIELDS)
 
 
 def enrich_payload_with_movie_details(payload: dict, selected_types: set[str] | None = None, hard: bool = False) -> dict:
@@ -1271,6 +1368,8 @@ def scrape_watchlist(
     selected_types: set[str] | None = None,
     selected_game_types: set[str] | None = None,
     hard: bool = False,
+    scrape_watchlist_page: bool = True,
+    scrape_games_page: bool = True,
 ) -> dict:
     token = secret("NOTION_TOKEN") or secret("NOTION_API_TOKEN")
     page_id = extract_page_id("NOTION_WATCHLIST_PAGE_ID", "NOTION_WATCHLIST_PAGE_URL", DEFAULT_WATCHLIST_PAGE_ID)
@@ -1287,60 +1386,70 @@ def scrape_watchlist(
             "history_by_year": [],
         }
 
-    try:
-        print("[notion] Reading watchlist page blocks...")
-        root_blocks = get_block_children(page_id, token, "watchlist root")
-        flat = flatten_blocks(root_blocks, token, 0, log_prefix="watchlist", mode="watchlist")
-        print(f"[notion] Watchlist flattened blocks: {len(flat)}")
-        watchlist_payload = parse_watchlist(flat)
-        watchlist_payload["source"] = page_url
-        watchlist_payload["page_id"] = page_id
-        current = watchlist_payload.get("currently_watching", {})
-        print(
-            "[watchlist] Parsed current counts: "
-            f"movies={len(current.get('movies', []))}, "
-            f"series={len(current.get('series', []))}, "
-            f"anime_movies={len(current.get('anime_movies', []))}, "
-            f"anime_series={len(current.get('anime_series', []))}"
-        )
-        # Persist watchlist immediately so later game/detail failures cannot wipe it.
-        write_payload(watchlist_payload)
-    except urllib.error.HTTPError as error:
-        detail = error.read().decode("utf-8", errors="replace")
-        return {
-            "source": page_url,
-            "games_source": games_page_url,
-            "error": f"Notion API error {error.code}: {detail}",
-            "currently_watching": {"movies": [], "series": [], "anime_movies": [], "anime_series": []},
-            "history_by_year": [],
-        }
-    except urllib.error.URLError as error:
-        return {
-            "source": page_url,
-            "games_source": games_page_url,
-            "error": f"Notion API network error: {error}",
-            "currently_watching": {"movies": [], "series": [], "anime_movies": [], "anime_series": []},
-            "history_by_year": [],
-        }
+    watchlist_payload = {
+        "source": page_url,
+        "page_id": page_id,
+        "currently_watching": {"movies": [], "series": [], "anime_movies": [], "anime_series": []},
+        "backlog": {"movies": [], "series": [], "anime_movies": [], "anime_series": []},
+        "history_by_year": [],
+    }
+    if scrape_watchlist_page:
+        try:
+            print("[notion] Reading watchlist page blocks...")
+            root_blocks = get_block_children(page_id, token, "watchlist root")
+            flat = flatten_blocks(root_blocks, token, 0, log_prefix="watchlist", mode="watchlist")
+            print(f"[notion] Watchlist flattened blocks: {len(flat)}")
+            watchlist_payload = parse_watchlist(flat)
+            watchlist_payload["source"] = page_url
+            watchlist_payload["page_id"] = page_id
+            current = watchlist_payload.get("currently_watching", {})
+            print(
+                "[watchlist] Parsed current counts: "
+                f"movies={len(current.get('movies', []))}, "
+                f"series={len(current.get('series', []))}, "
+                f"anime_movies={len(current.get('anime_movies', []))}, "
+                f"anime_series={len(current.get('anime_series', []))}"
+            )
+            # Persist watchlist immediately so later game/detail failures cannot wipe it.
+            write_payload(watchlist_payload)
+        except urllib.error.HTTPError as error:
+            detail = error.read().decode("utf-8", errors="replace")
+            return {
+                "source": page_url,
+                "games_source": games_page_url,
+                "error": f"Notion API error {error.code}: {detail}",
+                "currently_watching": {"movies": [], "series": [], "anime_movies": [], "anime_series": []},
+                "history_by_year": [],
+            }
+        except urllib.error.URLError as error:
+            return {
+                "source": page_url,
+                "games_source": games_page_url,
+                "error": f"Notion API network error: {error}",
+                "currently_watching": {"movies": [], "series": [], "anime_movies": [], "anime_series": []},
+                "history_by_year": [],
+            }
 
     # Games scrape is best-effort and must not clobber a valid watchlist scrape.
-    try:
-        print("[notion] Reading games page blocks...")
-        games_root_blocks = get_block_children(games_page_id, token, "games root")
-        games_flat = flatten_blocks(games_root_blocks, token, 0, log_prefix="games", mode="games")
-        print(f"[notion] Games flattened blocks: {len(games_flat)}")
-        games_payload = parse_games(games_flat)
-        games_payload["source"] = games_page_url
-        games_payload["page_id"] = games_page_id
-        print("[rawg] Starting game enrichment...")
-        games_payload = enrich_payload_with_game_details(games_payload, selected_types=selected_game_types, hard=hard)
-        write_games_payload(games_payload)
-    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError) as error:
-        print(f"[warn] Games scrape skipped: {error}")
+    if scrape_games_page:
+        try:
+            print("[notion] Reading games page blocks...")
+            games_root_blocks = get_block_children(games_page_id, token, "games root")
+            games_flat = flatten_blocks(games_root_blocks, token, 0, log_prefix="games", mode="games")
+            print(f"[notion] Games flattened blocks: {len(games_flat)}")
+            games_payload = parse_games(games_flat)
+            games_payload["source"] = games_page_url
+            games_payload["page_id"] = games_page_id
+            print("[rawg] Starting game enrichment...")
+            games_payload = enrich_payload_with_game_details(games_payload, selected_types=selected_game_types, hard=hard)
+            write_games_payload(games_payload)
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError) as error:
+            print(f"[warn] Games scrape skipped: {error}")
 
     payload = watchlist_payload
-    print("[tmdb] Starting media enrichment...")
-    payload = enrich_payload_with_movie_details(payload, selected_types=selected_types, hard=hard)
+    if scrape_watchlist_page:
+        print("[tmdb] Starting media enrichment...")
+        payload = enrich_payload_with_movie_details(payload, selected_types=selected_types, hard=hard)
     return payload
 
 
@@ -1356,6 +1465,12 @@ def main() -> int:
         "--hard",
         action="store_true",
         help="Re-fetch selected entries even if cached details already exist.",
+    )
+    parser.add_argument(
+        "--scope",
+        choices=["both", "watchlist", "games"],
+        default="both",
+        help="Choose which Notion page(s) to read.",
     )
     args = parser.parse_args()
 
@@ -1373,27 +1488,36 @@ def main() -> int:
     elif args.type == "games":
         selected_types = set()
         selected_game_types = {"game_aaa", "game_indie", "game_coop", "game_couch_coop", "game_lan"}
+    scrape_watchlist_page = args.scope in {"both", "watchlist"}
+    scrape_games_page = args.scope in {"both", "games"}
+    if not scrape_watchlist_page:
+        selected_types = set()
+    if not scrape_games_page:
+        selected_game_types = set()
 
     payload = scrape_watchlist(
         selected_types=selected_types,
         selected_game_types=selected_game_types,
         hard=args.hard,
+        scrape_watchlist_page=scrape_watchlist_page,
+        scrape_games_page=scrape_games_page,
     )
     if payload.get("error"):
         print(f"Watchlist scrape failed: {payload['error']}")
         print(f"Keeping existing watchlist file at {OUTPUT_FILE}")
         return 1
 
-    write_payload(payload)
-    total_entries = sum(len(group.get("entries", [])) for group in payload.get("history_by_year", []))
-    print(
-        f"Wrote watchlist to {OUTPUT_FILE} "
-        f"({len(payload.get('currently_watching', {}).get('movies', []))} current movies, "
-        f"{len(payload.get('currently_watching', {}).get('series', []))} current series, "
-        f"{len(payload.get('currently_watching', {}).get('anime_movies', []))} current anime movies, "
-        f"{len(payload.get('currently_watching', {}).get('anime_series', []))} current anime series, "
-        f"{total_entries} watched entries)"
-    )
+    if scrape_watchlist_page:
+        write_payload(payload)
+        total_entries = sum(len(group.get("entries", [])) for group in payload.get("history_by_year", []))
+        print(
+            f"Wrote watchlist to {OUTPUT_FILE} "
+            f"({len(payload.get('currently_watching', {}).get('movies', []))} current movies, "
+            f"{len(payload.get('currently_watching', {}).get('series', []))} current series, "
+            f"{len(payload.get('currently_watching', {}).get('anime_movies', []))} current anime movies, "
+            f"{len(payload.get('currently_watching', {}).get('anime_series', []))} current anime series, "
+            f"{total_entries} watched entries)"
+        )
     if payload.get("error"):
         print(payload["error"])
     return 0

@@ -122,6 +122,115 @@
       ]
     }
   },
+  "backlog": {
+    "game_aaa": [
+      {
+        "title": "Mafia: The Old Country",
+        "opinion": ""
+      },
+      {
+        "title": "Half-Life Alyx",
+        "opinion": ""
+      },
+      {
+        "title": "Borderlands 4",
+        "opinion": ""
+      },
+      {
+        "title": "Baldur’s Gate 3",
+        "opinion": ""
+      },
+      {
+        "title": "Black Myth: Wukong",
+        "opinion": ""
+      },
+      {
+        "title": "Death Stranding 2: On The Beach",
+        "opinion": ""
+      },
+      {
+        "title": "Ninja Gaiden 4",
+        "opinion": ""
+      },
+      {
+        "title": "Donkey Kong: Bananza",
+        "opinion": ""
+      },
+      {
+        "title": "Ghost of Yotei",
+        "opinion": ""
+      },
+      {
+        "title": "Returnal",
+        "opinion": ""
+      }
+    ],
+    "game_indie": [
+      {
+        "title": "Dead As Disco",
+        "opinion": ""
+      },
+      {
+        "title": "Planet of Lana 2",
+        "opinion": ""
+      },
+      {
+        "title": "Blue Prince",
+        "opinion": ""
+      },
+      {
+        "title": "The Midnight Walk",
+        "opinion": ""
+      },
+      {
+        "title": "Peppered",
+        "opinion": ""
+      },
+      {
+        "title": "The Outer Wilds",
+        "opinion": ""
+      },
+      {
+        "title": "Disco Elysium",
+        "opinion": ""
+      },
+      {
+        "title": "The Pathless",
+        "opinion": ""
+      },
+      {
+        "title": "Skate Story",
+        "opinion": ""
+      },
+      {
+        "title": "Sword of the Sea",
+        "opinion": ""
+      },
+      {
+        "title": "Mio: Memories in Orbit",
+        "opinion": ""
+      }
+    ],
+    "game_coop": [
+      {
+        "title": "Borderlands 4",
+        "opinion": ""
+      },
+      {
+        "title": "Helldivers 2",
+        "opinion": ""
+      },
+      {
+        "title": "Content Warning",
+        "opinion": ""
+      },
+      {
+        "title": "Payday 2",
+        "opinion": ""
+      }
+    ],
+    "game_couch_coop": []
+  },
   "history_by_year": [
     {
       "year": "2026",

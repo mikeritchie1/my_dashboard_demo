@@ -7565,50 +7565,6 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:chris liley": {
-    "title": "Chris Liley",
-    "media_type": "movie",
-    "overview": null,
-    "genres": null,
-    "tmdb_id": null,
-    "runtime_minutes": null,
-    "actors": null,
-    "release_date": null,
-    "number_of_seasons": null,
-    "tmdb_url": null,
-    "rating": null,
-    "poster_url": null,
-    "description": null,
-    "directors": null,
-    "trailer_url": null
-  },
-  "movie:christopher nolan": {
-    "title": "Christopher Nolan",
-    "media_type": "movie",
-    "overview": "A look behind the scenes of Christopher Nolan's film \"Oppenheimer\" about an American scientist and his role in the development of the atomic bomb.",
-    "genres": [
-      "Documentary"
-    ],
-    "tmdb_id": 1152711,
-    "runtime_minutes": 25,
-    "actors": [
-      "Alex Zane",
-      "Christopher Nolan",
-      "Cillian Murphy",
-      "Emily Blunt",
-      "Robert Downey Jr.",
-      "Florence Pugh",
-      "Matt Damon"
-    ],
-    "release_date": "2023-07-15",
-    "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/1152711",
-    "rating": 6.5,
-    "poster_url": "https://image.tmdb.org/t/p/w342/p3mB2IFZAhFlBPwlNbv2ouzwxx0.jpg",
-    "description": "A look behind the scenes of Christopher Nolan's film \"Oppenheimer\" about an American scientist and his role in the development of the atomic bomb.",
-    "directors": [],
-    "trailer_url": ""
-  },
   "movie:civil war": {
     "title": "Civil War",
     "rating": 6.9,
@@ -7970,34 +7926,6 @@
       "Sean Byrne"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=QglGnsd6R0s"
-  },
-  "movie:david fincher": {
-    "title": "David Fincher",
-    "media_type": "movie",
-    "overview": "Join acclaimed director David Fincher, actors Gary Oldman and Amanda Seyfried, and the cast and crew of MANK, for a peek behind the curtain of Netflix's black-and-white ode to Hollywood's Golden Age.",
-    "genres": [
-      "Documentary"
-    ],
-    "tmdb_id": 1051699,
-    "runtime_minutes": 29,
-    "actors": [
-      "David Fincher",
-      "Gary Oldman",
-      "Erik Messerschmidt",
-      "Amanda Seyfried",
-      "Lily Collins",
-      "Charles Dance",
-      "Arliss Howard",
-      "Tom Pelphrey"
-    ],
-    "release_date": "2021-02-27",
-    "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/1051699",
-    "rating": 0.0,
-    "poster_url": "https://image.tmdb.org/t/p/w342/8oRCiDT1Cn7umzjGOtuWiuUbCTi.jpg",
-    "description": "Join acclaimed director David Fincher, actors Gary Oldman and Amanda Seyfried, and the cast and crew of MANK, for a peek behind the curtain of Netflix's black-and-white ode to Hollywood's Golden Age.",
-    "directors": [],
-    "trailer_url": ""
   },
   "movie:days later": {
     "title": "Days Later",
@@ -8438,23 +8366,6 @@
     "runtime_minutes": 130,
     "media_type": "movie",
     "number_of_seasons": null
-  },
-  "movie:don hertzfeldt": {
-    "title": "Don Hertzfeldt",
-    "media_type": "movie",
-    "overview": null,
-    "genres": null,
-    "tmdb_id": null,
-    "runtime_minutes": null,
-    "actors": null,
-    "release_date": null,
-    "number_of_seasons": null,
-    "tmdb_url": null,
-    "rating": null,
-    "poster_url": null,
-    "description": null,
-    "directors": null,
-    "trailer_url": null
   },
   "movie:dont move": {
     "title": "Don’t Move",
@@ -10909,30 +10820,6 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:james cameron": {
-    "title": "James Cameron",
-    "media_type": "movie",
-    "overview": "Cameron James' full comedy special \"Bangers\" premieres on Grouse House YouTube 6 March 7pm AEDT!",
-    "genres": [
-      "Comedy",
-      "Music"
-    ],
-    "tmdb_id": 1444140,
-    "runtime_minutes": 35,
-    "actors": [
-      "Cameron James"
-    ],
-    "release_date": "2025-03-06",
-    "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/1444140",
-    "rating": 0.0,
-    "poster_url": "https://image.tmdb.org/t/p/w342/zwGMHJ1aDjWY6mLvN8TASX0hRAL.jpg",
-    "description": "Cameron James' full comedy special \"Bangers\" premieres on Grouse House YouTube 6 March 7pm AEDT!",
-    "directors": [
-      "Cameron James"
-    ],
-    "trailer_url": ""
-  },
   "movie:jaws": {
     "title": "Jaws",
     "media_type": "movie",
@@ -11715,37 +11602,6 @@
       "Dean Fleischer Camp"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=iYt1Pjvy3sI"
-  },
-  "movie:martin scorsese": {
-    "title": "Martin Scorsese",
-    "media_type": "movie",
-    "overview": "Providing behind the scenes footage of the director on set with clips from his own films, Martin Scorsese Directs depicts to riveting effect the way Scorsese brings the written story to life on the big screen. Additional interviews with the likes of Joe Pesci, Harvey Keitel, Thelma Schoonmaker, the director’s own parents, and others build a perception of Scorsese that not everybody knows.",
-    "genres": [
-      "Documentary"
-    ],
-    "tmdb_id": 502332,
-    "runtime_minutes": 56,
-    "actors": [
-      "Martin Scorsese",
-      "Charles Scorsese",
-      "Catherine Scorsese",
-      "Robert De Niro",
-      "Joe Pesci",
-      "Harvey Keitel",
-      "Robbie Robertson",
-      "Francis Ford Coppola"
-    ],
-    "release_date": "1990-06-16",
-    "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/502332",
-    "rating": 9.0,
-    "poster_url": "https://image.tmdb.org/t/p/w342/mwKxKT4BqiSqzLebB9UTzJqO27B.jpg",
-    "description": "Providing behind the scenes footage of the director on set with clips from his own films, Martin Scorsese Directs depicts to riveting effect the way Scorsese brings the written story to life on the big screen. Additional interviews with the likes of Joe Pesci, Harvey Keitel, Thelma Schoonmaker, the director’s own parents, and others build a perception of Scorsese that not everybody knows.",
-    "directors": [
-      "Steven Fischler",
-      "Joel Sucher"
-    ],
-    "trailer_url": ""
   },
   "movie:marty supreme": {
     "title": "Marty Supreme",
@@ -13294,23 +13150,6 @@
     ],
     "trailer_url": "https://www.youtube.com/watch?v=TdP20ALOA3Y"
   },
-  "movie:quentin tarintino": {
-    "title": "Quentin Tarintino",
-    "media_type": "movie",
-    "overview": null,
-    "genres": null,
-    "tmdb_id": null,
-    "runtime_minutes": null,
-    "actors": null,
-    "release_date": null,
-    "number_of_seasons": null,
-    "tmdb_url": null,
-    "rating": null,
-    "poster_url": null,
-    "description": null,
-    "directors": null,
-    "trailer_url": null
-  },
   "movie:radius": {
     "title": "Radius?",
     "media_type": "movie",
@@ -13983,39 +13822,6 @@
     ],
     "trailer_url": "https://www.youtube.com/watch?v=KEWUDWYDdYs"
   },
-  "movie:short films": {
-    "title": "Short Films",
-    "media_type": "movie",
-    "overview": "Omnibus of six short films: Return; Ken-do star; Hana to oji-san; Adagietto Sehr, langsam; Nakayoki koto wa yoki koto ka na; Slow is Beautiful. Third installment of \"SF\" series produced by Hiroyuki Nakano.",
-    "genres": [
-      "Drama"
-    ],
-    "tmdb_id": 949252,
-    "runtime_minutes": 107,
-    "actors": [
-      "Kumiko Aso",
-      "Jun Murakami",
-      "Yoji Tanaka",
-      "Masanobu Ando",
-      "Gets Itaya",
-      "Pierre Taki",
-      "Makoto Ôtake",
-      "Kitaro"
-    ],
-    "release_date": "2003-03-08",
-    "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/949252",
-    "rating": 0.0,
-    "poster_url": "https://image.tmdb.org/t/p/w342/gfFN0hzYdR0kbIp3r7iOG5azyF2.jpg",
-    "description": "Omnibus of six short films: Return; Ken-do star; Hana to oji-san; Adagietto Sehr, langsam; Nakayoki koto wa yoki koto ka na; Slow is Beautiful. Third installment of \"SF\" series produced by Hiroyuki Nakano.",
-    "directors": [
-      "Hiroyuki Nakano",
-      "Pierre Taki",
-      "Masanobu Ando",
-      "Yasuhisa Serizawa"
-    ],
-    "trailer_url": ""
-  },
   "movie:side effects": {
     "title": "Side Effects",
     "media_type": "movie",
@@ -14493,23 +14299,6 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:south park specials": {
-    "title": "South Park Specials",
-    "media_type": "movie",
-    "overview": null,
-    "genres": null,
-    "tmdb_id": null,
-    "runtime_minutes": null,
-    "actors": null,
-    "release_date": null,
-    "number_of_seasons": null,
-    "tmdb_url": null,
-    "rating": null,
-    "poster_url": null,
-    "description": null,
-    "directors": null,
-    "trailer_url": null
-  },
   "movie:space balls": {
     "title": "Space Balls",
     "rating": 6.9,
@@ -14604,30 +14393,6 @@
     "runtime_minutes": 129,
     "media_type": "movie",
     "number_of_seasons": null
-  },
-  "movie:steven spielberg": {
-    "title": "Steven Spielberg",
-    "media_type": "movie",
-    "overview": "A new light on American filmmaker Steven Spielberg, Hollywood’s greatest director, offering a unique perspective on his work and digging into his personal influences.",
-    "genres": [
-      "Documentary",
-      "TV Movie"
-    ],
-    "tmdb_id": 1188411,
-    "runtime_minutes": 56,
-    "actors": [
-      "Steven Spielberg"
-    ],
-    "release_date": "2025-02-04",
-    "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/1188411",
-    "rating": 8.0,
-    "poster_url": "https://image.tmdb.org/t/p/w342/8qegRoVdx04IV5e72zzZxM4pe5L.jpg",
-    "description": "A new light on American filmmaker Steven Spielberg, Hollywood’s greatest director, offering a unique perspective on his work and digging into his personal influences.",
-    "directors": [
-      "Michaël Prazan"
-    ],
-    "trailer_url": ""
   },
   "movie:sting": {
     "title": "Sting",
@@ -18173,27 +17938,6 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:tim burton": {
-    "title": "Tim Burton",
-    "media_type": "movie",
-    "overview": "A new animated feature. Plot TBA.",
-    "genres": [
-      "Animation"
-    ],
-    "tmdb_id": 1507813,
-    "runtime_minutes": 0,
-    "actors": [],
-    "release_date": "",
-    "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/1507813",
-    "rating": 0.0,
-    "poster_url": "",
-    "description": "A new animated feature. Plot TBA.",
-    "directors": [
-      "Tim Burton"
-    ],
-    "trailer_url": ""
-  },
   "movie:titane": {
     "title": "Titane",
     "rating": 6.3,
@@ -18991,27 +18735,6 @@
       "Cary Christopher",
       "Toby Huss"
     ]
-  },
-  "movie:wes anderson": {
-    "title": "Wes Anderson",
-    "media_type": "movie",
-    "overview": "A visual essay that highlights top-down shots from Wes Anderson's filmography.",
-    "genres": [
-      "Documentary"
-    ],
-    "tmdb_id": 536087,
-    "runtime_minutes": 1,
-    "actors": [],
-    "release_date": "2017-06-30",
-    "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/536087",
-    "rating": 6.8,
-    "poster_url": "https://image.tmdb.org/t/p/w342/scbGLNXcJ5cwqZM6mXtaadqnbRk.jpg",
-    "description": "A visual essay that highlights top-down shots from Wes Anderson's filmography.",
-    "directors": [
-      "Kogonada"
-    ],
-    "trailer_url": ""
   },
   "movie:what is a woman": {
     "title": "What is a Woman?",
@@ -21048,29 +20771,6 @@
       "Rassie Erasmus"
     ],
     "number_of_seasons": 2
-  },
-  "series:coming soon": {
-    "title": "Coming Soon",
-    "media_type": "series",
-    "overview": "",
-    "genres": [],
-    "tmdb_id": 27906,
-    "runtime_minutes": null,
-    "actors": [
-      "Ben Miller",
-      "Elaine C. Smith",
-      "Joanna Scanlan",
-      "Julia Davis",
-      "Omid Djalili"
-    ],
-    "release_date": "1999-06-17",
-    "number_of_seasons": 1,
-    "tmdb_url": "https://www.themoviedb.org/tv/27906",
-    "rating": 0.0,
-    "poster_url": "",
-    "description": "",
-    "directors": [],
-    "trailer_url": ""
   },
   "series:common side effects": {
     "title": "Common Side Effects",

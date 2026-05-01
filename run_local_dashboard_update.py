@@ -23,8 +23,9 @@ TASKS = {
     "releases": [[sys.executable, "services/release_radar/scrape_releases.py"]],
     "coming-soon": [[sys.executable, "services/release_radar/scrape_coming_soon.py"]],
     "game-releases": [[sys.executable, "services/release_radar/scrape_game_releases.py"]],
-    "media": [[sys.executable, "services/media/scrape_watchlist.py"]],
-    "watchlist": [[sys.executable, "services/media/scrape_watchlist.py"]],
+    "media": [[sys.executable, "services/media/scrape_watchlist.py", "--scope", "both"]],
+    "watchlist": [[sys.executable, "services/media/scrape_watchlist.py", "--scope", "watchlist"]],
+    "gamelist": [[sys.executable, "services/media/scrape_watchlist.py", "--scope", "games", "--type", "games"]],
 }
 
 

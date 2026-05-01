@@ -404,6 +404,28 @@
     "playtime_hours": null,
     "metacritic": null
   },
+  "game_aaa:baldurs gate 3": {
+    "title": "Baldur’s Gate 3",
+    "media_type": "game_aaa",
+    "release_date": "",
+    "rating": 0.0,
+    "publishers": [
+      "GOG"
+    ],
+    "poster_url": "",
+    "platforms": [
+      "PC"
+    ],
+    "playtime_hours": 0,
+    "developers": [
+      "GOG"
+    ],
+    "website_url": "",
+    "genres": [],
+    "rawg_url": "https://rawg.io/games/baldurs-gate-3-goodie-pack",
+    "metacritic": null,
+    "description": "Dive into the world full of wonders, and let our Baldur’s Gate 3 Goodie Pack be your gateway to adventure. Whether you're a seasoned hero or a new adventurer, this digital goodie collection is a must-have for anyone seeking to embrace their love for the series or elevate their gaming experience This treasure trove of emojis and wallpapers will transport you right into the heart of action! Grab your copy now, and get access to: – A variety of Baldur’s Gate 3 themed emojis and stickers created by Junha Kim, also known as Orknology — Baldur’s Gate 3 enthusiast and an artist. These expressive characters will add a new layer of communication to your adventures; unleash your emotions, share your triumphs, and engage with others in a truly immersive way! – A multitude of Baldur’s Gate 3 wallpapers that will fit not only different desktop resolutions, but your mobile devices as well. Decorate your digital space with awe-inspiring landscapes and scenes straight from the rich tapestry of Baldur’s Gate 3. Transform your desktop, phone, or tablet into a portal to the game's captivating realm. Straight from the game, right into your library – Baldur’s Gate 3 Goodie Pack, only on GOG!"
+  },
   "game_aaa:batman arkham asylum": {
     "title": "Batman: Arkham Asylum",
     "media_type": "game_aaa",
@@ -771,6 +793,34 @@
     "playtime_hours": 6,
     "metacritic": 86
   },
+  "game_aaa:black myth wukong": {
+    "title": "Black Myth: Wukong",
+    "media_type": "game_aaa",
+    "release_date": "2024-08-20",
+    "rating": 4.3,
+    "publishers": [
+      "Game Science"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/779/77988e89f7862afeede524420aa251b0.jpg",
+    "platforms": [
+      "PC",
+      "Xbox Series S/X",
+      "PlayStation 5"
+    ],
+    "playtime_hours": 0,
+    "developers": [
+      "Game Science"
+    ],
+    "website_url": "http://www.heishenhua.com/",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "rawg_url": "https://rawg.io/games/black-myth-wu-kong",
+    "metacritic": null,
+    "description": "A world unseen, where new sights rise with every stride. Enter a fascinating realm filled with the wonders and discoveries of ancient Chinese mythology! As the Destined One, you shall venture through breathtaking landscapes in the classic tale of Journey to the West, creating a new epic of uncharted adventures. Heroic Monkey, might and fame, adversaries rise, to test his name. One of the major highlights of Journey to the West is its diverse cast of adversaries, each with unique strengths. As the Destined One, you shall encounter powerful foes and worthy rivals throughout your journey. Fearlessly engage them in epic battles that know no surrender. Spells unbound, knowledge's flight, infinite abilities take their height. Spells, transformations, and magic vessels in all manifestations, complementary yet adversarial, have long been iconic combat elements in Chinese mythology. As the Destined One, aside from mastering various staff techniques, you can also freely combine different spells, abilities, weapons, and equipment to find the winning formula that best suits your combat style. Within beings of every kind lies the story of a life. Beneath the ferocity and craftiness of your foes lies an engaging tapestry of their origins, personalities, and motivations waiting to be revealed. As the Destined One, you will uncover the stories behind a variety of characters, delving beyond your battles with them, to taste the love and hate, greed and fury they once had and still carry with them."
+  },
   "game_aaa:bloodbourne and the old hunters dlc": {
     "title": "Bloodbourne (and The Old Hunters DLC)",
     "media_type": "game_aaa",
@@ -921,6 +971,34 @@
     ],
     "playtime_hours": 11,
     "metacritic": 83
+  },
+  "game_aaa:borderlands 4": {
+    "title": "Borderlands 4",
+    "media_type": "game_aaa",
+    "release_date": "2025-09-12",
+    "rating": 3.6,
+    "publishers": [
+      "2K Games"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/9cc/9ccb59a7c634091bc8a9b7978d4dc322.jpg",
+    "platforms": [
+      "PC",
+      "PlayStation 5",
+      "Xbox One"
+    ],
+    "playtime_hours": 101,
+    "developers": [
+      "Gearbox Software"
+    ],
+    "website_url": "https://borderlands.2k.com/",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "rawg_url": "https://rawg.io/games/borderlands-4",
+    "metacritic": null,
+    "description": "See if you have what it takes to go down in history as a legendary Vault Hunter as you search for secret alien treasure, blasting everything in sight."
   },
   "game_aaa:borderlands presequel": {
     "title": "Borderlands Presequel",
@@ -1945,6 +2023,32 @@
     "metacritic": 84,
     "playtime_hours": 11
   },
+  "game_aaa:death stranding 2 on the beach": {
+    "title": "Death Stranding 2: On The Beach",
+    "media_type": "game_aaa",
+    "release_date": "2025-06-26",
+    "rating": 4.3,
+    "publishers": [
+      "Sony Interactive Entertainment"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/b85/b85bc300d42588af66fb516b7563f74f.jpg",
+    "platforms": [
+      "PC",
+      "PlayStation 5"
+    ],
+    "playtime_hours": 0,
+    "developers": [
+      "Kojima Productions"
+    ],
+    "website_url": "",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rawg_url": "https://rawg.io/games/death-stranding-2",
+    "metacritic": null,
+    "description": "Embark on an inspiring mission of human connection beyond the UCA. Sam—with companions by his side—sets out on a new journey to save humanity from extinction. Join them as they traverse a world beset by otherworldly enemies, obstacles and a haunting question: should we have connected? Step by step, legendary game creator Hideo Kojima changes the world once again."
+  },
   "game_aaa:demon souls": {
     "title": "Demon Souls",
     "media_type": "game_aaa",
@@ -2197,6 +2301,26 @@
       "Ninja Theory"
     ],
     "playtime_hours": 6
+  },
+  "game_aaa:donkey kong bananza": {
+    "title": "Donkey Kong: Bananza",
+    "media_type": "game_aaa",
+    "release_date": "2025-07-17",
+    "rating": 4.4,
+    "publishers": [],
+    "poster_url": "https://media.rawg.io/media/games/db4/db4348b029d2cdaf826d7536bd75b71c.jpg",
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "playtime_hours": 0,
+    "developers": [],
+    "website_url": "",
+    "genres": [
+      "Adventure"
+    ],
+    "rawg_url": "https://rawg.io/games/donkey-kong-bananza",
+    "metacritic": null,
+    "description": "Donkey Kong Bananza is an adventure game. It came out on 17-07-2025. Most rawgers rated the game as \"Exceptional\". Donkey Kong Bananza is available on Nintendo Switch. You can purchase the game on Nintendo eShop."
   },
   "game_aaa:doom": {
     "title": "Doom",
@@ -2796,6 +2920,32 @@
     ],
     "playtime_hours": 7
   },
+  "game_aaa:halflife alyx": {
+    "title": "Half-Life Alyx",
+    "media_type": "game_aaa",
+    "release_date": "2020-03-23",
+    "rating": 4.3,
+    "publishers": [
+      "Valve"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/855/8552c056d729f34c951c30f3cfef9da8.jpg",
+    "platforms": [
+      "PC"
+    ],
+    "playtime_hours": 5,
+    "developers": [
+      "Valve Software"
+    ],
+    "website_url": "https://www.half-life.com/en/alyx/",
+    "genres": [
+      "Action",
+      "Shooter",
+      "Adventure"
+    ],
+    "rawg_url": "https://rawg.io/games/half-life-alyx",
+    "metacritic": 93,
+    "description": "Half-Life: Alyx is Valve’s VR return to the Half-Life series. It’s the story of an impossible fight against a vicious alien race known as the Combine, set between the events of Half-Life and Half-Life 2. Playing as Alyx Vance, you are humanity’s only chance for survival. The Combine’s control of the planet since the Black Mesa incident has only strengthened as they corral the remaining population in cities. Among them are some of Earth’s greatest scientists: you and your father, Dr. Eli Vance. As founders of a fledgling resistance, you’ve continued your clandestine scientific activity—performing critical research, and building invaluable tools for the few humans brave enough to defy the Combine. Every day, you learn more about your enemy, and every day you work toward finding a weakness. ABOUT GAMEPLAY IN VR: Valve’s return to the Half-Life universe that started it all was built from the ground up for virtual reality. VR was built to enable the gameplay that sits at the heart of Half-Life. Immerse yourself in deep environmental interactions, puzzle solving, world exploration, and visceral combat. Lean to aim around a broken wall and under a Barnacle to make an impossible shot. Rummage through shelves to find a healing syringe and some shotgun shells. Manipulate tools to hack alien interfaces. Toss a bottle through a window to distract an enemy. Rip a Headcrab off your face and throw it at a Combine soldier. Extra content for Index owners Customers who have purchased Valve Index hardware by the end of 2019 will have access to unique bonuses starting early next year: Explore environments from Half-Life: Alyx in your SteamVR Home space Alternate gun skins to embellish Alyx's arsenal Special Half-Life: Alyx-themed content for Counter-Strike: Global Offensive and Dota 2 Community-built environments A set of Source 2 tools for building new environments will ship with the game, enabling any player to build and contribute new environments for the community to enjoy. Hammer, Valve’s level authoring tool, has been updated with all of the game’s virtual reality gameplay tools and components."
+  },
   "game_aaa:halflife and opposing force and blue shift and decay": {
     "title": "Half-Life (and Opposing Force and Blue Shift and Decay)",
     "media_type": "game_aaa",
@@ -3351,6 +3501,33 @@
     ],
     "playtime_hours": 6
   },
+  "game_aaa:mafia the old country": {
+    "title": "Mafia: The Old Country",
+    "media_type": "game_aaa",
+    "release_date": "2025-08-08",
+    "rating": 3.8,
+    "publishers": [
+      "2K Games"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/e0f/e0fc6554b6c0b5cd95037858898a1cc8.jpg",
+    "platforms": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series S/X"
+    ],
+    "playtime_hours": 16,
+    "developers": [
+      "Hangar 13"
+    ],
+    "website_url": "https://mafiagame.com/",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rawg_url": "https://rawg.io/games/mafia-the-old-country",
+    "metacritic": null,
+    "description": "Uncover the origins of organized crime in Mafia: The Old Country, a gritty mob story set in the brutal underworld of 1900s Sicily. Fight to survive in this dangerous and unforgiving era, with action brought to life by the authentic realism and rich storytelling that the critically acclaimed Mafia series is known for."
+  },
   "game_aaa:mario  rabbids kingdom battle": {
     "title": "Mario + Rabbids Kingdom Battle",
     "media_type": "game_aaa",
@@ -3749,6 +3926,36 @@
       "KOEI TECMO GAMES CO"
     ],
     "playtime_hours": 22
+  },
+  "game_aaa:ninja gaiden 4": {
+    "title": "Ninja Gaiden 4",
+    "media_type": "game_aaa",
+    "release_date": "2025-10-21",
+    "rating": 4.0,
+    "publishers": [
+      "Xbox Game Studios"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/9e8/9e8752c9e8ee0b5030b2851558506ecb.jpg",
+    "platforms": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series S/X"
+    ],
+    "playtime_hours": 15,
+    "developers": [
+      "Platinum Games",
+      "Koei Tecmo",
+      "Team NINJA",
+      "KOEI TECMO GAMES CO"
+    ],
+    "website_url": "https://teamninja-studio.com/ng/us/ng4/",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rawg_url": "https://rawg.io/games/ninja-gaiden-4",
+    "metacritic": null,
+    "description": "The definitive ninja hack & slash franchise returns with NINJA GAIDEN 4! Embark on a cutting-edge adventure where legacy meets innovation in this high-octane blend of style and no-holds-barred combat. Return of the Legend: Experience a return to the intense, high-speed combat that established NINJA GAIDEN as a premier action game series. Prepare for a legacy reborn with captivating style for a new generation of players. Epic Hack and Slash Combat, Evolved: NINJA GAIDEN 4 fuses Team NINJA’s tempered combat philosophy with the stylish, dynamic action gameplay of PlatinumGames. Engage in visually stunning combat that rewards precision and strategy. Use Bloodbind Ninjutsu to transform your weapons and unleash devastation upon your enemies, alongside legacy techniques like the Izuna Drop and Flying Swallow. The legendary Ryu Hayabusa also returns with a revamped yet familiar set of tools to master. With a customizable player experience, NINJA GAIDEN 4 will push action game veterans to their limits while allowing newcomers to enjoy a heart-pounding adventure full of twists and turns. An Ancient Enemy Returns: An endless rain of miasma hangs over a near-future Tokyo in the wake of an ancient enemy’s resurrection. The fate of the city lies in the hands of young ninja prodigy, Yakumo. Fighting his way through cybernetic ninja soldiers and otherworldly creatures, Yakumo must reconcile a destiny he shares with the legendary Ryu Hayabusa himself and free Tokyo from the ancient curse that brought the city to its knees."
   },
   "game_aaa:nobody wants to die": {
     "title": "Nobody Wants to Die",
@@ -4246,6 +4453,34 @@
       "Capcom"
     ],
     "playtime_hours": 0
+  },
+  "game_aaa:returnal": {
+    "title": "Returnal",
+    "media_type": "game_aaa",
+    "release_date": "2021-04-30",
+    "rating": 4.2,
+    "publishers": [
+      "Sony Interactive Entertainment",
+      "PlayStation PC"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/673/673f27be4c5dbf37ce3ed0ed5ddf9d8d.jpg",
+    "platforms": [
+      "PC",
+      "PlayStation 5"
+    ],
+    "playtime_hours": 8,
+    "developers": [
+      "Housemarque",
+      "Climax Studios"
+    ],
+    "website_url": "https://housemarque.com/games/returnal",
+    "genres": [
+      "Action",
+      "Shooter"
+    ],
+    "rawg_url": "https://rawg.io/games/returnal",
+    "metacritic": 86,
+    "description": "Returnal combines side-scrolling action with roguelike gameplay into a third-person shooter where players fight to survive a hostile planet that changes with every death. Players can switch instinctively between firing modes by using a single adaptive trigger and can get right back into the action after dying. PS5's immersive 3D audio brings the alien world to life around the player, helping players navigate the intense positional combat."
   },
   "game_aaa:robocop rogue city": {
     "title": "Robocop Rogue City",
@@ -5959,6 +6194,34 @@
     ],
     "playtime_hours": 11
   },
+  "game_coop:borderlands 4": {
+    "title": "Borderlands 4",
+    "media_type": "game_coop",
+    "release_date": "2025-09-12",
+    "rating": 3.6,
+    "publishers": [
+      "2K Games"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/9cc/9ccb59a7c634091bc8a9b7978d4dc322.jpg",
+    "platforms": [
+      "PC",
+      "PlayStation 5",
+      "Xbox One"
+    ],
+    "playtime_hours": 101,
+    "developers": [
+      "Gearbox Software"
+    ],
+    "website_url": "https://borderlands.2k.com/",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "rawg_url": "https://rawg.io/games/borderlands-4",
+    "metacritic": null,
+    "description": "See if you have what it takes to go down in history as a legendary Vault Hunter as you search for secret alien treasure, blasting everything in sight."
+  },
   "game_coop:borderlands presequel": {
     "title": "Borderlands Presequel",
     "media_type": "game_coop",
@@ -5987,6 +6250,37 @@
       "Gearbox Software"
     ],
     "playtime_hours": 10
+  },
+  "game_coop:content warning": {
+    "title": "Content Warning",
+    "media_type": "game_coop",
+    "release_date": "2024-04-01",
+    "rating": 3.5,
+    "publishers": [
+      "Landfall",
+      "Landfall Publishing"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/4b7/4b7716ece99ad9d65747f580c0399237.jpg",
+    "platforms": [
+      "PC"
+    ],
+    "playtime_hours": 3,
+    "developers": [
+      "Philip",
+      "wilnyl",
+      "Skog",
+      "Zorro",
+      "thePetHen"
+    ],
+    "website_url": "http://landfall.se",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "rawg_url": "https://rawg.io/games/content-warning",
+    "metacritic": null,
+    "description": "Film your friends doing scary things to become SpöökTube famous! (strongly advised to not go alone)."
   },
   "game_coop:deep rock galactic": {
     "title": "Deep Rock Galactic",
@@ -6146,6 +6440,33 @@
       "Eidos Montreal"
     ],
     "playtime_hours": 12
+  },
+  "game_coop:helldivers 2": {
+    "title": "Helldivers 2",
+    "media_type": "game_coop",
+    "release_date": "2024-02-08",
+    "rating": 4.2,
+    "publishers": [
+      "Sony Interactive Entertainment",
+      "PlayStation PC"
+    ],
+    "poster_url": "https://media.rawg.io/media/screenshots/755/7552f856f88b0de1dee040121039b079.jpg",
+    "platforms": [
+      "Xbox Series S/X",
+      "PC",
+      "PlayStation 5"
+    ],
+    "playtime_hours": 22,
+    "developers": [
+      "Arrowhead Game Studios"
+    ],
+    "website_url": "",
+    "genres": [
+      "Action"
+    ],
+    "rawg_url": "https://rawg.io/games/helldivers-2",
+    "metacritic": null,
+    "description": "Digital Deluxe Edition Edition includes: ‘DP-53 Savior of the Free’ Armor Set. ‘Will of the People’ Cape. ‘MP-98 Knight’ Weapon. Super Citizen Status. Stratagem Hero Ship Game. ‘Steeled Veterans’ Premium Warbond. About the Game The Galaxy’s Last Line of Offence. Enlist in the Helldivers and join the fight for freedom across a hostile galaxy in a fast, frantic, and ferocious third-person shooter. URGENT BROADCAST – SUPER EARTH ARMED FORCESFreedom. Peace. Democracy. Your Super Earth-born rights. The key pillars of our civilization. Of our very existence. But the war rages on. And everything is once again under threat. Join the greatest military force the galaxy has ever seen and make this a safe and free place to live. BECOME A LEGENDYou will be assembled into squads of up to four Helldivers and assigned strategic missions. Watch each other’s back – friendly fire is an unfortunate certainty of war, but victory without teamwork is impossible. LOADOUTSRain down freedom from above, sneak through enemy territory, or grit your teeth and charge head-first into the jaws of combat. How you deliver liberty is your choice; you’ll have access to a wide array of explosive firepower, life-saving armor and battle-changing stratagems… the jewel in every Helldiver’s arsenal. REQUISITIONSuper Earth recognises your hard work with valuable Requisition. Use it to access different rewards that benefit you, your squad, your destroyer ship and our overall war effort. THREATSEverything on every planet wants you dead. That’s what we’re dealing with. Each enemy has distinct and unpredictable characteristics, tactics, and behavior – but they all fight ferociously and without fear or morality. THE GALACTIC WARCapturing enemy planets, defending against invasions, and completing missions will contribute to our overall effort. This war will be won or lost depending on the actions of everyone involved. We stand together, or we fall apart."
   },
   "game_coop:it takes two": {
     "title": "It Takes Two",
@@ -6311,6 +6632,35 @@
       "Grinding Gear Games"
     ],
     "playtime_hours": 13
+  },
+  "game_coop:payday 2": {
+    "title": "Payday 2",
+    "media_type": "game_coop",
+    "release_date": "2013-08-13",
+    "rating": 3.5,
+    "publishers": [
+      "505 Games",
+      "Starbreeze"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg",
+    "platforms": [
+      "Linux",
+      "PC",
+      "Xbox One"
+    ],
+    "playtime_hours": 9,
+    "developers": [
+      "505 Games",
+      "OVERKILL Software"
+    ],
+    "website_url": "http://www.crimenet.info",
+    "genres": [
+      "Action",
+      "Shooter"
+    ],
+    "rawg_url": "https://rawg.io/games/payday-2",
+    "metacritic": 79,
+    "description": "The gang is back, and they have bigger and better plans. Objective based cooperative FPS became more complicated. The classic group of Hoxton, Dallas, Chains and Wolf got reinforcement, and now Payday Gang consists of 21 heisters, some of which are based on movie characters or even Youtubers. Players will be able to customize their own private arsenal, their masks, and skills, to complete the missions in their own way, be it stealthy sneak-in or full frontal assault. After completing missions, players will receive EXP points, money and a chance to get a special item that can be a gun modification, mask or a safe containing weapon skins. Payday 2 is a multiplayer game, meaning, that even during offline missions players will be followed by AI characters, whose loadouts, masks and perks can be customized as well. This game has been supported by the developers for many years, and amount of DLC speaks plenty of their dedication to the player base."
   },
   "game_coop:peak": {
     "title": "Peak",
@@ -6916,13 +7266,22 @@
       "PS Vita",
       "Wii U"
     ],
-    "website_url": "",
+    "website_url": "http://rayman.ubi.com/legends/",
     "release_date": "2013-08-29",
-    "description": "",
+    "description": "Rayman Legends is a fifth main title in the original series of platform games. The new Rayman chapter is a direct sequel to the 2011 game Rayman Origins. The game is set in an imaginary world inhabited by both friendly and hostile creatures. The main character Rayman, a shapeless magical being, accompanied by his closest friends is expected to protect the fictional world from evil. The story begins a century after the Origins events. Bubble Dreamers’ nightmares as well as the Magician (both are main antagonists) has grown up in their power, so only awakened after the 100-year sleep Rayman and his friends Globox and Teensies are able to stop the terrible villains. As the story takes place in various locations depending on the game stage, the environment, as well as difficulty, differs from time to time. The gameplay is about completing multiple platform levels, collecting lums and defeating enemies. In addition to Rayman, Globox and Teensies players can assume the roles of several new game characters. Rayman Legends also features a co-op game mode.",
     "genres": [
       "Platformer"
     ],
-    "rawg_url": "https://rawg.io/games/rayman-legends"
+    "rawg_url": "https://rawg.io/games/rayman-legends",
+    "developers": [
+      "Ubisoft",
+      "Ubisoft Montpellier"
+    ],
+    "metacritic": 89,
+    "publishers": [
+      "Ubisoft Entertainment"
+    ],
+    "playtime_hours": 5
   },
   "game_couch_coop:reanimal": {
     "title": "Reanimal",
@@ -6934,11 +7293,23 @@
       "macOS",
       "Linux"
     ],
-    "website_url": "",
+    "website_url": "https://reanimal.thqnordic.com/",
     "release_date": "2022-01-16",
-    "description": "",
-    "genres": [],
-    "rawg_url": "https://rawg.io/games/reanimated"
+    "description": "The original creators of Little Nightmares™ & Little Nightmares™ II have returned to take you on a more terrifying journey than ever before. In this co-op horror adventure game, you play as a brother & sister who go through hell to rescue their missing friends. Exploring by boat and on land, you must use your wits to survive, work together to escape the hellish island, and the dark secret that haunts you.",
+    "genres": [
+      "Adventure"
+    ],
+    "rawg_url": "https://rawg.io/games/reanimated",
+    "developers": [
+      "Tarsier Studios"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "THQ Nordic",
+      "Amplifier Studios",
+      "Amplifier Game Invest"
+    ],
+    "playtime_hours": 5
   },
   "game_couch_coop:rocket league": {
     "title": "Rocket League",
@@ -6953,15 +7324,23 @@
       "macOS",
       "Linux"
     ],
-    "website_url": "",
+    "website_url": "http://www.rocketleaguegame.com",
     "release_date": "2015-07-07",
-    "description": "",
+    "description": "Highly competitive soccer game with rocket-cars is the most comprehensive way to describe this game. Technically a sequel to Psyonix’ previous game - Supersonic Acrobatic Rocket-Powered Battle-Cars; Rocket League successfully became a standalone sensation, that can be enjoyed by anyone. Easy to learn, hard to master game mechanics are perfect for the tight controls. Players are invited to maneuver the different fields within several game modes, from arcade to ranked game either 1v1, or in 2v2 and 3v3 teams. Using boosters will not only speed up the car but will allow the car to propel itself into the air. Rocket League provides several levels of customization, where not only the color of your car can be adjusted, but the colors and form of the booster flame, different hats, and little flags. Or players can pick a completely different car. Collaboration with different franchises brought not only original transport but some famous cars, including Batmobile or Delorian from Back to the Future.",
     "genres": [
       "Racing",
       "Indie",
       "Sports"
     ],
-    "rawg_url": "https://rawg.io/games/rocket-league"
+    "rawg_url": "https://rawg.io/games/rocket-league",
+    "developers": [
+      "Psyonix"
+    ],
+    "metacritic": 86,
+    "publishers": [
+      "Psyonix"
+    ],
+    "playtime_hours": 21
   },
   "game_couch_coop:sonic racing crossworlds": {
     "title": "Sonic Racing: CrossWorlds",
@@ -6974,15 +7353,23 @@
       "PlayStation 4",
       "Nintendo Switch"
     ],
-    "website_url": "",
+    "website_url": "https://asia.sega.com/SonicRacingCrossWorlds/en/",
     "release_date": "2025-09-25",
-    "description": "",
+    "description": "Get ready for races that transcend dimensions! Sonic has traveled to all kinds of worlds over the years, but when the Travel Rings bring him to the multiverse, a brand-new adventure, unpredivtable races, and wild competitions await!",
     "genres": [
       "Racing",
       "Adventure",
       "Action"
     ],
-    "rawg_url": "https://rawg.io/games/sonic-racing-crossworlds"
+    "rawg_url": "https://rawg.io/games/sonic-racing-crossworlds",
+    "developers": [
+      "Sonic Team"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "SEGA"
+    ],
+    "playtime_hours": 71
   },
   "game_couch_coop:split fiction": {
     "title": "Split Fiction",
@@ -6994,14 +7381,22 @@
       "PlayStation 5",
       "Xbox Series S/X"
     ],
-    "website_url": "",
+    "website_url": "https://www.ea.com/games/split-fiction/split-fiction",
     "release_date": "2025-03-06",
-    "description": "",
+    "description": "Embrace mind-blowing moments as you’re pulled deep into the many worlds of Split Fiction, a boundary-pushing co-op action adventure from the studio behind 2021 Game of the Year Winner, It Takes Two. Mio and Zoe are contrasting writers – one writes sci-fi and the other writes fantasy – who become trapped in their own stories after being hooked up to a machine designed to steal their creative ideas. They’ll have to rely on each other to break free with their memories in-tact, working together to master a variety of abilities and overcome diverse challenges while jumping between sci-fi and fantasy worlds in this unexpected tale of friendship. Split Fiction is a unique action-adventure experience that keeps you on the edge of your couch with unexpected moments. One minute you’re taming adorable dragons and the next you’re fighting as cyber ninjas, escaping terrifying trolls, or dodging hover cars thrown by a robotic parking attendant. It’s weird, it’s wild, and it’s designed to be shared. Grab your co-op partner and get ready to overcome any obstacle thrown your way.",
     "genres": [
       "Adventure",
       "Action"
     ],
-    "rawg_url": "https://rawg.io/games/split-fiction"
+    "rawg_url": "https://rawg.io/games/split-fiction",
+    "developers": [
+      "Hazelight"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "Electronic Arts"
+    ],
+    "playtime_hours": 6
   },
   "game_couch_coop:super mario bros wonder": {
     "title": "Super Mario Bros: Wonder",
@@ -7011,13 +7406,21 @@
     "platforms": [
       "Nintendo Switch"
     ],
-    "website_url": "",
+    "website_url": "https://supermariobroswonder.nintendo.com/",
     "release_date": "2023-10-20",
-    "description": "",
+    "description": "Join Mario and friends on a new 2D side-scrolling adventure full of wonder! Every course contains its very own Wonder Flower – collect one, and anything can happen. From moving pipes to tilting terrain, singing Piranha Plants to stampeding Bulrushes, skydiving to space walks, you never know what’ll happen next. You might even transform into something totally new! Pick to play as Mario, Luigi, Peach and more! They all play in exactly the same way, so you can freely use your favourite character without having to worry. The world of Super Mario Bros. Wonder is even better when enjoyed with others! Play together locally or online and help save the Flower Kingdom from Bowser as a team, or enjoy enhancements to solo play by connecting online.",
     "genres": [
       "Adventure"
     ],
-    "rawg_url": "https://rawg.io/games/super-mario-bros-wonder"
+    "rawg_url": "https://rawg.io/games/super-mario-bros-wonder",
+    "developers": [
+      "Nintendo"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "Nintendo"
+    ],
+    "playtime_hours": 0
   },
   "game_couch_coop:super mario party": {
     "title": "Super Mario Party",
@@ -7029,24 +7432,50 @@
     ],
     "website_url": "",
     "release_date": "2018-10-05",
-    "description": "",
+    "description": "Super Mario Party is the eleventh game in its series of party games and the first to be released for Nintendo Switch. ###Plot The characters from the Mario universe decide to start a party with a lot of competitive games to determine who of them is going to be the Super Star. ###Gameplay The player controls his or her character from the third person view and navigates it in the Mario world to collect stars and participate in mini-games. ###Characters The game features all the main playable characters from the previous Mario Party games, such as Mario, Princess Peach, Luigi, and Bowser. There's a roster of 20 characters, four of which need to be unlocked. Toad is not playable and serves as the party's host and judge instead. Super Mario Party introduces several characters that are new to the series, such as Monty Mole, Goomba, and Pom Pom, as well as reintroduces characters that only featured in the handheld spin-off installments, namely Diddy Kong and Bowser Jr. ###Multiplayer The game allows a variety of multiplayer options. Up to four players can compete the main Party mode, taking turns. In the Partner Party mode, the players compete in teams in the vein of Mario Party: Star Rush. Super Mario Party allows two players to use a single Switch, with each player taking one of Joy-Cons. The players can also synchronize their Switch consoles locally.",
     "genres": [
       "Family",
       "Board Games"
     ],
-    "rawg_url": "https://rawg.io/games/super-mario-party"
+    "rawg_url": "https://rawg.io/games/super-mario-party",
+    "developers": [
+      "NDCube"
+    ],
+    "metacritic": 76,
+    "publishers": [
+      "Nintendo"
+    ],
+    "playtime_hours": 0
   },
   "game_couch_coop:worms wmd": {
     "title": "Worms WMD",
     "media_type": "game_couch_coop",
-    "rating": null,
-    "poster_url": null,
-    "platforms": null,
-    "website_url": null,
-    "release_date": null,
-    "description": null,
-    "genres": null,
-    "rawg_url": null
+    "rating": 4.3,
+    "poster_url": "https://media.rawg.io/media/games/96a/96a48ac7487d9db9179d83170afcb16a.jpg",
+    "platforms": [
+      "Nintendo 64",
+      "Game Boy Color",
+      "PlayStation",
+      "PC",
+      "Dreamcast"
+    ],
+    "website_url": "http://www.team17.com",
+    "release_date": "1999-01-25",
+    "description": "Worms Armageddon is a 2D artillery tactical shooter with turn-based gameplay. It follows the visual style of the series, and you control a team of cartoonish worms that fight with real-based weapons. While the game was developed in the late 90s, the newest version is available on Steam since 2013. The core gameplay is focused on turn-based PvP battles. Each player can perform an action during their turn. You have numerous possibilities: you can move your worms, attack opponents, use different items and so on. The goal is to defeat other players. The only stat a worm has is its health. On the contrary, there is a huge variety of weapons and constructions that can be used during the fight. Weapons have different parameters and unique abilities. Some of them, such as flamethrower, are based on real models, while the others, like explosive moles, are completely fictional.",
+    "genres": [
+      "Strategy"
+    ],
+    "rawg_url": "https://rawg.io/games/worms-armageddon",
+    "developers": [
+      "Team17 Digital"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "Team17 Digital",
+      "Atari",
+      "Hasbro Interactive"
+    ],
+    "playtime_hours": 2
   },
   "game_indie:abzu": {
     "title": "Abzu",
@@ -7365,6 +7794,35 @@
     ],
     "playtime_hours": 8
   },
+  "game_indie:blue prince": {
+    "title": "Blue Prince",
+    "media_type": "game_indie",
+    "release_date": "2025-04-10",
+    "rating": 4.1,
+    "publishers": [
+      "Raw Fury"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/258/258f88a911a4233d4f21c2f91dceb892.jpg",
+    "platforms": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series S/X"
+    ],
+    "playtime_hours": 5,
+    "developers": [
+      "Dogubomb"
+    ],
+    "website_url": "https://www.blueprincegame.com/",
+    "genres": [
+      "Adventure",
+      "Strategy",
+      "Indie",
+      "Puzzle"
+    ],
+    "rawg_url": "https://rawg.io/games/blue-prince",
+    "metacritic": null,
+    "description": "Welcome to Mt. Holly, the mysterious manor with shifting rooms. In Blue Prince, you embark on a genre-defying experience, filled with a unique mix of mystery, strategy, and puzzles that weave together to create an unpredictable journey. Will your explorative steps lead you to the rumored Room 46? DRAFTING YOUR JOURNEY Upon reaching a closed door in Mt. Holly, you decide what room appears behind it and each decision shapes your path as you navigate through the manor. Every door can reveal new and exciting chambers that contain their own unique challenges and secrets. But be careful how you draft, for each day the manor’s floor plan resets and the rooms you saw today may not be the same rooms you see tomorrow. EVERY STEP COUNTS Your progress each day is shaped by the rooms you select to draft and the tools you find within them. Items in the game can be used in a number of creative ways to fuel your exploration deeper into the house, allowing you to adopt unique strategies to combat the challenges that each day brings. Yet, tread wisely – the house resets each dawn, erasing all but the permanent upgrades to your estate blueprint. That is, if you were clever enough to find one! A HISTORY IN THE MAKING As the heir of Mt. Holly, you have been tasked to explore its shifting halls in search of Room 46. Yet as your journey takes you further into the mansion’s depths, you start to discover that there is more lurking under the surface than a missing room. Investigate a past woven with the threads of blackmail, political intrigue, and the mysterious disappearance of a local children’s book author. The deeper you venture, the more you realize that the past is closer than it appears."
+  },
   "game_indie:braid": {
     "title": "Braid",
     "media_type": "game_indie",
@@ -7613,6 +8071,43 @@
     ],
     "playtime_hours": 6
   },
+  "game_indie:dead as disco": {
+    "title": "Dead As Disco",
+    "media_type": "game_indie",
+    "release_date": "2018-08-07",
+    "rating": 4.2,
+    "publishers": [
+      "Plug In Digital",
+      "Playdigious",
+      "Motion Twin"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/f90/f90ee1a4239247a822771c40488e68c5.jpg",
+    "platforms": [
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 4",
+      "macOS",
+      "Linux",
+      "iOS",
+      "PC"
+    ],
+    "playtime_hours": 10,
+    "developers": [
+      "Plug In Digital",
+      "Playdigious",
+      "Motion Twin"
+    ],
+    "website_url": "https://dead-cells.com/",
+    "genres": [
+      "Action",
+      "RPG",
+      "Indie",
+      "Platformer"
+    ],
+    "rawg_url": "https://rawg.io/games/dead-cells",
+    "metacritic": 88,
+    "description": "Dead Cells is a roguelike adventure title developed by Motion Twin. ###Story Not much story is present in the game, as only bits of any information are given out to the players. The game takes place at a remote island, where the players take place of the Prisoner. The Prisoner does not speak, yet he can express confusion and frustration using his body language. The Prisoner is basically immortal, as, in case of death, his head disconnects itself from the Prisoner's body, and gets back to the game's starting area. ###Gameplay The game's heavily inspired by The Binding of Isaac, as stated by the developers. Dead Cells features the procedurally generated environments that are typical for roguelike games, yet it puts a strong emphasis on exploration that is typically found in metroidvanias. The players set out to explore the island where a prison was built. As the players come down into the dungeons of the island, they find various loot, fight dangerous creatures, collect armor, abilities, and power-ups. Upon death, the players lose all the loot they had on them. It is possible to find a shopkeep somewhere in the dungeons to purchase new equipment or have some rest. The game uses death as a learning experience, as it randomizes the placement of enemies, so the players can't take multiple attempts to complete a level. The developers want the player to examine the enemy behavior and learn how to combat the enemies themselves."
+  },
   "game_indie:dead cells": {
     "title": "Dead Cells",
     "media_type": "game_indie",
@@ -7735,6 +8230,36 @@
       "Ghost Ship Games"
     ],
     "playtime_hours": 7
+  },
+  "game_indie:disco elysium": {
+    "title": "Disco Elysium",
+    "media_type": "game_indie",
+    "release_date": "2019-10-14",
+    "rating": 4.4,
+    "publishers": [],
+    "poster_url": "https://media.rawg.io/media/games/840/8408ad3811289a6a5830cae60fb0b62a.jpg",
+    "platforms": [
+      "PC",
+      "macOS",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 4",
+      "Xbox Series S/X",
+      "PlayStation 5"
+    ],
+    "playtime_hours": 6,
+    "developers": [
+      "ZA/UM"
+    ],
+    "website_url": "http://zaumstudio.com/",
+    "genres": [
+      "Adventure",
+      "RPG",
+      "Indie"
+    ],
+    "rawg_url": "https://rawg.io/games/disco-elysium",
+    "metacritic": 91,
+    "description": "Disco Elysium is a groundbreaking blend of hardboiled cop show and isometric RPG. Solve a massive, open ended case in a unique urban fantasy setting. Kick in doors, interrogate suspects, or just get lost exploring the gorgeously rendered city of Revachol and unraveling its mysteries. Tough choices need to be made. What kind of cop you are — is up to you. You play a disgraced lieutenant detective in Revachol West, a shore town where corruption’s out of control, murders go unsolved, and the kids just wanna dance. Kick in doors, interrogate suspects, or get lost exploring a gorgeously rendered city and unraveling its mysteries. All the while, tensions rise around you as Revachol threatens to explode. Disco Elysium’s completely original skill system makes your innermost feelings, doubts, and memories an integral part of every conversation. Level up your rational faculties, sharpen your wits, or give in to your basest instincts. What kind of cop you are is up to you."
   },
   "game_indie:dispatch": {
     "title": "Dispatch",
@@ -8708,6 +9233,35 @@
     ],
     "playtime_hours": 5
   },
+  "game_indie:mio memories in orbit": {
+    "title": "Mio: Memories in Orbit",
+    "media_type": "game_indie",
+    "release_date": "2026-01-20",
+    "rating": 3.5,
+    "publishers": [
+      "Focus Entertainment"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/599/599396b361afbee649f03f4e32594ae0.jpg",
+    "platforms": [
+      "PlayStation 5",
+      "Xbox Series S/X",
+      "PlayStation 4",
+      "PC",
+      "Nintendo Switch",
+      "Xbox One"
+    ],
+    "playtime_hours": 0,
+    "developers": [
+      "Douze Dixièmes"
+    ],
+    "website_url": "https://www.focus-entmt.com/en/games/mio-memories-in-orbit",
+    "genres": [
+      "Platformer"
+    ],
+    "rawg_url": "https://rawg.io/games/mio-memories-in-orbit",
+    "metacritic": null,
+    "description": "A mesmerizing, intertwined, decaying world awaits. Play MIO, a nimble robot with extraordinary abilities, and unravel the mysteries of the Vessel, an enormous technological ark overgrown with lush vegetation and machines gone rogue. Nobody knows why the Pearls, The Vessel's AI caretakers, have ceased functioning. Forgotten by all, the Vessel faces imminent shutdown. Dive into its depths to revive its lost memories, as you unravel your true past and destiny. Will you rise to the challenge and save the Vessel from destruction? Will you dare to seek and wake its memories? Explore a captivating universe, full of wonder and artistic curiosities. Interact with the Vessel’s environments to learn more about its past and memories. Earn game-changer abilities to help MIO progress through this twisted and interconnected space. Climb walls like a spider or float through the air with your Glide power. Master precision, rhythm, and timing to find the perfect flow! Face off a diverse array of over 30 enemy units and 15 formidable guardian bosses. Use your arsenal of powers to adapt to every encounter. Evade foes using your Hook, unleash orbs as powerful projectiles, and even create decoy clones to strike from unexpected angles. It’s always your choice! Enhance and customize MIO abilities by scavenging components. Spice up your fighting skills with many Modifiers and transform MIO into a formidable force tailored to your playstyle."
+  },
   "game_indie:monument valley": {
     "title": "Monument Valley",
     "media_type": "game_indie",
@@ -8888,6 +9442,33 @@
     ],
     "playtime_hours": 4
   },
+  "game_indie:peppered": {
+    "title": "Peppered",
+    "media_type": "game_indie",
+    "release_date": "2019-01-04",
+    "rating": 0.0,
+    "publishers": [
+      "Sokpop Collective"
+    ],
+    "poster_url": "https://media.rawg.io/media/screenshots/596/5963bf46d9ff78d9187f37b4a681c7b5.jpg",
+    "platforms": [
+      "macOS",
+      "PC"
+    ],
+    "playtime_hours": 0,
+    "developers": [
+      "Sokpop Collective"
+    ],
+    "website_url": "",
+    "genres": [
+      "Action",
+      "Strategy",
+      "Indie"
+    ],
+    "rawg_url": "https://rawg.io/games/peppered-2",
+    "metacritic": null,
+    "description": "Peppered is a real-time strategy game about snowball fights! You command a group of friends in snowball fights against kids around the neighborhood. Make them scoop up snow, let them throw snowball at opponents and build snow walls to defend yourself. Features ~30min playtime 4 challengers Each time a kid gets hit they will become colder and colder. If they become too cold they'll run home crying. However, each side has a campfire where they can warm-up and \"recover\". Extinguishing the opponent's campfire first can pay-off later! Sokpop makes a new game every two weeks! Subscribe for 3$ per month at http://sokpop.co"
+  },
   "game_indie:pi mouse": {
     "title": "P.I. Mouse",
     "media_type": "game_indie",
@@ -8981,6 +9562,30 @@
       "Wishfully"
     ],
     "playtime_hours": 4
+  },
+  "game_indie:planet of lana 2": {
+    "title": "Planet of Lana 2",
+    "media_type": "game_indie",
+    "release_date": "",
+    "rating": 0.0,
+    "publishers": [
+      "Xbox Game Studios"
+    ],
+    "poster_url": "",
+    "platforms": [
+      "PlayStation 5",
+      "Xbox Series S/X",
+      "PC"
+    ],
+    "playtime_hours": 0,
+    "developers": [],
+    "website_url": "",
+    "genres": [
+      "Adventure"
+    ],
+    "rawg_url": "https://rawg.io/games/planet-of-lana-2",
+    "metacritic": null,
+    "description": "Planet of Lana 2 is an adventure game. You can play Planet of Lana 2 on PlayStation 5, Xbox Series S/X and PC."
   },
   "game_indie:plants vs zombies fusion": {
     "title": "Plants vs Zombies: Fusion",
@@ -9162,6 +9767,32 @@
       "Yacht Club Games"
     ],
     "playtime_hours": 5
+  },
+  "game_indie:skate story": {
+    "title": "Skate Story",
+    "media_type": "game_indie",
+    "release_date": "2025-12-08",
+    "rating": 3.9,
+    "publishers": [
+      "Devolver Digital"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/53e/53e81bf358eceeae921de5bf2bc667c0.jpg",
+    "platforms": [
+      "macOS",
+      "PC"
+    ],
+    "playtime_hours": 0,
+    "developers": [
+      "Sam Eng",
+      "by Sam Eng"
+    ],
+    "website_url": "http://www.skatestorygame.com/",
+    "genres": [
+      "Action"
+    ],
+    "rawg_url": "https://rawg.io/games/skate-story",
+    "metacritic": null,
+    "description": "This psychedelic skateboarding experience comes with an aesthetic like Superhot and controls like Skate."
   },
   "game_indie:soulstone survivor": {
     "title": "Soulstone Survivor",
@@ -9381,6 +10012,32 @@
     ],
     "playtime_hours": 4
   },
+  "game_indie:sword of the sea": {
+    "title": "Sword of the Sea",
+    "media_type": "game_indie",
+    "release_date": "2025-08-19",
+    "rating": 4.2,
+    "publishers": [
+      "Giant Squid"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/96b/96bb45a0f2d767dc62f44ae77f5a2387.jpg",
+    "platforms": [
+      "PC",
+      "PlayStation 5"
+    ],
+    "playtime_hours": 0,
+    "developers": [
+      "Giant Squid"
+    ],
+    "website_url": "https://swordoftheseagame.com/",
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "rawg_url": "https://rawg.io/games/sword-of-the-sea",
+    "metacritic": null,
+    "description": "An atmospheric adventure with highspeed movement inspired by skateboarding games. Surf over a surreal landscape of waves on your Hoversword and unveil a lost ocean teeming with life. From the visionary artist behind ABZÛ, The Pathless, and Journey, and featuring a beautiful score by Austin Wintory."
+  },
   "game_indie:terraria": {
     "title": "Terraria",
     "media_type": "game_indie",
@@ -9472,6 +10129,92 @@
       "Digital Sun"
     ],
     "playtime_hours": 5
+  },
+  "game_indie:the midnight walk": {
+    "title": "The Midnight Walk",
+    "media_type": "game_indie",
+    "release_date": "2025-05-07",
+    "rating": 4.2,
+    "publishers": [
+      "Fast Travel Games"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/9fe/9fe45a0666b9a866c43a3ad670da9d45.jpg",
+    "platforms": [
+      "PlayStation 5",
+      "PC"
+    ],
+    "playtime_hours": 12,
+    "developers": [
+      "MoonHood"
+    ],
+    "website_url": "https://www.moonhood.se/",
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "rawg_url": "https://rawg.io/games/the-midnight-walk",
+    "metacritic": null,
+    "description": "Embark upon The Midnight Walk in this reverent dark fantasy adventure built in clay, from the minds behind Lost in Random and Fe. Become The Burnt One, befriend a lost lantern creature named Potboy, and use his flame to light your way through a conflicting world of wonder and suspense. Survive and outsmart the many monsters eager to devour your little friend’s flame as you experience five tales of fire and darkness, featuring an incredible cast of odd characters. Marvel at every disturbing detail in a landscape painstakingly handcrafted with real life clay and animated in a stop motion style. Fully playable in both flatscreen and with a VR headset.AN UNFORGETTABLE JOURNEY OF LIGHT AND DARKJourney with Potboy along the twisted trail of The Midnight Walk. Work with your companion to outsmart monsters, using his flame to distract while you hide from and evade the many threats of The Dark Itself. Encounter new friends and experience awe-inspiring sights as you navigate a path fraught with both peril and affirmation.A GRIM AND BEAUTIFUL HANDCRAFTED WORLDEverything you see in The Midnight Walk, from the drooling snarl of monsters to the bristling tree tops that line the journey was first sculpted in clay and then 3D scanned to a meticulous level of detail. The result is a uniquely layered fantasy world with an artistic imprint, all realized in breathtaking stop motion. Grab a gamepad and jump into the unknown, or step into the endless night in VR."
+  },
+  "game_indie:the outer wilds": {
+    "title": "The Outer Wilds",
+    "media_type": "game_indie",
+    "release_date": "2019-10-25",
+    "rating": 3.9,
+    "publishers": [
+      "Private Division"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/704/704f831d2d132e9614931f1c4eab9e86.jpg",
+    "platforms": [
+      "PlayStation 4",
+      "PC",
+      "Nintendo Switch",
+      "Xbox One"
+    ],
+    "playtime_hours": 8,
+    "developers": [
+      "Obsidian Entertainment"
+    ],
+    "website_url": "https://www.theouterworlds.com/",
+    "genres": [
+      "Action",
+      "Shooter",
+      "Adventure",
+      "RPG"
+    ],
+    "rawg_url": "https://rawg.io/games/the-outer-worlds",
+    "metacritic": 80,
+    "description": "The Outer Worlds is a new single-player first-person sci-fi RPG from Obsidian Entertainment and Private Division. In The Outer Worlds, you awake from hibernation on a colonist ship that was lost in transit to Halcyon, the furthest colony from Earth located at the edge of the galaxy, only to find yourself in the midst of a deep conspiracy threatening to destroy it. As you explore the furthest reaches of space and encounter various factions, all vying for power, the character you decide to become will determine how this player-driven story unfolds. In the corporate equation for the colony, you are the unplanned variable. Key Features The player-driven story RPG: In keeping with the Obsidian tradition, how you approach The Outer Worlds is up to you. Your choices affect not only the way the story develops; but your character build, companion stories, and end game scenarios. You can be flawed, in a good way: New to The Outer Worlds is the idea of flaws. A compelling hero is made by the flaws they carry with them. While playing The Outer Worlds, the game tracks your experience to find what you aren't particularly good at. Keep getting attacked by Raptidons? Taking the Raptiphobia flaw gives you a debuff when confronting the vicious creatures, but rewards you with an additional character perk immediately. This optional approach to the game helps you build the character you want while exploring Halcyon. Lead your companions: During your journey through the furthest colony, you will meet a host of characters who will want to join your crew. Armed with unique abilities, these companions all have their own missions, motivations, and ideals. It's up to you to help them achieve their goals, or turn them to your own ends. Explore the corporate colony: Halcyon is a colony at the edge of the galaxy owned and operated by a corporate board. They control everything... except for the alien monsters left behind when the terraforming of the colony’s two planets didn’t exactly go according to plan. Find your ship, build your crew, and explore the settlements, space stations, and other intriguing locations throughout Halcyon."
+  },
+  "game_indie:the pathless": {
+    "title": "The Pathless",
+    "media_type": "game_indie",
+    "release_date": "2020-11-12",
+    "rating": 3.8,
+    "publishers": [
+      "Annapurna Interactive"
+    ],
+    "poster_url": "https://media.rawg.io/media/games/1f2/1f283264816de6f464d7de144530e9b8.jpg",
+    "platforms": [
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PC"
+    ],
+    "playtime_hours": 2,
+    "developers": [
+      "Annapurna Interactive",
+      "Giant Squid"
+    ],
+    "website_url": "http://thepathless.com/",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "rawg_url": "https://rawg.io/games/the-pathless",
+    "metacritic": 78,
+    "description": "From the creators of ABZÛ, The Pathless is the mythic adventure of an archer and an eagle in a vast forest. Become the Hunter, a master of archery who travels to a mystical island to dispel a curse of darkness that grips the world. Forge a connection with your eagle companion as you hunt corrupted spirits, but be careful to not become the hunted yourself. Explore misty forests full of secrets, solve puzzles in ancient ruins, and test your skill in epic battles. The bond with your eagle and the fate of the world hang in the balance."
   },
   "game_indie:the plucky squire": {
     "title": "The Plucky Squire",
@@ -9752,26 +10495,69 @@
   "game_lan:black ops 2 zombie maps": {
     "title": "Black Ops 2 (Zombie Maps)",
     "media_type": "game_lan",
-    "rating": null,
-    "poster_url": null,
-    "platforms": null,
-    "website_url": null,
-    "genres": null,
-    "description": null,
-    "rawg_url": null,
-    "release_date": null
+    "rating": 4.0,
+    "poster_url": "https://media.rawg.io/media/games/410/41033a495ce8f7fd4b0934bdb975f12a.jpg",
+    "platforms": [
+      "macOS",
+      "PC",
+      "iOS",
+      "Nintendo DS",
+      "PlayStation 3",
+      "Xbox One",
+      "Wii",
+      "Xbox 360"
+    ],
+    "website_url": "https://www.callofduty.com/blackops",
+    "genres": [
+      "Action",
+      "Shooter"
+    ],
+    "description": "Call of Duty: Black Ops is a first-person shooter, a seventh installment in the series altogether and a sequel to Call of Duty: World at War. The game takes place during the Cold War and shows different historical periods of it. The main character is a CIA agent, set out on different classified missions and tasked with eliminating enemies if needed. The story in the game is complicated, featuring characters from the previous games, and historical figures like JFK and Fidel Castro. Despite its emphasis on the scenario and real-world plausibility, Black Ops doesn’t lack in gameplay terms, as the combat system is, as established in series, extensive and realistic. The graphics are made for the player’s highest level of entertainment, with massive special effects and excellent quality of every detail. Call of Duty: Black Ops features a trademark multiplayer system, with different game modes, competitive play, and cooperative maps. The players can earn ranks for their performance, unlock new customizable weapons and different perks for use in the upcoming battles.",
+    "rawg_url": "https://rawg.io/games/call-of-duty-black-ops",
+    "release_date": "2010-11-09",
+    "developers": [
+      "Raven Software",
+      "Treyarch",
+      "n-Space"
+    ],
+    "metacritic": 81,
+    "publishers": [
+      "Square Enix",
+      "Activision Blizzard",
+      "Activison"
+    ],
+    "playtime_hours": 9
   },
   "game_lan:black4blood pummel party rainbow six vegas 2 golf with your friends dead by daylight": {
     "title": "Black4Blood\nPummel Party\nRainbow Six Vegas 2\nGolf With Your Friends\nDead by Daylight",
     "media_type": "game_lan",
-    "rating": null,
-    "poster_url": null,
-    "platforms": null,
-    "website_url": null,
-    "genres": null,
-    "description": null,
-    "rawg_url": null,
-    "release_date": null
+    "rating": 3.5,
+    "poster_url": "https://media.rawg.io/media/games/e11/e11325e2f89151d31f612e38dee3b6a0.jpg",
+    "platforms": [
+      "Nintendo Switch",
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "PlayStation 5"
+    ],
+    "website_url": "http://www.deadbydaylight.com",
+    "genres": [
+      "Action"
+    ],
+    "description": "This asymmetric multiplayer horror game in which one of the players tries on the role of a brutal killer, while the other four try to escape. Survivors play with a third person perspective, and the killer uses the first-person camera. The game has no singleplayer. Players can choose from 13 survivors and 12 killers. Each of them differs from each other with own upgrades system and special actions. There is no need to be polite and cooperative - every player for himself. Each level is procedurally generated, and each new round is offering a unique experience. The game engine selects from 10 presets, The plot of the game tells a story about the supernatural being of The Entity, who created the world and populated it with serial killers. To save players have to perform a number of tasks, which include the repair of generators and other interactions with the items on the map. All actions with objects launch the so-called Skill Check - RNG that decides whether or not the action will be successful.",
+    "rawg_url": "https://rawg.io/games/dead-by-daylight",
+    "release_date": "2016-06-14",
+    "developers": [
+      "Behaviour Interactive",
+      "Behaviour Digital"
+    ],
+    "metacritic": 72,
+    "publishers": [
+      "Koch Media",
+      "Behaviour Interactive",
+      "Starbreeze Studios"
+    ],
+    "playtime_hours": 10
   },
   "game_lan:fall guys": {
     "title": "Fall Guys",
@@ -9783,21 +10569,43 @@
     ],
     "website_url": "",
     "genres": [],
-    "description": "",
+    "description": "fall guys is a game developed by LegacyHypeOmg. It was originally released in 2020. The game is rated as \"Skip\" on RAWG. You can play fall guys on PC. The game is sold via itch.io.",
     "rawg_url": "https://rawg.io/games/fall-guys-2",
-    "release_date": "2020-10-25"
+    "release_date": "2020-10-25",
+    "developers": [
+      "LegacyHypeOmg"
+    ],
+    "metacritic": null,
+    "publishers": [],
+    "playtime_hours": 0
   },
   "game_lan:gears of war 5 horde mode": {
     "title": "Gears of War 5 (Horde Mode)",
     "media_type": "game_lan",
-    "rating": null,
-    "poster_url": null,
-    "platforms": null,
-    "website_url": null,
-    "genres": null,
-    "description": null,
-    "rawg_url": null,
-    "release_date": null
+    "rating": 3.9,
+    "poster_url": "https://media.rawg.io/media/games/121/1213f8b9b0a26307e672cf51f34882f8.jpg",
+    "platforms": [
+      "Xbox Series S/X",
+      "PC",
+      "Xbox One"
+    ],
+    "website_url": "https://gears5.com",
+    "genres": [
+      "Action",
+      "Shooter"
+    ],
+    "description": "From one of gaming’s most acclaimed sagas, Gears is bigger than ever, with five thrilling modes and the deepest campaign yet. With all-out war descending, Kait Diaz breaks away to uncover her connection to the enemy and discovers the true danger to Sera – herself. *Xbox Live account required. Visit www.gears5.com for additional information.",
+    "rawg_url": "https://rawg.io/games/gears-5",
+    "release_date": "2019-09-10",
+    "developers": [
+      "The Coalition"
+    ],
+    "metacritic": 83,
+    "publishers": [
+      "Microsoft Studios",
+      "Xbox Game Studios"
+    ],
+    "playtime_hours": 7
   },
   "game_lan:grounded 2": {
     "title": "Grounded 2",
@@ -9813,9 +10621,18 @@
       "Adventure",
       "Action"
     ],
-    "description": "",
+    "description": "When you've been shrunk to the size of an ant, what was once familiar is now a wild, uncharted frontier. Traverse sprawling manmade spaces overgrown with nature with buggies that can fight alongside with you, uncover hidden secrets, and fight to survive in a world much larger than the backyard. The playground may seem familiar, but beneath its bright colors and towering structures lie mysteries hidden in plain sight. Are you ready to uncover them? Survive, Adapt, Overcome The world is relentless, but so are you. Shape your adventure with unique archetypes, each offering distinct abilities to match your playstyle. Whether you rely on precision, cunning, or sheer strength, you’ll need every advantage to survive against the threats lurking in the park. Stronger Together The perils of the park are daunting alone, but with friends, every challenge becomes an adventure. Work together to build, fight, and uncover the secrets buried beneath the grass. Whether you’re facing danger side by side or continuing your journey in a shared world, survival is always better with allies. Walking is Bogus Introducing Buggies They scurry, they fight, and now—they help you survive. Hatch, raise, and ride your own insect friends - buggies! Saddle up and ride through the park, command them in battle, or have them help gather resources. The right partner could mean the difference between thriving and barely surviving. A Shadow That Follows You The threat is always there—watching, learning, waiting. You don’t know where it’s coming from, only that it never leaves. The deeper you dig, the closer it gets. Some mysteries should stay buried, but it’s too late now. It knows you’re looking. And it’s ready. Every answer drags you deeper, every step invites something closer. You were never alone. You thought you were in control. You were wrong.",
     "rawg_url": "https://rawg.io/games/grounded-2-2",
-    "release_date": "2025-07-29"
+    "release_date": "2025-07-29",
+    "developers": [
+      "Obsidian Entertainment",
+      "Eidos Montreal"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "Xbox Game Studios"
+    ],
+    "playtime_hours": 12
   },
   "game_lan:killing floor 3": {
     "title": "Killing Floor 3",
@@ -9825,25 +10642,44 @@
     "platforms": [
       "PC"
     ],
-    "website_url": "",
+    "website_url": "https://www.killingfloor3.com",
     "genres": [
       "Action"
     ],
-    "description": "",
+    "description": "EDITIONS BREAKDOWN Pre-Purchase OfferPre-Order any edition of Killing Floor 3 to receive: \"Flatliner\" Weapon Skin SetFear the Reaper Weapon TrinketSpecial Action Force Player Card Digital Deluxe EditionPurchase the Digital Deluxe Edition and Receive: “Shadow Agent” Specialist Skin Set“Shadow Agent” Weapon Skin SetNightfall Supply Pass1000 Creds Elite Nightfall EditionPurchase the Elite Nightfall Edition and Receive:- “Shadow Agent” Specialist Skin Set- “Shadow Agent” Weapon Skin Set- Year 1 Premium Nightfall Supply Pass Access (4 Supply Passes)- 3000 Creds About the GameIt’s 2091. Join up with Nightfall, the last line of defense against megacorp Horzine’s inhuman army of monstrous zeds. The future is in your hands… if you can survive long enough to reach it.Killing Floor 3 is the next installment in the legendary action/horror series. This intense FPS puts you in the boots of a Nightfall specialist joining forces with up to five teammates to battle waves of Zeds, earn dosh, unlock skills, and build the ultimate arsenal.Assemble the ultimate zed extermination squad for frenzied 6-player co-op. You can also brave the battlefield alone in tense single-player mode.Brace yourself for the most lethal zeds yet. Every enemy has been redesigned and retuned with smarter AI; making them faster, deadlier, and more strategic than ever.From flamethrowers to shotguns to katanas, you’ll have an expansive arsenal at your disposal. Customize your own unique brand of bloodletting with hundreds of mods, gadgets, and skills to choose from.Drop into a variety of treacherous hot zones where you’ll have to contain the further spread of the Outbreak. Thankfully, you can use the environment to your advantage by activating turrets, fans, and other devastating traps.Our M.E.A.T. System returns to deliver even more realistic carnage. Featuring additional points of dismemberment and persistent blood, the game responds to your attacks with gruesome authenticity.",
     "rawg_url": "https://rawg.io/games/killing-floor-3",
-    "release_date": "2025-07-24"
+    "release_date": "2025-07-24",
+    "developers": [
+      "Tripwire Interactive"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "Tripwire Interactive"
+    ],
+    "playtime_hours": 3
   },
   "game_lan:overcooked overcooked 2 halo 3 phasmaphobia warcraft 3": {
     "title": "Overcooked\nOvercooked 2\nHalo 3\nPhasmaphobia\nWarcraft 3",
     "media_type": "game_lan",
-    "rating": null,
-    "poster_url": null,
-    "platforms": null,
-    "website_url": null,
-    "genres": null,
-    "description": null,
-    "rawg_url": null,
-    "release_date": null
+    "rating": 4.5,
+    "poster_url": "https://media.rawg.io/media/games/667/667b4447a90c4896bfd48400ae76af28.jpg",
+    "platforms": [
+      "PC",
+      "macOS"
+    ],
+    "website_url": "http://www.blizzard.com/war3/",
+    "genres": [
+      "Strategy"
+    ],
+    "description": "It has been nearly fifteen years since the war between the orcs and humans ended. An uneasy peace settled over the land while, for years, the drums of war were silent. Yet the kingdoms of men grew complacent in their victory - and slowly, the defeated orcish clans regrouped under the banner of a new visionary leader. Now a darker shadow has fallen over the world, threatening to extinguish all life - all hope. The drums of war play upon the winds once again - rising urgently towards the inevitable hour when the skies will rain fire - and the world will tremble before the coming of the Burning Legion. The Day of Judgment has come...",
+    "rawg_url": "https://rawg.io/games/warcraft-3-reign-of-chaos",
+    "release_date": "2002-07-03",
+    "developers": [],
+    "metacritic": 92,
+    "publishers": [
+      "Blizzard Entertainment"
+    ],
+    "playtime_hours": 0
   },
   "game_lan:payday 2": {
     "title": "Payday 2",
@@ -9855,14 +10691,24 @@
       "Xbox One",
       "Linux"
     ],
-    "website_url": "",
+    "website_url": "http://www.crimenet.info",
     "genres": [
       "Shooter",
       "Action"
     ],
-    "description": "",
+    "description": "The gang is back, and they have bigger and better plans. Objective based cooperative FPS became more complicated. The classic group of Hoxton, Dallas, Chains and Wolf got reinforcement, and now Payday Gang consists of 21 heisters, some of which are based on movie characters or even Youtubers. Players will be able to customize their own private arsenal, their masks, and skills, to complete the missions in their own way, be it stealthy sneak-in or full frontal assault. After completing missions, players will receive EXP points, money and a chance to get a special item that can be a gun modification, mask or a safe containing weapon skins. Payday 2 is a multiplayer game, meaning, that even during offline missions players will be followed by AI characters, whose loadouts, masks and perks can be customized as well. This game has been supported by the developers for many years, and amount of DLC speaks plenty of their dedication to the player base.",
     "rawg_url": "https://rawg.io/games/payday-2",
-    "release_date": "2013-08-13"
+    "release_date": "2013-08-13",
+    "developers": [
+      "505 Games",
+      "OVERKILL Software"
+    ],
+    "metacritic": 79,
+    "publishers": [
+      "505 Games",
+      "Starbreeze"
+    ],
+    "playtime_hours": 9
   },
   "game_lan:peak": {
     "title": "Peak",
@@ -9873,23 +10719,51 @@
       "PC",
       "macOS"
     ],
-    "website_url": "",
-    "genres": [],
-    "description": "",
+    "website_url": "https://store.steampowered.com/app/3527290/",
+    "genres": [
+      "Adventure"
+    ],
+    "description": "PEAK is a co-op climbing game made together with Aggro Crab where the slightest mistake can spell your doom. Either solo or as a group of lost nature scouts, your only hope of rescue from a mysterious island is to scale the mountain at its center. Do you have what it takes to reach the PEAK?",
     "rawg_url": "https://rawg.io/games/the-peak",
-    "release_date": "2017-05-07"
+    "release_date": "2017-05-07",
+    "developers": [],
+    "metacritic": null,
+    "publishers": [
+      "Landfall",
+      "Aggro Crab"
+    ],
+    "playtime_hours": 0
   },
   "game_lan:rainbow six siege terrorist hunt": {
     "title": "Rainbow Six Siege (Terrorist Hunt)",
     "media_type": "game_lan",
-    "rating": null,
-    "poster_url": null,
-    "platforms": null,
-    "website_url": null,
-    "genres": null,
-    "description": null,
-    "rawg_url": null,
-    "release_date": null
+    "rating": 3.9,
+    "poster_url": "https://media.rawg.io/media/games/b34/b3419c2706f8f8dbe40d08e23642ad06.jpg",
+    "platforms": [
+      "Xbox One",
+      "PC",
+      "PlayStation 4",
+      "Xbox Series S/X",
+      "PlayStation 5"
+    ],
+    "website_url": "http://rainbow6.ubi.com/",
+    "genres": [
+      "Action",
+      "Shooter"
+    ],
+    "description": "The gameplay of the game is based on intense strategic battles between the Navigator and the defenders in a limited space. Locations in the game consist of a multi-level object (for example, a multi-storey building), inside which there are defenders, and the area around it, where the attackers begin. Destruction is at the head of the game mechanics. The surrounding objects are created with maximum realism, the degree of damage depends on the calibre of the bullets used by the players or on the total power of the laid explosives. Walls can be destroyed, creating new firing positions and shelters. Optimal use of the potential of destruction often becomes a guarantee of victory. Defenders can limit the ability of attackers to destroy, using kits to strengthen the walls and the device of some operatives. The primary game mode - multiplayer, normal or rating. During the game in the last mode, the player is assigned a certain rank, and parameters such as the ratio of kills/deaths and wins/losses are recorded in his profile displayed in the game.",
+    "rawg_url": "https://rawg.io/games/tom-clancys-rainbow-six-siege-2",
+    "release_date": "2015-12-01",
+    "developers": [
+      "Ubisoft",
+      "Ubisoft Montreal",
+      "Sperasoft"
+    ],
+    "metacritic": 75,
+    "publishers": [
+      "Ubisoft Entertainment"
+    ],
+    "playtime_hours": 32
   },
   "game_lan:repo": {
     "title": "R.E.P.O",
@@ -9903,9 +10777,17 @@
     "genres": [
       "Action"
     ],
-    "description": "",
+    "description": "R.E.P.O. is an online co-op horror game featuring physics, proximity voice chat and scary monsters. You and up to 5 friends can venture into terrifying environments to extract valuable objects using your physics-based grabbing tool. Even the monsters are affected by Newton's law of gravity! Under the employ of a mysterious computer intelligence. It is your job to locate, transport and extract valuable items from the haunted remains of a long lost humanity. ...but know when to stay quiet. Transport anything from heavy pianos to fragile ceramics and use teamwork to make sure that the precious cargo will safely reach its destination. Robotic enhancements increase your chances! Use your hard earned cash [SURPLUS] to purchase upgrades and weapons from your heartless [GENEROUS] creator.",
     "rawg_url": "https://rawg.io/games/repo-2",
-    "release_date": ""
+    "release_date": "",
+    "developers": [
+      "semiwork"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "semiwork"
+    ],
+    "playtime_hours": 4
   },
   "game_lan:straftat": {
     "title": "Straftat",
@@ -9919,9 +10801,18 @@
     "genres": [
       "Action"
     ],
-    "description": "",
+    "description": "Straftat is a free to play, online, proximity chat enabled, 1v1 first person shooter taking place in a wide variety of maps with a large choice of firearms, explosives and melee weapons. A match is composed of a number rounds. A round ends when only one survivor remains. Each round takes place in a different environment.Straftat features 70 arenas to play in. Each map contains its own set of weapons.Pick them up and hunt down your opponent.Unlock hats and fashion ware through unique challenges.Keyboard and Gamepad supported",
     "rawg_url": "https://rawg.io/games/straftat",
-    "release_date": "2024-10-24"
+    "release_date": "2024-10-24",
+    "developers": [
+      "Sirius Lemaitre",
+      "Leonard Lemaitre"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "Lemaitre Bros"
+    ],
+    "playtime_hours": 2
   },
   "game_lan:tear down": {
     "title": "Tear down",
@@ -9936,9 +10827,17 @@
       "Arcade",
       "Adventure"
     ],
-    "description": "",
+    "description": "Tear down these walls by tapping and rotating the wheel. Match colors. Play the game! BEAT MY SCORE!!!",
     "rawg_url": "https://rawg.io/games/tear-down-walls",
-    "release_date": "2015-08-23"
+    "release_date": "2015-08-23",
+    "developers": [
+      "Squad Social"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "Squad Social"
+    ],
+    "playtime_hours": 0
   },
   "game_lan:the outlast trials": {
     "title": "The Outlast Trials",
@@ -9958,20 +10857,44 @@
       "Adventure",
       "Action"
     ],
-    "description": "",
+    "description": "Set in the era of the Cold War, human guinea pigs are involuntarily recruited by the good folks at the Murkoff Corporation to test advanced methods of brainwashing and mind control. In a world of distrust, fear, and violence, your morals will be challenged, your endurance tested, and your sanity crushed. All in the name of progress, science, and profit. Red Barrels invites you to experience mind-numbing terror, this time with friends. Work together and maybe you’ll survive The Outlast Trials. It’s always better to shit your pants in good company.",
     "rawg_url": "https://rawg.io/games/the-outlast-trials",
-    "release_date": "2024-03-05"
+    "release_date": "2024-03-05",
+    "developers": [
+      "Red Barrels"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "Red Barrels"
+    ],
+    "playtime_hours": 8
   },
   "game_lan:whos your daddy": {
     "title": "Who’s Your Daddy?",
     "media_type": "game_lan",
-    "rating": null,
-    "poster_url": null,
-    "platforms": null,
-    "website_url": null,
-    "genres": null,
-    "description": null,
-    "rawg_url": null,
-    "release_date": null
+    "rating": 2.9,
+    "poster_url": "https://media.rawg.io/media/screenshots/d40/d4016a4fe0348b6ec91c9345c4fdf816.jpg",
+    "platforms": [
+      "PC",
+      "macOS",
+      "Linux"
+    ],
+    "website_url": "",
+    "genres": [
+      "Action",
+      "Casual",
+      "Indie"
+    ],
+    "description": "DescriptionWho's Your Daddy is a casual 1 on 1 video game featuring a clueless father attempting to prevent his infant son from certain death.Current Features A beautiful home for you to watch over your son in Physics based game play allowing you to move small objects as you please Beautiful compositions to be played on your baby's piano Two unique character types to play as Randomized locations of crucial items Awesome power ups for being able to do chores Available for PC, Mac and Linux/Steam OSThe CharactersWho's Your Daddy features two different characters to play as, the daddy and the baby. DaddyThe daddy's goal is to prevent the baby from dying. He has a number of items that can be found inside the house to help him complete this task such as: Power Outlet Covers Cabinet Locks PillsThe father player also has the option to do various chores around the house, such as cleaning up toys or changing a smoke alarm battery. Doing these side activities rewards the father player with a power up to help him watch over his son. Some examples of these are: Peek-A-Boo: Makes the daddy invisible Bat Dad: Daddy can see baby's health and location through walls Say Momma: Daddy can see the location of important objects through wallsThe daddy player faces a number of challenges, due to needing the knowledge of how to approach any danger his baby may be in. He needs to be alert, fast moving and prepared for anything if he wants to keep his son safe.BabyThe baby's goal is to take his own life using whatever objects within the house he can get his little hands on. This includes actions such as: Shoving forks into power outlets Chugging various cleaning products Scuba diving unsupervised in the tub The baby player has minimal responsibility and this allows for a simple, yet erratic play style.",
+    "rawg_url": "https://rawg.io/games/whos-your-daddy",
+    "release_date": "2016-05-13",
+    "developers": [
+      "Evil Tortilla Games"
+    ],
+    "metacritic": null,
+    "publishers": [
+      "Evil Tortilla Games"
+    ],
+    "playtime_hours": 1
   }
 }
