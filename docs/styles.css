@@ -171,6 +171,20 @@
   border-color: #2f6b51;
 }
 
+:root[data-theme="dark"] .special-cards-rail::-webkit-scrollbar-track {
+  background: #1a2741;
+  border: 1px solid #2f4467;
+}
+
+:root[data-theme="dark"] .special-cards-rail::-webkit-scrollbar-thumb {
+  background: #7fb2ff;
+  border: 2px solid #1a2741;
+}
+
+:root[data-theme="dark"] .special-cards-rail::-webkit-scrollbar-thumb:hover {
+  background: #9bc3ff;
+}
+
 :root[data-theme="dark"] .map-special-entry {
   background: #182339;
   border-color: #314563;
@@ -938,6 +952,7 @@ td.card-number {
 .specials-list {
   display: grid;
   gap: 10px;
+  min-width: 0;
   padding-top: 12px;
 }
 
@@ -962,6 +977,9 @@ td.card-number {
 }
 
 .special-group {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
   padding: 14px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1014,10 +1032,14 @@ td.card-number {
 
 .special-cards-rail {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   margin-top: 10px;
   overflow-x: scroll;
   overflow-y: hidden;
   scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
   padding: 0 0 4px;
 }
 
@@ -1418,7 +1440,7 @@ td.card-number {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fbfcfe;
-  overflow: clip;
+  overflow: hidden;
 }
 
 .subsection-panel summary {
