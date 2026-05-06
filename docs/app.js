@@ -48,6 +48,8 @@ const NEWS_CATEGORIES = [
   { key: "entertainment", label: "Entertainment" },
   { key: "climbing", label: "Climbing" },
 ];
+const DASHBOARD_ORDER_STORAGE_KEY = "my-dashboard:module-order:v1";
+const DASHBOARD_OPEN_STATE_STORAGE_KEY = "my-dashboard:module-open-state:v1";
 
 const state = {
   rows: [],
@@ -145,6 +147,7 @@ const elements = {
   todayDate: document.querySelector("#today-date"),
   lastScraped: document.querySelector("#last-scraped"),
   themeToggle: document.querySelector("#theme-toggle"),
+  layoutEditToggle: document.querySelector("#layout-edit-toggle"),
 };
 const mapRangeButtons = [...document.querySelectorAll(".map-range-button[data-range]")];
 
@@ -1569,6 +1572,195 @@ function saveThemePreference(theme) {
   } catch {
     // Ignore storage failures.
   }
+}
+
+function normalizeModuleId(label) {
+  return String(label || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function getDashboardSections() {
+  return [...document.querySelectorAll("main > details.dashboard-section")];
+}
+
+function ensureDashboardSectionIds() {
+  for (const section of getDashboardSections()) {
+    if (section.dataset.moduleId) {
+      continue;
+    }
+    const summaryLabel = section.querySelector("summary span")?.textContent || "";
+    section.dataset.moduleId = normalizeModuleId(summaryLabel);
+  }
+}
+
+function loadDashboardOrderPreference() {
+  try {
+    const raw = localStorage.getItem(DASHBOARD_ORDER_STORAGE_KEY) || "";
+    if (!raw) {
+      return [];
+    }
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed.filter((value) => typeof value === "string" && value) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveDashboardOrderPreference() {
+  try {
+    const orderedIds = getDashboardSections().map((section) => section.dataset.moduleId || "").filter(Boolean);
+    localStorage.setItem(DASHBOARD_ORDER_STORAGE_KEY, JSON.stringify(orderedIds));
+  } catch {
+    // Ignore localStorage failures.
+  }
+}
+
+function applyDashboardOrderPreference() {
+  ensureDashboardSectionIds();
+  const orderedIds = loadDashboardOrderPreference();
+  if (!orderedIds.length) {
+    return;
+  }
+  const main = document.querySelector("main");
+  if (!main) {
+    return;
+  }
+  const sectionMap = new Map(getDashboardSections().map((section) => [section.dataset.moduleId, section]));
+  for (const id of orderedIds) {
+    const section = sectionMap.get(id);
+    if (section) {
+      main.appendChild(section);
+    }
+  }
+}
+
+function loadDashboardOpenStatePreference() {
+  try {
+    const raw = localStorage.getItem(DASHBOARD_OPEN_STATE_STORAGE_KEY) || "";
+    if (!raw) {
+      return {};
+    }
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveDashboardOpenStatePreference() {
+  try {
+    const payload = {};
+    for (const section of getDashboardSections()) {
+      const id = section.dataset.moduleId || "";
+      if (!id) {
+        continue;
+      }
+      payload[id] = Boolean(section.open);
+    }
+    localStorage.setItem(DASHBOARD_OPEN_STATE_STORAGE_KEY, JSON.stringify(payload));
+  } catch {
+    // Ignore localStorage failures.
+  }
+}
+
+function applyDashboardOpenStatePreference() {
+  ensureDashboardSectionIds();
+  const openStateById = loadDashboardOpenStatePreference();
+  for (const section of getDashboardSections()) {
+    const id = section.dataset.moduleId || "";
+    if (!id || !(id in openStateById)) {
+      continue;
+    }
+    section.open = Boolean(openStateById[id]);
+  }
+}
+
+function setLayoutEditMode(isEditing) {
+  document.body.classList.toggle("is-editing-layout", Boolean(isEditing));
+  if (elements.layoutEditToggle) {
+    elements.layoutEditToggle.textContent = isEditing ? "Done editing" : "Edit mode";
+    elements.layoutEditToggle.setAttribute("aria-pressed", isEditing ? "true" : "false");
+  }
+}
+
+function moveDashboardSection(section, direction) {
+  const sections = getDashboardSections();
+  const currentIndex = sections.indexOf(section);
+  if (currentIndex < 0) {
+    return;
+  }
+  const nextIndex = currentIndex + direction;
+  if (nextIndex < 0 || nextIndex >= sections.length) {
+    return;
+  }
+  const main = document.querySelector("main");
+  if (!main) {
+    return;
+  }
+  const target = sections[nextIndex];
+  if (direction < 0) {
+    main.insertBefore(section, target);
+  } else {
+    main.insertBefore(target, section);
+  }
+  saveDashboardOrderPreference();
+}
+
+function setupDashboardSectionEditor() {
+  ensureDashboardSectionIds();
+  applyDashboardOrderPreference();
+  applyDashboardOpenStatePreference();
+
+  for (const section of getDashboardSections()) {
+    const summary = section.querySelector("summary");
+    if (!summary || summary.querySelector(".module-edit-controls")) {
+      continue;
+    }
+
+    const controls = document.createElement("span");
+    controls.className = "module-edit-controls";
+
+    const upButton = document.createElement("button");
+    upButton.type = "button";
+    upButton.className = "module-order-button";
+    upButton.textContent = "Up";
+    upButton.setAttribute("aria-label", "Move module up");
+    upButton.title = "Move module up";
+
+    const downButton = document.createElement("button");
+    downButton.type = "button";
+    downButton.className = "module-order-button";
+    downButton.textContent = "Down";
+    downButton.setAttribute("aria-label", "Move module down");
+    downButton.title = "Move module down";
+
+    for (const button of [upButton, downButton]) {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+      });
+    }
+
+    upButton.addEventListener("click", () => {
+      moveDashboardSection(section, -1);
+    });
+    downButton.addEventListener("click", () => {
+      moveDashboardSection(section, 1);
+    });
+
+    controls.appendChild(upButton);
+    controls.appendChild(downButton);
+    summary.appendChild(controls);
+
+    section.addEventListener("toggle", () => {
+      saveDashboardOpenStatePreference();
+    });
+  }
+
+  setLayoutEditMode(false);
 }
 
 function weatherIcon(weatherCode) {
@@ -3121,6 +3313,13 @@ if (elements.themeToggle) {
   });
 }
 
+if (elements.layoutEditToggle) {
+  elements.layoutEditToggle.addEventListener("click", () => {
+    const isEditing = !document.body.classList.contains("is-editing-layout");
+    setLayoutEditMode(isEditing);
+  });
+}
+
 if (elements.watchlistMediaButtons) {
   elements.watchlistMediaButtons.addEventListener("click", (event) => {
     const button = event.target.closest(".watchlist-media-button");
@@ -3265,6 +3464,8 @@ if (storedTheme) {
   applyTheme("light");
 }
 
+setupDashboardSectionEditor();
+
 load();
 setHeaderDate();
 loadMetadata();
@@ -3277,9 +3478,6 @@ loadWatchlist();
 loadSpecials();
 loadQuicketEvents();
 syncRangeButtons();
-
-
-
 
 
 

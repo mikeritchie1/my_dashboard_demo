@@ -429,6 +429,34 @@ main {
   list-style: none;
 }
 
+.module-edit-controls {
+  margin-left: auto;
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+body.is-editing-layout .module-edit-controls {
+  display: inline-flex;
+}
+
+.module-order-button {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.module-order-button:hover {
+  border-color: var(--accent-strong);
+  color: var(--accent-strong);
+}
+
 .dashboard-section summary::-webkit-details-marker {
   display: none;
 }
