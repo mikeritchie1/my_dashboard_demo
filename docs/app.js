@@ -93,6 +93,7 @@ const state = {
   selectedNewsId: "",
   selectedNewsCategory: "all",
   isNewsExpanded: false,
+  releaseItems: [],
 };
 
 const elements = {
@@ -403,33 +404,118 @@ function renderTable(rows) {
   }
 }
 
-function renderPosters(container, items, emptyText) {
+function renderPosters(container, items, emptyText, options = {}) {
   if (!items.length) {
     container.innerHTML = `<p class="empty">${emptyText}</p>`;
     return;
   }
 
   container.innerHTML = "";
-  for (const item of items) {
+  const interactiveRelease = Boolean(options.interactiveRelease);
+  for (let index = 0; index < items.length; index += 1) {
+    const item = items[index];
     const link = document.createElement("a");
     link.className = "poster-card";
     link.href = item.url;
     link.target = "_blank";
     link.rel = "noreferrer";
-    link.title = item.title;
+    const ratingNumber = parseRatingValue(item.tmdb_rating || item.rating);
+    const hoverRating = Number.isFinite(ratingNumber) ? `${ratingNumber.toFixed(1)}/10` : "";
+    link.title = hoverRating ? `${item.title} | Rating: ${hoverRating}` : item.title;
+    if (interactiveRelease) {
+      link.dataset.releaseIndex = String(index);
+    }
 
     const image = document.createElement("img");
     image.src = item.image;
     image.alt = item.title;
     image.loading = "lazy";
+    image.title = link.title;
 
     const title = document.createElement("span");
     const releaseDate = displayDate(item.release_date);
-    title.textContent = releaseDate ? `${item.title} (${releaseDate})` : item.title;
+    title.textContent = interactiveRelease ? item.title : releaseDate ? `${item.title} (${releaseDate})` : item.title;
+    title.title = link.title;
 
     link.append(image, title);
     container.append(link);
   }
+}
+
+function parseRatingValue(value) {
+  const raw = String(value || "").trim();
+  if (!raw) {
+    return Number.NaN;
+  }
+  const direct = Number(raw);
+  if (Number.isFinite(direct)) {
+    return direct;
+  }
+  const match = raw.match(/([0-9]+(?:\.[0-9]+)?)/);
+  if (!match) {
+    return Number.NaN;
+  }
+  const parsed = Number(match[1]);
+  return Number.isFinite(parsed) ? parsed : Number.NaN;
+}
+
+function openReleaseDetail(item) {
+  if (!elements.watchlistDetailPanel || !elements.watchlistDetailContent || !item) {
+    return;
+  }
+
+  const title = String(item.title || "Movie").trim();
+  const safeTitle = escapeHtml(title);
+  const posterUrl = String(item.poster_url || item.image || "").trim();
+  const ratingNumber = Number(item.tmdb_rating || item.rating);
+  const ratingText = Number.isFinite(ratingNumber) ? `${ratingNumber.toFixed(1)}/10` : "";
+  const releaseDate = displayDatePlain(String(item.release_date || "").trim());
+  const runtimeValue = Number(item.runtime_minutes);
+  const runtime = Number.isFinite(runtimeValue) && runtimeValue > 0 ? `${runtimeValue} min` : "";
+  const genres = joinList(item.genres) || "";
+  const directors = joinList(item.directors) || "Unknown";
+  const actors = joinList(item.actors) || "Unknown";
+  const description = stripHtmlTags(item.overview || "") || "No description yet.";
+  const trailerUrl = String(item.trailer_url || "").trim();
+  const tmdbUrl = String(item.tmdb_url || "").trim();
+  const timingBits = [releaseDate, runtime].filter(Boolean);
+  const posterHtml = posterUrl
+    ? `<img class="watchlist-detail-poster" src="${posterUrl}" alt="${safeTitle} poster">`
+    : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
+  const ratingHtml = ratingText ? `<p class="watchlist-detail-rating">${escapeHtml(ratingText)}</p>` : "";
+
+  elements.watchlistDetailContent.innerHTML = `
+    <div class="watchlist-detail-layout">
+      ${posterHtml}
+      <div class="watchlist-detail-body">
+        <p class="watchlist-detail-kicker">Release Radar</p>
+        <h3>${safeTitle}</h3>
+        ${ratingHtml}
+        ${timingBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(timingBits.join(" • "))}</p>` : ""}
+        ${genres ? `<p class="watchlist-detail-meta">${escapeHtml(genres)}</p>` : ""}
+        <p class="watchlist-detail-description">${escapeHtml(description)}</p>
+        <p><strong>Directors:</strong> ${escapeHtml(directors)}</p>
+        <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>
+        <div class="watchlist-detail-links">
+          ${trailerUrl ? `<a href="${trailerUrl}" target="_blank" rel="noreferrer">Trailer</a>` : ""}
+          ${tmdbUrl ? `<a href="${tmdbUrl}" target="_blank" rel="noreferrer">TMDB</a>` : ""}
+        </div>
+      </div>
+    </div>
+  `;
+
+  elements.watchlistDetailPanel.hidden = false;
+  elements.watchlistDetailPanel.classList.add("is-open");
+  elements.watchlistDetailPanel.classList.remove(
+    "is-loved",
+    "opinion-loved",
+    "opinion-liked",
+    "opinion-mixed",
+    "opinion-disliked",
+    "opinion-hated",
+  );
+  elements.watchlistDetailPanel.dataset.watchOpinion = "";
+  document.body.classList.add("watchlist-detail-open");
 }
 
 function formatNewsDate(value) {
@@ -2957,8 +3043,11 @@ async function loadReleases() {
       throw new Error(`Could not load ${RELEASES_PATH}`);
     }
     const payload = await response.json();
-    renderPosters(elements.releaseGrid, payload.items || [], "No releases found.");
+    const items = Array.isArray(payload.items) ? payload.items : [];
+    state.releaseItems = items;
+    renderPosters(elements.releaseGrid, items, "No releases found.", { interactiveRelease: true });
   } catch (error) {
+    state.releaseItems = [];
     elements.releaseGrid.innerHTML = `<p class="empty">${error.message}</p>`;
   }
 }
@@ -3420,6 +3509,21 @@ if (elements.newsList) {
   });
 }
 
+if (elements.releaseGrid) {
+  elements.releaseGrid.addEventListener("click", (event) => {
+    const card = event.target.closest(".poster-card[data-release-index]");
+    if (!card) {
+      return;
+    }
+    event.preventDefault();
+    const index = Number(card.dataset.releaseIndex);
+    if (!Number.isInteger(index) || index < 0 || index >= state.releaseItems.length) {
+      return;
+    }
+    openReleaseDetail(state.releaseItems[index]);
+  });
+}
+
 if (elements.newsCategoryButtons) {
   elements.newsCategoryButtons.addEventListener("click", (event) => {
     const button = event.target.closest("[data-news-category]");
@@ -3478,6 +3582,3 @@ loadWatchlist();
 loadSpecials();
 loadQuicketEvents();
 syncRangeButtons();
-
-
-

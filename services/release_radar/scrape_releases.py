@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import re
+import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
@@ -13,8 +15,13 @@ from env import get as env_get
 
 
 SOURCE_URL = env_get("SCRAPE_RELEASES_SOURCE_URL", "https://pahe.ink/")
+TMDB_API_BASE_URL = env_get("SCRAPE_TMDB_API_BASE_URL", "https://api.themoviedb.org/3")
+TMDB_IMAGE_BASE_URL = env_get("SCRAPE_TMDB_IMAGE_BASE_URL", "https://image.tmdb.org/t/p/w342")
+TMDB_SITE_MOVIE_BASE_URL = env_get("SCRAPE_TMDB_SITE_MOVIE_BASE_URL", "https://www.themoviedb.org/movie")
 DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "release_radar"
 OUTPUT_FILE = DATA_DIR / "pahe_latest.json"
+REPO_DIR = Path(__file__).resolve().parents[2]
+LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 FETCH_LIMIT = max(1, int(env_get("SCRAPE_RELEASES_FETCH_LIMIT", "10") or "10"))
 MAX_ITEMS = max(FETCH_LIMIT, int(env_get("SCRAPE_RELEASES_MAX_ITEMS", "120") or "120"))
 
@@ -40,8 +47,10 @@ class PosterGridParser(HTMLParser):
 
         self.grid_depth += 1
         if tag == "a" and attributes.get("href") and attributes.get("title"):
+            raw_title = html.unescape(attributes["title"]).strip()
             self.current_link = {
-                "title": clean_title(attributes["title"]),
+                "title": clean_title(raw_title),
+                "raw_title": raw_title,
                 "url": attributes["href"],
             }
         elif tag == "img" and self.current_link and attributes.get("src"):
@@ -69,7 +78,37 @@ class PosterGridParser(HTMLParser):
 
 def clean_title(value: str) -> str:
     title = html.unescape(value).strip()
-    return re.sub(r"\s+", " ", title)
+    title = re.sub(r"\s+", " ", title)
+    # Pahe titles usually look like: "Movie Name (2026) WEB-DL 480p, 720p & 1080p"
+    # Keep only the movie name before the year/quality suffix.
+    title = re.sub(r"\s*\(\d{4}\)\s*.*$", "", title).strip()
+    return title.rstrip(" -._,")
+
+
+def extract_year(value: str) -> str:
+    match = re.search(r"\((\d{4})\)", html.unescape(value))
+    return match.group(1) if match else ""
+
+
+def local_secret(name: str) -> str:
+    if not LOCAL_SECRETS_FILE.exists():
+        return ""
+
+    for line in LOCAL_SECRETS_FILE.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        if key.strip() == name:
+            return value.strip().strip('"').strip("'")
+    return ""
+
+
+def secret(name: str) -> str:
+    value = env_get(name, "") or os.getenv(name, "") or local_secret(name)
+    if value.lower().startswith("bearer "):
+        value = value[7:].strip()
+    return value
 
 
 def fetch_html(url: str) -> str:
@@ -82,6 +121,118 @@ def scrape_latest(limit: int = FETCH_LIMIT) -> list[dict[str, str]]:
     parser = PosterGridParser()
     parser.feed(fetch_html(SOURCE_URL))
     return parser.items[:limit]
+
+
+def scrape_rating(page_url: str) -> str:
+    html_text = fetch_html(page_url)
+
+    # Prefer explicit IMDb rating text when available.
+    imdb_match = re.search(r"IMDb\s*[:\-]?\s*([0-9](?:\.[0-9])?)", html_text, flags=re.IGNORECASE)
+    if imdb_match:
+        return imdb_match.group(1)
+
+    # Fallback: look for rating values next to "rating"/"Rated".
+    generic_match = re.search(
+        r"(?:rating|rated)\s*[:\-]?\s*([0-9](?:\.[0-9])?)\s*(?:/10)?",
+        html_text,
+        flags=re.IGNORECASE,
+    )
+    if generic_match:
+        return generic_match.group(1)
+
+    return ""
+
+
+def tmdb_request(path: str, query_params: dict[str, str] | None = None) -> dict:
+    bearer_token = secret("TMDB_BEARER_TOKEN")
+    api_key = secret("TMDB_API_KEY")
+    if bearer_token and not bearer_token.startswith("eyJ") and not api_key:
+        api_key = bearer_token
+        bearer_token = ""
+    if not bearer_token and not api_key:
+        return {}
+
+    params = dict(query_params or {})
+    if api_key:
+        params["api_key"] = api_key
+    query = urllib.parse.urlencode(params)
+    url = f"{TMDB_API_BASE_URL}/{path.lstrip('/')}"
+    if query:
+        url = f"{url}?{query}"
+
+    headers = {
+        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0",
+    }
+    if bearer_token:
+        headers["Authorization"] = f"Bearer {bearer_token}"
+
+    request = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except Exception:
+        return {}
+
+
+def list_names(items: list[dict], key: str = "name", limit: int = 8) -> list[str]:
+    values = [str(entry.get(key) or "").strip() for entry in items if isinstance(entry, dict)]
+    return [value for value in values if value][:limit]
+
+
+def fetch_tmdb_details(title: str, year: str = "") -> dict[str, str | int | list[str]]:
+    search_query = {"query": title, "include_adult": "false", "language": "en-US"}
+    if year.isdigit():
+        search_query["year"] = year
+
+    search_payload = tmdb_request("/search/movie", search_query)
+    results = search_payload.get("results", []) if isinstance(search_payload, dict) else []
+    if not isinstance(results, list) or not results:
+        return {}
+
+    first = results[0] if isinstance(results[0], dict) else {}
+    movie_id = int(first.get("id") or 0)
+    if not movie_id:
+        return {}
+
+    details = tmdb_request(f"/movie/{movie_id}", {"append_to_response": "credits,videos", "language": "en-US"})
+    if not isinstance(details, dict) or not details:
+        return {}
+
+    credits = details.get("credits", {}) if isinstance(details.get("credits"), dict) else {}
+    crew = credits.get("crew", []) if isinstance(credits.get("crew"), list) else []
+    cast = credits.get("cast", []) if isinstance(credits.get("cast"), list) else []
+    videos = details.get("videos", {}) if isinstance(details.get("videos"), dict) else {}
+    video_items = videos.get("results", []) if isinstance(videos.get("results"), list) else []
+    trailer = ""
+    for entry in video_items:
+        if not isinstance(entry, dict):
+            continue
+        if str(entry.get("site") or "").lower() == "youtube" and str(entry.get("type") or "").lower() == "trailer":
+            key = str(entry.get("key") or "").strip()
+            if key:
+                trailer = f"https://www.youtube.com/watch?v={key}"
+                break
+
+    directors = list_names([person for person in crew if str(person.get("job") or "").lower() == "director"])
+    genres = list_names(details.get("genres", []) if isinstance(details.get("genres"), list) else [])
+    actors = list_names(cast, limit=10)
+    poster_path = str(details.get("poster_path") or "").strip()
+
+    return {
+        "tmdb_id": movie_id,
+        "tmdb_url": f"{TMDB_SITE_MOVIE_BASE_URL}/{movie_id}",
+        "tmdb_rating": str(details.get("vote_average") or "").strip(),
+        "tmdb_votes": str(details.get("vote_count") or "").strip(),
+        "release_date": str(details.get("release_date") or "").strip(),
+        "overview": str(details.get("overview") or "").strip(),
+        "runtime_minutes": str(details.get("runtime") or "").strip(),
+        "genres": genres,
+        "directors": directors,
+        "actors": actors,
+        "trailer_url": trailer,
+        "poster_url": f"{TMDB_IMAGE_BASE_URL}{poster_path}" if poster_path else "",
+    }
 
 
 def load_existing_items() -> list[dict[str, str]]:
@@ -125,8 +276,57 @@ def write_latest(items: list[dict[str, str]]) -> None:
 
 
 def main() -> int:
-    new_items = scrape_latest(FETCH_LIMIT)
     existing_items = load_existing_items()
+    existing_by_url = {
+        str(item.get("url") or "").strip(): str(item.get("rating") or "").strip()
+        for item in existing_items
+        if str(item.get("url") or "").strip()
+    }
+
+    new_items = scrape_latest(FETCH_LIMIT)
+    for item in new_items:
+        item_url = str(item.get("url") or "").strip()
+        if not item_url:
+            continue
+        raw_title = str(item.get("raw_title") or item.get("title") or "")
+        guessed_year = extract_year(raw_title)
+        item["title"] = clean_title(raw_title)
+        item.pop("raw_title", None)
+        existing_rating = existing_by_url.get(item_url, "")
+        if existing_rating:
+            item["rating"] = existing_rating
+        else:
+            try:
+                item["rating"] = scrape_rating(item_url)
+            except Exception:
+                item["rating"] = ""
+
+        existing_item = next((entry for entry in existing_items if str(entry.get("url") or "").strip() == item_url), {})
+        if isinstance(existing_item, dict):
+            for key in [
+                "tmdb_id",
+                "tmdb_url",
+                "tmdb_rating",
+                "tmdb_votes",
+                "release_date",
+                "overview",
+                "runtime_minutes",
+                "genres",
+                "directors",
+                "actors",
+                "trailer_url",
+                "poster_url",
+            ]:
+                if key in existing_item and existing_item.get(key):
+                    item[key] = existing_item.get(key)
+
+        if not item.get("tmdb_id"):
+            details = fetch_tmdb_details(item["title"], guessed_year)
+            if details:
+                item.update(details)
+                if str(item.get("tmdb_rating") or "").strip():
+                    item["rating"] = str(item.get("tmdb_rating")).strip()
+
     items = merge_items(new_items, existing_items, MAX_ITEMS)
     write_latest(items)
     print(f"Wrote {len(items)} release radar item(s) to {OUTPUT_FILE} (fetched {len(new_items)} new candidates)")
