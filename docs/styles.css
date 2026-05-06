@@ -38,6 +38,7 @@
 :root[data-theme="dark"] .map-detail-card,
 :root[data-theme="dark"] .map-event-list-card,
 :root[data-theme="dark"] .event-card,
+:root[data-theme="dark"] .bandsintown-event-card,
 :root[data-theme="dark"] .poster-card,
 :root[data-theme="dark"] .news-card,
 :root[data-theme="dark"] .news-detail-panel,
@@ -185,6 +186,20 @@
   background: #9bc3ff;
 }
 
+:root[data-theme="dark"] .events-cards-rail::-webkit-scrollbar-track {
+  background: #1a2741;
+  border: 1px solid #2f4467;
+}
+
+:root[data-theme="dark"] .events-cards-rail::-webkit-scrollbar-thumb {
+  background: #7fb2ff;
+  border: 2px solid #1a2741;
+}
+
+:root[data-theme="dark"] .events-cards-rail::-webkit-scrollbar-thumb:hover {
+  background: #9bc3ff;
+}
+
 :root[data-theme="dark"] .map-special-entry {
   background: #182339;
   border-color: #314563;
@@ -193,6 +208,7 @@
 :root[data-theme="dark"] .map-empty-popup,
 :root[data-theme="dark"] .empty,
 :root[data-theme="dark"] .event-venue,
+:root[data-theme="dark"] .events-rail-title,
 :root[data-theme="dark"] .map-event-list-body p,
 :root[data-theme="dark"] .map-event-list-header p,
 :root[data-theme="dark"] .map-detail-body p,
@@ -1562,6 +1578,91 @@ td.card-number {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 10px;
   padding: 0 14px 14px;
+}
+
+.bandsintown-events-list {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 14px 14px 4px;
+}
+
+.events-rail-title {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.events-cards-rail {
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  padding-bottom: 6px;
+}
+
+.events-cards-track {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  min-width: 100%;
+}
+
+.events-cards-rail::-webkit-scrollbar {
+  height: 10px;
+}
+
+.events-cards-rail::-webkit-scrollbar-track {
+  background: #e5eaf1;
+  border-radius: 999px;
+}
+
+.events-cards-rail::-webkit-scrollbar-thumb {
+  background: #b7c3d4;
+  border-radius: 999px;
+}
+
+.bandsintown-event-card {
+  display: grid;
+  grid-template-columns: 86px 1fr;
+  flex: 0 0 310px;
+  width: 310px;
+  min-height: 116px;
+  overflow: hidden;
+  color: inherit;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.bandsintown-event-card:hover {
+  border-color: #9fb3c8;
+}
+
+.bandsintown-event-card img {
+  width: 86px;
+  height: 100%;
+  object-fit: cover;
+  background: #eef3f7;
+}
+
+.bandsintown-event-body {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  min-width: 0;
+  padding: 10px;
+}
+
+.bandsintown-event-body strong {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.25;
 }
 
 .event-card {

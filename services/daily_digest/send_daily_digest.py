@@ -94,6 +94,7 @@ SECTIONS = [
     Section("Coming Soon Movies", DATA_DIR / "release_radar" / "coming_soon.json", load_json_items("items")),
     Section("New Game Releases", DATA_DIR / "release_radar" / "game_releases.json", load_json_items("new_releases")),
     Section("Coming Soon Games", DATA_DIR / "release_radar" / "game_releases.json", load_json_items("coming_soon")),
+    Section("Bandsintown Events", DATA_DIR / "events" / "bandsintown_events.json", load_json_list),
     Section("Quicket Events", DATA_DIR / "events" / "quicket_events.json", load_json_list),
     Section("Webtickets Events", DATA_DIR / "events" / "webtickets_wc_events.json", load_json_list),
     Section("Google Calendar", DATA_DIR / "events" / "google_calendar_events.json", load_json_items("items")),

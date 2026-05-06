@@ -16,6 +16,7 @@ TASKS = {
     "cards": [[sys.executable, "services/one_piece/find_missing_cards.py", "all"]],
     "specials": [[sys.executable, "services/events/scrape_specials.py"]],
     "events": [
+        [sys.executable, "services/events/scrape_bandsintown_events.py"],
         [sys.executable, "services/events/scrape_quicket_events.py"],
         [sys.executable, "services/events/scrape_webtickets_events.py"],
         [sys.executable, "services/events/scrape_google_calendar.py"],

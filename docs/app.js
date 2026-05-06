@@ -10,6 +10,7 @@ const GAMES_DETAILS_PATH = "./data/media/games_details.json";
 const NEWS_PATH = "./data/news/news.json";
 const CONFIG_PATH = "../config.json";
 const SPECIALS_PATH = "./data/events/specials.json";
+const BANDSINTOWN_EVENTS_PATH = "./data/events/bandsintown_events.json";
 const QUICKET_EVENTS_PATH = "./data/events/quicket_events.json";
 const WEATHER_PATH =
   "https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Africa%2FJohannesburg&forecast_days=7";
@@ -61,6 +62,7 @@ const state = {
   maxPrice: 200,
   specialsPayload: null,
   quicketEvents: [],
+  bandsintownEvents: [],
   specialsMapRange: "next-7",
   mapSources: {
     places: true,
@@ -144,6 +146,7 @@ const elements = {
   mapCategoryFilters: document.querySelector("#map-category-filters"),
   mapEventCategoryFilters: document.querySelector("#map-event-category-filters"),
   mapDetailPanel: document.querySelector("#map-detail-panel"),
+  bandsintownEventsList: document.querySelector("#bandsintown-events-list"),
   quicketEventsList: document.querySelector("#quicket-events-list"),
   todayDate: document.querySelector("#today-date"),
   lastScraped: document.querySelector("#last-scraped"),
@@ -2318,6 +2321,64 @@ function renderQuicketEvents(events) {
   }
 }
 
+function renderBandsintownEvents(events) {
+  if (!elements.bandsintownEventsList) {
+    return;
+  }
+  if (!events.length) {
+    elements.bandsintownEventsList.innerHTML = '<p class="empty">No Bandsintown concerts found.</p>';
+    return;
+  }
+
+  elements.bandsintownEventsList.innerHTML = "";
+
+  const title = document.createElement("h4");
+  title.className = "events-rail-title";
+  title.textContent = "Bandsintown concerts";
+
+  const rail = document.createElement("div");
+  rail.className = "events-cards-rail";
+  const track = document.createElement("div");
+  track.className = "events-cards-track";
+
+  for (const event of events) {
+    const card = document.createElement("a");
+    card.className = "bandsintown-event-card";
+    card.href = event.url;
+    card.target = "_blank";
+    card.rel = "noreferrer";
+
+    if (event.image) {
+      const image = document.createElement("img");
+      image.src = event.image;
+      image.alt = event.title || "Bandsintown concert";
+      image.loading = "lazy";
+      card.append(image);
+    }
+
+    const body = document.createElement("div");
+    body.className = "bandsintown-event-body";
+
+    const date = document.createElement("span");
+    date.className = "event-date";
+    date.textContent = event.start ? displayDateTime(event.start) : event.date_text || "";
+
+    const eventTitle = document.createElement("strong");
+    eventTitle.textContent = event.title || "Untitled concert";
+
+    const venue = document.createElement("span");
+    venue.className = "event-venue";
+    venue.textContent = [event.venue, event.locality].filter(Boolean).join(", ");
+
+    body.append(date, eventTitle, venue);
+    card.append(body);
+    track.append(card);
+  }
+
+  rail.append(track);
+  elements.bandsintownEventsList.append(title, rail);
+}
+
 function selectedMapDays(rollingWeek) {
   if (state.customStartDate || state.customEndDate) {
     const nowDate = new Date();
@@ -3272,6 +3333,24 @@ async function loadQuicketEvents() {
   }
 }
 
+async function loadBandsintownEvents() {
+  if (!elements.bandsintownEventsList) {
+    return;
+  }
+  try {
+    const response = await fetch(BANDSINTOWN_EVENTS_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${BANDSINTOWN_EVENTS_PATH}`);
+    }
+    const events = await response.json();
+    state.bandsintownEvents = Array.isArray(events) ? events : [];
+    renderBandsintownEvents(state.bandsintownEvents);
+  } catch (error) {
+    state.bandsintownEvents = [];
+    elements.bandsintownEventsList.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
 async function load() {
   try {
     const response = await fetch(CSV_PATH, { cache: "no-store" });
@@ -3580,5 +3659,6 @@ loadGameReleases();
 loadNews();
 loadWatchlist();
 loadSpecials();
+loadBandsintownEvents();
 loadQuicketEvents();
 syncRangeButtons();
