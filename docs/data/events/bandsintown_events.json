@@ -11,10 +11,8 @@
     "image": "https://photos.bandsintown.com/thumb/24643292.jpeg",
     "url": "https://www.bandsintown.com/e/108152105-joshua-na-die-reen-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
-    "genre": "Afrikaans",
-    "genre_tags": [
-      "Afrikaans"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "bar"
     ]
@@ -31,10 +29,8 @@
     "image": "https://photos.bandsintown.com/thumb/24834389.jpeg",
     "url": "https://www.bandsintown.com/e/108240516-jabulile-majola-at-baxter-theatre-centre?came_from=209",
     "source": "Bandsintown",
-    "genre": "Folk",
-    "genre_tags": [
-      "Folk"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "theatre"
     ]
@@ -51,10 +47,8 @@
     "image": "https://photos.bandsintown.com/thumb/24425340.jpeg",
     "url": "https://www.bandsintown.com/e/1038279216-appel-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
-    "genre": "Afrikaans",
-    "genre_tags": [
-      "Afrikaans"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "bar"
     ]
@@ -71,10 +65,8 @@
     "image": "https://photos.bandsintown.com/thumb/23242437.jpeg",
     "url": "https://www.bandsintown.com/e/108138901-spoegwolf-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
-    "genre": "Rock",
-    "genre_tags": [
-      "Rock"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "bar"
     ]
@@ -91,10 +83,8 @@
     "image": "https://photos.bandsintown.com/thumb/21426350.jpeg",
     "url": "https://www.bandsintown.com/e/108004150-bongeziwe-mabandla-at-hearty-collective?came_from=209",
     "source": "Bandsintown",
-    "genre": "Urban Traditional Folk",
-    "genre_tags": [
-      "Urban Traditional Folk"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "art"
     ]
@@ -111,10 +101,8 @@
     "image": "https://photos.bandsintown.com/thumb/24887448.jpeg",
     "url": "https://www.bandsintown.com/e/107998022-francois-van-coke-at-die-boer?came_from=209",
     "source": "Bandsintown",
-    "genre": "Rock",
-    "genre_tags": [
-      "Rock"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -129,10 +117,8 @@
     "image": "https://photos.bandsintown.com/thumb/18141779.jpeg",
     "url": "https://www.bandsintown.com/e/1037043778-ub40-featuring-ali-campbell-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
-    "genre": "Reggae",
-    "genre_tags": [
-      "Reggae"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -147,10 +133,8 @@
     "image": "https://photos.bandsintown.com/thumb/24672250.jpeg",
     "url": "https://www.bandsintown.com/e/108163321-elandre-at-the-barnyard-theatre-tyger-valley?came_from=209",
     "source": "Bandsintown",
-    "genre": "Contemporary",
-    "genre_tags": [
-      "Contemporary"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "bar",
       "theatre"
@@ -168,10 +152,8 @@
     "image": "https://photos.bandsintown.com/thumb/24096942.jpeg",
     "url": "https://www.bandsintown.com/e/107879938-ntokozo-mbambo-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
-    "genre": "Classical",
-    "genre_tags": [
-      "Classical"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -186,23 +168,21 @@
     "image": "https://photos.bandsintown.com/thumb/24858370.jpeg",
     "url": "https://www.bandsintown.com/e/108253102-tamia-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
-    "genre": "00s",
-    "genre_tags": [
-      "00s"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
-    "title": "calendarIcon",
-    "artist": "calendarIcon",
-    "start": "",
+    "title": "Maxwell",
+    "artist": "Maxwell",
+    "start": "2026-08-11T10:00:00+02:00",
     "date_text": "Aug 11 - 10:00 am",
-    "venue": "",
+    "venue": "Grand Arena at GrandWest",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "",
-    "image": "https://assets.prod.bandsintown.com/images/homeIcon/calendarIcon.svg",
-    "url": "https://www.bandsintown.com/e/108258579-maxwell-at-grand-arena-at-grandwest?came_from=253&utm_medium=web&utm_source=city_page&utm_campaign=top_event",
+    "address": "1 Jakes Gerwel Dr",
+    "image": "https://photos.bandsintown.com/thumb/22942368.jpeg",
+    "url": "https://www.bandsintown.com/e/108258579-maxwell-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
     "genre": "",
     "genre_tags": [],
@@ -220,10 +200,8 @@
     "image": "https://photos.bandsintown.com/thumb/24384899.jpeg",
     "url": "https://www.bandsintown.com/e/108016362-ziyanda-tshangana-at-joseph-stone-auditorium?came_from=209",
     "source": "Bandsintown",
-    "genre": "Gospel",
-    "genre_tags": [
-      "Gospel"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -238,10 +216,8 @@
     "image": "https://photos.bandsintown.com/thumb/9403372.jpeg",
     "url": "https://www.bandsintown.com/e/108128206-dave-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
-    "genre": "Hip Hop",
-    "genre_tags": [
-      "Hip Hop"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -256,10 +232,8 @@
     "image": "https://photos.bandsintown.com/thumb/19924575.jpeg",
     "url": "https://www.bandsintown.com/e/107876984-kip-moore-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
-    "genre": "Country",
-    "genre_tags": [
-      "Country"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -274,10 +248,8 @@
     "image": "https://photos.bandsintown.com/thumb/24463098.jpeg",
     "url": "https://www.bandsintown.com/e/108054163-jill-scott-at-sunbet-arena?came_from=209",
     "source": "Bandsintown",
-    "genre": "Hip Hop",
-    "genre_tags": [
-      "Hip Hop"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -292,10 +264,8 @@
     "image": "https://photos.bandsintown.com/thumb/24893704.jpeg",
     "url": "https://www.bandsintown.com/e/108277399-live-at-kirstenbosch-gardens-concert-stage?came_from=209",
     "source": "Bandsintown",
-    "genre": "Alternative Rock",
-    "genre_tags": [
-      "Alternative Rock"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "music",
       "theatre"
@@ -313,10 +283,8 @@
     "image": "https://photos.bandsintown.com/thumb/23242437.jpeg",
     "url": "https://www.bandsintown.com/e/108335743-spoegwolf-at-sandringham-farm?came_from=209",
     "source": "Bandsintown",
-    "genre": "Afrikaans",
-    "genre_tags": [
-      "Afrikaans"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -331,10 +299,8 @@
     "image": "https://photos.bandsintown.com/thumb/19550751.jpeg",
     "url": "https://www.bandsintown.com/e/1038850712-trevor-noah-at-grand-arena-at-grandwest?came_from=209",
     "source": "Bandsintown",
-    "genre": "Standup Comedy",
-    "genre_tags": [
-      "Standup Comedy"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -349,10 +315,8 @@
     "image": "https://photos.bandsintown.com/thumb/18404432.jpeg",
     "url": "https://www.bandsintown.com/e/1038852550-jorja-smith-at-cloof-wine-estate?came_from=209",
     "source": "Bandsintown",
-    "genre": "R&b",
-    "genre_tags": [
-      "R&b"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "bar"
     ]
@@ -376,42 +340,38 @@
     ]
   },
   {
-    "title": "Steve Hofmeyr",
-    "artist": "Steve Hofmeyr",
-    "start": "2027-01-24T14:00:00+02:00",
-    "date_text": "Jan 24, 2027 - 2:00 pm",
-    "venue": "Heroes Restaurant",
-    "locality": "Brackenfell",
-    "region": "Western Cape",
-    "address": "Shop A1, Cape Gate Decor Centre",
-    "image": "https://photos.bandsintown.com/thumb/23374446.jpeg",
-    "url": "https://www.bandsintown.com/e/1038852814-steve-hofmeyr-at-heroes-restaurant?came_from=209",
-    "source": "Bandsintown",
-    "genre": "Pop",
-    "genre_tags": [
-      "Pop"
-    ],
-    "categories": [
-      "food"
-    ]
-  },
-  {
     "title": "Elandré",
     "artist": "Elandré",
-    "start": "2026-05-29T18:00:00+02:00",
-    "date_text": "May 29 - 6:00 pm",
-    "venue": "Kapstadt Brauhaus Durbanville",
+    "start": "2026-05-25T18:00:00+02:00",
+    "date_text": "May 25 - 6:00 pm",
+    "venue": "Kapstadt Brauhaus Blouberg",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "Heritage Square C/O Gladstone and",
-    "image": "https://photos.bandsintown.com/thumb/25013867.jpeg",
-    "url": "https://www.bandsintown.com/e/108323273-elandre-at-kapstadt-brauhaus-durbanville?came_from=209",
+    "address": "Shop 17 Cnr Sir David Baird &",
+    "image": "https://photos.bandsintown.com/thumb/25044261.jpeg",
+    "url": "https://www.bandsintown.com/e/108342238-elandre-at-kapstadt-brauhaus-blouberg?came_from=209",
     "source": "Bandsintown",
-    "genre": "Contemporary",
-    "genre_tags": [
-      "Contemporary"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
+  },
+  {
+    "title": "Katy Hallauer",
+    "artist": "Katy Hallauer",
+    "start": "2026-05-21T21:00:00+02:00",
+    "date_text": "May 21 - 9:00 pm",
+    "venue": "The House of Machines",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "84 Shortmarket St",
+    "image": "https://photos.bandsintown.com/thumb/25044141.jpeg",
+    "url": "https://www.bandsintown.com/e/108342168-katy-hallauer-at-the-house-of-machines?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": [
+      "dj"
+    ]
   },
   {
     "title": "The Unpopular Department",
@@ -425,50 +385,27 @@
     "image": "https://photos.bandsintown.com/thumb/25025134.jpeg",
     "url": "https://www.bandsintown.com/e/108329439-the-unpopular-department-at-aandklas-stellenbosch?came_from=209",
     "source": "Bandsintown",
-    "genre": "Metal",
-    "genre_tags": [
-      "Metal"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "art"
     ]
   },
   {
-    "title": "Jan Rhaap",
-    "artist": "Jan Rhaap",
-    "start": "2026-08-07T20:30:00+02:00",
-    "date_text": "Aug 7 - 8:30 pm",
-    "venue": "Heroes Restaurant",
-    "locality": "Brackenfell",
+    "title": "The SN Project",
+    "artist": "The SN Project",
+    "start": "2026-05-30T18:00:00+02:00",
+    "date_text": "May 30 - 6:00 pm",
+    "venue": "44 on Long Theatre and Venue",
+    "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "Shop A1, Cape Gate Decor Centre",
-    "image": "https://photos.bandsintown.com/thumb/null.jpeg",
-    "url": "https://www.bandsintown.com/e/1038861692-jan-rhaap-at-heroes-restaurant?came_from=209",
+    "address": "44 Long St",
+    "image": "https://photos.bandsintown.com/thumb/25024652.jpeg",
+    "url": "https://www.bandsintown.com/e/108329102-the-sn-project-at-44-on-long-theatre-and-venue?came_from=209",
     "source": "Bandsintown",
     "genre": "",
     "genre_tags": [],
     "categories": [
-      "food"
-    ]
-  },
-  {
-    "title": "Dan Patlansky",
-    "artist": "Dan Patlansky",
-    "start": "2026-05-06T19:00:00+02:00",
-    "date_text": "May 06 - 7:00 PM",
-    "venue": "The Barnyard Theatre Tyger Valley",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Corner of Bill Bezuidenhout and",
-    "image": "https://photos.bandsintown.com/thumb/24684906.jpeg",
-    "url": "https://www.bandsintown.com/e/108176419-dan-patlansky-at-the-barnyard-theatre-tyger-valley?came_from=209",
-    "source": "Bandsintown",
-    "genre": "Rock",
-    "genre_tags": [
-      "Rock"
-    ],
-    "categories": [
-      "bar",
       "theatre"
     ]
   },
@@ -502,10 +439,8 @@
     "image": "https://photos.bandsintown.com/thumb/24825105.jpeg",
     "url": "https://www.bandsintown.com/e/108236412-halvar-at-woodstock-brewery?came_from=209",
     "source": "Bandsintown",
-    "genre": "Thrash Metal",
-    "genre_tags": [
-      "Thrash Metal"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "bar"
     ]
@@ -522,10 +457,8 @@
     "image": "https://photos.bandsintown.com/thumb/24643292.jpeg",
     "url": "https://www.bandsintown.com/e/108152105-joshua-na-die-reen-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
-    "genre": "Afrikaans",
-    "genre_tags": [
-      "Afrikaans"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "bar"
     ]
@@ -542,10 +475,8 @@
     "image": "https://photos.bandsintown.com/thumb/25028293.jpeg",
     "url": "https://www.bandsintown.com/e/108332287-gordon-rocker-at-the-galley-fish-hoek?came_from=209",
     "source": "Bandsintown",
-    "genre": "Adult Contemporary",
-    "genre_tags": [
-      "Adult Contemporary"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -560,10 +491,8 @@
     "image": "https://photos.bandsintown.com/thumb/24684906.jpeg",
     "url": "https://www.bandsintown.com/e/108176424-dan-patlansky-at-cafe-roux-noordhoek?came_from=209",
     "source": "Bandsintown",
-    "genre": "Rock",
-    "genre_tags": [
-      "Rock"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -578,10 +507,8 @@
     "image": "https://photos.bandsintown.com/thumb/24834389.jpeg",
     "url": "https://www.bandsintown.com/e/108240516-jabulile-majola-at-baxter-theatre-centre?came_from=209",
     "source": "Bandsintown",
-    "genre": "Folk",
-    "genre_tags": [
-      "Folk"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "theatre"
     ]
@@ -598,10 +525,8 @@
     "image": "https://photos.bandsintown.com/thumb/25011160.jpeg",
     "url": "https://www.bandsintown.com/e/108324821-the-unpopular-department-at-the-armchair-theatre?came_from=209",
     "source": "Bandsintown",
-    "genre": "Metal",
-    "genre_tags": [
-      "Metal"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "art",
       "theatre"
@@ -619,10 +544,8 @@
     "image": "https://photos.bandsintown.com/thumb/24684906.jpeg",
     "url": "https://www.bandsintown.com/e/108176429-dan-patlansky-at-cafe-roux-noordhoek?came_from=209",
     "source": "Bandsintown",
-    "genre": "Rock",
-    "genre_tags": [
-      "Rock"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -637,10 +560,8 @@
     "image": "https://photos.bandsintown.com/thumb/24684906.jpeg",
     "url": "https://www.bandsintown.com/e/108176438-dan-patlansky-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
-    "genre": "Rock",
-    "genre_tags": [
-      "Rock"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "bar"
     ]
@@ -657,10 +578,8 @@
     "image": "https://photos.bandsintown.com/thumb/24713520.jpeg",
     "url": "https://www.bandsintown.com/e/108181378-raaf-at-allee-bleue-wine-estate?came_from=209",
     "source": "Bandsintown",
-    "genre": "Folk",
-    "genre_tags": [
-      "Folk"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "bar"
     ]
@@ -677,10 +596,8 @@
     "image": "https://photos.bandsintown.com/thumb/24425373.jpeg",
     "url": "https://www.bandsintown.com/e/1038581300-chris-steyn-at-kapstadt-brauhaus-stellenbosch?came_from=209",
     "source": "Bandsintown",
-    "genre": "Afrikaans",
-    "genre_tags": [
-      "Afrikaans"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": []
   },
   {
@@ -695,10 +612,8 @@
     "image": "https://photos.bandsintown.com/thumb/24633799.jpeg",
     "url": "https://www.bandsintown.com/e/108146411-watershed-at-simon's-restaurant?came_from=209",
     "source": "Bandsintown",
-    "genre": "Acoustic",
-    "genre_tags": [
-      "Acoustic"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "food"
     ]
@@ -715,10 +630,8 @@
     "image": "https://photos.bandsintown.com/thumb/24987398.jpeg",
     "url": "https://www.bandsintown.com/e/108314994-tanika-paschke-moloi-at-artvark-gallery?came_from=209",
     "source": "Bandsintown",
-    "genre": "Indigenous Instruments",
-    "genre_tags": [
-      "Indigenous Instruments"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "art"
     ]
@@ -735,10 +648,8 @@
     "image": "https://photos.bandsintown.com/thumb/24964628.jpeg",
     "url": "https://www.bandsintown.com/e/108300283-mel-malisch-at-the-house-of-machines?came_from=209",
     "source": "Bandsintown",
-    "genre": "Indie Folk",
-    "genre_tags": [
-      "Indie Folk"
-    ],
+    "genre": "",
+    "genre_tags": [],
     "categories": [
       "dj"
     ]
@@ -755,12 +666,2347 @@
     "image": "https://photos.bandsintown.com/thumb/24425340.jpeg",
     "url": "https://www.bandsintown.com/e/1038279216-appel-at-the-daisy-jones-bar?came_from=209",
     "source": "Bandsintown",
-    "genre": "Afrikaans",
+    "genre": "",
+    "genre_tags": [],
+    "categories": [
+      "bar"
+    ]
+  },
+  {
+    "title": "Watershed",
+    "artist": "Watershed",
+    "start": "2026-05-15T18:00:00+02:00",
+    "date_text": "May 15 - 6:00 PM",
+    "venue": "Simon's Restaurant",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Groot Constantia Wine Estate",
+    "image": "https://photos.bandsintown.com/thumb/24633803.jpeg",
+    "url": "https://www.bandsintown.com/e/108146416-watershed-at-simon's-restaurant?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": [
+      "food"
+    ]
+  },
+  {
+    "title": "Chris Steyn",
+    "artist": "Chris Steyn",
+    "start": "2026-05-15T18:00:00+02:00",
+    "date_text": "May 15 - 6:00 PM",
+    "venue": "Kapstadt Brauhaus Durbanville",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Vrede St",
+    "image": "https://photos.bandsintown.com/thumb/24425373.jpeg",
+    "url": "https://www.bandsintown.com/e/1038581569-chris-steyn-at-kapstadt-brauhaus-durbanville?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "Indie Dog",
+    "artist": "Indie Dog",
+    "start": "2026-05-15T18:30:00+02:00",
+    "date_text": "May 15 - 6:30 PM",
+    "venue": "District",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "61c Harrington St",
+    "image": "https://photos.bandsintown.com/thumb/24679921.jpeg",
+    "url": "https://www.bandsintown.com/e/108168559-indie-dog-at-district?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "Indie Dog",
+    "artist": "Indie Dog",
+    "start": "2026-05-16T17:00:00+02:00",
+    "date_text": "May 16 - 5:00 PM",
+    "venue": "The Daisy Jones Bar",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "r44 klapmuts rd, Stellenbosch",
+    "image": "https://photos.bandsintown.com/thumb/24679935.jpeg",
+    "url": "https://www.bandsintown.com/e/108168566-indie-dog-at-the-daisy-jones-bar?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": [
+      "bar"
+    ]
+  },
+  {
+    "title": "Jack Parow",
+    "artist": "Jack Parow",
+    "start": "2026-05-16T20:00:00+02:00",
+    "date_text": "May 16 - 8:00 PM",
+    "venue": "Springbok Arms",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "135 Lower Main Rd",
+    "image": "https://photos.bandsintown.com/thumb/24920074.jpeg",
+    "url": "https://www.bandsintown.com/e/108279532-jack-parow-at-springbok-arms?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "FREDDY L",
+    "artist": "FREDDY L",
+    "start": "2026-05-17T16:00:00+02:00",
+    "date_text": "May 17 - 4:00 PM",
+    "venue": "Cafe Roux - Noordhoek",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Chapmans Peak Dr",
+    "image": "https://photos.bandsintown.com/thumb/24820559.jpeg",
+    "url": "https://www.bandsintown.com/e/108233753-freddy-l-at-cafe-roux-noordhoek?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "Katy Hallauer",
+    "artist": "Katy Hallauer",
+    "start": "2026-05-21T21:00:00+02:00",
+    "date_text": "May 21 - 9:00 PM",
+    "venue": "The House of Machines",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "84 Shortmarket St",
+    "image": "https://photos.bandsintown.com/thumb/25044141.jpeg",
+    "url": "https://www.bandsintown.com/e/108342168-katy-hallauer-at-the-house-of-machines?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": [
+      "dj"
+    ]
+  },
+  {
+    "title": "Millennium",
+    "artist": "Millennium",
+    "start": "2026-05-22T19:00:00+02:00",
+    "date_text": "May 22 - 7:00 PM",
+    "venue": "Heroes Restaurant",
+    "locality": "Brackenfell",
+    "region": "Western Cape",
+    "address": "Shop A1, Cape Gate Decor Centre",
+    "image": "https://photos.bandsintown.com/thumb/24930700.jpeg",
+    "url": "https://www.bandsintown.com/e/108285210-millennium-at-heroes-restaurant?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": [
+      "food"
+    ]
+  },
+  {
+    "title": "Christia Visser",
+    "artist": "Christia Visser",
+    "start": "2026-05-22T20:30:00+02:00",
+    "date_text": "May 22 - 8:30 PM",
+    "venue": "Die Boer",
+    "locality": "Durbanville",
+    "region": "Western Cape",
+    "address": "6 Chenoweth St",
+    "image": "https://photos.bandsintown.com/thumb/22346446.jpeg",
+    "url": "https://www.bandsintown.com/e/107975262-christia-visser-at-die-boer?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "Tete Mbambisa",
+    "artist": "Tete Mbambisa",
+    "start": "2026-05-23T15:00:00+02:00",
+    "date_text": "May 23 - 3:00 PM",
+    "venue": "Guga S'thebe",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Washington St",
+    "image": "https://photos.bandsintown.com/thumb/24954466.jpeg",
+    "url": "https://www.bandsintown.com/e/108293175-tete-mbambisa-at-guga-s'thebe?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "KalleWave$",
+    "artist": "KalleWave$",
+    "start": "2026-05-23T17:00:00+02:00",
+    "date_text": "May 23 - 5:00 PM",
+    "venue": "The Waiting Room",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "2nd Floor",
+    "image": "https://photos.bandsintown.com/thumb/24012364.jpeg",
+    "url": "https://www.bandsintown.com/e/107835750-kallewavedollar-at-the-waiting-room?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "Spoegwolf",
+    "artist": "Spoegwolf",
+    "start": "2026-05-23T18:00:00+02:00",
+    "date_text": "May 23 - 6:00 PM",
+    "venue": "The Daisy Jones Bar",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "r44 klapmuts rd, Stellenbosch",
+    "image": "https://photos.bandsintown.com/thumb/23242437.jpeg",
+    "url": "https://www.bandsintown.com/e/108138901-spoegwolf-at-the-daisy-jones-bar?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": [
+      "bar"
+    ]
+  },
+  {
+    "title": "Summer Pearl",
+    "artist": "Summer Pearl",
+    "start": "2026-05-23T20:00:00+02:00",
+    "date_text": "May 23 - 8:00 PM",
+    "venue": "Youngblood-Africa",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "70",
+    "image": "https://photos.bandsintown.com/thumb/22865924.jpeg",
+    "url": "https://www.bandsintown.com/e/108285377-summer-pearl-at-youngblood-africa?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "The Unpopular Department",
+    "artist": "The Unpopular Department",
+    "start": "2026-05-23T21:00:00+02:00",
+    "date_text": "May 23 - 9:00 PM",
+    "venue": "Aandklas Stellenbosch",
+    "locality": "Stellenbosch",
+    "region": "Western Cape",
+    "address": "43 Bird St",
+    "image": "https://photos.bandsintown.com/thumb/25025134.jpeg",
+    "url": "https://www.bandsintown.com/e/108329439-the-unpopular-department-at-aandklas-stellenbosch?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": [
+      "art"
+    ]
+  },
+  {
+    "title": "Wren Hinds",
+    "artist": "Wren Hinds",
+    "start": "2026-05-24T18:00:00+02:00",
+    "date_text": "May 24 - 6:00 PM",
+    "venue": "The Alma Cafe",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "20 Alma Rd",
+    "image": "https://photos.bandsintown.com/thumb/24791392.jpeg",
+    "url": "https://www.bandsintown.com/e/108222829-wren-hinds-at-the-alma-cafe?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "Elandré",
+    "artist": "Elandré",
+    "start": "2026-05-25T18:00:00+02:00",
+    "date_text": "May 25 - 6:00 PM",
+    "venue": "Kapstadt Brauhaus Blouberg",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Shop 17 Cnr Sir David Baird &",
+    "image": "https://photos.bandsintown.com/thumb/25044261.jpeg",
+    "url": "https://www.bandsintown.com/e/108342238-elandre-at-kapstadt-brauhaus-blouberg?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "Elandré",
+    "artist": "Elandré",
+    "start": "2026-05-26T18:00:00+02:00",
+    "date_text": "May 26 - 6:00 PM",
+    "venue": "Kapstadt Brauhaus Strand",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "99 Beach Rd",
+    "image": "https://photos.bandsintown.com/thumb/25013855.jpeg",
+    "url": "https://www.bandsintown.com/e/108323264-elandre-at-kapstadt-brauhaus-strand?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "Elandré",
+    "artist": "Elandré",
+    "start": "2026-05-27T18:00:00+02:00",
+    "date_text": "May 27 - 6:00 PM",
+    "venue": "Kapstadt Brauhaus Paarl",
+    "locality": "Paarl",
+    "region": "Western Cape",
+    "address": "90 A Main Rd",
+    "image": "https://photos.bandsintown.com/thumb/25013863.jpeg",
+    "url": "https://www.bandsintown.com/e/108323267-elandre-at-kapstadt-brauhaus-paarl?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "The Boxer The Ring",
+    "artist": "The Boxer The Ring",
+    "start": "2026-05-27T21:00:00+02:00",
+    "date_text": "May 27 - 9:00 PM",
+    "venue": "The House of Machines",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "84 Shortmarket St",
+    "image": "https://photos.bandsintown.com/thumb/21975796.jpeg",
+    "url": "https://www.bandsintown.com/e/107841628-the-boxer-the-ring-at-the-house-of-machines?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": [
+      "dj"
+    ]
+  },
+  {
+    "title": "Bongeziwe Mabandla",
+    "artist": "Bongeziwe Mabandla",
+    "start": "2026-05-28T19:00:00+02:00",
+    "date_text": "May 28 - 7:00 PM",
+    "venue": "Drostdy Theatre",
+    "locality": "Stellenbosch",
+    "region": "Western Cape",
+    "address": "Cnr Alexander St & Brid St",
+    "image": "https://photos.bandsintown.com/thumb/21426350.jpeg",
+    "url": "https://www.bandsintown.com/e/108004143-bongeziwe-mabandla-at-drostdy-theatre?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": [
+      "theatre"
+    ]
+  },
+  {
+    "title": "Elandré",
+    "artist": "Elandré",
+    "start": "2026-05-29T18:00:00+02:00",
+    "date_text": "May 29 - 6:00 PM",
+    "venue": "Kapstadt Brauhaus Durbanville",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Heritage Square C/O Gladstone and",
+    "image": "https://photos.bandsintown.com/thumb/25013867.jpeg",
+    "url": "https://www.bandsintown.com/e/108323273-elandre-at-kapstadt-brauhaus-durbanville?came_from=209",
+    "source": "Bandsintown",
+    "genre": "",
+    "genre_tags": [],
+    "categories": []
+  },
+  {
+    "title": "Mel Malisch",
+    "artist": "Mel Malisch",
+    "start": "2026-05-14T21:00:00+02:00",
+    "date_text": "May 14 - 9:00 PM",
+    "venue": "The House of Machines",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "84 Shortmarket St",
+    "image": "https://photos.bandsintown.com/thumb/24964628.jpeg",
+    "url": "https://www.bandsintown.com/e/108300283-mel-malisch-at-the-house-of-machines?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Folk, Pop, R&B/Soul, Rock",
     "genre_tags": [
-      "Afrikaans"
+      "Alternative",
+      "Folk",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "dj"
+    ]
+  },
+  {
+    "title": "Indie Dog",
+    "artist": "Indie Dog",
+    "start": "2026-05-15T18:30:00+02:00",
+    "date_text": "May 15 - 6:30 PM",
+    "venue": "District",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "61c Harrington St",
+    "image": "https://photos.bandsintown.com/thumb/24679921.jpeg",
+    "url": "https://www.bandsintown.com/e/108168559-indie-dog-at-district?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Indie Dog",
+    "artist": "Indie Dog",
+    "start": "2026-05-16T17:00:00+02:00",
+    "date_text": "May 16 - 5:00 PM",
+    "venue": "The Daisy Jones Bar",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "r44 klapmuts rd, Stellenbosch",
+    "image": "https://photos.bandsintown.com/thumb/24679935.jpeg",
+    "url": "https://www.bandsintown.com/e/108168566-indie-dog-at-the-daisy-jones-bar?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "R&B/Soul",
+      "Rock"
     ],
     "categories": [
       "bar"
+    ]
+  },
+  {
+    "title": "FREDDY L",
+    "artist": "FREDDY L",
+    "start": "2026-05-17T16:00:00+02:00",
+    "date_text": "May 17 - 4:00 PM",
+    "venue": "Cafe Roux - Noordhoek",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Chapmans Peak Dr",
+    "image": "https://photos.bandsintown.com/thumb/24820559.jpeg",
+    "url": "https://www.bandsintown.com/e/108233753-freddy-l-at-cafe-roux-noordhoek?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Katy Hallauer",
+    "artist": "Katy Hallauer",
+    "start": "2026-05-21T21:00:00+02:00",
+    "date_text": "May 21 - 9:00 PM",
+    "venue": "The House of Machines",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "84 Shortmarket St",
+    "image": "https://photos.bandsintown.com/thumb/25044141.jpeg",
+    "url": "https://www.bandsintown.com/e/108342168-katy-hallauer-at-the-house-of-machines?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "dj"
+    ]
+  },
+  {
+    "title": "Millennium",
+    "artist": "Millennium",
+    "start": "2026-05-22T19:00:00+02:00",
+    "date_text": "May 22 - 7:00 PM",
+    "venue": "Heroes Restaurant",
+    "locality": "Brackenfell",
+    "region": "Western Cape",
+    "address": "Shop A1, Cape Gate Decor Centre",
+    "image": "https://photos.bandsintown.com/thumb/24930700.jpeg",
+    "url": "https://www.bandsintown.com/e/108285210-millennium-at-heroes-restaurant?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Blues, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "Blues",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "food"
+    ]
+  },
+  {
+    "title": "Spoegwolf",
+    "artist": "Spoegwolf",
+    "start": "2026-05-23T18:00:00+02:00",
+    "date_text": "May 23 - 6:00 PM",
+    "venue": "The Daisy Jones Bar",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "r44 klapmuts rd, Stellenbosch",
+    "image": "https://photos.bandsintown.com/thumb/23242437.jpeg",
+    "url": "https://www.bandsintown.com/e/108138901-spoegwolf-at-the-daisy-jones-bar?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "bar"
+    ]
+  },
+  {
+    "title": "Wren Hinds",
+    "artist": "Wren Hinds",
+    "start": "2026-05-24T18:00:00+02:00",
+    "date_text": "May 24 - 6:00 PM",
+    "venue": "The Alma Cafe",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "20 Alma Rd",
+    "image": "https://photos.bandsintown.com/thumb/24791392.jpeg",
+    "url": "https://www.bandsintown.com/e/108222829-wren-hinds-at-the-alma-cafe?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Folk, R&B/Soul",
+    "genre_tags": [
+      "Alternative",
+      "Folk",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Elandré",
+    "artist": "Elandré",
+    "start": "2026-05-25T18:00:00+02:00",
+    "date_text": "May 25 - 6:00 PM",
+    "venue": "Kapstadt Brauhaus Blouberg",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Shop 17 Cnr Sir David Baird &",
+    "image": "https://photos.bandsintown.com/thumb/25044261.jpeg",
+    "url": "https://www.bandsintown.com/e/108342238-elandre-at-kapstadt-brauhaus-blouberg?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Country, Pop, R&B/Soul",
+    "genre_tags": [
+      "Alternative",
+      "Country",
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Elandré",
+    "artist": "Elandré",
+    "start": "2026-05-26T18:00:00+02:00",
+    "date_text": "May 26 - 6:00 PM",
+    "venue": "Kapstadt Brauhaus Strand",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "99 Beach Rd",
+    "image": "https://photos.bandsintown.com/thumb/25013855.jpeg",
+    "url": "https://www.bandsintown.com/e/108323264-elandre-at-kapstadt-brauhaus-strand?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Country, Pop, R&B/Soul",
+    "genre_tags": [
+      "Alternative",
+      "Country",
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Elandré",
+    "artist": "Elandré",
+    "start": "2026-05-27T18:00:00+02:00",
+    "date_text": "May 27 - 6:00 PM",
+    "venue": "Kapstadt Brauhaus Paarl",
+    "locality": "Paarl",
+    "region": "Western Cape",
+    "address": "90 A Main Rd",
+    "image": "https://photos.bandsintown.com/thumb/25013863.jpeg",
+    "url": "https://www.bandsintown.com/e/108323267-elandre-at-kapstadt-brauhaus-paarl?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Country, Pop, R&B/Soul",
+    "genre_tags": [
+      "Alternative",
+      "Country",
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "The Boxer The Ring",
+    "artist": "The Boxer The Ring",
+    "start": "2026-05-27T21:00:00+02:00",
+    "date_text": "May 27 - 9:00 PM",
+    "venue": "The House of Machines",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "84 Shortmarket St",
+    "image": "https://photos.bandsintown.com/thumb/21975796.jpeg",
+    "url": "https://www.bandsintown.com/e/107841628-the-boxer-the-ring-at-the-house-of-machines?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Folk, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "Folk",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "dj"
+    ]
+  },
+  {
+    "title": "Elandré",
+    "artist": "Elandré",
+    "start": "2026-05-29T18:00:00+02:00",
+    "date_text": "May 29 - 6:00 PM",
+    "venue": "Kapstadt Brauhaus Durbanville",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Heritage Square C/O Gladstone and",
+    "image": "https://photos.bandsintown.com/thumb/25013867.jpeg",
+    "url": "https://www.bandsintown.com/e/108323273-elandre-at-kapstadt-brauhaus-durbanville?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Country, Pop, R&B/Soul",
+    "genre_tags": [
+      "Alternative",
+      "Country",
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Keanan Eksteen",
+    "artist": "Keanan Eksteen",
+    "start": "2026-05-29T18:30:00+02:00",
+    "date_text": "May 29 - 6:30 PM",
+    "venue": "The Commons",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "surfers corner",
+    "image": "https://photos.bandsintown.com/thumb/22253766.jpeg",
+    "url": "https://www.bandsintown.com/e/108085837-keanan-eksteen-at-the-commons?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Rooksein",
+    "artist": "Rooksein",
+    "start": "2026-05-30T09:00:00+02:00",
+    "date_text": "May 30 - 9:00 AM",
+    "venue": "Sandringham Farm",
+    "locality": "Stellenbosch",
+    "region": "Western Cape",
+    "address": "5Q9P+GX",
+    "image": "https://photos.bandsintown.com/thumb/24974922.jpeg",
+    "url": "https://www.bandsintown.com/e/108307232-rooksein-at-sandringham-farm?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Folk, Pop, R&B/Soul",
+    "genre_tags": [
+      "Alternative",
+      "Folk",
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Spoegwolf",
+    "artist": "Spoegwolf",
+    "start": "2026-05-30T10:00:00+02:00",
+    "date_text": "May 30 - 10:00 AM",
+    "venue": "Sandringham Farm",
+    "locality": "Stellenbosch",
+    "region": "Western Cape",
+    "address": "5Q9P+GX",
+    "image": "https://photos.bandsintown.com/thumb/23242437.jpeg",
+    "url": "https://www.bandsintown.com/e/108335743-spoegwolf-at-sandringham-farm?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Francois Van Coke",
+    "artist": "Francois Van Coke",
+    "start": "2026-06-02T20:00:00+02:00",
+    "date_text": "Jun 02 - 8:00 PM",
+    "venue": "Die Boer",
+    "locality": "Durbanville",
+    "region": "Western Cape",
+    "address": "6 Chenoweth St",
+    "image": "https://photos.bandsintown.com/thumb/24887448.jpeg",
+    "url": "https://www.bandsintown.com/e/107998022-francois-van-coke-at-die-boer?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Francois Van Coke",
+    "artist": "Francois Van Coke",
+    "start": "2026-06-03T20:00:00+02:00",
+    "date_text": "Jun 03 - 8:00 PM",
+    "venue": "Die Boer",
+    "locality": "Durbanville",
+    "region": "Western Cape",
+    "address": "6 Chenoweth St",
+    "image": "https://photos.bandsintown.com/thumb/24887448.jpeg",
+    "url": "https://www.bandsintown.com/e/107998030-francois-van-coke-at-die-boer?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "The Boxer The Ring",
+    "artist": "The Boxer The Ring",
+    "start": "2026-06-05T18:00:00+02:00",
+    "date_text": "Jun 05 - 6:00 PM",
+    "venue": "The Hart",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Shop 4",
+    "image": "https://photos.bandsintown.com/thumb/21975796.jpeg",
+    "url": "https://www.bandsintown.com/e/107997940-the-boxer-the-ring-at-the-hart?came_from=209",
+    "source": "Bandsintown",
+    "genre": "Alternative, Folk, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "Folk",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "art"
+    ]
+  },
+  {
+    "title": "Elandré Elandré",
+    "artist": "Elandré Elandré",
+    "start": "",
+    "date_text": "Jun 24 - 7:30 PM",
+    "venue": "Barnyard Tygervalley calendarIcon peopleIcon 14",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108163321-elandre-at-the-barnyard-theatre-tyger-valley?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Alternative, Country, Pop, R&B/Soul",
+    "genre_tags": [
+      "Alternative",
+      "Country",
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Wren Hinds Cafe Roux - Noordhoek calendarIcon",
+    "artist": "Wren Hinds Cafe Roux - Noordhoek calendarIcon",
+    "start": "",
+    "date_text": "Aug 05 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108300685-wren-hinds-at-cafe-roux-noordhoek?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Alternative, Folk, R&B/Soul",
+    "genre_tags": [
+      "Alternative",
+      "Folk",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "The Boxer The Ring The Hart calendarIcon",
+    "artist": "The Boxer The Ring The Hart calendarIcon",
+    "start": "",
+    "date_text": "Aug 28 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/107997949-the-boxer-the-ring-at-the-hart?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Alternative, Folk, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "Folk",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "art"
+    ]
+  },
+  {
+    "title": "Mike Borgia The Commons calendarIcon",
+    "artist": "Mike Borgia The Commons calendarIcon",
+    "start": "",
+    "date_text": "Sep 23 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108316574-mike-borgia-at-the-commons?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Alternative, Blues, Folk, Punk, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "Blues",
+      "Folk",
+      "Punk",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Mike Borgia The House of Machines calendarIcon",
+    "artist": "Mike Borgia The House of Machines calendarIcon",
+    "start": "",
+    "date_text": "Sep 24 - 8:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108231380-mike-borgia-at-the-house-of-machines?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Alternative, Blues, Folk, Punk, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "Blues",
+      "Folk",
+      "Punk",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "dj"
+    ]
+  },
+  {
+    "title": "The Boxer The Ring The Hart calendarIcon",
+    "artist": "The Boxer The Ring The Hart calendarIcon",
+    "start": "",
+    "date_text": "Oct 09 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/107997964-the-boxer-the-ring-at-the-hart?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Alternative, Folk, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "Folk",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "art"
+    ]
+  },
+  {
+    "title": "Live Kirstenbosch Gardens Concert Stage calendarIcon peopleIcon 79",
+    "artist": "Live Kirstenbosch Gardens Concert Stage calendarIcon peopleIcon 79",
+    "start": "",
+    "date_text": "Dec 08 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108277399-live-at-kirstenbosch-gardens-concert-stage?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Alternative, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "music",
+      "theatre"
+    ]
+  },
+  {
+    "title": "Live Kirstenbosch Gardens Concert Stage calendarIcon peopleIcon 11",
+    "artist": "Live Kirstenbosch Gardens Concert Stage calendarIcon peopleIcon 11",
+    "start": "",
+    "date_text": "Dec 09 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108287435-live-at-kirstenbosch-gardens-concert-stage?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Alternative, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "music",
+      "theatre"
+    ]
+  },
+  {
+    "title": "The Boxer The Ring The Hart calendarIcon",
+    "artist": "The Boxer The Ring The Hart calendarIcon",
+    "start": "",
+    "date_text": "Dec 11 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/107997971-the-boxer-the-ring-at-the-hart?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Alternative, Folk, R&B/Soul, Rock",
+    "genre_tags": [
+      "Alternative",
+      "Folk",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "art"
+    ]
+  },
+  {
+    "title": "Gordon Rocker Live at The Fish Hoek Galley (Bayside On Fish Hoek Beach) - Dancing Night! calendarIcon",
+    "artist": "Gordon Rocker Live at The Fish Hoek Galley (Bayside On Fish Hoek Beach) - Dancing Night! calendarIcon",
+    "start": "",
+    "date_text": "May 08 - 6:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108332287-gordon-rocker-at-the-galley-fish-hoek?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Blues, Country, Folk, Jazz, Pop, R&B/Soul, Reggae",
+    "genre_tags": [
+      "Blues",
+      "Country",
+      "Folk",
+      "Jazz",
+      "Pop",
+      "R&B/Soul",
+      "Reggae"
+    ],
+    "categories": [
+      "outdoors"
+    ]
+  },
+  {
+    "title": "Dan Patlansky Dan Patlansky Band Live Recording calendarIcon",
+    "artist": "Dan Patlansky Dan Patlansky Band Live Recording calendarIcon",
+    "start": "",
+    "date_text": "May 08 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108176424-dan-patlansky-at-cafe-roux-noordhoek?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Blues, R&B/Soul, Rock",
+    "genre_tags": [
+      "Blues",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Dan Patlansky Dan Patlansky Band Live Recording calendarIcon",
+    "artist": "Dan Patlansky Dan Patlansky Band Live Recording calendarIcon",
+    "start": "",
+    "date_text": "May 09 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108176429-dan-patlansky-at-cafe-roux-noordhoek?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Blues, R&B/Soul, Rock",
+    "genre_tags": [
+      "Blues",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Dan Patlansky Dan Patlansky Band Live Recording calendarIcon",
+    "artist": "Dan Patlansky Dan Patlansky Band Live Recording calendarIcon",
+    "start": "",
+    "date_text": "May 10 - 1:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108176438-dan-patlansky-at-the-daisy-jones-bar?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Blues, R&B/Soul, Rock",
+    "genre_tags": [
+      "Blues",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Nqubeko Mbatha The United Tour Cape Town calendarIcon",
+    "artist": "Nqubeko Mbatha The United Tour Cape Town calendarIcon",
+    "start": "",
+    "date_text": "Jun 27 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/107924227-nqubeko-mbatha-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Classical, R&B/Soul",
+    "genre_tags": [
+      "Classical",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Ntokozo Mbambo The United Tour Cape Town calendarIcon peopleIcon 41",
+    "artist": "Ntokozo Mbambo The United Tour Cape Town calendarIcon peopleIcon 41",
+    "start": "",
+    "date_text": "Jun 27 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/107879938-ntokozo-mbambo-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Classical, R&B/Soul",
+    "genre_tags": [
+      "Classical",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "W Heroes Restaurant calendarIcon",
+    "artist": "W Heroes Restaurant calendarIcon",
+    "start": "",
+    "date_text": "May 29 - 8:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038648045-w-at-heroes-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Country, Electronic, Hip-Hop, Pop, R&B/Soul",
+    "genre_tags": [
+      "Country",
+      "Electronic",
+      "Hip-Hop",
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": [
+      "food"
+    ]
+  },
+  {
+    "title": "Ruhan du Toit Amanzi Private Game Reserve calendarIcon",
+    "artist": "Ruhan du Toit Amanzi Private Game Reserve calendarIcon",
+    "start": "",
+    "date_text": "Aug 08 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1037971294-ruhan-du-toit-at-amanzi-private-game-reserve?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Country, R&B/Soul, Rock",
+    "genre_tags": [
+      "Country",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Dodo Nyoka Amanzi Private Game Reserve calendarIcon",
+    "artist": "Dodo Nyoka Amanzi Private Game Reserve calendarIcon",
+    "start": "",
+    "date_text": "Aug 08 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1037785577-dodo-nyoka-at-amanzi-private-game-reserve?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Country, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Country",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Kip Moore Grand Arena at GrandWest calendarIcon peopleIcon 317",
+    "artist": "Kip Moore Grand Arena at GrandWest calendarIcon peopleIcon 317",
+    "start": "",
+    "date_text": "Oct 23 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/107876974-kip-moore-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Country, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Country",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Kip Moore Grand Arena at GrandWest calendarIcon peopleIcon 366",
+    "artist": "Kip Moore Grand Arena at GrandWest calendarIcon peopleIcon 366",
+    "start": "",
+    "date_text": "Oct 24 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/107876984-kip-moore-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Country, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Country",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Trevor Noah Grand Arena at GrandWest calendarIcon",
+    "artist": "Trevor Noah Grand Arena at GrandWest calendarIcon",
+    "start": "",
+    "date_text": "Sep 26 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038850712-trevor-noah-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Comedy, R&B/Soul",
+    "genre_tags": [
+      "Comedy",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Jabulile Majola NDAB'EZKUDE calendarIcon peopleIcon 78",
+    "artist": "Jabulile Majola NDAB'EZKUDE calendarIcon peopleIcon 78",
+    "start": "",
+    "date_text": "May 08 - 8:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108240516-jabulile-majola-at-baxter-theatre-centre?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Folk, R&B/Soul",
+    "genre_tags": [
+      "Folk",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "RAAF RAAF",
+    "artist": "RAAF RAAF",
+    "start": "",
+    "date_text": "May 10 - 2:00 PM",
+    "venue": "Franschhoek, Allée Bleue calendarIcon",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108181378-raaf-at-allee-bleue-wine-estate?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Folk, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Folk",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Watershed Watershed",
+    "artist": "Watershed Watershed",
+    "start": "",
+    "date_text": "May 14 - 6:00 PM",
+    "venue": "Simon's Restaurant - Groot Constantia calendarIcon peopleIcon 9",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108146411-watershed-at-simon's-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Folk, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Folk",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Tanika Paschke-Moloi \"The Butterfly Effect\" Music & Poetry (Library and Art Gallery Series) calendarIcon",
+    "artist": "Tanika Paschke-Moloi \"The Butterfly Effect\" Music & Poetry (Library and Art Gallery Series) calendarIcon",
+    "start": "",
+    "date_text": "May 14 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108314994-tanika-paschke-moloi-at-artvark-gallery?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Folk, Jazz, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Folk",
+      "Jazz",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "music",
+      "art"
+    ]
+  },
+  {
+    "title": "Watershed Watershed Live",
+    "artist": "Watershed Watershed Live",
+    "start": "",
+    "date_text": "May 15 - 6:00 PM",
+    "venue": "Simon's Restaurant - Groot Constantia calendarIcon",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108146416-watershed-at-simon's-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Folk, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Folk",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Bongeziwe Mabandla Drostdy Theatre calendarIcon peopleIcon 51",
+    "artist": "Bongeziwe Mabandla Drostdy Theatre calendarIcon peopleIcon 51",
+    "start": "",
+    "date_text": "May 28 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108004143-bongeziwe-mabandla-at-drostdy-theatre?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Folk, R&B/Soul",
+    "genre_tags": [
+      "Folk",
+      "R&B/Soul"
+    ],
+    "categories": [
+      "theatre"
+    ]
+  },
+  {
+    "title": "Tanika Paschke-Moloi \"The Butterfly Effect\" Music & Poetry (Library & Art Gallery Series) calendarIcon",
+    "artist": "Tanika Paschke-Moloi \"The Butterfly Effect\" Music & Poetry (Library & Art Gallery Series) calendarIcon",
+    "start": "",
+    "date_text": "May 29 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108315033-tanika-paschke-moloi-at-obz-books?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Folk, Jazz, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Folk",
+      "Jazz",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "music",
+      "art"
+    ]
+  },
+  {
+    "title": "Bongeziwe Mabandla Bongeziwe Mabandla - Live In Cape Town calendarIcon peopleIcon 67",
+    "artist": "Bongeziwe Mabandla Bongeziwe Mabandla - Live In Cape Town calendarIcon peopleIcon 67",
+    "start": "",
+    "date_text": "May 29 - 8:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108004150-bongeziwe-mabandla-at-hearty-collective?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Folk, R&B/Soul",
+    "genre_tags": [
+      "Folk",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Tanika Paschke-Moloi \"The Butterfly Effect\" Music & Poetry (Library and Art Gallery Series) calendarIcon",
+    "artist": "Tanika Paschke-Moloi \"The Butterfly Effect\" Music & Poetry (Library and Art Gallery Series) calendarIcon",
+    "start": "",
+    "date_text": "May 30 - 2:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108315081-tanika-paschke-moloi-at-rust-en-vrede-gallery-and-clay-museum?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Folk, Jazz, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Folk",
+      "Jazz",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "music",
+      "art"
+    ]
+  },
+  {
+    "title": "Watershed Watershed",
+    "artist": "Watershed Watershed",
+    "start": "",
+    "date_text": "Jun 06 - 6:00 PM",
+    "venue": "Elgin Railway Market calendarIcon",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108169348-watershed-at-elgin-railway-market?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Folk, Pop, R&B/Soul, Rock",
+    "genre_tags": [
+      "Folk",
+      "Pop",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Jack Parow JACK PAROW",
+    "artist": "Jack Parow JACK PAROW",
+    "start": "",
+    "date_text": "May 16 - 8:00 PM",
+    "venue": "The NEW ARMCHAIR (SPRINGBOK ARMS) calendarIcon",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108279532-jack-parow-at-springbok-arms?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Hip-Hop, R&B/Soul",
+    "genre_tags": [
+      "Hip-Hop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Tamia Grand Arena at GrandWest calendarIcon peopleIcon 87",
+    "artist": "Tamia Grand Arena at GrandWest calendarIcon peopleIcon 87",
+    "start": "",
+    "date_text": "Aug 06 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108253102-tamia-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Hip-Hop, R&B/Soul",
+    "genre_tags": [
+      "Hip-Hop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Dave Grand Arena at GrandWest calendarIcon peopleIcon 35",
+    "artist": "Dave Grand Arena at GrandWest calendarIcon peopleIcon 35",
+    "start": "",
+    "date_text": "Oct 06 - 8:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108128206-dave-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Hip-Hop, R&B/Soul",
+    "genre_tags": [
+      "Hip-Hop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Jill Scott SunBet Arena calendarIcon peopleIcon 668",
+    "artist": "Jill Scott SunBet Arena calendarIcon peopleIcon 668",
+    "start": "",
+    "date_text": "Nov 11 - 8:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108054163-jill-scott-at-sunbet-arena?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Hip-Hop, R&B/Soul",
+    "genre_tags": [
+      "Hip-Hop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Halvar Children of The Damned calendarIcon",
+    "artist": "Halvar Children of The Damned calendarIcon",
+    "start": "",
+    "date_text": "May 08 - 5:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108236412-halvar-at-woodstock-brewery?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Metal, R&B/Soul",
+    "genre_tags": [
+      "Metal",
+      "R&B/Soul"
+    ],
+    "categories": [
+      "family"
+    ]
+  },
+  {
+    "title": "The Unpopular Department Abyssal Fall calendarIcon",
+    "artist": "The Unpopular Department Abyssal Fall calendarIcon",
+    "start": "",
+    "date_text": "May 09 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108324821-the-unpopular-department-at-the-armchair-theatre?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Metal, R&B/Soul, Rock",
+    "genre_tags": [
+      "Metal",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "art"
+    ]
+  },
+  {
+    "title": "The Unpopular Department LIVE at Aandklas Stellenbosch calendarIcon",
+    "artist": "The Unpopular Department LIVE at Aandklas Stellenbosch calendarIcon",
+    "start": "",
+    "date_text": "May 23 - 9:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108329439-the-unpopular-department-at-aandklas-stellenbosch?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Metal, R&B/Soul, Rock",
+    "genre_tags": [
+      "Metal",
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": [
+      "art"
+    ]
+  },
+  {
+    "title": "Halvar Metal4Africa Winterfest '26 2026 calendarIcon",
+    "artist": "Halvar Metal4Africa Winterfest '26 2026 calendarIcon",
+    "start": "",
+    "date_text": "Jul 25 - 4:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108279109-halvar-at-viben-lounge?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Metal, R&B/Soul",
+    "genre_tags": [
+      "Metal",
+      "R&B/Soul"
+    ],
+    "categories": [
+      "festival"
+    ]
+  },
+  {
+    "title": "Rugby Heroes Restaurant calendarIcon",
+    "artist": "Rugby Heroes Restaurant calendarIcon",
+    "start": "",
+    "date_text": "Aug 22 - 5:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038836375-rugby-at-heroes-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Pop, R&B/Soul",
+    "genre_tags": [
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": [
+      "food",
+      "sports"
+    ]
+  },
+  {
+    "title": "Jorja Smith Cloof Wine Estate calendarIcon",
+    "artist": "Jorja Smith Cloof Wine Estate calendarIcon",
+    "start": "",
+    "date_text": "Oct 02 - 8:00 AM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038852550-jorja-smith-at-cloof-wine-estate?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Pop, R&B/Soul",
+    "genre_tags": [
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": [
+      "bar"
+    ]
+  },
+  {
+    "title": "Steve Hofmeyr Heroes Restaurant calendarIcon",
+    "artist": "Steve Hofmeyr Heroes Restaurant calendarIcon",
+    "start": "",
+    "date_text": "Oct 09 - 8:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038838220-steve-hofmeyr-at-heroes-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Pop, R&B/Soul",
+    "genre_tags": [
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": [
+      "food"
+    ]
+  },
+  {
+    "title": "Steve Hofmeyr Heroes Restaurant calendarIcon",
+    "artist": "Steve Hofmeyr Heroes Restaurant calendarIcon",
+    "start": "",
+    "date_text": "Jan 24, 2027 - 2:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038852814-steve-hofmeyr-at-heroes-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Pop, R&B/Soul",
+    "genre_tags": [
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": [
+      "food"
+    ]
+  },
+  {
+    "title": "Real Feelings Hörbar Nah: Die South Africa Sessions calendarIcon",
+    "artist": "Real Feelings Hörbar Nah: Die South Africa Sessions calendarIcon",
+    "start": "",
+    "date_text": "Feb 28, 2027 - 5:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108335560-real-feelings-at-kirstenbosch-national-botanical-garden?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Pop, R&B/Soul",
+    "genre_tags": [
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": [
+      "bar"
+    ]
+  },
+  {
+    "title": "ben The Midnight Sun Tour calendarIcon",
+    "artist": "ben The Midnight Sun Tour calendarIcon",
+    "start": "",
+    "date_text": "May 22, 2027 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108328804-ben-at-grand-arena-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "Pop, R&B/Soul",
+    "genre_tags": [
+      "Pop",
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Tete Mbambisa Operation Khataza",
+    "artist": "Tete Mbambisa Operation Khataza",
+    "start": "",
+    "date_text": "May 07 - 8:00 PM",
+    "venue": "Athletic Club & Social calendarIcon",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108293173-tete-mbambisa-at-the-athletic-club-and-social?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": [
+      "theatre"
+    ]
+  },
+  {
+    "title": "Joshua Na Die Reën Daisy Jones - Vir Huis Horison calendarIcon peopleIcon 15",
+    "artist": "Joshua Na Die Reën Daisy Jones - Vir Huis Horison calendarIcon peopleIcon 15",
+    "start": "",
+    "date_text": "May 08 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108152105-joshua-na-die-reen-at-the-daisy-jones-bar?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul, Rock",
+    "genre_tags": [
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Chris Steyn Kapstadt Brauhaus Stellenbosch calendarIcon",
+    "artist": "Chris Steyn Kapstadt Brauhaus Stellenbosch calendarIcon",
+    "start": "",
+    "date_text": "May 14 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038581300-chris-steyn-at-kapstadt-brauhaus-stellenbosch?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "APPEL The Daisy Jones Bar calendarIcon peopleIcon 13",
+    "artist": "APPEL The Daisy Jones Bar calendarIcon peopleIcon 13",
+    "start": "",
+    "date_text": "May 15 - 5:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038279216-appel-at-the-daisy-jones-bar?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": [
+      "bar"
+    ]
+  },
+  {
+    "title": "Chris Steyn Kapstadt Brauhaus Durbanville calendarIcon",
+    "artist": "Chris Steyn Kapstadt Brauhaus Durbanville calendarIcon",
+    "start": "",
+    "date_text": "May 15 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038581569-chris-steyn-at-kapstadt-brauhaus-durbanville?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Christia Visser Christia Visser Live @Die Boer Teater calendarIcon",
+    "artist": "Christia Visser Christia Visser Live @Die Boer Teater calendarIcon",
+    "start": "",
+    "date_text": "May 22 - 8:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/107975262-christia-visser-at-die-boer?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Tete Mbambisa Freshlyground",
+    "artist": "Tete Mbambisa Freshlyground",
+    "start": "",
+    "date_text": "May 23 - 3:00 PM",
+    "venue": "Guga S’thebe, Langa calendarIcon",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108293175-tete-mbambisa-at-guga-s'thebe?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "KalleWave$ CAPE TOWN: OCEAN STATIC calendarIcon",
+    "artist": "KalleWave$ CAPE TOWN: OCEAN STATIC calendarIcon",
+    "start": "",
+    "date_text": "May 23 - 5:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/107835750-kallewavedollar-at-the-waiting-room?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Summer Pearl Youngblood-Africa calendarIcon",
+    "artist": "Summer Pearl Youngblood-Africa calendarIcon",
+    "start": "",
+    "date_text": "May 23 - 8:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108285377-summer-pearl-at-youngblood-africa?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Lianie May Heroes Restaurant calendarIcon",
+    "artist": "Lianie May Heroes Restaurant calendarIcon",
+    "start": "",
+    "date_text": "May 29 - 8:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038646372-lianie-may-at-heroes-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": [
+      "food"
+    ]
+  },
+  {
+    "title": "The SN Project Pantomime - Live in Cape Town calendarIcon",
+    "artist": "The SN Project Pantomime - Live in Cape Town calendarIcon",
+    "start": "",
+    "date_text": "May 30 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108329102-the-sn-project-at-44-on-long-theatre-and-venue?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Mashaya Social Link-Up: DayTime Groove calendarIcon",
+    "artist": "Mashaya Social Link-Up: DayTime Groove calendarIcon",
+    "start": "",
+    "date_text": "May 31 - 1:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108131709-mashaya-at-rooftop-on-bree?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Tete Mbambisa Victor Masondo & Bheki Khoza feat. Thembi Mtshali",
+    "artist": "Tete Mbambisa Victor Masondo & Bheki Khoza feat. Thembi Mtshali",
+    "start": "",
+    "date_text": "May 31 - 4:00 PM",
+    "venue": "Cafe Roux calendarIcon",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108293182-tete-mbambisa-at-cafe-roux-noordhoek?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "UB40 featuring Ali Campbell Grand Arena at GrandWest calendarIcon peopleIcon 16",
+    "artist": "UB40 featuring Ali Campbell Grand Arena at GrandWest calendarIcon peopleIcon 16",
+    "start": "",
+    "date_text": "Jun 02 - 8:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/1037043778-ub40-featuring-ali-campbell-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul, Reggae",
+    "genre_tags": [
+      "R&B/Soul",
+      "Reggae"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Bonsai Kitten BONSAI KITTEN in Cape Town calendarIcon",
+    "artist": "Bonsai Kitten BONSAI KITTEN in Cape Town calendarIcon",
+    "start": "",
+    "date_text": "Jun 05 - 7:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108170670-bonsai-kitten-at-the-armchair-theatre?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Bonsai Kitten BONSAI KITTEN in South Afrika calendarIcon",
+    "artist": "Bonsai Kitten BONSAI KITTEN in South Afrika calendarIcon",
+    "start": "",
+    "date_text": "Jun 06 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108159761-bonsai-kitten-at-the-daisy-jones-bar?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Family Band Heroes Restaurant calendarIcon",
+    "artist": "Family Band Heroes Restaurant calendarIcon",
+    "start": "",
+    "date_text": "Jun 13 - 8:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038503802-family-band-at-heroes-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": [
+      "food",
+      "family"
+    ]
+  },
+  {
+    "title": "Mmangaliso The United Tour Cape Town calendarIcon",
+    "artist": "Mmangaliso The United Tour Cape Town calendarIcon",
+    "start": "",
+    "date_text": "Jun 27 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/107924229-mmangaliso-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Steve Graham Steve Graham's Monsters of Rock show calendarIcon",
+    "artist": "Steve Graham Steve Graham's Monsters of Rock show calendarIcon",
+    "start": "",
+    "date_text": "Jun 27 - 8:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108245430-steve-graham-at-simon's-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul, Rock",
+    "genre_tags": [
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Steve Graham Steve Graham's Pink Floyd Tribute calendarIcon",
+    "artist": "Steve Graham Steve Graham's Pink Floyd Tribute calendarIcon",
+    "start": "",
+    "date_text": "Jun 30 - 7:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108245374-steve-graham-at-the-drama-factory?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul, Rock",
+    "genre_tags": [
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Steve Graham Steve Graham's Monsters of Rock show calendarIcon",
+    "artist": "Steve Graham Steve Graham's Monsters of Rock show calendarIcon",
+    "start": "",
+    "date_text": "Jul 01 - 7:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108245388-steve-graham-at-the-drama-factory?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul, Rock",
+    "genre_tags": [
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Steve Graham Steve Graham's Pink Floyd calendarIcon",
+    "artist": "Steve Graham Steve Graham's Pink Floyd calendarIcon",
+    "start": "",
+    "date_text": "Jul 08 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108245415-steve-graham-at-cafe-roux-noordhoek?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul, Rock",
+    "genre_tags": [
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Steve Graham Steve Graham's Monsters of Rock show calendarIcon",
+    "artist": "Steve Graham Steve Graham's Monsters of Rock show calendarIcon",
+    "start": "",
+    "date_text": "Jul 09 - 6:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108245418-steve-graham-at-cafe-roux-noordhoek?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul, Rock",
+    "genre_tags": [
+      "R&B/Soul",
+      "Rock"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Karen Zoid Karen Zoid Live at Lourensford calendarIcon",
+    "artist": "Karen Zoid Karen Zoid Live at Lourensford calendarIcon",
+    "start": "",
+    "date_text": "Jul 18 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108328912-karen-zoid-at-lourensford-wine-estate?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Corlea Corlea & JD Mars – Ligte. Lewe. Liefde. calendarIcon",
+    "artist": "Corlea Corlea & JD Mars – Ligte. Lewe. Liefde. calendarIcon",
+    "start": "",
+    "date_text": "Jul 23 - 8:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108055491-corlea-at-die-boer?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Corlea Corlea & JD Mars – Ligte. Lewe. Liefde. calendarIcon",
+    "artist": "Corlea Corlea & JD Mars – Ligte. Lewe. Liefde. calendarIcon",
+    "start": "",
+    "date_text": "Jul 24 - 8:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/108055492-corlea-at-die-boer?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Karen Zoid KAREN ZOID Live at Daisy Jones, Stellenbosch calendarIcon peopleIcon 6",
+    "artist": "Karen Zoid KAREN ZOID Live at Daisy Jones, Stellenbosch calendarIcon peopleIcon 6",
+    "start": "",
+    "date_text": "Jul 25 - 7:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108309316-karen-zoid-at-the-daisy-jones-bar?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Jan Rhaap Heroes Restaurant calendarIcon",
+    "artist": "Jan Rhaap Heroes Restaurant calendarIcon",
+    "start": "",
+    "date_text": "Aug 07 - 8:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038861692-jan-rhaap-at-heroes-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": [
+      "food"
+    ]
+  },
+  {
+    "title": "Maxwell Maxwell Live in SA - Cape Town calendarIcon peopleIcon 34",
+    "artist": "Maxwell Maxwell Live in SA - Cape Town calendarIcon peopleIcon 34",
+    "start": "",
+    "date_text": "Aug 11 - 10:00 AM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108258579-maxwell-at-grand-arena-at-grandwest?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": []
+  },
+  {
+    "title": "Riaan Benade Wellington Rugbyvoetbalklub calendarIcon peopleIcon 12",
+    "artist": "Riaan Benade Wellington Rugbyvoetbalklub calendarIcon peopleIcon 12",
+    "start": "",
+    "date_text": "Sep 05 - 10:00 AM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/1036380259-riaan-benade-at-wellington-rugbyvoetbalklub?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": [
+      "sports"
+    ]
+  },
+  {
+    "title": "ziyanda tshangana Ziyanda Tshangana - Live in Concert Cape Town calendarIcon peopleIcon 20",
+    "artist": "ziyanda tshangana Ziyanda Tshangana - Live in Concert Cape Town calendarIcon peopleIcon 20",
+    "start": "",
+    "date_text": "Sep 05 - 3:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whitePeopleIcon.svg",
+    "url": "https://www.bandsintown.com/e/108016362-ziyanda-tshangana-at-joseph-stone-auditorium?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": [
+      "music"
+    ]
+  },
+  {
+    "title": "Liezel Pieters Heroes Restaurant calendarIcon",
+    "artist": "Liezel Pieters Heroes Restaurant calendarIcon",
+    "start": "",
+    "date_text": "Oct 01 - 8:30 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038863325-liezel-pieters-at-heroes-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": [
+      "food"
+    ]
+  },
+  {
+    "title": "Rocco de Villiers Heroes Restaurant calendarIcon",
+    "artist": "Rocco de Villiers Heroes Restaurant calendarIcon",
+    "start": "",
+    "date_text": "Nov 01 - 2:00 PM",
+    "venue": "",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "",
+    "image": "https://assets.prod.bandsintown.com/images/homeIcon/whiteCalendarIcon.svg",
+    "url": "https://www.bandsintown.com/e/1038838062-rocco-de-villiers-at-heroes-restaurant?came_from=274&utm_medium=web&utm_source=search_result&utm_campaign=event",
+    "source": "Bandsintown",
+    "genre": "R&B/Soul",
+    "genre_tags": [
+      "R&B/Soul"
+    ],
+    "categories": [
+      "food"
     ]
   }
 ]

@@ -2354,12 +2354,15 @@ function renderQuicketEvents(events) {
   }
 
   elements.quicketEventsList.innerHTML = "";
-  for (const event of events) {
+  for (let index = 0; index < events.length; index += 1) {
+    const event = events[index];
     const card = document.createElement("a");
     card.className = "event-card";
     card.href = event.url;
     card.target = "_blank";
     card.rel = "noreferrer";
+    card.dataset.eventSource = "general";
+    card.dataset.eventIndex = String(index);
 
     const image = document.createElement("img");
     image.src = event.image || "";
@@ -2406,8 +2409,7 @@ function renderBandsintownEvents(events) {
   const discovered = unique(
     events.flatMap((event) => Array.isArray(event.genre_tags) ? event.genre_tags : []),
   );
-  const configuredFiltered = configured.filter((genre) => discovered.includes(genre));
-  const genres = configuredFiltered.length ? configuredFiltered : discovered;
+  const genres = configured.length ? configured : discovered;
   const availableKeys = new Set(["all", ...genres.map((genre) => normalizeGenreKey(genre))]);
   if (!availableKeys.has(state.selectedBandsintownGenre)) {
     state.selectedBandsintownGenre = "all";
@@ -2456,11 +2458,17 @@ function renderBandsintownEvents(events) {
     track.append(empty);
   } else {
     for (const event of filtered) {
+      const sourceIndex = state.bandsintownEvents.indexOf(event);
+      if (sourceIndex < 0) {
+        continue;
+      }
       const card = document.createElement("a");
       card.className = "bandsintown-event-card";
       card.href = event.url;
       card.target = "_blank";
       card.rel = "noreferrer";
+      card.dataset.eventSource = "bandsintown";
+      card.dataset.eventIndex = String(sourceIndex);
 
       if (event.image) {
         const image = document.createElement("img");
@@ -2500,6 +2508,62 @@ function normalizeGenreKey(value) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+function openEventDetail(item) {
+  if (!elements.watchlistDetailPanel || !elements.watchlistDetailContent || !item) {
+    return;
+  }
+
+  const title = escapeHtml(String(item.title || "Untitled event").trim());
+  const imageUrl = String(item.image || "").trim();
+  const source = escapeHtml(String(item.source || "Event").trim());
+  const dateText = String(item.start || "").trim() ? displayDateTime(item.start) : String(item.date_text || "").trim();
+  const venue = String(item.venue || "").trim();
+  const locality = String(item.locality || "").trim();
+  const region = String(item.region || "").trim();
+  const address = String(item.address || "").trim();
+  const locationBits = [venue, locality, region].filter(Boolean);
+  const locationLine = locationBits.join(", ");
+  const price = String(item.price || "").trim();
+  const genreTags = Array.isArray(item.genre_tags) ? item.genre_tags.filter(Boolean) : [];
+  const categories = Array.isArray(item.categories) ? item.categories.filter(Boolean) : [];
+  const tagsLine = [...genreTags, ...categories].join(" • ");
+  const url = String(item.url || "").trim();
+
+  const posterHtml = imageUrl
+    ? `<img class="watchlist-detail-poster" src="${escapeHtml(imageUrl)}" alt="${title} image">`
+    : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No image</div>';
+
+  elements.watchlistDetailContent.innerHTML = `
+    <div class="watchlist-detail-layout">
+      ${posterHtml}
+      <div class="watchlist-detail-body">
+        <p class="watchlist-detail-kicker">${source}</p>
+        <h3>${title}</h3>
+        ${dateText ? `<p class="watchlist-detail-meta">${escapeHtml(dateText)}</p>` : ""}
+        ${tagsLine ? `<p class="watchlist-detail-meta">${escapeHtml(tagsLine)}</p>` : ""}
+        ${locationLine ? `<p><strong>Venue:</strong> ${escapeHtml(locationLine)}</p>` : ""}
+        ${address ? `<p><strong>Address:</strong> ${escapeHtml(address)}</p>` : ""}
+        ${price ? `<p><strong>Price:</strong> ${escapeHtml(price)}</p>` : ""}
+        <div class="watchlist-detail-links">
+          ${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">Open Event</a>` : ""}
+        </div>
+      </div>
+    </div>
+  `;
+  elements.watchlistDetailPanel.hidden = false;
+  elements.watchlistDetailPanel.classList.add("is-open");
+  elements.watchlistDetailPanel.classList.remove(
+    "is-loved",
+    "opinion-loved",
+    "opinion-liked",
+    "opinion-mixed",
+    "opinion-disliked",
+    "opinion-hated",
+  );
+  elements.watchlistDetailPanel.dataset.watchOpinion = "";
+  document.body.classList.add("watchlist-detail-open");
 }
 
 function compareBandsintownDateAsc(left, right) {
@@ -3760,13 +3824,39 @@ if (elements.releaseGrid) {
 if (elements.bandsintownEventsList) {
   elements.bandsintownEventsList.addEventListener("click", (event) => {
     const button = event.target.closest("[data-bandsintown-genre]");
-    if (!button) {
+    if (button) {
+      event.preventDefault();
+      const next = button.dataset.bandsintownGenre || "all";
+      state.selectedBandsintownGenre = next;
+      renderBandsintownEvents(state.bandsintownEvents);
+      return;
+    }
+
+    const card = event.target.closest(".bandsintown-event-card[data-event-index]");
+    if (!card) {
       return;
     }
     event.preventDefault();
-    const next = button.dataset.bandsintownGenre || "all";
-    state.selectedBandsintownGenre = next;
-    renderBandsintownEvents(state.bandsintownEvents);
+    const index = Number(card.dataset.eventIndex);
+    if (!Number.isInteger(index) || index < 0 || index >= state.bandsintownEvents.length) {
+      return;
+    }
+    openEventDetail(state.bandsintownEvents[index]);
+  });
+}
+
+if (elements.quicketEventsList) {
+  elements.quicketEventsList.addEventListener("click", (event) => {
+    const card = event.target.closest(".event-card[data-event-index]");
+    if (!card) {
+      return;
+    }
+    event.preventDefault();
+    const index = Number(card.dataset.eventIndex);
+    if (!Number.isInteger(index) || index < 0 || index >= state.quicketEvents.length) {
+      return;
+    }
+    openEventDetail(state.quicketEvents[index]);
   });
 }
 

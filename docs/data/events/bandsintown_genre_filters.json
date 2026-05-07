@@ -1,20 +1,21 @@
 {
   "genres": [
-    "Afrikaans",
-    "Pop",
-    "Rock",
-    "R&B/Soul",
-    "Hip-Hop",
-    "Electronic",
-    "Jazz",
-    "Country",
-    "Folk",
+    "Alternative",
     "Blues",
+    "Christian/Gospel",
     "Classical",
+    "Country",
+    "Comedy",
+    "Electronic",
+    "Folk",
+    "Hip-Hop",
+    "Jazz",
     "Latin",
-    "Reggae",
-    "Punk",
     "Metal",
-    "Comedy"
+    "Pop",
+    "Punk",
+    "R&B/Soul",
+    "Reggae",
+    "Rock"
   ]
 }

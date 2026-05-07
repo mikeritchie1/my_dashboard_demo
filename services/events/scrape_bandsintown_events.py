@@ -13,15 +13,87 @@ import sys
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
-from event_tags import tag_event, is_excluded_event
+from event_tags import is_excluded_event, tag_event
 
 
 SOURCE_URL = env_get("SCRAPE_BANDSINTOWN_EVENTS_URL", "https://www.bandsintown.com/c/cape-town-south-africa")
-EVENTS_MAX_ITEMS = int(env_get("SCRAPE_BANDSINTOWN_MAX_ITEMS", "40"))
+# 0 means no hard limit: scrape all discoverable events.
+EVENTS_MAX_ITEMS = int(env_get("SCRAPE_BANDSINTOWN_MAX_ITEMS", "0"))
+MAX_PAGES = max(1, int(env_get("SCRAPE_BANDSINTOWN_MAX_PAGES", "30")))
 REPO_DIR = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_DIR / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "bandsintown_events.json"
+GENRE_FILTERS_PATH = OUTPUT_DIR / "bandsintown_genre_filters.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")
+DEFAULT_GENRE_FILTERS = [
+    "Alternative",
+    "Blues",
+    "Christian/Gospel",
+    "Classical",
+    "Country",
+    "Comedy",
+    "Electronic",
+    "Folk",
+    "Hip-Hop",
+    "Jazz",
+    "Latin",
+    "Metal",
+    "Pop",
+    "Punk",
+    "R&B/Soul",
+    "Reggae",
+    "Rock",
+]
+
+
+def genre_url(genre: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", str(genre or "").strip().lower()).strip("-")
+    if not slug:
+        return SOURCE_URL
+    return f"https://www.bandsintown.com/all-dates/genre/{slug}#search"
+
+
+def genre_fallback_url(genre: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", str(genre or "").strip().lower()).strip("-")
+    if not slug:
+        return SOURCE_URL
+    return f"https://www.bandsintown.com/genre/{slug}#search"
+
+
+def load_genre_filters() -> list[str]:
+    if GENRE_FILTERS_PATH.exists():
+        try:
+            payload = json.loads(GENRE_FILTERS_PATH.read_text(encoding="utf-8"))
+            values = payload.get("genres", []) if isinstance(payload, dict) else []
+            if isinstance(values, list):
+                cleaned = [clean_text(str(value)) for value in values if clean_text(str(value))]
+                if cleaned:
+                    return cleaned
+        except json.JSONDecodeError:
+            pass
+    return DEFAULT_GENRE_FILTERS[:]
+
+
+def ordered_genres(tags: set[str], genre_order: list[str]) -> list[str]:
+    order_map = {clean_text(genre).lower(): index for index, genre in enumerate(genre_order)}
+    unique_tags = list(dict.fromkeys(clean_text(tag) for tag in tags if clean_text(tag)))
+    unique_tags.sort(key=lambda value: (order_map.get(value.lower(), 10_000), value.lower()))
+    return unique_tags
+
+
+def is_western_cape_event(event: dict[str, object]) -> bool:
+    locality = clean_text(str(event.get("locality", ""))).lower()
+    region = clean_text(str(event.get("region", ""))).lower()
+    address = clean_text(str(event.get("address", ""))).lower()
+    venue = clean_text(str(event.get("venue", ""))).lower()
+    text = " ".join([locality, region, address, venue])
+    if "western cape" in text or "cape town" in text:
+        return True
+    # Common nearby city labels that still belong to Western Cape listings.
+    for token in ["stellenbosch", "paarl", "somerset west", "durbanville", "franschhoek", "fish hoek", "langa"]:
+        if token in text:
+            return True
+    return False
 
 
 class BandsintownCityParser(HTMLParser):
@@ -93,12 +165,24 @@ def normalize_url(url: str) -> str:
     return urllib.parse.urljoin(SOURCE_URL, raw)
 
 
+def paged_url(base_url: str, page: int) -> str:
+    if page <= 1:
+        return base_url
+    parsed = urllib.parse.urlparse(base_url)
+    query = dict(urllib.parse.parse_qsl(parsed.query, keep_blank_values=True))
+    query["page"] = str(page)
+    return urllib.parse.urlunparse(parsed._replace(query=urllib.parse.urlencode(query)))
+
+
 def fetch_html(url: str) -> str:
     request = urllib.request.Request(
         url,
         headers={
             "User-Agent": "Mozilla/5.0 (compatible; my-dashboard/1.0)",
             "Accept": "text/html,application/xhtml+xml",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Accept-Encoding": "identity",
+            "Referer": "https://www.bandsintown.com/",
         },
     )
     with urllib.request.urlopen(request, timeout=30) as response:
@@ -178,51 +262,6 @@ def first_image(value: object) -> str:
     return ""
 
 
-def extract_genres(value: object) -> list[str]:
-    if isinstance(value, str):
-        parts = re.split(r"[,/|]", value)
-        genres = [clean_text(part) for part in parts if clean_text(part)]
-        return genres
-    if isinstance(value, list):
-        genres: list[str] = []
-        for item in value:
-            genres.extend(extract_genres(item))
-        return list(dict.fromkeys(genres))
-    return []
-
-
-def event_from_json_ld(payload: dict, fallback: dict[str, str]) -> dict:
-    location = payload.get("location") if isinstance(payload.get("location"), dict) else {}
-    address = location.get("address") if isinstance(location.get("address"), dict) else {}
-    start = parse_dt(str(payload.get("startDate") or ""))
-    title = clean_text(str(payload.get("name") or fallback.get("text") or ""))
-    venue = clean_text(str(location.get("name") or ""))
-    title, venue = split_artist_and_venue(title, venue)
-    url = normalize_url(str(payload.get("url") or fallback.get("url") or ""))
-    image = first_image(payload.get("image")) or fallback.get("image", "")
-    locality = clean_text(str(address.get("addressLocality") or "Cape Town"))
-    region = clean_text(str(address.get("addressRegion") or "Western Cape"))
-    performer = payload.get("performer") if isinstance(payload.get("performer"), dict) else {}
-    genre_tags = extract_genres(performer.get("genre", ""))
-
-    return {
-        "title": title,
-        "artist": title,
-        "start": start.isoformat() if start else "",
-        "date_text": display_fallback_date(fallback.get("text", "")),
-        "venue": venue,
-        "locality": locality,
-        "region": region,
-        "address": clean_text(str(address.get("streetAddress") or "")),
-        "image": image,
-        "url": url,
-        "source": "Bandsintown",
-        "genre": ", ".join(genre_tags),
-        "genre_tags": genre_tags,
-        "categories": tag_event(title, venue),
-    }
-
-
 def display_fallback_date(text: str) -> str:
     match = re.search(
         r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}(?:,\s*\d{4})?\s+-\s+\d{1,2}:\d{2}\s*(?:AM|PM)\b",
@@ -244,6 +283,37 @@ def split_artist_and_venue(title: str, venue: str) -> tuple[str, str]:
     if clean_venue and suffix.lower() == clean_venue.lower():
         return clean_text(artist), clean_venue
     return clean_title, clean_venue
+
+
+def event_from_json_ld(payload: dict, fallback: dict[str, str], forced_genres: list[str] | None = None) -> dict:
+    location = payload.get("location") if isinstance(payload.get("location"), dict) else {}
+    address = location.get("address") if isinstance(location.get("address"), dict) else {}
+    start = parse_dt(str(payload.get("startDate") or ""))
+    title = clean_text(str(payload.get("name") or fallback.get("text") or ""))
+    venue = clean_text(str(location.get("name") or ""))
+    title, venue = split_artist_and_venue(title, venue)
+    url = normalize_url(str(payload.get("url") or fallback.get("url") or ""))
+    image = first_image(payload.get("image")) or fallback.get("image", "")
+    locality = clean_text(str(address.get("addressLocality") or "Cape Town"))
+    region = clean_text(str(address.get("addressRegion") or "Western Cape"))
+    genre_tags = forced_genres[:] if forced_genres else []
+
+    return {
+        "title": title,
+        "artist": title,
+        "start": start.isoformat() if start else "",
+        "date_text": display_fallback_date(fallback.get("text", "")),
+        "venue": venue,
+        "locality": locality,
+        "region": region,
+        "address": clean_text(str(address.get("streetAddress") or "")),
+        "image": image,
+        "url": url,
+        "source": "Bandsintown",
+        "genre": ", ".join(genre_tags),
+        "genre_tags": genre_tags,
+        "categories": tag_event(title, venue),
+    }
 
 
 def event_from_listing(link: dict[str, str]) -> dict:
@@ -269,41 +339,105 @@ def event_from_listing(link: dict[str, str]) -> dict:
     }
 
 
-def scrape(limit: int) -> list[dict]:
-    print(f"Scanning Bandsintown: {SOURCE_URL}")
-    links = parse_city_links(fetch_html(SOURCE_URL))
-    print(f"  Found {len(links)} event link(s), limit {limit}.")
+def collect_listing_links(source_url: str, max_pages: int) -> list[dict[str, str]]:
+    links: list[dict[str, str]] = []
+    seen_listing_urls: set[str] = set()
+    stale_pages = 0
+
+    for page in range(1, max_pages + 1):
+        url = paged_url(source_url, page)
+        try:
+            page_links = parse_city_links(fetch_html(url))
+        except Exception:
+            page_links = []
+        before = len(seen_listing_urls)
+        for entry in page_links:
+            entry_url = entry.get("url", "")
+            if not entry_url or entry_url in seen_listing_urls:
+                continue
+            seen_listing_urls.add(entry_url)
+            links.append(entry)
+        discovered = len(seen_listing_urls) - before
+        print(f"  Listing page {page}: {len(page_links)} candidate(s), {discovered} new.")
+        if discovered == 0:
+            stale_pages += 1
+            if stale_pages >= 2:
+                break
+        else:
+            stale_pages = 0
+    return links
+
+
+def scrape(limit: int, max_pages: int, source_url: str, listing_only: bool = False, genre_seed: str = "") -> list[dict]:
+    print(f"Scanning Bandsintown: {source_url}")
+    links = collect_listing_links(source_url=source_url, max_pages=max_pages)
+
+    print(f"  Found {len(links)} unique event link(s).")
+
+    configured_genres = load_genre_filters()
+    selected_genres = [clean_text(genre_seed)] if clean_text(genre_seed) else configured_genres
+    genre_membership: dict[str, set[str]] = {}
+    by_url: dict[str, dict[str, str]] = {str(link.get("url") or ""): link for link in links if str(link.get("url") or "")}
+
+    for genre in selected_genres:
+        genre_links = collect_listing_links(source_url=genre_url(genre), max_pages=max_pages)
+        print(f"  Genre {genre}: {len(genre_links)} link(s).")
+        for link in genre_links:
+            url = str(link.get("url") or "").strip()
+            if not url:
+                continue
+            by_url.setdefault(url, link)
+            genre_membership.setdefault(url, set()).add(genre)
+
     events: list[dict] = []
     seen_urls: set[str] = set()
-
-    for link in links:
+    for link in by_url.values():
         url = link.get("url", "")
         if not url or url in seen_urls:
             continue
         seen_urls.add(url)
+        forced_genres = ordered_genres(genre_membership.get(url, set()), configured_genres)
         event = event_from_listing(link)
-        try:
-            payload = find_json_ld_event(fetch_html(url))
-            if payload:
-                event = event_from_json_ld(payload, link)
-        except Exception:
-            pass
+        event["genre_tags"] = forced_genres
+        event["genre"] = ", ".join(forced_genres)
+        if not listing_only:
+            try:
+                payload = find_json_ld_event(fetch_html(url))
+                if payload:
+                    event = event_from_json_ld(payload, link, forced_genres=forced_genres)
+            except Exception:
+                pass
         if not event.get("title") or is_excluded_event(event["title"], event.get("venue", "")):
             continue
+        if not is_western_cape_event(event):
+            continue
         events.append(event)
-        if len(events) >= limit:
+        if limit > 0 and len(events) >= limit:
             break
-    print(f"Scraped {len(events)} Bandsintown event(s).")
+    print(f"Scraped {len(events)} Bandsintown event(s) across up to {max_pages} listing page(s).")
     return events
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Scrape Cape Town concerts from Bandsintown.")
-    parser.add_argument("--limit", type=int, default=EVENTS_MAX_ITEMS, help="Maximum number of events to collect.")
+    parser.add_argument("--limit", type=int, default=EVENTS_MAX_ITEMS, help="Maximum number of events to collect (0 = no limit).")
+    parser.add_argument("--max-pages", type=int, default=MAX_PAGES, help="Maximum listing pages to scan.")
+    parser.add_argument("--genre", default="", help="Optional genre slug/name, e.g. metal, hip-hop, r-b-soul.")
+    parser.add_argument("--source-url", default="", help="Optional full source URL override.")
+    parser.add_argument("--listing-only", action="store_true", help="Only scrape listing page cards (faster, fewer fields).")
     args = parser.parse_args()
 
+    selected_genre = args.genre.strip()
+    source_url = args.source_url.strip() or (genre_url(selected_genre) if selected_genre else SOURCE_URL)
+    print(f"Using source: {source_url}")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    events = scrape(limit=args.limit)
+    events = scrape(
+        limit=args.limit,
+        max_pages=max(1, args.max_pages),
+        source_url=source_url,
+        listing_only=bool(args.listing_only),
+        genre_seed=selected_genre,
+    )
     JSON_OUTPUT.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Wrote {len(events)} Bandsintown event(s) to {JSON_OUTPUT}")
     return 0
