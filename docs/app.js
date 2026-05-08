@@ -3122,6 +3122,22 @@ function shouldIncludePlaceMarker(placeItem) {
   return hasSpecial || hasEvent;
 }
 
+function placeMatchForEvent(event, placeVenueKeys, placeAddressKeys) {
+  const placeKey = venueKey(String(event?.place_key || event?.place || "").trim());
+  const venue = venueKey(String(event?.venue || "").trim());
+  const address = venueKey(String(event?.address || "").trim());
+  if (placeKey && placeVenueKeys.has(placeKey)) {
+    return true;
+  }
+  if (venue && placeVenueKeys.has(venue)) {
+    return true;
+  }
+  if (address && placeAddressKeys.has(address)) {
+    return true;
+  }
+  return false;
+}
+
 function renderMapEventList() {
   if (!specialsMap) {
     elements.mapDetailPanel.innerHTML = '<p class="empty">Map is loading...</p>';
@@ -3315,6 +3331,9 @@ function buildMapItems() {
     return typeOk && categoryOk;
   };
 
+  const placeVenueKeys = new Set();
+  const placeAddressKeys = new Set();
+
   for (const location of Object.values(locations)) {
     if (!coordinatesFor(location)) {
       continue;
@@ -3341,41 +3360,23 @@ function buildMapItems() {
     }
     if (matchesTypeAndCategory(unique(placeTypes), unique(placeTags))) {
       mapItems.push(placeItem);
+      placeVenueKeys.add(venueKey(placeItem.title || ""));
+      if (placeItem.address) {
+        placeAddressKeys.add(venueKey(placeItem.address));
+      }
     }
   }
 
-  if (state.mapSources.specials) {
-    const specialsItems = specialsItemsForRange(groups, rollingWeek);
-    const venueGroups = groupItemsByVenue(specialsItems)
-      .map((group) => ({ ...group, location: locationForSpecial(group.items[0] || group, locations) }))
-      .filter((group) => group.location && coordinatesFor(group.location));
-    for (const group of venueGroups) {
-      const placeTypes = [];
-      const placeTags = [];
-      for (const rawTag of group.location.tags || []) {
-        const tag = String(rawTag || "").trim().toLowerCase();
-        if (!tag) {
-          continue;
-        }
-        if (["restaurant", "restraunt", "bar", "club", "cafe"].includes(tag)) {
-          placeTypes.push(tag === "restraunt" ? "restaurant" : tag);
-        } else {
-          placeTags.push(tag);
-        }
-      }
-      if (matchesTypeAndCategory(unique(placeTypes), unique(placeTags))) {
-        const mapItem = mapItemFromSpecialGroup(group);
-        if (mapItem) {
-          mapItems.push(mapItem);
-        }
-      }
-    }
-  }
+  // Standalone special markers are intentionally disabled.
+  // Specials must resolve through linked place markers only.
 
   if (state.mapSources.events) {
     for (const event of state.quicketEvents) {
       const mapItem = mapItemFromEvent(event);
       if (mapItem) {
+        if (placeMatchForEvent(event, placeVenueKeys, placeAddressKeys)) {
+          continue;
+        }
         const eventCategoryOk = !state.availableEventCategories.length
           || state.selectedEventCategories.size === 0
           || mapItem.categories.some((tag) => state.selectedEventCategories.has(tag));
