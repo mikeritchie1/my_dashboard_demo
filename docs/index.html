@@ -58,6 +58,10 @@
         </summary>
         <div class="section-content">
           <div class="subsection-row">
+            <div class="map-top-actions">
+              <button id="locate-me" class="map-locate-button" type="button">Locate Me</button>
+              <button id="map-legend-toggle" class="map-locate-button" type="button">Show legend</button>
+            </div>
             <div class="map-range-controls">
               <button type="button" class="map-range-button is-selected" data-range="next-7">Next week</button>
               <button type="button" class="map-range-button" data-range="next-month">Next month</button>
@@ -77,32 +81,39 @@
             <aside class="map-sidebar">
               <h4>Map Filters</h4>
               <div class="map-filter-block">
-                <p class="map-filter-title">Show on map</p>
-                <button id="locate-me" class="map-locate-button" type="button">Locate Me</button>
                 <label><input type="checkbox" id="map-source-places" checked> Places</label>
                 <label><input type="checkbox" id="map-source-specials" checked> Specials</label>
                 <label><input type="checkbox" id="map-source-events" checked> Events</label>
               </div>
-              <div class="map-filter-block">
-                <p class="map-filter-title">Type</p>
+              <details class="map-filter-block map-filter-collapsible" open>
+                <summary class="map-filter-title">Type</summary>
                 <div id="map-type-filters" class="map-tag-filters">
                   <p class="empty">Loading types...</p>
                 </div>
-              </div>
-              <div class="map-filter-block map-filter-block--scrollable">
-                <p class="map-filter-title">Tags</p>
+              </details>
+              <details class="map-filter-block map-filter-block--scrollable map-filter-collapsible" open>
+                <summary class="map-filter-title">Tags</summary>
                 <div id="map-category-filters" class="map-tag-filters">
                   <p class="empty">Loading tags...</p>
                 </div>
-              </div>
-              <div class="map-filter-block map-filter-block--scrollable">
-                <p class="map-filter-title">Event Category</p>
+              </details>
+              <details class="map-filter-block map-filter-block--scrollable map-filter-collapsible" open>
+                <summary class="map-filter-title">Event Categories</summary>
                 <div id="map-event-category-filters" class="map-tag-filters">
                   <p class="empty">Loading event categories...</p>
                 </div>
-              </div>
+              </details>
             </aside>
-            <div id="specials-map" class="specials-map"></div>
+            <div class="map-canvas-wrap">
+              <div id="specials-map" class="specials-map"></div>
+              <div id="map-legend" class="map-legend map-legend-overlay" hidden>
+                <p><span class="map-legend-dot map-legend-blue"></span> Place</p>
+                <p><span class="map-legend-dot map-legend-red"></span> Place with Special</p>
+                <p><span class="map-legend-dot map-legend-green"></span> Place with Event</p>
+                <p><span class="map-legend-dot map-legend-yellow"></span> Place with Special + Event</p>
+                <p><span class="map-legend-dot map-legend-orange"></span> My Location</p>
+              </div>
+            </div>
             <aside id="map-detail-panel" class="map-detail-panel">
               <p class="empty">Click a map marker to view details.</p>
             </aside>
@@ -291,6 +302,6 @@
     </aside>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=20260508-78"></script>
+    <script src="app.js?v=20260508-80"></script>
   </body>
 </html>

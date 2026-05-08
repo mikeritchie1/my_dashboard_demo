@@ -156,6 +156,8 @@ const elements = {
   mapSourceSpecials: document.querySelector("#map-source-specials"),
   mapSourceEvents: document.querySelector("#map-source-events"),
   locateMe: document.querySelector("#locate-me"),
+  mapLegendToggle: document.querySelector("#map-legend-toggle"),
+  mapLegend: document.querySelector("#map-legend"),
   mapTypeFilters: document.querySelector("#map-type-filters"),
   mapCategoryFilters: document.querySelector("#map-category-filters"),
   mapEventCategoryFilters: document.querySelector("#map-event-category-filters"),
@@ -205,7 +207,7 @@ const markerIcons = {
     shadowSize: [41, 41],
   }),
   myLocation: L.icon({
-    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
+    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png",
     shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -2984,6 +2986,14 @@ function venueKey(value) {
   return normalizeVenue(value || "");
 }
 
+function prettyTag(value) {
+  return String(value || "")
+    .split(/[\s_-]+/)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
 function focusSpecialOnMap(venueName) {
   if (!specialsMap || !venueName) {
     return;
@@ -3371,7 +3381,7 @@ function renderMapDetail(item) {
     const when = displayDateTime(event.start);
     const where = [event.venue, event.locality].filter(Boolean).join(", ");
     const address = event.address || "";
-    const tags = Array.isArray(event.categories) ? event.categories.filter(Boolean) : [];
+    const tags = Array.isArray(event.categories) ? event.categories.filter(Boolean).map(prettyTag) : [];
     const imageHtml = event.image
       ? `<img src="${event.image}" alt="${event.title || "Event"}">`
       : "";
@@ -3413,7 +3423,7 @@ function renderMapDetail(item) {
       ? `<a href="${item.url}" target="_blank" rel="noreferrer">${item.title || "Place"}</a>`
       : (item.title || "Place");
     const placeName = item.title || "Place";
-    const tags = (item.categories || []).filter(Boolean);
+    const tags = (item.categories || []).filter(Boolean).map(prettyTag);
     const specials = linkedSpecialsForPlace(placeName);
     const events = linkedEventsForPlace({
       name: placeName,
@@ -3446,7 +3456,7 @@ function renderMapDetail(item) {
           when ? `<p><strong>When:</strong> ${when}</p>` : "",
           where ? `<p><strong>Where:</strong> ${where}</p>` : "",
           event.address ? `<p><strong>Address:</strong> ${event.address}</p>` : "",
-          (event.categories || []).length ? `<p><strong>Tags:</strong> ${event.categories.join(", ")}</p>` : "",
+          (event.categories || []).length ? `<p><strong>Tags:</strong> ${event.categories.map(prettyTag).join(", ")}</p>` : "",
           event.url ? `<p><a href="${event.url}" target="_blank" rel="noreferrer">Open event</a></p>` : "",
         ].filter(Boolean).join("");
         return `
@@ -4219,6 +4229,14 @@ elements.mapSourceEvents.addEventListener("change", (event) => {
 
 if (elements.locateMe) {
   elements.locateMe.addEventListener("click", showMyLocation);
+}
+
+if (elements.mapLegendToggle && elements.mapLegend) {
+  elements.mapLegendToggle.addEventListener("click", () => {
+    const nextHidden = !elements.mapLegend.hidden;
+    elements.mapLegend.hidden = nextHidden;
+    elements.mapLegendToggle.textContent = nextHidden ? "Show legend" : "Hide legend";
+  });
 }
 
 if (elements.themeToggle) {

@@ -355,7 +355,7 @@ main {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 8px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .weather-card {
@@ -1050,7 +1050,7 @@ td.card-number {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  margin-top: 10px;
+  margin-bottom: 10px;
   overflow-x: scroll;
   overflow-y: hidden;
   scrollbar-gutter: stable;
@@ -1129,6 +1129,13 @@ td.card-number {
   align-items: center;
   gap: 14px;
   padding: 10px 0;
+}
+
+.map-top-actions {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .compact-label {
@@ -1216,7 +1223,8 @@ td.card-number {
 
 .map-sidebar {
   height: 520px;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   padding: 12px;
@@ -1240,21 +1248,22 @@ td.card-number {
 }
 
 .map-filter-block--scrollable {
-  flex: 1 1 0;
-  min-height: 60px;
+  flex: 0 0 auto;
+  min-height: auto;
   display: flex;
   flex-direction: column;
 }
 
-.map-filter-block--scrollable .map-tag-filters {
-  flex: 1 1 auto;
-  min-height: 0;
+.map-filter-block--scrollable[open] .map-tag-filters {
+  flex: 0 0 auto;
+  min-height: auto;
+  overflow-y: visible;
 }
 
 .map-locate-button {
   min-height: 34px;
   padding: 6px 10px;
-  margin: 0 0 8px;
+  margin: 0;
   color: var(--accent-strong);
   background: #eef3f7;
   border: 1px solid var(--line);
@@ -1268,12 +1277,68 @@ td.card-number {
   background: #e4edf5;
 }
 
+.map-legend {
+  margin: 0;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.map-canvas-wrap {
+  position: relative;
+  min-width: 0;
+}
+
+.map-legend-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 500;
+  max-width: 260px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.25);
+}
+
+.map-legend p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text);
+}
+
+.map-legend p + p {
+  margin-top: 6px;
+}
+
+.map-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.map-legend-blue { background: #2f6fad; }
+.map-legend-red { background: #b42318; }
+.map-legend-green { background: #027a48; }
+.map-legend-yellow { background: #ca8a04; }
+.map-legend-orange { background: #7c3aed; }
+
 .map-filter-title {
   margin: 0 0 8px;
-  color: var(--muted);
-  font-size: 12px;
+  color: #344054;
+  font-size: 11px;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.map-sidebar .map-filter-collapsible > summary.map-filter-title {
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
 }
 
 .map-filter-block label {
@@ -1286,6 +1351,10 @@ td.card-number {
   font-weight: 700;
 }
 
+.map-tag-filters label {
+  text-transform: capitalize;
+}
+
 .map-filter-block input[type="checkbox"] {
   width: 16px;
   height: 16px;
@@ -1296,8 +1365,8 @@ td.card-number {
 .map-tag-filters {
   display: grid;
   gap: 4px;
-  min-height: 0;
-  overflow-y: auto;
+  min-height: auto;
+  overflow-y: visible;
   padding-right: 4px;
 }
 
@@ -1394,6 +1463,41 @@ td.card-number {
   font-weight: 800;
   color: var(--text);
   text-transform: uppercase;
+}
+
+.map-filter-collapsible > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0 0 8px;
+  padding: 0;
+}
+
+.map-filter-collapsible > summary::before {
+  content: none !important;
+  display: none !important;
+}
+
+.map-filter-collapsible > summary::-webkit-details-marker {
+  display: none;
+}
+
+.map-filter-collapsible > summary::marker {
+  content: "";
+}
+
+.map-filter-collapsible > summary::after {
+  content: "−";
+  color: var(--accent-strong);
+  font-weight: 900;
+  margin-left: 8px;
+}
+
+.map-filter-collapsible:not([open]) > summary::after {
+  content: "+";
 }
 
 .map-linked-specials .map-linked-heading {
@@ -2037,7 +2141,7 @@ td.card-number {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 8px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .watchlist-entry {
@@ -2638,6 +2742,20 @@ td.card-number {
 
   .subsection-row {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .map-top-actions {
+    grid-column: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .map-range-controls {
+    grid-column: 1;
+    justify-self: start;
+    flex-wrap: wrap;
   }
 
   .map-layout {
