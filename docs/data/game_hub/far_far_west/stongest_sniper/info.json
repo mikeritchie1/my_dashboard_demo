@@ -1,0 +1,26 @@
+{
+  "0": {
+    "title": "Overview",
+    "text": "- Build focus: spell-heavy Sniper build\n- Main idea: use Sniper kills to reduce spell cooldowns and cast huge spells constantly\n- Playstyle: one-shot enemies with Sniper, use Bow to destroy ghost houses, and use big cooldown spells to wipe hordes\n- Strong because it combines high weak-spot damage with very fast spell cooldown recovery"
+  },
+  "1": {
+    "title": "Primary Weapon: Sniper",
+    "text": "- Primary weapon: Long Ranger / Sniper\n- Stat priority: max Damage, then put the rest into Fire Rate\n- Why Fire Rate: it speeds up the bolt action, so the sniper cycles shots faster\n- Key jokers: Headbang, Clutch, Focus Shot\n- Headbang gives more weak-spot damage\n- Clutch makes weak-spot hits explode\n- Focus Shot is the most important joker: every kill reduces spell cooldowns by 1 second\n- Sniper still one-shots most enemies while also helping you spam spells"
+  },
+  "2": {
+    "title": "Secondary Weapon: Bow",
+    "text": "- Secondary weapon: Bow\n- Main purpose: one-shot ghost houses / soul houses\n- Stat priority: Damage and Bend Speed\n- If using Bow mainly for ghost houses, focus heavily on Bend Speed\n- Key joker: Ultra Draw\n- Ultra Draw charges a massive explosive arrow that can one-shot ghost houses\n- Other jokers used: Headbang, Run and Gun, Bellshot\n- Element: Fire\n- Fire puddles from Bow can combo with Bubble to create fire tornadoes, though Bubble is not part of this build"
+  },
+  "3": {
+    "title": "Spells",
+    "text": "- Spells used: Thunder Strike, Rain, and Doll\n- Thunder Strike: huge lightning AoE for wiping hordes\n- Rain: strong acid spell that clears groups over time\n- Doll: makes you invincible while inside it\n- Main combo: Thunder Strike, then Doll, then Rain\n- Use Doll to safely stand and deal damage or heal\n- These spells have long cooldowns, but Sniper Focus Shot and Battle Mage bring them back very quickly\n- In big enemy waves, you can cast multiple Thunder Strikes, Rains, and Dolls in one fight"
+  },
+  "4": {
+    "title": "Character",
+    "text": "- Main jokers: Second Wind, Soul Siphon, Glass Cannon, Battle Mage\n- Second Wind is strongly recommended for solo safety\n- Soul Siphon gives healing when picking up souls\n- Glass Cannon gives big damage, but can be swapped if you want safer play\n- Battle Mage is the key character joker: kills reduce ongoing spell cooldowns by 1%\n- Battle Mage stacks with Sniper Focus Shot, giving both 1% cooldown reduction and 1 second cooldown reduction per kill\n- This is what makes the build cast big spells so often"
+  },
+  "5": {
+    "title": "Strategy and Run Tips",
+    "text": "- Use Sniper to kill enemies and constantly reduce spell cooldowns\n- Aim for weak spots because Headbang and Clutch reward accurate shots\n- Use Bow Ultra Draw to one-shot ghost houses quickly\n- Save big spells for storms, danger zones, and large enemy waves\n- Combo flow: Thunder Strike into Doll, heal if needed, then cast Rain\n- Use Doll offensively too: stand inside it safely while shooting or fighting bosses\n- Watch out for snakes because Sniper is awkward against small ground enemies\n- Use high ground to scout ghost houses, jokers, and enemy groups\n- Collect gold for the Wandering Trader, but do not overextend for it\n- Be careful with HP-reducing jokers; survivability matters in solo Nightmare\n- During extraction, use Doll and Rain to buy time and clear enemies while waiting to leave"
+  }
+}

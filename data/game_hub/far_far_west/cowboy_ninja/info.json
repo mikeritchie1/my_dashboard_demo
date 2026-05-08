@@ -1,0 +1,30 @@
+{
+  "0": {
+    "title": "Overview",
+    "text": "- Build name: Cowboy Ninja\n- Main idea: Shotgun = damage, Sheriff Stars = mobility\n- Playstyle: get close, burst enemies, then reposition before getting surrounded\n- Scales well because it combines high shotgun DPS, speed, spell combos, and sustain"
+  },
+  "1": {
+    "title": "Weapons Loadout",
+    "text": "- Primary weapon: Shotgun\n- Secondary weapon: Sheriff Stars\n- Shotgun is used to kill elites, bosses, birds, and priority targets\n- Sheriff Stars are used for movement, double jumps, repositioning, and backup damage"
+  },
+  "2": {
+    "title": "Primary Weapon: Shotgun",
+    "text": "- Early stat priority: Accuracy first because more pellets hit enemies at range\n- Before Overblast: Accuracy, Damage, Fire Rate, Reload Speed, Clip Size\n- After Overblast: focus Clip Size and Reload Speed\n- Main joker: Overblast\n- Why Overblast: extra pellets for every missing round, so low-mag shots become huge damage\n- Good jokers: Swift Shot, Relentless, Rampage, Reload Mastery, Machine Gun, Speedster\n- Reload Mastery is important because you want to mag-dump often and reload fast"
+  },
+  "3": {
+    "title": "Secondary Weapon: Sheriff Stars",
+    "text": "- Main purpose: mobility and repositioning\n- Stat priority: Pickup Range first\n- Why Pickup Range: lets you safely recover thrown stars without getting too close\n- Use Acid element for combos with lightning/electrified enemies\n- Key jokers: Jump Star and Scavenger Star\n- Jump Star gives double jumps while holding Sheriff Stars\n- Scavenger Star gives movement speed and bigger pickup range\n- Tip: equip Sheriff Stars, jump, then swap to Shotgun to keep the double-jump movement"
+  },
+  "4": {
+    "title": "Spells",
+    "text": "- Take Strikes, Drain, and Mino\n- Strikes: lightning line/puddles for AoE\n- Drain: healing and sustain\n- Mino: mine used for spell combos\n- Combo: Mino + Strikes = big star-shaped lightning AoE\n- Combo: Strikes + Acid Sheriff Stars = lightning explosions\n- Combo: Strikes + Drain = extra healing candles\n- Combo: Drain + Mino = corruption mine that turns enemies into allies\n- Optional later swap: Drain can be replaced with Corruption for stronger enemy conversion"
+  },
+  "5": {
+    "title": "Character",
+    "text": "- Stat priority: Health, Spell Cooldown Reduction, Speed\n- Health gives room for mistakes\n- Cooldown Reduction lets you use spell combos more often\n- Speed helps kiting, dodging, repositioning, and Speedster scaling\n- Main jokers: Chad, Disgrace, Speedy Gonzalez, Soul Siphon, Glass Cannon\n- Chad helps find and buy from the Wandering Trader\n- Disgrace gives movement speed; losing the mount is worth it for combat\n- Glass Cannon gives big weapon damage but lowers max HP\n- Be careful stacking too many max HP reduction cards"
+  },
+  "6": {
+    "title": "Strategy and Run Tips",
+    "text": "- Always prioritize dangerous enemies first: bombers, snipers, gunners, horsemen, liches, and elites\n- Use Shotgun to delete priority targets and bosses\n- Use Sheriff Stars to escape bad positions\n- Do not fight while fully surrounded; reposition and reset the fight\n- Collect gold and find the Wandering Trader before the boss\n- Clear enemies before opening the trader shop\n- Buy useful mid-run jokers like Speedster, Second Wind, damage, fire rate, and movement speed cards\n- Before bosses, clear cursed houses and nearby enemies\n- During boss fights, kill elites that spawn and avoid getting greedy for healing/ammo\n- After the boss, move toward extraction while clearing just enough enemies to avoid being trapped\n- Avoid nukers unless you can kill them safely from far away"
+  }
+}

@@ -20,6 +20,7 @@ const WEATHER_PATH =
 const HOLIDAYS_PATH = "https://date.nager.at/api/v3/publicholidays/{year}/ZA";
 const METADATA_PATH = "./data/metadata.json";
 const GOOGLE_CALENDAR_EVENTS_PATH = "./data/events/google_calendar_events.json";
+const GAME_HUB_CONFIG_PATH = "./data/game_hub/config.json";
 const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const WATCHLIST_MEDIA_CONFIG = {
   screen: { label: "Movies + Series", types: ["movie", "series"] },
@@ -110,6 +111,12 @@ const state = {
   selectedNewsCategory: "all",
   isNewsExpanded: false,
   releaseItems: [],
+  gameHubGames: [],
+  gameHubSelectedGame: "",
+  gameHubModules: [],
+  gameHubSelectedModule: "",
+  gameHubManifest: [],
+  gameHubInfo: {},
 };
 
 const elements = {
@@ -168,6 +175,9 @@ const elements = {
   lastScraped: document.querySelector("#last-scraped"),
   themeToggle: document.querySelector("#theme-toggle"),
   layoutEditToggle: document.querySelector("#layout-edit-toggle"),
+  gameHubGameButtons: document.querySelector("#game-hub-game-buttons"),
+  gameHubModuleButtons: document.querySelector("#game-hub-module-buttons"),
+  gameHubContent: document.querySelector("#game-hub-content"),
 };
 const mapRangeButtons = [...document.querySelectorAll(".map-range-button[data-range]")];
 const mapViewTabButtons = [...document.querySelectorAll(".map-view-tab[data-map-view-tab]")];
@@ -4493,6 +4503,152 @@ if (storedTheme) {
 
 setupDashboardSectionEditor();
 
+function gameHubLabel(name) {
+  return name.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+async function loadGameHub() {
+  try {
+    const resp = await fetch(GAME_HUB_CONFIG_PATH, { cache: "no-store" });
+    if (!resp.ok) return;
+    const config = await resp.json();
+    state.gameHubGames = Array.isArray(config.games) ? config.games : [];
+    renderGameHubButtons();
+    if (state.gameHubGames.length > 0) {
+      await loadGameHubGame(state.gameHubGames[0]);
+    } else if (elements.gameHubContent) {
+      elements.gameHubContent.innerHTML = `<p class="empty">No games added yet.</p>`;
+    }
+  } catch {
+    if (elements.gameHubContent) {
+      elements.gameHubContent.innerHTML = `<p class="empty">Could not load Game Hub.</p>`;
+    }
+  }
+}
+
+async function loadGameHubGame(gameName) {
+  state.gameHubSelectedGame = gameName;
+  state.gameHubModules = [];
+  state.gameHubSelectedModule = "";
+  renderGameHubButtons();
+  if (elements.gameHubModuleButtons) elements.gameHubModuleButtons.hidden = true;
+  if (elements.gameHubContent) elements.gameHubContent.innerHTML = `<p class="empty">Loading...</p>`;
+  try {
+    const resp = await fetch(`./data/game_hub/${gameName}/modules.json`, { cache: "no-store" });
+    state.gameHubModules = resp.ok ? ((await resp.json()).modules || []) : [];
+  } catch {
+    state.gameHubModules = [];
+  }
+  renderGameHubModuleButtons();
+  if (state.gameHubModules.length > 0) {
+    await loadGameHubModule(gameName, state.gameHubModules[0]);
+  } else if (elements.gameHubContent) {
+    elements.gameHubContent.innerHTML = `<p class="empty">No modules found in this game folder.</p>`;
+  }
+}
+
+async function loadGameHubModule(gameName, moduleName) {
+  state.gameHubSelectedModule = moduleName;
+  renderGameHubModuleButtons();
+  if (elements.gameHubContent) elements.gameHubContent.innerHTML = `<p class="empty">Loading...</p>`;
+  try {
+    const [manifestResp, infoResp] = await Promise.all([
+      fetch(`./data/game_hub/${gameName}/${moduleName}/manifest.json`, { cache: "no-store" }),
+      fetch(`./data/game_hub/${gameName}/${moduleName}/info.json`, { cache: "no-store" }),
+    ]);
+    state.gameHubManifest = manifestResp.ok ? ((await manifestResp.json()).pictures || []) : [];
+    try {
+      state.gameHubInfo = infoResp.ok ? await infoResp.json() : {};
+    } catch {
+      state.gameHubInfo = {};
+    }
+  } catch {
+    state.gameHubManifest = [];
+    state.gameHubInfo = {};
+  }
+  renderGameHub();
+}
+
+function renderGameHubButtons() {
+  if (!elements.gameHubGameButtons) return;
+  elements.gameHubGameButtons.innerHTML = state.gameHubGames
+    .map((g) => {
+      const sel = g === state.gameHubSelectedGame ? " is-selected" : "";
+      return `<button class="watchlist-category-button${sel}" data-game-hub-game="${g}">${gameHubLabel(g)}</button>`;
+    })
+    .join("");
+}
+
+function renderGameHubModuleButtons() {
+  if (!elements.gameHubModuleButtons) return;
+  if (!state.gameHubModules.length) {
+    elements.gameHubModuleButtons.hidden = true;
+    return;
+  }
+  elements.gameHubModuleButtons.hidden = false;
+  elements.gameHubModuleButtons.innerHTML = state.gameHubModules
+    .map((m) => {
+      const sel = m === state.gameHubSelectedModule ? " is-selected" : "";
+      return `<button class="watchlist-category-button game-hub-module-button${sel}" data-game-hub-module="${m}">${gameHubLabel(m)}</button>`;
+    })
+    .join("");
+}
+
+function gameHubInfoBlock(entry) {
+  if (!entry) return "";
+  const title = entry.title ? `<p class="game-hub-info-title">${entry.title}</p>` : "";
+  const text = entry.text
+    ? `<p class="game-hub-info-text">${entry.text.replace(/\n/g, "<br>")}</p>`
+    : "";
+  return title || text ? `<div class="game-hub-info-block">${title}${text}</div>` : "";
+}
+
+function renderGameHub() {
+  if (!elements.gameHubContent) return;
+  const pics = state.gameHubManifest;
+  const info = state.gameHubInfo;
+  if (!pics.length && !Object.keys(info).length) {
+    elements.gameHubContent.innerHTML = `<p class="empty">No content yet.</p>`;
+    return;
+  }
+  const parts = [];
+
+  if (state.gameHubSelectedModule) {
+    parts.push(`<h3 class="game-hub-module-title">${gameHubLabel(state.gameHubSelectedModule)}</h3>`);
+  }
+
+  if (info["0"]) parts.push(gameHubInfoBlock(info["0"]));
+
+  const lastOrder = pics.length ? pics[pics.length - 1].order : 0;
+  for (const pic of pics) {
+    const imgSrc = `./data/game_hub/${state.gameHubSelectedGame}/${state.gameHubSelectedModule}/pictures/${pic.filename}`;
+    parts.push(`<img class="game-hub-screenshot" src="${imgSrc}" alt="Screenshot ${pic.order}" loading="lazy" onerror="this.style.display='none'">`);
+    parts.push(gameHubInfoBlock(info[String(pic.order)]));
+  }
+
+  Object.keys(info)
+    .map(Number)
+    .filter((n) => !isNaN(n) && n > lastOrder)
+    .sort((a, b) => a - b)
+    .forEach((n) => parts.push(gameHubInfoBlock(info[String(n)])));
+
+  elements.gameHubContent.innerHTML = `<div class="game-hub-entries">${parts.join("")}</div>`;
+}
+
+if (elements.gameHubGameButtons) {
+  elements.gameHubGameButtons.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-game-hub-game]");
+    if (btn) loadGameHubGame(btn.dataset.gameHubGame);
+  });
+}
+
+if (elements.gameHubModuleButtons) {
+  elements.gameHubModuleButtons.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-game-hub-module]");
+    if (btn) loadGameHubModule(state.gameHubSelectedGame, btn.dataset.gameHubModule);
+  });
+}
+
 load();
 setHeaderDate();
 loadMetadata();
@@ -4505,4 +4661,5 @@ loadWatchlist();
 loadSpecials();
 loadBandsintownEvents();
 loadQuicketEvents();
+loadGameHub();
 syncRangeButtons();

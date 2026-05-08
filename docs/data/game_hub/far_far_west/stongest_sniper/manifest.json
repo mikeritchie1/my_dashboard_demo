@@ -1,0 +1,29 @@
+{
+  "pictures": [
+    {
+      "order": 1,
+      "filename": "1_loudout.png",
+      "title": "Loudout"
+    },
+    {
+      "order": 2,
+      "filename": "2_sniper.png",
+      "title": "Sniper"
+    },
+    {
+      "order": 3,
+      "filename": "3_bow.png",
+      "title": "Bow"
+    },
+    {
+      "order": 4,
+      "filename": "4_spells.png",
+      "title": "Spells"
+    },
+    {
+      "order": 5,
+      "filename": "5_character.png",
+      "title": "Character"
+    }
+  ]
+}

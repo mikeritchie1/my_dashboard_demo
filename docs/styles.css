@@ -131,6 +131,13 @@
   box-shadow: inset 0 0 0 1px #4f79b2;
 }
 
+:root[data-theme="dark"] .watchlist-category-button.game-hub-module-button.is-selected {
+  color: #bbf7d0;
+  border-color: #22c55e;
+  background: #052e16;
+  box-shadow: inset 0 0 0 1px #22c55e;
+}
+
 :root[data-theme="dark"] .watchlist-category-button[data-watch-type="movie"].is-selected,
 :root[data-theme="dark"] .watchlist-category-button[data-watch-type="anime_movie"].is-selected,
 :root[data-theme="dark"] .watchlist-category-button[data-watch-type="game_aaa"].is-selected {
@@ -2096,6 +2103,13 @@ td.card-number {
   box-shadow: inset 0 0 0 1px #2f6fad;
 }
 
+.watchlist-category-button.game-hub-module-button.is-selected {
+  color: #166534;
+  border-color: #16a34a;
+  background: #ecfdf3;
+  box-shadow: inset 0 0 0 1px #16a34a;
+}
+
 .watchlist-category-button[data-watch-type="movie"].is-selected,
 .watchlist-category-button[data-watch-type="anime_movie"].is-selected,
 .watchlist-category-button[data-watch-type="game_aaa"].is-selected {
@@ -2876,4 +2890,71 @@ td.card-number {
   .watchlist-detail-poster {
     max-width: 180px;
   }
+}
+
+/* ── Game Hub ──────────────────────────────────────────────────── */
+
+.game-hub-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 14px;
+}
+
+.game-hub-module-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 4px 0;
+  letter-spacing: -0.01em;
+}
+
+.game-hub-content {
+  margin-top: 14px;
+}
+
+.game-hub-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 800px;
+}
+
+.game-hub-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.game-hub-screenshot {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.12);
+}
+
+.game-hub-screenshot-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.game-hub-info-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--subtle-text, #667085);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.game-hub-info-text {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.65;
+  max-width: 680px;
 }

@@ -1,0 +1,26 @@
+{
+  "0": {
+    "title": "Overview",
+    "text": "- Build focus: high DPS Minigun build\n- Main idea: use Minigun for massive sustained damage and elemental damage\n- Playstyle: stack movement speed, use Speedster for more DPS, and use Revolver to refill ammo when needed\n- Strong because Minigun fires so many shots that it procs effects constantly and melts bosses very quickly"
+  },
+  "1": {
+    "title": "Primary Weapon: Minigun",
+    "text": "- Primary weapon: Minigun\n- Stat priority: max Damage and Accuracy\n- Put leftover points into Ammo Bag\n- Why Damage: boosts the Minigun's already huge DPS\n- Why Accuracy: helps more bullets hit weak spots and reduces wasted shots\n- Key unique joker: Elemental Spin\n- Alternative unique: Frenzy Spin, but it may waste too much ammo because fire rate gets extremely high\n- Key jokers: Speedster, Bellshot, Run and Gun, Relentless\n- Speedster gives more damage and fire rate from movement speed\n- Bellshot is very strong because Minigun fires so many bullets and can spawn lots of healing ghost bells on weak spot hits\n- Run and Gun adds movement speed, helping survivability and Speedster scaling\n- Relentless is optional, mostly just a useful extra normal joker"
+  },
+  "2": {
+    "title": "Secondary Weapon: Revolver",
+    "text": "- Secondary weapon: Revolver\n- Element: Electricity\n- Main purpose: create ammo boxes and buff cactus summons\n- Key joker: double Ammo Supply\n- Why Ammo Supply: kills have a chance to drop ammo boxes, solving the Minigun's ammo problem\n- Swap to Revolver, kill a few enemies, then collect ammo boxes to refill Minigun\n- Electricity damage is used to shoot cactus spells and buff them\n- Shooting Bandido with electricity makes him move and attack faster\n- Extra joker option: Headbang for better Revolver damage\n- Lifesteal and damage are also useful so Revolver can heal, kill, and farm ammo at the same time"
+  },
+  "3": {
+    "title": "Spells",
+    "text": "- Spells used: Pistol, Bandido, and Thunder Strike\n- Thunder Strike is the main horde-clear spell\n- It can wipe huge groups with one button press\n- Pistol and Bandido add extra damage and help in clutch situations\n- Cactus summons work well with the electric Revolver because electricity buffs their speed/attack rate\n- Battle Mage helps reset spell cooldowns quickly, so you can cast more often"
+  },
+  "4": {
+    "title": "Character",
+    "text": "- Main stat priority: max Movement Speed\n- Why Movement Speed: gives survivability and boosts Speedster damage/fire rate\n- Character jokers: Second Wind, double Speedy Gonzalez, Disgrace, Battle Mage\n- Second Wind is a strong solo safety card\n- Speedy Gonzalez gives extra movement speed for Speedster scaling\n- Disgrace gives more movement speed and is worth losing the horse for combat\n- Battle Mage reduces spell cooldowns on kills and is extremely strong, especially on Nightmare\n- Stack as much movement speed as possible because it increases both damage and survivability"
+  },
+  "5": {
+    "title": "Strategy and Run Tips",
+    "text": "- Aim for weak spots because Bellshot only procs healing ghost bells from weak spot hits\n- Use Minigun for bosses, elites, danger zone hordes, and high-DPS situations\n- Watch ammo, but do not panic: use Revolver kills and map ammo boxes to refill\n- Learn chest and ammo box locations because map knowledge makes Minigun ammo much easier to manage\n- Use Thunder Strike on massive hordes for instant clearing\n- Cast Pistol and Bandido often because Battle Mage helps reduce cooldowns through kills\n- Shoot cactus summons with electric Revolver to buff them\n- Be careful with too much fire rate because it can burn through ammo very quickly\n- Movement speed can get very high, so control your movement carefully, especially on snow or slippery terrain\n- Avoid nukers and storm traps; moving too fast can make you slide into danger\n- For full clears, do main objectives, side objectives, danger zone hordes, ghost houses, and collect useful jokers along the way"
+  }
+}

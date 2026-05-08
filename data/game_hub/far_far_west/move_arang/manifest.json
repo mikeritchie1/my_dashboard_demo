@@ -1,0 +1,24 @@
+{
+  "pictures": [
+    {
+      "order": 1,
+      "filename": "1_leveredge.png",
+      "title": "Leveredge"
+    },
+    {
+      "order": 2,
+      "filename": "2_boomerang.png",
+      "title": "Boomerang"
+    },
+    {
+      "order": 3,
+      "filename": "3_spells.png",
+      "title": "Spells"
+    },
+    {
+      "order": 4,
+      "filename": "4_character.png",
+      "title": "Character"
+    }
+  ]
+}
