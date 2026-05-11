@@ -4,6 +4,16 @@
       "id": "snake",
       "title": "Snake",
       "path": "./games/snake/index.html"
+    },
+    {
+      "id": "picture-puzzle",
+      "title": "Picture Puzzle",
+      "path": "./games/puzzle/index.html"
+    },
+    {
+      "id": "dvd-survivor",
+      "title": "DVD Survivor",
+      "path": "./games/dvd-survivor/index.html"
     }
   ]
 }

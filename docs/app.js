@@ -4892,14 +4892,29 @@ function renderGameLab(gameId) {
   }
   state.gameLabSelectedGame = game.id;
   renderGameLabButtons();
-  elements.gameLabContent.innerHTML = `
-    <iframe
-      class="game-lab-frame"
-      title="${escapeHtml(game.title || game.id)}"
-      src="${escapeHtml(game.path)}"
-      loading="lazy"
-    ></iframe>
-  `;
+
+  const existingFrames = [...elements.gameLabContent.querySelectorAll(".game-lab-frame")];
+  if (!existingFrames.length) {
+    elements.gameLabContent.innerHTML = "";
+  }
+  for (const frame of existingFrames) {
+    frame.hidden = frame.dataset.gameLabId !== game.id;
+  }
+
+  if (existingFrames.some((frame) => frame.dataset.gameLabId === game.id)) {
+    return;
+  }
+
+  const frame = document.createElement("iframe");
+  frame.className = "game-lab-frame";
+  frame.dataset.gameLabId = game.id;
+  frame.title = game.title || game.id;
+  frame.src = game.path;
+  frame.loading = "lazy";
+  frame.allow = "fullscreen";
+  frame.allowFullscreen = true;
+  frame.setAttribute("scrolling", "no");
+  elements.gameLabContent.append(frame);
 }
 
 if (elements.gameLabButtons) {

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DVD Survivor</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="dvd-shell">
+      <section class="dvd-stage">
+        <canvas id="dvd-canvas" width="960" height="560"></canvas>
+      </section>
+      <aside class="dvd-panel">
+        <div>
+          <p class="dvd-kicker">Game Lab</p>
+          <h1>DVD Survivor</h1>
+        </div>
+        <button id="fullscreen-button" class="fullscreen-button" type="button">Fullscreen</button>
+        <div class="dvd-stats">
+          <p><span>Survival</span><strong id="score">0.0s</strong></p>
+          <p><span>Best</span><strong id="best-score">0.0s</strong></p>
+          <p><span>Logos</span><strong id="logo-count">1</strong></p>
+          <p><span>Pickups</span><strong id="speed-level">0</strong></p>
+        </div>
+        <div class="energy-meter" aria-label="Energy">
+          <span id="energy-fill"></span>
+        </div>
+        <p class="energy-label"><span>Energy</span><strong id="energy-value">100%</strong></p>
+        <div class="pickup-meter" aria-label="Next pickup">
+          <span id="pickup-fill"></span>
+        </div>
+        <p class="pickup-label"><span>Next Pickup</span><strong id="pickup-value">0.0s</strong></p>
+        <p id="status" class="dvd-status">Keep your cursor away from the DVD logos.</p>
+      </aside>
+    </main>
+    <script src="dvd-survivor.js?v=20260510-even-faster-logo-spawn"></script>
+  </body>
+</html>

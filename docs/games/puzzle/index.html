@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Picture Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="puzzle-shell">
+      <section class="puzzle-stage">
+        <div id="puzzle-board" class="puzzle-board" aria-label="Picture puzzle board"></div>
+      </section>
+      <aside class="puzzle-panel">
+        <div>
+          <p class="puzzle-kicker">Game Lab</p>
+          <h1>Picture Puzzle</h1>
+        </div>
+        <div class="puzzle-stats">
+          <p><span>Moves</span><strong id="moves">0</strong></p>
+          <p><span>Grid</span><strong id="grid-size">4x4</strong></p>
+        </div>
+        <div class="puzzle-actions">
+          <button id="shuffle-button" type="button">Shuffle</button>
+          <button id="preview-button" type="button">Hide Picture</button>
+        </div>
+        <div class="puzzle-image-control">
+          <p>Image</p>
+          <div id="image-choices" class="image-choices"></div>
+        </div>
+        <label class="puzzle-size-control">
+          Difficulty
+          <select id="size-select">
+            <option value="3">3x3</option>
+            <option value="4" selected>4x4</option>
+            <option value="5">5x5</option>
+          </select>
+        </label>
+        <img id="preview-image" class="preview-image" alt="Puzzle preview">
+        <p id="status" class="puzzle-status">Click two pieces to swap them.</p>
+      </aside>
+    </main>
+    <script src="puzzle.js?v=20260510-4"></script>
+  </body>
+</html>

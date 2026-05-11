@@ -1,30 +1,82 @@
 {
   "0": {
-    "title": "Overview",
-    "text": "- Build name: Cowboy Ninja\n- Main idea: Shotgun = damage, Sheriff Stars = mobility\n- Playstyle: get close, burst enemies, then reposition before getting surrounded\n- Scales well because it combines high shotgun DPS, speed, spell combos, and sustain"
+    "title": "Cowboy Ninja Build Overview",
+    "text": "Main idea: use the Shotgun for huge close/mid-range DPS and Sheriff Stars for movement, repositioning, and utility. The playstyle is aggressive but mobile: get close enough to melt enemies, constantly kite, double-jump, and reset fights when surrounded. The build scales from early game into Nightmare because it combines shotgun damage, movement speed, spell combos, healing, and strong mid-run joker scaling."
   },
   "1": {
-    "title": "Weapons Loadout",
-    "text": "- Primary weapon: Shotgun\n- Secondary weapon: Sheriff Stars\n- Shotgun is used to kill elites, bosses, birds, and priority targets\n- Sheriff Stars are used for movement, double jumps, repositioning, and backup damage"
+    "title": "Shotgun Stats and Progression",
+    "text": "Start by prioritizing Accuracy because more pellets hitting the target gives better real damage, especially when shooting elites, bombers, snipers, and gunners from 10-20 meters away. Before getting Overblast, upgrade Accuracy first, then Damage, Fire Rate, Reload Speed, and Clip Size. After getting Overblast, focus heavily on Clip Size with some Reload Speed because Overblast gives extra pellets for every missing round in the magazine, turning bigger magazines into much higher late-mag damage."
   },
   "2": {
-    "title": "Primary Weapon: Shotgun",
-    "text": "- Early stat priority: Accuracy first because more pellets hit enemies at range\n- Before Overblast: Accuracy, Damage, Fire Rate, Reload Speed, Clip Size\n- After Overblast: focus Clip Size and Reload Speed\n- Main joker: Overblast\n- Why Overblast: extra pellets for every missing round, so low-mag shots become huge damage\n- Good jokers: Swift Shot, Relentless, Rampage, Reload Mastery, Machine Gun, Speedster\n- Reload Mastery is important because you want to mag-dump often and reload fast"
+    "title": "Shotgun Joker Cards",
+    "text": "The key unique joker is Overblast. Take it over Rush Blast because it directly increases damage by adding extra pellets as the magazine empties, making your final shots extremely strong for elites and bosses. For common jokers, Swift Shot gives more fire rate while aiming, while Relentless helps when low HP. For green jokers, Run and Reload and Rampage are good, with Rampage being especially useful because movement speed also helps Speedster scaling. For blue jokers, Reload Mastery is essential because the build mag-dumps often and needs fast empty reloads. Lucky Strike is a decent progression option. For legendary jokers, Machine Gun adds fire rate and Speedster is excellent because the build already stacks movement speed, which then becomes extra damage and fire rate."
   },
   "3": {
-    "title": "Secondary Weapon: Sheriff Stars",
-    "text": "- Main purpose: mobility and repositioning\n- Stat priority: Pickup Range first\n- Why Pickup Range: lets you safely recover thrown stars without getting too close\n- Use Acid element for combos with lightning/electrified enemies\n- Key jokers: Jump Star and Scavenger Star\n- Jump Star gives double jumps while holding Sheriff Stars\n- Scavenger Star gives movement speed and bigger pickup range\n- Tip: equip Sheriff Stars, jump, then swap to Shotgun to keep the double-jump movement"
+    "title": "Sheriff Stars Stats and Purpose",
+    "text": "Sheriff Stars are mainly used as a mobility and repositioning tool, not your main boss DPS weapon. They can be picked back up after being thrown, so if you play close enough and smart enough, they can feel like infinite ammo. Prioritize Pickup Range first because it lets you recover stars without getting dangerously close to enemies. After that, Fire Rate, Lifesteal, and Draw Speed are useful. Use Acid damage on Sheriff Stars because acid stars can combo with electrified enemies from your lightning spells to create explosions."
   },
   "4": {
-    "title": "Spells",
-    "text": "- Take Strikes, Drain, and Mino\n- Strikes: lightning line/puddles for AoE\n- Drain: healing and sustain\n- Mino: mine used for spell combos\n- Combo: Mino + Strikes = big star-shaped lightning AoE\n- Combo: Strikes + Acid Sheriff Stars = lightning explosions\n- Combo: Strikes + Drain = extra healing candles\n- Combo: Drain + Mino = corruption mine that turns enemies into allies\n- Optional later swap: Drain can be replaced with Corruption for stronger enemy conversion"
+    "title": "Sheriff Stars Joker Cards",
+    "text": "For common jokers, Relentless is useful for extra damage when low HP. For green jokers, Rampage is strong because it gives movement speed after kills. For blue jokers, Lucky Strike or Run and Gun are good choices. For legendary jokers, Machine Gun works well because increased fire rate is valuable when you can recover your thrown stars. The two important unique jokers are Jump Star and Scavenger Star. Jump Star gives double jumps while holding Sheriff Stars, and Scavenger Star gives movement speed and much bigger pickup range. Together, they make Sheriff Stars the build's main escape and repositioning tool."
   },
   "5": {
-    "title": "Character",
-    "text": "- Stat priority: Health, Spell Cooldown Reduction, Speed\n- Health gives room for mistakes\n- Cooldown Reduction lets you use spell combos more often\n- Speed helps kiting, dodging, repositioning, and Speedster scaling\n- Main jokers: Chad, Disgrace, Speedy Gonzalez, Soul Siphon, Glass Cannon\n- Chad helps find and buy from the Wandering Trader\n- Disgrace gives movement speed; losing the mount is worth it for combat\n- Glass Cannon gives big weapon damage but lowers max HP\n- Be careful stacking too many max HP reduction cards"
+    "title": "Sheriff Stars Movement Trick",
+    "text": "To keep the double jumps while using the shotgun, start with Sheriff Stars equipped, jump or double-jump, then swap to Shotgun. This keeps the double-jump movement while letting you shoot. The reverse does not work: if you start with Shotgun and then swap to Sheriff Stars mid-jump, you do not gain the double jumps. The useful flow is: equip Sheriff Stars, jump, swap to Shotgun, then blast."
   },
   "6": {
-    "title": "Strategy and Run Tips",
-    "text": "- Always prioritize dangerous enemies first: bombers, snipers, gunners, horsemen, liches, and elites\n- Use Shotgun to delete priority targets and bosses\n- Use Sheriff Stars to escape bad positions\n- Do not fight while fully surrounded; reposition and reset the fight\n- Collect gold and find the Wandering Trader before the boss\n- Clear enemies before opening the trader shop\n- Buy useful mid-run jokers like Speedster, Second Wind, damage, fire rate, and movement speed cards\n- Before bosses, clear cursed houses and nearby enemies\n- During boss fights, kill elites that spawn and avoid getting greedy for healing/ammo\n- After the boss, move toward extraction while clearing just enough enemies to avoid being trapped\n- Avoid nukers unless you can kill them safely from far away"
+    "title": "Character Stats",
+    "text": "Prioritize Health, Spell Cooldown Reduction, and Speed. Health gives more room for mistakes, especially because Glass Cannon lowers max HP. Spell Cooldown Reduction is important because your spells provide AoE, healing, crowd control, and combo damage. Speed helps you kite, dodge, reposition, and also improves Speedster scaling. Jump Height is useful because it works well with Sheriff Star double jumps. Ammo Bag is lower priority and should only get leftover points."
+  },
+  "7": {
+    "title": "Character Joker Cards",
+    "text": "The main character jokers are Chad, Disgrace, Speedy Gonzalez, Soul Siphon, and Glass Cannon. Chad reveals the Wandering Trader and gives a discount, which is important because buying extra jokers mid-run is how you scale for higher difficulties. Disgrace gives a big movement speed boost at the cost of losing your mount, which is worth it because the horse does not help much in combat. Speedy Gonzalez adds more movement speed and works well with Speedster. Soul Siphon gives sustain. Glass Cannon is very strong because it gives a large weapon damage boost, which scales extremely well with Shotgun and Overblast, but you must be careful because it reduces max HP."
+  },
+  "8": {
+    "title": "Alternative Character Jokers",
+    "text": "Relentless and Last Dance are good early cards because they give strong bonuses when you are below 30% HP. Heavy Drinker is useful if you want stronger bottle healing. Care Package gives extra utility. Battle Mage and West Wizard are good if you want more spell cooldown reduction. Second Wind is a very strong safety card because it can save a run after a mistake, but the guide suggests it is often fine to find it mid-run instead of building around it. Cantrip One Trick is an alternative to Glass Cannon if you do not want the max HP penalty, since all the chosen spells have short enough cooldowns to benefit from it."
+  },
+  "9": {
+    "title": "Spells Taken",
+    "text": "Use Strikes, Drain, and Mino. Strikes is the level-one lightning spell, Drain is the level-one voodoo spell, and Mino is the level-one cactus mine spell. These are strong because they are available early and still scale into Nightmare. Together they give AoE damage, healing, crowd control, corruption effects, and combo potential. Drain can later be swapped for Corruption if you want stronger enemy-conversion effects, but Drain is safer because it also gives healing."
+  },
+  "10": {
+    "title": "Spell Combo: Mino and Strikes",
+    "text": "Place a Mino mine, then cast Strikes onto it. This creates a star-shaped lightning AoE that spreads lightning puddles. Use this to clear hordes, cursed houses, and groups of enemies quickly. Be careful with timing: the mine must touch the ground before Strikes hits it, otherwise the combo may not trigger properly."
+  },
+  "11": {
+    "title": "Spell Combo: Strikes and Acid Sheriff Stars",
+    "text": "Use Strikes to electrify enemies and create lightning puddles, then hit electrified enemies with Acid Sheriff Stars. This creates lightning explosions and gives the Sheriff Stars much better burst and AoE damage. This combo helps the stars deal with tougher elites that they might otherwise struggle to kill quickly."
+  },
+  "12": {
+    "title": "Spell Combo: Strikes and Drain",
+    "text": "Use Strikes to create lightning puddles, then cast Drain near those puddles. This creates candles that provide extra healing. Use this combo when you are fighting a big group and need sustain while continuing to kite and shoot."
+  },
+  "13": {
+    "title": "Spell Combo: Drain and Mino",
+    "text": "Cast Drain near a Mino mine to turn it into a corruption mine. Enemies that trigger the corruption mine become temporary allies and fight for you. This is especially useful against stronger elites because they can help clear enemies for you, then take damage when the corruption effect ends."
+  },
+  "14": {
+    "title": "General Combat Strategy",
+    "text": "Use Sheriff Stars and double jumps to control spacing, then use Shotgun to delete elites and bosses. Do not stand still when surrounded. If a fight becomes messy, turn around, double-jump away, and reset the fight in a safer area. Prioritize dangerous enemies first: bombers, machine gunners, snipers, assassins, horsemen, liches, and other elites. Use the shotgun for birds because even one pellet can kill them."
+  },
+  "15": {
+    "title": "Mid-Run Strategy",
+    "text": "Collect gold whenever possible because gold lets you buy more jokers from the Wandering Trader. Gold veins and marauders are worth grabbing or killing for extra spending money. Use Chad to find the trader and get discounted cards. Before opening the trader shop, clear nearby enemies first so you do not get trapped in the shop screen while being attacked. Good mid-run pickups include Speedster, Second Wind, damage cards, fire rate cards, and movement speed cards."
+  },
+  "16": {
+    "title": "Important Joker Pickup Warning",
+    "text": "Do not instantly pick up every joker during a run. Check the effect first. Be especially careful with jokers that reduce max HP, because Glass Cannon already lowers your max HP. Stacking too many max HP penalties can make you get one-shot by mistakes that would otherwise be survivable."
+  },
+  "17": {
+    "title": "Boss Fight Strategy",
+    "text": "Before starting the boss, clear the area around the boss objective, including cursed houses and nearby enemy groups. During the boss fight, use Shotgun as your main damage source, keep moving, kill elites that spawn, and use spell AoE to control adds. Do not get greedy for ammo or healing. Against Cryptic Train, avoid the sweeping lasers, move between safe gaps when needed, restock only when safe, and keep mag-dumping the shotgun into the boss."
+  },
+  "18": {
+    "title": "Extraction Strategy",
+    "text": "After the boss, the run is not over. Extraction can be harder than the boss because enemies keep spawning. Clear enough enemies so you do not get surrounded, but do not stay forever trying to kill everything. Start moving toward extraction once the path is manageable. Avoid nukers whenever possible because they can end the run instantly if you get too close. Use Sheriff Star double jumps, verticality, and repositioning to escape instead of forcing every fight."
+  },
+  "19": {
+    "title": "Simple Combat Loop",
+    "text": "Equip Sheriff Stars for movement, double-jump into a better position, swap to Shotgun, and kill priority targets. Use Mino plus Strikes for AoE. Use Acid Sheriff Stars on electrified enemies for explosions. Use Drain for healing or corruption combos. Mag-dump Shotgun to take advantage of Overblast, then reload quickly with Reload Mastery. If surrounded, reposition instead of trying to tank the fight."
   }
 }

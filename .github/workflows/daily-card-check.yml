@@ -39,6 +39,9 @@ jobs:
 
       - name: Run One Piece card scraper
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'cards' }}
+        env:
+          SCRAPE_OP_MISSING_CARDS_DRIVE_URL: ${{ secrets.SCRAPE_OP_MISSING_CARDS_DRIVE_URL }}
+          SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID: ${{ secrets.SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID }}
         run: python services/one_piece/find_missing_cards.py all
 
       - name: Run release radar

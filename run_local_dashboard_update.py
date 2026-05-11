@@ -23,6 +23,7 @@ TASKS = {
     "watchlist": [[sys.executable, "services/scrape_media.py", "--source", "watchlist"]],
     "gamelist": [[sys.executable, "services/scrape_media.py", "--source", "games", "--type", "games"]],
     "news": [[sys.executable, "services/scrape_news.py"]],
+    "puzzle-images": [[sys.executable, "services/sync_puzzle_images.py"]],
     "digest": [[sys.executable, "services/daily_digest/send_daily_digest.py", "--no-email"]],
 }
 
