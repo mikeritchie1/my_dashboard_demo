@@ -1,0 +1,57 @@
+name: Hourly One Piece card check
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dashboard-data-updates
+  cancel-in-progress: false
+
+jobs:
+  check-one-piece-cards:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Check for new One Piece cards
+        env:
+          SCRAPE_OP_MISSING_CARDS_DRIVE_URL: ${{ secrets.SCRAPE_OP_MISSING_CARDS_DRIVE_URL }}
+          SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID: ${{ secrets.SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: >
+          python services/one_piece/notify_new_cards.py
+          --store all
+          --mode new
+          --snapshot-scope hourly
+          --window-label "in the last hour"
+
+      - name: Update scrape metadata
+        run: >
+          python -c "import json, datetime;
+          json.dump({'last_scraped_at': datetime.datetime.now(datetime.timezone.utc).isoformat()},
+          open('docs/data/metadata.json','w', encoding='utf-8'), indent=2)"
+
+      - name: Commit hourly card data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .scrape data/one_piece docs/data/one_piece docs/data/metadata.json
+          git diff --cached --quiet || git commit -m "Update hourly One Piece card data"
+          git push

@@ -178,6 +178,12 @@ One Piece config:
 
 - `data/one_piece/config.json`
 
+One Piece automation:
+
+- Daily dashboard update still runs the One Piece scrape and the daily digest compares against the daily snapshot, so the email shows day-to-day added/removed changes.
+- Hourly One Piece card check runs `services/one_piece/notify_new_cards.py` every hour with its own `hourly` snapshot and only sends email when new card listings appear in the last hour.
+- Hourly workflow file: `.github/workflows/hourly-one-piece-card-check.yml`
+
 ### Release Radar
 
 Run all release radar sources:

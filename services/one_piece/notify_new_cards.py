@@ -48,8 +48,10 @@ def current_report(store: str) -> Path:
     return ONE_PIECE_DATA_DIR / f"{report_prefix(store)}.csv"
 
 
-def previous_report(store: str) -> Path:
-    return Path(f".scrape/previous_{report_prefix(store)}.csv")
+def previous_report(store: str, snapshot_scope: str = "") -> Path:
+    scope = normalized_store(snapshot_scope)
+    prefix = f"{scope}_" if scope else ""
+    return Path(f".scrape/{prefix}previous_{report_prefix(store)}.csv")
 
 
 def run_scraper(store: str) -> None:
@@ -114,16 +116,17 @@ def email_body(
     store: str,
     mode: str,
     additions: list[dict[str, str]] | None = None,
+    window_label: str = "since last email",
 ) -> str:
     if mode == "all":
         lines = [f"Missing card report for {store}", ""]
         if additions:
-            lines.extend(card_section("New since last email", additions))
+            lines.extend(card_section(f"New {window_label}", additions))
         else:
-            lines.extend(["New since last email: 0", ""])
+            lines.extend([f"New {window_label}: 0", ""])
         lines.extend(card_section("All missing cards available", rows))
     else:
-        lines = card_section(f"New missing cards available for {store}", rows)
+        lines = card_section(f"New missing cards available {window_label} for {store}", rows)
     return "\n".join(lines).strip() + "\n"
 
 
@@ -137,6 +140,16 @@ def env_required(name: str) -> str:
 def write_latest_text(body: str) -> None:
     LATEST_NEW_CARDS.parent.mkdir(parents=True, exist_ok=True)
     LATEST_NEW_CARDS.write_text(body, encoding="utf-8")
+
+
+def write_latest_text_for_scope(body: str, snapshot_scope: str) -> None:
+    scope = normalized_store(snapshot_scope)
+    if not scope:
+        write_latest_text(body)
+        return
+    path = Path(f".scrape/latest_{scope}_new_cards.txt")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(body, encoding="utf-8")
 
 
 def write_new_cards_json(rows: list[dict[str, str]]) -> None:
@@ -154,6 +167,7 @@ def send_email(
     store: str,
     mode: str,
     additions: list[dict[str, str]] | None = None,
+    window_label: str = "since last email",
 ) -> None:
     smtp_host = env_required("SMTP_HOST")
     smtp_port = int(os.environ.get("SMTP_PORT", "587"))
@@ -163,15 +177,15 @@ def send_email(
     email_from = os.environ.get("EMAIL_FROM", "").strip() or smtp_user
 
     message = EmailMessage()
-    subject_label = "available" if mode == "all" else "new available"
+    subject_label = "available" if mode == "all" else f"new {window_label}"
     if mode == "all" and additions:
-        subject = f"One Piece cards: {len(additions)} new, {len(rows)} total ({store})"
+        subject = f"One Piece cards: {len(additions)} new {window_label}, {len(rows)} total ({store})"
     else:
         subject = f"One Piece cards: {len(rows)} {subject_label} ({store})"
     message["Subject"] = subject
     message["From"] = email_from
     message["To"] = email_to
-    message.set_content(email_body(rows, store, mode, additions))
+    message.set_content(email_body(rows, store, mode, additions, window_label))
 
     with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as smtp:
         smtp.starttls()
@@ -185,7 +199,7 @@ def update_snapshot(current: Path, previous: Path) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Email new missing-card listings once per day.")
+    parser = argparse.ArgumentParser(description="Email new missing-card listings since the selected snapshot.")
     parser.add_argument(
         "--no-scrape",
         action="store_true",
@@ -207,11 +221,22 @@ def main() -> int:
         action="store_true",
         help="Write output files and update snapshots without sending email.",
     )
+    parser.add_argument(
+        "--snapshot-scope",
+        default=os.environ.get("CARD_NOTIFY_SNAPSHOT_SCOPE", ""),
+        help="Optional snapshot namespace, for example 'hourly', so daily and hourly baselines stay separate.",
+    )
+    parser.add_argument(
+        "--window-label",
+        default=os.environ.get("CARD_NOTIFY_WINDOW_LABEL", "since last email"),
+        help="Human-friendly label for the email window, for example 'in the last hour'.",
+    )
     args = parser.parse_args()
     store = normalized_store(args.store)
     mode = args.mode
     current = current_report(store)
-    previous = previous_report(store)
+    previous = previous_report(store, args.snapshot_scope)
+    window_label = args.window_label.strip() or "since last email"
 
     if not args.no_scrape:
         run_scraper(store)
@@ -226,10 +251,10 @@ def main() -> int:
     write_new_cards_json(additions)
 
     if mode == "all":
-        body = email_body(today, store, mode, additions)
-        write_latest_text(body)
+        body = email_body(today, store, mode, additions, window_label)
+        write_latest_text_for_scope(body, args.snapshot_scope)
         if not args.no_email:
-            send_email(today, store, mode, additions)
+            send_email(today, store, mode, additions, window_label)
         update_snapshot(current, previous)
         action = "Prepared report" if args.no_email else "Sent email"
         print(
@@ -239,21 +264,24 @@ def main() -> int:
         return 0
 
     if not previous_rows:
-        write_latest_text(f"No previous snapshot found for {store}. Saved today's report as the baseline.\n")
+        write_latest_text_for_scope(
+            f"No previous snapshot found for {store}. Saved today's report as the baseline.\n",
+            args.snapshot_scope,
+        )
         update_snapshot(current, previous)
         print(f"No previous snapshot found for {store}. Saved today's report as the baseline.")
         return 0
 
     if not additions:
-        write_latest_text(f"No new cards found for {store}.\n")
+        write_latest_text_for_scope(f"No new cards found {window_label} for {store}.\n", args.snapshot_scope)
         update_snapshot(current, previous)
         print(f"No new cards found for {store}. Snapshot updated.")
         return 0
 
-    body = email_body(additions, store, mode)
-    write_latest_text(body)
+    body = email_body(additions, store, mode, window_label=window_label)
+    write_latest_text_for_scope(body, args.snapshot_scope)
     if not args.no_email:
-        send_email(additions, store, mode)
+        send_email(additions, store, mode, window_label=window_label)
     update_snapshot(current, previous)
     action = "Prepared report" if args.no_email else "Sent email"
     print(f"{action} for {len(additions)} new card listing(s). Snapshot updated.")
