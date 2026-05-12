@@ -4,21 +4,6 @@
     "store",
     "url"
   ],
-  "keys": [
-    "OP09-065|Tanuki Trader|https://tanukitrader.co.za/product/sanji-12/"
-  ],
-  "rows": [
-    {
-      "card_number": "OP09-065",
-      "price": "20.0",
-      "title": "Sanji (065)",
-      "rarity": "Super Rare",
-      "store": "Tanuki Trader",
-      "set_name": "Emperors in the New World (OP09)",
-      "condition": "",
-      "stock": "2 in stock",
-      "available_variants": "2 in stock",
-      "url": "https://tanukitrader.co.za/product/sanji-12/"
-    }
-  ]
+  "keys": [],
+  "rows": []
 }
