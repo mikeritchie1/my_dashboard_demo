@@ -4,8 +4,9 @@ import argparse
 import json
 import re
 import shutil
+import urllib.parse
 import urllib.request
-from datetime import date, datetime
+from datetime import UTC, date, datetime
 from pathlib import Path
 
 
@@ -97,6 +98,46 @@ def parse_products(html_text: str) -> list[dict[str, object]]:
     return items
 
 
+def parse_total_pages(html_text: str) -> int:
+    max_page = 1
+    for match in re.finditer(r'class="pageBtn[^"]*">\s*(\d+)\s*<', html_text):
+        try:
+            value = int(match.group(1))
+        except ValueError:
+            continue
+        if value > max_page:
+            max_page = value
+    return max_page
+
+
+def page_url(base_url: str, page: int) -> str:
+    parsed = urllib.parse.urlparse(base_url)
+    query = dict(urllib.parse.parse_qsl(parsed.query, keep_blank_values=True))
+    query["page"] = str(page)
+    rebuilt = parsed._replace(query=urllib.parse.urlencode(query))
+    return urllib.parse.urlunparse(rebuilt)
+
+
+def scrape_pages(base_url: str, pages: int = 0) -> tuple[list[dict[str, object]], int]:
+    first_html = fetch_text(base_url)
+    total_pages = parse_total_pages(first_html)
+    target_pages = total_pages if pages <= 0 else max(1, min(pages, total_pages))
+
+    seen_urls: set[str] = set()
+    all_items: list[dict[str, object]] = []
+    for page in range(1, target_pages + 1):
+        html_text = first_html if page == 1 else fetch_text(page_url(base_url, page))
+        page_items = parse_products(html_text)
+        for item in page_items:
+            url = str(item.get("url") or "").strip()
+            if url and url in seen_urls:
+                continue
+            if url:
+                seen_urls.add(url)
+            all_items.append({**item, "source_page": page})
+    return all_items, target_pages
+
+
 def sort_products(items: list[dict[str, object]]) -> list[dict[str, object]]:
     def key(item: dict[str, object]) -> tuple[str, str]:
         release_date = str(item.get("release_date") or "")
@@ -132,24 +173,27 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Scrape ONE PIECE official products list.")
     parser.add_argument("--hard", action="store_true", help="Remove existing products output before scraping.")
     parser.add_argument("--limit", type=int, default=0, help="Accepted for wrapper consistency; ignored.")
-    parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; ignored.")
+    parser.add_argument("--max-pages", type=int, default=0, help="Alias for --pages.")
+    parser.add_argument("--pages", type=int, default=0, help="How many pages to scrape. Default: all pages.")
     args = parser.parse_args()
 
     if args.hard and OUTPUT_FILE.exists():
         OUTPUT_FILE.unlink()
 
-    html_text = fetch_text(PRODUCTS_URL)
-    items = annotate_products(sort_products(parse_products(html_text)))
+    pages = args.pages if args.pages > 0 else args.max_pages
+    raw_items, pages_used = scrape_pages(PRODUCTS_URL, pages=pages)
+    items = annotate_products(sort_products(raw_items))
 
     payload = {
         "source": PRODUCTS_URL,
-        "scraped_at": datetime.utcnow().isoformat() + "Z",
+        "scraped_at": datetime.now(UTC).isoformat().replace("+00:00", "Z"),
+        "pages_scraped": pages_used,
         "items": items,
     }
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
     sync_to_docs()
-    print(f"Wrote {len(items)} One Piece product(s) to {OUTPUT_FILE}")
+    print(f"Wrote {len(items)} One Piece product(s) from {pages_used} page(s) to {OUTPUT_FILE}")
     return 0
 
 

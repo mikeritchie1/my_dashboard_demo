@@ -1,7 +1,140 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-05-13T10:11:49.052182Z",
+  "scraped_at": "2026-05-13T10:29:30.356473Z",
+  "pages_scraped": 2,
   "items": [
+    {
+      "title": "LIMITED CARD SLEEVE PREMIUM MATTE vol.4",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2025-12-12",
+      "release_date_text": "December 12, 2025",
+      "url": "https://en.onepiece-cardgame.com/products/other/sleeve028.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "BOOSTER PACK -THE AZURE SEA’S SEVEN- [OP14-EB04]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2026-01-16",
+      "release_date_text": "January 16, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/boosters/op14-eb04.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "Double Pack Set Vol.9 [DP-09]",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-01-16",
+      "release_date_text": "January 16, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/dp09.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "Illustration Box Vol.5",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-01-16",
+      "release_date_text": "January 16, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/ib05.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "Illustration Box Vol.6",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-01-16",
+      "release_date_text": "January 16, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/ib06.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "STARTER DECK -Egghead- [ST-29]",
+      "category": "decks",
+      "category_label": "DECKS",
+      "date_label": "Release Date",
+      "release_date": "2026-01-16",
+      "release_date_text": "January 16, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/decks/st29.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "Tin Pack Set Vol.2 [TS-02]",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-01-30",
+      "release_date_text": "January 30, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/ts02.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "Official Playmat Limited Edition Vol.4",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Delivery Month",
+      "release_date": "2026-02-01",
+      "release_date_text": "February 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/playmat008.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "Premium Card Collection -Best Selection Vol.5-",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Delivery Month",
+      "release_date": "2026-02-01",
+      "release_date_text": "February 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/cardcollection_bestselection_vol5.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "EXTRA BOOSTER -ONE PIECE HEROINES EDITION- [EB-03]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2026-02-20",
+      "release_date_text": "February 20, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/boosters/eb03.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "Official Card Sleeve Limited Edition Vol.5",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-02-20",
+      "release_date_text": "February 20, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/sleeve031.php",
+      "source_page": 2,
+      "is_released": true
+    },
+    {
+      "title": "OFFICIAL CARD SLEEVES 13",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-02-20",
+      "release_date_text": "February 20, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/other/sleeve030.php",
+      "source_page": 2,
+      "is_released": true
+    },
     {
       "title": "ONE PIECE CARD GAME Japanese 3rd ANNIVERSARY SET",
       "category": "other",
@@ -10,6 +143,7 @@
       "release_date": "2026-03-01",
       "release_date_text": "March 2026",
       "url": "https://en.onepiece-cardgame.com/products/other/anniversaryset3rd.php",
+      "source_page": 1,
       "is_released": true
     },
     {
@@ -20,6 +154,7 @@
       "release_date": "2026-04-03",
       "release_date_text": "April 3, 2026",
       "url": "https://en.onepiece-cardgame.com/products/boosters/op15-eb04.php",
+      "source_page": 1,
       "is_released": true
     },
     {
@@ -30,6 +165,7 @@
       "release_date": "2026-04-03",
       "release_date_text": "April 3, 2026",
       "url": "https://en.onepiece-cardgame.com/products/other/dp10.php",
+      "source_page": 1,
       "is_released": true
     },
     {
@@ -40,6 +176,7 @@
       "release_date": "2026-04-03",
       "release_date_text": "April 3, 2026",
       "url": "https://en.onepiece-cardgame.com/products/other/sleeve029.php",
+      "source_page": 1,
       "is_released": true
     },
     {
@@ -50,6 +187,7 @@
       "release_date": "2026-04-03",
       "release_date_text": "April 3, 2026",
       "url": "https://en.onepiece-cardgame.com/products/other/sleeve033.php",
+      "source_page": 1,
       "is_released": true
     },
     {
@@ -60,6 +198,7 @@
       "release_date": "2026-06-12",
       "release_date_text": "June 12, 2026",
       "url": "https://en.onepiece-cardgame.com/products/op16.html",
+      "source_page": 1,
       "is_released": false
     },
     {
@@ -70,6 +209,7 @@
       "release_date": "2026-07-01",
       "release_date_text": "July 2026",
       "url": "https://en.onepiece-cardgame.com/products/other/playmat010.php",
+      "source_page": 1,
       "is_released": false
     },
     {
@@ -80,6 +220,7 @@
       "release_date": "2026-08-01",
       "release_date_text": "August 2026",
       "url": "https://en.onepiece-cardgame.com/products/other/3rd_anniversary_set.php",
+      "source_page": 1,
       "is_released": false
     },
     {
@@ -90,6 +231,7 @@
       "release_date": "2026-08-01",
       "release_date_text": "August 2026",
       "url": "https://en.onepiece-cardgame.com/products/other/cardcollection_bestselection_vol6.php",
+      "source_page": 1,
       "is_released": false
     },
     {
@@ -100,6 +242,7 @@
       "release_date": "2026-09-01",
       "release_date_text": "September 2026",
       "url": "https://en.onepiece-cardgame.com/products/heroines-special.html",
+      "source_page": 1,
       "is_released": false
     },
     {
@@ -110,6 +253,7 @@
       "release_date": "2026-11-01",
       "release_date_text": "November 2026",
       "url": "https://en.onepiece-cardgame.com/products/collection-drama003.html",
+      "source_page": 1,
       "is_released": false
     },
     {
@@ -120,6 +264,7 @@
       "release_date": "2026-11-01",
       "release_date_text": "November 2026",
       "url": "https://en.onepiece-cardgame.com/products/collection-drama002.html",
+      "source_page": 1,
       "is_released": false
     }
   ]

@@ -1337,6 +1337,116 @@ select {
   border-radius: 8px;
 }
 
+.one-piece-products {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: var(--panel);
+  margin-top: 10px;
+}
+
+.one-piece-products-head {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.one-piece-products-head .subsection-title {
+  margin: 0;
+}
+
+.one-piece-products .watchlist-category-buttons {
+  margin-top: 8px;
+}
+
+.one-piece-products-strip {
+  display: block;
+  margin-top: 8px;
+}
+
+.one-piece-product-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(220px, 250px);
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  user-select: none;
+}
+
+.one-piece-product-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.one-piece-product-strip.is-dragging {
+  cursor: grabbing;
+}
+
+.one-piece-product-tile {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: rgba(30, 41, 59, 0.5);
+  min-height: 130px;
+  transition: border-color 140ms ease, transform 140ms ease, background 140ms ease;
+}
+
+.one-piece-product-tile.is-released {
+  border-color: #15803d;
+  background: color-mix(in srgb, #14532d 52%, var(--panel));
+}
+
+.one-piece-product-tile.is-upcoming {
+  border-color: #b91c1c;
+  background: color-mix(in srgb, #7f1d1d 42%, var(--panel));
+}
+
+.one-piece-product-tile.is-current {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, #cbd5e1 70%, transparent);
+  transform: translateY(-1px);
+}
+
+.one-piece-product-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.one-piece-product-pill {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  padding: 2px 8px;
+  color: var(--text);
+}
+
+.one-piece-product-title {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0 0 6px;
+}
+
+.one-piece-product-date {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.one-piece-product-link {
+  margin-top: 6px;
+  display: inline-block;
+  font-size: 12px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -3440,6 +3550,10 @@ td.card-number {
 
   .watchlist-detail-poster {
     max-width: 180px;
+  }
+
+  .one-piece-products-strip {
+    display: block;
   }
 }
 

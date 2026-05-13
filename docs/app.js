@@ -1,5 +1,6 @@
 ﻿const CSV_PATH = "./data/one_piece/all_stores_missing_available.csv";
 const NEW_CARDS_PATH = "./data/one_piece/new_missing_cards.json";
+const ONE_PIECE_PRODUCTS_PATH = "./data/one_piece/products.json";
 const RELEASES_PATH = "./data/release_radar/pahe_latest.json";
 const COMING_SOON_PATH = "./data/release_radar/coming_soon.json";
 const GAME_RELEASES_PATH = "./data/release_radar/game_releases.json";
@@ -79,6 +80,9 @@ const state = {
   rarity: "",
   minPrice: 0,
   maxPrice: 200,
+  onePieceProducts: [],
+  onePieceProductType: "all",
+  onePieceProductIndex: -1,
   specialsPayload: null,
   places: {},
   locations: {},
@@ -140,6 +144,8 @@ const elements = {
   rarityFilter: document.querySelector("#rarity-filter"),
   minPrice: document.querySelector("#min-price"),
   maxPrice: document.querySelector("#max-price"),
+  onePieceProductTypeFilters: document.querySelector("#one-piece-product-type-filters"),
+  onePieceProductStrip: document.querySelector("#one-piece-product-strip"),
   watchlistOpinionIndicatorsToggle: document.querySelector("#watchlist-opinion-indicators-toggle"),
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
@@ -221,6 +227,7 @@ let mapMarkersByKey = new Map();
 let selectedMarkerHighlight = null;
 let mapDetailTab = "all";
 let timelineLightboxIndex = -1;
+let onePieceStripDragBound = false;
 const markerIcons = {
   places: L.icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
@@ -4626,6 +4633,188 @@ function render() {
   renderTable(rows);
 }
 
+function defaultOnePieceProductIndex(items) {
+  if (!items.length) {
+    return -1;
+  }
+  let bestIndex = -1;
+  let bestDate = "";
+  for (let index = 0; index < items.length; index += 1) {
+    const item = items[index];
+    if (!item?.is_released) {
+      continue;
+    }
+    const releaseDate = String(item?.release_date || "").trim();
+    if (!releaseDate) {
+      continue;
+    }
+    if (!bestDate || releaseDate > bestDate || releaseDate === bestDate) {
+      bestDate = releaseDate;
+      bestIndex = index;
+    }
+  }
+  return bestIndex >= 0 ? bestIndex : 0;
+}
+
+function filteredOnePieceProducts() {
+  if (state.onePieceProductType === "all") {
+    return state.onePieceProducts;
+  }
+  return state.onePieceProducts.filter(
+    (item) => String(item?.category || "").trim().toLowerCase() === state.onePieceProductType,
+  );
+}
+
+function renderOnePieceProductFilters() {
+  if (!elements.onePieceProductTypeFilters) {
+    return;
+  }
+  const filters = [
+    { key: "all", label: "All" },
+    { key: "boosters", label: "Boosters" },
+    { key: "decks", label: "Decks" },
+    { key: "other", label: "Other" },
+  ];
+  elements.onePieceProductTypeFilters.innerHTML = filters
+    .map((item) => (
+      `<button type="button" class="watchlist-category-button${state.onePieceProductType === item.key ? " is-selected" : ""}" data-one-piece-product-type="${item.key}">${item.label}</button>`
+    ))
+    .join("");
+}
+
+function renderOnePieceProductCurrent() {
+  if (!elements.onePieceProductStrip) {
+    return;
+  }
+  const items = filteredOnePieceProducts();
+  if (!items.length) {
+    elements.onePieceProductStrip.innerHTML = '<p class="empty">No products found.</p>';
+    return;
+  }
+  if (state.onePieceProductIndex < 0 || state.onePieceProductIndex >= items.length) {
+    state.onePieceProductIndex = defaultOnePieceProductIndex(items);
+  }
+
+  const cards = items.map((item, index) => {
+    const title = escapeHtml(String(item?.title || "Untitled"));
+    const type = escapeHtml(String(item?.category_label || item?.category || "OTHER"));
+    const status = item?.is_released ? "Released" : "Upcoming";
+    const releaseDate = displayDatePlain(String(item?.release_date || ""));
+    const releaseText = releaseDate || String(item?.release_date_text || "Date TBA");
+    const link = escapeHtml(String(item?.url || ""));
+    const currentClass = index === state.onePieceProductIndex ? " is-current" : "";
+    const statusClass = item?.is_released ? " is-released" : " is-upcoming";
+    return `
+      <article class="one-piece-product-tile${currentClass}${statusClass}" data-one-piece-product-index="${index}">
+        <div class="one-piece-product-meta">
+          <span class="one-piece-product-pill">${type}</span>
+          <span class="one-piece-product-pill">${status}</span>
+        </div>
+        <h4 class="one-piece-product-title">${title}</h4>
+        <p class="one-piece-product-date">${escapeHtml(releaseText)}</p>
+        ${link ? `<a class="one-piece-product-link" href="${link}" target="_blank" rel="noreferrer">Open product</a>` : ""}
+      </article>
+    `;
+  });
+  elements.onePieceProductStrip.innerHTML = cards.join("");
+
+  const currentCard = elements.onePieceProductStrip.querySelector(".one-piece-product-tile.is-current");
+  if (currentCard && typeof currentCard.scrollIntoView === "function") {
+    currentCard.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  }
+}
+
+function bindOnePieceStripDrag() {
+  if (!elements.onePieceProductStrip || onePieceStripDragBound) {
+    return;
+  }
+  onePieceStripDragBound = true;
+  const strip = elements.onePieceProductStrip;
+  let isPointerDown = false;
+  let isDragging = false;
+  let startX = 0;
+  let startScrollLeft = 0;
+  let suppressClickUntil = 0;
+
+  const onPointerMove = (event) => {
+    if (!isPointerDown) {
+      return;
+    }
+    const delta = event.clientX - startX;
+    if (Math.abs(delta) > 6) {
+      isDragging = true;
+    }
+    if (isDragging) {
+      strip.scrollLeft = startScrollLeft - delta;
+    }
+  };
+
+  const onPointerUp = () => {
+    if (!isPointerDown) {
+      return;
+    }
+    if (isDragging) {
+      suppressClickUntil = Date.now() + 180;
+    }
+    isPointerDown = false;
+    isDragging = false;
+    strip.classList.remove("is-dragging");
+    document.removeEventListener("pointermove", onPointerMove);
+    document.removeEventListener("pointerup", onPointerUp);
+    document.removeEventListener("pointercancel", onPointerUp);
+  };
+
+  strip.addEventListener("pointerdown", (event) => {
+    if (event.button !== 0) {
+      return;
+    }
+    isPointerDown = true;
+    isDragging = false;
+    startX = event.clientX;
+    startScrollLeft = strip.scrollLeft;
+    strip.classList.add("is-dragging");
+    document.addEventListener("pointermove", onPointerMove);
+    document.addEventListener("pointerup", onPointerUp);
+    document.addEventListener("pointercancel", onPointerUp);
+  });
+
+  strip.addEventListener("click", (event) => {
+    if (Date.now() < suppressClickUntil) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }, true);
+}
+
+async function loadOnePieceProducts() {
+  if (!elements.onePieceProductStrip) {
+    return;
+  }
+  bindOnePieceStripDrag();
+  try {
+    const response = await fetch(ONE_PIECE_PRODUCTS_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${ONE_PIECE_PRODUCTS_PATH}`);
+    }
+    const payload = await response.json();
+    const items = Array.isArray(payload.items) ? [...payload.items] : [];
+    items.sort((left, right) => {
+      const leftDate = String(left?.release_date || "9999-12-31");
+      const rightDate = String(right?.release_date || "9999-12-31");
+      if (leftDate !== rightDate) return leftDate.localeCompare(rightDate);
+      return String(left?.title || "").localeCompare(String(right?.title || ""));
+    });
+    state.onePieceProducts = items;
+    state.onePieceProductIndex = defaultOnePieceProductIndex(filteredOnePieceProducts());
+    renderOnePieceProductFilters();
+    renderOnePieceProductCurrent();
+  } catch (error) {
+    state.onePieceProducts = [];
+    state.onePieceProductIndex = -1;
+    elements.onePieceProductStrip.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
 async function loadReleases() {
   try {
     const response = await fetch(RELEASES_PATH, { cache: "no-store" });
@@ -4993,8 +5182,12 @@ async function load() {
     optionList(elements.storeFilter, unique(state.rows.map((row) => row.store)), "All stores");
     optionList(elements.rarityFilter, unique(state.rows.map((row) => row.rarity)), "All rarities");
     render();
+    await loadOnePieceProducts();
   } catch (error) {
     elements.body.innerHTML = `<tr><td colspan="7" class="empty">${error.message}</td></tr>`;
+    if (elements.onePieceProductStrip) {
+      elements.onePieceProductStrip.innerHTML = `<p class="empty">${error.message}</p>`;
+    }
   }
 }
 
@@ -5022,6 +5215,39 @@ elements.maxPrice.addEventListener("input", (event) => {
   state.maxPrice = event.target.value === "" ? Number.POSITIVE_INFINITY : Number(event.target.value);
   render();
 });
+
+if (elements.onePieceProductStrip) {
+  elements.onePieceProductStrip.addEventListener("click", (event) => {
+    const card = event.target.closest("[data-one-piece-product-index]");
+    if (!card) {
+      return;
+    }
+    const index = Number(card.getAttribute("data-one-piece-product-index"));
+    if (!Number.isInteger(index)) {
+      return;
+    }
+    const items = filteredOnePieceProducts();
+    state.onePieceProductIndex = Math.max(0, Math.min(items.length - 1, index));
+    renderOnePieceProductCurrent();
+  });
+}
+
+if (elements.onePieceProductTypeFilters) {
+  elements.onePieceProductTypeFilters.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-one-piece-product-type]");
+    if (!button) {
+      return;
+    }
+    const nextType = String(button.getAttribute("data-one-piece-product-type") || "all").trim().toLowerCase();
+    if (!nextType || state.onePieceProductType === nextType) {
+      return;
+    }
+    state.onePieceProductType = nextType;
+    state.onePieceProductIndex = defaultOnePieceProductIndex(filteredOnePieceProducts());
+    renderOnePieceProductFilters();
+    renderOnePieceProductCurrent();
+  });
+}
 
 if (elements.watchlistOpinionIndicatorsToggle) {
   elements.watchlistOpinionIndicatorsToggle.checked = state.showOpinionIndicators;
