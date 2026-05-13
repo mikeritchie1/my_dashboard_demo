@@ -69,6 +69,12 @@
         "Common": 9,
         "Rare": 3,
         "Super Rare": 3
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 8
       }
     },
     "OP02": {
@@ -184,6 +190,12 @@
         "Super Rare": 3,
         "Common": 16,
         "Rare": 7
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 25,
+        "Super Rare": 12,
+        "Leader": 8
       }
     },
     "OP03": {
@@ -530,11 +542,17 @@
         }
       ],
       "total_owned": 85,
-      "total_cards": 0,
+      "total_cards": 123,
       "by_rarity": {
         "Common": 67,
         "Rare": 14,
         "Super Rare": 4
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 8
       }
     },
     "OP04": {
@@ -822,6 +840,12 @@
         "Rare": 9,
         "Common": 57,
         "Super Rare": 3
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 6
       }
     },
     "OP05": {
@@ -1262,6 +1286,12 @@
         "Common": 76,
         "Rare": 21,
         "Super Rare": 5
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 6
       }
     },
     "OP06": {
@@ -1718,6 +1748,12 @@
         "Common": 75,
         "Super Rare": 9,
         "Rare": 21
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 6
       }
     },
     "OP07": {
@@ -2186,6 +2222,12 @@
         "Rare": 25,
         "Common": 75,
         "Super Rare": 8
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 6
       }
     },
     "OP08": {
@@ -2646,6 +2688,12 @@
         "Common": 75,
         "Super Rare": 6,
         "Rare": 25
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 6
       }
     },
     "OP09": {
@@ -3118,6 +3166,12 @@
         "Rare": 26,
         "Common": 75,
         "Super Rare": 8
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 6
       }
     },
     "OP10": {
@@ -3594,6 +3648,12 @@
         "Rare": 26,
         "Common": 75,
         "Super Rare": 9
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 6
       }
     },
     "OP11": {
@@ -4046,6 +4106,12 @@
         "Common": 75,
         "Super Rare": 5,
         "Rare": 24
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 6
       }
     },
     "OP12": {
@@ -4526,6 +4592,12 @@
         "Common": 75,
         "Rare": 26,
         "Super Rare": 10
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 6
       }
     },
     "OP13": {
@@ -4994,6 +5066,12 @@
         "Common": 74,
         "Super Rare": 8,
         "Rare": 26
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 13,
+        "Leader": 6
       }
     },
     "OP14": {
@@ -5450,6 +5528,12 @@
         "Common": 75,
         "Super Rare": 4,
         "Rare": 25
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 7
       }
     },
     "OP15": {
@@ -5858,6 +5942,12 @@
         "Rare": 19,
         "Common": 73,
         "Super Rare": 1
+      },
+      "total_by_rarity": {
+        "Common": 75,
+        "Rare": 26,
+        "Super Rare": 12,
+        "Leader": 6
       }
     },
     "ST01": {
@@ -5895,6 +5985,11 @@
       "total_cards": 17,
       "by_rarity": {
         "Common": 7
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST02": {
@@ -5932,6 +6027,11 @@
       "total_cards": 17,
       "by_rarity": {
         "Common": 7
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST03": {
@@ -5949,6 +6049,11 @@
       "total_cards": 17,
       "by_rarity": {
         "Common": 2
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST04": {
@@ -5962,6 +6067,22 @@
       "total_cards": 17,
       "by_rarity": {
         "Super Rare": 1
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
+      }
+    },
+    "ST05": {
+      "owned": [],
+      "total_owned": 0,
+      "total_cards": 17,
+      "by_rarity": {},
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST06": {
@@ -5987,6 +6108,11 @@
       "total_cards": 17,
       "by_rarity": {
         "Common": 4
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST07": {
@@ -6008,6 +6134,11 @@
       "total_cards": 17,
       "by_rarity": {
         "Common": 3
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST08": {
@@ -6026,6 +6157,11 @@
       "by_rarity": {
         "Super Rare": 1,
         "Common": 1
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST09": {
@@ -6039,6 +6175,11 @@
       "total_cards": 15,
       "by_rarity": {
         "Common": 1
+      },
+      "total_by_rarity": {
+        "Common": 12,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST10": {
@@ -6080,6 +6221,11 @@
       "total_cards": 17,
       "by_rarity": {
         "Common": 8
+      },
+      "total_by_rarity": {
+        "Common": 11,
+        "Super Rare": 3,
+        "Leader": 3
       }
     },
     "ST11": {
@@ -6107,6 +6253,11 @@
         "Leader": 1,
         "Common": 2,
         "Super Rare": 1
+      },
+      "total_by_rarity": {
+        "Common": 2,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST12": {
@@ -6144,6 +6295,11 @@
       "total_cards": 17,
       "by_rarity": {
         "Common": 7
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST13": {
@@ -6207,6 +6363,12 @@
         "Leader": 3,
         "Common": 8,
         "Super Rare": 2
+      },
+      "total_by_rarity": {
+        "Common": 10,
+        "Rare": 1,
+        "Super Rare": 4,
+        "Leader": 3
       }
     },
     "ST14": {
@@ -6240,6 +6402,11 @@
       "total_cards": 17,
       "by_rarity": {
         "Common": 6
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST15": {
@@ -6253,6 +6420,10 @@
       "total_cards": 5,
       "by_rarity": {
         "Super Rare": 1
+      },
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
       }
     },
     "ST16": {
@@ -6275,6 +6446,10 @@
       "by_rarity": {
         "Common": 2,
         "Super Rare": 1
+      },
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
       }
     },
     "ST17": {
@@ -6297,6 +6472,10 @@
       "by_rarity": {
         "Super Rare": 1,
         "Common": 2
+      },
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
       }
     },
     "ST18": {
@@ -6314,6 +6493,10 @@
       "total_cards": 5,
       "by_rarity": {
         "Common": 2
+      },
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
       }
     },
     "ST19": {
@@ -6331,6 +6514,10 @@
       "total_cards": 5,
       "by_rarity": {
         "Common": 2
+      },
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
       }
     },
     "ST20": {
@@ -6353,6 +6540,10 @@
       "by_rarity": {
         "Common": 2,
         "Super Rare": 1
+      },
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
       }
     },
     "ST21": {
@@ -6395,6 +6586,11 @@
       "by_rarity": {
         "Common": 7,
         "Super Rare": 1
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST22": {
@@ -6441,6 +6637,11 @@
       "by_rarity": {
         "Common": 8,
         "Super Rare": 1
+      },
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST23": {
@@ -6467,6 +6668,10 @@
       "by_rarity": {
         "Super Rare": 1,
         "Common": 3
+      },
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
       }
     },
     "ST24": {
@@ -6489,6 +6694,20 @@
       "by_rarity": {
         "Common": 2,
         "Super Rare": 1
+      },
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
+      }
+    },
+    "ST25": {
+      "owned": [],
+      "total_owned": 0,
+      "total_cards": 5,
+      "by_rarity": {},
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
       }
     },
     "ST26": {
@@ -6502,6 +6721,10 @@
       "total_cards": 5,
       "by_rarity": {
         "Common": 1
+      },
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
       }
     },
     "ST27": {
@@ -6520,6 +6743,31 @@
       "by_rarity": {
         "Common": 1,
         "Super Rare": 1
+      },
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
+      }
+    },
+    "ST28": {
+      "owned": [],
+      "total_owned": 0,
+      "total_cards": 5,
+      "by_rarity": {},
+      "total_by_rarity": {
+        "Common": 3,
+        "Super Rare": 2
+      }
+    },
+    "ST29": {
+      "owned": [],
+      "total_owned": 0,
+      "total_cards": 17,
+      "by_rarity": {},
+      "total_by_rarity": {
+        "Common": 14,
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "EB01": {
@@ -6724,6 +6972,12 @@
         "Rare": 15,
         "Common": 26,
         "Super Rare": 4
+      },
+      "total_by_rarity": {
+        "Common": 29,
+        "Rare": 21,
+        "Super Rare": 8,
+        "Leader": 3
       }
     },
     "EB02": {
@@ -6910,6 +7164,12 @@
       "by_rarity": {
         "Common": 29,
         "Rare": 14,
+        "Leader": 1
+      },
+      "total_by_rarity": {
+        "Common": 29,
+        "Rare": 21,
+        "Super Rare": 10,
         "Leader": 1
       }
     },
@@ -7147,6 +7407,12 @@
         "Common": 29,
         "Super Rare": 5,
         "Rare": 21
+      },
+      "total_by_rarity": {
+        "Common": 23,
+        "Rare": 21,
+        "Super Rare": 11,
+        "Leader": 1
       }
     },
     "EB04": {
@@ -7371,6 +7637,12 @@
         "Rare": 18,
         "Common": 29,
         "Super Rare": 5
+      },
+      "total_by_rarity": {
+        "Common": 28,
+        "Rare": 21,
+        "Super Rare": 9,
+        "Leader": 3
       }
     }
   }

@@ -46,10 +46,38 @@ def scrape_collection() -> dict:
         except (ValueError, TypeError):
             return None
 
+    def parse_fraction(value: str) -> tuple[int, int]:
+        """Parse 'x/y' → (x, y). Returns (0, 0) if not parseable."""
+        m = re.match(r"^(\d+)/(\d+)$", value.strip())
+        return (int(m.group(1)), int(m.group(2))) if m else (0, 0)
+
+    # Parse per-rarity totals from summary rows (rows 1-5)
+    # rows[1]=Total, rows[2]=Common, rows[3]=Rare, rows[4]=Super Rare, rows[5]=Leader
+    SUMMARY_RARITY_ROWS = [
+        (1, None),           # Total
+        (2, "Common"),
+        (3, "Rare"),
+        (4, "Super Rare"),
+        (5, "Leader"),
+    ]
+    set_totals: dict[str, int] = {}
+    set_rarity_totals: dict[str, dict[str, int]] = {code: {} for code in col_to_set.values()}
+
+    for row_idx, rarity_name in SUMMARY_RARITY_ROWS:
+        if row_idx >= len(rows):
+            continue
+        summary_row = rows[row_idx]
+        for col_num, set_code in col_to_set.items():
+            owned, total = parse_fraction(summary_row.get(col_num, ""))
+            if rarity_name is None:
+                # Total row — use as fallback for set_totals
+                if total > 0 and set_code not in set_totals:
+                    set_totals[set_code] = total
+            elif rarity_name and total > 0:
+                set_rarity_totals[set_code][rarity_name] = total
+
     # skip header row + 5 summary rows
     card_rows = rows[1 + SUMMARY_ROWS:]
-
-    set_totals: dict[str, int] = {}
     sets: dict[str, list[dict]] = {code: [] for code in col_to_set.values()}
 
     for row in card_rows:
@@ -60,8 +88,8 @@ def scrape_collection() -> dict:
         for col_num, set_code in col_to_set.items():
             raw = row.get(col_num, "").strip()
 
-            # "-" marks the row after the last card in this set
-            if raw == "-" and set_code not in set_totals:
+            # "-" marks the row after the last card — overrides summary total with exact count
+            if raw == "-":
                 set_totals[set_code] = card_num - 1
                 continue
 
@@ -86,8 +114,9 @@ def scrape_collection() -> dict:
             "total_owned": len(cards),
             "total_cards": total_cards,
             "by_rarity": by_rarity,
+            "total_by_rarity": set_rarity_totals.get(set_code, {}),
         }
-        print(f"  {set_code}: {len(cards)} cards owned (of {total_cards})", flush=True)
+        print(f"  {set_code}: {len(cards)}/{total_cards} cards owned", flush=True)
 
     print(f"Total: {sum(v['total_owned'] for v in result.values())} cards across {len(result)} sets", flush=True)
     return {"sets": result}

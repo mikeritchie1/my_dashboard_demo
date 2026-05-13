@@ -4865,18 +4865,22 @@ function renderCollectionGrid() {
     return;
   }
   const cards = setData.owned || [];
-  if (!cards.length) {
+  if (!cards.length && !state.collectionShowMissing) {
     elements.collectionGrid.innerHTML = `<p class="empty">No cards owned in ${state.collectionSet}.</p>`;
     return;
   }
 
   if (elements.collectionStats) {
-    const byRarity = setData.by_rarity || {};
-    const parts = Object.entries(byRarity)
-      .sort(([a], [b]) => a.localeCompare(b))
-      .map(([rarity, count]) => `${count} ${rarity}`);
-    const total = setData.total_cards ? ` of ${setData.total_cards}` : "";
-    elements.collectionStats.textContent = `${setData.total_owned}${total} owned — ${parts.join(", ")}`;
+    const owned = setData.by_rarity || {};
+    const totals = setData.total_by_rarity || {};
+    const RARITY_ORDER = ["Common", "Rare", "Super Rare", "Leader"];
+    const rarityParts = RARITY_ORDER
+      .filter((r) => totals[r] || owned[r])
+      .map((r) => `${owned[r] || 0}/${totals[r] || "?"} ${r}`);
+    const totalPart = setData.total_cards
+      ? `${setData.total_owned}/${setData.total_cards} total`
+      : `${setData.total_owned} owned`;
+    elements.collectionStats.textContent = [totalPart, ...rarityParts].join(" · ");
   }
 
   const ownedSet = new Set(cards.map((c) => c.card_number));
