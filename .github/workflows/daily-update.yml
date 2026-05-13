@@ -1,4 +1,4 @@
-name: Daily dashboard update
+name: Daily update
 
 on:
   schedule:
@@ -74,7 +74,7 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python services/release_radar/scrape_imax.py
 
-      - name: Run news radar
+      - name: Run news scraper
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'news' }}
         run: python services/scrape_news.py
 
@@ -108,11 +108,11 @@ jobs:
           GOOGLE_CALENDAR_IDS: ${{ secrets.GOOGLE_CALENDAR_IDS }}
         run: python services/events/scrape_google_calendar.py
 
-      - name: Update dashboard data
-        run: |
-          rm -rf docs/data
-          cp -r data docs/data
-          python -c "import json, datetime; json.dump({'last_scraped_at': datetime.datetime.now(datetime.timezone.utc).isoformat()}, open('docs/data/metadata.json','w', encoding='utf-8'), indent=2)"
+      - name: Update metadata
+        run: >
+          python -c "import json, datetime;
+          json.dump({'last_scraped_at': datetime.datetime.now(datetime.timezone.utc).isoformat()},
+          open('docs/data/metadata.json', 'w', encoding='utf-8'), indent=2)"
 
       - name: Send daily dashboard digest
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'digest' }}
@@ -125,10 +125,10 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
         run: python services/daily_digest/send_daily_digest.py
 
-      - name: Commit updated reports
+      - name: Commit updated data
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add .scrape data docs
-          git diff --cached --quiet || git commit -m "Update daily dashboard data"
+          git add .scrape docs
+          git diff --cached --quiet || git commit -m "Daily dashboard update"
           git push
