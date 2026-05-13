@@ -14,6 +14,7 @@ PRODUCTS_URL = "https://en.onepiece-cardgame.com/products/"
 DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "one_piece"
 DOCS_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "one_piece"
 OUTPUT_FILE = DATA_DIR / "products.json"
+IMAGE_DIR = DATA_DIR / "product_images"
 
 
 def fetch_text(url: str) -> str:
@@ -49,23 +50,32 @@ def normalize_category(raw: str) -> str:
 
 def parse_products(html_text: str) -> list[dict[str, object]]:
     items: list[dict[str, object]] = []
-    pattern = re.compile(
-        r'(?s)<li class="linkListColBox"[^>]*data-cat="([^"]+)"[^>]*>\s*'
-        r'<a href="([^"]+)" class="linkListColItem">.*?'
-        r'<h4 class="linkListColTitle">(.*?)</h4>.*?'
-        r'<p class="linkListColDate"><span class="head">(.*?)</span><time class="newsDate"(?: datetime="([^"]*)")?>(.*?)</time></p>'
-    )
-    for match in pattern.finditer(html_text):
+    block_pattern = re.compile(r'(?s)<li class="linkListColBox"[^>]*data-cat="([^"]+)"[^>]*>(.*?)</li>')
+    for match in block_pattern.finditer(html_text):
         category_raw = strip_html(match.group(1))
-        url = strip_html(match.group(2))
-        title = strip_html(match.group(3))
-        date_label = strip_html(match.group(4))
-        date_iso = strip_html(match.group(5))
-        date_text = strip_html(match.group(6))
+        block = match.group(2)
+
+        url_match = re.search(r'<a href="([^"]+)" class="linkListColItem">', block)
+        title_match = re.search(r'<h4 class="linkListColTitle">(.*?)</h4>', block, flags=re.S)
+        date_match = re.search(
+            r'<p class="linkListColDate"><span class="head">(.*?)</span><time class="newsDate"(?: datetime="([^"]*)")?>(.*?)</time></p>',
+            block,
+            flags=re.S,
+        )
+        image_match = re.search(r'<img[^>]+(?:data-src|src)="([^"]+)"', block)
+
+        url = strip_html(url_match.group(1)) if url_match else ""
+        title = strip_html(title_match.group(1)) if title_match else ""
+        date_label = strip_html(date_match.group(1)) if date_match else ""
+        date_iso = strip_html(date_match.group(2)) if date_match else ""
+        date_text = strip_html(date_match.group(3)) if date_match else ""
+        image_url = strip_html(image_match.group(1)) if image_match else ""
         if not title:
             continue
         if url.startswith("/"):
             url = f"https://en.onepiece-cardgame.com{url}"
+        if image_url.startswith("/"):
+            image_url = f"https://en.onepiece-cardgame.com{image_url}"
 
         release_date = ""
         if date_iso:
@@ -93,6 +103,7 @@ def parse_products(html_text: str) -> list[dict[str, object]]:
                 "release_date": release_date,
                 "release_date_text": date_text,
                 "url": url,
+                "image_url": image_url,
             }
         )
     return items
@@ -110,6 +121,103 @@ def parse_total_pages(html_text: str) -> int:
     return max_page
 
 
+def extension_from_url(url: str) -> str:
+    path = urllib.parse.urlparse(url).path.lower()
+    if path.endswith(".png"):
+        return ".png"
+    if path.endswith(".jpg") or path.endswith(".jpeg"):
+        return ".jpg"
+    return ".webp"
+
+
+def normalize_image_source_url(url: str) -> str:
+    raw = str(url or "").strip()
+    if not raw:
+        return ""
+    parsed = urllib.parse.urlparse(raw)
+    # Ignore volatile query params so the same product image maps to one stable file.
+    return urllib.parse.urlunparse((parsed.scheme, parsed.netloc, parsed.path, "", "", ""))
+
+
+def safe_slug(value: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+    return slug or "product"
+
+
+def stable_image_filename(item: dict[str, object], normalized_image_url: str) -> str:
+    product_url = str(item.get("url") or "").strip()
+    product_path = urllib.parse.urlparse(product_url).path
+    product_stem = Path(product_path).stem or Path(product_path).name or "product"
+    product_slug = safe_slug(product_stem)
+
+    image_path = urllib.parse.urlparse(normalized_image_url).path
+    image_name = Path(image_path).name or "image.webp"
+    image_stem = safe_slug(Path(image_name).stem or "image")
+    ext = extension_from_url(normalized_image_url)
+    return f"{product_slug}_{image_stem}{ext}"
+
+
+def cache_images_locally(items: list[dict[str, object]]) -> list[dict[str, object]]:
+    IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+    out: list[dict[str, object]] = []
+    print(f"[images] caching images for {len(items)} new item(s)", flush=True)
+    for item in items:
+        image_url = str(item.get("image_url") or "").strip()
+        normalized_image_url = normalize_image_source_url(image_url)
+        local_url = ""
+        if normalized_image_url:
+            try:
+                file_name = stable_image_filename(item, normalized_image_url)
+                file_path = IMAGE_DIR / file_name
+                if not file_path.exists():
+                    print(f"[images] download -> {file_name}", flush=True)
+                    request = urllib.request.Request(image_url, headers={"User-Agent": "Mozilla/5.0"})
+                    with urllib.request.urlopen(request, timeout=40) as response:
+                        file_path.write_bytes(response.read())
+                else:
+                    print(f"[images] cache hit -> {file_name}", flush=True)
+                local_url = f"./data/one_piece/product_images/{file_name}"
+            except Exception:
+                print(f"[images] failed for: {str(item.get('title') or '').strip()}", flush=True)
+                local_url = ""
+        out.append({**item, "image_url": normalized_image_url or image_url, "image_local_url": local_url})
+    return out
+
+
+def load_existing_items() -> list[dict[str, object]]:
+    if not OUTPUT_FILE.exists():
+        return []
+    try:
+        payload = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    items = payload.get("items")
+    return items if isinstance(items, list) else []
+
+
+def merge_new_items(
+    existing_items: list[dict[str, object]],
+    incoming_items: list[dict[str, object]],
+    scraped_at_iso: str,
+) -> list[dict[str, object]]:
+    seen_urls: set[str] = set()
+    merged: list[dict[str, object]] = []
+    for item in existing_items:
+        url = str(item.get("url") or "").strip()
+        if url:
+            seen_urls.add(url)
+        merged.append(item)
+
+    for item in incoming_items:
+        url = str(item.get("url") or "").strip()
+        if url and url in seen_urls:
+            continue
+        if url:
+            seen_urls.add(url)
+        merged.append({**item, "added_at": scraped_at_iso})
+    return merged
+
+
 def page_url(base_url: str, page: int) -> str:
     parsed = urllib.parse.urlparse(base_url)
     query = dict(urllib.parse.parse_qsl(parsed.query, keep_blank_values=True))
@@ -119,15 +227,20 @@ def page_url(base_url: str, page: int) -> str:
 
 
 def scrape_pages(base_url: str, pages: int = 0) -> tuple[list[dict[str, object]], int]:
+    print(f"[scrape] fetching page 1: {base_url}", flush=True)
     first_html = fetch_text(base_url)
     total_pages = parse_total_pages(first_html)
     target_pages = total_pages if pages <= 0 else max(1, min(pages, total_pages))
+    print(f"[scrape] total pages on site: {total_pages}", flush=True)
+    print(f"[scrape] pages requested: {target_pages}", flush=True)
 
     seen_urls: set[str] = set()
     all_items: list[dict[str, object]] = []
     for page in range(1, target_pages + 1):
+        print(f"[scrape] parsing page {page}/{target_pages}", flush=True)
         html_text = first_html if page == 1 else fetch_text(page_url(base_url, page))
         page_items = parse_products(html_text)
+        print(f"[scrape] page {page} raw items: {len(page_items)}", flush=True)
         for item in page_items:
             url = str(item.get("url") or "").strip()
             if url and url in seen_urls:
@@ -135,6 +248,7 @@ def scrape_pages(base_url: str, pages: int = 0) -> tuple[list[dict[str, object]]
             if url:
                 seen_urls.add(url)
             all_items.append({**item, "source_page": page})
+    print(f"[scrape] deduped items from requested pages: {len(all_items)}", flush=True)
     return all_items, target_pages
 
 
@@ -164,9 +278,12 @@ def annotate_products(items: list[dict[str, object]]) -> list[dict[str, object]]
 
 def sync_to_docs() -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    for path in DATA_DIR.glob("*"):
-        if path.is_file():
-            shutil.copy2(path, DOCS_DIR / path.name)
+    for path in DATA_DIR.iterdir():
+        target = DOCS_DIR / path.name
+        if path.is_dir():
+            shutil.copytree(path, target, dirs_exist_ok=True)
+        elif path.is_file():
+            shutil.copy2(path, target)
 
 
 def main() -> int:
@@ -178,22 +295,51 @@ def main() -> int:
     args = parser.parse_args()
 
     if args.hard and OUTPUT_FILE.exists():
+        print(f"[startup] --hard enabled, removing existing file: {OUTPUT_FILE}", flush=True)
         OUTPUT_FILE.unlink()
+    if args.hard and IMAGE_DIR.exists():
+        print(f"[startup] --hard enabled, removing cached images: {IMAGE_DIR}", flush=True)
+        shutil.rmtree(IMAGE_DIR, ignore_errors=True)
 
     pages = args.pages if args.pages > 0 else args.max_pages
     raw_items, pages_used = scrape_pages(PRODUCTS_URL, pages=pages)
-    items = annotate_products(sort_products(raw_items))
+    scraped_at_iso = datetime.now(UTC).isoformat().replace("+00:00", "Z")
+    existing_items = [] if args.hard else load_existing_items()
+    print(f"[existing] loaded existing items: {len(existing_items)}", flush=True)
+    existing_urls = {
+        str(item.get("url") or "").strip()
+        for item in existing_items
+        if str(item.get("url") or "").strip()
+    }
+    print(f"[existing] unique existing urls: {len(existing_urls)}", flush=True)
+    new_raw_items = [
+        item for item in raw_items
+        if str(item.get("url") or "").strip() and str(item.get("url") or "").strip() not in existing_urls
+    ]
+    print(f"[delta] new items found on scrape: {len(new_raw_items)}", flush=True)
+    if new_raw_items:
+        for item in new_raw_items:
+            print(f"[delta] + {str(item.get('title') or '').strip()}", flush=True)
+    else:
+        print("[delta] no new products; nothing to append", flush=True)
+    incoming_items = annotate_products(sort_products(cache_images_locally(new_raw_items)))
+    items = annotate_products(sort_products(merge_new_items(existing_items, incoming_items, scraped_at_iso)))
 
     payload = {
         "source": PRODUCTS_URL,
-        "scraped_at": datetime.now(UTC).isoformat().replace("+00:00", "Z"),
+        "scraped_at": scraped_at_iso,
         "pages_scraped": pages_used,
         "items": items,
     }
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    print(f"[write] writing merged payload -> {OUTPUT_FILE}", flush=True)
     OUTPUT_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    print("[sync] syncing data to docs folder", flush=True)
     sync_to_docs()
-    print(f"Wrote {len(items)} One Piece product(s) from {pages_used} page(s) to {OUTPUT_FILE}")
+    print(
+        f"Wrote {len(items)} One Piece product(s) total "
+        f"(added {len(incoming_items)} new) from {pages_used} page(s) to {OUTPUT_FILE}"
+    )
     return 0
 
 

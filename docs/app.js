@@ -81,7 +81,7 @@ const state = {
   minPrice: 0,
   maxPrice: 200,
   onePieceProducts: [],
-  onePieceProductType: "all",
+  onePieceProductType: "boosters",
   onePieceProductIndex: -1,
   specialsPayload: null,
   places: {},
@@ -418,6 +418,29 @@ function firstShowingDate(item) {
     }
   }
   return "";
+}
+
+function normalizeProductImageUrl(value) {
+  const raw = String(value || "").trim();
+  if (!raw) {
+    return "";
+  }
+  const firstQuestion = raw.indexOf("?");
+  return firstQuestion < 0 ? raw : raw.slice(0, firstQuestion);
+}
+
+function productImageFallbacks(value) {
+  const src = normalizeProductImageUrl(value);
+  if (!src) {
+    return [];
+  }
+  const fallbacks = [src];
+  if (src.endsWith(".webp")) {
+    fallbacks.push(src.slice(0, -5) + ".png");
+    fallbacks.push(src.slice(0, -5) + ".jpg");
+    fallbacks.push(src.slice(0, -5) + ".jpeg");
+  }
+  return [...new Set(fallbacks)];
 }
 
 function displayDatePlain(value) {
@@ -4701,18 +4724,28 @@ function renderOnePieceProductCurrent() {
     const status = item?.is_released ? "Released" : "Upcoming";
     const releaseDate = displayDatePlain(String(item?.release_date || ""));
     const releaseText = releaseDate || String(item?.release_date_text || "Date TBA");
+    const relativeText = relativeDaysFromDate(String(item?.release_date || ""), { allowPast: true });
     const link = escapeHtml(String(item?.url || ""));
+    const preferredImage = String(item?.image_local_url || item?.image_url || "");
+    const imageCandidates = productImageFallbacks(preferredImage);
+    const imageUrl = escapeHtml(imageCandidates[0] || "");
+    const imageFallbackAttr = escapeHtml(imageCandidates.slice(1).join("|"));
     const currentClass = index === state.onePieceProductIndex ? " is-current" : "";
     const statusClass = item?.is_released ? " is-released" : " is-upcoming";
     return `
       <article class="one-piece-product-tile${currentClass}${statusClass}" data-one-piece-product-index="${index}">
-        <div class="one-piece-product-meta">
-          <span class="one-piece-product-pill">${type}</span>
-          <span class="one-piece-product-pill">${status}</span>
+        <div class="one-piece-product-layout">
+          ${imageUrl ? `<img class="one-piece-product-image" src="${imageUrl}" data-fallbacks="${imageFallbackAttr}" alt="${title} cover" decoding="async">` : ""}
+          <div class="one-piece-product-content">
+            <div class="one-piece-product-meta">
+              <span class="one-piece-product-pill">${type}</span>
+            </div>
+            <h4 class="one-piece-product-title">${title}</h4>
+            <p class="one-piece-product-date">${escapeHtml(status)}${releaseText ? ` • ${escapeHtml(releaseText)}` : ""}</p>
+            ${relativeText ? `<p class="one-piece-product-age">${escapeHtml(relativeText)}</p>` : ""}
+            ${link ? `<a class="one-piece-product-link" href="${link}" target="_blank" rel="noreferrer">View</a>` : ""}
+          </div>
         </div>
-        <h4 class="one-piece-product-title">${title}</h4>
-        <p class="one-piece-product-date">${escapeHtml(releaseText)}</p>
-        ${link ? `<a class="one-piece-product-link" href="${link}" target="_blank" rel="noreferrer">Open product</a>` : ""}
       </article>
     `;
   });
@@ -5217,6 +5250,26 @@ elements.maxPrice.addEventListener("input", (event) => {
 });
 
 if (elements.onePieceProductStrip) {
+  elements.onePieceProductStrip.addEventListener("error", (event) => {
+    const image = event.target.closest(".one-piece-product-image");
+    if (!image) {
+      return;
+    }
+    const raw = String(image.dataset.fallbacks || "").trim();
+    if (!raw) {
+      image.style.display = "none";
+      return;
+    }
+    const parts = raw.split("|").map((value) => value.trim()).filter(Boolean);
+    if (!parts.length) {
+      image.style.display = "none";
+      return;
+    }
+    const next = parts.shift();
+    image.dataset.fallbacks = parts.join("|");
+    image.src = next;
+  }, true);
+
   elements.onePieceProductStrip.addEventListener("click", (event) => {
     const card = event.target.closest("[data-one-piece-product-index]");
     if (!card) {

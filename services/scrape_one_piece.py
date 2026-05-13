@@ -14,9 +14,12 @@ DOCS_DIR = REPO_DIR / "docs" / "data" / "one_piece"
 
 def sync_outputs() -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    for path in DATA_DIR.glob("*"):
-        if path.is_file():
-            shutil.copy2(path, DOCS_DIR / path.name)
+    for path in DATA_DIR.iterdir():
+        target = DOCS_DIR / path.name
+        if path.is_dir():
+            shutil.copytree(path, target, dirs_exist_ok=True)
+        elif path.is_file():
+            shutil.copy2(path, target)
     print(f"Synced One Piece data to dashboard: {DOCS_DIR}", flush=True)
 
 
@@ -38,6 +41,11 @@ def main() -> int:
     command = [sys.executable, "services/one_piece/find_missing_cards.py", args.source]
     print(f"Running One Piece scrape: {' '.join(command)}", flush=True)
     subprocess.run(command, cwd=REPO_DIR, check=True)
+    product_command = [sys.executable, "services/one_piece/scrape_products.py", "--pages", "1"]
+    if args.hard:
+        product_command.append("--hard")
+    print(f"Running One Piece products scrape: {' '.join(product_command)}", flush=True)
+    subprocess.run(product_command, cwd=REPO_DIR, check=True)
     sync_outputs()
     return 0
 
