@@ -32,6 +32,7 @@
     "place_key": ""
   },
   {
+<<<<<<< HEAD
     "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
     "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
@@ -64,6 +65,8 @@
     "place_key": ""
   },
   {
+=======
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     "title": "Franschhoek Literary Festival 2026",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589974554",
     "image": "https://content.webtickets.co.za/flf/panel_FLF2025_20240605_122127.JPG",
@@ -79,5 +82,989 @@
     "location_key": "",
     "missing_place": true,
     "place_key": ""
+<<<<<<< HEAD
+=======
+  },
+  {
+    "title": "Dance Mosaic: Dancing for Dogs",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593200173",
+    "image": "https://content.webtickets.co.za/TGSA/panel_IMG-20260413-WA0138_20260414_091544.jpg",
+    "date_text": "From 15 May 2026 15:00",
+    "venue": "The George Arts Theatre, 125 York Street, George Central",
+    "price": "R100 - R250",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Alfred Adriaan - Positive Strokes ‘BACK BY POPULAR DEMAND’",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589569742",
+    "image": "https://content.webtickets.co.za/DrostdyTheatre/panel_alfred.webtickets_20260227_141506.jpg",
+    "date_text": "From 15 May 2026 19:00",
+    "venue": "Drostdy Theatre, Cnr Alexander St &, Bird St, Stellenbosch",
+    "price": "R210",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The Galileo Open Air Cinema 2025/2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1573555378",
+    "image": "https://content.webtickets.co.za/galileo/panel_webtix-Galileo-x-Kirstenbosch-grease_20260512_121722.jpg",
+    "date_text": "From 27 September 2025",
+    "venue": "",
+    "price": "From R155",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Betway Premiership: Chippa United FC vs Lamontville Golden Arrows",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593176543",
+    "image": "https://content.webtickets.co.za/NMBS/panel_Chippa United vs Golden Arrows -Webticket holder_20260414_095959.jpg",
+    "date_text": "From 16 May 2026 15:00",
+    "venue": "Nelson Mandela Bay Stadium, Prince Alfred Road, North End, Gqeberha",
+    "price": "R30 - R60",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Carmen",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1587944448",
+    "image": "https://content.webtickets.co.za/artscape/panel_Webtickets_Carmen_20260311_094401.jpg",
+    "date_text": "From 19 May 2026 19:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "R180 - R950",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The Prince of Egypt - The Musical",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1586944542",
+    "image": "https://content.webtickets.co.za/WhitePeacockStudio/panel_A White Peacock Studio_20260121_134711.jpg",
+    "date_text": "From 20 May 2026 19:00",
+    "venue": "The George Arts Theatre, 125 York St, George Central, George, 6529",
+    "price": "R170",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The Penis Dialogues",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594163487",
+    "image": "https://content.webtickets.co.za/CBProductions/panel_Penis - jpg_20260502_085103.jpg",
+    "date_text": "From 21 May 2026 19:30",
+    "venue": "Joseph Stone Auditorium, Protea St & Klipfontein Rd, Athlone, Cape Town",
+    "price": "From R120",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Africa Day DJ Night",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595130257",
+    "image": "https://content.webtickets.co.za/Izikomuseum/panel_Steven Cohen Opening_FB(11Dec25)_12_20260508_165549.jpg",
+    "date_text": "22 May 2026 18:00",
+    "venue": "Iziko South African National Gallery",
+    "price": "R250 - R400",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "art"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "ACDC Duet Xchange 2026: The Art of the Duet",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589384303",
+    "image": "https://content.webtickets.co.za/ACDCDuetXchange/panel_PHOTO_20260225_134747.jpg",
+    "date_text": "From 22 May 2026 19:00",
+    "venue": "Homecoming Centre, Buitenkant Street, District Six, Cape Town, South Africa",
+    "price": "R150",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Fitness Race - Deadly Dozen Stellenbosch",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1587235555",
+    "image": "https://content.webtickets.co.za/DeadlyDozen/panel_Stellies updated_20260211_134501.jpg",
+    "date_text": "23 May 2026 09:00",
+    "venue": "Coetzenburg Athletics Stadium, Stellenbosch, South Africa",
+    "price": "R100 - R1980",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "sports"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Xolly Mncwango Presents The Unusual Encounter",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1583898296",
+    "image": "https://content.webtickets.co.za/AlumphiConsulting/panel_Xolly Mncwango - Webtickets_20251221_094659.jpg",
+    "date_text": "23 May 2026 18:00",
+    "venue": "Grand Arena,GrandWest,  1 Jakes Gerwel Dr, Acacia Park, Cape Town",
+    "price": "R300 - R500",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "outdoors"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "All Access Opera - Carmen",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591073661",
+    "image": "https://content.webtickets.co.za/artscape/panel_Webtickets_AccessCarmen_Final_20260318_161851.jpg",
+    "date_text": "From 28 May 2026 11:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "R80",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The Jive Cape Town Funny Festival",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582738777",
+    "image": "https://content.webtickets.co.za/baxtertheatre/panel_AC_ FunnyFest_Auditorium_20251202_103850.jpg",
+    "date_text": "from 28 May 2026 20:00",
+    "venue": "",
+    "price": "R190 - R250",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "festival"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Zeitz MOCAA presents The Pan-African Film Caravan, screening Ancestral Visions of the Future by Lemohang Jeremiah Mosese",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1592927585",
+    "image": "https://content.webtickets.co.za/zeitzmocaa/panel_Webtickets_Film screening_20260506_123845.png",
+    "date_text": "From 29 May 2026 18:00",
+    "venue": "The Labia Theatre, Orange Street, Gardens, Cape Town, South Africa",
+    "price": "R30",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "GESELS 2026 met Nataniël",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590669537",
+    "image": "https://content.webtickets.co.za/DrostdyTheatre/panel_webtickets g - JPG_20260312_144733.jpg",
+    "date_text": "30 May 2026 11:00",
+    "venue": "Drostdy Theatre, Cnr Alexander St &, Bird St, Stellenbosch",
+    "price": "R310",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Winelands Philharmonic Orchestra:Myths and Heroes-ENDLER CONCERT SERIES",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1587871701",
+    "image": "https://content.webtickets.co.za/WPO/panel_Winelands 2026 - JPG_20260204_093819.jpg",
+    "date_text": "30 May 2026 19:00",
+    "venue": "ENDLER, Stellenbosch, South Africa.",
+    "price": "R280",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "bar"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Please, don’t call me moffie",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591455210",
+    "image": "https://content.webtickets.co.za/artscape/panel_Pleae don't call me moffie Image_20260429_094457.png",
+    "date_text": "From 02 Jun 2026 19:00",
+    "venue": "Artscape, Arena, Cape Town",
+    "price": "R150",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Killer Queen - A LAMTA Dance Production",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_2fa14078-fa95-4083-9b94-0f282e084bf5_20260311_171208.jpeg",
+    "date_text": "From 04 Jun 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R200 - R320",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "FynArts Festival 2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588256840",
+    "image": "https://content.webtickets.co.za/fynarts/panel_FYNARTS2026_20260429_163009.jpg",
+    "date_text": "From 06 Jun 2026 14:30",
+    "venue": "",
+    "price": "From R120",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "festival",
+      "art"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Makin’ Magic – Family Magic Show",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590797635",
+    "image": "https://content.webtickets.co.za/artscape/panel_makin-magic-poster-promo-image-wt_20260314_103830.jpg",
+    "date_text": "From 06 Jun 2026 15:00",
+    "venue": "Artscape, Theatre, Cape Town",
+    "price": "R165 - R180",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "theatre",
+      "family"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "ORPHEUS IN THE UNDERWORLD",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582354185",
+    "image": "https://content.webtickets.co.za/artscape/panel_ORPHEUS_20251202_164045.png",
+    "date_text": "From 12 Jun 2026 19:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "R225 - R650",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Artscape Youth Jazz Series 2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589802140",
+    "image": "https://content.webtickets.co.za/artscape/panel_Feature_20260303_145910.png",
+    "date_text": "From 12 Jun 2026 19:30",
+    "venue": "Artscape, Theatre, Cape Town",
+    "price": "R50 - R90",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "DON VINO SAXY VIBES 8",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1586927806",
+    "image": "https://content.webtickets.co.za/ParkanEvents/panel_WEBTICKETS_SAXYVIBES-8_20260123_084723.jpg",
+    "date_text": "13 Jun 2026 19:00",
+    "venue": "Grand Arena, GrandWest, 1 Jakes Gerwel Dr, Acacia Park, Cape Town",
+    "price": "R190 - R350",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "outdoors"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "State Of the Youth Address",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594842153",
+    "image": "https://content.webtickets.co.za/Citizencode/panel_3ee50728-ce45-428c-83ac-d0db7f5ab504_20260506_114708.jfif",
+    "date_text": "15 Jun 2026 18:00",
+    "venue": "The Star Theatre District Six Homecoming Centre, Cape Town",
+    "price": "R100",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Centre Stage - Dancing into the future",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582360886",
+    "image": "https://content.webtickets.co.za/artscape/panel_CENTRE STAGE_20251202_164141.png",
+    "date_text": "16 Jun 2026 19:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "R180 - R300",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Thriller: The MJ Dance Tribute",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590899459",
+    "image": "https://content.webtickets.co.za/TGSA/panel_Webtick_20260316_085603.jpg",
+    "date_text": "20 Jun 2026 19:00",
+    "venue": "The George Arts Theatre, 125 York Street, George Central",
+    "price": "R220",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Behind The Music with Rodney Trudgeon – The Second Movement",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593803194",
+    "image": "https://content.webtickets.co.za/artscape/panel_rodney webtickets_20260507_102536.jpg",
+    "date_text": "22 Jun 2026 18:30",
+    "venue": "Artscape Opera Bar",
+    "price": "R180 - R200",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "bar",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Tulbagh Christmas in Winter 2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1583490083",
+    "image": "https://content.webtickets.co.za/TulbaghTourism/panel_tulbagh_20251215_094622.jpg",
+    "date_text": "From 26 Jun 2026 16:00",
+    "venue": "Church Street Tulbagh and surrounding wine farms",
+    "price": "From R225",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "bar"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Here & Now: A Luther Vandross Tribute",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588359980",
+    "image": "https://content.webtickets.co.za/artscape/panel_Here & Now CPT_webtickets_20260212_144150.png",
+    "date_text": "From 26 Jun 2026 20:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "R250 - R300",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The United Tour Cape Town",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1584234307",
+    "image": "https://content.webtickets.co.za/kokorecords/panel_United CPT_20251224_084117.jpg",
+    "date_text": "27 Jun 2026 18:00",
+    "venue": "Grand Arena,GrandWest,  1 Jakes Gerwel Dr, Acacia Park, Cape Town",
+    "price": "R350 - R650",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "outdoors"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "A Little Night Music",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588017683",
+    "image": "https://content.webtickets.co.za/CTO/panel_Webtickets_ALNM_20260417_232515.jpg",
+    "date_text": "From 30 Jun 2026 19:30",
+    "venue": "Theatre on the Bay",
+    "price": "From R275",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Footloose – The Musical",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595284447",
+    "image": "https://content.webtickets.co.za/TGSA/panel_Footloose_20260510_114812.jpg",
+    "date_text": "From 01 Jul 2026 19:00",
+    "venue": "The George Arts Theatre, 125 York Street, George Central",
+    "price": "R150 - R170",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "“Dear Michael”",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1592259396",
+    "image": "https://content.webtickets.co.za/iHeartTravelTours/panel_Dear Michael Webtickets Resized_20260505_135445.jpg",
+    "date_text": "From 04 Jul 2026 12:00",
+    "venue": "Inanda Club (The Glass House), Forrest Rd & 6th Ave, Inanda, Sandton, 2196",
+    "price": "R980 - R1630",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "club"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The “PIRATES of PENZANCE”",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590018957",
+    "image": "https://content.webtickets.co.za/artscape/panel_The Pirates of Penzance_20260304_102942.png",
+    "date_text": "From 04 Jul 2026 19:30",
+    "venue": "Artscape, Theatre, Cape Town",
+    "price": "R275 - R350",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Franschhoek Iconic Bastille",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594211711",
+    "image": "https://content.webtickets.co.za/franschhoek/panel_FHKBastille2026-1_20260428_160102.jpg",
+    "date_text": "From 11 Jul 2026 11:00",
+    "venue": "Church Street, Franschhoek",
+    "price": "R450",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "PRIME CIRCLE @ Bush Lapa",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593591657",
+    "image": "https://content.webtickets.co.za/heroldsbay/panel_Prime-Circle-Web-Tickets_20260420_142108.png",
+    "date_text": "11 Jul 2026 18:00",
+    "venue": "Die Bush Lapa at Herold's Bay, George",
+    "price": "From R250",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Cape Town Opera’s The Cunning Little Vixen",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1587876019",
+    "image": "https://content.webtickets.co.za/CTO/panel_TCLV_Tile_20260216_122951.png",
+    "date_text": "From 21 Jul 2026 11:00",
+    "venue": "Joseph Stone Auditorium, Athlone, Cape Town, South Africa",
+    "price": "R80",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "SAMTHING SOWETO presents Good Morning Live - Cape Town",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1587764821",
+    "image": "https://content.webtickets.co.za/baxtertheatre/panel_Cape Town_20260202_135217.png",
+    "date_text": "24 - 25 July 2026, at 19:00",
+    "venue": "Concert Hall - Baxter Theatre Centre",
+    "price": "R400-R700",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "A Night with the Stars Lloyiso - GrandWest Arena",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594621205",
+    "image": "https://content.webtickets.co.za/SolutionsOnPoint/panel_AVFM 2601 - A night with Stars  Lloyiso GrandWest - Webtickets_20260504_105045.jpg",
+    "date_text": "24 Jul 2026 19:00",
+    "venue": "Grand Arena,GrandWest,  1 Jakes Gerwel Dr, Acacia Park, Cape Town",
+    "price": "R400 - R750",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "outdoors"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Schalk Bezuidenhout - Hey Hey Divorcé - CPT",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588192167",
+    "image": "https://content.webtickets.co.za/baxtertheatre/panel_Webtickets Image - Schalk_20260209_161750.jpg",
+    "date_text": "28 July – 2 August 2026",
+    "venue": "The Pam Golding Theatre at The Baxter",
+    "price": "R250",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "AI Masterclass Summit - JHB / CPT",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1576410379",
+    "image": "https://content.webtickets.co.za/CheebaCA/panel_AI Summit Both Cities - Webtickts_20251019_153828.png",
+    "date_text": ".",
+    "venue": "Sandton Hotel. JHB",
+    "price": "R2000 - R5800",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "13th South African International Ballet Competition",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589804270",
+    "image": "https://content.webtickets.co.za/artscape/panel_5g1feftco1901_20230912_141419.jpg",
+    "date_text": "From 04 Aug 2026 18:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "R150 - R285",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Tamia live in South Africa - Cape Town",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593210266",
+    "image": "https://content.webtickets.co.za/Remoakantseholdings/panel_Tamia2626_20260413_205652.jpg",
+    "date_text": "06 Aug 2026 18:00",
+    "venue": "Grand Arena,GrandWest,  1 Jakes Gerwel Dr, Acacia Park, Cape Town",
+    "price": "R750 - R1450",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "outdoors"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Sis’ters Vrouekonferensie aangebied deur Radio Tygerberg 104FM",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591752081",
+    "image": "https://content.webtickets.co.za/artscape/panel_Sisters Vrouekonferensie_20260414_161326.jpg",
+    "date_text": "09 Aug 2026 14:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "R200 - R400",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Maxwell Live in SA - Cape Town",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593212003",
+    "image": "https://content.webtickets.co.za/VertexEvents/panel_maxwell26_20260415_130107.jpg",
+    "date_text": "11 Aug 2026 16:00",
+    "venue": "GrandWest, Grand Arena, 1 Jakes Gerwel Dr, Acacia Park, Cape Town",
+    "price": "R1250 - R2950",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "outdoors"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Richard O'Brien's The Rocky Horror Show 2 - CPT",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595044229",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
+    "date_text": "From 28 Aug 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R295 - R495",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Behind The Music with Rodney Trudgeon – The Third Movement",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593804331",
+    "image": "https://content.webtickets.co.za/artscape/panel_rodney webtickets_20260507_102536.jpg",
+    "date_text": "14 Sep 2026 18:30",
+    "venue": "Artscape Opera Bar",
+    "price": "R180 - R200",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "bar",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "COPPELIA – YOUTH PRODUCTION",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1583408448",
+    "image": "https://content.webtickets.co.za/CTCB/panel_Untitled design_20251209_133356.jpg",
+    "date_text": "From 19 Sep 2026 12:00",
+    "venue": "Joseph Stone Auditorium, Protea St & Klipfontein Rd, Athlone, Cape Town",
+    "price": "R50",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Hessequa Harmonie 2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593596557",
+    "image": "https://content.webtickets.co.za/NielRademanProduksies/panel_HH_20260511_083041.jpg",
+    "date_text": "From 22 Sep 2026 09:00",
+    "venue": "",
+    "price": "From R150",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Lamb Champs - Boland",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589806876",
+    "image": "https://content.webtickets.co.za/lambchamps/panel_Wbtickets - Mast Head - Boland_20260304_084023.jpg",
+    "date_text": "24 Sep 2026 09:00",
+    "venue": "Hoër Landbouskool Boland, Vrygunsweg, Suid-Agter-Paarl Rd, Paarl, 7630",
+    "price": "R150 - R320",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Swartland Olive Festival",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590597168",
+    "image": "https://content.webtickets.co.za/SwartlandTourism/panel_riebeek_kasteel_olive_festival_webtickets_1110x740_20260316_145028.jpg",
+    "date_text": "From 25 Sep 2026 16:00",
+    "venue": "Riebeek Kasteel Town Square, Riebeek Kasteel",
+    "price": "R150-R500",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "festival",
+      "art"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "VELVET FEATHERS",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582238504",
+    "image": "https://content.webtickets.co.za/CTCB/panel_velvet feather_20251127_222651.jpg",
+    "date_text": "From 26 Sep 2026 12:30",
+    "venue": "Norval Foundation, Steenberg Road, Tokai, Cape Town, South Africa",
+    "price": "R925",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Killarney Motor Show 2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595283281",
+    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_261101 Killarney Motor Show 1110 x 740 Webtickets 0_20260510_113802.jpg",
+    "date_text": "01 Nov 2026 10:00",
+    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
+    "price": "R50 - R1500",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "sports"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Urban Revival Conference 2026 - Cape Town",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1580375191",
+    "image": "https://content.webtickets.co.za/FreshImpressionsTv/panel_sams jpg_20251103_150423.jpg",
+    "date_text": "08 Nov 2026 14:00",
+    "venue": "Good Hope Christian Centre Ottery, Cnr Plantation Rd & Panton Rd, Ferness, Cape Town",
+    "price": "R249.50 - R1999",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "+LIVE+ at Kirstenbosch Garden",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593368056",
+    "image": "https://content.webtickets.co.za/AMPProductions/panel_Live National copy_20260422_165357.jpg",
+    "date_text": "From 08 Dec 2026 18:00",
+    "venue": "Kirstenbosch National Botanical Garden, Rhodes Drive, Newlands, Cape Town, South Africa",
+    "price": "R995 - R2995 (Excl. Booking Fee)",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "O Holy Night",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590494399",
+    "image": "https://content.webtickets.co.za/CPO/panel_O HOLY NIGHT - JPG_20250826_141509.jpg",
+    "date_text": "From 08 Dec 2026 18:00",
+    "venue": "St George's Cathedral, Wale Street, Cape Town City Centre, Cape Town",
+    "price": "R171 - R190",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Cape Town City Ballet - THE NUTCRACKER",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582355327",
+    "image": "https://content.webtickets.co.za/artscape/panel_THE NUTCRACKER_20251202_164120.png",
+    "date_text": "From 11 Dec 2026 19:00",
+    "venue": "Artscape, Theatre, Cape Town",
+    "price": "R200 - R600",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
   }
 ]

@@ -7,6 +7,7 @@ import os
 import re
 import urllib.parse
 import urllib.request
+from datetime import date
 from html.parser import HTMLParser
 from pathlib import Path
 import sys
@@ -294,10 +295,11 @@ def main() -> int:
 
     existing_items = load_existing_items()
     existing_by_url = {
-        str(item.get("url") or "").strip(): str(item.get("rating") or "").strip()
+        str(item.get("url") or "").strip(): item
         for item in existing_items
         if str(item.get("url") or "").strip()
     }
+    today = date.today().isoformat()
 
     new_items = scrape_latest(FETCH_LIMIT)
     for item in new_items:
@@ -308,7 +310,8 @@ def main() -> int:
         guessed_year = extract_year(raw_title)
         item["title"] = clean_title(raw_title)
         item.pop("raw_title", None)
-        existing_rating = existing_by_url.get(item_url, "")
+        existing_item = existing_by_url.get(item_url, {})
+        existing_rating = str(existing_item.get("rating") or "").strip() if isinstance(existing_item, dict) else ""
         if existing_rating:
             item["rating"] = existing_rating
         else:
@@ -317,8 +320,8 @@ def main() -> int:
             except Exception:
                 item["rating"] = ""
 
-        existing_item = next((entry for entry in existing_items if str(entry.get("url") or "").strip() == item_url), {})
         if isinstance(existing_item, dict):
+            item["first_seen_at"] = str(existing_item.get("first_seen_at") or "").strip() or today
             for key in [
                 "tmdb_id",
                 "tmdb_url",
@@ -335,6 +338,8 @@ def main() -> int:
             ]:
                 if key in existing_item and existing_item.get(key):
                     item[key] = existing_item.get(key)
+        else:
+            item["first_seen_at"] = today
 
         if not item.get("tmdb_id"):
             details = fetch_tmdb_details(item["title"], guessed_year)
@@ -344,6 +349,9 @@ def main() -> int:
                     item["rating"] = str(item.get("tmdb_rating")).strip()
 
     items = merge_items(new_items, existing_items, MAX_ITEMS)
+    for item in items:
+        if isinstance(item, dict) and not str(item.get("first_seen_at") or "").strip():
+            item["first_seen_at"] = today
     write_latest(items)
     print(f"Wrote {len(items)} release radar item(s) to {OUTPUT_FILE} (fetched {len(new_items)} new candidates)")
     return 0

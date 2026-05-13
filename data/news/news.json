@@ -1904,11 +1904,40 @@
       "is_breaking": true,
       "matched_terms": [
         "grand prix"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
       "id": "8c4884a00d9d3d00",
       "title": "Wednesday briefing: How much longer can Keir Starmer cling to power?",
+=======
+      "id": "869970fad3e860ee",
+      "title": "Pakistan struck a rehab centre and killed 269 Afghans. Their families want to know why",
+      "source": "BBC World",
+      "category": "Global",
+      "published_at": "2026-05-12T07:31:14Z",
+      "url": "https://www.bbc.com/news/articles/c202xrd9gn7o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d3c2/live/d7a0af30-4d3a-11f1-ac78-2112837ce2aa.jpg",
+      "summary": "There are calls to investigate the 16 March airstrike - which the UN says likely killed more - as a war crime.",
+      "body": "There are calls to investigate the 16 March airstrike - which the UN says likely killed more - as a war crime.",
+      "tags": [
+        "Global",
+        "BBC World"
+      ],
+      "importance_score": 15,
+      "is_breaking": true,
+      "matched_terms": [
+        "war",
+        "strike",
+        "killed"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "3ab9e0c4b4a92e9d",
+      "title": "Middle East crisis live: Trump says Iran ceasefire is on ‘massive life support’",
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "source": "The Guardian World",
       "category": "Global",
       "published_at": "2026-05-13T05:43:31Z",
@@ -1952,10 +1981,18 @@
       "importance_score": 15,
       "is_breaking": true,
       "matched_terms": [
+<<<<<<< HEAD
         "breaking",
         "ruling",
         "attack"
       ]
+=======
+        "ceasefire",
+        "attack",
+        "killed"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "8d4ddc4fd84d02cc",
@@ -2030,8 +2067,15 @@
       "is_breaking": true,
       "matched_terms": [
         "breaking",
+<<<<<<< HEAD
         "live updates"
       ]
+=======
+        "live updates",
+        "weekend"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "09507fdd610ed826",
@@ -2053,9 +2097,16 @@
       "importance_score": 12,
       "is_breaking": true,
       "matched_terms": [
+<<<<<<< HEAD
         "breaking",
         "death"
       ]
+=======
+        "election",
+        "parliament"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "abbc98e62c669cc0",
@@ -2074,10 +2125,126 @@
       "importance_score": 12,
       "is_breaking": true,
       "matched_terms": [
+<<<<<<< HEAD
         "court",
         "ruling",
         "protest"
       ]
+=======
+        "election",
+        "war"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "ef975821cd69460c",
+      "title": "Cannes Market Posts Record Attendance Against Complex Geopolitical Backdrop",
+      "source": "Deadline",
+      "category": "Entertainment",
+      "published_at": "2026-05-12T07:00:33Z",
+      "url": "https://deadline.com/2026/05/cannes-market-record-attendance-us-uk-france-asia-1236898925/",
+      "image_url": "https://deadline.com/wp-content/uploads/2026/05/Marche_du_Film-Claire-Lebeau.jpg",
+      "summary": "In a release put out on the eve of its opening on May 13, Cannes Marché du Film has unveiled record attendance against a complex geopolitical backdrop. It said 40,000 professionals were expected overall at the festival with 16,000 participants from 140 countries registered to attend, which is slightly up from 2025. The U.S., France […]",
+      "body": "In a release put out on the eve of its opening on May 13, Cannes Marché du Film has unveiled record attendance against a complex geopolitical backdrop. It said 40,000 professionals were expected overall at the festival with 16,000 participants from 140 countries registered to attend, which is slightly up from 2025. The U.S., France […]",
+      "tags": [
+        "Entertainment",
+        "Deadline",
+        "Festivals",
+        "News",
+        "Cannes"
+      ],
+      "importance_score": 11,
+      "is_breaking": true,
+      "matched_terms": [
+        "record",
+        "festival",
+        "market",
+        "festival",
+        "market"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "125669f39fb8efbd",
+      "title": "Cannes Film Market Draws Record 16,000 Participants as Japan Surges",
+      "source": "Variety",
+      "category": "Entertainment",
+      "published_at": "2026-05-12T07:00:00Z",
+      "url": "https://variety.com/2026/film/markets-festivals/cannes-film-market-2026-record-participation-japan-1236744605/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/05/Cannes-Film-Market.jpg",
+      "summary": "The Cannes Film Market is heading into its 2026 edition with record registration figures, counting 16,000 market participants from more than 140 countries among the broader Cannes Film Festival gathering of 40,000 industry professionals. The U.S., France and the U.K. hold their positions as the top three countries by attendance, with Europe remaining the most […]",
+      "body": "The Cannes Film Market is heading into its 2026 edition with record registration figures, counting 16,000 market participants from more than 140 countries among the broader Cannes Film Festival gathering of 40,000 industry professionals. The U.S., France and the U.K. hold their positions as the top three countries by attendance, with Europe remaining the most […]",
+      "tags": [
+        "Entertainment",
+        "Variety",
+        "Global",
+        "Markets & Festivals",
+        "News"
+      ],
+      "importance_score": 11,
+      "is_breaking": true,
+      "matched_terms": [
+        "record",
+        "festival",
+        "market",
+        "festival",
+        "market"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "d129e288fa9a0738",
+      "title": "Middle East war reroutes ships, threatens whales",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-12T04:00:31Z",
+      "url": "https://www.capetownetc.com/african-insider/middle-east-war-reroutes-ships-threatens-whales/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/Untitled-design-10.jpg",
+      "summary": "Words: African Insider Conflicts in the Middle East are increasing dangers for whales off South Africa by shifting sea traffic into their habitats and heightening the risks of collision, researchers told AFP. The rerouting of shipping around South Africa and away from the Red Sea and Suez Canal since late 2023 has ‘substantially increased’ the chances of ship strikes, they... Read more → The post Middle East war reroutes ships, threatens whales appeared first on Cape Town ETC .",
+      "body": "Words: African Insider Conflicts in the Middle East are increasing dangers for whales off South Africa by shifting sea traffic into their habitats and heightening the risks of collision, researchers told AFP. The rerouting of shipping around South Africa and away from the Red Sea and Suez Canal since late 2023 has ‘substantially increased’ the chances of ship strikes, they... Read more → The post Middle East war reroutes ships, threatens whales appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "African Insider",
+        "Featured",
+        "World"
+      ],
+      "importance_score": 11,
+      "is_breaking": true,
+      "matched_terms": [
+        "war",
+        "strike",
+        "cape town"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "14757115cd3be99e",
+      "title": "Update: ‘I remain here and am not resigning,’ Ramaphosa confirms",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-11T19:00:59Z",
+      "url": "https://www.capetownetc.com/news/impeachment-inquiry-into-ramaphosa-begins-in-parliament/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/Gp3m7yZXIAA3hJD-e1778516835492.jpg",
+      "summary": "Update: President Cyril Ramaphosa has confirmed that he will not resign following last week’s Constitutional Court judement to the Section 89 impeachment process surrounding the Phala Phala scandal, Cape {town} Etc reports. In a national address on Monday evening, Ramaphosa sought to quell mounting speculation around his political future after the Constitutional Court ruled that Parliament acted unlawfully when it voted... Read more → The post Update: ‘I remain here and am not resigning,’ Ramaphosa confirms appeared first on Cape Town ETC .",
+      "body": "Update: President Cyril Ramaphosa has confirmed that he will not resign following last week’s Constitutional Court judement to the Section 89 impeachment process surrounding the Phala Phala scandal, Cape {town} Etc reports. In a national address on Monday evening, Ramaphosa sought to quell mounting speculation around his political future after the Constitutional Court ruled that Parliament acted unlawfully when it voted... Read more → The post Update: ‘I remain here and am not resigning,’ Ramaphosa confirms appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "Featured",
+        "News",
+        "Cyril Ramaphosa"
+      ],
+      "importance_score": 11,
+      "is_breaking": true,
+      "matched_terms": [
+        "court",
+        "parliament",
+        "confirmed",
+        "cape town"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "4c6cdda309b8066a",
@@ -2102,7 +2269,8 @@
         "flood",
         "war",
         "cape town"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "c706c2eb19ca3d63",
@@ -2124,7 +2292,8 @@
       "matched_terms": [
         "weekend",
         "cape town"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "6c09ee4059dafa32",
@@ -2146,7 +2315,8 @@
       "matched_terms": [
         "weekend",
         "cape town"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "7c8a127ef29911c4",
@@ -2168,7 +2338,8 @@
       "matched_terms": [
         "weekend",
         "cape town"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "bfc12d44e2a88af0",
@@ -2215,7 +2386,8 @@
       "is_breaking": true,
       "matched_terms": [
         "war"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "810add3bc34e1fe5",
@@ -2238,7 +2410,8 @@
       "is_breaking": true,
       "matched_terms": [
         "war"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "e9450a27fd3f94a5",
@@ -2260,10 +2433,18 @@
       "importance_score": 9,
       "is_breaking": true,
       "matched_terms": [
+<<<<<<< HEAD
         "launch",
         "market",
         "market"
       ]
+=======
+        "record",
+        "festival",
+        "festival"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "5f48b99f73330a27",
@@ -2310,7 +2491,8 @@
       "matched_terms": [
         "flood",
         "cape town"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "f893580653fe3cb2",
@@ -2329,8 +2511,14 @@
       "importance_score": 8,
       "is_breaking": true,
       "matched_terms": [
+<<<<<<< HEAD
         "court"
       ]
+=======
+        "missing"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "d83db7985ec50273",
@@ -2349,8 +2537,38 @@
       "importance_score": 8,
       "is_breaking": true,
       "matched_terms": [
+<<<<<<< HEAD
         "parliament"
       ]
+=======
+        "market",
+        "cape town",
+        "market"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "f81d19eb022f7b2b",
+      "title": "Positive Strokes - Homecoming Centre",
+      "source": "Wesgro Travel Events",
+      "category": "Cape Town Events",
+      "published_at": "2026-05-12T07:47:00.505023Z",
+      "url": "https://www.wesgro.co.za/travel/events/positive-strokes-homecoming-centre",
+      "image_url": "",
+      "summary": "13 May 2026 | Homecoming Centre, Cape Town,",
+      "body": "13 May 2026 | Homecoming Centre, Cape Town,",
+      "tags": [
+        "Cape Town Events",
+        "Wesgro",
+        "Travel"
+      ],
+      "importance_score": 7,
+      "is_breaking": false,
+      "matched_terms": [
+        "cape town"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "4059c7f22bf886b6",
@@ -2371,7 +2589,8 @@
       "is_breaking": false,
       "matched_terms": [
         "cape town"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "2efb17f1642eeca2",
@@ -2391,8 +2610,15 @@
       "importance_score": 7,
       "is_breaking": false,
       "matched_terms": [
+<<<<<<< HEAD
         "cape town"
       ]
+=======
+        "war",
+        "launch"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "7ac58369e0abb7a2",
@@ -2437,9 +2663,14 @@
       ],
       "importance_score": 6,
       "is_breaking": false,
+<<<<<<< HEAD
       "matched_terms": [
         "cape town"
       ]
+=======
+      "matched_terms": [],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "72388e2ee67f3e9f",
@@ -2458,10 +2689,15 @@
       ],
       "importance_score": 6,
       "is_breaking": false,
+<<<<<<< HEAD
       "matched_terms": [
         "market",
         "market"
       ]
+=======
+      "matched_terms": [],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "b69578e6611d1923",
@@ -2524,6 +2760,7 @@
       "importance_score": 6,
       "is_breaking": false,
       "matched_terms": [
+<<<<<<< HEAD
         "court"
       ]
     },
@@ -2629,6 +2866,11 @@
       "matched_terms": [
         "regulation"
       ]
+=======
+        "cape town"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "066b7ca1e31ac4c1",
@@ -2651,7 +2893,8 @@
       "matched_terms": [
         "grand prix",
         "podium"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "73e7e4d392894ada",
@@ -2674,7 +2917,139 @@
       "matched_terms": [
         "weekend",
         "grand prix"
+<<<<<<< HEAD
       ]
+=======
+      ],
+      "is_new": false
+    },
+    {
+      "id": "f6678d573253278b",
+      "title": "World of Warcraft 'Classic Plus', a version of the old MMO with modern updates, might actually be real as Blizzard hosts secret event with popular streamers",
+      "source": "PC Gamer",
+      "category": "Games",
+      "published_at": "2026-05-11T21:48:30Z",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-classic-plus-a-version-of-the-old-mmo-with-modern-updates-might-actually-be-real-as-blizzard-hosts-secret-event-with-popular-streamers/",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/FMANT4DGMrKnDjrSVT8sui-1280-80.jpg",
+      "summary": "WoW Classic streamers Xaryu, Sodapoppin, and Esfand are among the few invited to Irvine under NDA.",
+      "body": "WoW Classic streamers Xaryu, Sodapoppin, and Esfand are among the few invited to Irvine under NDA.",
+      "tags": [
+        "Games",
+        "PC Gamer",
+        "World of Warcraft",
+        "MMO"
+      ],
+      "importance_score": 6,
+      "is_breaking": false,
+      "matched_terms": [
+        "war"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "987f5c4397cdae29",
+      "title": "Game industry lobby group that argued against preservation efforts from libraries is now pushing back on Stop Killing Games, saying it could prevent 'new games, features, and technology'",
+      "source": "PC Gamer",
+      "category": "Games",
+      "published_at": "2026-05-11T20:19:32Z",
+      "url": "https://www.pcgamer.com/gaming-industry/game-industry-lobby-group-that-argued-against-preservation-efforts-from-libraries-is-now-pushing-back-on-stop-killing-games-saying-it-could-prevent-new-games-features-and-technology/",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/HAeWwD9oabQa6jZYbmQQwV-1280-80.jpg",
+      "summary": "Your occasional reminder that the Entertainment Software Association is not your friend.",
+      "body": "Your occasional reminder that the Entertainment Software Association is not your friend.",
+      "tags": [
+        "Games",
+        "PC Gamer",
+        "Gaming Industry"
+      ],
+      "importance_score": 6,
+      "is_breaking": false,
+      "matched_terms": [
+        "war"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "9b9e17749bac7f72",
+      "title": "Motorists warned of dangerous winds on N3 Toll Route",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-11T18:00:00Z",
+      "url": "https://iol.co.za/news/south-africa/2026-05-11-motorists-warned-of-dangerous-winds-on-n3-toll-route/",
+      "image_url": "https://iol-prod.appspot.com/image/9ae4b4465f4b00bc50512efc1b9693601e1d8990",
+      "summary": "Motorists on the N3 Toll Route between KwaZulu-Natal and the Free State are urged to exercise extreme caution as wind speeds exceed 100 km/h on Van Reenen Pass.",
+      "body": "Motorists on the N3 Toll Route between KwaZulu-Natal and the Free State are urged to exercise extreme caution as wind speeds exceed 100 km/h on Van Reenen Pass.",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "importance_score": 6,
+      "is_breaking": false,
+      "matched_terms": [
+        "war"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "0aa100b0ec48de2f",
+      "title": "Inside SA prisons: 2,388 officials disciplined in massive corruption crackdown",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-12T07:31:00Z",
+      "url": "https://iol.co.za/news/south-africa/2026-05-12-inside-sa-prisons-2388-officials-disciplined-in-massive-corruption-crackdown/",
+      "image_url": "https://iol-prod.appspot.com/image/1f3fce6df64f96e695e691d8f0796b127461ef53",
+      "summary": "The Department of Correctional Services says it is implementing a multi-year plan to strengthen perimeter security at prisons, including upgrades to fencing, surveillance systems, and tighter operational controls.",
+      "body": "The Department of Correctional Services says it is implementing a multi-year plan to strengthen perimeter security at prisons, including upgrades to fencing, surveillance systems, and tighter operational controls.",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "importance_score": 5,
+      "is_breaking": false,
+      "matched_terms": [],
+      "is_new": false
+    },
+    {
+      "id": "9eca16392958ba10",
+      "title": "Ramaphosa to address Africa’s Travel Indaba in Durban as tourism drives economic focus",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-12T07:17:00Z",
+      "url": "https://iol.co.za/news/south-africa/2026-05-12-ramaphosa-to-address-africas-travel-indaba-in-durban-as-tourism-drives-economic-focus/",
+      "image_url": "https://iol-prod.appspot.com/image/3ef4a5eea5c90c793e6b3295d3b53a0c64a228f7",
+      "summary": "President Cyril Ramaphosa will open and address Africa’s Travel Indaba in Durban, as government highlights tourism’s role in driving jobs, investment and economic growth across South Africa and Africa.",
+      "body": "President Cyril Ramaphosa will open and address Africa’s Travel Indaba in Durban, as government highlights tourism’s role in driving jobs, investment and economic growth across South Africa and Africa.",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "importance_score": 5,
+      "is_breaking": false,
+      "matched_terms": [],
+      "is_new": false
+    },
+    {
+      "id": "bd98c0fade98f764",
+      "title": "Steam's most-wishlisted game is out this week following a year of corporate drama that involved one of the most embarrassing ChatGPT uses on record",
+      "source": "PC Gamer",
+      "category": "Games",
+      "published_at": "2026-05-11T21:45:13Z",
+      "url": "https://www.pcgamer.com/games/survival-crafting/steams-most-wishlisted-game-is-out-this-week-following-a-year-of-corporate-drama-that-involved-one-of-the-most-embarrassing-chatgpt-uses-on-record/",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/uwQCTPdMVU76d7YU2zrpLW-1280-80.jpg",
+      "summary": "The moment of truth nears for ultra-anticipated survival game Subnautica 2.",
+      "body": "The moment of truth nears for ultra-anticipated survival game Subnautica 2.",
+      "tags": [
+        "Games",
+        "PC Gamer",
+        "Survival & Crafting"
+      ],
+      "importance_score": 5,
+      "is_breaking": false,
+      "matched_terms": [
+        "record",
+        "this week"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     }
   ],
   "items": [
@@ -4556,7 +4931,8 @@
         }
       },
       "always_featured": true,
-      "_sticky_rank": 1000
+      "_sticky_rank": 1000,
+      "is_new": false
     },
     {
       "id": "c706c2eb19ca3d63",
@@ -4572,7 +4948,8 @@
         "Cape Town Events",
         "Weekend",
         "What's On"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "6c09ee4059dafa32",
@@ -4588,7 +4965,8 @@
         "Cape Town Events",
         "Weekend",
         "What's On"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "7c8a127ef29911c4",
@@ -4604,9 +4982,30 @@
         "Cape Town Events",
         "Weekend",
         "What's On"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "f81d19eb022f7b2b",
+      "title": "Positive Strokes - Homecoming Centre",
+      "source": "Wesgro Travel Events",
+      "category": "Cape Town Events",
+      "published_at": "2026-05-12T07:47:00.505023Z",
+      "url": "https://www.wesgro.co.za/travel/events/positive-strokes-homecoming-centre",
+      "image_url": "",
+      "summary": "13 May 2026 | Homecoming Centre, Cape Town,",
+      "body": "13 May 2026 | Homecoming Centre, Cape Town,",
+      "tags": [
+        "Cape Town Events",
+        "Wesgro",
+        "Travel"
+      ],
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "id": "4059c7f22bf886b6",
       "title": "Carmen",
       "source": "Wesgro Travel Events",
@@ -4620,7 +5019,8 @@
         "Cape Town Events",
         "Wesgro",
         "Travel"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "2efb17f1642eeca2",
@@ -4636,7 +5036,8 @@
         "Cape Town Events",
         "Wesgro",
         "Travel"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "a0871a7465608d1e",
@@ -4652,7 +5053,8 @@
         "Cape Town Events",
         "Wesgro",
         "Travel"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "d6c1acea93b4e789",
@@ -4668,7 +5070,8 @@
         "Cape Town Events",
         "Wesgro",
         "Travel"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "4fd26ee8a69b77fa",
@@ -4681,10 +5084,20 @@
       "summary": "27 May 2026 | Cape Town, Western Cape",
       "body": "27 May 2026 | Cape Town, Western Cape",
       "tags": [
+<<<<<<< HEAD
         "Cape Town Events",
         "Wesgro",
         "Travel"
       ]
+=======
+        "Global",
+        "The Guardian World",
+        "Australian budget 2026",
+        "Australia news",
+        "Australian politics"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "bfc12d44e2a88af0",
@@ -4697,6 +5110,7 @@
       "summary": "Before the first rescue craft even touched the water, the scale of the emergency was already clear, Cape {town} Etc reports. Farm workers and their families had spent the night on rooftops, surrounded by rising floodwaters on a farm between Worcester and Rawsonville along the Old N1. By Tuesday morning, word filtered through to emergency services: people including babies, elderly residents,... Read more → The post Three lives lost after dramatic rooftop rescue between Worcester and Rawsonville appeared first on Cape Town ETC .",
       "body": "Before the first rescue craft even touched the water, the scale of the emergency was already clear, Cape {town} Etc reports. Farm workers and their families had spent the night on rooftops, surrounded by rising floodwaters on a farm between Worcester and Rawsonville along the Old N1. By Tuesday morning, word filtered through to emergency services: people including babies, elderly residents,... Read more → The post Three lives lost after dramatic rooftop rescue between Worcester and Rawsonville appeared first on Cape Town ETC .",
       "tags": [
+<<<<<<< HEAD
         "Cape Town",
         "Cape Town ETC",
         "Featured",
@@ -4707,6 +5121,54 @@
     {
       "id": "91069b3b5c13ed59",
       "title": "Free(d) Turkeys? Wild Boars? In ‘Too Many Beasts,’ It’s Farmers Versus Hunters (Exclusive Cannes Clip)",
+=======
+        "Global",
+        "BBC World"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "cb34232baf6c6cdb",
+      "title": "Minister says Starmer is ‘listening’ but refuses to say if PM will stay on ahead of critical cabinet meeting – UK politics live",
+      "source": "The Guardian World",
+      "category": "Global",
+      "published_at": "2026-05-12T07:38:37Z",
+      "url": "https://www.theguardian.com/politics/live/2026/may/12/keir-starmer-prime-minister-resignation-labour-leadership-cabinet-meeting-yvette-cooper-shabana-mahmood-andy-burnham-wes-streeting-uk-politics-latest-news-updates",
+      "image_url": "https://i.guim.co.uk/img/media/39b53edc87d083379f1f151a6ff11de1b81780e6/327_0_4529_3624/master/4529.jpg?width=140&quality=85&auto=format&fit=max&s=1b9a95e8898ab02734c648c1a566d96b",
+      "summary": "Darren Jones says the prime minister is ‘listening to colleagues’, and does not rule out PM announcing resignation timetable Starmer on the brink as cabinet ministers urge him to quit Here are some pictures from No 10 this morning. Darren Jones , the chief secretary to the PM, is now being interviewed on the Today programme. Nick Robinson , the presenter, is asking him if he knows whether Keir Starmer has decided how to respond to the pressure on him to resign. Jones is avoiding the question, as he did on Sky News earlier. (See 7.43am .) Continue reading...",
+      "body": "Darren Jones says the prime minister is ‘listening to colleagues’, and does not rule out PM announcing resignation timetable Starmer on the brink as cabinet ministers urge him to quit Here are some pictures from No 10 this morning. Darren Jones , the chief secretary to the PM, is now being interviewed on the Today programme. Nick Robinson , the presenter, is asking him if he knows whether Keir Starmer has decided how to respond to the pressure on him to resign. Jones is avoiding the question, as he did on Sky News earlier. (See 7.43am .) Continue reading...",
+      "tags": [
+        "Global",
+        "The Guardian World",
+        "Politics",
+        "UK news",
+        "Keir Starmer"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "466bef463b498dc6",
+      "title": "Lorry gets stuck in hole it was sent to fix in Somerset",
+      "source": "The Guardian World",
+      "category": "Global",
+      "published_at": "2026-05-12T07:38:15Z",
+      "url": "https://www.theguardian.com/uk-news/2026/may/12/lorry-gets-stuck-in-hole-walton-somerset",
+      "image_url": "https://i.guim.co.uk/img/media/55556e83b5b7a5ba82093ad6933b59d10db113c3/631_0_4164_3333/master/4164.jpg?width=140&quality=85&auto=format&fit=max&s=4748255a3cde65e3f77fa4b3d7630529",
+      "summary": "Lorry left at near 45-degree angle after ground gave way on road near Walton A lorry became stuck in a sinkhole after being sent to fix it. Contractors from a company called Stabilised Pavements were sent to fix the sinkhole on Butleigh Drove, near Walton in Somerset, when the ground gave way, the Times reported . Continue reading...",
+      "body": "Lorry left at near 45-degree angle after ground gave way on road near Walton A lorry became stuck in a sinkhole after being sent to fix it. Contractors from a company called Stabilised Pavements were sent to fix the sinkhole on Butleigh Drove, near Walton in Somerset, when the ground gave way, the Times reported . Continue reading...",
+      "tags": [
+        "Global",
+        "The Guardian World",
+        "Somerset",
+        "England",
+        "UK news"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "da5fb5c01c34a382",
+      "title": "StudioCanal Acquires International Sales Rights to ‘Pan’s Labyrinth’ Re-Release",
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "source": "The Hollywood Reporter",
       "category": "Entertainment",
       "published_at": "2026-05-13T06:30:00Z",
@@ -4720,7 +5182,8 @@
         "Movie News",
         "Movies",
         "Cannes 2026"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "81a7e16c0182894d",
@@ -4733,12 +5196,22 @@
       "summary": "Donald Trump. Elon Musk. Tim Cook. And Brett Ratner? Yes, the “Rush Hour” and “X-Men: The Last Stand” auteur is reportedly hitching a ride with President Trump and his delegation of business and technology moguls as they make the trek to China for a high-stakes summit with Xi Jinping. Ratner, who directed the documentary “Melania,” […]",
       "body": "Donald Trump. Elon Musk. Tim Cook. And Brett Ratner? Yes, the “Rush Hour” and “X-Men: The Last Stand” auteur is reportedly hitching a ride with President Trump and his delegation of business and technology moguls as they make the trek to China for a high-stakes summit with Xi Jinping. Ratner, who directed the documentary “Melania,” […]",
       "tags": [
+<<<<<<< HEAD
         "Entertainment",
         "Variety",
         "News",
         "Brett Ratner",
         "Donald Trump"
       ]
+=======
+        "Global",
+        "The Guardian World",
+        "May 2026 elections",
+        "Local elections 2026",
+        "Scottish elections 2026"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "9795ee3cf70d0155",
@@ -4806,7 +5279,8 @@
         "Global",
         "Al Jazeera",
         "News"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "cf4ea0be3283adc7",
@@ -4819,6 +5293,7 @@
       "summary": "Ready to celebrate like a champion? SA Rugby Magazine is giving one lucky fan the opportunity to walk away with R100 000! Register now, and you’ll automatically be entered into the draw happening at the end of June 2026. Simply click this link and fill in the form on SA Rugby Magazine’s website – your go-to destination for all things... Read more → The post Win R100 000 with SA Rugby! Enter before June 2026 appeared first on Cape Town ETC .",
       "body": "Ready to celebrate like a champion? SA Rugby Magazine is giving one lucky fan the opportunity to walk away with R100 000! Register now, and you’ll automatically be entered into the draw happening at the end of June 2026. Simply click this link and fill in the form on SA Rugby Magazine’s website – your go-to destination for all things... Read more → The post Win R100 000 with SA Rugby! Enter before June 2026 appeared first on Cape Town ETC .",
       "tags": [
+<<<<<<< HEAD
         "Cape Town",
         "Cape Town ETC",
         "Competitions",
@@ -4829,6 +5304,32 @@
     {
       "id": "8d4ddc4fd84d02cc",
       "title": "Experts believe breakthrough in US fentanyl crisis may have started in China",
+=======
+        "Global",
+        "BBC World"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "0aa100b0ec48de2f",
+      "title": "Inside SA prisons: 2,388 officials disciplined in massive corruption crackdown",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-12T07:31:00Z",
+      "url": "https://iol.co.za/news/south-africa/2026-05-12-inside-sa-prisons-2388-officials-disciplined-in-massive-corruption-crackdown/",
+      "image_url": "https://iol-prod.appspot.com/image/1f3fce6df64f96e695e691d8f0796b127461ef53",
+      "summary": "The Department of Correctional Services says it is implementing a multi-year plan to strengthen perimeter security at prisons, including upgrades to fencing, surveillance systems, and tighter operational controls.",
+      "body": "The Department of Correctional Services says it is implementing a multi-year plan to strengthen perimeter security at prisons, including upgrades to fencing, surveillance systems, and tighter operational controls.",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "3ab9e0c4b4a92e9d",
+      "title": "Middle East crisis live: Trump says Iran ceasefire is on ‘massive life support’",
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "source": "The Guardian World",
       "category": "Global",
       "published_at": "2026-05-13T06:00:21Z",
@@ -4839,10 +5340,18 @@
       "tags": [
         "Global",
         "The Guardian World",
+<<<<<<< HEAD
         "Fentanyl",
         "US news",
         "World news"
       ]
+=======
+        "US-Israel war on Iran",
+        "Middle East and north Africa",
+        "Iran"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "0cfce26bad968fc4",
@@ -4896,7 +5405,8 @@
         "News",
         "Cannes",
         "Cannes Market"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "810add3bc34e1fe5",
@@ -5020,6 +5530,7 @@
         "Global",
         "The Guardian World",
         "Keir Starmer",
+<<<<<<< HEAD
         "Labour",
         "Politics"
       ]
@@ -5027,6 +5538,32 @@
     {
       "id": "2a4b2a4887615b5d",
       "title": "One Nation senator Malcolm Roberts again fails to rule out Bondi beach terror attack being ‘false flag’",
+=======
+        "Labour party leadership",
+        "Labour"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "e12e33195037615b",
+      "title": "Limpopo police still searching for missing toddler Omphile Sethole",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-12T07:19:00Z",
+      "url": "https://iol.co.za/news/crime-and-courts/2026-05-12-limpopo-police-still-searching-for-missing-toddler-omphile-sethole/",
+      "image_url": "https://iol-prod.appspot.com/image/813e7b43e15aedad9a00b008d263d7d16cc40d95",
+      "summary": "Ten days have passed since two-year-old Omphile Sethole was kidnapped from her home in Limpopo, and police continue their search without new leads. Authorities urge the public to assist in locating the missing toddler.",
+      "body": "Ten days have passed since two-year-old Omphile Sethole was kidnapped from her home in Limpopo, and police continue their search without new leads. Authorities urge the public to assist in locating the missing toddler.",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "1082051d209d5ebc",
+      "title": "Gaborone gold rush: how Botswana rose to the top of men’s sprinting",
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "source": "The Guardian World",
       "category": "Global",
       "published_at": "2026-05-13T05:26:15Z",
@@ -5037,10 +5574,18 @@
       "tags": [
         "Global",
         "The Guardian World",
+<<<<<<< HEAD
         "One Nation",
         "Malcolm Roberts",
         "Australia news"
       ]
+=======
+        "Botswana",
+        "Athletics",
+        "Africa"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "13ef1ac1b6024a0b",
@@ -5139,7 +5684,8 @@
       "tags": [
         "South Africa",
         "IOL South Africa"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "cdec2fe897f19b88",
@@ -5152,9 +5698,19 @@
       "summary": "Recent outbreaks of norovirus and rare hantavirus infections on cruise ships raise concerns about the spread of infectious diseases in confined travel environments.",
       "body": "Recent outbreaks of norovirus and rare hantavirus infections on cruise ships raise concerns about the spread of infectious diseases in confined travel environments.",
       "tags": [
+<<<<<<< HEAD
         "South Africa",
         "IOL South Africa"
       ]
+=======
+        "Entertainment",
+        "Variety",
+        "Global",
+        "News",
+        "Barry Keoghan"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "d83db7985ec50273",
@@ -5167,9 +5723,19 @@
       "summary": "Parliament raises alarm over excessive food prices in Correctional Services contracts, urging better procurement oversight and lifestyle audits for officials involved.",
       "body": "Parliament raises alarm over excessive food prices in Correctional Services contracts, urging better procurement oversight and lifestyle audits for officials involved.",
       "tags": [
+<<<<<<< HEAD
         "South Africa",
         "IOL South Africa"
       ]
+=======
+        "Entertainment",
+        "The Hollywood Reporter",
+        "Movie Reviews",
+        "Movies",
+        "Catherine O'Hara"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "b466b795d4b36151",
@@ -5397,6 +5963,7 @@
         "Cape Town",
         "Cape Town ETC",
         "News",
+<<<<<<< HEAD
         "fake job ad",
         "saps"
       ]
@@ -5408,10 +5975,101 @@
       "category": "Climbing",
       "published_at": "2026-05-12T18:41:34Z",
       "url": "https://alpinist.com/mountain-standards/primaloft-gold-silver-and-black-100-recycled-and-high-warmth-to-weight-ratios/",
+=======
+        "Cape Town shopping",
+        "cheap groceries SA"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "ef975821cd69460c",
+      "title": "Cannes Market Posts Record Attendance Against Complex Geopolitical Backdrop",
+      "source": "Deadline",
+      "category": "Entertainment",
+      "published_at": "2026-05-12T07:00:33Z",
+      "url": "https://deadline.com/2026/05/cannes-market-record-attendance-us-uk-france-asia-1236898925/",
+      "image_url": "https://deadline.com/wp-content/uploads/2026/05/Marche_du_Film-Claire-Lebeau.jpg",
+      "summary": "In a release put out on the eve of its opening on May 13, Cannes Marché du Film has unveiled record attendance against a complex geopolitical backdrop. It said 40,000 professionals were expected overall at the festival with 16,000 participants from 140 countries registered to attend, which is slightly up from 2025. The U.S., France […]",
+      "body": "In a release put out on the eve of its opening on May 13, Cannes Marché du Film has unveiled record attendance against a complex geopolitical backdrop. It said 40,000 professionals were expected overall at the festival with 16,000 participants from 140 countries registered to attend, which is slightly up from 2025. The U.S., France […]",
+      "tags": [
+        "Entertainment",
+        "Deadline",
+        "Festivals",
+        "News",
+        "Cannes"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "125669f39fb8efbd",
+      "title": "Cannes Film Market Draws Record 16,000 Participants as Japan Surges",
+      "source": "Variety",
+      "category": "Entertainment",
+      "published_at": "2026-05-12T07:00:00Z",
+      "url": "https://variety.com/2026/film/markets-festivals/cannes-film-market-2026-record-participation-japan-1236744605/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/05/Cannes-Film-Market.jpg",
+      "summary": "The Cannes Film Market is heading into its 2026 edition with record registration figures, counting 16,000 market participants from more than 140 countries among the broader Cannes Film Festival gathering of 40,000 industry professionals. The U.S., France and the U.K. hold their positions as the top three countries by attendance, with Europe remaining the most […]",
+      "body": "The Cannes Film Market is heading into its 2026 edition with record registration figures, counting 16,000 market participants from more than 140 countries among the broader Cannes Film Festival gathering of 40,000 industry professionals. The U.S., France and the U.K. hold their positions as the top three countries by attendance, with Europe remaining the most […]",
+      "tags": [
+        "Entertainment",
+        "Variety",
+        "Global",
+        "Markets & Festivals",
+        "News"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "a3f9e6492ef73a21",
+      "title": "‘Dope Queens’ Lands at Cannes Film Market With Mise En Scene Aboard as Sales Agent (EXCLUSIVE)",
+      "source": "Variety",
+      "category": "Entertainment",
+      "published_at": "2026-05-12T07:00:00Z",
+      "url": "https://variety.com/2026/film/markets-festivals/dope-queens-cannes-film-market-mise-en-scene-sales-1236744867/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/05/Dope-Queens.jpg",
+      "summary": "The Mise En Scene Company (MSC) has acquired world sales rights to “Dope Queens,” from writer-director Grafton Doyle, and will introduce the title to buyers at the Cannes Film Market. The film is produced by Julio Lopez Velasquez – whose credits include “Buck Run” and “A Place in the Field” – via Tomorrowland Productions, alongside […]",
+      "body": "The Mise En Scene Company (MSC) has acquired world sales rights to “Dope Queens,” from writer-director Grafton Doyle, and will introduce the title to buyers at the Cannes Film Market. The film is produced by Julio Lopez Velasquez – whose credits include “Buck Run” and “A Place in the Field” – via Tomorrowland Productions, alongside […]",
+      "tags": [
+        "Entertainment",
+        "Variety",
+        "Global",
+        "Markets & Festivals",
+        "News"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "00c68b1be019417e",
+      "title": "‘The Station’ Director on the Hidden World of Yemeni Women: ‘Behind Closed Doors, the Colors Emerge, the Frankincense, the Laughter and the Singing’",
+      "source": "Variety",
+      "category": "Entertainment",
+      "published_at": "2026-05-12T07:00:00Z",
+      "url": "https://variety.com/2026/film/global/the-station-yemeni-women-cannes-1236745115/",
+      "image_url": "https://variety.com/wp-content/uploads/2026/05/The-Station-002.jpg",
+      "summary": "Paradise City Sales has granted Variety access to an exclusive clip from Sara Ishaq’s “The Station,” which has its world premiere in Critics’ Week at Cannes. Variety spoke to the Yemeni-Scottish filmmaker, who received an Academy Award nomination for her documentary short “Karama Has No Walls.” The film centers on Layal, who runs a women-only […]",
+      "body": "Paradise City Sales has granted Variety access to an exclusive clip from Sara Ishaq’s “The Station,” which has its world premiere in Critics’ Week at Cannes. Variety spoke to the Yemeni-Scottish filmmaker, who received an Academy Award nomination for her documentary short “Karama Has No Walls.” The film centers on Layal, who runs a women-only […]",
+      "tags": [
+        "Entertainment",
+        "Variety",
+        "Global",
+        "News",
+        "Cannes Film Festival"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "3e4b5389f686d958",
+      "title": "40,000 Film Professionals from 140 Countries at This Year’s Cannes",
+      "source": "The Hollywood Reporter",
+      "category": "Entertainment",
+      "published_at": "2026-05-12T07:00:00Z",
+      "url": "https://www.hollywoodreporter.com/business/business-news/40000-professionals-from-140-countries-at-cannes-fest-1236593078/",
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "image_url": "",
       "summary": "PrimaLoft’s Gold, Silver and Black insulations are made with sustainability in mind and are durable, have high warmth-to-weight ratios and remain warm when wet. IFMGA Mountain Guide Mike Lewis tested four items using PrimaLoft insulation made by Helly Hansen, Millet, Fjällräven and Flylow. The post PrimaLoft Gold, Silver, and Black: 100% Recycled and High Warmth-to-Weight Ratios appeared first on Alpinist .",
       "body": "PrimaLoft’s Gold, Silver and Black insulations are made with sustainability in mind and are durable, have high warmth-to-weight ratios and remain warm when wet. IFMGA Mountain Guide Mike Lewis tested four items using PrimaLoft insulation made by Helly Hansen, Millet, Fjällräven and Flylow. The post PrimaLoft Gold, Silver, and Black: 100% Recycled and High Warmth-to-Weight Ratios appeared first on Alpinist .",
       "tags": [
+<<<<<<< HEAD
         "Climbing",
         "Alpinist",
         "Mountain Standards",
@@ -5615,6 +6273,15 @@
         "Motorsport.com F1",
         "Formula 1"
       ]
+=======
+        "Entertainment",
+        "The Hollywood Reporter",
+        "Business",
+        "Business News",
+        "Cannes 2026"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "c72d28132ba8cf88",
@@ -5629,7 +6296,8 @@
       "tags": [
         "F1",
         "BBC Sport F1"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "434daa39f7916a00",
@@ -5646,9 +6314,175 @@
         "Motorsport.com F1",
         "F1 Miami Grand Prix 2026",
         "Formula 1"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "56153dac95f79c3c",
+      "title": "Thierry Frémaux Talks New Oscar Rules, “Feminist Washing” ‘Thelma & Louise’ Poster Charge; Berlinale Backlash, AI, Red Carpet Selfies & Hollywood",
+      "source": "Deadline",
+      "category": "Entertainment",
+      "published_at": "2026-05-12T06:19:44Z",
+      "url": "https://deadline.com/2026/05/thierry-fremaux-oscar-feminist-washing-wenders-berlin-ai-1236892662/",
+      "image_url": "https://deadline.com/wp-content/uploads/2026/05/GettyImages-2270535195-1.jpg",
+      "summary": "Cannes Film Festival Director Thierry Frémaux took to the stage on Monday for his traditional meeting with the press on the eve of the opening ceremony. In a sign of the complexity of the times, he was grilled on everything from AI to new Oscar submission rules; selfies; the festival’s gender parity record; steps taken to […]",
+      "body": "Cannes Film Festival Director Thierry Frémaux took to the stage on Monday for his traditional meeting with the press on the eve of the opening ceremony. In a sign of the complexity of the times, he was grilled on everything from AI to new Oscar submission rules; selfies; the festival’s gender parity record; steps taken to […]",
+      "tags": [
+        "Entertainment",
+        "Deadline",
+        "Festivals",
+        "News",
+        "Cannes"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "30f38b76b7e16655",
+      "title": "South Africa traces 97 hantavirus contacts after cruise case",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-12T06:14:39Z",
+      "url": "https://www.capetownetc.com/news/sa-traces-97-hantavirus-contacts/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/1280-x-720-px-2026-05-12T080131.649.jpg",
+      "summary": "Hantavirus contacts in South Africa are being traced after health officials confirmed that 97 people are now under monitoring following the rare cruise ship-linked case, reports Cape {town} Etc. During an interview with SABC News, Health Minister Dr. Aaron Motsoaledi said South African teams are working alongside the World Health Organisation and the National Institute for Communicable Diseases to track... Read more → The post South Africa traces 97 hantavirus contacts after cruise case appeared first on Cape Town ETC .",
+      "body": "Hantavirus contacts in South Africa are being traced after health officials confirmed that 97 people are now under monitoring following the rare cruise ship-linked case, reports Cape {town} Etc. During an interview with SABC News, Health Minister Dr. Aaron Motsoaledi said South African teams are working alongside the World Health Organisation and the National Institute for Communicable Diseases to track... Read more → The post South Africa traces 97 hantavirus contacts after cruise case appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "News",
+        "Aaron Motsoaledi",
+        "cruise ship news"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "56583ce70a88f7bd",
+      "title": "Ngizwe Mchunu denies burning his house for attention",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-12T06:09:00Z",
+      "url": "https://iol.co.za/news/politics/2026-05-12-ngizwe-mchunu-denies-burning-his-house-for-attention/",
+      "image_url": "https://iol-prod.appspot.com/image/9ae6a56a9123f2bcd7b18ba0864e5ce2221a8bd0",
+      "summary": "Ngizwe Mchunu has dismissed claims that he set fire to his own home for attention, saying no person would willingly destroy their property and put their children through such trauma.",
+      "body": "Ngizwe Mchunu has dismissed claims that he set fire to his own home for attention, saying no person would willingly destroy their property and put their children through such trauma.",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "c7e375695e229f2e",
+      "title": "Street Store returns to support communities in need this winter",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-12T06:00:11Z",
+      "url": "https://www.capetownetc.com/lifestyle/street-store-returns-to-support-communities-in-need-this-winter/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/669125455_929935306422306_4557331266101632228_n-e1778522595997.jpg",
+      "summary": "As we brace the winter season, The Up&Up Group is bringing back its widely recognised initiative, The Street Store, ensuring that vulnerable communities have access to warm clothing when they need it most. The next two Street Store activations will take place in Cape Town and Johannesburg on 23 May 2026, continuing a movement built on dignity, choice and mindful... Read more → The post Street Store returns to support communities in need this winter appeared first on Cape Town ETC .",
+      "body": "As we brace the winter season, The Up&Up Group is bringing back its widely recognised initiative, The Street Store, ensuring that vulnerable communities have access to warm clothing when they need it most. The next two Street Store activations will take place in Cape Town and Johannesburg on 23 May 2026, continuing a movement built on dignity, choice and mindful... Read more → The post Street Store returns to support communities in need this winter appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "Lifestyle",
+        "charity",
+        "M&C Saatchi Abel"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "408182ac29636d73",
+      "title": "Cape Town storm damage continues into Tuesday as mop-up operations intensify",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-12T05:50:00Z",
+      "url": "https://iol.co.za/news/environment/2026-05-12-cape-town-storm-damage-continues-into-tuesday-as-mop-up-operations-intensify/",
+      "image_url": "https://iol-prod.appspot.com/image/41757df1d1b30c1ffecfc86be954c460fc9d412f",
+      "summary": "Severe weather conditions continue to challenge Cape Town, with officials on high alert as torrential rains and gale-force winds wreak havoc across the city",
+      "body": "Severe weather conditions continue to challenge Cape Town, with officials on high alert as torrential rains and gale-force winds wreak havoc across the city",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "18af36be6b556da9",
+      "title": "Cape Town braces through storm chaos as flooding, flight delays and damage spread",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-12T05:00:04Z",
+      "url": "https://www.capetownetc.com/news/cape-town-braces-through-storm-chaos-as-flooding-flight-delays-and-damage-spread/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/Untitled-design1-4.jpg",
+      "summary": "Relentless rain, gale-force winds and widespread flooding left parts of the Western Cape reeling on Monday as emergency teams across Cape Town and surrounding areas scrambled to respond to hundreds of weather-related incidents. In updates shared throughout the day, Smile FM highlighted the growing impact of the severe weather system sweeping across the province, with authorities confirming flooded roads, damaged... Read more → The post Cape Town braces through storm chaos as flooding, flight delays and damage spread appeared first on Cape Town ETC .",
+      "body": "Relentless rain, gale-force winds and widespread flooding left parts of the Western Cape reeling on Monday as emergency teams across Cape Town and surrounding areas scrambled to respond to hundreds of weather-related incidents. In updates shared throughout the day, Smile FM highlighted the growing impact of the severe weather system sweeping across the province, with authorities confirming flooded roads, damaged... Read more → The post Cape Town braces through storm chaos as flooding, flight delays and damage spread appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "Featured",
+        "News",
+        "ACSA"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "d129e288fa9a0738",
+      "title": "Middle East war reroutes ships, threatens whales",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-12T04:00:31Z",
+      "url": "https://www.capetownetc.com/african-insider/middle-east-war-reroutes-ships-threatens-whales/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/Untitled-design-10.jpg",
+      "summary": "Words: African Insider Conflicts in the Middle East are increasing dangers for whales off South Africa by shifting sea traffic into their habitats and heightening the risks of collision, researchers told AFP. The rerouting of shipping around South Africa and away from the Red Sea and Suez Canal since late 2023 has ‘substantially increased’ the chances of ship strikes, they... Read more → The post Middle East war reroutes ships, threatens whales appeared first on Cape Town ETC .",
+      "body": "Words: African Insider Conflicts in the Middle East are increasing dangers for whales off South Africa by shifting sea traffic into their habitats and heightening the risks of collision, researchers told AFP. The rerouting of shipping around South Africa and away from the Red Sea and Suez Canal since late 2023 has ‘substantially increased’ the chances of ship strikes, they... Read more → The post Middle East war reroutes ships, threatens whales appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "African Insider",
+        "Featured",
+        "World"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "c00ffe72bfd52e8c",
+      "title": "Senzo Mchunu: Taxpayers fork out more than R2.2m and counting for minister on special leave",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-12T03:50:00Z",
+      "url": "https://iol.co.za/news/south-africa/2026-05-12-senzo-mchunu-taxpayers-fork-out-more-than-r22m-and-counting-for-minister-on-special-leave/",
+      "image_url": "https://iol-prod.appspot.com/image/a8c3a66d0a5194a187cd11d3c0ae6077c4684f55",
+      "summary": "Taxpayers are left to shoulder the financial burden as Police Minister Senzo Mchunu continues to receive a full salary while on special leave, ten months after serious corruption allegations emerged against him.",
+      "body": "Taxpayers are left to shoulder the financial burden as Police Minister Senzo Mchunu continues to receive a full salary while on special leave, ten months after serious corruption allegations emerged against him.",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "e2901dcaec0b8ff7",
+      "title": "Another stormy day of rainfall and strong winds – Tuesday weather forecast",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-12T03:30:46Z",
+      "url": "https://www.capetownetc.com/news/weather/another-stormy-day-of-rainfall-and-strong-winds-tuesday-weather-forecast/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/pexels-magda-ehlers-pexels-32686190-e1778524365830.jpg",
+      "summary": "Good morning, Cape {town} Etc family. Here is your weather forecast for today, 12 May 2026. Today’s weather in Cape Town consists of more stormy and hazardous conditions, with a high of 19°C and a low of 13°C. Expect more heavy rainfall and disruptive winds, with conditions improving slightly as the day continues. The UV index will remain low at 1... Read more → The post Another stormy day of rainfall and strong winds – Tuesday weather forecast appeared first on Cape Town ETC .",
+      "body": "Good morning, Cape {town} Etc family. Here is your weather forecast for today, 12 May 2026. Today’s weather in Cape Town consists of more stormy and hazardous conditions, with a high of 19°C and a low of 13°C. Expect more heavy rainfall and disruptive winds, with conditions improving slightly as the day continues. The UV index will remain low at 1... Read more → The post Another stormy day of rainfall and strong winds – Tuesday weather forecast appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "Featured",
+        "Weather",
+        "Cape Town Weather"
+      ],
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "id": "719a1c80064cc76d",
       "title": "Max Verstappen’s ‘sarcastic’ Jimmy Fallon comeback leaves F1 fans in stitches",
       "source": "Motorsport.com F1",
@@ -5663,9 +6497,30 @@
         "Motorsport.com F1",
         "F1 Miami Grand Prix 2026",
         "Formula 1"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "cf5f4623ff783c14",
+      "title": "Paraplegic man finally gets care after years of legal battles with government",
+      "source": "GroundUp",
+      "category": "South Africa",
+      "published_at": "2026-05-12T01:30:00Z",
+      "url": "https://groundup.org.za/article/paraplegic-man-finally-gets-care-after-years-of-legal-battles-with-government/",
+      "image_url": "https://groundup.org.za/media/_versions/images/photographers/Ashraf%20Hendricks/Malmesbury-2232HR_extra_large.jpg",
+      "summary": "Paul Gerber, 58, lived in a wooden shed with no ablutions in Kalbaskraal while the state contacted 173 facilities on his behalf without success",
+      "body": "Paul Gerber, 58, lived in a wooden shed with no ablutions in Kalbaskraal while the state contacted 173 facilities on his behalf without success",
+      "tags": [
+        "South Africa",
+        "GroundUp",
+        "Law"
+      ],
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "id": "5f530470f7448ca4",
       "title": "F1 V8 engine return backed as David Coulthard says series can go \"zero emissions\"",
       "source": "Motorsport.com F1",
@@ -5680,9 +6535,30 @@
         "Motorsport.com F1",
         "F1 Miami Grand Prix 2026",
         "Formula 1"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "eaf8eadb6562c546",
+      "title": "How to unlock tools in Outbound: Tips for the Axe, Pickaxe, and other downloads",
+      "source": "PC Gamer",
+      "category": "Games",
+      "published_at": "2026-05-11T23:33:59Z",
+      "url": "https://www.pcgamer.com/games/sim/outbound-how-to-unlock-tools/",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/MD5jsEzHAvWV2kw5XJkfRQ-1280-80.jpg",
+      "summary": "If Outbound's signal towers have you confused, I've got a few tips for choosing your next download.",
+      "body": "If Outbound's signal towers have you confused, I've got a few tips for choosing your next download.",
+      "tags": [
+        "Games",
+        "PC Gamer",
+        "Sim"
+      ],
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "id": "066b7ca1e31ac4c1",
       "title": "Rob Smedley sounds alarm on \"slightly soul-destroying\" Ferrari F1 upgrades",
       "source": "Motorsport.com F1",
@@ -5697,9 +6573,46 @@
         "Motorsport.com F1",
         "F1 Miami Grand Prix 2026",
         "Formula 1"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "bfb86ed25d852071",
+      "title": "Everyone knows Wolfenstein 3D made the FPS a phenomenon. What this mod presupposes is… what if it didn't?",
+      "source": "PC Gamer",
+      "category": "Games",
+      "published_at": "2026-05-11T23:28:20Z",
+      "url": "https://www.pcgamer.com/games/fps/everyone-knows-wolfenstein-3d-made-the-fps-a-phenomenon-what-this-mod-presupposes-is-what-if-it-didnt/",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/heWG6BvWV4ChTiuwJNP2e6-1280-80.jpg",
+      "summary": "Isowulf does a remarkably faithful job transforming Wolfenstein 3D into an isometric shooter.",
+      "body": "Isowulf does a remarkably faithful job transforming Wolfenstein 3D into an isometric shooter.",
+      "tags": [
+        "Games",
+        "PC Gamer",
+        "FPS"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "e0ed8d96679f6fb0",
+      "title": "Devil May Cry Netflix Creator Has Good Advice For Bloodborne Movie Team",
+      "source": "GameSpot",
+      "category": "Games",
+      "published_at": "2026-05-11T22:27:00Z",
+      "url": "https://www.gamespot.com/articles/devil-may-cry-netflix-creator-has-good-advice-for-bloodborne-movie-team/1100-6539889/?ftag=CAD-01-10abi2f",
+      "image_url": "https://www.gamespot.com/a/uploads/screen_medium/43/434805/4693072-3094320431-hH6Fn.jpg",
+      "summary": "Adi Shankar has had success in adapting video games into animation, having worked on multiple seasons of Castlevania alongside Konami and Netflix, as well as with Ubisoft for Captain Laserhawk: A Blood Dragon Remix. More recently, he has been collaborating with Capcom on Devil May Cry, the first season of which launched on Netflix in 2025 to a largely favorable reception. Now, with its second season, Shankar and team are delving deeper into the story of Dante and Vergil, as the two characters come to grips with their origins, the divergent paths their lives took following a family tragedy, and how their two perspectives shape them and the fate of a world that hangs in the balance. It also embraces Devil May Cry 2, the video game series' most divisive entry . Of course, with as much experience as Shankar has in taking video game source material and adapting it for animation, we would be remiss not to get his perspective on the latest high-profile announcement of a similar project: Sony's adaptation of From Software's Bloodborne. Continue Reading at GameSpot",
+      "body": "Adi Shankar has had success in adapting video games into animation, having worked on multiple seasons of Castlevania alongside Konami and Netflix, as well as with Ubisoft for Captain Laserhawk: A Blood Dragon Remix. More recently, he has been collaborating with Capcom on Devil May Cry, the first season of which launched on Netflix in 2025 to a largely favorable reception. Now, with its second season, Shankar and team are delving deeper into the story of Dante and Vergil, as the two characters come to grips with their origins, the divergent paths their lives took following a family tragedy, and how their two perspectives shape them and the fate of a world that hangs in the balance. It also embraces Devil May Cry 2, the video game series' most divisive entry . Of course, with as much experience as Shankar has in taking video game source material and adapting it for animation, we would be remiss not to get his perspective on the latest high-profile announcement of a similar project: Sony's adaptation of From Software's Bloodborne. Continue Reading at GameSpot",
+      "tags": [
+        "Games",
+        "GameSpot"
+      ],
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "id": "73e7e4d392894ada",
       "title": "Why Jolyon Palmer believes Audi F1 is “behind on the curve” after Miami GP",
       "source": "Motorsport.com F1",
@@ -5714,9 +6627,166 @@
         "Motorsport.com F1",
         "F1 Miami Grand Prix 2026",
         "Formula 1"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "108ead12703724ed",
+      "title": "16 years after attending a Fallout: New Vegas launch event, Aaron Paul gets cast in Fallout Season 3",
+      "source": "PC Gamer",
+      "category": "Games",
+      "published_at": "2026-05-11T22:11:24Z",
+      "url": "https://www.pcgamer.com/movies-tv/16-years-after-attending-a-fallout-new-vegas-launch-event-aaron-paul-gets-cast-in-fallout-season-3/",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/ahAd2oFoXWoJ8dXgo9PF8P-1280-80.jpg",
+      "summary": "He played the long game.",
+      "body": "He played the long game.",
+      "tags": [
+        "Games",
+        "PC Gamer",
+        "Movies & TV"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "f6678d573253278b",
+      "title": "World of Warcraft 'Classic Plus', a version of the old MMO with modern updates, might actually be real as Blizzard hosts secret event with popular streamers",
+      "source": "PC Gamer",
+      "category": "Games",
+      "published_at": "2026-05-11T21:48:30Z",
+      "url": "https://www.pcgamer.com/games/world-of-warcraft/world-of-warcraft-classic-plus-a-version-of-the-old-mmo-with-modern-updates-might-actually-be-real-as-blizzard-hosts-secret-event-with-popular-streamers/",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/FMANT4DGMrKnDjrSVT8sui-1280-80.jpg",
+      "summary": "WoW Classic streamers Xaryu, Sodapoppin, and Esfand are among the few invited to Irvine under NDA.",
+      "body": "WoW Classic streamers Xaryu, Sodapoppin, and Esfand are among the few invited to Irvine under NDA.",
+      "tags": [
+        "Games",
+        "PC Gamer",
+        "World of Warcraft",
+        "MMO"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "bd98c0fade98f764",
+      "title": "Steam's most-wishlisted game is out this week following a year of corporate drama that involved one of the most embarrassing ChatGPT uses on record",
+      "source": "PC Gamer",
+      "category": "Games",
+      "published_at": "2026-05-11T21:45:13Z",
+      "url": "https://www.pcgamer.com/games/survival-crafting/steams-most-wishlisted-game-is-out-this-week-following-a-year-of-corporate-drama-that-involved-one-of-the-most-embarrassing-chatgpt-uses-on-record/",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/uwQCTPdMVU76d7YU2zrpLW-1280-80.jpg",
+      "summary": "The moment of truth nears for ultra-anticipated survival game Subnautica 2.",
+      "body": "The moment of truth nears for ultra-anticipated survival game Subnautica 2.",
+      "tags": [
+        "Games",
+        "PC Gamer",
+        "Survival & Crafting"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "6a62256e44553cec",
+      "title": "Mixtape Interview: \"Where do you set your fantasy stories? You set them in places like California.\"",
+      "source": "GameSpot",
+      "category": "Games",
+      "published_at": "2026-05-11T21:22:00Z",
+      "url": "https://www.gamespot.com/articles/mixtape-interview-where-do-you-set-your-fantasy-stories-you-set-them-in-places-like-california/1100-6539888/?ftag=CAD-01-10abi2f",
+      "image_url": "https://www.gamespot.com/a/uploads/screen_medium/1542/15425433/4693070-8948542976-46921.jpg",
+      "summary": "Mixtape boldly asks its players to make memories to good music, mixing its coming-of-age story with a head-banging soundtrack filled with the likes of Devo, The Smashing Pumpkins, and The Jesus and Mary Chain. It’s the sophomore release from Beethoven & Dinosaur, an Australian developer known for The Artful Escape , a psychedelic exploration of a musician wanting to create his stage persona. Mixtape is a little more down to earth, following music lovers Stacey, Cass, and Slater on Stacey’s final night in their small town before she follows her dreams and moves to New York. Our reviewer Mark Delaney gave it a 9/10 , praising how the game pairs “its heartfelt, often hilarious moments with a sweeping soundtrack to create a coming-of-age story I'll never forget.” GameSpot caught up with Mixtape’s director Johnny Galvatron earlier this year to discuss Beethoven & Dinosaur’s approach to making the game. GameSpot: Do you always think in songs? Continue Reading at GameSpot",
+      "body": "Mixtape boldly asks its players to make memories to good music, mixing its coming-of-age story with a head-banging soundtrack filled with the likes of Devo, The Smashing Pumpkins, and The Jesus and Mary Chain. It’s the sophomore release from Beethoven & Dinosaur, an Australian developer known for The Artful Escape , a psychedelic exploration of a musician wanting to create his stage persona. Mixtape is a little more down to earth, following music lovers Stacey, Cass, and Slater on Stacey’s final night in their small town before she follows her dreams and moves to New York. Our reviewer Mark Delaney gave it a 9/10 , praising how the game pairs “its heartfelt, often hilarious moments with a sweeping soundtrack to create a coming-of-age story I'll never forget.” GameSpot caught up with Mixtape’s director Johnny Galvatron earlier this year to discuss Beethoven & Dinosaur’s approach to making the game. GameSpot: Do you always think in songs? Continue Reading at GameSpot",
+      "tags": [
+        "Games",
+        "GameSpot"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "64fd8e5d48266370",
+      "title": "Microsoft fires head of Israeli subsidiary and other managers over surveillance of Palestinians",
+      "source": "PC Gamer",
+      "category": "Games",
+      "published_at": "2026-05-11T20:43:17Z",
+      "url": "https://www.pcgamer.com/gaming-industry/microsoft-fires-head-of-israeli-subsidiary-and-other-managers-over-surveillance-of-palestinians/",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/JKA8KVk5tU9NyqjJSxGtuG-1280-80.jpg",
+      "summary": "The move follows years of internal and external pressure.",
+      "body": "The move follows years of internal and external pressure.",
+      "tags": [
+        "Games",
+        "PC Gamer",
+        "Gaming Industry"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "987f5c4397cdae29",
+      "title": "Game industry lobby group that argued against preservation efforts from libraries is now pushing back on Stop Killing Games, saying it could prevent 'new games, features, and technology'",
+      "source": "PC Gamer",
+      "category": "Games",
+      "published_at": "2026-05-11T20:19:32Z",
+      "url": "https://www.pcgamer.com/gaming-industry/game-industry-lobby-group-that-argued-against-preservation-efforts-from-libraries-is-now-pushing-back-on-stop-killing-games-saying-it-could-prevent-new-games-features-and-technology/",
+      "image_url": "https://cdn.mos.cms.futurecdn.net/HAeWwD9oabQa6jZYbmQQwV-1280-80.jpg",
+      "summary": "Your occasional reminder that the Entertainment Software Association is not your friend.",
+      "body": "Your occasional reminder that the Entertainment Software Association is not your friend.",
+      "tags": [
+        "Games",
+        "PC Gamer",
+        "Gaming Industry"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "16197467b006a6e5",
+      "title": "How Co-Op Multiplayer Works In Subnautica 2",
+      "source": "GameSpot",
+      "category": "Games",
+      "published_at": "2026-05-11T20:18:00Z",
+      "url": "https://www.gamespot.com/articles/how-co-op-multiplayer-works-in-subnautica-2/1100-6539887/?ftag=CAD-01-10abi2f",
+      "image_url": "https://www.gamespot.com/a/uploads/screen_medium/1745/17457013/4693060-ss_16b68b0941ed9c5ac1eea74e478fa726d425bebf.1920x1080%281%29.jpg",
+      "summary": "After years of wandering the depths of Planet 4546B alone, players can finally team up with their friends in Subnautica 2 . The developers at Unknown Worlds Entertainment designed the new entry in the famed survival franchise with co-op at the forefront following an outcry of player feedback from the previous two games. However, knowing that Subnautica 2 has co-op is only half the battle, as you also have to know how it works and its limitations. Below, we'll give you a full rundown of the co-op multiplayer feature in Subnautica 2 so you can hop in with friends right away. How to play with friends in multiplayer in Subnautica 2 Subnautica 2 has a maximum co-op limit of four players , meaning you and up to three other friends can play in the same party at one time. Fortunately, Subnautica 2 also has full cross-play support, meaning you can play with any friend on PC or Xbox. The game also supports cross-progression if you happen to own two systems and purchase two copies. Continue Reading at GameSpot",
+      "body": "After years of wandering the depths of Planet 4546B alone, players can finally team up with their friends in Subnautica 2 . The developers at Unknown Worlds Entertainment designed the new entry in the famed survival franchise with co-op at the forefront following an outcry of player feedback from the previous two games. However, knowing that Subnautica 2 has co-op is only half the battle, as you also have to know how it works and its limitations. Below, we'll give you a full rundown of the co-op multiplayer feature in Subnautica 2 so you can hop in with friends right away. How to play with friends in multiplayer in Subnautica 2 Subnautica 2 has a maximum co-op limit of four players , meaning you and up to three other friends can play in the same party at one time. Fortunately, Subnautica 2 also has full cross-play support, meaning you can play with any friend on PC or Xbox. The game also supports cross-progression if you happen to own two systems and purchase two copies. Continue Reading at GameSpot",
+      "tags": [
+        "Games",
+        "GameSpot"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "0ca74f56a4c15f05",
+      "title": "Ramaphosa using ‘delay and evasion tactic’ in legal review of Phala Phala report",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-11T19:26:00Z",
+      "url": "https://iol.co.za/news/south-africa/2026-05-11-ramaphosa-using-delay-and-evasion-tactic-in-legal-review-of-phala-phala-report/",
+      "image_url": "https://iol-prod.appspot.com/image/3ef4a5eea5c90c793e6b3295d3b53a0c64a228f7",
+      "summary": "President Cyril Ramaphosa has announced his intention to challenge the Section 89 Independent Panel report.",
+      "body": "President Cyril Ramaphosa has announced his intention to challenge the Section 89 Independent Panel report.",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "14757115cd3be99e",
+      "title": "Update: ‘I remain here and am not resigning,’ Ramaphosa confirms",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-11T19:00:59Z",
+      "url": "https://www.capetownetc.com/news/impeachment-inquiry-into-ramaphosa-begins-in-parliament/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/Gp3m7yZXIAA3hJD-e1778516835492.jpg",
+      "summary": "Update: President Cyril Ramaphosa has confirmed that he will not resign following last week’s Constitutional Court judement to the Section 89 impeachment process surrounding the Phala Phala scandal, Cape {town} Etc reports. In a national address on Monday evening, Ramaphosa sought to quell mounting speculation around his political future after the Constitutional Court ruled that Parliament acted unlawfully when it voted... Read more → The post Update: ‘I remain here and am not resigning,’ Ramaphosa confirms appeared first on Cape Town ETC .",
+      "body": "Update: President Cyril Ramaphosa has confirmed that he will not resign following last week’s Constitutional Court judement to the Section 89 impeachment process surrounding the Phala Phala scandal, Cape {town} Etc reports. In a national address on Monday evening, Ramaphosa sought to quell mounting speculation around his political future after the Constitutional Court ruled that Parliament acted unlawfully when it voted... Read more → The post Update: ‘I remain here and am not resigning,’ Ramaphosa confirms appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "Featured",
+        "News",
+        "Cyril Ramaphosa"
+      ],
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "id": "abcfeba6aa0a34d2",
       "title": "New World Record for 16-Year-Old Speed Climber",
       "source": "Gripped",
@@ -5731,9 +6801,48 @@
         "Gripped",
         "Profiles",
         "featured"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "df17bc18a0afe118",
+      "title": "Public gets 3 more weeks to comment on Eskom nuclear site – but critics say it’s not enough",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-11T18:00:24Z",
+      "url": "https://www.capetownetc.com/news/public-gets-3-more-weeks-to-comment-on-eskom-nuclear-site-but-critics-say-its-not-enough/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/koeberg_extra_large-e1778489015664.jpg",
+      "summary": "Words: John Yeld / GroundUp Intense public interest and an overwhelming volume of documentation tabled for the site selection of Eskom’s proposed new 5 200MW nuclear power station have led to a three-week extension of the public review period. The original 5 May closing date for comment on the Draft Environmental Scoping Report has been pushed out to Monday, 25 May. The scoping... Read more → The post Public gets 3 more weeks to comment on Eskom nuclear site – but critics say it’s not enough appeared first on Cape Town ETC .",
+      "body": "Words: John Yeld / GroundUp Intense public interest and an overwhelming volume of documentation tabled for the site selection of Eskom’s proposed new 5 200MW nuclear power station have led to a three-week extension of the public review period. The original 5 May closing date for comment on the Draft Environmental Scoping Report has been pushed out to Monday, 25 May. The scoping... Read more → The post Public gets 3 more weeks to comment on Eskom nuclear site – but critics say it’s not enough appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "News",
+        "eskom",
+        "eskom nuclear plant"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "9b9e17749bac7f72",
+      "title": "Motorists warned of dangerous winds on N3 Toll Route",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-11T18:00:00Z",
+      "url": "https://iol.co.za/news/south-africa/2026-05-11-motorists-warned-of-dangerous-winds-on-n3-toll-route/",
+      "image_url": "https://iol-prod.appspot.com/image/9ae4b4465f4b00bc50512efc1b9693601e1d8990",
+      "summary": "Motorists on the N3 Toll Route between KwaZulu-Natal and the Free State are urged to exercise extreme caution as wind speeds exceed 100 km/h on Van Reenen Pass.",
+      "body": "Motorists on the N3 Toll Route between KwaZulu-Natal and the Free State are urged to exercise extreme caution as wind speeds exceed 100 km/h on Van Reenen Pass.",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "id": "471aaa51a5d93c94",
       "title": "Yosemite Climbing Legend Tom Frost, Who Saved Camp 4, Remembered in New Film",
       "source": "Gripped",
@@ -5748,7 +6857,8 @@
         "Gripped",
         "Profiles",
         "featured"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "a7d6d66f2c745908",
@@ -5764,9 +6874,48 @@
         "Climbing",
         "Gripped",
         "News"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "686e81e30273d08b",
+      "title": "Powerful Berg winds cause destruction and injury in KZN communities",
+      "source": "IOL South Africa",
+      "category": "South Africa",
+      "published_at": "2026-05-11T17:04:00Z",
+      "url": "https://iol.co.za/news/weather/2026-05-11-powerful-berg-winds-cause-destruction-and-injury-in-kzn-communities/",
+      "image_url": "https://iol-prod.appspot.com/image/7b307b90e9deb9775d4da2c1feb3f7bee1472c34",
+      "summary": "Severe Berg wind conditions in KwaZulu-Natal on Sunday resulted in gusts of up to 116km/h, causing extensive damage and injuries.",
+      "body": "Severe Berg wind conditions in KwaZulu-Natal on Sunday resulted in gusts of up to 116km/h, causing extensive damage and injuries.",
+      "tags": [
+        "South Africa",
+        "IOL South Africa"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "efb88a08a3064490",
+      "title": "In photos: Cape storm wreaks havoc",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-11T16:42:08Z",
+      "url": "https://www.capetownetc.com/news/in-photos-cape-storm-wreaks-havoc/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/cape_of_storms_12_huge-e1778517717463.jpg",
+      "summary": "Words: GroundUp Staff / GroundUp Western Cape residents are battling stormy weather, which has seen roads across the metro underwater, the roofs of houses blown off, and informal settlements flooded, leaving many households without electricity. On Monday, the Provincial Disaster Management Centre (PDMC) reported three people had died. One person died when a tree fell on a car in Kenilworth, according... Read more → The post In photos: Cape storm wreaks havoc appeared first on Cape Town ETC .",
+      "body": "Words: GroundUp Staff / GroundUp Western Cape residents are battling stormy weather, which has seen roads across the metro underwater, the roofs of houses blown off, and informal settlements flooded, leaving many households without electricity. On Monday, the Provincial Disaster Management Centre (PDMC) reported three people had died. One person died when a tree fell on a car in Kenilworth, according... Read more → The post In photos: Cape storm wreaks havoc appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "Featured",
+        "News",
+        "cape storm"
+      ],
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "id": "b94ccf98f86ff9e3",
       "title": "Yosemite Speed Record, a Big Wall Link-Up and a Rescue",
       "source": "Gripped",
@@ -5780,7 +6929,8 @@
         "Climbing",
         "Gripped",
         "News"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "f9e808f6238074c1",
@@ -5796,9 +6946,83 @@
         "Climbing",
         "GearJunkie Climbing",
         "sponsored content"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "2851940e13c18f7a",
+      "title": "New property law shake-up could make evictions faster in South Africa",
+      "source": "Cape Town ETC",
+      "category": "Cape Town",
+      "published_at": "2026-05-11T16:00:33Z",
+      "url": "https://www.capetownetc.com/news/new-property-law-shake-up-could-make-evictions-faster-in-south-africa/",
+      "image_url": "https://www.capetownetc.com/wp-content/uploads/2026/05/pexels-freestockpro-12955837-e1778501892349.jpg",
+      "summary": "South Africa’s complicated relationship with land, housing and property rights is once again under the spotlight after the government introduced proposed changes that could dramatically reshape eviction disputes across the country, Cape {town} Etc reports. The Department of Human Settlements has officially gazetted the PIE Amendment Bill of 2026, a move that legal experts say could bring major changes for landlords,... Read more → The post New property law shake-up could make evictions faster in South Africa appeared first on Cape Town ETC .",
+      "body": "South Africa’s complicated relationship with land, housing and property rights is once again under the spotlight after the government introduced proposed changes that could dramatically reshape eviction disputes across the country, Cape {town} Etc reports. The Department of Human Settlements has officially gazetted the PIE Amendment Bill of 2026, a move that legal experts say could bring major changes for landlords,... Read more → The post New property law shake-up could make evictions faster in South Africa appeared first on Cape Town ETC .",
+      "tags": [
+        "Cape Town",
+        "Cape Town ETC",
+        "News",
+        "eviction laws",
+        "housing crisis"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "79d1372d82b8de44",
+      "title": "Aston Martin, Honda provide update on F1 power unit progress",
+      "source": "Motorsport.com F1",
+      "category": "F1",
+      "published_at": "2026-05-11T15:35:02Z",
+      "url": "https://www.motorsport.com/f1/news/aston-martin-honda-provide-update-on-f1-power-unit-progress/10820002/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "image_url": "https://cdn-7.motorsport.com/images/amp/6DGqLy7Y/s6/fernando-alonso-aston-martin-r.jpg",
+      "summary": "Just two months ago, it was nearly unthinkable for an Aston Martin car to complete a Formula 1 grand prix. The team’s switch to a works Honda power unit deal from customer Mercedes powertrains backfired, with the Japanese engine generating vibrations that repeatedly damaged batteries and tended to numb drivers’ bodies. As a consequence, Aston Martin recorded just one official finish over ... Keep reading",
+      "body": "Just two months ago, it was nearly unthinkable for an Aston Martin car to complete a Formula 1 grand prix. The team’s switch to a works Honda power unit deal from customer Mercedes powertrains backfired, with the Japanese engine generating vibrations that repeatedly damaged batteries and tended to numb drivers’ bodies. As a consequence, Aston Martin recorded just one official finish over ... Keep reading",
+      "tags": [
+        "F1",
+        "Motorsport.com F1",
+        "Formula 1"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "74b95942f2a178bb",
+      "title": "Daniel Ricciardo refuses to rule out racing return after abrupt F1 exit: \"Never say never\"",
+      "source": "Motorsport.com F1",
+      "category": "F1",
+      "published_at": "2026-05-11T15:12:25Z",
+      "url": "https://www.motorsport.com/f1/news/daniel-ricciardo-refused-to-rule-out-racing-return-after-abrupt-f1-exit-never-say-never/10820037/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "image_url": "https://cdn-6.motorsport.com/images/amp/YKEMxvk0/s6/daniel-ricciardo-rb-f1-team.jpg",
+      "summary": "Daniel Ricciardo has failed to rule out a return to racing in the future, but insists that if he does return to the cockpit, it would not be to chase a championship victory. The Australian driver left the world of Formula 1 behind him after his abrupt exit from the championship at the 2024 Singapore Grand Prix, when he was replaced at Racing Bulls by Liam Lawson. Ricciardo has opened up ... Keep reading",
+      "body": "Daniel Ricciardo has failed to rule out a return to racing in the future, but insists that if he does return to the cockpit, it would not be to chase a championship victory. The Australian driver left the world of Formula 1 behind him after his abrupt exit from the championship at the 2024 Singapore Grand Prix, when he was replaced at Racing Bulls by Liam Lawson. Ricciardo has opened up ... Keep reading",
+      "tags": [
+        "F1",
+        "Motorsport.com F1",
+        "Formula 1"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "bffd46ab44a01d65",
+      "title": "Fernando Alonso takes delivery of $12million hypercar with matching baby seat",
+      "source": "Motorsport.com F1",
+      "category": "F1",
+      "published_at": "2026-05-11T14:50:43Z",
+      "url": "https://www.motorsport.com/f1/news/fernando-alonso-takes-delivery-of-12million-hypercar-with-matching-baby-seat/10820031/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "image_url": "https://cdn-2.motorsport.com/images/amp/YMX3G532/s6/fernando-alonso-aston-martin-r.jpg",
+      "summary": "Most car deliveries don't come with a matching child seat. Then again, most car deliveries don't involve a one-of-one hypercar valued at an eight-figure sum. Fernando Alonso isn't like most people, however, with the Aston Martin driver recently taking delivery of a rare and very expensive Pagani Zonda in Monaco. He took the keys to a bespoke Pagani Zonda 760 Roadster Diamante Verde, a ... Keep reading",
+      "body": "Most car deliveries don't come with a matching child seat. Then again, most car deliveries don't involve a one-of-one hypercar valued at an eight-figure sum. Fernando Alonso isn't like most people, however, with the Aston Martin driver recently taking delivery of a rare and very expensive Pagani Zonda in Monaco. He took the keys to a bespoke Pagani Zonda 760 Roadster Diamante Verde, a ... Keep reading",
+      "tags": [
+        "F1",
+        "Motorsport.com F1",
+        "Formula 1"
+      ],
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "id": "5fe4b851b1af5642",
       "title": "Climbers Repeat 11-Pitch 5.13c on Madagascar Granite",
       "source": "Gripped",
@@ -5812,7 +7036,8 @@
         "Climbing",
         "Gripped",
         "News"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "e4264e3f627debf5",
@@ -5830,7 +7055,8 @@
         "Indoor Climbing",
         "featured",
         "indoor climbing-featured"
-      ]
+      ],
+      "is_new": false
     },
     {
       "id": "af1eee62a3a5e6cc",
@@ -5848,12 +7074,57 @@
         "Gear",
         "Arc'teryx",
         "featured"
-      ]
+      ],
+      "is_new": false
     },
     {
+<<<<<<< HEAD
       "id": "dbad2b90a4661783",
       "title": "Pinnacle Point Golf Course",
       "source": "What's On in Cape Town Events",
+=======
+      "id": "2b86f68c2b7e3bc9",
+      "title": "What We’re Reading, 2026 vol. 1",
+      "source": "Alpinist",
+      "category": "Climbing",
+      "published_at": "2026-05-08T16:36:46Z",
+      "url": "https://alpinist.com/escape-route/what-were-reading-2026-vol-1/",
+      "image_url": "",
+      "summary": "So far this year, we've gotten a glimpse into the mind of Reinhold Messner, let Jeremy Collins’ words and sketches transport us around the world and adventured with the Explorer's Club. Perhaps you'll be inspired to pick up a copy of Against the Wind, Eventually a Sequoia or Letters from the Edge while we're busy at work on Alpinist 94. Happy reading! The post What We’re Reading, 2026 vol. 1 appeared first on Alpinist .",
+      "body": "So far this year, we've gotten a glimpse into the mind of Reinhold Messner, let Jeremy Collins’ words and sketches transport us around the world and adventured with the Explorer's Club. Perhaps you'll be inspired to pick up a copy of Against the Wind, Eventually a Sequoia or Letters from the Edge while we're busy at work on Alpinist 94. Happy reading! The post What We’re Reading, 2026 vol. 1 appeared first on Alpinist .",
+      "tags": [
+        "Climbing",
+        "Alpinist",
+        "Escape Route",
+        "free",
+        "Weekly Feature"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "aa63508a4bff3c44",
+      "title": "The Best Women’s Climbing Pants of 2026",
+      "source": "GearJunkie Climbing",
+      "category": "Climbing",
+      "published_at": "2026-05-08T13:12:19Z",
+      "url": "https://gearjunkie.com/climbing/best-womens-climbing-pants",
+      "image_url": "https://i0.wp.com/s3.amazonaws.com/images.gearjunkie.com/uploads/2023/03/OR-2-scaled.jpg?w=700&ssl=1",
+      "summary": "After months of testing, we found the best women's climbing pants for every style and budget. Suit up and climb on.",
+      "body": "After months of testing, we found the best women's climbing pants for every style and budget. Suit up and climb on.",
+      "tags": [
+        "Climbing",
+        "GearJunkie Climbing",
+        "Apparel",
+        "Rock",
+        "Women"
+      ],
+      "is_new": false
+    },
+    {
+      "id": "1ad84ea3ef23bdac",
+      "title": "What’s on in Cape Town this May",
+      "source": "Events in Cape Town",
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "category": "Cape Town Events",
       "published_at": "2022-04-25T04:54:40Z",
       "url": "https://whatsonincapetown.com/event/pinnacle-point-golf-course/",
@@ -5862,8 +7133,16 @@
       "body": "The post Pinnacle Point Golf Course appeared first on Whats on in Cape Town .",
       "tags": [
         "Cape Town Events",
+<<<<<<< HEAD
         "What's On in Cape Town Events"
       ]
+=======
+        "Events in Cape Town",
+        "Blogs",
+        "News"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     },
     {
       "id": "417b60cb5b8bfb67",
@@ -5877,8 +7156,17 @@
       "body": "The post Erinvale Golf Estate appeared first on Whats on in Cape Town .",
       "tags": [
         "Cape Town Events",
+<<<<<<< HEAD
         "What's On in Cape Town Events"
       ]
+=======
+        "Events in Cape Town",
+        "Blogs",
+        "News",
+        "Performing Arts"
+      ],
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     }
   ]
 }

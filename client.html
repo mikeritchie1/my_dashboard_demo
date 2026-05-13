@@ -1,0 +1,1616 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head id="Head2">
+<meta charset="utf-8">
+<!-- SEO Meta Tags-->
+<meta name="verify-v1" content="PocWayNw90VV699svMvQBJiXxVq4QD73oeU8D1EZsig=" /> 
+<meta name="keywords" content="webtickets, webticket, online ticketing, online tickets, e-tickets, etickets, ticket, tickets, ticketing, buy tickets, ticket system, sell tickets, ticketing system, ticketing agent, ticket agent, ticket sales agent, computicket, itickets, ticketpros, quicket, nutickets, events, tours" />
+<meta name="author" content="Webtickets">
+<meta name="robots" content="all,index,follow" />
+<meta name="title" id="title" content="Webtickets Online" />
+<meta name="description" id="description" content="Book tickets, enter races and live more!" />
+<meta property="og:type" content="article" />
+<meta id="ogTitle" property="og:title" content="Webtickets Online" />
+<meta id="ogDescription" property="og:description" content="Book tickets, enter races and live more!" />
+<meta id="ogImage" property="og:image" content="" />
+
+<meta name="client" content=""/>
+<meta name="event" content=""/>
+<meta name="performance" content=""/>
+
+<meta property="fb:app_id" content="1411017642504569"/>
+<meta name="facebook-domain-verification" content="a86qmp6dx2tv3pjbqi0hoc7kko5asx" />
+<!-- Mobile Specific Meta Tag-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- Favicon and Touch Icons-->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<!--<link rel="manifest" href="site.webmanifest">-->
+<link rel="mask-icon" color="#343b43" href="safari-pinned-tab.svg">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="theme-color" content="#ffffff">
+<!--comment out later-->
+
+<script data-queue-fair-client="webtickets" src="https://files.queue-fair.net/queue-fair-adapter.js"></script>
+
+<!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+<link rel="stylesheet" media="screen" href="css/vendor.min.css">
+<!-- Font Awesome Icons-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Main Template Styles-->
+<link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.css?v=47">
+
+<link rel="stylesheet" href="keyboard/keyboard.css" />
+
+
+<!-- Modernizr-->
+
+<script src="js/modernizr.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAve6GOw6aJy300Vwkt2xzvtJpw_aw__Vo&libraries=places&callback=initMap" async defer></script>
+
+<!--<script src="zhttps://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!--<script type="text/javascript" src=
+    <!-https://maps.googleapis.com/maps/api/js?sensor=false></script> -->
+
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+<!--
+<link rel="stylesheet" href="/resources/demos/style.css">
+    -->
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-MWMMJGQ');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Ads: 989339889 --> 
+
+
+
+<!-- Move this into separate .js page later-->
+<script>
+
+    function GetXmlHttpObjectLike(handler) {
+        var objXmlHttpLike = null
+        if (navigator.userAgent.indexOf("Opera") >= 0) {
+            alert("This example doesn't work in Opera")
+            return
+        }
+        if (navigator.userAgent.indexOf("MSIE") >= 0) {
+            var strName = "Msxml2.XMLHTTP"
+            if (navigator.appVersion.indexOf("MSIE 5.5") >= 0) {
+                strName = "Microsoft.XMLHTTP"
+            }
+            try {
+                objXmlHttpLike = new ActiveXObject(strName)
+                objXmlHttpLike.onreadystatechange = handler
+                return objXmlHttpLike
+            }
+            catch (e) {
+                alert("Error. Scripting for ActiveX might be disabled")
+                return
+            }
+        }
+        if (navigator.userAgent.indexOf("Mozilla") >= 0) {
+            objXmlHttpLike = new XMLHttpRequest()
+            objXmlHttpLike.onload = handler
+            objXmlHttpLike.onerror = handler
+            return objXmlHttpLike
+        }
+    }
+
+    function addToLike(action, userid, eventid) {
+        var url = "AddToLike.aspx?action=" + action + "&userid=" + userid + "&eventid=" + eventid;
+        objXmlHttpLike = GetXmlHttpObjectLike(stateChangedLike);
+        objXmlHttpLike.open("GET", url, true);
+        objXmlHttpLike.send(null);
+
+        if (action == 'add') {
+            if (document.getElementById("btnLike" + eventid)) {
+                document.getElementById("btnLike" + eventid).style.display = 'none';
+                document.getElementById("btnLiked" + eventid).style.display = 'block';
+            }
+            //for event page
+            if (document.getElementById("lnkLike")) {
+                document.getElementById("lnkLike").style.display = 'none';
+                document.getElementById("lnkLiked").style.display = 'block';
+            }
+        }
+        else {
+            if (document.getElementById("btnLike" + eventid)) {
+                document.getElementById("btnLike" + eventid).style.display = 'block';
+                document.getElementById("btnLiked" + eventid).style.display = 'none';
+            }
+            //for event page
+            if (document.getElementById("lnkLike")) {
+                document.getElementById("lnkLike").style.display = 'block';
+                document.getElementById("lnkLiked").style.display = 'none';
+            }
+        }
+    }
+
+    //state changed Like
+    /////////////////////////////////////////
+
+    function stateChangedLike() {
+        if (objXmlHttpLike.readyState == 4 || objXmlHttpLike.readyState == "complete") {
+            if (objXmlHttpLike.responseText == '-1') {
+                alert('You need to be logged in to add this event to your likes.');
+                document.location.href = 'login.aspx';
+            }
+        }
+    }
+
+</script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWMMJGQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- Loading Modal -->
+<div class="modal fade" id="modalLoading" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header" style="display: inline-block;">
+        <h4 class="modal-title">Loading</h4>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sending Modal -->
+<div class="modal fade" id="modalSend" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header" style="display: inline-block;">
+            <h4 class="modal-title">Sending</h4>
+        </div>
+        <div class="modal-body">
+            <p>This may take a few moments..</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<!-- Save Modal -->
+<div class="modal fade" id="modalSave" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header" style="display: inline-block;">
+            <h4 class="modal-title">Saving</h4>
+        </div>
+        <div class="modal-body">
+            <p>Updating your info..</p>
+        </div>
+    </div>
+    </div>
+</div><title>
+	Webtickets Online Tickets - webtickets.co.za
+</title>
+    <style>
+.js-event-item {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 900ms cubic-bezier(.22,.61,.36,1),
+                transform 900ms cubic-bezier(.22,.61,.36,1);
+    will-change: opacity, transform;
+}
+
+.js-event-item.showing {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
+</style>
+</head>
+<body>
+    
+     
+    <!-- Promo Bar-->
+        
+
+    
+
+    <!-- Top Bar-->
+    <!--<div class="top-bar" style="background-image: url(img/promo-bar.jpg);"></div>-->
+
+    <!-- alternative POS header goes here-->    
+    <header id="WebticketsHeader_posheader" class="site-header" style="display:none;">
+    
+    
+
+    <!-- Container-->
+        <div class="container-fluid d-flex align-items-center">
+            <!-- Menu Toggle-->
+            <a class="menu-toggle fas" href="#" data-toggle="mobile-menu"></a>
+            <!-- Logo-->
+            <a class="dashboard-logo" href="client.aspx?clientcode="><img src="../eventmanager/images/webticketsLogo.png" id="WebticketsHeader_webticketsPOSLogo" /></a>
+           <div class="navbar">
+                <ul class="top-menu">
+                <li>
+                    <a class="spinner" href="client.aspx?clientcode="><i class="far fa-calendar-check"></i>&nbsp;Sales</a>
+                </li> 
+           
+                <li class="d-none">
+                    <a class="spinner" href="TransactionLookup.aspx?action=refunds"><i class="fas fa-undo"></i>&nbsp;Refunds</a>
+                </li>
+                <li>
+                    <a class="spinner" href="TransactionLookup.aspx"><i class="fas fa-search"></i>&nbsp;Find Booking</a>
+                </li>
+                <li>
+                    <a class="spinner" href="POSTransactions.aspx"><i class="far fa-file-alt"></i>&nbsp;Recent Transactions</a>
+                </li> 
+                <li>
+                    <a class="spinner" href="LogoutPOS.aspx?nav=webtickets"><i class="far fa-calendar-check"></i>&nbsp;Switch to Webtickets</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Navbar-->
+            <div class="navbar">
+              <!-- Main Menu-->
+               <ul class="top-menu top-menu-small">
+                    
+                    <li id="WebticketsHeader_liSignedIn">
+                        <a href="#"><i class="fas fa-user"></i><span id="WebticketsHeader_lblOperator">Operator</span></a>
+                        <ul id="WebticketsHeader_ulSignedIn" class="sub-menu">
+                            <li id="WebticketsHeader_liDashboard"><a class="spinner" href="client.aspx?clientcode=">
+                                
+                                    New Booking
+                                 
+                                </a>
+                            </li>
+                            <li id="WebticketsHeader_liGlobal"><a class="spinner" href="category.aspx?itemid=1184162">Global Sales</a></li>
+                            <li id="WebticketsHeader_li1" class="sub-menu-separator"></li>
+                            <li id="WebticketsHeader_liPOSlogout"><a class="spinner" href="LogoutPOS.aspx"><i class="fas fa-sign-out-alt text-primary"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+                 
+            </div>
+
+
+
+      </div>
+      <!-- Mobile Menu-->
+      <div class="mobile-menu-wrapper">          
+        <nav class="mobile-menu">
+            <a class="mobile-menu-item spinner" href="client.aspx?clientcode="><span>Sales</span><i class="far fa-calendar-check"></i></a>     
+            <a class="mobile-menu-item spinner" href="TransactionLookup.aspx?action=refunds"><span>Refunds</span><i class="fas fa-undo"></i></a>          
+            <a class="mobile-menu-item spinner" href="TransactionLookup.aspx?action=collections"><span>Collections</span><i class="fa fa-print"></i></a>
+            <a class="mobile-menu-item spinner" href="TransactionLookup.aspx"><span>Transaction Search</span><i class="fas fa-search"></i></a>
+            <!--<a class="mobile-menu-item" href="#"><span>Reschedules</span><i class="fas fa-share"></i></a>  -->        
+                      
+        </nav>
+      </div>
+</header>
+
+    
+   
+    <header id="WebticketsHeader_siteheader" class="site-header" style="display:block;">
+    
+           
+          <!-- Container-->
+          <div class="container-fluid d-flex align-items-center">
+            <img src="img/logo.png" id="WebticketsHeader_imgShare" alt="Webtickets Event Logo for sharing" style="display:none;" />
+            <!-- Menu Toggle--><a class="menu-toggle fas" href="#" data-toggle="mobile-menu"></a>
+            <!-- Logo--><a class="site-logo align-middle spinner" href="default.aspx"><img src="https://content.webtickets.co.za/webtickets/WebticketsLogoLiveMore.png" id="WebticketsHeader_WebticketsLogo" alt="Webtickets" onerror="this.onerror=null;this.src=&#39;img/WebticketsLogoLiveMore.png&#39;" /></a>
+          
+            <!-- Navbar-->
+            <div class="navbar">
+              <!-- Top Menu-->
+              <ul class="top-menu">
+                <li>
+                    <a href="PersonalProfile.aspx">
+                        <i class="fas fa-user"></i><span id="WebticketsHeader_lblCustomerTop">Sign in</span>
+                    </a>
+                    
+                
+                </li>      
+              
+                <li>
+                    <a class="spinner" href="MyTickets.aspx"><i class="fas fa-ticket-alt"></i>My Tickets</a>
+            
+                    
+                </li>
+                
+                <li><a class="spinner" href="MyLikes.aspx"><i class="fas fa-heart"></i>My Likes&nbsp;<span id="WebticketsHeader_lblLikeCount" class="badge badge-default badge-pill"></span></a>
+                  
+                </li>
+
+                <li><a href="#"><i class="fas fa-life-ring"></i>Help &amp; Info</a>
+
+                    <ul class="sub-menu">
+                            
+                            <li><a class="spinner" href="faq.aspx">FAQ's</a></li>
+                            <li class="sub-menu-separator"></li>
+                            <li id="WebticketsHeader_selltickets"><a class="spinner" href="SellWithUs.aspx"><i class="far fa-calendar-check text-primary"></i> List your Event</a></li>
+                       </ul>
+                </li>            
+             
+                <li class="d-none"><a class="spinner" href="default.aspx"><i class="fas fa-map-marker-alt"></i><span id='locationCity'/>My Location</a>
+                 <ul class="sub-menu">
+                    <li><a class="spinner" href="default.aspx">Change Location&nbsp;</a></li>
+                  </ul> 
+                </li>
+                   
+                    <li>
+                        <img src="https://content.webtickets.co.za/webtickets/pnplogo_new.png" id="WebticketsHeader_WebticketsHeader_WebticketsLogosx" width="110" alt="Webtickets" onerror="this.onerror=null;this.src=&#39;img/pnplogo_new_reduced.png&#39;" />
+                    </li>            
+                    
+              </ul>
+              <!-- Main Menu-->
+              <ul class="main-menu">
+                  <!--hide for now-->
+                <li>
+                  <a href="category.aspx?itemid=1184162&location=0&when=anytime" id="WebticketsHeader_eventsLink" class="spinner"><i class="fas fa-binoculars"></i>Events</a>
+                  <!-- Mega Menu "Browse"-->
+                  <div class="mega-menu" style="min-height: 416px; background-image: url(img/mega-menu-bg.png);">
+                    <div class="container">
+                  
+                      <h3 class="h4 mb-4"><span class="d-inline-block align-middle h2 mb-0 mr-2 text-primary"><i class="fas fa-ticket-alt"></i></span>Event Tickets</h3>
+                  
+                      <!-- Categories Carousel (populate for active and entertainment -->
+                      <div id="WebticketsHeader_divCategories" class="owl-carousel nav-outside" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: true, &quot;margin&quot;: 30, &quot;items&quot;: 3 }"></div>
+                  
+                      <!-- See All Button-->
+                      <div class="text-center pt-3"><a href="#" id="WebticketsHeader_lnkCategories" class="btn btn-primary">See All Categories</a></div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="category.aspx?itemid=1184156&location=0&when=anytime" class="spinner d-none d-xl-block"><i class="fa fa-suitcase"></i>Tourism &amp; Activities</a></li>
+
+
+                <li><a href="category.aspx?itemid=1464902623&location=0&when=anytime" id="WebticketsHeader_raceCategoryLink" class="spinner"><i class="fas fa-walking"></i>Race Entries</a>
+                  <!-- Mega Menu "Browse"-->
+                  <div class="mega-menu" style="min-height: 416px; background-image: url(img/mega-menu-bg.png);">
+                    <div class="container">
+                 
+                       <h3 class="h4 mb-4"><span class="d-inline-block align-middle h2 mb-0 mr-2 text-primary"><i class="fas fa-walking"></i></span>Race Entries &amp; Fitness Classes</h3>   
+                 
+                      <!-- Categories Carousel (populate for active and entertainment -->
+                      <div id="WebticketsHeader_divActiveCategories" class="owl-carousel nav-outside" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: true, &quot;margin&quot;: 30, &quot;items&quot;: 3 }"></div>
+                      <!-- See All Button-->
+                      <div class="text-center pt-3"><a href="#" id="WebticketsHeader_lnkActiveCategories" class="btn btn-primary">See All Categories</a></div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="vouchers.aspx" class="spinner d-none d-xl-block"><i class="fas fa-bookmark"></i>Vouchers</a></li>
+
+                  <!--
+                <li id="WebticketsHeader_smartShopper"><a class="spinner" href="loyaltypartner.aspx?program=smartshopper"><i class="fas fa-tags"></i>Smart Shopper</a></li>
+                      -->
+                
+                  <li><a class="spinner" href="SellWithUs.aspx"><i class="far fa-calendar-check"></i>List your Event</a>
+
+              
+                   <div class="mega-menu" style="display:none;background-image: url(img/mega-menu-bg.png);">
+                    <div class="container pb-5">
+                      <div class="row">                    
+                            <div style="display:none;" class="col-6"><a class="promo-box" href="#">
+                            <h3 class="promo-box-title"><span>Visa Checkout Deals</span><span class="count">12</span></h3></a></div>
+                    
+                          <div class="col-6"><a class="promo-box" href="loyaltypartner.aspx?program=smartshopper">
+                            <h3 class="promo-box-title"><span>PnP Smart Shopper Deals</span></h3></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+            
+
+                <li><a href="competition.aspx" class="spinner d-none"><i class="fas fa-bullhorn"></i>Friday Freebies</a></li>
+
+                <li style="display:none;"><a href="#"><i class="fas fa-life-ring"></i>Help &amp; Info</a>
+                  <!-- Mega Menu "Help & Info"-->
+                  <div class="mega-menu" style="background-image: url(img/mega-menu-bg.png);">
+                    <div class="container pb-5">
+                      <div class="row">
+                        <div class="col-6">
+                          <h3 class="h4 mb-4"><span class="d-inline-block align-middle h2 mb-0 mr-2 text-primary"><i class="far fa-life-ring"></i></span>Help</h3>
+                          <h4 class="h5 mb-3 text-normal"><a class="navi-link-2" href="faq.aspx">Frequently Asked Questions</a></h4>
+                          <h4 class="h5 mb-3 text-normal"><a class="navi-link-2" href="item.aspx?itemid=707">Contact Us for Support</a></h4>
+                        </div>
+                        <div class="col-6">
+                          <h3 class="h4 mb-4"><span class="d-inline-block align-middle h2 mb-0 mr-2 text-primary"><i class="fas fa-info-circle"></i></span>Info</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> 
+                 <li style="display:none;font-size:20px;color:red"></li>
+              </ul>
+              <!-- Search Box: hide for now-->
+               
+               <form class="search-box" method="get" name="frmSearch" id="frmSearch" action="search.aspx">
+                <div class="input-group">
+                  <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"></span></div>
+                  <input class="form-control search-autocomplete" type="search" id="site-search" name="search" placeholder="Search for any event"><span class="input-group-addon text-primary"><i class="fas fa-search"></i></span>
+                </div>
+              </form>
+              
+              <!-- Toolbar-->
+              <div class="toolbar">
+                <!-- Search Button - hide for now-->
+                
+                <div class="tool-search"><i class="fas fa-search"></i><span>Search</span></div>
+                  
+                  <!-- Cart-->
+                  
+
+<div class="tool-cart ">
+    <a href="Cart.aspx"></a>
+    
+    <i class="fas fa-shopping-cart"></i>
+    <span id="WebticketsHeader_ucCartTool_lblItemCount" class="count">0</span>
+    <span class="subtotal">R&nbsp;
+            <span id="WebticketsHeader_ucCartTool_lblTotal">0.00</span></span>
+    <span id="WebticketsHeader_ucCartTool_spanCountdown" class="countdown-nocss text-danger subtotal" data-date-time="05/12/2026 10:14:40" style="display:none;"><span>
+        <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span></span>
+    </span>
+    <div id="WebticketsHeader_ucCartTool_divCartDropDown" class="cart-dropdown" style="display:none;">
+        <!-- Items-->
+        
+        <!-- Footer-->
+        <div class="cart-dropdown-footer">
+
+            <div class="d-flex justify-content-between">
+                
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <h5 class="h6 text-normal">Total</h5>
+                <h6>R<span id="WebticketsHeader_ucCartTool_lblFooterTotal">0.00</span></h6>
+            </div>
+            <div class="d-flex justify-content-between">
+                <a id="WebticketsHeader_ucCartTool_lnkCart" class="btn btn-sm btn-outline-primary mr-0 px-3" href="cart.aspx">View cart</a><a id="WebticketsHeader_ucCartTool_lnkCheckout" class="btn btn-sm btn-primary mr-0 px-3" href="checkoutpayment.aspx">Checkout</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+ 
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu-->
+          <div class="mobile-menu-wrapper">
+            <!-- Account--><a class="account-link" href="#">
+              <!--<div class="user-ava"><img src="img/account/user-ava-md.jpg" title="Christy Turner"></div>-->
+              <div class="user-info">
+                <h6 id="WebticketsHeader_lblMobiCustomer" class="user-name" onclick="location.href=&#39;personalprofile.aspx&#39;"></h6>
+              
+                  <!--<span class="text-sm text-gray opacity-60"><i class='fas fa-map-marker-alt'></i> &nbsp;<span id="WebticketsHeader_lblMobiLocation"></span></span>-->
+              </div></a>
+              
+              <nav class="mobile-menu">
+                <a class="mobile-menu-item spinner" href="../eventmanager/Profiles.aspx"><span>Switch To Selling</span><i class="fa-solid fa-sack-dollar"></i></a>
+                  <div class="mobile-menu-divider"></div>
+              </nav>
+              
+              <form class="p-25" method="get" action="search.aspx">
+                  <div class="input-group"><span class="input-group-btn">
+                      <button type="submit"><i class="fas fa-search"></i></button></span>
+                    <input class="form-control search-autocomplete" type="search" name="search" placeholder="Search Webtickets">
+                  </div>
+                </form>
+       
+            <!-- Menu (hide for now)-->
+          
+            <nav class="mobile-menu">
+                <a class="mobile-menu-item spinner" href="default.aspx"><span>Home</span><i class="fas fa-home"></i></a>         
+                <div class="mobile-menu-divider"></div>
+                <a class="mobile-menu-item spinner" href="category.aspx"><span>Browse Events</span><i class="fas fa-binoculars"></i></a>
+                <a href="SellWithUs.aspx" id="WebticketsHeader_mobileSellTickets" class="mobile-menu-item spinner"><span>List your Event</span><i class="far fa-calendar-check"></i></a>         
+                <a class="mobile-menu-item spinner" href="vouchers.aspx"><span>Vouchers</span><i class="fas fa-bookmark"></i></a>
+                <a class="mobile-menu-item collapsed" href="#menu-deals" data-toggle="collapse"><span>Deals</span><i class="fas fa-tags"></i></a>
+                <ul class="mobile-submenu collapse" id="menu-deals">
+                    <li><a class="spinner" href="loyaltypartner.aspx?program=smartshopper">PnP Smart Shopper Deals</a></li>
+                </ul>      
+       
+                <a class="mobile-menu-item collapsed" href="#menu-help" data-toggle="collapse">
+                <span>Help &amp; Info</span><i class="fas fa-life-ring"></i></a>
+      
+                <ul class="mobile-submenu collapse" id="menu-help">
+                    
+                    <li><a class="spinner" href="faq.aspx">Frequently Asked Questions</a></li>
+                  </ul>
+                <div class="mobile-menu-divider"></div>
+                <a class="mobile-menu-item spinner" href="PersonalProfile.aspx"><span>My Profile</span><i class="fas fa-user"></i></a>         
+                <a class="mobile-menu-item spinner" href="MyTickets.aspx"><span>My Tickets</span><i class="fas fa-ticket-alt"></i></a>
+                <a class="mobile-menu-item spinner" href="MyTickets.aspx"><span>My Vouchers</span><i class="fas fa-ticket-alt"></i></a> 
+                <a class="mobile-menu-item spinner" href="MyTickets.aspx"><span>My Race Entries</span><i class="far fa-calendar-check"></i></a>   
+                <a class="mobile-menu-item spinner" href="MyEventPasses.aspx"><span>My Passes</span><i class="fas fa-key"></i></a> 
+                <a class="mobile-menu-item spinner" href="MyMemberships.aspx"><span>My Membership Cards</span><i class="fas fa-ticket-alt"></i></a> 
+                <a class="mobile-menu-item d-none" href="MyGiftVouchers.aspx"><span>My Webtickets Gift Cards</span><i class="fas fa-ticket-alt"></i></a> 
+                
+                <a class="mobile-menu-item spinner" href="MyWebTickets.aspx"><span>Order History</span><i class="fas fa-ticket-alt"></i></a>
+                <a class="mobile-menu-item spinner" href="PromoterProfile.aspx"><span>Promoter Profile</span><i class="fas fa-ticket-alt"></i></a>
+                <a class="mobile-menu-item spinner" href="MyLikes.aspx"><span>My Likes</span><i class="fas fa-heart"></i></a>
+                <a class="mobile-menu-item d-none" href="#"><span id="locationCityMobile"></span><i class="fas fa-map-marker-alt"></i></a>
+                
+                
+            </nav>
+          </div>
+        </header>
+    
+    <!--pnp can go here-->
+
+    <header id="WebticketsHeader_pnpheader" class="site-header mb-2" style="display:none;">
+        
+        <!--
+        comment below out to remove keyboard
+        -->
+        <!--
+        <link rel="stylesheet" href="onscreenkeyboard/css/jsKeyboard.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="jsKeyboard-custom.css" type="text/css" media="screen"/>
+        <script type="text/javascript" src="js/jsKeyboard.js"></script>-->
+        <!--
+        comment above out to remove keyboard
+        -->
+        <!-- Container-->
+        <div class="container-fluid d-flex align-items-center mb-2">
+          <!-- Menu Toggle--><a class="menu-toggle fas" href="#" data-toggle="mobile-menu"></a>
+          <!-- Logo-->
+          <a class="dashboard-logo" href="Default.aspx" onclick="document.getElementById('loaderimage').style.display='';"><img src="https://content.webtickets.co.za/webtickets/pnplogo_new.png" id="WebticketsHeader_Img1" onerror="this.onerror=null;this.src=&#39;img/pnplogo_new_reduced.png&#39;" /></a>
+          <small class="d-none"><span id="WebticketsHeader_lblHeader">Webtickets PnP Ticket POS</span>&nbsp;(w9.pr.a)</small>
+            <!-- Navbar-->
+          <div class="navbar">
+            <!-- Main Menu-->
+             <ul class="top-menu top-menu-small">
+                  <li><a href="category.aspx?itemid=1184162&location=0&when=anytime" id="WebticketsHeader_lnkHome" onclick="document.getElementById(&#39;loaderimage&#39;).style.display=&#39;&#39;;"><i class="fas fa-life-ring"></i>Home</a></li>
+                  <li><a href="abort.aspx" id="WebticketsHeader_lnkAbort" onclick="document.getElementById(&#39;loaderimage&#39;).style.display=&#39;&#39;;"><i class="fas fa-life-ring"></i>Exit PnP</a></li>
+                  <li><a href="#"><i class="fas fa-life-ring"></i>Support 0861 999 710</a></li>
+              </ul>
+          </div>
+        </div> 
+         <div class="mobile-menu-wrapper">
+              <nav class="mobile-menu">
+                  <a class="mobile-menu-item" href="category.aspx?itemid=1184162&location=0&when=anytime"><span>Home</span><i class="fas fa-home"></i></a> 
+                  <a class="mobile-menu-item" href="abort.aspx"><span>Exit PnP</span><i class="fas fa-home"></i></a> 
+              </nav>
+         </div>
+    </header>
+
+    <!--generic spinner-->
+    <div class="row justify-content-center">
+        <div id="page-loader" style="display:none;"></div>
+    </div>
+<script>
+    if (window.frameElement) {
+        document.getElementById('siteheader').style.display = 'none';
+    }
+</script>
+    <!-- Page Title-->
+    
+  <div class="page-title">
+    <div class="container">
+        <div class="row justify-content-md-between">
+            <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
+                <h1 id="PageHeaderPanel_pageHeader">The Labia Theatre</h1>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <ul id="PageHeaderPanel_ulBreadCrumbs" class="breadcrumbs"><li><a href="/v2">Home</a></li><li class="separator"><i class="fas fa-long-arrow-alt-right">&nbsp;</i></li><li><a>The Labia Theatre</a></li></ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Page Content-->
+
+    <div id="divPageBanner" class="single-product-banner">
+        <div id="imgEventBg" class="sp-background" style="background-image:url(https://content.webtickets.co.za/labia/banner_labia%20outside%20JPG_20240708_103504.jpg);"></div>
+        <img src="https://content.webtickets.co.za/labia/banner_labia outside JPG_20240708_103504.jpg" id="imgEvent" alt="Event Photo" />
+    </div>
+    <div id="divEventContent" class="container py-1 my-1 margin-top-0x">
+        <div id="divAbout" class="row py-4 mt-0">
+            <div class="col-lg-2 col-md-3 text-center text-sm-left text-md-right">
+                <h3 class="h4 text-primary">About</h3>
+            </div>
+            <div class="col-lg-8 col-md-9 text-center text-sm-left">
+                <p class="text-lg">
+                    <span id="clientInfo">The Labia Theatre is the oldest independent Art-Repertory Cinema in South Africa, showing the best of circuit, independent movies, foreign films, documentaries, classics and other alternative and art circuit films.<br/><br/>Enjoy quality movies at reasonable admission prices in our four characteristic screens at 68 Orange Street, Gardens.<br/><br/>The Labia Movie Theatre on Orange Street is Cape Town’s original Independent Art Movie house and consists of four screens, a 176 seater, a 100, a 65 seater, an intimate 50 seater.</span></p>
+            </div>
+        </div>
+        <div id="divWebsite" class="row pb-4">
+            <div class="col-lg-2 col-md-3 text-center text-sm-left text-md-right">
+                <h3 class="h4 text-primary">More Info</h3>
+            </div>
+            <div class="col-lg-8 col-md-9 text-center text-sm-left"><a href="https://www.thelabia.co.za/" id="web_link" class="navi-link text-lg" target="_blank">https://www.thelabia.co.za/</a></div>
+        </div>
+        <div id="divSocialMedia" class="row pb-4">
+            <div class="col-lg-2 col-md-3 text-center text-sm-left text-md-right">
+                <h3 class="h4 text-primary pt-2">Social</h3>
+            </div>
+            <div class="col-lg-8 col-md-9 text-center text-sm-left">
+                <a href="https://www.facebook.com/LabiaTheatre/" id="facebook_link" target="_blank" class="social-button shape-circle sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/LabiaTheatre" id="twitter_link" target="_blank" class="social-button shape-circle sb-twitter" data-toggle="tooltip" data-placement="top" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/thelabia/" id="instagram_link" target="_blank" class="social-button shape-circle sb-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <!--
+                <a href="#" id="whatsapp_link" target="_blank" class="social-button shape-circle sb-twitter" data-toggle="tooltip" data-placement="top" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>       
+                -->
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-12 order-lg-2">
+                <form name="frmCategory" method="post" action="./client.aspx?clientcode=labia" id="frmCategory">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="oO+o8b9hMzAOo1gYgrniSZ4tY7u6f+GtxMR5/a4NYrsjpzHByeUZlEG8Z+QQcpEcVkPjXubn3wwgjmVlWNEbdqoyfWLJk3/fxtGndxjCpuI51GcugWsmO73GvSUwQhs7Psl0u/cKWy1X+INV9YQ2KRhTU6RIgOM5mF4zATWKBwCyT+LuiNN/O+Op0foSHXTBk0Iek3jy9BLUJQ8rBA4mq2mX1KHiZ+J5rhjtSwwlM5x5vkPszrvaj3DCgPB1AwgtmlbvJKVvKdvvXijPMvoKZ9Bh5fBV6/nt2zWDUMM+v4osM7ELNX9SB9baeHDv/48FKmAroYP/2Vo0ffyQLSz+4AsJ0fw8B7v/d0QkXKzfT1k/RO4kKxBxCrPgZmIK7cPkJVgIY85MoPclLiLKKjwuV+w+ZOKVxTa9Skq0aII0K0tGpy3AKF/C01T7v2uK0k2WZQcNX5z1glIbrp94mvCc010wOORZxS1aWzODZbDaCdoPP4pUcd6sd1TrxaFfm4YpkTKZy78sGyMWrQY0g+EBQrPBqQW2sWkUfgr5wttedcUh6HKWPxIXVC+zU6dujUKhrYAW5Ak+6D82Vg0b+6xQ+vqPJf5ApnNXolbJXEjd7r+MemcwR9I/ahOEer9gn4uG86TQqnzUyoRpBt6N9b7KydCkRcN0Ra4P/9EFJPwWAr1U089nI0yOKo6xgLZrINdhkro33/4rSaIFscCsPCw6ijwZ5iWou/+NCErMMx0GKwR5LxSrcIzvrH1CMZa8DsqFO1aWEYXYOana6u3gqAtw/+QIQ5WkESpioW5/5Jdb9xngveJXUIWldHNGqybMQE+/rJNzCJLCSvopcNKVqiL8VWq/WjtseqmLMnZr8fwSRPc+BUa9h0FkQTrUPmxof8smRCif27R/vFf7CSzIJFR5OipZvL22gSIT1Hp6Izgnsjvez5vVluc+Dtul44fTJMBM9KzmHhHlZTLl9YmjcUCcnQWnXAlrvOEoNMq4FnCZAsE6VhM/nwpBzQMFRQ8mkrL/e2GQ7QcGRpfKz+9RLma6cQrIhMS7lgN6EYLcIPxF/mb99gIXJpsWLCZ+y3Sc7asjd0Hey3Ab+AJ23O/To33unWp/2IC4MyzS50GvnwX0DSWYM9FdJNyS5a90ocfxJswQx14N6LD3iGTN6u/7Or9ek4Iip1UCebczbe8yOhEnmImAs9dZ+INteUbTRh5VXwuxg4pWMQGi7Iil45T35a8jjDqedq8K1uFb5SVQd9z51I2sDOpKR/2tm98/KkP6tsLRipmPbrRmdDBRWW8C+4yKkWtcUo5hZat+Acud1G0yTQmhAf0xoMVXnhVgxu8/uJDEhXf6S0TjZIa7vdxogcCzCh7MGj1uU5vqulN6xXKDWB8V+5AgCA16DRS7DOrd7JPNoQUW7Xy1FBWOmvcINeVQ5e7onEGmR0kNNO3twZW9/A6leQ9hhgY4r91y2jVdoeLnViheSaXtO9nt9xcxPEjLwFWfHdfSiAaCjyecK6YYtueBXpsekAGqyipe2r6dO75W+CkT2U80KY3HqJNTUbhjsBYGBwj2+PZGtpziF/PnE4oFqRpZEZqydlx/Za5XeNHTudjsEQA7pyW9Ps2Fm8NKJsWql+CPSDwgYTfvbw2iCBdsMr68eNiuNLrHWeCmqkhGTnfAxjvRHn4CFZ+k2hdE7shZlutbRyJALMpY7qeZegS9E0uRPFOYeYo99xumqgcOEJAu8a++3CUR93C/6noQCbvvcPmFpUt8RcNxYkhxZG8RYHNX5GO+YPO9wB0+FVmWgZ0j5Kx81IOg/yr9+/l5YvoCPnzTZyIYlar2ZAE057BYXzM+Ki/9/DFJYY46x4EdqCtdc0dGSIL/m0SIYNwQzjiTa7FPOk/dSByVTCWpmzbO56rYhWqCa6FaNAeiKRq0+DUqq6I+gqv16dP8zVIJq1/1Jc52Bo8qp7CICbuce8xPn+82SYmdYMMH1MDLrnIKs+H0mVvoaVVQv5f7h3hPfJIKqNn3MS8xxhynfaAOiVppxp6IA5xCoM0H0v7GZ/VBhNeIK0DuAm0a41Eeqy7f1l0L+2po8qBY2gOenZ+NGYVWTTXlP3/cgW+aTyB4EazVD92guaE+3uziSPGKju65GxVyWyOkCAqCG1YxKZx1Nf7QNrZD+DR8TbPp6IS5j+0g8e/0W2uG5/Kj9+g+1cHF/FkbxkQ0Y1WZopts372mU3RtszU/aepZgZ3P5qER0Tpqg5xajdItN4K8NR2cGAA2OTCPa6W5wEDqclnd/XzQUwdwX2aHSVTR7AmNEBRdiR8EGtI7JHXzqJ5hU+3GaaBPc4CZ0jzDC9lTK+DMhAdsQrVmNlJUx+L++UrXMGcq/7otl2kiLKGyMZdVDD+cfl30ZPgE4dQeTnK4rnllvW6RLQkqkXSxtGCNHvaYrjcG3oU2PFNLSaEHLf/XkbsEVkMprv9dY9ojFgyQaVakknYgdOAtN30fAb/tZWnZpV2GX7NQlybCrUx4eiv6TgPG++l26rfb4MKmf5hYis5MZKO+nBGprGIseVZmeYXHzE4UD+0W9WTVWo6v6C5PkSWovLgvZNsFIfv7ThenxaH06axa75VK0jrlLNbFgrMoH2eVP0EELIqliCAfV0YMX/n3tQPZAkifMt2pPpeqqzP7Y/+mWtHcBzVbk/xs5N1IxoTDWPxL7Jrrns6dP8DwIvgYJdb4yY19TS2B+oiywmOVWcPNDcREzbni4rah22oNEr5MZOmRt5kE+MZZ+BCfwVjgj4//BIFCR4GjMSapG40UsEOmRnLcQiul3U+JdotToH9txqUB7/wuwLDZrmo2v8QH7w2cbaRgVG2ob7wLL14ofjCkFi0vTYzNRY4A39MXO7CxtG6RL61XXqSoMhdBK24A3kEjqWFLVnSWW3T8VODMrCLTtouORcuReEMWsxZYDqSGcVtN2cJ7zFRUiRt6TC3cT1GEZebxyaTN8Ed4/nUVAUhJPVjgJ2KIWsnvXYofNH07qw3Qon4kyZhapupPuB0SKtru8Zexn8iXS9pv+c5SEb4T4uMfLfSTGKJ/vYaHgjYaaEjbY8QsoTKtZb2Z3PxuJMEZFl/rdRAMbQSTmnCW4WQ1P/I1r9leGd4xFA2uPyE4CQstB7qaJf+onVLzOoxOx1+AYusKOonN6aC6fx0lT1kmwa4=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9C6434D5" />
+                    
+                    <!-- Events Grid-->
+                    <div id="event_list" class="row"><div class="col-md-4 col-sm-6 js-event-item" data-idx="0">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1593131040" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">MICHAEL (13LV) ( PPS).</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1593131040" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_michael image 1_20260412_123928.jpg" alt="MICHAEL (13LV) ( PPS)." style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1593131040" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1593131040)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1593131040" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1593131040)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">From 13 May 2026 11:30</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1593131040">MICHAEL (13LV) ( PPS).</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>Labia Theatre</li></ul>
+    
+    <div class="product-card-price">R90</div>
+    <span class="text-primary"></span>
+    <a id="ctl02_lnkNext" class="spinner"></a>
+</div>
+</div><div class="col-md-4 col-sm-6 js-event-item" data-idx="1">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1594570856" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">THE SHEEP DETECTIVES (PGV)</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1594570856" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_sheep detectives image 2_20260503_104210.jpg" alt="THE SHEEP DETECTIVES (PGV)" style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1594570856" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1594570856)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1594570856" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1594570856)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">From 13 May 2026 11:45</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1594570856">THE SHEEP DETECTIVES (PGV)</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>Labia Theatre</li></ul>
+    
+    <div class="product-card-price">R90</div>
+    <span class="text-primary"></span>
+    <a id="ctl04_lnkNext" class="spinner"></a>
+</div>
+</div><div class="col-md-4 col-sm-6 js-event-item" data-idx="2">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1593526564" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">THE DEVIL WEARS PRADA 2 PG 10-12 L</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1593526564" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_devil wears prada image 1_20260419_094520.jpg" alt="THE DEVIL WEARS PRADA 2 PG 10-12 L" style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1593526564" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1593526564)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1593526564" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1593526564)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">From 13 May 2026 12:00</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1593526564">THE DEVIL WEARS PRADA 2 PG 10-12 L</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>Labia Theatre</li></ul>
+    
+    <div class="product-card-price">R90</div>
+    <span class="text-primary"></span>
+    <a id="ctl06_lnkNext" class="spinner"></a>
+</div>
+</div><div class="col-md-4 col-sm-6 js-event-item" data-idx="3">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1591914744" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">THE DRAMA (16)</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1591914744" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_the drama image 1_20260329_152153.jpg" alt="THE DRAMA (16)" style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1591914744" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1591914744)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1591914744" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1591914744)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">From 13 May 2026 12:15</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1591914744">THE DRAMA (16)</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>Labia Theatre</li></ul>
+    
+    <div class="product-card-price">R90</div>
+    <span class="text-primary"></span>
+    <a id="ctl08_lnkNext" class="spinner"></a>
+</div>
+</div><div class="col-md-4 col-sm-6 js-event-item" data-idx="4">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1594571567" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">VARIATIONS ON A THEME (10-12 PGL) Afrikaans with English subtitles</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1594571567" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_variations on a theme image_20260503_105122.jpg" alt="VARIATIONS ON A THEME (10-12 PGL) Afrikaans with English subtitles" style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1594571567" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1594571567)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1594571567" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1594571567)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">From 13 May 2026 14:15</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1594571567">VARIATIONS ON A THEME (10-12 PGL) Afrikaans with English subtitles</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>Labia Theatre</li></ul>
+    
+    <div class="product-card-price">R90</div>
+    <span class="text-primary"></span>
+    <a id="ctl10_lnkNext" class="spinner"></a>
+</div>
+</div><div class="col-md-4 col-sm-6 js-event-item" data-idx="5">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1591308399" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">THE MAGIC FARAWAY TREE (PG)</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1591308399" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_magic-faraway-tree-image 1_20260322_103829.jpg" alt="THE MAGIC FARAWAY TREE (PG)" style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1591308399" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1591308399)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1591308399" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1591308399)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">From 13 May 2026 14:45</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1591308399">THE MAGIC FARAWAY TREE (PG)</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>Labia Theatre</li></ul>
+    
+    <div class="product-card-price">R90</div>
+    <span class="text-primary"></span>
+    <a id="ctl12_lnkNext" class="spinner"></a>
+</div>
+</div><div class="col-md-4 col-sm-6 js-event-item" data-idx="6">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1590856488" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">PROJECT HAIL MARY (13V)</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1590856488" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_Project-Hail-Mary image 2_20260315_102958.jpg" alt="PROJECT HAIL MARY (13V)" style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1590856488" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1590856488)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1590856488" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1590856488)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">From 13 May 2026 20:15</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1590856488">PROJECT HAIL MARY (13V)</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>Labia Theatre</li></ul>
+    
+    <div class="product-card-price">R90</div>
+    <span class="text-primary"></span>
+    <a id="ctl14_lnkNext" class="spinner"></a>
+</div>
+</div><div class="col-md-4 col-sm-6 js-event-item" data-idx="7">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1593547674" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">MOTHER MARY (16 LV)</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1593547674" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_mother mary image 2_20260419_182350.jpg" alt="MOTHER MARY (16 LV)" style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1593547674" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1593547674)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1593547674" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1593547674)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">From 13 May 2026 20:30</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1593547674">MOTHER MARY (16 LV)</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>Labia Theatre</li></ul>
+    
+    <div class="product-card-price">R90</div>
+    <span class="text-primary"></span>
+    <a id="ctl16_lnkNext" class="spinner"></a>
+</div>
+</div><div class="col-md-4 col-sm-6 js-event-item" data-idx="8">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1595279779" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">TOP GUN (13 LSV)</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1595279779" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_top gun image 1_20260510_115402.jpg" alt="TOP GUN (13 LSV)" style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1595279779" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1595279779)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1595279779" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1595279779)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">From 15 May 2026 18:15</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1595279779">TOP GUN (13 LSV)</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>Labia Theatre</li></ul>
+    
+    <div class="product-card-price">R90</div>
+    <span class="text-primary"></span>
+    <a id="ctl18_lnkNext" class="spinner"></a>
+</div>
+</div><div class="col-md-4 col-sm-6 js-event-item" data-idx="9">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1594249707" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">IN COLD BLOOD (16V)</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1594249707" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_in cold blood image 1_20260429_095851.jpg" alt="IN COLD BLOOD (16V)" style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1594249707" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1594249707)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1594249707" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1594249707)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">From 31 May 2026 14:45</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1594249707">IN COLD BLOOD (16V)</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>Labia Theatre</li></ul>
+    
+    <div class="product-card-price">R90</div>
+    <span class="text-primary"></span>
+    <a id="ctl20_lnkNext" class="spinner"></a>
+</div>
+</div><div class="col-md-4 col-sm-6 js-event-item" data-idx="10">    
+
+
+<div class="product-card mb-30">
+
+    <div class="modal fade" id="modalLarge1502799535" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">LABIA PREPAID MOVIE VOUCHERS</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">  
+                <div class="justify-content-center" style="padding-bottom:1px;margin-bottom:1px;">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary btn-sm" type="button" data-dismiss="modal">Close</button>               
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="product-card-thumb">
+        
+        <a href="event.aspx?itemid=1502799535" class="spinner">
+            <img src="https://content.webtickets.co.za/labia/panel_labialabia .jpg" alt="LABIA PREPAID MOVIE VOUCHERS" style="border-width:0px;">
+        </a>
+                    
+        <button id="btnLike1502799535" data-toast-icon="fas fa-heart" data-toast-message="Event added to your likes" class="product-card-like" onclick="addToLike('add',0,1502799535)" data-toast="true" data-toast-type="success" style="display:block;" type="button" data-toast-title="Success" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Add to Likes"><i class="far fa-heart"></i></button>
+        <button id="btnLiked1502799535" data-toast-icon="fas fa-ban" data-toast-message="Event removed from your likes" class="product-card-liked" onclick="addToLike('remove',0,1502799535)" data-toast="true" data-toast-type="danger" style="display:none;" type="button" data-toast-title="Removed" title="" data-toast-position="bottomRight" data-toggle="tooltip" data-original-title="Remove from Likes"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="product-card-meta">Valid 1 Year</div>
+    <h3 class="product-card-title">
+        <a class="spinner" href="event.aspx?itemid=1502799535">LABIA PREPAID MOVIE VOUCHERS</a>
+    </h3>
+    
+    <ul class="product-card-category"><li>The Labia Theatre, Cape Town, Western Cape</li></ul>
+    
+    <div class="product-card-price">R600</div>
+    <span class="text-primary"></span>
+    <a id="ctl22_lnkNext" class="spinner"></a>
+</div>
+</div></div>
+                    <div class="row" id="loadMoreRow" style="width:100%; margin-top: 10px;">
+                        <div class="col-12 text-center">
+                            <a href="javascript:void(0)" id="btnLoadMore" class="btn btn-outline-secondary btn-sm">
+                                Load more
+                            </a>
+                            <div id="loadMoreInfo" class="small text-muted mt-2"></div>
+                        </div>
+                    </div>
+
+                    <!-- Event Pass Grid-->
+
+                    <!-- Event Passes goes here-->
+                    
+
+                    
+                    <!-- Pagination-->
+
+                    <nav class="pagination">
+                        <div class="column">
+                            <ul id="ulPages" class="pages"></ul>
+                        </div>
+                        <div class="column text-right hidden-xs-down"></div>
+                    </nav>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer id="WebticketsFooter_embedfooter" class="site-footer bg-dark mt-2" style="display:none">
+<!--
+comment below out to remove keyboard-->
+    <!--
+    <div id="pnp_virtualKeyboard"></div>
+    <script src="onscreenkeyboard/js/vendor/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="onscreenkeyboard/js/jsKeyboard.js"></script>-->
+<!--
+comment above out to remove keyboard
+-->
+    <div class="container padding-bottom-10x">
+          <div class="row">
+                <div class="col-lg-3 col-md-6">
+                <!-- About Us-->
+                <section class="widget widget-links widget-light-skin margin-bottom-1x">
+                  <h3 class="widget-title">More Info</h3>
+                  <ul>
+                    <li><a href="#">About Us</a></li>       
+                  </ul>
+                </section>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <!-- About Us-->
+                <section class="widget widget-links widget-light-skin margin-bottom-1x">
+                  <h3 class="widget-title">Support</h3>
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>             
+                  </ul>
+                </section>
+              </div>
+            </div>  
+         </div>
+</footer>
+
+<footer id="WebticketsFooter_sitefooter" class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div id="WebticketsFooter_selltickets" class="col-lg-3 col-md-6">
+            <!-- Sell Tickets-->
+            <section class="widget widget-light-skin margin-bottom-1x">
+              <h3 class="widget-title">Sell Tickets With Us</h3>
+              <p class="text-white opacity-90">The leader in online ticket sales in South Africa since 2007.</p><a class="btn btn-primary" href="SellWithUs.aspx">Sell With Us</a>
+            </section>
+          </div>
+             <!-- Find Events-->
+           
+            <div class="col-lg-3 col-md-6">           
+                <section class="widget widget-links widget-light-skin margin-bottom-1x">
+                    <h3 class="widget-title">Find Events</h3>
+                    <ul>
+                        <li><a href="category.aspx?itemid=1184162&location=0&when=anytime" id="WebticketsFooter_browseLink">Browse</a></li>
+                        <!--<li><a href="#">Recommended for you</a></li>-->
+                        <li><a href="MyLikes.aspx">My Likes</a></li>
+                        <li><a href="loyaltypartner.aspx?program=smartshopper">Smart Shopper Deals</a></li>
+                        <li class="d-none"><a href="GiftVouchers.aspx" class="d-none">Buy a Gift Voucher</a></li>
+                    </ul>
+                </section>
+                
+                 <section class="widget widget-links widget-light-skin margin-bottom-1x">
+                    <h3 class="widget-title">Partner Countries</h3>
+                    <ul>
+                        <li><a href="https://www.webtickets.com.na">Namibia</a></li>
+                        <li><a href="https://www.webtickets.co.bw">Botswana</a></li>
+                        <li><a href="https://www.webtickets.co.zm">Zambia</a></li>
+                        <li><a href="https://www.webtickets.mw">Malawi</a></li>
+                    </ul>
+                </section>
+                
+
+            </div>               
+          <div class="col-lg-3 col-md-6">
+            <!-- About Us-->
+            <section class="widget widget-links widget-light-skin  margin-bottom-1x">
+              <h3 class="widget-title">Help &amp; Info</h3>
+              <ul>
+                <li><a href="faq.aspx">Get Help</a></li>
+                <li><a href="faq.aspx">FAQ's</a></li>
+                <li id="WebticketsFooter_privacypolicy" style="display:block;"><a href="https://tinyurl.com/nv2f7j4r">Webtickets Privacy Policy</a></li>
+                <li id="WebticketsFooter_sellwithus"><a href="SellWithUs.aspx">New Client - List your event</a></li>
+                <li id="WebticketsFooter_switchtoselling"><a href="../EventManager/Profiles.aspx">Existing Client - Switch to Selling</a></li>
+                <!--<li><a href="Item.aspx?itemid=701">About us</a></li>-->
+                <!--<li><a href="../?skipmobile=1">Go back to old site</a></li>-->
+              </ul>
+            </section>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <!-- My Account-->
+            <section class="widget widget-links widget-light-skin  margin-bottom-1x">
+              <h3 class="widget-title">My Account</h3>
+              <ul>
+                <li><a href="PersonalProfile.aspx">My Profile</a></li>
+                <li><a href="MyTickets.aspx?mode=standard">My Tickets</a></li>
+                <li><a href="MyTickets.aspx?mode=active">My Race Entries</a></li>     
+                <li><a href="MyEventPasses.aspx">My Passes</a></li>
+                <li><a href="MyMemberships.aspx">My Membership Cards</a></li>           
+                <li><a href="GiftVouchers.aspx">My Webtickets Gift Cards</a></li>           
+                <li><a href="MyWebtickets.aspx">My Order History</a></li>
+                <li><a href="PromoterProfile.aspx">Promoter Profile</a></li>
+                <li><a href="MyLikes.aspx">My Likes</a></li>
+                <!--
+                <li><a href="#">My Alerts</a></li>
+                <li><a href="#">My Location</a></li>
+                <li><a href="#">My Gift Vouchers</a></li>-->
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <!-- Follow Us-->
+            <section class="widget widget-light-skin">
+              <h3 class="widget-title">Follow Us For Updates</h3><a href="https://www.facebook.com/webtickets" id="WebticketsFooter_facebook" class="social-button shape-circle sb-facebook sb-light-skin" target="_blank" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/webticketsSA" id="WebticketsFooter_twitter" class="social-button shape-circle sb-twitter sb-light-skin" target="_blank" data-toggle="tooltip" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/webtickets/#" id="WebticketsFooter_instagram" class="social-button shape-circle sb-instagram sb-light-skin" target="_blank" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </section>
+          </div>
+          <div style="display:none;" class="col-lg-9 col-md-6">
+            <!-- Subscription hide for now-->
+            <section class="widget widget-links widget-light-skin">
+              <h3 class="widget-title">Get The Best Events In Your Inbox</h3>
+              <div class="row">
+                <div class="col-lg-4">
+                    <p class="text-white opacity-90">Subscribe to our Newsletter to receive early discount offers, latest news, sales and promo information.</p>
+                    <a href="https://eepurl.com/gDCfAP" target="_blank" class="btn btn-primary"> <i class="fas fa-check"></i> Sign up</a>
+                </div>
+                <div class="col-lg-8">
+                    <!--
+                      <form class="subscribe-form" action="#">
+                        <div class="clearfix">
+                          <div class="input-group">
+                            <input class="form-control" type="email" name="email" placeholder="Your email address"><span class="input-group-addon"><i class="fas fa-envelope-open"></i></span>
+                          </div>
+                          <button class="btn btn-primary" type="submit"><i class="fas fa-check"></i></button>
+                        </div>
+                      </form>
+                    -->
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <section class="widget widget-light-skin">
+          <h3 class="widget-title">Safe &amp; Secure</h3>
+          <div class="row">
+            <div class="col-lg-3 col-md-5 padding-bottom-1x">
+              <p id="WebticketsFooter_PaymentOptions" class="text-white opacity-90">We accept all major credit cards, as well as Masterpass, Ozow and SnapScan. You can also pay at any Pick n Pay or Boxer store.</p>
+            </div>
+            <div class="col-lg-9 col-md-7 padding-bottom-1x">
+              <!-- Payment Methods-->
+              <div class="pt-2 margin-bottom-1x"><img src="https://content.webtickets.co.za/webtickets/img/payment-methods-za-3.png" id="WebticketsFooter_paymentmethod" alt="Payment Methods" />
+              </div>
+            </div>
+          </div>
+              
+        </section>
+        <!-- Copyright-->
+        <div class="row">
+            <div class="col"><p class="footer-copyright">© All content is property of Webtickets</p></div>
+            <div class="col text-right"><p class="footer-copyright"><a target="_blank" href="https://www.webtickets.co.za/docs/Data%20Protection%20Policy%20April%202021.pdf">Webtickets Privacy Policy</a></p></div>
+        </div>
+          
+      </div>
+    </footer>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fas fa-angle-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+
+    <script>
+        if (window.frameElement) {
+            document.getElementById('sitefooter').style.display = 'none';
+        }
+
+        //this doesnt work in hte footer?
+        $(window).bind("pageshow", function (event) {
+            if (document.getElementById('page-loader')) {
+                document.getElementById('page-loader').style.display = "none";
+            }
+        });
+
+
+    </script>
+
+    <!--get locations-->
+<!-- possbly causign a bug??-->
+    
+
+ <script type="text/javascript">
+        /*
+         var geoSuccess = function (position) {
+             startPos = position;
+             var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+             geocoder = new google.maps.Geocoder();
+             geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+                 if (status == google.maps.GeocoderStatus.OK) {
+
+                     if (results[1]) {
+                         var indice = 0;
+                         for (var j = 0; j < results.length; j++) {
+                             if (results[j].types[0] == 'locality') {
+                                 indice = j;
+                                 break;
+                             }
+                         }
+
+                         console.log(results[j]);
+                         for (var i = 0; i < results[j].address_components.length; i++) {
+                             if (results[j].address_components[i].types[0] == "locality") {
+                                 city = results[j].address_components[i];
+                             }
+                             if (results[j].address_components[i].types[0] == "administrative_area_level_1") {
+                                 region = results[j].address_components[i];
+                             }
+                             if (results[j].address_components[i].types[0] == "country") {
+                                 country = results[j].address_components[i];
+                             }
+                         }
+
+                       //need to store latlng?
+
+                         document.getElementById('locationCity').innerHTML = city.long_name;
+                         document.getElementById('locationCityMobile').innerHTML = city.long_name;
+
+                         if (document.getElementById('locationCityHome')) {
+                             document.getElementById('locationCityHome').innerHTML = city.long_name;
+                         }
+
+                         localStorage.setItem('locationCity', city.long_name);
+                         localStorage.setItem('locationRegion', region.long_name);
+                         localStorage.setItem('locationCountry', country.long_name);
+
+                         //set cookie
+                         document.cookie = "locationRegion=" + region.long_name + ";";
+
+                         //reload window to set the location
+                         window.location.reload();
+                     }
+                 }
+             });
+         }; 
+         */
+
+         //check if stored
+         if (localStorage.getItem('locationCity') !== null) {
+             document.getElementById('locationCity').innerHTML = localStorage.getItem('locationCity');
+             document.getElementById('locationCityMobile').innerHTML = localStorage.getItem('locationCity');
+             if (document.getElementById('locationCityHome')) {
+                 document.getElementById('noLocationSet').style.display = 'none';
+                 document.getElementById('LocationSet').style.display = 'block';
+                 document.getElementById('locationCityHome').innerHTML = localStorage.getItem('locationCity');
+                 
+                 var country = localStorage.getItem('locationCountry');
+                 var countryName = 'South Africa';
+
+                 //messy, should have this in array?
+
+                 if (countryName != country) {
+
+                     var url = "";
+                     switch (country) {
+                         case "South Africa":
+                             url = "https://www.webtickets.co.za";
+                             break;
+                         case "Namibia":
+                             url = "https://www.webtickets.com.na";
+                             break
+                         case "Zambia":
+                             url = "https://www.webtickets.co.zm";
+                             break;
+                         case "Malawi":
+                             url = "https://www.webtickets.mw";
+                             break;
+                         case "Botswana":
+                             url = "https://www.webtickets.co.bw";
+                             break;
+                         default:
+                             url = "https://www.webtickets.co.za";
+                     }                     
+
+                     document.getElementById('locationCountryHome').innerHTML =
+                         "<br/>Looks like you're in " + country + " <a href='" + url + "'>click here for Webtickets " + country + "</a>";
+                 }
+                 document.cookie = "locationRegion=" + localStorage.getItem('locationRegion') + ";";
+             }
+         }
+         //else {
+             //friendly prompt?
+             //taking this off for now - annoying 
+             //navigator.geolocation.getCurrentPosition(geoSuccess);
+         //}
+
+
+         </script>
+   
+
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/card.min.js"></script>
+    <script src="js/scripts.min.js?v=5"></script>
+    <script src="js/webtickets.js?v=40"></script>
+   
+
+<!--update these - done-->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!--
+<script src="keyboard/keyboard.js"></script>-->
+
+
+<!--
+<script src="xhttps://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="xhttps://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     -->
+
+
+    <script>
+        if (window.location.hash.substring(1)) {
+            //maybe delay?
+            var hash = window.location.hash.substring(1);
+            document.getElementById(hash + '-tab').click();
+        }
+    </script>
+    <script>
+        // Example of extracting item details from the webpage
+    
+
+        const clientID = 1464899932;
+        const clientName = 'labia';
+        const customerEmail = '';
+
+        let eventItems = [];
+        eventItems.push({
+            clientID: clientID,
+            clientName: clientName,
+            email: customerEmail
+
+        });
+        console.log(eventItems);
+        window.dataLayer.push({
+            event: 'view_client',
+            items: eventItems
+        });
+
+	
+
+
+    </script>
+ 
+    <script>
+(function () {
+    const PAGE_SIZE = 18;
+    const STAGGER = 180; // slower waterfall (try 220 if you want even gentler)
+
+    function updateInfo(shown, total) {
+        const info = document.getElementById('loadMoreInfo');
+        if (info) info.textContent = total ? `Showing ${shown} of ${total}` : '';
+    }
+
+    function applyLoadMore() {
+        const items = Array.from(document.querySelectorAll('.js-event-item'));
+        const btn = document.getElementById('btnLoadMore');
+        const row = document.getElementById('loadMoreRow');
+
+        if (!items.length) {
+            if (row) row.style.display = 'none';
+            return;
+        }
+
+        items.sort((a, b) => (+a.dataset.idx) - (+b.dataset.idx));
+
+        let shown = 0;
+        let isAnimating = false;
+
+        function setBtnEnabled(enabled) {
+            if (!btn) return;
+            btn.style.pointerEvents = enabled ? '' : 'none';
+            btn.style.opacity = enabled ? '1' : '0.6';
+        }
+
+        function revealChunk() {
+            if (isAnimating) return;
+
+            const nextToShow = Math.min(shown + PAGE_SIZE, items.length);
+            if (nextToShow <= shown) return;
+
+            isAnimating = true;
+            setBtnEnabled(false);
+
+            let delay = 0;
+            for (let i = shown; i < nextToShow; i++) {
+                const el = items[i];
+                setTimeout(() => {
+                    el.style.display = '';
+                    // force a frame so transition always triggers reliably
+                    requestAnimationFrame(() => el.classList.add('showing'));
+                }, delay);
+                delay += STAGGER;
+            }
+
+            // total animation time for this chunk
+            const totalDelay = (nextToShow - shown - 1) * STAGGER;
+            shown = nextToShow;
+
+            setTimeout(() => {
+                isAnimating = false;
+
+                const hasMore = shown < items.length;
+                if (btn) btn.style.display = hasMore ? '' : 'none';
+                updateInfo(shown, items.length);
+
+                if (shown < items.length) setBtnEnabled(true);
+            }, totalDelay + 50);
+        }
+
+        // Hide all initially
+        items.forEach(el => {
+            el.style.display = 'none';
+            el.classList.remove('showing');
+        });
+
+        revealChunk();
+
+        if (btn) btn.addEventListener('click', revealChunk);
+
+        if (items.length <= PAGE_SIZE && row) row.style.display = 'none';
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', applyLoadMore);
+    } else {
+        applyLoadMore();
+    }
+})();
+    </script>
+
+
+</body>
+</html>

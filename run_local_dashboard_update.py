@@ -11,6 +11,8 @@ from pathlib import Path
 
 REPO_DIR = Path(__file__).resolve().parent
 DATA_DIR = REPO_DIR / "data"
+SCRAPE_DIR = REPO_DIR / ".scrape"
+PREVIOUS_DATA_DIR = SCRAPE_DIR / "previous_data"
 
 TASKS = {
     "cards": [[sys.executable, "services/scrape_one_piece.py"]],
@@ -19,6 +21,7 @@ TASKS = {
     "releases": [[sys.executable, "services/scrape_release_radar.py", "--source", "pahe"]],
     "coming-soon": [[sys.executable, "services/scrape_release_radar.py", "--source", "coming-soon"]],
     "game-releases": [[sys.executable, "services/scrape_release_radar.py", "--source", "games"]],
+    "galileo": [[sys.executable, "services/scrape_release_radar.py", "--source", "galileo"]],
     "media": [[sys.executable, "services/scrape_media.py"]],
     "watchlist": [[sys.executable, "services/scrape_media.py", "--source", "watchlist"]],
     "gamelist": [[sys.executable, "services/scrape_media.py", "--source", "games", "--type", "games"]],
@@ -26,6 +29,34 @@ TASKS = {
     "puzzle-images": [[sys.executable, "services/sync_puzzle_images.py"]],
     "digest": [[sys.executable, "services/daily_digest/send_daily_digest.py", "--no-email"]],
 }
+
+NEW_MARKER_FILES = [
+    "release_radar/pahe_latest.json",
+    "release_radar/coming_soon.json",
+    "release_radar/game_releases.json",
+    "release_radar/imax_waterfront.json",
+    "release_radar/galileo_movies.json",
+    "news/news.json",
+    "events/quicket_events.json",
+    "events/bandsintown_events.json",
+    "events/webtickets_wc_events.json",
+    "events/google_calendar_events.json",
+    "media/watchlist.json",
+    "media/gameslist.json",
+]
+
+
+def snapshot_previous_data() -> None:
+    if PREVIOUS_DATA_DIR.exists():
+        shutil.rmtree(PREVIOUS_DATA_DIR)
+    PREVIOUS_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    for rel_path in NEW_MARKER_FILES:
+        source = DATA_DIR / rel_path
+        if not source.exists():
+            continue
+        target = PREVIOUS_DATA_DIR / rel_path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, target)
 
 
 def run_commands(task: str) -> None:
@@ -75,7 +106,9 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    snapshot_previous_data()
     run_commands(args.task)
+    subprocess.run([sys.executable, "services/mark_new_items.py"], cwd=REPO_DIR, check=True)
     write_metadata()
     sync_data_to_docs()
     print(f"Updated data in {DATA_DIR}")

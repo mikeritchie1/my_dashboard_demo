@@ -1,0 +1,64 @@
+{
+  "source": "https://thegalileo.co.za/movies/",
+  "theatre": "The Galileo Open Air Cinema",
+  "items": [
+    {
+      "title": "Grease",
+      "detail_title": "Grease",
+      "url": "https://thegalileo.co.za/movie/grease-kirstenbosch-2/",
+      "source": "The Galileo Open Air Cinema",
+      "status": "open_air_cinema",
+      "status_label": "Open air cinema",
+      "release_date": "2026-05-15",
+      "event_date_text": "15 May 2026",
+      "day": "Friday",
+      "venue": "Kirstenbosch Garden",
+      "doors_open": "17h30",
+      "movie_starts": "19h30",
+      "cinema_type": "PICNIC",
+      "age_restriction": "PG",
+      "run_time": "1h50",
+      "runtime_minutes": "110",
+      "genre": "Musical Drama",
+      "genres": [
+        "Musical Drama"
+      ],
+      "overview": "Grease is a classic musical rom-com that unfolds the 1958 summer romance of T-Bird greaser – Danny and good girl – Australian transfer student Sandy. The film stars John Travolta and Olivia Newton-John as Danny and Sandy.",
+      "synopsis": "Grease is a classic musical rom-com that unfolds the 1958 summer romance of T-Bird greaser – Danny and good girl – Australian transfer student Sandy. The film stars John Travolta and Olivia Newton-John as Danny and Sandy.",
+      "image": "https://thegalileo.co.za/wp-content/uploads/2025/09/Grease-3-copy-686x1030.webp",
+      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2025/09/Grease-3-copy-686x1030.webp",
+      "trailer_url": "https://www.youtube.com/watch?v=THd96gHV7Tg",
+      "book_url": "https://www.webtickets.co.za/galileo-lineup",
+      "location_label": "Playing at Kirstenbosch Garden"
+    },
+    {
+      "title": "About Time (Final Show Of The Season)",
+      "detail_title": "About Time (Final Show Of The Season)",
+      "url": "https://thegalileo.co.za/movie/about-time/",
+      "source": "The Galileo Open Air Cinema",
+      "status": "open_air_cinema",
+      "status_label": "Open air cinema",
+      "release_date": "2026-05-16",
+      "event_date_text": "16 May 2026",
+      "day": "Saturday",
+      "venue": "Kirstenbosch Garden",
+      "doors_open": "17h00",
+      "movie_starts": "19h30",
+      "cinema_type": "PICNIC",
+      "age_restriction": "13 L",
+      "run_time": "2h03",
+      "runtime_minutes": "123",
+      "genre": "Comedy Drama Fantasy",
+      "genres": [
+        "Comedy Drama Fantasy"
+      ],
+      "overview": "About Time is a 2013 British romantic comedy with a twist. At the age of 21, Tim discovers he can travel in time and change what happens and has happened in his own life. His decision to make his world a better place by getting a girlfriend turns out not to be as easy as you might think.",
+      "synopsis": "About Time is a 2013 British romantic comedy with a twist. At the age of 21, Tim discovers he can travel in time and change what happens and has happened in his own life. His decision to make his world a better place by getting a girlfriend turns out not to be as easy as you might think.",
+      "image": "https://thegalileo.co.za/wp-content/uploads/2025/09/About-Time-the-galileo-688x1030.webp",
+      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2025/09/About-Time-the-galileo-688x1030.webp",
+      "trailer_url": "https://www.youtube.com/watch?v=7OIFdWk83no",
+      "book_url": "https://www.webtickets.co.za/galileo-lineup",
+      "location_label": "Playing at Kirstenbosch Garden"
+    }
+  ]
+}

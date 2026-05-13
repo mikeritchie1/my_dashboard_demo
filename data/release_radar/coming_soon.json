@@ -6,43 +6,70 @@
       "title": "Top Gun",
       "url": "https://www.themoviedb.org/movie/744",
       "image": "https://image.tmdb.org/t/p/w342/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
-      "release_date": "2026-05-15"
+      "release_date": "2026-05-15",
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "title": "National Theatre Live: Inter Alia",
+      "url": "https://www.themoviedb.org/movie/1454209",
+      "image": "https://image.tmdb.org/t/p/w342/3IBpj6oU9BFcUGesv1QH2LvEb01.jpg",
+      "release_date": "2026-07-24",
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "title": "Obsession",
       "url": "https://www.themoviedb.org/movie/1339713",
       "image": "https://image.tmdb.org/t/p/w342/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
-      "release_date": "2026-05-15"
+      "release_date": "2026-05-15",
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "title": "Deep Water",
+      "url": "https://www.themoviedb.org/movie/1127384",
+      "image": "https://image.tmdb.org/t/p/w342/2cikvQU83ecoZncnjOmAAATr3Sp.jpg",
+      "release_date": "2026-05-29",
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "title": "The Metropolitan Opera: Eugene Onegin",
       "url": "https://www.themoviedb.org/movie/1479651",
       "image": "https://image.tmdb.org/t/p/w342/zvfz5Dds1LFtHv76XcSnYWjyoes.jpg",
-      "release_date": "2026-05-15"
+      "release_date": "2026-05-15",
+      "is_new": false
     },
     {
       "title": "Pati Patni Aur Woh Do",
       "url": "https://www.themoviedb.org/movie/1320660",
       "image": "https://image.tmdb.org/t/p/w342/x0RUPvba4JlCCkyyEZGlQFIFVuF.jpg",
-      "release_date": "2026-05-15"
+      "release_date": "2026-05-15",
+      "is_new": false
     },
     {
       "title": "Passenger",
       "url": "https://www.themoviedb.org/movie/1368314",
       "image": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
-      "release_date": "2026-05-22"
+      "release_date": "2026-05-22",
+      "is_new": false
     },
     {
       "title": "Star Wars: The Mandalorian and Grogu",
       "url": "https://www.themoviedb.org/movie/1228710",
       "image": "https://image.tmdb.org/t/p/w342/7QujwMB124KqSPbWlLRHBO5wygE.jpg",
-      "release_date": "2026-05-22"
+      "release_date": "2026-05-22",
+      "is_new": false
     },
     {
       "title": "Tuner",
       "url": "https://www.themoviedb.org/movie/1340206",
       "image": "https://image.tmdb.org/t/p/w342/oGZd4xQJBt4mtuBhTdlOalsdqtT.jpg",
-      "release_date": "2026-05-22"
+      "release_date": "2026-05-22",
+      "is_new": false
     },
     {
       "title": "Deep Water",
@@ -54,19 +81,32 @@
       "title": "Backrooms",
       "url": "https://www.themoviedb.org/movie/1083381",
       "image": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
-      "release_date": "2026-05-29"
+      "release_date": "2026-05-29",
+      "is_new": false
     },
     {
       "title": "Power Ballad",
       "url": "https://www.themoviedb.org/movie/1284016",
       "image": "https://image.tmdb.org/t/p/w342/lsDLLagSIyTu0Gi06QjVKDp2LI2.jpg",
-      "release_date": "2026-06-05"
+      "release_date": "2026-06-05",
+      "is_new": false
     },
     {
+<<<<<<< HEAD
+=======
+      "title": "The Metropolitan Opera: El Último Sueño de Frida y Diego",
+      "url": "https://www.themoviedb.org/movie/1479653",
+      "image": "https://image.tmdb.org/t/p/w342/iroj6icowJNoh9KfdeE0ObdpFis.jpg",
+      "release_date": "2026-06-12",
+      "is_new": false
+    },
+    {
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
       "title": "Masters of the Universe",
       "url": "https://www.themoviedb.org/movie/454639",
       "image": "https://image.tmdb.org/t/p/w342/nm2ianYVp7OXElUZVeeAbNTqBLr.jpg",
-      "release_date": "2026-06-05"
+      "release_date": "2026-06-05",
+      "is_new": false
     },
     {
       "title": "The Metropolitan Opera: El \u00daltimo Sue\u00f1o de Frida y Diego",
@@ -78,25 +118,92 @@
       "title": "Disclosure Day",
       "url": "https://www.themoviedb.org/movie/1275779",
       "image": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
-      "release_date": "2026-06-12"
+      "release_date": "2026-06-12",
+      "is_new": false
     },
     {
       "title": "Jackass: Best and Last",
       "url": "https://www.themoviedb.org/movie/1612018",
       "image": "https://image.tmdb.org/t/p/w342/mvE5WgbUHORyLwPC2WpZxvivTiF.jpg",
-      "release_date": "2026-06-26"
+      "release_date": "2026-06-26",
+      "is_new": false
     },
     {
       "title": "Moana",
       "url": "https://www.themoviedb.org/movie/1108427",
       "image": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "release_date": "2026-07-11"
+      "release_date": "2026-07-11",
+      "is_new": false
     },
     {
+<<<<<<< HEAD
       "title": "National Theatre Live: Inter Alia",
       "url": "https://www.themoviedb.org/movie/1454209",
       "image": "https://image.tmdb.org/t/p/w342/3IBpj6oU9BFcUGesv1QH2LvEb01.jpg",
       "release_date": "2026-07-24"
+=======
+      "title": "The Sheep Detectives",
+      "url": "https://www.themoviedb.org/movie/1301421",
+      "image": "https://image.tmdb.org/t/p/w342/hTirV44jiLh6NqdiB6jtxPsDIoG.jpg",
+      "release_date": "2026-05-08",
+      "is_new": false
+    },
+    {
+      "title": "Mortal Kombat II",
+      "url": "https://www.themoviedb.org/movie/931285",
+      "image": "https://image.tmdb.org/t/p/w342/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
+      "release_date": "2026-05-08",
+      "is_new": false
+    },
+    {
+      "title": "Iron Maiden: Burning Ambition",
+      "url": "https://www.themoviedb.org/movie/1642859",
+      "image": "https://image.tmdb.org/t/p/w342/yZqhFJDenLfgF1VygOOCNmAdS1P.jpg",
+      "release_date": "2026-05-08",
+      "is_new": false
+    },
+    {
+      "title": "Variations on a Theme",
+      "url": "https://www.themoviedb.org/movie/1599249",
+      "image": "https://image.tmdb.org/t/p/w342/cNbpR6hE1rIeb13xCFmv75PVaAx.jpg",
+      "release_date": "2026-05-08",
+      "is_new": false
+    },
+    {
+      "title": "Fuze",
+      "url": "https://www.themoviedb.org/movie/1242265",
+      "image": "https://image.tmdb.org/t/p/w342/oWehDe6fFR4eUdUMDy4jz6XiinO.jpg",
+      "release_date": "2026-05-01",
+      "is_new": false
+    },
+    {
+      "title": "Beast",
+      "url": "https://www.themoviedb.org/movie/1292415",
+      "image": "https://image.tmdb.org/t/p/w342/7NrvUI3vnW8H3rD7ExKcTL7KRcQ.jpg",
+      "release_date": "2026-05-01",
+      "is_new": false
+    },
+    {
+      "title": "Normal",
+      "url": "https://www.themoviedb.org/movie/1242332",
+      "image": "https://image.tmdb.org/t/p/w342/nVIOGKbUdRxud0EXYJDMGCGcYbo.jpg",
+      "release_date": "2026-05-01",
+      "is_new": false
+    },
+    {
+      "title": "The Devil Wears Prada 2",
+      "url": "https://www.themoviedb.org/movie/1314481",
+      "image": "https://image.tmdb.org/t/p/w342/sRTYF65JvbHLoC3LoBj4UKYqIlA.jpg",
+      "release_date": "2026-05-01",
+      "is_new": false
+    },
+    {
+      "title": "Ek Din",
+      "url": "https://www.themoviedb.org/movie/1171094",
+      "image": "https://image.tmdb.org/t/p/w342/kZn71TZDhV5c58cmWmOLyZGQ6U9.jpg",
+      "release_date": "2026-05-01",
+      "is_new": false
+>>>>>>> 8855671 (added labia scraping + improved release radar ui)
     }
   ]
 }

@@ -28,6 +28,14 @@ SOURCES = {
         "command": ["services/release_radar/scrape_imax.py"],
         "output": "imax_waterfront.json",
     },
+    "galileo": {
+        "command": ["services/release_radar/scrape_galileo.py"],
+        "output": "galileo_movies.json",
+    },
+    "labia": {
+        "command": ["services/release_radar/scrape_labia_showtimes.py"],
+        "output": "labia_showtimes.json",
+    },
 }
 
 

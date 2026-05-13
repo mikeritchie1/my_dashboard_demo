@@ -92,6 +92,7 @@ SECTIONS = [
     ),
     Section("New Releases", DATA_DIR / "release_radar" / "pahe_latest.json", load_json_items("items")),
     Section("Coming Soon Movies", DATA_DIR / "release_radar" / "coming_soon.json", load_json_items("items")),
+    Section("Open Air Cinema", DATA_DIR / "release_radar" / "galileo_movies.json", load_json_items("items")),
     Section("New Game Releases", DATA_DIR / "release_radar" / "game_releases.json", load_json_items("new_releases")),
     Section("Coming Soon Games", DATA_DIR / "release_radar" / "game_releases.json", load_json_items("coming_soon")),
     Section("Bandsintown Events", DATA_DIR / "events" / "bandsintown_events.json", load_json_list),

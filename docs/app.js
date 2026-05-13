@@ -4,6 +4,8 @@ const RELEASES_PATH = "./data/release_radar/pahe_latest.json";
 const COMING_SOON_PATH = "./data/release_radar/coming_soon.json";
 const GAME_RELEASES_PATH = "./data/release_radar/game_releases.json";
 const IMAX_RELEASES_PATH = "./data/release_radar/imax_waterfront.json";
+const GALILEO_RELEASES_PATH = "./data/release_radar/galileo_movies.json";
+const LABIA_SHOWTIMES_PATH = "./data/release_radar/labia_showtimes.json";
 const WATCHLIST_PATH = "./data/media/watchlist.json";
 const GAMESLIST_PATH = "./data/media/gameslist.json";
 const WATCHLIST_MOVIE_DETAILS_PATH = "./data/media/watchlist_movie_details.json";
@@ -118,6 +120,8 @@ const state = {
   isNewsExpanded: false,
   releaseItems: [],
   imaxItems: [],
+  galileoItems: [],
+  labiaItems: [],
   timelineItems: [],
   gameHubGames: [],
   gameHubSelectedGame: "",
@@ -140,6 +144,8 @@ const elements = {
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
   imaxGrid: document.querySelector("#imax-grid"),
+  galileoGrid: document.querySelector("#galileo-grid"),
+  labiaGrid: document.querySelector("#labia-grid"),
   gameReleaseGrid: document.querySelector("#game-release-grid"),
   gameComingSoonGrid: document.querySelector("#game-coming-soon-grid"),
   newsList: document.querySelector("#news-list"),
@@ -340,6 +346,73 @@ function displayDate(value) {
   return `${ordinal(day)} ${monthName} ${year}`;
 }
 
+function daysAwayFromDate(value) {
+  const raw = String(value || "").trim();
+  if (!raw) {
+    return "";
+  }
+  const dateOnly = raw.match(/^\d{4}-\d{2}-\d{2}$/) ? raw : "";
+  if (!dateOnly) {
+    return "";
+  }
+  const target = new Date(`${dateOnly}T00:00:00`);
+  if (Number.isNaN(target.getTime())) {
+    return "";
+  }
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const msPerDay = 24 * 60 * 60 * 1000;
+  const diffDays = Math.round((target.getTime() - today.getTime()) / msPerDay);
+  if (diffDays < 0) {
+    return "";
+  }
+  if (diffDays === 0) {
+    return "Today";
+  }
+  if (diffDays === 1) {
+    return "1 day away";
+  }
+  return `${diffDays} days away`;
+}
+
+function relativeDaysFromDate(value, options = {}) {
+  const raw = String(value || "").trim();
+  const match = raw.match(/^(\d{4}-\d{2}-\d{2})/);
+  if (!match) {
+    return "";
+  }
+  const target = new Date(`${match[1]}T00:00:00`);
+  if (Number.isNaN(target.getTime())) {
+    return "";
+  }
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const msPerDay = 24 * 60 * 60 * 1000;
+  const diffDays = Math.round((target.getTime() - today.getTime()) / msPerDay);
+  if (diffDays === 0) {
+    return "Today";
+  }
+  if (diffDays > 0) {
+    return diffDays === 1 ? "1 day away" : `${diffDays} days away`;
+  }
+  if (!options.allowPast) {
+    return "";
+  }
+  const daysAgo = Math.abs(diffDays);
+  return daysAgo === 1 ? "1 day ago" : `${daysAgo} days ago`;
+}
+
+function firstShowingDate(item) {
+  const showings = Array.isArray(item?.showings) ? item.showings : [];
+  for (const showing of showings) {
+    const match = String(showing || "").match(/^(\d{4}-\d{2}-\d{2})/);
+    if (match) {
+      return match[1];
+    }
+  }
+  return "";
+}
+
 function displayDatePlain(value) {
   if (!value) {
     return "";
@@ -484,7 +557,6 @@ function renderPosters(container, items, emptyText, options = {}) {
     link.rel = "noreferrer";
     const ratingNumber = parseRatingValue(item.tmdb_rating || item.rating);
     const hoverRating = Number.isFinite(ratingNumber) ? `${ratingNumber.toFixed(1)}/10` : "";
-    link.title = hoverRating ? `${item.title} | Rating: ${hoverRating}` : item.title;
     if (indexAttr) {
       link.dataset[indexAttr] = String(index);
     }
@@ -493,23 +565,56 @@ function renderPosters(container, items, emptyText, options = {}) {
     image.src = item.image;
     image.alt = item.title;
     image.loading = "lazy";
-    image.title = link.title;
 
     const title = document.createElement("span");
     title.className = "poster-title";
     const releaseDate = displayDate(item.release_date);
-    title.textContent = interactiveRelease ? item.title : releaseDate ? `${item.title} (${releaseDate})` : item.title;
-    title.title = link.title;
+    const eventDateText = String(item.event_date_text || "").trim();
+    const titleText = String(item.title || "").trim();
+    title.textContent = titleText;
+    const defaultSubtitleText = String(item.location_label || item.venue || "").trim();
+    const interactiveSubtitleText = eventDateText || releaseDate;
+    const subtitleText = interactiveRelease ? interactiveSubtitleText : (defaultSubtitleText || releaseDate);
+    const subtitle = document.createElement("span");
+    subtitle.className = "poster-subtitle";
+    subtitle.textContent = subtitleText;
+    const ageDate = String(options.ageDateField || "") === "first_seen_at"
+      ? item.first_seen_at
+      : firstShowingDate(item) || item.event_date || item.release_date;
+    const ageText = relativeDaysFromDate(ageDate, { allowPast: Boolean(options.showPastAge) });
+    const age = document.createElement("span");
+    age.className = "poster-age";
+    age.textContent = ageText || subtitleText || releaseDate;
 
-    const status = String(item.status_label || "").trim();
+    const rawStatus = String(item.status_label || "").trim();
+    const normalizedStatus = rawStatus.toLowerCase();
+    const sourceLabel = String(item.source || "").trim().toLowerCase();
+    const isLabia = sourceLabel === "labia theatre";
+    const status = isLabia && (normalizedStatus === "now showing" || normalizedStatus === "now playing") ? "" : rawStatus;
+    const titleNodes = subtitleText ? [title, subtitle] : [title];
+    const badgeStack = document.createElement("div");
+    badgeStack.className = "poster-badge-stack";
     if (status) {
       const badge = document.createElement("small");
-      const statusKey = String(item.status || "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      let statusKey = status.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      if (String(item.source || "").toLowerCase() === "the galileo open air cinema") {
+        const venueStatus = status.toLowerCase();
+        statusKey = venueStatus.includes("kirstenbosch") ? "kirstenbosch-garden" : "coming-soon";
+      }
       badge.className = `poster-status${statusKey ? ` poster-status-${statusKey}` : ""}`;
       badge.textContent = status;
-      link.append(image, badge, title);
+      badgeStack.append(badge);
+    }
+    if (badgeStack.childNodes.length) {
+      link.append(image, badgeStack, age, ...titleNodes);
     } else {
-      link.append(image, title);
+      link.append(image, age, ...titleNodes);
+    }
+    if (item && item.is_new) {
+      const badge = document.createElement("span");
+      badge.className = "new-badge";
+      badge.textContent = "New";
+      link.append(badge);
     }
     container.append(link);
   }
@@ -577,21 +682,49 @@ function openReleaseDetail(item) {
   const posterUrl = String(item.poster_url || item.image || "").trim();
   const ratingNumber = Number(item.tmdb_rating || item.rating);
   const ratingText = Number.isFinite(ratingNumber) ? `${ratingNumber.toFixed(1)}/10` : "";
-  const releaseDate = displayDatePlain(String(item.release_date || "").trim());
+  const eventDateText = String(item.event_date_text || item.movie_date || item.date_text || "").trim();
+  const releaseDate = eventDateText || displayDatePlain(String(item.release_date || "").trim());
   const runtimeValue = Number(item.runtime_minutes);
-  const runtime = Number.isFinite(runtimeValue) && runtimeValue > 0 ? `${runtimeValue} min` : "";
-  const genres = joinList(item.genres) || "";
+  const runtime = String(item.run_time || "").trim()
+    || (Number.isFinite(runtimeValue) && runtimeValue > 0 ? `${runtimeValue} min` : "");
+  const genres = joinList(item.genres) || String(item.genre || "").trim();
   const directors = joinList(item.directors) || "Unknown";
   const actors = joinList(item.actors) || "Unknown";
-  const description = stripHtmlTags(item.overview || "") || "No description yet.";
+  const description = stripHtmlTags(item.synopsis || item.overview || "") || "No description yet.";
   const trailerUrl = String(item.trailer_url || "").trim();
   const tmdbUrl = String(item.tmdb_url || "").trim();
   const sourceUrl = String(item.url || "").trim();
+  const bookUrl = String(item.book_url || "").trim();
   const status = String(item.status_label || "").trim();
   const format = String(item.format || "").trim();
-  const showtimes = Array.isArray(item.showtimes) ? item.showtimes.filter(Boolean).join(", ") : "";
+  const showtimesByDate = Array.isArray(item.showings_by_date) ? item.showings_by_date : [];
+  const showtimes = Array.isArray(item.showings) ? item.showings.filter(Boolean).join(", ") : "";
+  const showtimesByDateHtml = showtimesByDate
+    .map((entry) => {
+      const dateText = displayDatePlain(String(entry?.date || "").trim());
+      const times = Array.isArray(entry?.times) ? entry.times.filter(Boolean).join(", ") : "";
+      if (!dateText || !times) {
+        return "";
+      }
+      return `<p><strong>${escapeHtml(dateText)}:</strong> ${escapeHtml(times)}</p>`;
+    })
+    .filter(Boolean)
+    .join("");
   const source = String(item.source || "").trim();
-  const timingBits = [status, releaseDate, runtime, format].filter(Boolean);
+  const venue = String(item.venue || item.movie_venue || "").trim();
+  const day = String(item.day || "").trim();
+  const doorsOpen = String(item.doors_open || "").trim();
+  const movieStarts = String(item.movie_starts || "").trim();
+  const cinemaType = String(item.cinema_type || "").trim();
+  const ageRestriction = String(item.age_restriction || "").trim();
+  const timingBits = [status, releaseDate, day, runtime, format].filter(Boolean);
+  const eventDetails = [
+    venue ? `<p><strong>Venue:</strong> ${escapeHtml(venue)}</p>` : "",
+    doorsOpen ? `<p><strong>Doors open:</strong> ${escapeHtml(doorsOpen)}</p>` : "",
+    movieStarts ? `<p><strong>Movie starts:</strong> ${escapeHtml(movieStarts)}</p>` : "",
+    cinemaType ? `<p><strong>Cinema type:</strong> ${escapeHtml(cinemaType)}</p>` : "",
+    ageRestriction ? `<p><strong>Age restriction:</strong> ${escapeHtml(ageRestriction)}</p>` : "",
+  ].join("");
   const posterHtml = posterUrl
     ? `<img class="watchlist-detail-poster" src="${posterUrl}" alt="${safeTitle} poster">`
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
@@ -607,10 +740,12 @@ function openReleaseDetail(item) {
         ${timingBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(timingBits.join(" • "))}</p>` : ""}
         ${genres ? `<p class="watchlist-detail-meta">${escapeHtml(genres)}</p>` : ""}
         <p class="watchlist-detail-description">${escapeHtml(description)}</p>
-        ${showtimes ? `<p><strong>Showtimes:</strong> ${escapeHtml(showtimes)}</p>` : ""}
-        <p><strong>Directors:</strong> ${escapeHtml(directors)}</p>
-        <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>
+        ${eventDetails}
+        ${showtimesByDateHtml || (showtimes ? `<p><strong>Showtimes:</strong> ${escapeHtml(showtimes)}</p>` : "")}
+        ${directors !== "Unknown" ? `<p><strong>Directors:</strong> ${escapeHtml(directors)}</p>` : ""}
+        ${actors !== "Unknown" ? `<p><strong>Actors:</strong> ${escapeHtml(actors)}</p>` : ""}
         <div class="watchlist-detail-links">
+          ${bookUrl ? `<a href="${bookUrl}" target="_blank" rel="noreferrer">Book</a>` : ""}
           ${sourceUrl ? `<a href="${sourceUrl}" target="_blank" rel="noreferrer">Source</a>` : ""}
           ${trailerUrl ? `<a href="${trailerUrl}" target="_blank" rel="noreferrer">Trailer</a>` : ""}
           ${tmdbUrl ? `<a href="${tmdbUrl}" target="_blank" rel="noreferrer">TMDB</a>` : ""}
@@ -1278,7 +1413,7 @@ function renderNews(items) {
       button.type = "button";
       button.className = `news-card news-theme-${categoryThemeKey(item)} news-card-module${selected ? " is-selected" : ""}`;
       button.dataset.newsId = item.id;
-      button.innerHTML = `<span class="news-card-title">${escapeHtml(String(item.title || "Pinned module").trim())}</span>`;
+      button.innerHTML = `${item.is_new ? '<span class="new-badge">New</span>' : ""}<span class="news-card-title">${escapeHtml(String(item.title || "Pinned module").trim())}</span>`;
       elements.newsPinned.append(button);
     }
   }
@@ -1316,11 +1451,12 @@ function renderNews(items) {
       ? `<img class="news-card-thumb" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)} preview" loading="lazy">`
       : '<span class="news-card-thumb news-card-thumb-placeholder" aria-hidden="true"></span>';
     button.innerHTML = isPinnedModule
-      ? `<span class="news-card-title">${escapeHtml(title)}</span>`
+      ? `${item.is_new ? '<span class="new-badge">New</span>' : ""}<span class="news-card-title">${escapeHtml(title)}</span>`
       : `
         <span class="news-card-main">
           ${thumbHtml}
           <span class="news-card-copy">
+            ${item.is_new ? '<span class="new-badge">New</span>' : ""}
             <span class="news-card-topline">
               <span class="news-meta">${escapeHtml(newsMetaText(item))}</span>
               ${relative ? `<span class="news-relative-time">${escapeHtml(relative)}</span>` : ""}
@@ -1687,6 +1823,7 @@ function renderWatchlistTitleCard(type, title, payload, item = null) {
     >
       ${posterHtml}
       <div class="watchlist-entry-body">
+        ${item?.is_new ? '<span class="new-badge">New</span>' : ""}
         <p class="watchlist-entry-type">${badgeLabel}</p>
         <p class="watchlist-entry-title">${safeTitle}</p>
         ${ratingHtml}
@@ -3075,6 +3212,12 @@ function renderQuicketEvents(events) {
 
     const title = document.createElement("strong");
     title.textContent = event.title || "Untitled event";
+    if (event && event.is_new) {
+      const badge = document.createElement("span");
+      badge.className = "new-badge";
+      badge.textContent = "New";
+      details.append(badge);
+    }
 
     const venue = document.createElement("span");
     venue.className = "event-venue";
@@ -3194,6 +3337,12 @@ function renderBandsintownEvents(events) {
 
       const eventTitle = document.createElement("strong");
       eventTitle.textContent = event.title || "Untitled concert";
+      if (event && event.is_new) {
+        const badge = document.createElement("span");
+        badge.className = "new-badge";
+        badge.textContent = "New";
+        body.append(badge);
+      }
 
       const venue = document.createElement("span");
       venue.className = "event-venue";
@@ -4486,7 +4635,11 @@ async function loadReleases() {
     const payload = await response.json();
     const items = Array.isArray(payload.items) ? payload.items : [];
     state.releaseItems = items;
-    renderPosters(elements.releaseGrid, items, "No releases found.", { interactiveRelease: true });
+    renderPosters(elements.releaseGrid, items, "No releases found.", {
+      interactiveRelease: true,
+      ageDateField: "first_seen_at",
+      showPastAge: true,
+    });
   } catch (error) {
     state.releaseItems = [];
     elements.releaseGrid.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -4617,6 +4770,59 @@ async function loadImaxReleases() {
   }
 }
 
+async function loadGalileoReleases() {
+  if (!elements.galileoGrid) {
+    return;
+  }
+  try {
+    const response = await fetch(GALILEO_RELEASES_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${GALILEO_RELEASES_PATH}`);
+    }
+    const payload = await response.json();
+    const items = Array.isArray(payload.items)
+      ? payload.items.map((item) => {
+        const venue = String(item?.venue || "").trim();
+        return {
+          ...item,
+          status_label: venue || "",
+          location_label: "",
+        };
+      })
+      : [];
+    state.galileoItems = items;
+    renderPosters(elements.galileoGrid, items, "No Galileo open-air cinema shows found.", {
+      interactiveRelease: true,
+      indexAttr: "galileoIndex",
+    });
+  } catch (error) {
+    state.galileoItems = [];
+    elements.galileoGrid.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
+async function loadLabiaShowtimes() {
+  if (!elements.labiaGrid) {
+    return;
+  }
+  try {
+    const response = await fetch(LABIA_SHOWTIMES_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${LABIA_SHOWTIMES_PATH}`);
+    }
+    const payload = await response.json();
+    const items = Array.isArray(payload.items) ? payload.items : [];
+    state.labiaItems = items;
+    renderPosters(elements.labiaGrid, items, "No Labia showtimes found.", {
+      interactiveRelease: true,
+      indexAttr: "labiaIndex",
+    });
+  } catch (error) {
+    state.labiaItems = [];
+    elements.labiaGrid.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
 async function loadGameReleases() {
   try {
     const response = await fetch(GAME_RELEASES_PATH, { cache: "no-store" });
@@ -4670,7 +4876,7 @@ async function loadGameReleases() {
       sortByDateAsc(upcomingItems);
     }
 
-    renderPosters(elements.gameReleaseGrid, releasedItems, "No new game releases found.");
+    renderPosters(elements.gameReleaseGrid, releasedItems, "No new game releases found.", { showPastAge: true });
     renderPosters(elements.gameComingSoonGrid, upcomingItems, "No upcoming games found.");
   } catch (error) {
     elements.gameReleaseGrid.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -5064,6 +5270,36 @@ if (elements.imaxGrid) {
       return;
     }
     openReleaseDetail(state.imaxItems[index]);
+  });
+}
+
+if (elements.galileoGrid) {
+  elements.galileoGrid.addEventListener("click", (event) => {
+    const card = event.target.closest(".poster-card[data-galileo-index]");
+    if (!card) {
+      return;
+    }
+    event.preventDefault();
+    const index = Number(card.dataset.galileoIndex);
+    if (!Number.isInteger(index) || index < 0 || index >= state.galileoItems.length) {
+      return;
+    }
+    openReleaseDetail(state.galileoItems[index]);
+  });
+}
+
+if (elements.labiaGrid) {
+  elements.labiaGrid.addEventListener("click", (event) => {
+    const card = event.target.closest(".poster-card[data-labia-index]");
+    if (!card) {
+      return;
+    }
+    event.preventDefault();
+    const index = Number(card.dataset.labiaIndex);
+    if (!Number.isInteger(index) || index < 0 || index >= state.labiaItems.length) {
+      return;
+    }
+    openReleaseDetail(state.labiaItems[index]);
   });
 }
 
@@ -5612,6 +5848,8 @@ loadWeather();
 loadReleases();
 loadComingSoon();
 loadImaxReleases();
+loadGalileoReleases();
+loadLabiaShowtimes();
 loadGameReleases();
 loadNews();
 loadWatchlist();

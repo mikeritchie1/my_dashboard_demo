@@ -462,5 +462,113 @@
   "Vrede St": {
     "lat": -33.9301614,
     "lng": 18.4181141
+  },
+  "Die Boer": {
+    "lat": -33.8300937,
+    "lng": 18.6505042
+  },
+  "42 King Langalibalele Dr": {
+    "lat": -33.9447477,
+    "lng": 18.5423161
+  },
+  "Kapstadt Brauhaus Stellenbosch": {
+    "lat": -33.9393986,
+    "lng": 18.8564814
+  },
+  "Artvark Gallery": {
+    "lat": -34.1251041,
+    "lng": 18.4508635
+  },
+  "135 Lower Main Rd": {
+    "lat": -33.9385331,
+    "lng": 18.4687662
+  },
+  "The Old Biscuit Mill": {
+    "lat": -33.9274527,
+    "lng": 18.457579
+  },
+  "Guga S'thebe": {
+    "lat": -33.9442033,
+    "lng": 18.5244492
+  },
+  "Aandklas Stellenbosch": {
+    "lat": -33.9340317,
+    "lng": 18.8587929
+  },
+  "The Alma Cafe": {
+    "lat": -33.9539769,
+    "lng": 18.474556
+  },
+  "Kapstadt Brauhaus Strand": {
+    "lat": -34.1166322,
+    "lng": 18.8251283
+  },
+  "Drostdy Theatre": {
+    "lat": -33.9358251,
+    "lng": 18.8588073
+  },
+  "surfers corner": {
+    "lat": -34.1076837,
+    "lng": 18.4699434
+  },
+  "133 Bree St": {
+    "lat": -33.9223388,
+    "lng": 18.4170971
+  },
+  "Main Road 71a, 7990, Cape Town, Western Cape, South Africa": {
+    "lat": -34.0509144,
+    "lng": 18.461871
+  },
+  "Observatory Road 1, Observatory, 7925, Cape Town, Western Cape, South Africa": {
+    "lat": -33.933653,
+    "lng": 18.4668263
+  },
+  "Herschel Road 21, Claremont, 7708, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9869424,
+    "lng": 18.4634056
+  },
+  "7700, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9635894,
+    "lng": 18.4743491
+  },
+  "Cafe Roux": {
+    "lat": -34.0973174,
+    "lng": 18.3777971
+  },
+  "10 Luisa Way, Hout Bay, 7806, Cape Town, Western Cape, South Africa": {
+    "lat": -34.0246328,
+    "lng": 18.3536593
+  },
+  "Cape Town Club": {
+    "lat": -33.7496476,
+    "lng": 18.551558
+  },
+  "Century City Conference Centre": {
+    "lat": -33.8957478,
+    "lng": 18.505127
+  },
+  "Groot Constantia Road, , Constantia, 7806, Cape Town, Western Cape, South Africa": {
+    "lat": -34.0250643,
+    "lng": 18.4280242
+  },
+  "11 Warwick Street, , Claremont, 7708, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9813317,
+    "lng": 18.4637493
+  },
+  "271 Victoria Road, Salt River, 7925, Cape Town, Western Cape, South Africa": {
+    "lat": -33.934735,
+    "lng": 18.4609895
+  },
+  "7 Orphan Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9259159,
+    "lng": 18.4135541
+  },
+  "76 Lower Main Road, , Observatory, 7925, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9387739,
+    "lng": 18.4691373
+  },
+  "Milnerton High School, Pienaar Road, 7441, Cape Town, Western Cape, South Africa": {
+    "lat": -33.869866,
+    "lng": 18.4973429
   }
 }

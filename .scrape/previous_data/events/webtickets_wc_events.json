@@ -1,0 +1,88 @@
+[
+  {
+    "title": "The Human League & Blancmange live in Cape Town",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1586884529",
+    "image": "https://content.webtickets.co.za/breakout/panel_120526GW_1110_740_20260129_124503.jpg",
+    "date_text": "12 May 2026 19:00",
+    "venue": "Grand Arena,GrandWest,  1 Jakes Gerwel Dr, Acacia Park, Cape Town",
+    "price": "From R795 (Excluding Booking Fee)",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "outdoors"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": "",
+    "is_new": false
+  },
+  {
+    "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
+    "date_text": "From 12 May 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R295 - R495",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": "",
+    "is_new": false
+  },
+  {
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 12 May 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": "",
+    "is_new": false
+  },
+  {
+    "title": "IT’S GERMANY vs JAPAN AT KILLARNEY ROBOT RACING!",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594247303",
+    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_260513 Robot Racing Webtickets 1110 x 740_20260429_093904.jpg",
+    "date_text": "13 May 2026 18:30",
+    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
+    "price": "R70",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "sports"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": "",
+    "is_new": false
+  },
+  {
+    "title": "Positive Strokes - Homecoming Centre",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589512192",
+    "image": "https://content.webtickets.co.za/AlfredAdriaan/panel_Positive Strokes Blank - JPG_20250618_112342.jpg",
+    "date_text": "From 13 May 2026 19:00",
+    "venue": "Homecoming Centre, 15 M59, District Six, Cape Town, 7925",
+    "price": "R200 - R250",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": "",
+    "is_new": false
+  }
+]
