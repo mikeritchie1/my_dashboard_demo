@@ -20,7 +20,7 @@ BASE_URL = env_get("SCRAPE_QUICKET_EVENTS_URL_TEMPLATE", "https://www.quicket.co
 # 0 means no hard limit: scrape all matching events in the configured window.
 EVENTS_MAX_ITEMS = int(env_get("SCRAPE_QUICKET_MAX_ITEMS", "0"))
 REPO_DIR = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = REPO_DIR / "data" / "events"
+OUTPUT_DIR = REPO_DIR / "docs" / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "quicket_events.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")
 

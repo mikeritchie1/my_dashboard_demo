@@ -23,10 +23,8 @@ import shutil
 from pathlib import Path
 
 REPO_DIR = Path(__file__).resolve().parent.parent
-DATA_TIMELINE_DIR = REPO_DIR / "data" / "timeline"
-DOCS_TIMELINE_DIR = REPO_DIR / "docs" / "data" / "timeline"
+DATA_TIMELINE_DIR = REPO_DIR / "docs" / "data" / "timeline"
 DATA_PHOTOS_DIR = DATA_TIMELINE_DIR / "photos"
-DOCS_PHOTOS_DIR = DOCS_TIMELINE_DIR / "photos"
 MANIFEST_NAME = "manifest.json"
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"}
@@ -98,32 +96,6 @@ def _sorted_timeline_ids(timeline_ids: list[str]) -> list[str]:
     )
 
 
-def _import_docs_photos_to_data() -> None:
-    DATA_PHOTOS_DIR.mkdir(parents=True, exist_ok=True)
-    DOCS_PHOTOS_DIR.mkdir(parents=True, exist_ok=True)
-
-    for source_file in DOCS_PHOTOS_DIR.iterdir():
-        if not source_file.is_file():
-            continue
-        target_file = DATA_PHOTOS_DIR / source_file.name
-        if not target_file.exists():
-            shutil.copy2(source_file, target_file)
-
-
-def _sync_photos_to_docs() -> None:
-    DATA_PHOTOS_DIR.mkdir(parents=True, exist_ok=True)
-    DOCS_PHOTOS_DIR.mkdir(parents=True, exist_ok=True)
-
-    data_file_names = {file_path.name for file_path in DATA_PHOTOS_DIR.iterdir() if file_path.is_file()}
-    for docs_file in DOCS_PHOTOS_DIR.iterdir():
-        if docs_file.is_file() and docs_file.name not in data_file_names:
-            docs_file.unlink()
-
-    for source_file in DATA_PHOTOS_DIR.iterdir():
-        if not source_file.is_file():
-            continue
-        target_file = DOCS_PHOTOS_DIR / source_file.name
-        shutil.copy2(source_file, target_file)
 
 
 def _file_sha256(path: Path) -> str:
@@ -209,13 +181,12 @@ def _normalize_photo_filenames(used_indices: dict[str, set[int]]) -> dict[str, s
 
 def _write_manifest(items: list[dict[str, str]]) -> None:
     payload = {"items": items}
-    for target in (DATA_TIMELINE_DIR / MANIFEST_NAME, DOCS_TIMELINE_DIR / MANIFEST_NAME):
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    manifest_path = DATA_TIMELINE_DIR / MANIFEST_NAME
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    manifest_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
 def main() -> None:
-    _import_docs_photos_to_data()
     removed_duplicates = _dedupe_identical_photos()
 
     existing_payload = _load_json(DATA_TIMELINE_DIR / MANIFEST_NAME, {"items": []})
@@ -257,12 +228,11 @@ def main() -> None:
     sorted_ids = _sorted_timeline_ids(list(existing_by_id.keys()))
     final_items = [existing_by_id[timeline_id] for timeline_id in sorted_ids]
     _write_manifest(final_items)
-    _sync_photos_to_docs()
 
     print(f"Timeline entries: {len(final_items)}", flush=True)
     if removed_duplicates:
         print(f"Removed duplicate photos: {removed_duplicates}", flush=True)
-    print(f"Synced timeline data to: {DATA_TIMELINE_DIR} and {DOCS_TIMELINE_DIR}", flush=True)
+    print(f"Timeline data written to: {DATA_TIMELINE_DIR}", flush=True)
 
 
 if __name__ == "__main__":

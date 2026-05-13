@@ -19,7 +19,7 @@ from env import get as env_get
 
 ONE_PIECE_DIR = Path(__file__).resolve().parent
 WORKBOOK = ONE_PIECE_DIR / "One Piece Cards.xlsx"
-ONE_PIECE_DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "one_piece"
+ONE_PIECE_DATA_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "one_piece"
 REPO_DIR = Path(__file__).resolve().parents[2]
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 

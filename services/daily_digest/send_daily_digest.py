@@ -13,7 +13,7 @@ from typing import Any, Callable
 
 
 REPO_DIR = Path(__file__).resolve().parents[2]
-DATA_DIR = REPO_DIR / "data"
+DATA_DIR = REPO_DIR / "docs" / "data"
 SNAPSHOT_DIR = REPO_DIR / ".scrape" / "daily_digest"
 LATEST_DIGEST = REPO_DIR / ".scrape" / "latest_daily_digest.txt"
 
@@ -85,10 +85,10 @@ def load_specials(path: Path) -> list[Item]:
 SECTIONS = [
     Section(
         "One Piece Cards",
-        DATA_DIR / "one_piece" / "all_stores_missing_available.csv",
-        load_csv_rows,
+        DATA_DIR / "one_piece" / "missing_cards.json",
+        load_json_items("listings"),
         ("card_number", "store", "url"),
-        REPO_DIR / ".scrape" / "previous_all_stores_missing_available.csv",
+        REPO_DIR / ".scrape" / "previous_missing_cards.json",
     ),
     Section("New Releases", DATA_DIR / "release_radar" / "pahe_latest.json", load_json_items("items")),
     Section("Coming Soon Movies", DATA_DIR / "release_radar" / "coming_soon.json", load_json_items("items")),

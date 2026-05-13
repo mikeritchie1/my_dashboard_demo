@@ -22,7 +22,7 @@ DEFAULT_GAMES_PAGE_ID = "3c29c9884aae41859c33bdafcc1de628"
 DEFAULT_GAMES_URL = "https://www.notion.so/My-Games-3c29c9884aae41859c33bdafcc1de628"
 
 REPO_DIR = Path(__file__).resolve().parents[2]
-DATA_DIR = REPO_DIR / "data" / "media"
+DATA_DIR = REPO_DIR / "docs" / "data" / "media"
 OUTPUT_FILE = DATA_DIR / "watchlist.json"
 GAMES_OUTPUT_FILE = DATA_DIR / "gameslist.json"
 MOVIE_DETAILS_CACHE_FILE = DATA_DIR / "watchlist_movie_details.json"

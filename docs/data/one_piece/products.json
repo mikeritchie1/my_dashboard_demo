@@ -1,7 +1,7 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-05-13T13:13:42.394096Z",
-  "pages_scraped": 1,
+  "scraped_at": "2026-05-13T13:23:18.405255Z",
+  "pages_scraped": 15,
   "items": [
     {
       "title": "STARTER DECK -Animal Kingdom Pirates- [ST-04 PRE]",
@@ -662,6 +662,20 @@
       "added_at": "2026-05-13T11:33:45.087726Z"
     },
     {
+      "title": "Official Sleeves 6",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2024-06-01",
+      "release_date_text": "June 2024",
+      "url": "https://en.onepiece-cardgame.com/products/other/sleeve008.php",
+      "image_url": "https://en.onepiece-cardgame.com/renewal/images/products/other/sleeve008/img_item01.webp?_=0c7a0ab932eb678f24d4e55470eb23c1",
+      "source_page": 9,
+      "image_local_url": "./data/one_piece/product_images/sleeve008_img-item01.webp",
+      "is_released": true,
+      "added_at": "2026-05-13T13:23:08.060442Z"
+    },
+    {
       "title": "ONE PIECE CARD GAME English Version 1st Anniversary Set",
       "category": "other",
       "category_label": "OTHER",
@@ -1052,6 +1066,20 @@
       "image_local_url": "./data/one_piece/product_images/ib01_img-item01.webp",
       "is_released": true,
       "added_at": "2026-05-13T11:33:45.087726Z"
+    },
+    {
+      "title": "Illustration Box Vol.2",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2025-03-07",
+      "release_date_text": "March 7, 2025",
+      "url": "https://en.onepiece-cardgame.com/products/other/ib02.php",
+      "image_url": "https://en.onepiece-cardgame.com/renewal/images/products/other/ib02/img_item01.webp?_=0c7a0ab932eb678f24d4e55470eb23c1",
+      "source_page": 7,
+      "image_local_url": "./data/one_piece/product_images/ib02_img-item01.webp",
+      "is_released": true,
+      "added_at": "2026-05-13T13:23:08.060442Z"
     },
     {
       "title": "Illustration Box EX",
@@ -1710,6 +1738,20 @@
       "image_local_url": "./data/one_piece/product_images/sleeve028_img-item01.webp",
       "is_released": true,
       "added_at": "2026-05-13T11:33:45.087726Z"
+    },
+    {
+      "title": "Official Playmat & Card Set -Whole Cake Island Arc-",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2025-12-12",
+      "release_date_text": "December 12, 2025",
+      "url": "https://en.onepiece-cardgame.com/products/other/playmat009.php",
+      "image_url": "https://en.onepiece-cardgame.com/renewal/images/products/other/playmat009/img_item01.webp?_=0c7a0ab932eb678f24d4e55470eb23c1",
+      "source_page": 2,
+      "image_local_url": "./data/one_piece/product_images/playmat009_img-item01.webp",
+      "is_released": true,
+      "added_at": "2026-05-13T13:23:18.405255Z"
     },
     {
       "title": "BOOSTER PACK -THE AZURE SEA’S SEVEN- [OP14-EB04]",

@@ -18,8 +18,7 @@ from urllib.parse import quote, urlsplit, urlunsplit
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
-DATA_DIR = REPO_DIR / "data" / "news"
-DOCS_DIR = REPO_DIR / "docs" / "data" / "news"
+DATA_DIR = REPO_DIR / "docs" / "data" / "news"
 NEWS_FILE = DATA_DIR / "news.json"
 CONFIG_FILE = DATA_DIR / "config.json"
 
@@ -311,11 +310,6 @@ def parse_iso_datetime(value: str) -> datetime | None:
     return parsed.astimezone(timezone.utc)
 
 
-def sync_outputs() -> None:
-    DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    for path in DATA_DIR.glob("*.json"):
-        shutil.copy2(path, DOCS_DIR / path.name)
-    print(f"Synced news data to dashboard: {DOCS_DIR}", flush=True)
 
 
 def read_config() -> dict:
@@ -1299,7 +1293,6 @@ def main() -> int:
         print(f"Missing local news file: {NEWS_FILE}", file=sys.stderr)
         return 1
 
-    sync_outputs()
     return 0
 
 

@@ -8,16 +8,8 @@ from pathlib import Path
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
-DATA_DIR = REPO_DIR / "data" / "media"
-DOCS_DIR = REPO_DIR / "docs" / "data" / "media"
+DATA_DIR = REPO_DIR / "docs" / "data" / "media"
 OUTPUTS = ["watchlist.json", "gameslist.json", "watchlist_movie_details.json", "games_details.json"]
-
-
-def sync_outputs() -> None:
-    DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    for path in DATA_DIR.glob("*.json"):
-        shutil.copy2(path, DOCS_DIR / path.name)
-    print(f"Synced media data to dashboard: {DOCS_DIR}", flush=True)
 
 
 def main() -> int:
@@ -42,7 +34,6 @@ def main() -> int:
         command.append("--hard")
     print(f"Running media scrape: {' '.join(command)}", flush=True)
     subprocess.run(command, cwd=REPO_DIR, check=True)
-    sync_outputs()
     return 0
 
 

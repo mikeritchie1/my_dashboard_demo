@@ -15,7 +15,7 @@ from env import get as env_get
 
 
 GALILEO_MOVIES_URL = env_get("SCRAPE_GALILEO_MOVIES_URL", "https://thegalileo.co.za/movies/")
-DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "release_radar"
+DATA_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "release_radar"
 OUTPUT_FILE = DATA_DIR / "galileo_movies.json"
 DEFAULT_TIMEOUT = 30
 

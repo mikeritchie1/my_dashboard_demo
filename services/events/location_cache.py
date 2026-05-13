@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 REPO_DIR = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = REPO_DIR / "data" / "events"
+OUTPUT_DIR = REPO_DIR / "docs" / "data" / "events"
 LOCATIONS_CACHE_PATH = OUTPUT_DIR / "locations.json"
 
 # South Africa bounds + safety buffer so clearly wrong geocodes are rejected.

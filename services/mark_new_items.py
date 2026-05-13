@@ -6,7 +6,7 @@ from typing import Any
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
-DATA_DIR = REPO_DIR / "data"
+DATA_DIR = REPO_DIR / "docs" / "data"
 SNAPSHOT_DIR = REPO_DIR / ".scrape" / "previous_data"
 
 

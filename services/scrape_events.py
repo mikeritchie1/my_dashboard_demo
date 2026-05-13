@@ -8,8 +8,7 @@ from pathlib import Path
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
-DATA_DIR = REPO_DIR / "data" / "events"
-DOCS_DIR = REPO_DIR / "docs" / "data" / "events"
+DATA_DIR = REPO_DIR / "docs" / "data" / "events"
 
 SOURCES = {
     "specials": {
@@ -45,19 +44,11 @@ def remove_outputs(source_names: list[str]) -> None:
     output_names = {"locations.json"} if set(source_names) == set(SOURCES) else set()
     for source in source_names:
         output_names.update(SOURCES[source]["outputs"])
-    for directory in [DATA_DIR, DOCS_DIR]:
-        for name in output_names:
-            path = directory / name
-            if path.exists():
-                print(f"Removing stale output: {path}", flush=True)
-                path.unlink()
-
-
-def sync_outputs() -> None:
-    DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    for path in DATA_DIR.glob("*.json"):
-        shutil.copy2(path, DOCS_DIR / path.name)
-    print(f"Synced event data to dashboard: {DOCS_DIR}", flush=True)
+    for name in output_names:
+        path = DATA_DIR / name
+        if path.exists():
+            print(f"Removing stale output: {path}", flush=True)
+            path.unlink()
 
 
 def run_source(source: str, args: argparse.Namespace) -> None:
@@ -101,7 +92,6 @@ def main() -> int:
         run_source(source, args)
     if args.source == "all" and not args.skip_geocode:
         run_geocode_pass(args)
-    sync_outputs()
     return 0
 
 

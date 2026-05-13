@@ -16,7 +16,7 @@ from sync_docs import sync_events_data_to_docs
 
 REPO_DIR = Path(__file__).resolve().parents[2]
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
-OUTPUT_DIR = REPO_DIR / "data" / "events"
+OUTPUT_DIR = REPO_DIR / "docs" / "data" / "events"
 OUTPUT_FILE = OUTPUT_DIR / "google_calendar_events.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")
 GOOGLE_CALENDAR_API_BASE_URL = env_get("SCRAPE_GOOGLE_CALENDAR_API_BASE_URL", "https://www.googleapis.com/calendar/v3")

@@ -11,8 +11,7 @@ from pathlib import Path
 
 
 PRODUCTS_URL = "https://en.onepiece-cardgame.com/products/"
-DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "one_piece"
-DOCS_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "one_piece"
+DATA_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "one_piece"
 OUTPUT_FILE = DATA_DIR / "products.json"
 IMAGE_DIR = DATA_DIR / "product_images"
 
@@ -121,66 +120,43 @@ def parse_total_pages(html_text: str) -> int:
     return max_page
 
 
-def extension_from_url(url: str) -> str:
+def _image_extension(url: str) -> str:
     path = urllib.parse.urlparse(url).path.lower()
-    if path.endswith(".png"):
-        return ".png"
-    if path.endswith(".jpg") or path.endswith(".jpeg"):
-        return ".jpg"
+    for ext in (".png", ".jpg", ".jpeg", ".webp"):
+        if path.endswith(ext):
+            return ext.replace(".jpeg", ".jpg")
     return ".webp"
 
 
-def normalize_image_source_url(url: str) -> str:
-    raw = str(url or "").strip()
-    if not raw:
-        return ""
-    parsed = urllib.parse.urlparse(raw)
-    # Ignore volatile query params so the same product image maps to one stable file.
-    return urllib.parse.urlunparse((parsed.scheme, parsed.netloc, parsed.path, "", "", ""))
-
-
-def safe_slug(value: str) -> str:
-    slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
-    return slug or "product"
-
-
-def stable_image_filename(item: dict[str, object], normalized_image_url: str) -> str:
-    product_url = str(item.get("url") or "").strip()
-    product_path = urllib.parse.urlparse(product_url).path
-    product_stem = Path(product_path).stem or Path(product_path).name or "product"
-    product_slug = safe_slug(product_stem)
-
-    image_path = urllib.parse.urlparse(normalized_image_url).path
-    image_name = Path(image_path).name or "image.webp"
-    image_stem = safe_slug(Path(image_name).stem or "image")
-    ext = extension_from_url(normalized_image_url)
-    return f"{product_slug}_{image_stem}{ext}"
+def _stable_image_filename(item: dict[str, object], image_url: str) -> str:
+    product_path = urllib.parse.urlparse(str(item.get("url") or "")).path
+    product_slug = re.sub(r"[^a-z0-9]+", "-", (Path(product_path).stem or "product").lower()).strip("-") or "product"
+    image_path = urllib.parse.urlparse(image_url).path
+    image_stem = re.sub(r"[^a-z0-9]+", "-", (Path(image_path).stem or "image").lower()).strip("-") or "image"
+    return f"{product_slug}_{image_stem}{_image_extension(image_url)}"
 
 
 def cache_images_locally(items: list[dict[str, object]]) -> list[dict[str, object]]:
     IMAGE_DIR.mkdir(parents=True, exist_ok=True)
     out: list[dict[str, object]] = []
-    print(f"[images] caching images for {len(items)} new item(s)", flush=True)
     for item in items:
         image_url = str(item.get("image_url") or "").strip()
-        normalized_image_url = normalize_image_source_url(image_url)
         local_url = ""
-        if normalized_image_url:
+        if image_url:
             try:
-                file_name = stable_image_filename(item, normalized_image_url)
+                file_name = _stable_image_filename(item, image_url)
                 file_path = IMAGE_DIR / file_name
                 if not file_path.exists():
-                    print(f"[images] download -> {file_name}", flush=True)
-                    request = urllib.request.Request(image_url, headers={"User-Agent": "Mozilla/5.0"})
-                    with urllib.request.urlopen(request, timeout=40) as response:
+                    print(f"[images] downloading {file_name}", flush=True)
+                    req = urllib.request.Request(image_url, headers={"User-Agent": "Mozilla/5.0"})
+                    with urllib.request.urlopen(req, timeout=40) as response:
                         file_path.write_bytes(response.read())
                 else:
-                    print(f"[images] cache hit -> {file_name}", flush=True)
+                    print(f"[images] cached {file_name}", flush=True)
                 local_url = f"./data/one_piece/product_images/{file_name}"
             except Exception:
-                print(f"[images] failed for: {str(item.get('title') or '').strip()}", flush=True)
-                local_url = ""
-        out.append({**item, "image_url": normalized_image_url or image_url, "image_local_url": local_url})
+                print(f"[images] failed: {str(item.get('title') or '').strip()}", flush=True)
+        out.append({**item, "image_local_url": local_url})
     return out
 
 
@@ -276,15 +252,6 @@ def annotate_products(items: list[dict[str, object]]) -> list[dict[str, object]]
     return out
 
 
-def sync_to_docs() -> None:
-    DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    for path in DATA_DIR.iterdir():
-        target = DOCS_DIR / path.name
-        if path.is_dir():
-            shutil.copytree(path, target, dirs_exist_ok=True)
-        elif path.is_file():
-            shutil.copy2(path, target)
-
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Scrape ONE PIECE official products list.")
@@ -334,8 +301,6 @@ def main() -> int:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     print(f"[write] writing merged payload -> {OUTPUT_FILE}", flush=True)
     OUTPUT_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
-    print("[sync] syncing data to docs folder", flush=True)
-    sync_to_docs()
     print(
         f"Wrote {len(items)} One Piece product(s) total "
         f"(added {len(incoming_items)} new) from {pages_used} page(s) to {OUTPUT_FILE}"

@@ -22,7 +22,7 @@ SOURCE_URL = env_get("SCRAPE_BANDSINTOWN_EVENTS_URL", "https://www.bandsintown.c
 EVENTS_MAX_ITEMS = int(env_get("SCRAPE_BANDSINTOWN_MAX_ITEMS", "0"))
 MAX_PAGES = max(1, int(env_get("SCRAPE_BANDSINTOWN_MAX_PAGES", "30")))
 REPO_DIR = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = REPO_DIR / "data" / "events"
+OUTPUT_DIR = REPO_DIR / "docs" / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "bandsintown_events.json"
 EVENTS_CONFIG_PATH = OUTPUT_DIR / "config.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")

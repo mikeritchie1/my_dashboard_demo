@@ -18,7 +18,7 @@ BASE_URL = env_get("SCRAPE_WEBTICKETS_CATEGORY_URL_TEMPLATE", "https://www.webti
 PAGE_PREFIX = env_get("SCRAPE_WEBTICKETS_PAGE_PREFIX", "https://www.webtickets.co.za/v2/")
 EVENTS_MAX_ITEMS = int(env_get("SCRAPE_WEBTICKETS_MAX_ITEMS", "0"))
 REPO_DIR = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = REPO_DIR / "data" / "events"
+OUTPUT_DIR = REPO_DIR / "docs" / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "webtickets_wc_events.json"
 
 

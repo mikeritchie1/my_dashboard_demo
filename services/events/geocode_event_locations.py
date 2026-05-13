@@ -20,7 +20,7 @@ from sync_docs import sync_events_data_to_docs
 
 
 REPO_DIR = Path(__file__).resolve().parents[2]
-EVENTS_DIR = REPO_DIR / "data" / "events"
+EVENTS_DIR = REPO_DIR / "docs" / "data" / "events"
 LOCATIONS_PATH = EVENTS_DIR / "locations.json"
 NOMINATIM_SEARCH_URL = env_get("SCRAPE_NOMINATIM_SEARCH_URL", "https://nominatim.openstreetmap.org/search")
 EVENT_SOURCE_FILES = [

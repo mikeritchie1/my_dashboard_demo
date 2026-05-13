@@ -12,7 +12,7 @@ from pathlib import Path
 
 
 ONE_PIECE_DIR = Path(__file__).resolve().parent
-ONE_PIECE_DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "one_piece"
+ONE_PIECE_DATA_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "one_piece"
 
 STORE_NAMES = {
     "bigbang": "Big Bang Shop",

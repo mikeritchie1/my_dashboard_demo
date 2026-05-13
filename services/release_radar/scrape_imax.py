@@ -23,7 +23,7 @@ IMAX_FALLBACK_URL = env_get(
     "https://r.jina.ai/http://www.imax.com/en/za/theatre/ster-kinekor-va-waterfront-imax",
 )
 COMING_SOON_LIMIT = max(0, int(env_get("SCRAPE_IMAX_COMING_SOON_LIMIT", "4") or "4"))
-DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "release_radar"
+DATA_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "release_radar"
 OUTPUT_FILE = DATA_DIR / "imax_waterfront.json"
 
 

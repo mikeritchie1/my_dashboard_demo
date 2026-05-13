@@ -16,7 +16,7 @@ from env import get as env_get
 
 API_URL = env_get("SCRAPE_RAWG_GAMES_API_URL", "https://api.rawg.io/api/games")
 SITE_GAME_BASE_URL = env_get("SCRAPE_RAWG_SITE_GAME_BASE_URL", "https://rawg.io/games")
-DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "release_radar"
+DATA_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "release_radar"
 OUTPUT_FILE = DATA_DIR / "game_releases.json"
 FETCH_LIMIT = max(1, int(env_get("SCRAPE_GAME_RELEASES_FETCH_LIMIT", "20") or "20"))
 MAX_ITEMS = max(FETCH_LIMIT, int(env_get("SCRAPE_GAME_RELEASES_MAX_ITEMS", "80") or "80"))

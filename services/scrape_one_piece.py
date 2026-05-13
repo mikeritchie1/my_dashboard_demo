@@ -8,19 +8,7 @@ from pathlib import Path
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
-DATA_DIR = REPO_DIR / "data" / "one_piece"
-DOCS_DIR = REPO_DIR / "docs" / "data" / "one_piece"
-
-
-def sync_outputs() -> None:
-    DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    for path in DATA_DIR.iterdir():
-        target = DOCS_DIR / path.name
-        if path.is_dir():
-            shutil.copytree(path, target, dirs_exist_ok=True)
-        elif path.is_file():
-            shutil.copy2(path, target)
-    print(f"Synced One Piece data to dashboard: {DOCS_DIR}", flush=True)
+DATA_DIR = REPO_DIR / "docs" / "data" / "one_piece"
 
 
 def main() -> int:
@@ -46,7 +34,6 @@ def main() -> int:
         product_command.append("--hard")
     print(f"Running One Piece products scrape: {' '.join(product_command)}", flush=True)
     subprocess.run(product_command, cwd=REPO_DIR, check=True)
-    sync_outputs()
     return 0
 
 

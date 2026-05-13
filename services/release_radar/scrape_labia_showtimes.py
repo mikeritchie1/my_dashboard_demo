@@ -14,7 +14,7 @@ from services.release_radar.scrape_releases import fetch_tmdb_details
 
 CLIENT_URL = "https://www.webtickets.co.za/v2/client.aspx?clientcode=labia"
 EVENT_URL_TEMPLATE = "https://www.webtickets.co.za/v2/event.aspx?itemid={itemid}"
-DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "release_radar"
+DATA_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "release_radar"
 OUTPUT_FILE = DATA_DIR / "labia_showtimes.json"
 
 

@@ -8,8 +8,7 @@ from pathlib import Path
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
-DATA_DIR = REPO_DIR / "data" / "release_radar"
-DOCS_DIR = REPO_DIR / "docs" / "data" / "release_radar"
+DATA_DIR = REPO_DIR / "docs" / "data" / "release_radar"
 
 SOURCES = {
     "pahe": {
@@ -39,11 +38,6 @@ SOURCES = {
 }
 
 
-def sync_outputs() -> None:
-    DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    for path in DATA_DIR.glob("*.json"):
-        shutil.copy2(path, DOCS_DIR / path.name)
-    print(f"Synced release radar data to dashboard: {DOCS_DIR}", flush=True)
 
 
 def selected_sources(source: str) -> list[str]:
@@ -75,7 +69,6 @@ def main() -> int:
         print(f"Running release radar scrape: {' '.join(command)}", flush=True)
         subprocess.run(command, cwd=REPO_DIR, check=True)
 
-    sync_outputs()
     return 0
 
 
