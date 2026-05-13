@@ -717,7 +717,7 @@ function renderReleaseList(container, items, emptyText, indexAttr, options = {})
     if (ageMode === "first_seen") {
       age = relativeDaysFromDate(item.first_seen_at, { allowPast: true });
     } else if (ageMode === "release") {
-      const ageDate = item.event_date_text || item.event_date || item.release_date;
+      const ageDate = item.event_date || item.release_date;
       age = relativeDaysFromDate(ageDate, { allowPast: Boolean(options.allowPastAge) });
     }
     // ageMode "none" → age stays ""
@@ -4998,7 +4998,7 @@ async function loadGalileoReleases() {
       })
       : [];
     state.galileoItems = items;
-    renderReleaseList(elements.galileoGrid, items, "No Galileo open-air cinema shows found.", "galileoIndex");
+    renderReleaseList(elements.galileoGrid, items, "No Galileo open-air cinema shows found.", "galileoIndex", { ageMode: "release", allowPastAge: true });
   } catch (error) {
     state.galileoItems = [];
     elements.galileoGrid.innerHTML = `<p class="empty">${error.message}</p>`;
