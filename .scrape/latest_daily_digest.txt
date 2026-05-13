@@ -4,19 +4,40 @@ One Piece Cards
 ---------------
 Added: 0
 
-Updated: 0
+Updated: 13
+1. Porche [500 Years in the Future] | Big Bang Shop | 35.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/porche-500-years-in-the-future
+2. Donquixote Doflamingo [Royal Blood] | Knightly Gaming | 80.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood
+3. Uta (Alternate Art) [Paramount War] | Big Bang Shop | 455.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-alternate-art-paramount-war
+4. Mr.2.Bon.Kurei (Bentham) (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 357.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-2-bon-kurei-bentham-alternate-art-the-azure-seas-seven
+5. Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards] | Big Bang Shop | 390.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards
+6. You're the One Who Should Disappear (Alternate Art) [Premium Booster -The Best- Vol. 2] | Big Bang Shop | 445.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/youre-the-one-who-should-disappear-alternate-art-premium-booster-the-best-vol-2
+7. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 521.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven
+8. Edward.Newgate (Special Goods Set -Former Four Emperors-) [One Piece Promotion Cards] | Knightly Gaming | 655.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/edward-newgate-special-goods-set-former-four-emperors-one-piece-promotion-cards
+9. Ms. All Sunday (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 842.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven
+10. Charlotte Linlin (SP) [Wings of the Captain] | Big Bang Shop | 1015.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-linlin-sp-wings-of-the-captain
+...and 3 more
 
-Removed: 3
-1. Shanks (OP01-120) (Reprint) [Premium Booster -The Best-] | Big Bang Shop | 60.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-op01-120-reprint-premium-booster-the-best
-2. Monkey.D.Luffy [Royal Blood] | Big Bang Shop | 100.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-royal-blood-1
-3. Yamato (OP01-121) (Reprint) [Premium Booster -The Best-] | Big Bang Shop | 55.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/yamato-op01-121-reprint-premium-booster-the-best
+Removed: 2
+1. Saint Shalria | Tanuki Trader | 8.0
+https://tanukitrader.co.za/product/saint-shalria/
+2. St. Marcus Mars | Tanuki Trader | 10.0
+https://tanukitrader.co.za/product/st-marcus-mars/
 
 New Releases
 ------------
-Added: 0
+Added: 1
+1. Faces of Death
+https://pahe.ink/faces-of-death-2026-web-dl-480p-720p-1080p/
 
 Updated: 0
 
@@ -28,23 +49,71 @@ Added: 0
 
 Updated: 0
 
-Removed: 0
+Removed: 9
+1. The Devil Wears Prada 2 | 2026-05-01
+https://www.themoviedb.org/movie/1314481
+2. The Sheep Detectives | 2026-05-08
+https://www.themoviedb.org/movie/1301421
+3. Fuze | 2026-05-01
+https://www.themoviedb.org/movie/1242265
+4. Normal | 2026-05-01
+https://www.themoviedb.org/movie/1242332
+5. Beast | 2026-05-01
+https://www.themoviedb.org/movie/1292415
+6. Variations on a Theme | 2026-05-08
+https://www.themoviedb.org/movie/1599249
+7. Iron Maiden: Burning Ambition | 2026-05-08
+https://www.themoviedb.org/movie/1642859
+8. Mortal Kombat II | 2026-05-08
+https://www.themoviedb.org/movie/931285
+9. Ek Din | 2026-05-01
+https://www.themoviedb.org/movie/1171094
 
 New Game Releases
 -----------------
-Added: 0
+Added: 2
+1. Dead as Disco | 2026-05-05
+https://rawg.io/games/dead-as-disco
+2. Sushi Duel | 2026-05-12
+https://rawg.io/games/sushi-duel
 
-Updated: 0
+Updated: 2
+1. Directive 8020 | 2026-05-12
+https://rawg.io/games/the-dark-pictures-directive-8020
+2. Mixtape | 2026-05-07
+https://rawg.io/games/mixtape
 
-Removed: 0
+Removed: 2
+1. Climber Toys: Together | 2026-04-24
+https://rawg.io/games/climber-toys-together
+2. Vending Machine Co | 2026-04-25
+https://rawg.io/games/vending-machine-co
 
 Coming Soon Games
 -----------------
-Added: 0
+Added: 1
+1. Crushed In Time | 2026-06-10
+https://rawg.io/games/crushed-in-time
 
 Updated: 0
 
-Removed: 0
+Removed: 8
+1. Will: Follow the Light | 2026-05-07
+https://rawg.io/games/will-follow-the-light
+2. Clockwork Ambrosia | 2026-05-12
+https://rawg.io/games/clockwork-ambrosia
+3. Uncle Lee’s Cookbook: Five Recipes for Disaster | 2026-05-11
+https://rawg.io/games/uncle-lees-cookbook-five-recipes-for-disaster
+4. Mixtape | 2026-05-07
+https://rawg.io/games/mixtape
+5. Battlestar Galactica: Scattered Hopes | 2026-05-10
+https://rawg.io/games/battlestar-galactica-scattered-hopes
+6. Directive 8020 | 2026-05-12
+https://rawg.io/games/the-dark-pictures-directive-8020
+7. Mixtape (2025) | 2026-05-07
+https://rawg.io/games/mixtape-2025
+8. MOTORSLICE | 2026-05-04
+https://rawg.io/games/motorslice
 
 Bandsintown Events
 ------------------
@@ -56,23 +125,71 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 1
-1. HER'S business showcase | 2026-05-14T10:30:00+02:00 | Bootleggers Cape Quarter Lifestyle Village - The Piazza
-https://www.quicket.co.za/events/359387-hers-business-showcase/
+Added: 12
+1. Cigar & Wine Tasting Evening | 2026-05-13T18:30:00+02:00 | Cape Town Club
+https://www.quicket.co.za/events/368389-cigar-wine-tasting-evening/
+2. A SoulCollage® Women's Retreat - Reclaim Your Whole Self | 2026-05-16T10:00:00+02:00 | The Sufi Movement in South Africa
+https://www.quicket.co.za/events/371269-a-soulcollage-womens-retreat-reclaim-your-whole-self/
+3. The Big Wave, Big Beer, Big Comedy Auction | 2026-05-14T18:30:00+02:00 | Jack Black Brewing Company
+https://www.quicket.co.za/events/369194-the-big-wave-big-beer-big-comedy-auction/
+4. Dig Deep | 2026-05-15T19:00:00+02:00 | One Park
+https://www.quicket.co.za/events/374124-dig-deep/
+5. Open Mic Film Night - Self Made Cinema | 2026-05-13T18:30:00+02:00 | The Commons
+https://www.quicket.co.za/events/347964-open-mic-film-night-self-made-cinema/
+6. Crosby, Stills, Nash & Young: The CSNY Experience | 2026-05-17T18:00:00+02:00 | The Alma Cafe
+https://www.quicket.co.za/events/369632-crosby-stills-nash-young-the-csny-experience/
+7. Morgan Visser - Meet me at the Movies | 2026-05-15T20:00:00+02:00 | Kalk Bay Theatre (AT THE BRASS BELL)
+https://www.quicket.co.za/events/374111-morgan-visser-meet-me-at-the-movies/
+8. The Alpha Conference 2026 | 2026-05-30T09:00:00+02:00 | Friend of God Church - Goodwood Campus
+https://www.quicket.co.za/events/347199-the-alpha-conference-2026/
+9. JACK PAROW @ The NEW ARMCHAIR (SPRINGBOK ARMS) | 2026-05-16T20:00:00+02:00 | The Armchair Theatre
+https://www.quicket.co.za/events/371585-jack-parow-the-new-armchair-springbok-arms/
+10. Social Link-Up: DayTime Groove | 2026-05-31T13:00:00+02:00 | Rooftop On Bree
+https://www.quicket.co.za/events/357472-social-link-up-daytime-groove/
+...and 2 more
 
-Updated: 0
+Updated: 1
+1. The Great Mass: Mozart's Mass in C Minor, K. 427/417, and Vesperae Solennes de Confessore KV 339 (Vespers for the Saints) | 2026-06-06T19:00:00+02:00 | Cape Town City Hall
+https://www.quicket.co.za/events/362128-the-great-mass-mozarts-mass-in-c-minor-k-427417-and-vesperae-solennes-de-confes/
 
-Removed: 1
-1. DISTRICT SIX MUSEUM: MARCH 2027 ADMISSION TICKETS | 2027-03-01T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365072-district-six-museum-march-2027-admission-tickets/
+Removed: 12
+1. LIAM UNDRUGGED | 2026-05-12T20:00:00+02:00 | Kalk Bay Theatre (AT THE BRASS BELL)
+https://www.quicket.co.za/events/369525-liam-undrugged/
+2. DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS | 2027-02-01T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/
+3. Sarah Abraham is Off Her Rocker | 2026-05-13T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/368876-sarah-abraham-is-off-her-rocker/
+4. Club Thriller The Experience | 2026-09-05T19:00:00+02:00 | Galaxy Disco Restaurant
+https://www.quicket.co.za/events/368884-club-thriller-the-experience/
+5. Maximising Your Property Portfolio's Potential | 2026-05-13T08:15:00+02:00 | Clara Anna Fontein Clubhouse
+https://www.quicket.co.za/events/359340-maximising-your-property-portfolios-potential/
+6. Wings Over Winelands Airshow | 2026-05-16T08:00:00+02:00 | Vergelegen Wine Farm
+https://www.quicket.co.za/events/364079-wings-over-winelands-airshow/
+7. The Swelling Crowd | 2026-05-12T19:30:00+02:00 | CTDPS Little Theatre
+https://www.quicket.co.za/events/368183-the-swelling-crowd/
+8. THE DELI COMEDY NIGHT | 2026-05-12T19:30:00+02:00 | 133 Bree St
+https://www.quicket.co.za/events/363716-the-deli-comedy-night/
+9. The Chance | 2026-05-12T19:30:00+02:00 | Kaapstad Toneelhuis
+https://www.quicket.co.za/events/367583-the-chance/
+10. DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS | 2027-01-02T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/
+...and 2 more
 
 Webtickets Events
 -----------------
-Added: 0
+Added: 1
+1. Franschhoek Literary Festival 2026 | 15 - 17 May 2026 | various prices
+https://www.webtickets.co.za/v2/event.aspx?itemid=1589974554
 
-Updated: 0
+Updated: 2
+1. Richard O'Brien's The Rocky Horror Show (CPT) | From 13 May 2026 20:00 | Theatre On The Bay, Camps Bay | R295 - R495
+https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971
+2. Cape Town Abseil | From 13 May 2026 | Table Mountain | R995 - R1100
+https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
 
-Removed: 0
+Removed: 1
+1. The Human League & Blancmange live in Cape Town | 12 May 2026 19:00 | Grand Arena,GrandWest,  1 Jakes Gerwel Dr, Acacia Park, Cape Town | From R795 (Excluding Booking Fee)
+https://www.webtickets.co.za/v2/event.aspx?itemid=1586884529
 
 Google Calendar
 ---------------

@@ -3,6 +3,10 @@
   "currently_watching": {
     "movies": [
       {
+        "title": "Remarkably Bright Creatures?",
+        "opinion": ""
+      },
+      {
         "title": "Good Luck, Have Fun, Don’t Die",
         "opinion": ""
       },
@@ -16,6 +20,10 @@
       },
       {
         "title": "Iron Lung",
+        "opinion": ""
+      },
+      {
+        "title": "Obsessed",
         "opinion": ""
       }
     ],
@@ -34,6 +42,10 @@
   },
   "backlog": {
     "movies": [
+      {
+        "title": "The Adventures of Tintin",
+        "opinion": ""
+      },
       {
         "title": "Sisu: Road to Revenge",
         "opinion": ""

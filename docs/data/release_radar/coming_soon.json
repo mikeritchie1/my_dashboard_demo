@@ -9,22 +9,10 @@
       "release_date": "2026-05-15"
     },
     {
-      "title": "National Theatre Live: Inter Alia",
-      "url": "https://www.themoviedb.org/movie/1454209",
-      "image": "https://image.tmdb.org/t/p/w342/3IBpj6oU9BFcUGesv1QH2LvEb01.jpg",
-      "release_date": "2026-07-24"
-    },
-    {
       "title": "Obsession",
       "url": "https://www.themoviedb.org/movie/1339713",
       "image": "https://image.tmdb.org/t/p/w342/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
       "release_date": "2026-05-15"
-    },
-    {
-      "title": "Deep Water",
-      "url": "https://www.themoviedb.org/movie/1127384",
-      "image": "https://image.tmdb.org/t/p/w342/2cikvQU83ecoZncnjOmAAATr3Sp.jpg",
-      "release_date": "2026-05-29"
     },
     {
       "title": "The Metropolitan Opera: Eugene Onegin",
@@ -57,6 +45,12 @@
       "release_date": "2026-05-22"
     },
     {
+      "title": "Deep Water",
+      "url": "https://www.themoviedb.org/movie/1127384",
+      "image": "https://image.tmdb.org/t/p/w342/2cikvQU83ecoZncnjOmAAATr3Sp.jpg",
+      "release_date": "2026-05-29"
+    },
+    {
       "title": "Backrooms",
       "url": "https://www.themoviedb.org/movie/1083381",
       "image": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -69,16 +63,16 @@
       "release_date": "2026-06-05"
     },
     {
-      "title": "The Metropolitan Opera: El \u00daltimo Sue\u00f1o de Frida y Diego",
-      "url": "https://www.themoviedb.org/movie/1479653",
-      "image": "https://image.tmdb.org/t/p/w342/iroj6icowJNoh9KfdeE0ObdpFis.jpg",
-      "release_date": "2026-06-12"
-    },
-    {
       "title": "Masters of the Universe",
       "url": "https://www.themoviedb.org/movie/454639",
       "image": "https://image.tmdb.org/t/p/w342/nm2ianYVp7OXElUZVeeAbNTqBLr.jpg",
       "release_date": "2026-06-05"
+    },
+    {
+      "title": "The Metropolitan Opera: El \u00daltimo Sue\u00f1o de Frida y Diego",
+      "url": "https://www.themoviedb.org/movie/1479653",
+      "image": "https://image.tmdb.org/t/p/w342/iroj6icowJNoh9KfdeE0ObdpFis.jpg",
+      "release_date": "2026-06-12"
     },
     {
       "title": "Disclosure Day",
@@ -99,58 +93,10 @@
       "release_date": "2026-07-11"
     },
     {
-      "title": "The Sheep Detectives",
-      "url": "https://www.themoviedb.org/movie/1301421",
-      "image": "https://image.tmdb.org/t/p/w342/hTirV44jiLh6NqdiB6jtxPsDIoG.jpg",
-      "release_date": "2026-05-08"
-    },
-    {
-      "title": "Mortal Kombat II",
-      "url": "https://www.themoviedb.org/movie/931285",
-      "image": "https://image.tmdb.org/t/p/w342/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
-      "release_date": "2026-05-08"
-    },
-    {
-      "title": "Iron Maiden: Burning Ambition",
-      "url": "https://www.themoviedb.org/movie/1642859",
-      "image": "https://image.tmdb.org/t/p/w342/yZqhFJDenLfgF1VygOOCNmAdS1P.jpg",
-      "release_date": "2026-05-08"
-    },
-    {
-      "title": "Variations on a Theme",
-      "url": "https://www.themoviedb.org/movie/1599249",
-      "image": "https://image.tmdb.org/t/p/w342/cNbpR6hE1rIeb13xCFmv75PVaAx.jpg",
-      "release_date": "2026-05-08"
-    },
-    {
-      "title": "Fuze",
-      "url": "https://www.themoviedb.org/movie/1242265",
-      "image": "https://image.tmdb.org/t/p/w342/oWehDe6fFR4eUdUMDy4jz6XiinO.jpg",
-      "release_date": "2026-05-01"
-    },
-    {
-      "title": "Beast",
-      "url": "https://www.themoviedb.org/movie/1292415",
-      "image": "https://image.tmdb.org/t/p/w342/7NrvUI3vnW8H3rD7ExKcTL7KRcQ.jpg",
-      "release_date": "2026-05-01"
-    },
-    {
-      "title": "Normal",
-      "url": "https://www.themoviedb.org/movie/1242332",
-      "image": "https://image.tmdb.org/t/p/w342/nVIOGKbUdRxud0EXYJDMGCGcYbo.jpg",
-      "release_date": "2026-05-01"
-    },
-    {
-      "title": "The Devil Wears Prada 2",
-      "url": "https://www.themoviedb.org/movie/1314481",
-      "image": "https://image.tmdb.org/t/p/w342/sRTYF65JvbHLoC3LoBj4UKYqIlA.jpg",
-      "release_date": "2026-05-01"
-    },
-    {
-      "title": "Ek Din",
-      "url": "https://www.themoviedb.org/movie/1171094",
-      "image": "https://image.tmdb.org/t/p/w342/kZn71TZDhV5c58cmWmOLyZGQ6U9.jpg",
-      "release_date": "2026-05-01"
+      "title": "National Theatre Live: Inter Alia",
+      "url": "https://www.themoviedb.org/movie/1454209",
+      "image": "https://image.tmdb.org/t/p/w342/3IBpj6oU9BFcUGesv1QH2LvEb01.jpg",
+      "release_date": "2026-07-24"
     }
   ]
 }

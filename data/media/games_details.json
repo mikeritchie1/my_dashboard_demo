@@ -7199,29 +7199,20 @@
     ],
     "playtime_hours": 0
   },
-  "game_couch_coop:moving out": {
-    "title": "Moving Out",
+  "game_couch_coop:moving out 2": {
+    "title": "Moving Out 2",
     "media_type": "game_couch_coop",
-    "rating": 3.6,
-    "poster_url": "https://media.rawg.io/media/games/726/7263e11b6bfb15abe35dcfa3b26147f5.jpg",
-    "platforms": [
-      "PC",
-      "Xbox One",
-      "PlayStation 4",
-      "Nintendo Switch",
-      "macOS"
-    ],
-    "website_url": "http://smgstudio.com/",
-    "release_date": "2020-04-28",
-    "description": "It’s orientation day at the Smooth Move company. To become certified Furniture Arrangement & Relocation Technician (F.A.R.T.), employees need to pop the training tape into the VCR and take in the dos and don’ts of moving furniture.\nTrain alone or with friends in this action, puzzle, physics based moving simulator. Expect plot twists, irreverent humor, cameos and borderline trademark infringing scenarios as you complete the 50+ levels. With party mode you'll be able to compete for the highest score locally or against the community.\nGuided by narrator Mick “RicePirate” Lauer players will learn the ropes in a series of increasingly precarious and fantastical instructional lessons. These span everything from unloading cargo off moving planes to smuggling giraffes out of the zoo and transporting goods to strange locales like haunted houses and outer space.\nNo matter what the job entails, customers appreciate prompt delivery. So, whether on a heist or doing a repo job, load as much into the truck as possible before zooming off to the next gig. How freight gets from one place to another is entirely up to players, though, so toss the manual out the window and get creative. Break down the walls, throw things, and use technology like portals and ray guns across more than 50 levels. Anything goes, as long as the work gets done!\nEnjoy the game solo as an independent contractor or team up with a friend or loved one. Moving Out features both local and online play across its arcade, story, and versus modes. Each level also adjusts the experience dynamically to account for the number of players on screen, thereby welcoming Smooth Move employees of all ages and skill levels.\nMoving Out is currently in development as the premiere title from SMG’s Melbourne studio and is made in collaboration with Stockholm-based developer Devm Games.",
+    "website_url": "https://www.movingout2.com/",
+    "rawg_url": "https://rawg.io/games/moving-out-2-2",
+    "rating": 3.8,
+    "metacritic": null,
+    "description": "Moving Out 2 is the wacky sequel to the world-famous physics-based moving simulator. Working as a solo F.A.R.T, or with up to three friends, slip into your Smooth Moves uniform and help the residents of Packmore, and beyond, to pack up and ship out! MULTI-DIMENSIONAL LOCAL & ONLINE MULTIPLAYER Friends who move together, groove together! Whether you fancy some local co-op action or a cross-play online multiplayer session, we’ve got you signed, sealed and delivered! NEW ADVENTURE We’re not in Packmore anymore… Via inter-dimensional portals you will explore new worlds filled with hilariously silly challenges and chaotic, rib-tickling action. FRESH CHARACTERS & RETURNING FAVOURITES Moving Out 2 features an entire new cast of extra lovable characters because Smooth Moves have signed up some new F.A.R.T recruits! Not to worry though, Rye Yu and Sidney are still on the payroll… IT'S FOR EVERYONE! Assist mode?! Check! A wide array of accessibility options?! Check! Loads of characters and countless finely tailored fits and skins for all you fashionistas?! Check! Check! Check!",
     "genres": [
-      "Casual",
-      "Indie",
       "Action",
-      "Simulation"
+      "Simulation",
+      "Casual",
+      "Indie"
     ],
-    "rawg_url": "https://rawg.io/games/moving-out-2",
-    "metacritic": 77,
     "publishers": [
       "Team17 Digital"
     ],
@@ -7229,7 +7220,12 @@
       "SMG Studio",
       "Devm Games"
     ],
-    "playtime_hours": 2
+    "playtime_hours": 1,
+    "release_date": "2023-08-15",
+    "poster_url": "https://media.rawg.io/media/screenshots/775/7759b5cb0b6151184784a48474a165bb.jpg",
+    "platforms": [
+      "PC"
+    ]
   },
   "game_couch_coop:overcooked": {
     "title": "Overcooked",
@@ -9375,6 +9371,34 @@
     ],
     "playtime_hours": 1
   },
+  "game_indie:mouse pi": {
+    "title": "Mouse P.I.",
+    "media_type": "game_indie",
+    "website_url": "https://www.mousethegame.com/",
+    "rawg_url": "https://rawg.io/games/mouse-pi-for-hire",
+    "rating": 3.7,
+    "metacritic": null,
+    "description": "Join private investigator Jack Pepper on a guns blazing, jazz-fueled adventure in MOUSE: P.I. For Hire. MOUSE combines the charm of hand-drawn rubber hose animation inspired by the classic cartoons of the 1930’s with the adrenaline and action of an explosive first person shooter.",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "publishers": [
+      "PlaySide"
+    ],
+    "developers": [],
+    "playtime_hours": 0,
+    "release_date": "2026-04-16",
+    "poster_url": "https://media.rawg.io/media/games/cf1/cf13436dea02745b8844d98bfa887740.jpg",
+    "platforms": [
+      "Xbox One",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox Series S/X",
+      "Nintendo Switch",
+      "PC"
+    ]
+  },
   "game_indie:mouthwashing": {
     "title": "Mouthwashing",
     "media_type": "game_indie",
@@ -9555,42 +9579,6 @@
     "rawg_url": "https://rawg.io/games/peppered-2",
     "metacritic": null,
     "description": "Peppered is a real-time strategy game about snowball fights! You command a group of friends in snowball fights against kids around the neighborhood. Make them scoop up snow, let them throw snowball at opponents and build snow walls to defend yourself. Features ~30min playtime 4 challengers Each time a kid gets hit they will become colder and colder. If they become too cold they'll run home crying. However, each side has a campfire where they can warm-up and \"recover\". Extinguishing the opponent's campfire first can pay-off later! Sokpop makes a new game every two weeks! Subscribe for 3$ per month at http://sokpop.co"
-  },
-  "game_indie:pi mouse": {
-    "title": "P.I. Mouse",
-    "media_type": "game_indie",
-    "rating": 3.8,
-    "poster_url": "https://media.rawg.io/media/screenshots/a15/a15d5b657e00fc60b0efaba33eb9458e.jpg",
-    "platforms": [
-      "PC",
-      "PlayStation 3",
-      "Xbox 360",
-      "macOS"
-    ],
-    "website_url": "http://games.disney.com/castle-of-illusion-starring-mickey-mouse-app",
-    "release_date": "2013-09-03",
-    "description": "PLAY AS MICKEY IN THIS MAGICAL DISNEY ADVENTURE! ALL-NEW HD GRAPHICS AND GAMEPLAY!\nThis app is optimized for iPhone 4S/iPad3 and above.\nMickey Mouse returns to star in Castle of Illusion, a fantastical reimagining of the Sega Genesis classic. When the evil witch Mizrabel kidnaps Minnie, it’s up to Mickey to brave the dangers of the Castle of Illusions to rescue Minnie.  Gather your courage and traverse enchanted forests, take on hordes of rebellious toys and navigate mazes of living books.  Play as Mickey and save Minnie from Mizrabel’s evil clutches!\nGAME FEATURES –\n-Play as Mickey Mouse in this reimagining of the classic Sega Genesis/Mega Drive game!\n-Experience a world of wonder, brought to life with all-new graphics and magical adventures!\n-Journey across five magical worlds filled with Mizrabel’s powerful minions!\n-Complete hidden challenges to customize Mickey with classic costumes!\nFor additional information about our practices in the United States and Latin America regarding children’s personal information, please read our Children’s Privacy Policy  at https://disneyprivacycenter.com/kids-privacy-policy/english/.",
-    "genres": [
-      "Action",
-      "Adventure",
-      "RPG",
-      "Arcade",
-      "Platformer"
-    ],
-    "rawg_url": "https://rawg.io/games/castle-of-illusion-starring-mickey-mouse",
-    "metacritic": null,
-    "publishers": [
-      "SEGA",
-      "Feral Interactive",
-      "Disney Interactive"
-    ],
-    "developers": [
-      "Feral Interactive",
-      "SEGA",
-      "Disney",
-      "SEGA Studios Australia"
-    ],
-    "playtime_hours": 4
   },
   "game_indie:pizza tower": {
     "title": "Pizza Tower",

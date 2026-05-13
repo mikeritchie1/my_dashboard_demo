@@ -10,11 +10,19 @@
       "platforms": "PC"
     },
     {
+      "title": "Sushi Duel",
+      "url": "https://rawg.io/games/sushi-duel",
+      "image": "https://media.rawg.io/media/screenshots/2d2/2d2b061e1e992665dfda8dcf22b4c80e.jpg",
+      "release_date": "2026-05-12",
+      "rating": "0.0",
+      "platforms": "PC, Xbox One, Xbox Series S/X"
+    },
+    {
       "title": "Directive 8020",
       "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
       "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
       "release_date": "2026-05-12",
-      "rating": "2.4",
+      "rating": "2.6",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
@@ -46,7 +54,7 @@
       "url": "https://rawg.io/games/mixtape",
       "image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
       "release_date": "2026-05-07",
-      "rating": "4.6",
+      "rating": "4.4",
       "platforms": "PC"
     },
     {
@@ -80,6 +88,14 @@
       "release_date": "2026-05-06",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Dead as Disco",
+      "url": "https://rawg.io/games/dead-as-disco",
+      "image": "https://media.rawg.io/media/screenshots/508/5089a843a832f5e590ea188f098606b4.jpg",
+      "release_date": "2026-05-05",
+      "rating": "0.0",
+      "platforms": ""
     },
     {
       "title": "Motorslice",
@@ -258,20 +274,20 @@
       "platforms": "PC, Linux"
     },
     {
-      "title": "Aphelion",
-      "url": "https://rawg.io/games/aphelion-2",
-      "image": "https://media.rawg.io/media/games/ecc/ecc6e59e4bc50409d844fdc1607e86a9.jpg",
-      "release_date": "2026-04-28",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
-    {
       "title": "Far Far West",
       "url": "https://rawg.io/games/far-far-west",
       "image": "https://media.rawg.io/media/screenshots/b1c/b1c249429ecaf020027f327c87ecd49c.jpg",
       "release_date": "2026-04-28",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Aphelion",
+      "url": "https://rawg.io/games/aphelion-2",
+      "image": "https://media.rawg.io/media/games/ecc/ecc6e59e4bc50409d844fdc1607e86a9.jpg",
+      "release_date": "2026-04-28",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
       "title": "Aphelion (2026)",
@@ -382,22 +398,6 @@
       "url": "https://rawg.io/games/double-or-nothing",
       "image": "https://media.rawg.io/media/screenshots/b09/b0974b35eedf2fe9cdb4532e6fa3f45d.jpg",
       "release_date": "2026-04-25",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Vending Machine Co",
-      "url": "https://rawg.io/games/vending-machine-co",
-      "image": "https://media.rawg.io/media/screenshots/4b2/4b2c5c0ff809a51655fb7d45bf266d54.jpg",
-      "release_date": "2026-04-25",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Climber Toys: Together",
-      "url": "https://rawg.io/games/climber-toys-together",
-      "image": "https://media.rawg.io/media/screenshots/bae/baed3f87400bd98f44a27abf9afbf8e1.jpg",
-      "release_date": "2026-04-24",
       "rating": "0.0",
       "platforms": "PC"
     }
@@ -524,6 +524,14 @@
       "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4"
     },
     {
+      "title": "Crushed In Time",
+      "url": "https://rawg.io/games/crushed-in-time",
+      "image": "https://media.rawg.io/media/games/67b/67b8ca361688922a71e441445fe892d4.jpg",
+      "release_date": "2026-06-10",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "The Adventures of Elliot: The Millennium Tales",
       "url": "https://rawg.io/games/the-adventures-of-elliot-the-millenium-tales",
       "image": "https://media.rawg.io/media/screenshots/a7a/a7aed08ad87bacbc7b6b7bec1aba4094.jpg",
@@ -578,70 +586,6 @@
       "release_date": "2026-08-06",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5"
-    },
-    {
-      "title": "Clockwork Ambrosia",
-      "url": "https://rawg.io/games/clockwork-ambrosia",
-      "image": "https://media.rawg.io/media/screenshots/3ef/3ef0787f01a9fd890ff7949fb49f8a8f.jpg",
-      "release_date": "2026-05-12",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Directive 8020",
-      "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
-      "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
-      "release_date": "2026-05-12",
-      "rating": "2.4",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
-    {
-      "title": "Mixtape (2025)",
-      "url": "https://rawg.io/games/mixtape-2025",
-      "image": "https://media.rawg.io/media/screenshots/2e1/2e1a19d938c0e7a4a396924125923c38.jpg",
-      "release_date": "2026-05-07",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
-    {
-      "title": "Mixtape",
-      "url": "https://rawg.io/games/mixtape",
-      "image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
-      "release_date": "2026-05-07",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Will: Follow the Light",
-      "url": "https://rawg.io/games/will-follow-the-light",
-      "image": "https://media.rawg.io/media/games/300/3001ccfd69be0255b346e1b03269008c.jpg",
-      "release_date": "2026-05-07",
-      "rating": "0.0",
-      "platforms": ""
-    },
-    {
-      "title": "Battlestar Galactica: Scattered Hopes",
-      "url": "https://rawg.io/games/battlestar-galactica-scattered-hopes",
-      "image": "https://media.rawg.io/media/screenshots/84d/84d2168586f372e40fe68f17e1a70c5b.jpg",
-      "release_date": "2026-05-10",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Uncle Lee\u2019s Cookbook: Five Recipes for Disaster",
-      "url": "https://rawg.io/games/uncle-lees-cookbook-five-recipes-for-disaster",
-      "image": "https://media.rawg.io/media/screenshots/b32/b32dd3a1e02fa4651f46fce4a308f798.jpg",
-      "release_date": "2026-05-11",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "MOTORSLICE",
-      "url": "https://rawg.io/games/motorslice",
-      "image": "https://media.rawg.io/media/screenshots/781/781e814ff47631b425e8f4136804d95f.jpg",
-      "release_date": "2026-05-04",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ]
 }

@@ -12475,6 +12475,23 @@
     ],
     "trailer_url": "https://www.youtube.com/watch?v=YWlCCVnZ4bo"
   },
+  "movie:obsessed": {
+    "title": "Obsessed",
+    "media_type": "movie",
+    "trailer_url": null,
+    "actors": null,
+    "rating": null,
+    "number_of_seasons": null,
+    "description": null,
+    "tmdb_id": null,
+    "genres": null,
+    "overview": null,
+    "release_date": null,
+    "tmdb_url": null,
+    "poster_url": null,
+    "runtime_minutes": null,
+    "directors": null
+  },
   "movie:oddity": {
     "title": "Oddity",
     "rating": 6.7,
@@ -13282,6 +13299,23 @@
       "Horror",
       "Comedy"
     ]
+  },
+  "movie:remarkably bright creatures": {
+    "title": "Remarkably Bright Creatures?",
+    "media_type": "movie",
+    "trailer_url": null,
+    "actors": null,
+    "rating": null,
+    "number_of_seasons": null,
+    "description": null,
+    "tmdb_id": null,
+    "genres": null,
+    "overview": null,
+    "release_date": null,
+    "tmdb_url": null,
+    "poster_url": null,
+    "runtime_minutes": null,
+    "directors": null
   },
   "movie:renfield": {
     "title": "Renfield",
@@ -14999,6 +15033,23 @@
       "Gavin O'Connor"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=RwXDphhQ9Tg"
+  },
+  "movie:the adventures of tintin": {
+    "title": "The Adventures of Tintin",
+    "media_type": "movie",
+    "trailer_url": null,
+    "actors": null,
+    "rating": null,
+    "number_of_seasons": null,
+    "description": null,
+    "tmdb_id": null,
+    "genres": null,
+    "overview": null,
+    "release_date": null,
+    "tmdb_url": null,
+    "poster_url": null,
+    "runtime_minutes": null,
+    "directors": null
   },
   "movie:the age of disclosure": {
     "title": "The Age of Disclosure",
