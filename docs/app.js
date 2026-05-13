@@ -564,6 +564,7 @@ function renderCardGrid(rows) {
 
     elements.cardsGrid.append(card);
   }
+  bindDragScroll(elements.cardsGrid, [elements.cardsGrid]);
 }
 
 function showDetailPanel(html, opinionKey = "") {
@@ -684,6 +685,61 @@ function renderPosters(container, items, emptyText, options = {}) {
     }
     container.append(link);
   }
+}
+
+function isItemNew(item) {
+  const raw = String(item.first_seen_at || item.added_at || "").trim();
+  if (!raw) return false;
+  return (Date.now() - new Date(raw).getTime()) < MS_PER_DAY;
+}
+
+function renderReleaseList(container, items, emptyText, indexAttr, options = {}) {
+  if (!items.length) {
+    container.innerHTML = `<p class="empty">${emptyText}</p>`;
+    return;
+  }
+  container.innerHTML = "";
+  for (let index = 0; index < items.length; index += 1) {
+    const item = items[index];
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "release-item";
+    if (indexAttr) btn.dataset[indexAttr] = String(index);
+
+    const imgSrc = String(item.image || item.poster_url || "").trim();
+    const title = escapeHtml(String(item.title || "").trim());
+    const status = String(item.status_label || item.venue || "").trim();
+    const ratingNumber = parseRatingValue(item.tmdb_rating || item.rating);
+    const rating = Number.isFinite(ratingNumber) ? `${ratingNumber.toFixed(1)}/10` : "";
+
+    let age = "";
+    const ageMode = options.ageMode || "release";
+    if (ageMode === "first_seen") {
+      age = relativeDaysFromDate(item.first_seen_at, { allowPast: true });
+    } else if (ageMode === "release") {
+      const ageDate = item.event_date_text || item.event_date || item.release_date;
+      age = relativeDaysFromDate(ageDate, { allowPast: Boolean(options.allowPastAge) });
+    }
+    // ageMode "none" → age stays ""
+
+    const dateDisplay = ageMode !== "first_seen"
+      ? (String(item.event_date_text || item.movie_date || "").trim() || displayDatePlain(String(item.release_date || "").trim()))
+      : "";
+    const meta = [status, dateDisplay, rating].filter(Boolean).join(" • ");
+    const isNew = isItemNew(item);
+
+    btn.innerHTML = `
+      ${isNew ? '<span class="release-item-new-badge">New</span>' : ""}
+      ${imgSrc ? `<img class="release-item-img" src="${escapeHtml(imgSrc)}" alt="" loading="lazy">` : `<div class="release-item-img release-item-img-empty"></div>`}
+      <div class="release-item-body">
+        <p class="release-item-title">${title}</p>
+        ${meta ? `<p class="release-item-meta">${escapeHtml(meta)}</p>` : ""}
+        ${age ? `<p class="release-item-age">${escapeHtml(age)}</p>` : ""}
+      </div>
+    `;
+    container.append(btn);
+  }
+  bindDragScroll(container, [container]);
 }
 
 function parseRatingValue(value) {
@@ -2239,6 +2295,9 @@ function renderWatchlistCurrent(payload) {
       `;
     })
     .join("");
+  for (const grid of elements.watchlistCurrent.querySelectorAll(".watchlist-current-grid")) {
+    bindDragScroll(grid, [grid]);
+  }
 }
 
 function renderWatchlistHistory(payload) {
@@ -2289,6 +2348,7 @@ function renderWatchlistHistory(payload) {
     if (!list.children.length) {
       continue;
     }
+    bindDragScroll(list, [list]);
     section.append(list);
     elements.watchlistHistory.append(section);
   }
@@ -4788,11 +4848,7 @@ async function loadReleases() {
     const payload = await response.json();
     const items = Array.isArray(payload.items) ? payload.items : [];
     state.releaseItems = items;
-    renderPosters(elements.releaseGrid, items, "No releases found.", {
-      interactiveRelease: true,
-      ageDateField: "first_seen_at",
-      showPastAge: true,
-    });
+    renderReleaseList(elements.releaseGrid, items, "No releases found.", "releaseIndex", { ageMode: "first_seen", allowPastAge: true });
   } catch (error) {
     state.releaseItems = [];
     elements.releaseGrid.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -4895,7 +4951,8 @@ async function loadComingSoon() {
     }
     const payload = await response.json();
     const items = sortByReleaseDateAsc(futureDatedItems(Array.isArray(payload.items) ? [...payload.items] : []));
-    renderPosters(elements.comingSoonGrid, items, "No coming soon movies found.");
+    state.comingSoonItems = items;
+    renderReleaseList(elements.comingSoonGrid, items, "No coming soon movies found.", "comingSoonIndex");
   } catch (error) {
     elements.comingSoonGrid.innerHTML = `<p class="empty">${error.message}</p>`;
   }
@@ -4913,10 +4970,7 @@ async function loadImaxReleases() {
     const payload = await response.json();
     const items = Array.isArray(payload.items) ? [...payload.items] : [];
     state.imaxItems = items;
-    renderPosters(elements.imaxGrid, items, "No IMAX Waterfront films found.", {
-      interactiveRelease: true,
-      indexAttr: "imaxIndex",
-    });
+    renderReleaseList(elements.imaxGrid, items, "No IMAX Waterfront films found.", "imaxIndex", { ageMode: "none" });
   } catch (error) {
     state.imaxItems = [];
     elements.imaxGrid.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -4944,10 +4998,7 @@ async function loadGalileoReleases() {
       })
       : [];
     state.galileoItems = items;
-    renderPosters(elements.galileoGrid, items, "No Galileo open-air cinema shows found.", {
-      interactiveRelease: true,
-      indexAttr: "galileoIndex",
-    });
+    renderReleaseList(elements.galileoGrid, items, "No Galileo open-air cinema shows found.", "galileoIndex");
   } catch (error) {
     state.galileoItems = [];
     elements.galileoGrid.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -4966,10 +5017,7 @@ async function loadLabiaShowtimes() {
     const payload = await response.json();
     const items = Array.isArray(payload.items) ? payload.items : [];
     state.labiaItems = items;
-    renderPosters(elements.labiaGrid, items, "No Labia showtimes found.", {
-      interactiveRelease: true,
-      indexAttr: "labiaIndex",
-    });
+    renderReleaseList(elements.labiaGrid, items, "No Labia showtimes found.", "labiaIndex");
   } catch (error) {
     state.labiaItems = [];
     elements.labiaGrid.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -5029,8 +5077,10 @@ async function loadGameReleases() {
       sortByDateAsc(upcomingItems);
     }
 
-    renderPosters(elements.gameReleaseGrid, releasedItems, "No new game releases found.", { showPastAge: true });
-    renderPosters(elements.gameComingSoonGrid, upcomingItems, "No upcoming games found.");
+    state.gameReleaseItems = releasedItems;
+    state.gameComingSoonItems = upcomingItems;
+    renderReleaseList(elements.gameReleaseGrid, releasedItems, "No new game releases found.", "gameReleaseIndex");
+    renderReleaseList(elements.gameComingSoonGrid, upcomingItems, "No upcoming games found.", "gameComingSoonIndex");
   } catch (error) {
     elements.gameReleaseGrid.innerHTML = `<p class="empty">${error.message}</p>`;
     elements.gameComingSoonGrid.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -5507,65 +5557,26 @@ if (elements.newsPinned) {
   });
 }
 
-if (elements.releaseGrid) {
-  elements.releaseGrid.addEventListener("click", (event) => {
-    const card = event.target.closest(".poster-card[data-release-index]");
-    if (!card) {
-      return;
+function bindReleaseListClick(grid, stateKey, datasetKey) {
+  if (!grid) return;
+  grid.addEventListener("click", (event) => {
+    const btn = event.target.closest(".release-item");
+    if (!btn || !(datasetKey in btn.dataset)) return;
+    const index = Number(btn.dataset[datasetKey]);
+    const items = state[stateKey] || [];
+    if (Number.isInteger(index) && index >= 0 && index < items.length) {
+      openReleaseDetail(items[index]);
     }
-    event.preventDefault();
-    const index = Number(card.dataset.releaseIndex);
-    if (!Number.isInteger(index) || index < 0 || index >= state.releaseItems.length) {
-      return;
-    }
-    openReleaseDetail(state.releaseItems[index]);
   });
 }
 
-if (elements.imaxGrid) {
-  elements.imaxGrid.addEventListener("click", (event) => {
-    const card = event.target.closest(".poster-card[data-imax-index]");
-    if (!card) {
-      return;
-    }
-    event.preventDefault();
-    const index = Number(card.dataset.imaxIndex);
-    if (!Number.isInteger(index) || index < 0 || index >= state.imaxItems.length) {
-      return;
-    }
-    openReleaseDetail(state.imaxItems[index]);
-  });
-}
-
-if (elements.galileoGrid) {
-  elements.galileoGrid.addEventListener("click", (event) => {
-    const card = event.target.closest(".poster-card[data-galileo-index]");
-    if (!card) {
-      return;
-    }
-    event.preventDefault();
-    const index = Number(card.dataset.galileoIndex);
-    if (!Number.isInteger(index) || index < 0 || index >= state.galileoItems.length) {
-      return;
-    }
-    openReleaseDetail(state.galileoItems[index]);
-  });
-}
-
-if (elements.labiaGrid) {
-  elements.labiaGrid.addEventListener("click", (event) => {
-    const card = event.target.closest(".poster-card[data-labia-index]");
-    if (!card) {
-      return;
-    }
-    event.preventDefault();
-    const index = Number(card.dataset.labiaIndex);
-    if (!Number.isInteger(index) || index < 0 || index >= state.labiaItems.length) {
-      return;
-    }
-    openReleaseDetail(state.labiaItems[index]);
-  });
-}
+bindReleaseListClick(elements.releaseGrid, "releaseItems", "releaseIndex");
+bindReleaseListClick(elements.comingSoonGrid, "comingSoonItems", "comingSoonIndex");
+bindReleaseListClick(elements.imaxGrid, "imaxItems", "imaxIndex");
+bindReleaseListClick(elements.galileoGrid, "galileoItems", "galileoIndex");
+bindReleaseListClick(elements.labiaGrid, "labiaItems", "labiaIndex");
+bindReleaseListClick(elements.gameReleaseGrid, "gameReleaseItems", "gameReleaseIndex");
+bindReleaseListClick(elements.gameComingSoonGrid, "gameComingSoonItems", "gameComingSoonIndex");
 
 if (elements.bandsintownEventsList) {
   elements.bandsintownEventsList.addEventListener("click", (event) => {
