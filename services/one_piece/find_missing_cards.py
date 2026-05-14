@@ -6,6 +6,7 @@ from pathlib import Path
 from one_piece_missing import (
     run_all,
     run_big_bang,
+    run_collectiverse,
     run_geek_haven,
     run_knightly,
     run_marvellous,
@@ -18,6 +19,8 @@ RUNNERS = {
     "all": run_all,
     "bigbang": run_big_bang,
     "bigbangshop": run_big_bang,
+    "collectiverse": run_collectiverse,
+    "collecti": run_collectiverse,
     "geek": run_geek_haven,
     "geekhaven": run_geek_haven,
     "knightly": run_knightly,
@@ -36,7 +39,7 @@ def main() -> int:
     store = sys.argv[1].lower().replace("-", "").replace("_", "") if len(sys.argv) > 1 else "all"
     runner = RUNNERS.get(store)
     if runner is None:
-        choices = "all, bigbang, geekhaven, knightly, marvellous, toad, tanuki"
+        choices = "all, bigbang, collectiverse, geekhaven, knightly, marvellous, toad, tanuki"
         print(f"Unknown store {sys.argv[1]!r}. Use one of: {choices}", file=sys.stderr)
         return 2
 

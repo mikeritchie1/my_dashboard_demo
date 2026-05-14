@@ -13,7 +13,7 @@ DATA_DIR = REPO_DIR / "docs" / "data" / "one_piece"
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run One Piece missing-card scrapes.")
-    parser.add_argument("--source", choices=["all", "bigbang", "geekhaven", "knightly", "marvellous", "toad", "tanuki"], default="all", help="Which store source to scrape.")
+    parser.add_argument("--source", choices=["all", "bigbang", "collectiverse", "geekhaven", "knightly", "marvellous", "toad", "tanuki"], default="all", help="Which store source to scrape.")
     parser.add_argument("--hard", action="store_true", help="Remove selected report outputs before scraping.")
     parser.add_argument("--limit", type=int, default=0, help="Accepted for wrapper consistency; store scraping is not item-limited.")
     parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; store pagination is source-defined.")

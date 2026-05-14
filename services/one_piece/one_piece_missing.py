@@ -60,6 +60,20 @@ GEEK_HAVEN_PAGE_URL = env_get(
     "SCRAPE_OP_GEEK_HAVEN_PAGE_URL_TEMPLATE",
     "https://www.bobshop.co.za/mobilejquery/jsp/userprofile/UserTradeList.jsp?User_UserId=5031053&pageNo={page}",
 )
+COLLECTIVERSE_COLLECTION_URL = env_get("SCRAPE_OP_COLLECTIVERSE_COLLECTION_URL", "https://www.bobshop.co.za/seller/3809955/CollectiVerse")
+COLLECTIVERSE_PAGE_URL = env_get(
+    "SCRAPE_OP_COLLECTIVERSE_PAGE_URL_TEMPLATE",
+    "https://www.bobshop.co.za/mobilejquery/jsp/userprofile/UserTradeList.jsp"
+    "?User_UserId=3809955"
+    "&tradeListFormSubmited=true"
+    "&submitter=TradeListFiltersForm"
+    "&LogQuery=false"
+    "&CustomFilter=None"
+    "&CategoryId=0"
+    "&tradeListFilteredFields=IncludedKeywords"
+    "&IncludedKeywords=one%20piece"
+    "&pageNo={page}",
+)
 
 BIG_BANG_COLLECTION_URL = env_get("SCRAPE_OP_BIG_BANG_COLLECTION_URL", "https://bigbangshop.co.za/collections/one-piece-single-cards")
 BIG_BANG_PRODUCTS_URL = BIG_BANG_COLLECTION_URL + "/products.json?limit=250&page={page}"
@@ -1320,6 +1334,55 @@ def _parse_geek_haven_page(html: str) -> list[dict]:
     return products
 
 
+def _parse_bobshop_seller_page(
+    html_text: str,
+    *,
+    one_piece_only: bool = False,
+    require_brand_bandai: bool = False,
+) -> list[dict]:
+    products: list[dict] = []
+    for match in re.finditer(r'<script\s+type="application/json">\s*(.*?)\s*</script>', html_text, re.S):
+        try:
+            data = json.loads(match.group(1))
+        except Exception:
+            continue
+        if "title" not in data or "amount" not in data:
+            continue
+        if data.get("status") != "OPEN":
+            continue
+        attrs = {a.get("name", ""): a.get("values", []) for a in data.get("productAttributes", [])}
+        brand = str((attrs.get("Brand") or [""])[0] or "")
+        title = clean_text(str(data.get("title") or ""))
+        title_upper = title.upper()
+        if require_brand_bandai and brand != "Bandai":
+            continue
+        if one_piece_only:
+            has_card_code = normalize_card_number(title) is not None
+            mentions_one_piece = "ONE PIECE" in title_upper
+            if not has_card_code and not mentions_one_piece:
+                continue
+        price_rand = float(data.get("amount") or 0)
+        url = str(data.get("url") or "")
+        images = data.get("images") or []
+        image_url = str(images[0].get("image") or "") if images else ""
+        products.append(
+            {
+                "name": title,
+                "permalink": url,
+                "sku": "",
+                "description": "",
+                "short_description": "",
+                "is_in_stock": True,
+                "is_purchasable": True,
+                "stock_availability": {"text": ""},
+                "prices": {"price": str(int(round(price_rand * 100))), "currency_minor_unit": 2},
+                "images": [{"src": image_url}] if image_url else [],
+                "categories": [{"name": "One Piece TCG"}] if one_piece_only else [],
+            }
+        )
+    return products
+
+
 def fetch_geek_haven_products() -> list[dict]:
     """Fetch One Piece listings from GeekHaven on BobShop.
 
@@ -1344,6 +1407,30 @@ def fetch_geek_haven_products() -> list[dict]:
             break
         products.extend(page_products)
     print(f"GeekHaven: {len(products)} products total", flush=True)
+    return products
+
+
+def fetch_collectiverse_products() -> list[dict]:
+    products: list[dict] = []
+    for page in range(1, 200):
+        print(f"CollectiVerse: fetching page {page}...", flush=True)
+        try:
+            html_text = fetch_text(COLLECTIVERSE_PAGE_URL.format(page=page))
+        except urllib.error.HTTPError as error:
+            if error.code == 404:
+                break
+            raise
+        page_products = _parse_bobshop_seller_page(
+            html_text,
+            one_piece_only=True,
+            require_brand_bandai=False,
+        )
+        print(f"CollectiVerse: page {page} -> {len(page_products)} One Piece product(s)", flush=True)
+        if not page_products:
+            print("CollectiVerse: no One Piece products on this page — stopping.", flush=True)
+            break
+        products.extend(page_products)
+    print(f"CollectiVerse: {len(products)} products total", flush=True)
     return products
 
 
@@ -1540,6 +1627,49 @@ def run_geek_haven() -> list[dict[str, object]]:
     return matches
 
 
+def match_collectiverse(missing: set[str], products: list[dict]) -> list[dict[str, object]]:
+    matches: list[dict[str, object]] = []
+    misses = 0
+    for product in products:
+        name = str(product.get("name") or "")
+        card_number = normalize_card_number(name)
+        if not card_number:
+            misses += 1
+            if misses <= 20 or misses % 50 == 0:
+                print(f"CollectiVerse: title card-number miss {misses} -> {name[:100]}", flush=True)
+            continue
+        if card_number not in missing:
+            continue
+        images = product.get("images") or []
+        matches.append(
+            {
+                "store": "CollectiVerse",
+                "card_number": card_number,
+                "title": name,
+                "set_name": "",
+                "rarity": "",
+                "condition": "Second Hand",
+                "stock": "In stock",
+                "price": woo_price(product),
+                "available_variants": "",
+                "url": product.get("permalink") or COLLECTIVERSE_COLLECTION_URL,
+                "image_url": str(images[0].get("src") or "") if images else "",
+            }
+        )
+    print(f"CollectiVerse: title card-number misses: {misses}", flush=True)
+    return matches
+
+
+def run_collectiverse() -> list[dict[str, object]]:
+    missing = missing_card_numbers()
+    products = fetch_collectiverse_products()
+    matches = sorted_matches(match_collectiverse(missing, products))
+    update_store_in_combined_json("CollectiVerse", matches)
+    print_store_summary("CollectiVerse", missing, products, matches)
+    print_found_listings("CollectiVerse", matches)
+    return matches
+
+
 def run_all() -> list[dict[str, object]]:
     missing = missing_card_numbers()
     failures: list[str] = []
@@ -1589,11 +1719,22 @@ def run_all() -> list[dict[str, object]]:
         fetch_geek_haven_products,
         lambda missing_set, prods: match_geek_haven(missing_set, prods, ocr_cache=geek_ocr_cache),
     )
+    collectiverse_products, collectiverse_matches = scrape_store(
+        "CollectiVerse",
+        fetch_collectiverse_products,
+        match_collectiverse,
+    )
     save_geek_haven_ocr_cache(geek_ocr_cache)
     save_image_match_cache()
 
     combined = sorted_matches(
-        knightly_matches + big_bang_matches + marvellous_matches + tanuki_matches + toad_matches + geek_haven_matches
+        knightly_matches
+        + big_bang_matches
+        + marvellous_matches
+        + tanuki_matches
+        + toad_matches
+        + geek_haven_matches
+        + collectiverse_matches
     )
     write_combined_json(combined)
 
@@ -1610,6 +1751,8 @@ def run_all() -> list[dict[str, object]]:
     print(f"Toad Trader available missing listings: {len(toad_matches)}")
     print(f"GeekHaven products fetched: {len(geek_haven_products)}")
     print(f"GeekHaven available missing listings: {len(geek_haven_matches)}")
+    print(f"CollectiVerse products fetched: {len(collectiverse_products)}")
+    print(f"CollectiVerse available missing listings: {len(collectiverse_matches)}")
     if failures:
         print("Store scrape failures:")
         for failure in failures:
