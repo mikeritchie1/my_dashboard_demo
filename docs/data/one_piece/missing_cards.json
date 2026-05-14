@@ -1,20 +1,6 @@
 {
   "listings": [
     {
-      "card_number": "EB02-006",
-      "price": 5.0,
-      "title": "Yamato [Extra Booster: Anime 25th Collection]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/yamato-extra-booster-anime-25th-collection/p/676506134",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/544533_1024x1024_2x_UtyBuHzqn.webp",
-      "scraped_at": "2026-05-14T08:46:39Z"
-    },
-    {
       "card_number": "OP03-096",
       "price": 6.0,
       "title": "Tempest Kick Sky Slicer [Pillars of Strength]",
@@ -69,6 +55,34 @@
       "url": "https://www.toadtradertcg.com/product-page/silvers-rayleigh-op13-066",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "P-053",
+      "price": 8.0,
+      "title": "Nami (P-053) (Reprint) [Premium Booster -The Best-]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/nami-p-053-reprint-premium-booster-the-best/p/680357552",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596377_1024x1024_2x_KxcGxYO-2.jpg",
+      "scraped_at": "2026-05-14T18:30:14Z"
+    },
+    {
+      "card_number": "P-055",
+      "price": 8.0,
+      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/680357604",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596376_1024x1024_2x_k_bCN80rD.jpg",
+      "scraped_at": "2026-05-14T18:30:14Z"
     },
     {
       "card_number": "OP01-061",
@@ -183,6 +197,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "OP01-078",
+      "price": 22.0,
+      "title": "Boa Hancock (OP01-078) (Reprint) [Premium Booster -The Best-]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/boa-hancock-op01-078-reprint-premium-booster-the-best/p/680357572",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594315_1024x1024_2x_TGJ0QKfO0.jpg",
+      "scraped_at": "2026-05-14T18:30:14Z"
+    },
+    {
       "card_number": "EB01-015",
       "price": 25.0,
       "title": "Scratchmen Apoo [Extra Booster: Memorial Collection]",
@@ -295,6 +323,20 @@
       "scraped_at": "2026-05-13T14:41:45Z"
     },
     {
+      "card_number": "P-053",
+      "price": 35.0,
+      "title": "Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/680357603",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
+      "scraped_at": "2026-05-14T18:30:14Z"
+    },
+    {
       "card_number": "EB02-045",
       "price": 40.0,
       "title": "Trafalgar Law EB02-045",
@@ -307,20 +349,6 @@
       "url": "https://www.toadtradertcg.com/product-page/trafalgar-law-eb02-045",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP05-006",
-      "price": 40.0,
-      "title": "Koala [Awakening of the New Era]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/koala-awakening-of-the-new-era/p/676507164",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/527663_1024x1024_2x_2YJSybPS7.webp",
-      "scraped_at": "2026-05-14T13:22:16Z"
     },
     {
       "card_number": "OP06-058",
@@ -769,20 +797,6 @@
       "url": "https://www.toadtradertcg.com/product-page/merry-go-eb02-041",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP02-011",
-      "price": 90.0,
-      "title": "Vista [Paramount War]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/vista-paramount-war/p/676508941",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/b16d56b1-3b69-551d-a88b-5c030c096ec3_1024x1024_2x_rHNgap255.webp",
-      "scraped_at": "2026-05-14T13:22:16Z"
     },
     {
       "card_number": "ST24-004",
