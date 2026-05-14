@@ -1,8 +1,6 @@
 {
   "listings": [
     {
-<<<<<<< HEAD
-=======
       "card_number": "ST09-009",
       "price": 3.0,
       "title": "Fugetsu Omusubi [Starter Deck: Yamato]",
@@ -409,7 +407,6 @@
       "scraped_at": "2026-05-14T08:46:39Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "OP05-076",
       "price": 6.0,
       "title": "When You're at Sea You Fight against Pirates!! OP05-076",
@@ -424,8 +421,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-<<<<<<< HEAD
-=======
       "card_number": "ST02-015",
       "price": 6.0,
       "title": "Scalpel [Starter Deck: Worst Generation]",
@@ -608,7 +603,6 @@
       "scraped_at": "2026-05-14T08:46:39Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "ST29-005",
       "price": 7.0,
       "title": "Jinbe ST29-005",
@@ -623,8 +617,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-<<<<<<< HEAD
-=======
       "card_number": "OP01-005",
       "price": 8.0,
       "title": "Uta [Romance Dawn]",
@@ -667,7 +659,6 @@
       "scraped_at": "2026-05-14T08:46:39Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "OP13-066",
       "price": 8.0,
       "title": "Silvers Rayleigh OP13-066",
@@ -682,8 +673,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-<<<<<<< HEAD
-=======
       "card_number": "ST13-016",
       "price": 8.0,
       "title": "Yamato [Ultra Deck: The Three Brothers]",
@@ -796,7 +785,6 @@
       "scraped_at": "2026-05-14T08:46:39Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "OP15-108",
       "price": 10.0,
       "title": "Nami OP15-108",
@@ -811,8 +799,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-<<<<<<< HEAD
-=======
       "card_number": "ST13-005",
       "price": 10.0,
       "title": "Emporio.Ivankov [Ultra Deck: The Three Brothers]",
@@ -897,7 +883,6 @@
       "scraped_at": "2026-05-14T12:05:37Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "ST22-015",
       "price": 13.0,
       "title": "I Am Whitebeard!! ST22-015",
@@ -912,8 +897,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-<<<<<<< HEAD
-=======
       "card_number": "OP13-089",
       "price": 14.0,
       "title": "St. Topman Warcury [Carrying On His Will]",
@@ -970,7 +953,6 @@
       "scraped_at": "2026-05-14T08:46:39Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "OP05-100",
       "price": 16.0,
       "title": "Enel OP05-100",
@@ -999,8 +981,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-<<<<<<< HEAD
-=======
       "card_number": "OP05-100",
       "price": 18.0,
       "title": "Enel [Awakening of the New Era]",
@@ -1071,7 +1051,6 @@
       "scraped_at": "2026-05-14T08:46:39Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "EB04-048",
       "price": 20.0,
       "title": "Rob Lucci EB04-048",
@@ -1100,8 +1079,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-<<<<<<< HEAD
-=======
       "card_number": "OP08-105",
       "price": 22.0,
       "title": "Jewelry Bonney [Two Legends]",
@@ -1130,7 +1107,6 @@
       "scraped_at": "2026-05-14T08:46:39Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "ST15-004",
       "price": 25.0,
       "title": "Thatch ST15-004",
@@ -1145,8 +1121,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-<<<<<<< HEAD
-=======
       "card_number": "ST25-003",
       "price": 25.0,
       "title": "Crocodile & Mihawk [Starter Deck: Blue Buggy]",
@@ -1189,7 +1163,6 @@
       "scraped_at": "2026-05-14T12:05:37Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "OP15-008",
       "price": 30.0,
       "title": "Krieg OP15-008",
@@ -1764,8 +1737,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-<<<<<<< HEAD
-=======
       "card_number": "OP10-005",
       "price": 100.0,
       "title": "Sanji [Royal Blood]",
@@ -1808,7 +1779,6 @@
       "scraped_at": "2026-05-14T12:05:37Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "OP10-118",
       "price": 110.0,
       "title": "Monkey.D.Luffy OP10-118",
@@ -2005,8 +1975,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-<<<<<<< HEAD
-=======
       "card_number": "OP01-003",
       "price": 190.0,
       "title": "Monkey.D.Luffy [Romance Dawn]",
@@ -2035,7 +2003,6 @@
       "scraped_at": "2026-05-14T08:46:39Z"
     },
     {
->>>>>>> c3c34e4 (improvements to one piece cards)
       "card_number": "EB02-017",
       "price": 200.0,
       "title": "Nami EB02-017",
