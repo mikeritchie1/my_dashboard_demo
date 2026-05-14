@@ -1,20 +1,6 @@
 {
   "listings": [
     {
-      "card_number": "EB02-006",
-      "price": 5.0,
-      "title": "Yamato [Extra Booster: Anime 25th Collection]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/yamato-extra-booster-anime-25th-collection/p/676506134",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/544533_1024x1024_2x_UtyBuHzqn.webp",
-      "scraped_at": "2026-05-14T08:46:39Z"
-    },
-    {
       "card_number": "OP03-096",
       "price": 6.0,
       "title": "Tempest Kick Sky Slicer [Pillars of Strength]",
@@ -141,18 +127,18 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-      "card_number": "OP05-100",
+      "card_number": "OP01-070",
       "price": 16.0,
-      "title": "Enel OP05-100",
+      "title": "Dracule Mihawk (OP01-070) (Reprint) [Premium Booster -The Best-]",
       "rarity": "",
-      "store": "Toad Trader TCG",
+      "store": "GeekHaven",
       "set_name": "",
-      "condition": "",
-      "stock": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/enel-op05-100",
-      "image_url": "",
-      "scraped_at": "2026-05-14T08:04:04Z"
+      "url": "https://www.bobshop.co.za/dracule-mihawk-op01-070-reprint-premium-booster-the-best/p/680358950",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594314_1024x1024_2x_wUMXIULe8G.jpg",
+      "scraped_at": "2026-05-14T22:06:50Z"
     },
     {
       "card_number": "OP15-020",
@@ -377,20 +363,6 @@
       "url": "https://www.toadtradertcg.com/product-page/trafalgar-law-eb02-045",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP05-006",
-      "price": 40.0,
-      "title": "Koala [Awakening of the New Era]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/koala-awakening-of-the-new-era/p/676507164",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/527663_1024x1024_2x_2YJSybPS7.webp",
-      "scraped_at": "2026-05-14T14:41:56Z"
     },
     {
       "card_number": "OP06-058",
@@ -645,6 +617,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "ST10-010",
+      "price": 66.0,
+      "title": "Trafalgar Law (ST10-010) (Reprint) [Premium Booster -The Best-]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/trafalgar-law-st10-010-reprint-premium-booster-the-best/p/680361780",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594320_1024x1024_2x_060R0Aiu9.jpg",
+      "scraped_at": "2026-05-14T22:06:50Z"
+    },
+    {
       "card_number": "OP07-072",
       "price": 70.0,
       "title": "Porche OP07-072",
@@ -839,20 +825,6 @@
       "url": "https://www.toadtradertcg.com/product-page/merry-go-eb02-041",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP02-011",
-      "price": 90.0,
-      "title": "Vista [Paramount War]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/vista-paramount-war/p/676508941",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/b16d56b1-3b69-551d-a88b-5c030c096ec3_1024x1024_2x_rHNgap255.webp",
-      "scraped_at": "2026-05-14T14:41:56Z"
     },
     {
       "card_number": "ST24-004",
@@ -1682,14 +1654,14 @@
     },
     {
       "card_number": "OP14-096",
-      "price": 1901.0,
+      "price": 1907.0,
       "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1901.00",
+      "available_variants": "Near Mint Foil R1907.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670874.jpg?v=1769205424",
       "scraped_at": "2026-05-13T13:13:39Z"
