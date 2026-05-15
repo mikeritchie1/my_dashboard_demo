@@ -1107,20 +1107,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-      "card_number": "ST01-004",
-      "price": "165.0",
-      "title": "Sanji [One Piece Film: Red]",
-      "rarity": "Common",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Film: Red",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R165.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/504475_b4cb5f29-dda4-49c8-a463-da4917de213b.jpg?v=1763500244",
-      "scraped_at": "2026-05-13T14:41:45Z"
-    },
-    {
       "card_number": "OP15-113",
       "price": "170.0",
       "title": "Roronoa Zoro OP15-113",
@@ -1133,6 +1119,20 @@
       "url": "https://www.toadtradertcg.com/product-page/roronoa-zoro-op15-113",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "ST01-004",
+      "price": "170.0",
+      "title": "Sanji [One Piece Film: Red]",
+      "rarity": "Common",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Film: Red",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R170.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/504475_b4cb5f29-dda4-49c8-a463-da4917de213b.jpg?v=1763500244",
+      "scraped_at": "2026-05-13T14:41:45Z"
     },
     {
       "card_number": "OP02-120",
