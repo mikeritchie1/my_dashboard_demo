@@ -858,6 +858,7 @@ function saveCollectionArtPrefs() {
   } catch (_error) {
     // Ignore localStorage failures.
   }
+  queueRemoteStateSync();
 }
 
 function defaultCardArtChoices(baseImageUrl, alternateArtUrls) {
@@ -3003,6 +3004,8 @@ function collectDashboardSyncState() {
     module_order: loadDashboardOrderPreference(),
     module_open: loadDashboardOpenStatePreference(),
     subsection_open: loadSubsectionOpenStatePreference(),
+    collection_art_prefs:
+      state.collectionArtPrefs && typeof state.collectionArtPrefs === "object" ? state.collectionArtPrefs : {},
   };
 }
 
@@ -3093,6 +3096,14 @@ async function loadRemoteDashboardState() {
         // Ignore storage failures.
       }
       applySubsectionOpenStatePreference();
+    }
+    if (payload.collection_art_prefs && typeof payload.collection_art_prefs === "object") {
+      try {
+        localStorage.setItem(COLLECTION_ART_PREFS_STORAGE_KEY, JSON.stringify(payload.collection_art_prefs));
+      } catch {
+        // Ignore storage failures.
+      }
+      state.collectionArtPrefs = loadCollectionArtPrefs();
     }
   } catch {
     // Ignore remote load failures.
