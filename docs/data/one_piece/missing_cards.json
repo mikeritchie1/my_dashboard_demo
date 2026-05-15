@@ -1,20 +1,6 @@
 {
   "listings": [
     {
-      "card_number": "OP03-096",
-      "price": 6.0,
-      "title": "Tempest Kick Sky Slicer [Pillars of Strength]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/tempest-kick-sky-slicer-pillars-of-strength/p/679747525",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/500019_1024x1024_2x_3OFSe1QQW.webp",
-      "scraped_at": "2026-05-14T08:46:39Z"
-    },
-    {
       "card_number": "OP05-076",
       "price": 6.0,
       "title": "When You're at Sea You Fight against Pirates!! OP05-076",
@@ -535,20 +521,6 @@
     {
       "card_number": "EB02-044",
       "price": 60.0,
-      "title": "Sengoku [Extra Booster: Anime 25th Collection]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/sengoku-extra-booster-anime-25th-collection/p/679747497",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/629142_1024x1024_2x_loW6hCHwK.jpg",
-      "scraped_at": "2026-05-14T14:41:56Z"
-    },
-    {
-      "card_number": "EB02-044",
-      "price": 60.0,
       "title": "Sengoku EB02-044",
       "rarity": "",
       "store": "Toad Trader TCG",
@@ -979,20 +951,6 @@
       "url": "https://www.toadtradertcg.com/product-page/kouzuki-hiyori-op06-106",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP06-035",
-      "price": 125.0,
-      "title": "Hody Jones [Wings of the Captain]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/679747451",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
-      "scraped_at": "2026-05-14T14:41:56Z"
     },
     {
       "card_number": "OP14-031",
@@ -1668,14 +1626,14 @@
     },
     {
       "card_number": "ST01-006",
-      "price": 2970.0,
+      "price": 3010.0,
       "title": "Tony Tony.Chopper (Gift Collection 2023) [One Piece Promotion Cards]",
       "rarity": "Common",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R2970.00",
+      "available_variants": "Near Mint Foil R3010.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/tony-tony-chopper-gift-collection-2023-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/523819_65024211-2abe-4d91-a498-a8812a453ff3.jpg?v=1763500590",
       "scraped_at": "2026-05-13T14:41:45Z"
