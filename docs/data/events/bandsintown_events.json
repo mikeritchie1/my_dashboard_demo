@@ -19,7 +19,8 @@
     "location_key": "Summerhill Wine Estate, R44, Stellenbosch, 7600, The Daisy Jones Bar, Stellenbosch, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Spoegwolf",
@@ -41,7 +42,8 @@
     "location_key": "r44 klapmuts rd, Stellenbosch, The Daisy Jones Bar, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Bongeziwe Mabandla",
@@ -63,7 +65,8 @@
     "location_key": "409 Albert Rd, HEARTY COLLECTIVE, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Francois Van Coke",
@@ -83,7 +86,8 @@
     "location_key": "6 Chenoweth St, Die Boer, Durbanville, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "UB40 featuring Ali Campbell",
@@ -103,7 +107,8 @@
     "location_key": "1 Jakes Gerwel Dr, Grand Arena at GrandWest, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Elandré",
@@ -126,7 +131,8 @@
     "location_key": "Corner of Bill Bezuidenhout and, The Barnyard Theatre Tyger Valley, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Ntokozo Mbambo",
@@ -146,7 +152,8 @@
     "location_key": "1 Jakes Gerwel Dr, Grand Arena at GrandWest, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Tamia",
@@ -166,7 +173,8 @@
     "location_key": "1 Jakes Gerwel Dr, Grand Arena at GrandWest, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Maxwell",
@@ -186,7 +194,8 @@
     "location_key": "1 Jakes Gerwel Dr, Grand Arena at GrandWest, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Riaan Benade",
@@ -208,7 +217,8 @@
     "location_key": "50 Fontein St, Wellington Rugbyvoetbalklub, Wellington, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "ziyanda tshangana",
@@ -228,7 +238,8 @@
     "location_key": "Protea St & Klipfontein Rd, Joseph Stone Auditorium, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Dave",
@@ -248,7 +259,8 @@
     "location_key": "1 Jakes Gerwel Dr, Grand Arena at GrandWest, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Kip Moore",
@@ -268,7 +280,8 @@
     "location_key": "1 Jakes Gerwel Dr, Grand Arena at GrandWest, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Jill Scott",
@@ -288,7 +301,8 @@
     "location_key": "SunBet Arena, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Live",
@@ -311,7 +325,8 @@
     "location_key": "Kirstenbosch National Botanical Garden, Kirstenbosch Gardens Concert Stage, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Spoegwolf",
@@ -331,7 +346,8 @@
     "location_key": "5Q9P+GX, Sandringham Farm, Stellenbosch, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Zaan Sonnekus",
@@ -351,7 +367,8 @@
     "location_key": "Die Platteland, Paarl, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Elandré",
@@ -371,7 +388,8 @@
     "location_key": "Shop 17 Cnr Sir David Baird &, Kapstadt Brauhaus Blouberg, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Freshlyground",
@@ -393,7 +411,8 @@
     "location_key": "42 King Langalibalele Dr, Guga S'Thebe Arts & Cultural Centre, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Triveno",
@@ -413,7 +432,8 @@
     "location_key": "Val De Vie Winelands Lifestyle Estate, L`Huguenot Vineyards, Val De Vie Winelands Lifestyle Estate, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "KAWAII HOE",
@@ -433,7 +453,8 @@
     "location_key": "plastic perfection, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Bobby van Jaarsveld",
@@ -453,7 +474,8 @@
     "location_key": "69 Victoria Rd, The Bay Hotel, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Katy Hallauer",
@@ -475,7 +497,8 @@
     "location_key": "84 Shortmarket St, The House of Machines, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Watershed",
@@ -497,7 +520,8 @@
     "location_key": "Groot Constantia Wine Estate, Simon's Restaurant, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Chris Steyn",
@@ -517,7 +541,8 @@
     "location_key": "98 Dorp St, Kapstadt Brauhaus Stellenbosch, Stellenbosch, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Tanika Paschke-Moloi",
@@ -539,7 +564,8 @@
     "location_key": "48 Main Rd, Artvark Gallery, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Mel Malisch",
@@ -561,7 +587,8 @@
     "location_key": "84 Shortmarket St, The House of Machines, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Triveno",
@@ -581,7 +608,8 @@
     "location_key": "Val De Vie Winelands Lifestyle Estate, L`Huguenot Vineyards, Val De Vie Winelands Lifestyle Estate, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "APPEL",
@@ -603,7 +631,8 @@
     "location_key": "Summerhill Wine Estate, R44, Stellenbosch, 7600, The Daisy Jones Bar, Stellenbosch, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Watershed",
@@ -625,7 +654,8 @@
     "location_key": "Groot Constantia Wine Estate, Simon's Restaurant, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Chris Steyn",
@@ -645,7 +675,8 @@
     "location_key": "Vrede St, Kapstadt Brauhaus Durbanville, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Indie Dog",
@@ -665,7 +696,8 @@
     "location_key": "61c Harrington St, District, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Indie Dog",
@@ -687,7 +719,8 @@
     "location_key": "r44 klapmuts rd, Stellenbosch, The Daisy Jones Bar, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Jack Parow",
@@ -707,7 +740,8 @@
     "location_key": "135 Lower Main Rd, Springbok Arms, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "FREDDY L",
@@ -727,7 +761,8 @@
     "location_key": "Chapmans Peak Dr, Cafe Roux - Noordhoek, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Katy Hallauer",
@@ -749,7 +784,8 @@
     "location_key": "84 Shortmarket St, The House of Machines, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "KAWAII HOE",
@@ -769,7 +805,8 @@
     "location_key": "plastic perfection, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Millennium",
@@ -791,7 +828,8 @@
     "location_key": "Shop A1, Cape Gate Decor Centre, Heroes Restaurant, Brackenfell, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Christia Visser",
@@ -811,7 +849,8 @@
     "location_key": "6 Chenoweth St, Die Boer, Durbanville, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Hector Madolo",
@@ -831,7 +870,8 @@
     "location_key": "375 Albert Rd, The Old Biscuit Mill, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Tete Mbambisa",
@@ -851,7 +891,8 @@
     "location_key": "Washington St, Guga S'thebe, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Freshlyground",
@@ -873,7 +914,8 @@
     "location_key": "42 King Langalibalele Dr, Guga S'Thebe Arts & Cultural Centre, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "KalleWave$",
@@ -893,7 +935,8 @@
     "location_key": "2nd Floor, The Waiting Room, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Spoegwolf",
@@ -915,7 +958,8 @@
     "location_key": "r44 klapmuts rd, Stellenbosch, The Daisy Jones Bar, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Summer Pearl",
@@ -935,7 +979,8 @@
     "location_key": "70, Youngblood-Africa, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "The Unpopular Department",
@@ -957,7 +1002,8 @@
     "location_key": "43 Bird St, Aandklas Stellenbosch, Stellenbosch, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Wren Hinds",
@@ -977,7 +1023,8 @@
     "location_key": "20 Alma Rd, The Alma Cafe, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Elandré",
@@ -997,7 +1044,8 @@
     "location_key": "Shop 17 Cnr Sir David Baird &, Kapstadt Brauhaus Blouberg, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Elandré",
@@ -1017,7 +1065,8 @@
     "location_key": "99 Beach Rd, Kapstadt Brauhaus Strand, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Elandré",
@@ -1037,7 +1086,8 @@
     "location_key": "90 A Main Rd, Kapstadt Brauhaus Paarl, Paarl, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "The Boxer The Ring",
@@ -1059,7 +1109,8 @@
     "location_key": "84 Shortmarket St, The House of Machines, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Bongeziwe Mabandla",
@@ -1081,7 +1132,8 @@
     "location_key": "Cnr Alexander St & Brid St, Drostdy Theatre, Stellenbosch, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Triveno",
@@ -1101,7 +1153,8 @@
     "location_key": "158 Main Rd, Furniss Cafe, Paarl, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Elandré",
@@ -1121,7 +1174,8 @@
     "location_key": "Heritage Square C/O Gladstone and, Kapstadt Brauhaus Durbanville, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Keanan Eksteen",
@@ -1141,7 +1195,8 @@
     "location_key": "surfers corner, The Commons, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Tanika Paschke-Moloi",
@@ -1161,7 +1216,8 @@
     "location_key": "76 Lower Main Rd, OBZ Books, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Bongeziwe Mabandla",
@@ -1183,7 +1239,8 @@
     "location_key": "409 Albert Rd, HEARTY COLLECTIVE, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "W",
@@ -1205,7 +1262,8 @@
     "location_key": "Shop A1, Cape Gate Decor Centre, Heroes Restaurant, Brackenfell, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Lianie May",
@@ -1227,7 +1285,8 @@
     "location_key": "Shop A1, Cape Gate Decor Centre, Heroes Restaurant, Brackenfell, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Mel Malisch",
@@ -1255,7 +1314,8 @@
     "location_key": "84 Shortmarket St, The House of Machines, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Triveno",
@@ -1282,7 +1342,8 @@
     "location_key": "Val De Vie Winelands Lifestyle Estate, L`Huguenot Vineyards, Val De Vie Winelands Lifestyle Estate, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Indie Dog",
@@ -1306,7 +1367,8 @@
     "location_key": "61c Harrington St, District, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Indie Dog",
@@ -1332,7 +1394,8 @@
     "location_key": "r44 klapmuts rd, Stellenbosch, The Daisy Jones Bar, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "FREDDY L",
@@ -1356,7 +1419,8 @@
     "location_key": "Chapmans Peak Dr, Cafe Roux - Noordhoek, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Katy Hallauer",
@@ -1383,7 +1447,8 @@
     "location_key": "84 Shortmarket St, The House of Machines, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Millennium",
@@ -1410,7 +1475,8 @@
     "location_key": "Shop A1, Cape Gate Decor Centre, Heroes Restaurant, Brackenfell, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Spoegwolf",
@@ -1436,7 +1502,8 @@
     "location_key": "r44 klapmuts rd, Stellenbosch, The Daisy Jones Bar, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Wren Hinds",
@@ -1460,7 +1527,8 @@
     "location_key": "20 Alma Rd, The Alma Cafe, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Elandré",
@@ -1485,7 +1553,8 @@
     "location_key": "Shop 17 Cnr Sir David Baird &, Kapstadt Brauhaus Blouberg, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Elandré",
@@ -1510,7 +1579,8 @@
     "location_key": "99 Beach Rd, Kapstadt Brauhaus Strand, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Elandré",
@@ -1535,7 +1605,8 @@
     "location_key": "90 A Main Rd, Kapstadt Brauhaus Paarl, Paarl, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "The Boxer The Ring",
@@ -1562,7 +1633,8 @@
     "location_key": "84 Shortmarket St, The House of Machines, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Triveno",
@@ -1589,7 +1661,8 @@
     "location_key": "158 Main Rd, Furniss Cafe, Paarl, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Elandré",
@@ -1614,7 +1687,8 @@
     "location_key": "Heritage Square C/O Gladstone and, Kapstadt Brauhaus Durbanville, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Keanan Eksteen",
@@ -1639,7 +1713,8 @@
     "location_key": "surfers corner, The Commons, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Rooksein",
@@ -1664,7 +1739,8 @@
     "location_key": "5Q9P+GX, Sandringham Farm, Stellenbosch, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Spoegwolf",
@@ -1688,7 +1764,8 @@
     "location_key": "5Q9P+GX, Sandringham Farm, Stellenbosch, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Francois Van Coke",
@@ -1712,7 +1789,8 @@
     "location_key": "6 Chenoweth St, Die Boer, Durbanville, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Francois Van Coke",
@@ -1736,7 +1814,8 @@
     "location_key": "6 Chenoweth St, Die Boer, Durbanville, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "The Boxer The Ring",
@@ -1763,7 +1842,8 @@
     "location_key": "Shop 4, The Hart, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Zaan Sonnekus",
@@ -1789,7 +1869,8 @@
     "location_key": "Shop A1, Cape Gate Decor Centre, Heroes Restaurant, Brackenfell, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Zaan Sonnekus",
@@ -1813,7 +1894,8 @@
     "location_key": "Die Platteland, Paarl, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Elandré",
@@ -1841,7 +1923,8 @@
     "location_key": "Corner of Bill Bezuidenhout and, The Barnyard Theatre Tyger Valley, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Wren Hinds",
@@ -1865,7 +1948,8 @@
     "location_key": "Chapmans Peak Dr, Cafe Roux - Noordhoek, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "The Boxer The Ring",
@@ -1892,7 +1976,8 @@
     "location_key": "Shop 4, The Hart, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Mike Borgia",
@@ -1919,7 +2004,8 @@
     "location_key": "surfers corner, The Commons, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Mike Borgia",
@@ -1948,7 +2034,8 @@
     "location_key": "84 Shortmarket St, The House of Machines, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "The Boxer The Ring",
@@ -1975,7 +2062,8 @@
     "location_key": "Shop 4, The Hart, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "Live",
@@ -2002,7 +2090,8 @@
     "location_key": "Kirstenbosch National Botanical Garden, Kirstenbosch Gardens Concert Stage, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Live",
@@ -2029,7 +2118,8 @@
     "location_key": "Kirstenbosch National Botanical Garden, Kirstenbosch Gardens Concert Stage, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": true
   },
   {
     "title": "The Boxer The Ring",
@@ -2056,7 +2146,8 @@
     "location_key": "Shop 4, The Hart, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "ziyanda tshangana",
@@ -2079,7 +2170,8 @@
     "location_key": "Protea St & Klipfontein Rd, Joseph Stone Auditorium, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Ntokozo Mbambo",
@@ -2102,7 +2194,8 @@
     "location_key": "1 Jakes Gerwel Dr, Grand Arena at GrandWest, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Nqubeko Mbatha",
@@ -2125,7 +2218,8 @@
     "location_key": "1 Jakes Gerwel Dr, Grand Arena at GrandWest, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "W",
@@ -2153,7 +2247,8 @@
     "location_key": "Shop A1, Cape Gate Decor Centre, Heroes Restaurant, Brackenfell, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Ruhan du Toit Amanzi Private Game Reserve calendarIcon",
@@ -2177,7 +2272,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Dodo Nyoka Amanzi Private Game Reserve calendarIcon",
@@ -2202,7 +2298,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Kip Moore Grand Arena at GrandWest calendarIcon peopleIcon 324",
@@ -2227,7 +2324,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Kip Moore Grand Arena at GrandWest calendarIcon peopleIcon 372",
@@ -2252,7 +2350,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Robbie Wessels Stoetbul Stellenbosch calendarIcon",
@@ -2276,7 +2375,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Robbie Wessels Lamb Champs Paarl calendarIcon",
@@ -2300,7 +2400,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Trevor Noah Grand Arena at GrandWest calendarIcon peopleIcon 9",
@@ -2323,7 +2424,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Robbie Wessels Liefde By Die Dam CPT calendarIcon",
@@ -2347,7 +2449,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Robbie Wessels Paarl Cup After Party calendarIcon",
@@ -2374,7 +2477,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "KAWAII HOE new single “plastic perfection” streaming party [22 May 2026] calendarIcon",
@@ -2401,7 +2505,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Hector Madolo The Old Biscuit Mill calendarIcon",
@@ -2425,7 +2530,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Watershed Watershed",
@@ -2450,7 +2556,8 @@
     "location_key": "Simon's Restaurant - Groot Constantia calendarIcon peopleIcon 11, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Tanika Paschke-Moloi \"The Butterfly Effect\" Music & Poetry (Library and Art Gallery Series) calendarIcon",
@@ -2479,7 +2586,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Watershed Watershed Live",
@@ -2504,7 +2612,8 @@
     "location_key": "Simon's Restaurant - Groot Constantia calendarIcon peopleIcon 6, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Bongeziwe Mabandla Drostdy Theatre calendarIcon peopleIcon 56",
@@ -2529,7 +2638,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Tanika Paschke-Moloi \"The Butterfly Effect\" Music & Poetry (Library & Art Gallery Series) calendarIcon",
@@ -2558,7 +2668,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Bongeziwe Mabandla Bongeziwe Mabandla - Live In Cape Town calendarIcon peopleIcon 72",
@@ -2581,7 +2692,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Tanika Paschke-Moloi \"The Butterfly Effect\" Music & Poetry (Library and Art Gallery Series) calendarIcon",
@@ -2610,7 +2722,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Watershed Watershed",
@@ -2635,7 +2748,8 @@
     "location_key": "Elgin Railway Market calendarIcon, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Jack Parow JACK PAROW",
@@ -2658,7 +2772,8 @@
     "location_key": "The NEW ARMCHAIR (SPRINGBOK ARMS) calendarIcon peopleIcon 9, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Tamia Grand Arena at GrandWest calendarIcon peopleIcon 103",
@@ -2681,7 +2796,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Dave Grand Arena at GrandWest calendarIcon peopleIcon 40",
@@ -2704,7 +2820,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Jill Scott SunBet Arena calendarIcon peopleIcon 670",
@@ -2727,7 +2844,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "The Unpopular Department LIVE at Aandklas Stellenbosch calendarIcon",
@@ -2753,7 +2871,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Halvar Metal4Africa Winterfest '26 2026 calendarIcon",
@@ -2778,7 +2897,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Freshlyground Freshlyground Returns calendarIcon",
@@ -2801,7 +2921,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Bobby van Jaarsveld Heroes Restaurant Brackenfell calendarIcon",
@@ -2826,7 +2947,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "LEAH Heroes Restaurant - Brackenfell calendarIcon",
@@ -2851,7 +2973,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Rugby Heroes Restaurant calendarIcon",
@@ -2877,7 +3000,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Bobby van Jaarsveld Silwerskermfees Kaapstad calendarIcon",
@@ -2900,7 +3024,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "LEAH Breezy Hill - Paarl calendarIcon",
@@ -2923,7 +3048,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Jorja Smith Cloof Wine Estate calendarIcon",
@@ -2948,7 +3074,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Steve Hofmeyr Heroes Restaurant calendarIcon",
@@ -2973,7 +3100,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Steve Hofmeyr Heroes Restaurant calendarIcon",
@@ -2998,7 +3126,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Real Feelings Hörbar Nah: Die South Africa Sessions calendarIcon",
@@ -3023,7 +3152,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "ben The Midnight Sun Tour calendarIcon",
@@ -3046,7 +3176,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Chris Steyn Kapstadt Brauhaus Stellenbosch calendarIcon",
@@ -3068,7 +3199,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "APPEL The Daisy Jones Bar calendarIcon peopleIcon 16",
@@ -3092,7 +3224,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Chris Steyn Kapstadt Brauhaus Durbanville calendarIcon",
@@ -3114,7 +3247,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Christia Visser Christia Visser Live @Die Boer Teater calendarIcon",
@@ -3136,7 +3270,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Tete Mbambisa Freshlyground",
@@ -3158,7 +3293,8 @@
     "location_key": "Guga S’thebe, Langa calendarIcon, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "KalleWave$ CAPE TOWN: OCEAN STATIC calendarIcon",
@@ -3180,7 +3316,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Summer Pearl Youngblood-Africa calendarIcon",
@@ -3202,7 +3339,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Lianie May Heroes Restaurant calendarIcon",
@@ -3226,7 +3364,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "The SN Project Pantomime - Live in Cape Town calendarIcon",
@@ -3248,7 +3387,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Mashaya Social Link-Up: DayTime Groove calendarIcon",
@@ -3270,7 +3410,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Tete Mbambisa Victor Masondo & Bheki Khoza feat. Thembi Mtshali",
@@ -3292,7 +3433,8 @@
     "location_key": "Cafe Roux calendarIcon, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "UB40 featuring Ali Campbell Grand Arena at GrandWest calendarIcon peopleIcon 16",
@@ -3315,7 +3457,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Bonsai Kitten BONSAI KITTEN in Cape Town calendarIcon",
@@ -3337,7 +3480,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Bonsai Kitten BONSAI KITTEN in South Afrika calendarIcon",
@@ -3359,7 +3503,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Family Band Heroes Restaurant calendarIcon",
@@ -3384,7 +3529,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Mmangaliso The United Tour Cape Town calendarIcon",
@@ -3406,7 +3552,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Steve Graham Steve Graham's Monsters of Rock show calendarIcon",
@@ -3429,7 +3576,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Steve Graham Steve Graham's Pink Floyd Tribute calendarIcon",
@@ -3452,7 +3600,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Steve Graham Steve Graham's Monsters of Rock show calendarIcon",
@@ -3475,7 +3624,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Steve Graham Steve Graham's Pink Floyd calendarIcon",
@@ -3498,7 +3648,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Steve Graham Steve Graham's Monsters of Rock show calendarIcon",
@@ -3521,7 +3672,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Karen Zoid Karen Zoid Live at Lourensford calendarIcon",
@@ -3543,7 +3695,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Corlea Corlea & JD Mars – Ligte. Lewe. Liefde. calendarIcon",
@@ -3565,7 +3718,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Corlea Corlea & JD Mars – Ligte. Lewe. Liefde. calendarIcon",
@@ -3587,7 +3741,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Karen Zoid KAREN ZOID Live at Daisy Jones, Stellenbosch calendarIcon peopleIcon 7",
@@ -3609,7 +3764,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Jan Rhaap Heroes Restaurant calendarIcon",
@@ -3633,7 +3789,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Maxwell Maxwell Live in SA - Cape Town calendarIcon peopleIcon 45",
@@ -3655,7 +3812,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Riaan Benade Wellington Rugbyvoetbalklub calendarIcon peopleIcon 14",
@@ -3679,7 +3837,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Liezel Pieters Heroes Restaurant calendarIcon",
@@ -3703,7 +3862,8 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   },
   {
     "title": "Rocco de Villiers Heroes Restaurant calendarIcon",
@@ -3727,6 +3887,7 @@
     "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
-    "missing_place": true
+    "missing_place": true,
+    "is_new": false
   }
 ]

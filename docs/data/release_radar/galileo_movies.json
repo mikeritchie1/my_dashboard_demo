@@ -29,7 +29,8 @@
       "poster_url": "https://thegalileo.co.za/wp-content/uploads/2025/09/Grease-3-copy-686x1030.webp",
       "trailer_url": "https://www.youtube.com/watch?v=THd96gHV7Tg",
       "book_url": "https://www.webtickets.co.za/galileo-lineup",
-      "location_label": "Playing at Kirstenbosch Garden"
+      "location_label": "Playing at Kirstenbosch Garden",
+      "is_new": false
     },
     {
       "title": "About Time (Final Show Of The Season)",
@@ -58,7 +59,8 @@
       "poster_url": "https://thegalileo.co.za/wp-content/uploads/2025/09/About-Time-the-galileo-688x1030.webp",
       "trailer_url": "https://www.youtube.com/watch?v=7OIFdWk83no",
       "book_url": "https://www.webtickets.co.za/galileo-lineup",
-      "location_label": "Playing at Kirstenbosch Garden"
+      "location_label": "Playing at Kirstenbosch Garden",
+      "is_new": false
     }
   ]
 }

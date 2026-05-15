@@ -12,6 +12,7 @@ const GAMESLIST_PATH = "./data/media/gameslist.json";
 const WATCHLIST_MOVIE_DETAILS_PATH = "./data/media/watchlist_movie_details.json";
 const GAMES_DETAILS_PATH = "./data/media/games_details.json";
 const NEWS_PATH = "./data/news/news.json";
+const YOUTUBE_PATH = "./data/youtube/latest_uploads.json";
 const CONFIG_PATH = "../config.json";
 const SPECIALS_PATH = "./data/events/specials.json";
 const PLACES_PATH = "./data/events/places.json";
@@ -66,6 +67,7 @@ const DASHBOARD_ORDER_STORAGE_KEY = "my-dashboard:module-order:v1";
 const DASHBOARD_OPEN_STATE_STORAGE_KEY = "my-dashboard:module-open-state:v1";
 const SUBSECTION_OPEN_STATE_STORAGE_KEY = "my-dashboard:subsection-open-state:v1";
 const COLLECTION_ART_PREFS_STORAGE_KEY = "my-dashboard:collection-art-prefs:v1";
+const ONE_PIECE_CURRENT_CHAPTER_STORAGE_KEY = "my-dashboard:one-piece-current-chapter:v1";
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const CAPE_TOWN_LATLNG = [-33.9249, 18.4241];
 const TIMEZONE = "Africa/Johannesburg";
@@ -156,6 +158,9 @@ const state = {
   gameHubInfo: {},
   gameLabGames: [],
   gameLabSelectedGame: "",
+  onePieceVideoTab: "chapters",
+  youtubePayload: null,
+  onePieceCurrentChapter: 0,
 };
 
 const elements = {
@@ -181,6 +186,10 @@ const elements = {
   labiaGrid: document.querySelector("#labia-grid"),
   gameReleaseGrid: document.querySelector("#game-release-grid"),
   gameComingSoonGrid: document.querySelector("#game-coming-soon-grid"),
+  youtubeVideos: document.querySelector("#youtube-videos"),
+  youtubeOnePiece: document.querySelector("#youtube-one-piece"),
+  youtubeOnePieceTabs: document.querySelector("#youtube-one-piece-tabs"),
+  youtubeSection: document.querySelector("#youtube-section"),
   newsList: document.querySelector("#news-list"),
   newsPinned: document.querySelector("#news-pinned"),
   newsDetail: document.querySelector("#news-detail"),
@@ -473,6 +482,198 @@ function displayDateTime(value) {
     hour12: false,
     timeZone: TIMEZONE,
   }).format(date);
+}
+
+function youtubePublishedText(value) {
+  const raw = String(value || "").trim();
+  if (!raw) {
+    return "";
+  }
+  const date = new Date(raw);
+  if (Number.isNaN(date.getTime())) {
+    return "";
+  }
+  return new Intl.DateTimeFormat("en-ZA", {
+    weekday: "short",
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+}
+
+function renderYouTubeChannels(payload) {
+  if (!elements.youtubeVideos) {
+    return;
+  }
+  const channels = Array.isArray(payload?.channels) ? payload.channels : [];
+  const onePieceKeys = new Set(
+    (Array.isArray(payload?.one_piece?.videos) ? payload.one_piece.videos : [])
+      .map((item) => `${String(item?.video_id || "").trim()}|${String(item?.url || "").trim()}`),
+  );
+  const cards = [];
+  for (const channel of channels) {
+    const channelNameRaw = String(channel?.channel_name || "YouTube Channel").trim();
+    const channelName = escapeHtml(channelNameRaw);
+    const channelUrl = String(channel?.channel_url || "").trim();
+    const items = Array.isArray(channel?.items) ? channel.items : [];
+    for (const item of items) {
+      const key = `${String(item?.video_id || "").trim()}|${String(item?.url || "").trim()}`;
+      if (!onePieceKeys.has(key)) {
+        continue;
+      }
+      const title = escapeHtml(String(item?.title || "Untitled video").trim());
+      const videoUrl = String(item?.url || "").trim();
+      if (!videoUrl) {
+        continue;
+      }
+      const publishedText = escapeHtml(youtubePublishedText(item?.published_at));
+      cards.push(`
+        <article class="youtube-video-card">
+          <div class="youtube-video-body">
+            ${item?.is_new ? '<span class="new-badge">New</span>' : ""}
+            <h4 class="youtube-video-title"><a href="${escapeHtml(videoUrl)}" target="_blank" rel="noreferrer">${title}</a></h4>
+            <p class="youtube-video-meta">${channelName} • ${publishedText}</p>
+            ${channelUrl ? `<a class="youtube-video-link" href="${escapeHtml(channelUrl)}" target="_blank" rel="noreferrer">View channel</a>` : ""}
+          </div>
+        </article>
+      `);
+    }
+  }
+  elements.youtubeVideos.innerHTML = cards.length ? cards.join("") : '<p class="empty">No One Piece videos found.</p>';
+}
+
+function renderYouTubeOnePiece(payload) {
+  if (!elements.youtubeOnePiece) {
+    return;
+  }
+  const onePieceData = payload?.series?.one_piece || {};
+  const tab = state.onePieceVideoTab === "other" ? "other" : "chapters";
+  let onePieceItems = tab === "other"
+    ? (Array.isArray(onePieceData?.other) ? onePieceData.other : [])
+    : (Array.isArray(onePieceData?.chapters) ? onePieceData.chapters : []);
+
+  if (tab === "chapters") {
+    const chapterMap = new Map();
+    for (const item of onePieceItems) {
+      const chapterNumber = Number(item?.chapter || 0);
+      if (Number.isInteger(chapterNumber) && chapterNumber > 0 && !chapterMap.has(chapterNumber)) {
+        chapterMap.set(chapterNumber, item);
+      }
+    }
+    const start = Number(onePieceData?.chapter_range_start || 0);
+    const end = Number(onePieceData?.chapter_range_end || 0);
+    if (Number.isInteger(start) && Number.isInteger(end) && start > 0 && end >= start) {
+      const catalog = [];
+      for (let chapter = end; chapter >= start; chapter -= 1) {
+        const existing = chapterMap.get(chapter);
+        if (existing) {
+          catalog.push(existing);
+        } else {
+          catalog.push({
+            chapter,
+            title: `One Piece Chapter ${chapter}`,
+            url: "",
+            published_at: "",
+            thumbnail_url: "",
+            channel_name: "Plot Armor",
+            is_missing_chapter: true,
+          });
+        }
+      }
+      onePieceItems = catalog;
+    }
+  }
+  if (!onePieceItems.length) {
+    elements.youtubeOnePiece.innerHTML = `<p class="empty">No One Piece ${tab} videos found.</p>`;
+    return;
+  }
+  elements.youtubeOnePiece.innerHTML = onePieceItems
+    .map((item) => {
+      const title = escapeHtml(String(item?.title || "Untitled video").trim());
+      const url = escapeHtml(String(item?.url || "").trim());
+      const channelRaw = String(item?.channel_name || "YouTube Channel").trim().replace(/\s*-\s*videos\s*$/i, "");
+      const channel = escapeHtml(channelRaw);
+      const publishedRaw = youtubePublishedText(item?.published_at);
+      const published = escapeHtml(publishedRaw);
+      const thumbnailUrl = escapeHtml(String(item?.thumbnail_url || "").trim());
+      const chapterNumber = Number(item?.chapter || 0);
+      const isMissingChapter = Boolean(item?.is_missing_chapter);
+      const chapterLabel = tab === "chapters" && Number.isInteger(chapterNumber) && chapterNumber > 0
+        ? `Chapter ${chapterNumber}${isMissingChapter ? " • Missing" : ""}`
+        : "";
+      const safeUrl = String(item?.url || "").trim();
+      const currentChapter = Number(state.onePieceCurrentChapter || 0);
+      const progressClass = tab === "chapters" && Number.isInteger(chapterNumber) && chapterNumber > 0
+        ? (
+          currentChapter > 0
+            ? (chapterNumber > currentChapter ? "is-unread" : (chapterNumber === currentChapter ? "is-current" : "is-read"))
+            : ""
+        )
+        : "";
+      return `
+        <article class="youtube-video-card ${progressClass}" data-youtube-chapter="${chapterNumber > 0 ? chapterNumber : ""}">
+          ${thumbnailUrl
+            ? `<a href="${url}" target="_blank" rel="noreferrer"><img class="youtube-video-thumb" src="${thumbnailUrl}" alt="${title}" loading="lazy"></a>`
+            : '<div class="youtube-video-thumb youtube-video-thumb-placeholder">Unknown</div>'}
+          <div class="youtube-video-body">
+            ${item?.is_new ? '<span class="new-badge">New</span>' : ""}
+            <p class="youtube-video-meta">${chapterLabel ? escapeHtml(chapterLabel) + " • " : ""}${channel}</p>
+            <h4 class="youtube-video-title">${safeUrl ? `<a href="${url}" target="_blank" rel="noreferrer" data-youtube-chapter-link="${chapterNumber > 0 ? chapterNumber : ""}">${title}</a>` : title}</h4>
+            ${published ? `<p class="youtube-video-meta">${published}</p>` : ""}
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+
+  if (tab === "chapters" && Number(state.onePieceCurrentChapter || 0) > 0) {
+    const currentCard = elements.youtubeOnePiece.querySelector(
+      `[data-youtube-chapter="${String(Number(state.onePieceCurrentChapter))}"]`,
+    );
+    if (currentCard) {
+      setTimeout(() => {
+        const container = elements.youtubeOnePiece;
+        if (!container) {
+          return;
+        }
+        const containerRect = container.getBoundingClientRect();
+        const cardRect = currentCard.getBoundingClientRect();
+        const currentScroll = container.scrollTop;
+        const cardCenterWithinContainer = (cardRect.top - containerRect.top) + (cardRect.height / 2);
+        const targetTop = currentScroll + cardCenterWithinContainer - (container.clientHeight / 2);
+        container.scrollTo({ top: Math.max(0, targetTop), behavior: "auto" });
+      }, 60);
+    }
+  }
+}
+
+function syncOnePieceVideoTabs() {
+  if (!elements.youtubeOnePieceTabs) {
+    return;
+  }
+  elements.youtubeOnePieceTabs.querySelectorAll("[data-one-piece-video-tab]").forEach((button) => {
+    const tab = button.getAttribute("data-one-piece-video-tab") || "";
+    button.classList.toggle("is-selected", tab === state.onePieceVideoTab);
+  });
+}
+
+function loadOnePieceCurrentChapterPreference() {
+  try {
+    const raw = localStorage.getItem(ONE_PIECE_CURRENT_CHAPTER_STORAGE_KEY) || "0";
+    const value = Number(raw);
+    return Number.isInteger(value) && value > 0 ? value : 0;
+  } catch {
+    return 0;
+  }
+}
+
+function saveOnePieceCurrentChapterPreference(value) {
+  try {
+    localStorage.setItem(ONE_PIECE_CURRENT_CHAPTER_STORAGE_KEY, String(value));
+  } catch {
+    // Ignore storage failures.
+  }
 }
 
 
@@ -5210,6 +5411,70 @@ async function loadNews() {
   }
 }
 
+async function loadYouTubeVideos() {
+  if (!elements.youtubeOnePiece) {
+    return;
+  }
+  try {
+    const response = await fetchFresh(YOUTUBE_PATH);
+    if (!response.ok) {
+      throw new Error(`Could not load ${YOUTUBE_PATH}`);
+    }
+    const payload = await response.json();
+    state.youtubePayload = payload;
+    renderYouTubeOnePiece(payload);
+    syncOnePieceVideoTabs();
+  } catch (error) {
+    if (elements.youtubeOnePiece) {
+      elements.youtubeOnePiece.innerHTML = `<p class="empty">${error.message}</p>`;
+    }
+  }
+}
+
+if (elements.youtubeOnePieceTabs) {
+  elements.youtubeOnePieceTabs.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-one-piece-video-tab]");
+    if (!button) {
+      return;
+    }
+    state.onePieceVideoTab = button.getAttribute("data-one-piece-video-tab") === "other" ? "other" : "chapters";
+    syncOnePieceVideoTabs();
+    renderYouTubeOnePiece(state.youtubePayload || {});
+  });
+}
+
+if (elements.youtubeOnePiece) {
+  elements.youtubeOnePiece.addEventListener("click", (event) => {
+    if (state.onePieceVideoTab !== "chapters") {
+      return;
+    }
+    const chapterTarget =
+      event.target.closest("[data-youtube-chapter-link]") ||
+      event.target.closest("[data-youtube-chapter]");
+    if (!chapterTarget) {
+      return;
+    }
+    const chapter =
+      Number(chapterTarget.getAttribute("data-youtube-chapter-link") || "0") ||
+      Number(chapterTarget.getAttribute("data-youtube-chapter") || "0");
+    if (!Number.isInteger(chapter) || chapter <= 0) {
+      return;
+    }
+    state.onePieceCurrentChapter = chapter;
+    saveOnePieceCurrentChapterPreference(chapter);
+    renderYouTubeOnePiece(state.youtubePayload || {});
+  });
+}
+
+if (elements.youtubeSection) {
+  elements.youtubeSection.addEventListener("toggle", () => {
+    if (!elements.youtubeSection.open) {
+      return;
+    }
+    renderYouTubeOnePiece(state.youtubePayload || {});
+  });
+}
+
 function showMyLocation() {
   if (!navigator.geolocation) {
     alert("Location is not available in this browser.");
@@ -6616,6 +6881,7 @@ if (elements.collectionSetButtons) {
 syncCollectionMissingOptionVisibility();
 
 loadOnePieceCards();
+state.onePieceCurrentChapter = loadOnePieceCurrentChapterPreference();
 loadCollection();
 setHeaderDate();
 loadMetadata();
@@ -6626,6 +6892,7 @@ loadImaxReleases();
 loadGalileoReleases();
 loadLabiaShowtimes();
 loadGameReleases();
+loadYouTubeVideos();
 loadNews();
 loadWatchlist();
 loadSpecials();

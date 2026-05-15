@@ -178,6 +178,40 @@ def main() -> int:
                     entry["is_new"] = bool(key) and has_previous_snapshot and key not in year_keys
             write_json(current_path, current_payload)
 
+    # Special handling for nested video arrays in youtube payloads.
+    youtube_current_path = DATA_DIR / "youtube/latest_uploads.json"
+    youtube_previous_path = SNAPSHOT_DIR / "youtube/latest_uploads.json"
+    youtube_current_payload = load_json(youtube_current_path)
+    youtube_previous_payload = load_json(youtube_previous_path)
+    if isinstance(youtube_current_payload, dict):
+        previous_videos_by_channel: dict[str, set[str]] = {}
+        if isinstance(youtube_previous_payload, dict):
+            for channel in youtube_previous_payload.get("channels", []):
+                if not isinstance(channel, dict):
+                    continue
+                channel_id = str(channel.get("channel_id", "")).strip()
+                items = channel.get("items", [])
+                if not channel_id or not isinstance(items, list):
+                    continue
+                previous_videos_by_channel[channel_id] = {
+                    stable_key(item, ["video_id", "url"]) for item in items if isinstance(item, dict)
+                }
+        for channel in youtube_current_payload.get("channels", []):
+            if not isinstance(channel, dict):
+                continue
+            channel_id = str(channel.get("channel_id", "")).strip()
+            items = channel.get("items", [])
+            if not channel_id or not isinstance(items, list):
+                continue
+            previous_keys = previous_videos_by_channel.get(channel_id, set())
+            has_previous_snapshot = channel_id in previous_videos_by_channel
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                key = stable_key(item, ["video_id", "url"])
+                item["is_new"] = bool(key) and has_previous_snapshot and key not in previous_keys
+        write_json(youtube_current_path, youtube_current_payload)
+
     marked_counts: dict[str, int] = {}
     for file_path, targets in rules.items():
         marked = process_file(file_path, [t for t in targets if t.get("path") != "history_by_year"])

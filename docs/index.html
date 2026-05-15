@@ -142,7 +142,7 @@
         </div>
       </details>
 
-      <details class="dashboard-section">
+      <details id="youtube-section" class="dashboard-section">
         <summary>
           <span>Release Radar</span>
         </summary>
@@ -175,6 +175,24 @@
           <div id="game-coming-soon-grid" class="release-list">
             <p class="empty">Game release data has not been connected yet.</p>
           </div>
+        </div>
+      </details>
+
+      <details class="dashboard-section">
+        <summary>
+          <span>YouTube</span>
+        </summary>
+        <div class="section-content">
+          <details class="subsection-panel" open>
+            <summary>One Piece</summary>
+            <div id="youtube-one-piece-tabs" class="watchlist-category-buttons" role="group" aria-label="One Piece video tabs">
+              <button type="button" class="watchlist-category-button is-selected" data-one-piece-video-tab="chapters">Chapters</button>
+              <button type="button" class="watchlist-category-button" data-one-piece-video-tab="other">Other</button>
+            </div>
+            <div id="youtube-one-piece" class="youtube-videos">
+              <p class="empty">Loading One Piece chapter videos...</p>
+            </div>
+          </details>
         </div>
       </details>
 

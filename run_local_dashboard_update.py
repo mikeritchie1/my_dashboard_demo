@@ -26,6 +26,7 @@ TASKS = {
     "watchlist": [[sys.executable, "services/scrape_media.py", "--source", "watchlist"]],
     "gamelist": [[sys.executable, "services/scrape_media.py", "--source", "games", "--type", "games"]],
     "news": [[sys.executable, "services/scrape_news.py"]],
+    "youtube": [[sys.executable, "services/scrape_youtube.py"]],
     "digest": [[sys.executable, "services/daily_digest/send_daily_digest.py", "--no-email"]],
 }
 
@@ -42,6 +43,7 @@ NEW_MARKER_FILES = [
     "events/google_calendar_events.json",
     "media/watchlist.json",
     "media/gameslist.json",
+    "youtube/latest_uploads.json",
 ]
 
 
