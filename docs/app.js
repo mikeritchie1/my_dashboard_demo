@@ -28,6 +28,9 @@ const GOOGLE_CALENDAR_EVENTS_PATH = "./data/events/google_calendar_events.json";
 const GAME_HUB_CONFIG_PATH = "./data/game_hub/config.json";
 const TIMELINE_MANIFEST_PATH = "./data/timeline/manifest.json";
 const GAME_LAB_MANIFEST_PATH = "./data/game_lab/manifest.json";
+const STATE_API_BASE = String(window.DASHBOARD_STATE_API || "").trim();
+const STATE_API_KEY = "main";
+const STATE_SYNC_DEBOUNCE_MS = 700;
 const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const WATCHLIST_MEDIA_CONFIG = {
   screen: { label: "Movies + Series", types: ["movie", "series"] },
@@ -264,6 +267,8 @@ let selectedMarkerHighlight = null;
 let mapDetailTab = "all";
 let timelineLightboxIndex = -1;
 let onePieceStripDragBound = false;
+let remoteStateLoaded = false;
+let remoteStateSaveTimer = null;
 const markerIcons = {
   places: L.icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
@@ -674,6 +679,7 @@ function saveOnePieceCurrentChapterPreference(value) {
   } catch {
     // Ignore storage failures.
   }
+  queueRemoteStateSync();
 }
 
 
@@ -2829,6 +2835,7 @@ function saveThemePreference(theme) {
   } catch {
     // Ignore storage failures.
   }
+  queueRemoteStateSync();
 }
 
 function normalizeModuleId(label) {
@@ -2886,6 +2893,7 @@ function saveDashboardOrderPreference() {
   } catch {
     // Ignore localStorage failures.
   }
+  queueRemoteStateSync();
 }
 
 function applyDashboardOrderPreference() {
@@ -2934,6 +2942,7 @@ function saveDashboardOpenStatePreference() {
   } catch {
     // Ignore localStorage failures.
   }
+  queueRemoteStateSync();
 }
 
 function applyDashboardOpenStatePreference() {
@@ -2975,6 +2984,120 @@ function saveSubsectionOpenStatePreference() {
   } catch {
     // Ignore localStorage failures.
   }
+  queueRemoteStateSync();
+}
+
+function stateApiUrl() {
+  if (!STATE_API_BASE) {
+    return "";
+  }
+  const joiner = STATE_API_BASE.includes("?") ? "&" : "?";
+  return `${STATE_API_BASE}${joiner}key=${encodeURIComponent(STATE_API_KEY)}`;
+}
+
+function collectDashboardSyncState() {
+  return {
+    one_piece_current_chapter: Number(state.onePieceCurrentChapter || 0),
+    one_piece_video_tab: state.onePieceVideoTab === "other" ? "other" : "chapters",
+    theme: (document.documentElement.getAttribute("data-theme") || "light") === "dark" ? "dark" : "light",
+    module_order: loadDashboardOrderPreference(),
+    module_open: loadDashboardOpenStatePreference(),
+    subsection_open: loadSubsectionOpenStatePreference(),
+  };
+}
+
+async function saveRemoteDashboardState() {
+  const url = stateApiUrl();
+  if (!url) {
+    return;
+  }
+  try {
+    await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(collectDashboardSyncState()),
+    });
+  } catch {
+    // Ignore remote save failures.
+  }
+}
+
+function queueRemoteStateSync() {
+  if (!remoteStateLoaded) {
+    return;
+  }
+  if (remoteStateSaveTimer) {
+    clearTimeout(remoteStateSaveTimer);
+  }
+  remoteStateSaveTimer = setTimeout(() => {
+    remoteStateSaveTimer = null;
+    void saveRemoteDashboardState();
+  }, STATE_SYNC_DEBOUNCE_MS);
+}
+
+async function loadRemoteDashboardState() {
+  const url = stateApiUrl();
+  if (!url) {
+    remoteStateLoaded = true;
+    return;
+  }
+  try {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) {
+      remoteStateLoaded = true;
+      return;
+    }
+    const payload = await response.json();
+    if (!payload || typeof payload !== "object") {
+      remoteStateLoaded = true;
+      return;
+    }
+    const remoteChapter = Number(payload.one_piece_current_chapter || 0);
+    if (Number.isInteger(remoteChapter) && remoteChapter > 0) {
+      state.onePieceCurrentChapter = remoteChapter;
+      try {
+        localStorage.setItem(ONE_PIECE_CURRENT_CHAPTER_STORAGE_KEY, String(remoteChapter));
+      } catch {
+        // Ignore storage failures.
+      }
+    }
+    const remoteTab = String(payload.one_piece_video_tab || "").trim().toLowerCase();
+    if (remoteTab === "chapters" || remoteTab === "other") {
+      state.onePieceVideoTab = remoteTab;
+    }
+    const remoteTheme = String(payload.theme || "").trim().toLowerCase();
+    if (remoteTheme === "dark" || remoteTheme === "light") {
+      applyTheme(remoteTheme);
+      saveThemePreference(remoteTheme);
+    }
+    if (Array.isArray(payload.module_order)) {
+      try {
+        localStorage.setItem(DASHBOARD_ORDER_STORAGE_KEY, JSON.stringify(payload.module_order));
+      } catch {
+        // Ignore storage failures.
+      }
+      applyDashboardOrderPreference();
+    }
+    if (payload.module_open && typeof payload.module_open === "object") {
+      try {
+        localStorage.setItem(DASHBOARD_OPEN_STATE_STORAGE_KEY, JSON.stringify(payload.module_open));
+      } catch {
+        // Ignore storage failures.
+      }
+      applyDashboardOpenStatePreference();
+    }
+    if (payload.subsection_open && typeof payload.subsection_open === "object") {
+      try {
+        localStorage.setItem(SUBSECTION_OPEN_STATE_STORAGE_KEY, JSON.stringify(payload.subsection_open));
+      } catch {
+        // Ignore storage failures.
+      }
+      applySubsectionOpenStatePreference();
+    }
+  } catch {
+    // Ignore remote load failures.
+  }
+  remoteStateLoaded = true;
 }
 
 function applySubsectionOpenStatePreference() {
@@ -5440,6 +5563,7 @@ if (elements.youtubeOnePieceTabs) {
     state.onePieceVideoTab = button.getAttribute("data-one-piece-video-tab") === "other" ? "other" : "chapters";
     syncOnePieceVideoTabs();
     renderYouTubeOnePiece(state.youtubePayload || {});
+    queueRemoteStateSync();
   });
 }
 
@@ -6880,25 +7004,31 @@ if (elements.collectionSetButtons) {
 
 syncCollectionMissingOptionVisibility();
 
-loadOnePieceCards();
-state.onePieceCurrentChapter = loadOnePieceCurrentChapterPreference();
-loadCollection();
-setHeaderDate();
-loadMetadata();
-loadWeather();
-loadReleases();
-loadComingSoon();
-loadImaxReleases();
-loadGalileoReleases();
-loadLabiaShowtimes();
-loadGameReleases();
-loadYouTubeVideos();
-loadNews();
-loadWatchlist();
-loadSpecials();
-loadBandsintownEvents();
-loadQuicketEvents();
-loadTimeline();
-loadGameHub();
-loadGameLab();
-syncRangeButtons();
+async function bootstrapDashboard() {
+  loadOnePieceCards();
+  state.onePieceCurrentChapter = loadOnePieceCurrentChapterPreference();
+  await loadRemoteDashboardState();
+  syncOnePieceVideoTabs();
+  loadCollection();
+  setHeaderDate();
+  loadMetadata();
+  loadWeather();
+  loadReleases();
+  loadComingSoon();
+  loadImaxReleases();
+  loadGalileoReleases();
+  loadLabiaShowtimes();
+  loadGameReleases();
+  loadYouTubeVideos();
+  loadNews();
+  loadWatchlist();
+  loadSpecials();
+  loadBandsintownEvents();
+  loadQuicketEvents();
+  loadTimeline();
+  loadGameHub();
+  loadGameLab();
+  syncRangeButtons();
+}
+
+void bootstrapDashboard();
