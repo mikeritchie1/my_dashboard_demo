@@ -786,14 +786,14 @@
     },
     {
       "card_number": "OP10-071",
-      "price": 82.0,
+      "price": 81.0,
       "title": "Donquixote Doflamingo [Royal Blood]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Royal Blood",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R82.00",
+      "available_variants": "Near Mint Foil R81.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
       "scraped_at": "2026-05-13T13:13:39Z"
@@ -1023,20 +1023,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-      "card_number": "ST05-004",
-      "price": 145.0,
-      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R145.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
-      "scraped_at": "2026-05-13T17:58:07Z"
-    },
-    {
       "card_number": "OP14-112",
       "price": 150.0,
       "title": "Boa Hancock OP14-112",
@@ -1063,6 +1049,20 @@
       "url": "https://www.toadtradertcg.com/product-page/mamaragan-op15-078",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "price": 150.0,
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R150.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
+      "scraped_at": "2026-05-13T17:58:07Z"
     },
     {
       "card_number": "OP14-104",
@@ -1346,14 +1346,14 @@
     },
     {
       "card_number": "OP02-120",
-      "price": 455.0,
+      "price": 460.0,
       "title": "Uta (Alternate Art) [Paramount War]",
       "rarity": "Secret Rare",
       "store": "Big Bang Shop",
       "set_name": "Paramount War",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R455.00",
+      "available_variants": "Near Mint Foil R460.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-alternate-art-paramount-war",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/483360.jpg?v=1763495611",
       "scraped_at": "2026-05-13T14:41:45Z"
@@ -1457,6 +1457,20 @@
       "scraped_at": "2026-05-13T13:13:39Z"
     },
     {
+      "card_number": "OP04-056",
+      "price": 660.0,
+      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
+      "rarity": "Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Premium Booster -The Best-",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R660.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
+      "scraped_at": "2026-05-13T14:41:45Z"
+    },
+    {
       "card_number": "OP11-054",
       "price": 662.0,
       "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
@@ -1469,20 +1483,6 @@
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632422.jpg?v=1757718637",
       "scraped_at": "2026-05-13T13:13:39Z"
-    },
-    {
-      "card_number": "OP04-056",
-      "price": 670.0,
-      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
-      "rarity": "Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Premium Booster -The Best-",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R670.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
-      "scraped_at": "2026-05-13T14:41:45Z"
     },
     {
       "card_number": "EB03-053",
@@ -1500,14 +1500,14 @@
     },
     {
       "card_number": "OP14-084",
-      "price": 848.0,
+      "price": 851.0,
       "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R848.00",
+      "available_variants": "Near Mint Foil R851.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666913.jpg?v=1769205349",
       "scraped_at": "2026-05-13T13:13:39Z"
