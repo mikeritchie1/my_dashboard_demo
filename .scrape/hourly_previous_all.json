@@ -1,6 +1,20 @@
 {
   "listings": [
     {
+      "card_number": "OP11-073",
+      "price": "4.0",
+      "title": "Charlotte Linlin [A Fist of Divine Speed]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "A Fist of Divine Speed",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R4.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/charlotte-linlin-a-fist-of-divine-speed",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632444.jpg?v=1757718563",
+      "scraped_at": "2026-05-17T14:19:24Z"
+    },
+    {
       "card_number": "OP05-076",
       "price": "6.0",
       "title": "When You're at Sea You Fight against Pirates!! OP05-076",
@@ -251,20 +265,6 @@
       "url": "https://www.toadtradertcg.com/product-page/sanji-op15-047",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP06-101",
-      "price": "32.0",
-      "title": "O-Nami [Wings of the Captain]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/o-nami-wings-of-the-captain/p/676771475",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539491_1024x1024_2x_xxcQ4qlfAN.webp",
-      "scraped_at": "2026-05-16T17:44:36Z"
     },
     {
       "card_number": "OP05-082",
@@ -645,20 +645,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-      "card_number": "OP13-108",
-      "price": "72.0",
-      "title": "Jewelry Bonney [Carrying On His Will]",
-      "rarity": "Super Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/jewelry-bonney-carrying-on-his-will/p/676766888",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/657386_1024x1024_2x_RUIbBDrIv.jpg",
-      "scraped_at": "2026-05-16T17:44:36Z"
-    },
-    {
       "card_number": "EB01-003",
       "price": "75.0",
       "title": "Kid & Killer EB01-003",
@@ -853,20 +839,6 @@
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-op10-118",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP06-106",
-      "price": "120.0",
-      "title": "Kouzuki Hiyori [Wings of the Captain]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/kouzuki-hiyori-wings-of-the-captain/p/676770103",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539501_1024x1024_2x_sUH7Ioc79.webp",
-      "scraped_at": "2026-05-16T17:44:36Z"
     },
     {
       "card_number": "OP06-106",
