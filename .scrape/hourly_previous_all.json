@@ -1,6 +1,20 @@
 {
   "listings": [
     {
+      "card_number": "OP15-014",
+      "price": "4.0",
+      "title": "Bartolomeo [Adventure on Kami's Island]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Adventure on Kami's Island",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R4.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/bartolomeo-adventure-on-kamis-island",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/685354.jpg?v=1776967441",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
       "card_number": "OP05-076",
       "price": "6.0",
       "title": "When You're at Sea You Fight against Pirates!! OP05-076",
@@ -125,6 +139,20 @@
       "url": "https://www.toadtradertcg.com/product-page/fire-fist-op15-020",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "P-026",
+      "price": "18.0",
+      "title": "Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards]",
+      "rarity": "Promo",
+      "store": "Knightly Gaming",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R18.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/cc4c8ea9-4e6a-507b-8b36-4bd0f8ff4a20.jpg?v=1771365687",
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "EB04-048",
@@ -267,6 +295,20 @@
       "scraped_at": "2026-05-16T17:44:36Z"
     },
     {
+      "card_number": "ST06-004",
+      "price": "35.0",
+      "title": "Smoker [Starter Deck: Absolute Justice]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Starter Deck: Absolute Justice",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R35.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
       "card_number": "EB02-045",
       "price": "40.0",
       "title": "Trafalgar Law EB02-045",
@@ -321,6 +363,34 @@
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-op15-092",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "price": "44.0",
+      "title": "Nami (054) [A Fist of Divine Speed]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "A Fist of Divine Speed",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R44.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-a-fist-of-divine-speed",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632421.jpg?v=1757718436",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
+      "card_number": "P-024",
+      "price": "47.0",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "rarity": "Promo",
+      "store": "Knightly Gaming",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R47.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/3f6dc017-b6eb-5be5-84de-c15de1756cbb.jpg?v=1771366031",
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP14-069",
@@ -477,6 +547,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "ST02-009",
+      "price": "62.0",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Worst Generation",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R62.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
       "card_number": "OP15-032",
       "price": "65.0",
       "title": "Brook OP15-032",
@@ -489,6 +573,20 @@
       "url": "https://www.toadtradertcg.com/product-page/brook-op15-032",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "price": "66.0",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R66.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "ST10-010",
@@ -981,6 +1079,34 @@
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
+      "card_number": "OP05-074",
+      "price": "299.0",
+      "title": "Eustass\"Captain\"Kid (OP05-074) (Alternate Art) [Premium Booster -The Best-]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Premium Booster -The Best-",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R299.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/eustasscaptainkid-op05-074-alternate-art-premium-booster-the-best",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/586959.jpg?v=1766590772",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
+      "card_number": "OP14-091",
+      "price": "337.0",
+      "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) [The Azure Sea's Seven]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Azure Sea's Seven",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R337.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-2-bon-kurei-bentham-alternate-art-the-azure-seas-seven",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670640.jpg?v=1769205276",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
       "card_number": "EB02-035",
       "price": "350.0",
       "title": "Sanji & Pudding EB02-035",
@@ -1093,6 +1219,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "OP14-033",
+      "price": "527.0",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Azure Sea's Seven",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R527.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666527.jpg?v=1769205424",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
       "card_number": "ST18-001",
       "price": "560.0",
       "title": "Uso-Hachi (Alternate Art) [Premium Booster -The Best- Vol. 2]",
@@ -1121,6 +1261,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "OP02-001",
+      "price": "652.0",
+      "title": "Edward.Newgate (Special Goods Set -Former Four Emperors-) [One Piece Promotion Cards]",
+      "rarity": "Leader",
+      "store": "Knightly Gaming",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R652.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/edward-newgate-special-goods-set-former-four-emperors-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/546699.jpg?v=1772488366",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
       "card_number": "OP04-056",
       "price": "660.0",
       "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
@@ -1135,6 +1289,20 @@
       "scraped_at": "2026-05-18T17:26:23Z"
     },
     {
+      "card_number": "OP11-054",
+      "price": "665.0",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "A Fist of Divine Speed",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R665.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632422.jpg?v=1757718637",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
       "card_number": "EB03-053",
       "price": "700.0",
       "title": "Nami EB03-053",
@@ -1147,6 +1315,20 @@
       "url": "https://www.toadtradertcg.com/product-page/nami-eb03-053",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "price": "850.0",
+      "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Azure Sea's Seven",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R850.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666913.jpg?v=1769205349",
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP01-035",
@@ -1247,6 +1429,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "OP14-031",
+      "price": "1328.0",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Azure Sea's Seven",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R1328.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
+      "scraped_at": "2026-05-18T19:20:14Z"
+    },
+    {
       "card_number": "OP13-118",
       "price": "1700.0",
       "title": "Monkey.D.Luffy OP13-118",
@@ -1259,6 +1455,20 @@
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-op13-118",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "price": "1938.0",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Azure Sea's Seven",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R1938.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670874.jpg?v=1769205424",
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "OP06-106",
