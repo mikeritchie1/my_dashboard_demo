@@ -519,29 +519,15 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-      "card_number": "OP10-071",
-      "price": 62.0,
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R62.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
-      "scraped_at": "2026-05-17T21:42:49Z"
-    },
-    {
       "card_number": "ST02-009",
-      "price": 63.0,
+      "price": 62.0,
       "title": "Trafalgar Law [Starter Deck: Worst Generation]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Starter Deck: Worst Generation",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R63.00",
+      "available_variants": "Near Mint Foil R62.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
       "scraped_at": "2026-05-17T21:42:49Z"
@@ -573,6 +559,20 @@
       "url": "https://www.bobshop.co.za/trafalgar-law-st10-010-reprint-premium-booster-the-best/p/680361780",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594320_1024x1024_2x_060R0Aiu9.jpg",
       "scraped_at": "2026-05-16T17:44:36Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "price": 67.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R67.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "scraped_at": "2026-05-17T21:42:49Z"
     },
     {
       "card_number": "OP07-072",
@@ -1458,14 +1458,14 @@
     },
     {
       "card_number": "OP14-031",
-      "price": 1324.0,
+      "price": 1328.0,
       "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1324.00",
+      "available_variants": "Near Mint Foil R1328.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
       "scraped_at": "2026-05-17T21:42:49Z"
@@ -1486,14 +1486,14 @@
     },
     {
       "card_number": "OP14-096",
-      "price": 1933.0,
+      "price": 1938.0,
       "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1933.00",
+      "available_variants": "Near Mint Foil R1938.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670874.jpg?v=1769205424",
       "scraped_at": "2026-05-17T21:42:49Z"
