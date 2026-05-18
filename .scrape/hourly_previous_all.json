@@ -547,6 +547,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "OP10-071",
+      "price": "66.0",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R66.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "scraped_at": "2026-05-17T21:42:49Z"
+    },
+    {
       "card_number": "ST10-010",
       "price": "66.0",
       "title": "Trafalgar Law (ST10-010) (Reprint) [Premium Booster -The Best-]",
@@ -559,20 +573,6 @@
       "url": "https://www.bobshop.co.za/trafalgar-law-st10-010-reprint-premium-booster-the-best/p/680361780",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594320_1024x1024_2x_060R0Aiu9.jpg",
       "scraped_at": "2026-05-16T17:44:36Z"
-    },
-    {
-      "card_number": "OP10-071",
-      "price": "67.0",
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R67.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
-      "scraped_at": "2026-05-17T21:42:49Z"
     },
     {
       "card_number": "OP07-072",
@@ -785,6 +785,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "P-052",
+      "price": "100.0",
+      "title": "Dracule Mihawk [Live Action Edition]",
+      "rarity": "Promo",
+      "store": "Big Bang Shop",
+      "set_name": "Live Action Edition",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R100.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/546713_ed599c5b-3ea8-4f54-b724-6e273d6ef740.jpg?v=1763495310",
+      "scraped_at": "2026-05-17T21:42:49Z"
+    },
+    {
       "card_number": "ST21-014",
       "price": "100.0",
       "title": "Monkey.D.Luffy [Starter Deck EX: Gear 5]",
@@ -797,20 +811,6 @@
       "url": "https://www.bobshop.co.za/monkey-d-luffy-starter-deck-ex-gear-5/p/676860911",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/615564_1024x1024_2x_oGJzN0Ciz.jpg",
       "scraped_at": "2026-05-16T17:44:36Z"
-    },
-    {
-      "card_number": "P-052",
-      "price": "105.0",
-      "title": "Dracule Mihawk [Live Action Edition]",
-      "rarity": "Promo",
-      "store": "Big Bang Shop",
-      "set_name": "Live Action Edition",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R105.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/546713_ed599c5b-3ea8-4f54-b724-6e273d6ef740.jpg?v=1763495310",
-      "scraped_at": "2026-05-17T21:42:49Z"
     },
     {
       "card_number": "OP10-118",
@@ -981,20 +981,6 @@
       "scraped_at": "2026-05-17T21:42:49Z"
     },
     {
-      "card_number": "OP02-120",
-      "price": "175.0",
-      "title": "Uta (OP02-120) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
-      "rarity": "Secret Rare",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R175.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-op02-120-premium-card-collection-uta-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564143.jpg?v=1763508739",
-      "scraped_at": "2026-05-17T21:42:49Z"
-    },
-    {
       "card_number": "EB02-011",
       "price": "180.0",
       "title": "Arlong EB02-011",
@@ -1007,6 +993,20 @@
       "url": "https://www.toadtradertcg.com/product-page/arlong-eb02-011",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "OP02-120",
+      "price": "180.0",
+      "title": "Uta (OP02-120) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "rarity": "Secret Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R180.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-op02-120-premium-card-collection-uta-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564143.jpg?v=1763508739",
+      "scraped_at": "2026-05-17T21:42:49Z"
     },
     {
       "card_number": "OP01-003",
@@ -1122,14 +1122,14 @@
     },
     {
       "card_number": "OP14-091",
-      "price": "340.0",
+      "price": "337.0",
       "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R340.00",
+      "available_variants": "Near Mint Foil R337.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-2-bon-kurei-bentham-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670640.jpg?v=1769205276",
       "scraped_at": "2026-05-17T21:42:49Z"
@@ -1248,14 +1248,14 @@
     },
     {
       "card_number": "OP14-033",
-      "price": "522.0",
+      "price": "524.0",
       "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R522.00",
+      "available_variants": "Near Mint Foil R524.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666527.jpg?v=1769205424",
       "scraped_at": "2026-05-17T21:42:49Z"
@@ -1346,14 +1346,14 @@
     },
     {
       "card_number": "OP14-084",
-      "price": "851.0",
+      "price": "850.0",
       "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R851.00",
+      "available_variants": "Near Mint Foil R850.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666913.jpg?v=1769205349",
       "scraped_at": "2026-05-17T21:42:49Z"
