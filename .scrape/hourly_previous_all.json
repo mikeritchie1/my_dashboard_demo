@@ -1,6 +1,34 @@
 {
   "listings": [
     {
+      "card_number": "OP15-035",
+      "price": "5.0",
+      "title": "Laboon",
+      "rarity": "Uncommon",
+      "store": "Tanuki Trader",
+      "set_name": "Adventure on Kami's Island (OP15)",
+      "condition": "",
+      "stock": "4 in stock",
+      "available_variants": "4 in stock",
+      "url": "https://tanukitrader.co.za/product/laboon-2/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2026/05/OP15-035_EN.jpeg",
+      "scraped_at": "2026-05-19T19:31:39Z"
+    },
+    {
+      "card_number": "OP15-052",
+      "price": "5.0",
+      "title": "Leo",
+      "rarity": "Uncommon",
+      "store": "Tanuki Trader",
+      "set_name": "Adventure on Kami's Island (OP15)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/leo-3/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2026/05/OP15-052_EN.jpeg",
+      "scraped_at": "2026-05-19T19:31:39Z"
+    },
+    {
       "card_number": "OP05-076",
       "price": "6.0",
       "title": "When You're at Sea You Fight against Pirates!! OP05-076",
@@ -29,6 +57,48 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "EB04-002",
+      "price": "7.5",
+      "title": "Jewelry Bonney (EB04-002)",
+      "rarity": "Rare",
+      "store": "Tanuki Trader",
+      "set_name": "Adventure on Kami's Island (OP15)",
+      "condition": "",
+      "stock": "2 in stock",
+      "available_variants": "2 in stock",
+      "url": "https://tanukitrader.co.za/product/jewelry-bonney-eb04-002/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2026/05/EB04-002_EN.jpeg",
+      "scraped_at": "2026-05-19T19:31:39Z"
+    },
+    {
+      "card_number": "EB04-054",
+      "price": "7.5",
+      "title": "Bartholomew Kuma (EB04-054)",
+      "rarity": "Rare",
+      "store": "Tanuki Trader",
+      "set_name": "Adventure on Kami's Island (OP15)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/bartholomew-kuma-eb04-054/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2026/05/EB04-054_EN.jpeg",
+      "scraped_at": "2026-05-19T19:31:39Z"
+    },
+    {
+      "card_number": "OP15-109",
+      "price": "7.5",
+      "title": "Nico Robin (OP15-109)",
+      "rarity": "Rare",
+      "store": "Tanuki Trader",
+      "set_name": "Adventure on Kami's Island (OP15)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/nico-robin-op15-109/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2026/05/OP15-109_EN.jpeg",
+      "scraped_at": "2026-05-19T19:31:39Z"
+    },
+    {
       "card_number": "OP13-066",
       "price": "8.0",
       "title": "Silvers Rayleigh OP13-066",
@@ -41,6 +111,20 @@
       "url": "https://www.toadtradertcg.com/product-page/silvers-rayleigh-op13-066",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "OP15-108",
+      "price": "8.0",
+      "title": "Nami (OP15-108)",
+      "rarity": "Rare",
+      "store": "Tanuki Trader",
+      "set_name": "Adventure on Kami's Island (OP15)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/nami-op15-108/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2026/05/OP15-108_EN.jpeg",
+      "scraped_at": "2026-05-19T19:31:39Z"
     },
     {
       "card_number": "P-053",
@@ -69,6 +153,20 @@
       "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/680357604",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596376_1024x1024_2x_k_bCN80rD.jpg",
       "scraped_at": "2026-05-16T17:44:36Z"
+    },
+    {
+      "card_number": "OP15-007",
+      "price": "10.0",
+      "title": "Gin",
+      "rarity": "Super Rare",
+      "store": "Tanuki Trader",
+      "set_name": "Adventure on Kami's Island (OP15)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/gin-3/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2026/05/OP15-007_EN.jpeg",
+      "scraped_at": "2026-05-19T19:31:39Z"
     },
     {
       "card_number": "OP15-108",
@@ -167,6 +265,20 @@
       "url": "https://www.toadtradertcg.com/product-page/gin-op15-007",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "OP15-047",
+      "price": "20.0",
+      "title": "Sanji (OP15-047)",
+      "rarity": "Rare",
+      "store": "Tanuki Trader",
+      "set_name": "Adventure on Kami's Island (OP15)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/sanji-op15-047/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2026/05/OP15-047_EN.jpeg",
+      "scraped_at": "2026-05-19T19:31:39Z"
     },
     {
       "card_number": "OP01-078",
@@ -729,6 +841,20 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
+      "card_number": "OP15-113",
+      "price": "95.0",
+      "title": "Roronoa Zoro (OP15-113)",
+      "rarity": "Super Rare",
+      "store": "Tanuki Trader",
+      "set_name": "Adventure on Kami's Island (OP15)",
+      "condition": "",
+      "stock": "1 in stock",
+      "available_variants": "1 in stock",
+      "url": "https://tanukitrader.co.za/product/roronoa-zoro-op15-113/",
+      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2026/05/OP15-113_EN.jpeg",
+      "scraped_at": "2026-05-19T19:31:39Z"
+    },
+    {
       "card_number": "ST10-010",
       "price": "95.0",
       "title": "Trafalgar Law ST10-010",
@@ -1136,14 +1262,14 @@
     },
     {
       "card_number": "OP02-120",
-      "price": "460.0",
+      "price": "465.0",
       "title": "Uta (Alternate Art) [Paramount War]",
       "rarity": "Secret Rare",
       "store": "Big Bang Shop",
       "set_name": "Paramount War",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R460.00",
+      "available_variants": "Near Mint Foil R465.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-alternate-art-paramount-war",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/483360.jpg?v=1763495611",
       "scraped_at": "2026-05-18T17:26:23Z"
@@ -1304,14 +1430,14 @@
     },
     {
       "card_number": "OP01-035",
-      "price": "915.0",
+      "price": "925.0",
       "title": "Okiku (SP) [500 Years in the Future]",
       "rarity": "Rare",
       "store": "Big Bang Shop",
       "set_name": "500 Years in the Future",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R915.00",
+      "available_variants": "Near Mint Foil R925.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/okiku-sp-500-years-in-the-future",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/545922_9fd2abba-1373-4311-89a8-55cfc63694d8.jpg?v=1763493691",
       "scraped_at": "2026-05-18T17:26:23Z"
@@ -1332,14 +1458,14 @@
     },
     {
       "card_number": "OP03-114",
-      "price": "1040.0",
+      "price": "1055.0",
       "title": "Charlotte Linlin (SP) [Wings of the Captain]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Wings of the Captain",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1040.00",
+      "available_variants": "Near Mint Foil R1055.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-linlin-sp-wings-of-the-captain",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/541666.jpg?v=1763513131",
       "scraped_at": "2026-05-18T17:26:23Z"
