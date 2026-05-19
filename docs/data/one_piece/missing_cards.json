@@ -561,20 +561,6 @@
       "scraped_at": "2026-05-16T17:44:36Z"
     },
     {
-      "card_number": "OP10-071",
-      "price": 69.0,
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R69.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
-      "scraped_at": "2026-05-18T19:20:14Z"
-    },
-    {
       "card_number": "OP07-072",
       "price": 70.0,
       "title": "Porche OP07-072",
@@ -671,6 +657,20 @@
       "url": "https://www.toadtradertcg.com/product-page/nami-op15-086",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "price": 77.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R77.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "scraped_at": "2026-05-18T19:20:14Z"
     },
     {
       "card_number": "ST13-017",
@@ -1066,14 +1066,14 @@
     },
     {
       "card_number": "OP14-091",
-      "price": 336.0,
+      "price": 334.0,
       "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R336.00",
+      "available_variants": "Near Mint Foil R334.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-2-bon-kurei-bentham-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670640.jpg?v=1769205276",
       "scraped_at": "2026-05-18T19:20:14Z"
@@ -1192,14 +1192,14 @@
     },
     {
       "card_number": "OP14-033",
-      "price": 527.0,
+      "price": 520.0,
       "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R527.00",
+      "available_variants": "Near Mint Foil R520.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666527.jpg?v=1769205424",
       "scraped_at": "2026-05-18T19:20:14Z"
@@ -1373,20 +1373,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-      "card_number": "ST03-004",
-      "price": 1235.0,
-      "title": "Gecko Moria (SP)",
-      "rarity": "Common",
-      "store": "Tanuki Trader",
-      "set_name": "Two Legends (OP08)",
-      "condition": "",
-      "stock": "1 in stock",
-      "available_variants": "1 in stock",
-      "url": "https://tanukitrader.co.za/product/gecko-moria-sp/",
-      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST03-004SP.jpg",
-      "scraped_at": "2026-05-13T17:58:07Z"
-    },
-    {
       "card_number": "OP06-101",
       "price": 1300.0,
       "title": "O-Nami OP06-101 Event Pack",
@@ -1455,20 +1441,6 @@
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
       "scraped_at": "2026-05-18T17:26:23Z"
-    },
-    {
-      "card_number": "ST01-007",
-      "price": 3485.0,
-      "title": "Nami (TR)",
-      "rarity": "",
-      "store": "Tanuki Trader",
-      "set_name": "Wings of the Captain (OP06)",
-      "condition": "",
-      "stock": "1 in stock",
-      "available_variants": "1 in stock",
-      "url": "https://tanukitrader.co.za/product/nami-tr/",
-      "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST01-007TR.jpeg",
-      "scraped_at": "2026-05-13T14:41:45Z"
     },
     {
       "card_number": "ST18-004",
