@@ -2694,6 +2694,15 @@ td.card-number {
   padding-right: 4px;
 }
 
+.youtube-videos[hidden] {
+  display: none !important;
+}
+
+#youtube-one-piece-timeline {
+  grid-template-columns: 1fr;
+  align-content: start;
+}
+
 .youtube-video-card {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -2753,6 +2762,21 @@ td.card-number {
 .youtube-video-link {
   width: fit-content;
   font-size: 0.82rem;
+}
+
+.one-piece-timeline-image-wrap {
+  grid-column: 1 / -1;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  overflow: auto;
+  max-height: 72vh;
+}
+
+.one-piece-timeline-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .release-item {

@@ -194,9 +194,20 @@
                 target="_blank"
                 rel="noreferrer"
               >Worldmap</a>
+              <button type="button" class="watchlist-category-button" data-one-piece-video-tab="timeline">Timeline</button>
             </div>
             <div id="youtube-one-piece" class="youtube-videos">
               <p class="empty">Loading One Piece chapter videos...</p>
+            </div>
+            <div id="youtube-one-piece-timeline" class="youtube-videos" hidden>
+              <div id="youtube-one-piece-timeline-tabs" class="watchlist-category-buttons" role="group" aria-label="One Piece timeline mode">
+                <button type="button" class="watchlist-category-button is-selected" data-one-piece-timeline-mode="full">Full</button>
+                <button type="button" class="watchlist-category-button" data-one-piece-timeline-mode="simplified">Simplified</button>
+              </div>
+              <a id="youtube-one-piece-timeline-link" class="youtube-video-link" href="#" target="_blank" rel="noreferrer">Open source</a>
+              <div id="youtube-one-piece-timeline-wrap" class="one-piece-timeline-image-wrap">
+                <img id="youtube-one-piece-timeline-image" class="one-piece-timeline-image" alt="One Piece timeline" loading="lazy" referrerpolicy="no-referrer">
+              </div>
             </div>
           </details>
         </div>

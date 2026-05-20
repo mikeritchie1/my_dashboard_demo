@@ -72,8 +72,13 @@ const DASHBOARD_OPEN_STATE_STORAGE_KEY = "my-dashboard:module-open-state:v1";
 const SUBSECTION_OPEN_STATE_STORAGE_KEY = "my-dashboard:subsection-open-state:v1";
 const COLLECTION_ART_PREFS_STORAGE_KEY = "my-dashboard:collection-art-prefs:v1";
 const ONE_PIECE_CURRENT_CHAPTER_STORAGE_KEY = "my-dashboard:one-piece-current-chapter:v1";
+const ONE_PIECE_VIDEO_TAB_STORAGE_KEY = "my-dashboard:one-piece-video-tab:v1";
+const ONE_PIECE_TIMELINE_MODE_STORAGE_KEY = "my-dashboard:one-piece-timeline-mode:v1";
+const ONE_PIECE_SCROLL_STORAGE_KEY = "my-dashboard:one-piece-scroll:v1";
 const READING_FOLDER_ID_STORAGE_KEY = "my-dashboard:reading-folder-id:v1";
 const READING_PROGRESS_STORAGE_KEY = "my-dashboard:reading-progress:v1";
+const ONE_PIECE_TIMELINE_FULL_URL = "https://i0.wp.com/thelibraryofohara.com/wp-content/uploads/2024/03/one-piece-timeline-5.0-page-1.png?ssl=1&w=723";
+const ONE_PIECE_TIMELINE_SIMPLIFIED_URL = "https://i.imgur.com/hgDYRFS.png";
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const CAPE_TOWN_LATLNG = [-33.9249, 18.4241];
 const TIMEZONE = "Africa/Johannesburg";
@@ -165,6 +170,13 @@ const state = {
   gameLabGames: [],
   gameLabSelectedGame: "",
   onePieceVideoTab: "chapters",
+  onePieceTimelineMode: "full",
+  onePieceScroll: {
+    chapters: 0,
+    other: 0,
+    timeline_full: 0,
+    timeline_simplified: 0,
+  },
   youtubePayload: null,
   onePieceCurrentChapter: 0,
   readingDriveConnected: false,
@@ -204,6 +216,11 @@ const elements = {
   youtubeVideos: document.querySelector("#youtube-videos"),
   youtubeOnePiece: document.querySelector("#youtube-one-piece"),
   youtubeOnePieceTabs: document.querySelector("#youtube-one-piece-tabs"),
+  youtubeOnePieceTimeline: document.querySelector("#youtube-one-piece-timeline"),
+  youtubeOnePieceTimelineTabs: document.querySelector("#youtube-one-piece-timeline-tabs"),
+  youtubeOnePieceTimelineLink: document.querySelector("#youtube-one-piece-timeline-link"),
+  youtubeOnePieceTimelineImage: document.querySelector("#youtube-one-piece-timeline-image"),
+  youtubeOnePieceTimelineWrap: document.querySelector("#youtube-one-piece-timeline-wrap"),
   youtubeSection: document.querySelector("#youtube-section"),
   newsList: document.querySelector("#news-list"),
   newsPinned: document.querySelector("#news-pinned"),
@@ -568,11 +585,21 @@ function renderYouTubeChannels(payload) {
 }
 
 function renderYouTubeOnePiece(payload) {
-  if (!elements.youtubeOnePiece) {
+  if (!elements.youtubeOnePiece || !elements.youtubeOnePieceTimeline) {
     return;
   }
   const onePieceData = payload?.series?.one_piece || {};
-  const tab = state.onePieceVideoTab === "other" ? "other" : "chapters";
+  const tab = state.onePieceVideoTab === "other" || state.onePieceVideoTab === "timeline"
+    ? state.onePieceVideoTab
+    : "chapters";
+  if (tab === "timeline") {
+    elements.youtubeOnePiece.hidden = true;
+    elements.youtubeOnePieceTimeline.hidden = false;
+    renderOnePieceTimelinePanel();
+    return;
+  }
+  elements.youtubeOnePiece.hidden = false;
+  elements.youtubeOnePieceTimeline.hidden = true;
   let onePieceItems = tab === "other"
     ? (Array.isArray(onePieceData?.other) ? onePieceData.other : [])
     : (Array.isArray(onePieceData?.chapters) ? onePieceData.chapters : []);
@@ -651,7 +678,18 @@ function renderYouTubeOnePiece(payload) {
     })
     .join("");
 
+  if (tab === "other") {
+    const savedOtherScroll = Number(state.onePieceScroll?.other || 0);
+    elements.youtubeOnePiece.scrollTo({ top: Math.max(0, savedOtherScroll), behavior: "auto" });
+    return;
+  }
+
   if (tab === "chapters" && Number(state.onePieceCurrentChapter || 0) > 0) {
+    const savedChapterScroll = Number(state.onePieceScroll?.chapters || 0);
+    if (savedChapterScroll > 0) {
+      elements.youtubeOnePiece.scrollTo({ top: savedChapterScroll, behavior: "auto" });
+      return;
+    }
     const currentCard = elements.youtubeOnePiece.querySelector(
       `[data-youtube-chapter="${String(Number(state.onePieceCurrentChapter))}"]`,
     );
@@ -669,6 +707,9 @@ function renderYouTubeOnePiece(payload) {
         container.scrollTo({ top: Math.max(0, targetTop), behavior: "auto" });
       }, 60);
     }
+  } else if (tab === "chapters") {
+    const savedChapterScroll = Number(state.onePieceScroll?.chapters || 0);
+    elements.youtubeOnePiece.scrollTo({ top: Math.max(0, savedChapterScroll), behavior: "auto" });
   }
 }
 
@@ -680,6 +721,39 @@ function syncOnePieceVideoTabs() {
     const tab = button.getAttribute("data-one-piece-video-tab") || "";
     button.classList.toggle("is-selected", tab === state.onePieceVideoTab);
   });
+}
+
+function syncOnePieceTimelineTabs() {
+  if (!elements.youtubeOnePieceTimelineTabs) {
+    return;
+  }
+  elements.youtubeOnePieceTimelineTabs.querySelectorAll("[data-one-piece-timeline-mode]").forEach((button) => {
+    const mode = button.getAttribute("data-one-piece-timeline-mode") || "";
+    button.classList.toggle("is-selected", mode === state.onePieceTimelineMode);
+  });
+}
+
+function renderOnePieceTimelinePanel() {
+  const image = elements.youtubeOnePieceTimelineImage;
+  const link = elements.youtubeOnePieceTimelineLink;
+  const wrap = elements.youtubeOnePieceTimelineWrap;
+  if (!image || !link || !wrap) {
+    return;
+  }
+  const isSimplified = state.onePieceTimelineMode === "simplified";
+  const timelineUrl = isSimplified
+    ? ONE_PIECE_TIMELINE_SIMPLIFIED_URL
+    : ONE_PIECE_TIMELINE_FULL_URL;
+  const scrollKey = isSimplified ? "timeline_simplified" : "timeline_full";
+  const restoreScroll = () => {
+    const top = Number(state.onePieceScroll?.[scrollKey] || 0);
+    wrap.scrollTo({ top: Math.max(0, top), behavior: "auto" });
+  };
+  image.onload = restoreScroll;
+  image.src = timelineUrl;
+  link.href = timelineUrl;
+  restoreScroll();
+  syncOnePieceTimelineTabs();
 }
 
 function loadOnePieceCurrentChapterPreference() {
@@ -695,6 +769,70 @@ function loadOnePieceCurrentChapterPreference() {
 function saveOnePieceCurrentChapterPreference(value) {
   try {
     localStorage.setItem(ONE_PIECE_CURRENT_CHAPTER_STORAGE_KEY, String(value));
+  } catch {
+    // Ignore storage failures.
+  }
+  queueRemoteStateSync();
+}
+
+function loadOnePieceTimelineModePreference() {
+  try {
+    const mode = String(localStorage.getItem(ONE_PIECE_TIMELINE_MODE_STORAGE_KEY) || "").trim().toLowerCase();
+    return mode === "simplified" ? "simplified" : "full";
+  } catch {
+    return "full";
+  }
+}
+
+function saveOnePieceTimelineModePreference(value) {
+  try {
+    localStorage.setItem(ONE_PIECE_TIMELINE_MODE_STORAGE_KEY, value === "simplified" ? "simplified" : "full");
+  } catch {
+    // Ignore storage failures.
+  }
+  queueRemoteStateSync();
+}
+
+function loadOnePieceVideoTabPreference() {
+  try {
+    const tab = String(localStorage.getItem(ONE_PIECE_VIDEO_TAB_STORAGE_KEY) || "").trim().toLowerCase();
+    return tab === "other" || tab === "timeline" ? tab : "chapters";
+  } catch {
+    return "chapters";
+  }
+}
+
+function saveOnePieceVideoTabPreference(value) {
+  try {
+    const tab = value === "other" || value === "timeline" ? value : "chapters";
+    localStorage.setItem(ONE_PIECE_VIDEO_TAB_STORAGE_KEY, tab);
+  } catch {
+    // Ignore storage failures.
+  }
+  queueRemoteStateSync();
+}
+
+function loadOnePieceScrollPreference() {
+  try {
+    const raw = localStorage.getItem(ONE_PIECE_SCROLL_STORAGE_KEY) || "";
+    const parsed = raw ? JSON.parse(raw) : {};
+    if (!parsed || typeof parsed !== "object") {
+      return { chapters: 0, other: 0, timeline_full: 0, timeline_simplified: 0 };
+    }
+    return {
+      chapters: Number(parsed.chapters || 0),
+      other: Number(parsed.other || 0),
+      timeline_full: Number(parsed.timeline_full || 0),
+      timeline_simplified: Number(parsed.timeline_simplified || 0),
+    };
+  } catch {
+    return { chapters: 0, other: 0, timeline_full: 0, timeline_simplified: 0 };
+  }
+}
+
+function saveOnePieceScrollPreference() {
+  try {
+    localStorage.setItem(ONE_PIECE_SCROLL_STORAGE_KEY, JSON.stringify(state.onePieceScroll || {}));
   } catch {
     // Ignore storage failures.
   }
@@ -3402,7 +3540,13 @@ function stateApiUrl() {
 function collectDashboardSyncState() {
   return {
     one_piece_current_chapter: Number(state.onePieceCurrentChapter || 0),
-    one_piece_video_tab: state.onePieceVideoTab === "other" ? "other" : "chapters",
+    one_piece_video_tab: state.onePieceVideoTab === "other" || state.onePieceVideoTab === "timeline"
+      ? state.onePieceVideoTab
+      : "chapters",
+    one_piece_timeline_mode: state.onePieceTimelineMode === "simplified" ? "simplified" : "full",
+    one_piece_scroll: state.onePieceScroll && typeof state.onePieceScroll === "object"
+      ? state.onePieceScroll
+      : { chapters: 0, other: 0, timeline_full: 0, timeline_simplified: 0 },
     theme: (document.documentElement.getAttribute("data-theme") || "light") === "dark" ? "dark" : "light",
     module_order: loadDashboardOrderPreference(),
     module_open: loadDashboardOpenStatePreference(),
@@ -3473,8 +3617,24 @@ async function loadRemoteDashboardState() {
       }
     }
     const remoteTab = String(payload.one_piece_video_tab || "").trim().toLowerCase();
-    if (remoteTab === "chapters" || remoteTab === "other") {
+    if (remoteTab === "chapters" || remoteTab === "other" || remoteTab === "timeline") {
       state.onePieceVideoTab = remoteTab;
+      saveOnePieceVideoTabPreference(remoteTab);
+    }
+    const remoteTimelineMode = String(payload.one_piece_timeline_mode || "").trim().toLowerCase();
+    if (remoteTimelineMode === "full" || remoteTimelineMode === "simplified") {
+      state.onePieceTimelineMode = remoteTimelineMode;
+      saveOnePieceTimelineModePreference(remoteTimelineMode);
+    }
+    if (payload.one_piece_scroll && typeof payload.one_piece_scroll === "object") {
+      const remoteScroll = payload.one_piece_scroll;
+      state.onePieceScroll = {
+        chapters: Number(remoteScroll.chapters || 0),
+        other: Number(remoteScroll.other || 0),
+        timeline_full: Number(remoteScroll.timeline_full || 0),
+        timeline_simplified: Number(remoteScroll.timeline_simplified || 0),
+      };
+      saveOnePieceScrollPreference();
     }
     const remoteTheme = String(payload.theme || "").trim().toLowerCase();
     if (remoteTheme === "dark" || remoteTheme === "light") {
@@ -6008,11 +6168,41 @@ if (elements.youtubeOnePieceTabs) {
     if (!button) {
       return;
     }
-    state.onePieceVideoTab = button.getAttribute("data-one-piece-video-tab") === "other" ? "other" : "chapters";
+    const nextTab = String(button.getAttribute("data-one-piece-video-tab") || "").trim().toLowerCase();
+    state.onePieceVideoTab = nextTab === "other" || nextTab === "timeline" ? nextTab : "chapters";
+    saveOnePieceVideoTabPreference(state.onePieceVideoTab);
     syncOnePieceVideoTabs();
     renderYouTubeOnePiece(state.youtubePayload || {});
-    queueRemoteStateSync();
   });
+}
+
+if (elements.youtubeOnePieceTimelineTabs) {
+  elements.youtubeOnePieceTimelineTabs.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-one-piece-timeline-mode]");
+    if (!button) {
+      return;
+    }
+    const nextMode = String(button.getAttribute("data-one-piece-timeline-mode") || "").trim().toLowerCase();
+    state.onePieceTimelineMode = nextMode === "simplified" ? "simplified" : "full";
+    saveOnePieceTimelineModePreference(state.onePieceTimelineMode);
+    renderOnePieceTimelinePanel();
+  });
+}
+
+if (elements.youtubeOnePiece) {
+  elements.youtubeOnePiece.addEventListener("scroll", () => {
+    const key = state.onePieceVideoTab === "other" ? "other" : "chapters";
+    state.onePieceScroll[key] = elements.youtubeOnePiece.scrollTop;
+    saveOnePieceScrollPreference();
+  }, { passive: true });
+}
+
+if (elements.youtubeOnePieceTimelineWrap) {
+  elements.youtubeOnePieceTimelineWrap.addEventListener("scroll", () => {
+    const key = state.onePieceTimelineMode === "simplified" ? "timeline_simplified" : "timeline_full";
+    state.onePieceScroll[key] = elements.youtubeOnePieceTimelineWrap.scrollTop;
+    saveOnePieceScrollPreference();
+  }, { passive: true });
 }
 
 if (elements.youtubeOnePiece) {
@@ -6044,6 +6234,7 @@ if (elements.youtubeSection) {
       return;
     }
     renderYouTubeOnePiece(state.youtubePayload || {});
+    syncOnePieceTimelineTabs();
   });
 }
 
@@ -7542,6 +7733,9 @@ syncCollectionMissingOptionVisibility();
 async function bootstrapDashboard() {
   loadOnePieceCards();
   state.onePieceCurrentChapter = loadOnePieceCurrentChapterPreference();
+  state.onePieceVideoTab = loadOnePieceVideoTabPreference();
+  state.onePieceTimelineMode = loadOnePieceTimelineModePreference();
+  state.onePieceScroll = loadOnePieceScrollPreference();
   state.readingFolderId = loadReadingFolderPreference();
   const localReadingProgress = loadReadingProgressPreference();
   if (String(localReadingProgress.series_id || "").trim()) {
@@ -7555,6 +7749,7 @@ async function bootstrapDashboard() {
   }
   await loadRemoteDashboardState();
   syncOnePieceVideoTabs();
+  syncOnePieceTimelineTabs();
   renderReadingViewerState();
   renderReadingVolumeButtons();
   void loadReadingVolumes();
