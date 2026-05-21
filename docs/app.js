@@ -204,9 +204,9 @@ const state = {
   dailyGoals: [],
   dailyGoalsProgress: { total_points: 0, daily: {}, once_off_done: [] },
   dailyGoalsNewType: "recurring",
-  dailyGoalsEditingId: "",
   dailyGoalsAddOpen: false,
   dailyGoalsViewDate: "",
+  dailyGoalsSidebarId: "",
   readingDriveConnected: false,
   readingFolderId: "",
   readingManifest: null,
@@ -254,6 +254,13 @@ const elements = {
   dailyGoalsPrevDay: document.querySelector("#daily-goals-prev-day"),
   dailyGoalsNextDay: document.querySelector("#daily-goals-next-day"),
   dailyGoalsWeeklyPts: document.querySelector("#daily-goals-weekly-pts"),
+  goalSidebar: document.querySelector("#goal-sidebar"),
+  goalSidebarClose: document.querySelector("#goal-sidebar-close"),
+  goalSidebarName: document.querySelector("#goal-sidebar-name"),
+  goalSidebarPoints: document.querySelector("#goal-sidebar-points"),
+  goalSidebarType: document.querySelector("#goal-sidebar-type"),
+  goalSidebarDesc: document.querySelector("#goal-sidebar-desc"),
+  goalSidebarDone: document.querySelector("#goal-sidebar-done"),
   youtubeAlmostFridayTv: document.querySelector("#youtube-almost-friday-tv"),
   youtubeThatsABadIdea: document.querySelector("#youtube-thats-a-bad-idea"),
   youtubeGameranxTv: document.querySelector("#youtube-gameranx-tv"),
@@ -8449,6 +8456,46 @@ function deleteDailyGoal(goalId) {
   renderDailyGoals();
 }
 
+function openGoalSidebar(goalId) {
+  const goal = state.dailyGoals.find((g) => g.id === goalId);
+  if (!goal || !elements.goalSidebar) return;
+  state.dailyGoalsSidebarId = goalId;
+  if (elements.goalSidebarName) elements.goalSidebarName.value = goal.name;
+  if (elements.goalSidebarPoints) elements.goalSidebarPoints.value = String(goal.points);
+  if (elements.goalSidebarDesc) elements.goalSidebarDesc.value = goal.description || "";
+  if (elements.goalSidebarType) {
+    const isOnce = goal.type === "once_off";
+    elements.goalSidebarType.setAttribute("data-goal-type", goal.type);
+    elements.goalSidebarType.textContent = isOnce ? "Once-off" : "Daily";
+    elements.goalSidebarType.classList.toggle("is-once-off-chip", isOnce);
+  }
+  elements.goalSidebar.hidden = false;
+  document.body.classList.add("goal-sidebar-open");
+  renderDailyGoals();
+  elements.goalSidebarName?.focus();
+}
+
+function closeGoalSidebar() {
+  state.dailyGoalsSidebarId = "";
+  if (elements.goalSidebar) elements.goalSidebar.hidden = true;
+  document.body.classList.remove("goal-sidebar-open");
+  renderDailyGoals();
+}
+
+function saveGoalSidebar() {
+  const goal = state.dailyGoals.find((g) => g.id === state.dailyGoalsSidebarId);
+  if (!goal) { closeGoalSidebar(); return; }
+  const name = String(elements.goalSidebarName?.value || "").trim();
+  if (!name) { elements.goalSidebarName?.focus(); return; }
+  goal.name = name;
+  goal.points = Number(elements.goalSidebarPoints?.value || "0");
+  goal.type = String(elements.goalSidebarType?.getAttribute("data-goal-type") || "recurring");
+  goal.description = String(elements.goalSidebarDesc?.value || "").trim();
+  saveDailyGoalsToStorage();
+  closeGoalSidebar();
+  renderDailyGoals();
+}
+
 function moveDailyGoal(goalId, dir) {
   const idx = state.dailyGoals.findIndex((g) => g.id === goalId);
   if (idx < 0) return;
@@ -8511,36 +8558,24 @@ function renderDailyGoals() {
     const canUp = globalIdx > 0;
     const canDown = globalIdx < allGoals.length - 1;
 
-    if (goal.id === state.dailyGoalsEditingId) {
-      const chipType = goal.type === "once_off" ? "once_off" : "recurring";
-      const chipLabel = chipType === "once_off" ? "Once-off" : "Daily";
-      const chipOnce = chipType === "once_off" ? " is-once-off-chip" : "";
-      return `
-        <div class="daily-goal-item daily-goal-item--editing" data-goal-id="${id}">
-          <div class="daily-goals-form-row">
-            <button type="button" class="daily-goal-action-btn daily-goal-move-btn" data-move-goal="${id}" data-move-dir="up" title="Move up"${canUp ? "" : " disabled"}>▲</button>
-            <button type="button" class="daily-goal-action-btn daily-goal-move-btn" data-move-goal="${id}" data-move-dir="down" title="Move down"${canDown ? "" : " disabled"}>▼</button>
-            <input type="text" class="daily-goals-input" value="${escapeHtml(goal.name)}" data-edit-name autocomplete="off">
-            <input type="number" class="daily-goals-points-input" value="${escapeHtml(String(pts))}" data-edit-points>
-            <button type="button" class="daily-goals-type-chip${chipOnce}" data-edit-type-chip data-edit-type="${chipType}">${chipLabel}</button>
-            <button type="button" class="daily-goals-add-btn" data-save-goal="${id}" title="Save">✓</button>
-            <button type="button" class="daily-goals-add-btn daily-goals-cancel-icon-btn" data-cancel-edit title="Cancel">×</button>
-          </div>
-        </div>`;
-    }
-
     const isOnce = goal.type === "once_off";
     const isDone = isOnce ? isOnceOffGoalDone(goal.id) : isDailyGoalDoneOnDate(goal.id, viewKey);
     const onceCls = isOnce ? " is-once-off" : "";
     const badgeFullClass = badgeClass + (isOnce ? " is-once-off" : "");
+    const isEditing = goal.id === state.dailyGoalsSidebarId;
+    const moveBtns = isEditing
+      ? `<button type="button" class="daily-goal-action-btn daily-goal-move-btn" data-move-goal="${id}" data-move-dir="up" title="Move up"${canUp ? "" : " disabled"}>▲</button>
+         <button type="button" class="daily-goal-action-btn daily-goal-move-btn" data-move-goal="${id}" data-move-dir="down" title="Move down"${canDown ? "" : " disabled"}>▼</button>`
+      : "";
     return `
-      <label class="daily-goal-item${isDone ? " is-done" : ""}${onceCls}" data-goal-id="${id}">
+      <div class="daily-goal-item${isDone ? " is-done" : ""}${onceCls}${isEditing ? " is-editing" : ""}" data-goal-id="${id}">
         <input type="checkbox" class="daily-goal-check" data-toggle-goal="${id}"${isDone ? " checked" : ""}>
-        <span class="daily-goal-name">${escapeHtml(goal.name)}</span>
+        <span class="daily-goal-name" data-toggle-goal="${id}">${escapeHtml(goal.name)}</span>
         <span class="${badgeFullClass}">${badgeText}</span>
+        ${moveBtns}
         <button type="button" class="daily-goal-action-btn" data-edit-goal="${id}" title="Edit goal">✎</button>
         <button type="button" class="daily-goal-action-btn" data-delete-goal="${id}" title="Delete goal">×</button>
-      </label>`;
+      </div>`;
   }
 
   const recurringHTML = recurring.length
@@ -8582,77 +8617,21 @@ if (elements.dailyGoalsList) {
       deleteDailyGoal(String(deleteBtn.getAttribute("data-delete-goal") || "").trim());
       return;
     }
-    // Edit open
+    // Edit — open sidebar
     const editBtn = event.target.closest("[data-edit-goal]");
     if (editBtn) {
       event.preventDefault();
-      state.dailyGoalsEditingId = String(editBtn.getAttribute("data-edit-goal") || "").trim();
-      renderDailyGoals();
-      return;
-    }
-    // Cancel edit
-    if (event.target.closest("[data-cancel-edit]")) {
-      event.preventDefault();
-      state.dailyGoalsEditingId = "";
-      renderDailyGoals();
-      return;
-    }
-    // Save edit
-    const saveBtn = event.target.closest("[data-save-goal]");
-    if (saveBtn) {
-      event.preventDefault();
-      const goalId = String(saveBtn.getAttribute("data-save-goal") || "").trim();
-      const item = saveBtn.closest("[data-goal-id]");
-      if (item && goalId) {
-        const nameVal = String(item.querySelector("[data-edit-name]")?.value || "").trim();
-        const ptsVal = Number(item.querySelector("[data-edit-points]")?.value || "0");
-        const chip = item.querySelector("[data-edit-type-chip]");
-        const typeVal = String(chip?.getAttribute("data-edit-type") || "recurring");
-        if (nameVal) {
-          const goal = state.dailyGoals.find((g) => g.id === goalId);
-          if (goal) {
-            goal.name = nameVal;
-            goal.points = ptsVal;
-            goal.type = typeVal;
-            saveDailyGoalsToStorage();
-          }
-        }
-      }
-      state.dailyGoalsEditingId = "";
-      renderDailyGoals();
-      return;
-    }
-    // Edit type chip toggle (single button flip)
-    const editTypeChip = event.target.closest("[data-edit-type-chip]");
-    if (editTypeChip) {
-      event.preventDefault();
-      const next = editTypeChip.getAttribute("data-edit-type") === "recurring" ? "once_off" : "recurring";
-      editTypeChip.setAttribute("data-edit-type", next);
-      editTypeChip.textContent = next === "once_off" ? "Once-off" : "Daily";
-      editTypeChip.classList.toggle("is-once-off-chip", next === "once_off");
+      openGoalSidebar(String(editBtn.getAttribute("data-edit-goal") || "").trim());
       return;
     }
     // Toggle done (must come last — the label covers the whole card)
-    const toggleTarget = event.target.closest("[data-toggle-goal]") || event.target.closest("[data-goal-id]");
+    const toggleTarget = event.target.closest("[data-toggle-goal]");
     if (toggleTarget) {
-      const goalId = String(
-        toggleTarget.getAttribute("data-toggle-goal") ||
-        toggleTarget.getAttribute("data-goal-id") || ""
-      ).trim();
-      if (goalId && goalId !== state.dailyGoalsEditingId) toggleDailyGoalDone(goalId);
+      const goalId = String(toggleTarget.getAttribute("data-toggle-goal") || "").trim();
+      if (goalId) toggleDailyGoalDone(goalId);
     }
   });
 
-  elements.dailyGoalsList.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" && event.target.closest("[data-edit-name]")) {
-      event.preventDefault();
-      event.target.closest("[data-goal-id]")?.querySelector("[data-save-goal]")?.click();
-    }
-    if (event.key === "Escape" && state.dailyGoalsEditingId) {
-      state.dailyGoalsEditingId = "";
-      renderDailyGoals();
-    }
-  });
 }
 
 if (elements.dailyGoalsAddToggle) {
@@ -8661,6 +8640,30 @@ if (elements.dailyGoalsAddToggle) {
     state.dailyGoalsAddOpen = !state.dailyGoalsAddOpen;
     if (elements.dailyGoalsAddRow) elements.dailyGoalsAddRow.hidden = !state.dailyGoalsAddOpen;
     if (state.dailyGoalsAddOpen) elements.dailyGoalNameInput?.focus();
+  });
+}
+
+if (elements.goalSidebarClose) {
+  elements.goalSidebarClose.addEventListener("click", closeGoalSidebar);
+}
+
+if (elements.goalSidebarDone) {
+  elements.goalSidebarDone.addEventListener("click", saveGoalSidebar);
+}
+
+if (elements.goalSidebarType) {
+  elements.goalSidebarType.addEventListener("click", () => {
+    const next = elements.goalSidebarType.getAttribute("data-goal-type") === "recurring" ? "once_off" : "recurring";
+    elements.goalSidebarType.setAttribute("data-goal-type", next);
+    elements.goalSidebarType.textContent = next === "once_off" ? "Once-off" : "Daily";
+    elements.goalSidebarType.classList.toggle("is-once-off-chip", next === "once_off");
+  });
+}
+
+if (elements.goalSidebarName) {
+  elements.goalSidebarName.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") saveGoalSidebar();
+    if (e.key === "Escape") closeGoalSidebar();
   });
 }
 

@@ -488,6 +488,34 @@
       </details>
     </main>
 
+    <aside id="goal-sidebar" class="goal-sidebar" hidden>
+      <div class="goal-sidebar-header">
+        <span class="goal-sidebar-title">Edit Goal</span>
+        <button type="button" id="goal-sidebar-close" class="goal-sidebar-close" aria-label="Close">×</button>
+      </div>
+      <div class="goal-sidebar-body">
+        <div class="goal-sidebar-field">
+          <label class="goal-sidebar-label" for="goal-sidebar-name">Name</label>
+          <input type="text" id="goal-sidebar-name" class="daily-goals-input" autocomplete="off">
+        </div>
+        <div class="goal-sidebar-field">
+          <label class="goal-sidebar-label" for="goal-sidebar-points">Points</label>
+          <input type="number" id="goal-sidebar-points" class="daily-goals-points-input" style="width:100%" min="-999" max="999">
+        </div>
+        <div class="goal-sidebar-field">
+          <label class="goal-sidebar-label">Type</label>
+          <button type="button" id="goal-sidebar-type" class="daily-goals-type-chip" data-goal-type="recurring">Daily</button>
+        </div>
+        <div class="goal-sidebar-field">
+          <label class="goal-sidebar-label" for="goal-sidebar-desc">Details</label>
+          <textarea id="goal-sidebar-desc" class="goal-sidebar-textarea" placeholder="Notes, context, anything useful…" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="goal-sidebar-footer">
+        <button type="button" id="goal-sidebar-done" class="daily-goals-submit-btn">Done</button>
+      </div>
+    </aside>
+
     <aside id="watchlist-detail-panel" class="watchlist-detail-panel" hidden>
       <button id="watchlist-detail-close" type="button" class="watchlist-detail-close" aria-label="Close">Close</button>
       <div id="watchlist-detail-content" class="watchlist-detail-content"></div>
