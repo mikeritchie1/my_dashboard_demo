@@ -13094,35 +13094,35 @@
     ],
     "trailer_url": "https://www.youtube.com/watch?v=YWlCCVnZ4bo"
   },
-  "movie:obsessed": {
-    "title": "Obsessed",
+  "movie:obsession": {
+    "title": "Obsession",
     "media_type": "movie",
-    "trailer_url": "https://www.youtube.com/watch?v=40NSEn733iU",
-    "actors": [
-      "Song Seung-heon",
-      "Lim Ji-yeon",
-      "Cho Yeo-jeong",
-      "On Ju-wan",
-      "Yoo Hai-jin",
-      "Park Hyuk-kwon",
-      "Jang Yun-sil",
-      "Kim Hye-na"
-    ],
-    "rating": 6.7,
-    "number_of_seasons": null,
-    "description": "A secret, passionate affair happens in the summer of 1969 between Colonel Jin Pyeong, trapped in a loveless marriage with Soo Jin, and Jong Ga Heun, the Chinese-Korean wife of Captain Kyung Woo Jin.",
-    "tmdb_id": 269955,
-    "genres": [
-      "Drama"
-    ],
-    "overview": "A secret, passionate affair happens in the summer of 1969 between Colonel Jin Pyeong, trapped in a loveless marriage with Soo Jin, and Jong Ga Heun, the Chinese-Korean wife of Captain Kyung Woo Jin.",
-    "release_date": "2014-05-14",
-    "tmdb_url": "https://www.themoviedb.org/movie/269955",
-    "poster_url": "https://image.tmdb.org/t/p/w342/fetCtoAvZShCk1nqAWZFuKZschR.jpg",
-    "runtime_minutes": 132,
     "directors": [
-      "Kim Dae-woo"
-    ]
+      "Curry Barker"
+    ],
+    "actors": [
+      "Michael Johnston",
+      "Inde Navarrette",
+      "Cooper Tomlinson",
+      "Megan Lawless",
+      "Andy Richter",
+      "Haley Fitzgerald",
+      "Darin Toonder",
+      "Anthony Pavone"
+    ],
+    "release_date": "2026-04-16",
+    "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+    "tmdb_id": 1339713,
+    "description": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+    "runtime_minutes": 108,
+    "trailer_url": "https://www.youtube.com/watch?v=gMC8kkwbIQQ",
+    "poster_url": "https://image.tmdb.org/t/p/w342/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
+    "genres": [
+      "Horror"
+    ],
+    "tmdb_url": "https://www.themoviedb.org/movie/1339713",
+    "rating": 8.1,
+    "number_of_seasons": null
   },
   "movie:oddity": {
     "title": "Oddity",

@@ -14,6 +14,9 @@ const WATCHLIST_MOVIE_DETAILS_PATH = "./data/media/watchlist_movie_details.json"
 const GAMES_DETAILS_PATH = "./data/media/games_details.json";
 const NEWS_PATH = "./data/news/news.json";
 const YOUTUBE_PATH = "./data/youtube/latest_uploads.json";
+const ALMOST_FRIDAY_TV_PATH = "./data/youtube/almost_friday_tv.json";
+const THATS_A_BAD_IDEA_PATH = "./data/youtube/thats_a_bad_idea.json";
+const GAMERANX_TV_PATH = "./data/youtube/gameranx_tv.json";
 const READING_MANIFEST_PATH = "./data/reading_manifest.json";
 const CONFIG_PATH = "../config.json";
 const SPECIALS_PATH = "./data/events/specials.json";
@@ -76,6 +79,12 @@ const ONE_PIECE_CURRENT_CHAPTER_STORAGE_KEY = "my-dashboard:one-piece-current-ch
 const ONE_PIECE_VIDEO_TAB_STORAGE_KEY = "my-dashboard:one-piece-video-tab:v1";
 const ONE_PIECE_TIMELINE_MODE_STORAGE_KEY = "my-dashboard:one-piece-timeline-mode:v1";
 const ONE_PIECE_SCROLL_STORAGE_KEY = "my-dashboard:one-piece-scroll:v1";
+const ALMOST_FRIDAY_TV_CURRENT_VIDEO_KEY = "my-dashboard:almost-friday-tv-current-video:v1";
+const ALMOST_FRIDAY_TV_SCROLL_KEY = "my-dashboard:almost-friday-tv-scroll:v1";
+const THATS_A_BAD_IDEA_CURRENT_VIDEO_KEY = "my-dashboard:thats-a-bad-idea-current-video:v1";
+const THATS_A_BAD_IDEA_SCROLL_KEY = "my-dashboard:thats-a-bad-idea-scroll:v1";
+const GAMERANX_TV_CURRENT_VIDEO_KEY = "my-dashboard:gameranx-tv-current-video:v1";
+const GAMERANX_TV_SCROLL_KEY = "my-dashboard:gameranx-tv-scroll:v1";
 const READING_FOLDER_ID_STORAGE_KEY = "my-dashboard:reading-folder-id:v1";
 const READING_PROGRESS_STORAGE_KEY = "my-dashboard:reading-progress:v1";
 const ONE_PIECE_TIMELINE_FULL_URL = "https://i0.wp.com/thelibraryofohara.com/wp-content/uploads/2024/03/one-piece-timeline-5.0-page-1.png?ssl=1&w=723";
@@ -181,6 +190,15 @@ const state = {
   },
   youtubePayload: null,
   onePieceCurrentChapter: 0,
+  almostFridayTvPayload: null,
+  almostFridayTvCurrentVideoId: "",
+  almostFridayTvScroll: 0,
+  thatsABadIdeaPayload: null,
+  thatsABadIdeaCurrentVideoId: "",
+  thatsABadIdeaScroll: 0,
+  gameranxTvPayload: null,
+  gameranxTvCurrentVideoId: "",
+  gameranxTvScroll: 0,
   readingDriveConnected: false,
   readingFolderId: "",
   readingManifest: null,
@@ -216,6 +234,9 @@ const elements = {
   gameReleaseGrid: document.querySelector("#game-release-grid"),
   gameComingSoonGrid: document.querySelector("#game-coming-soon-grid"),
   youtubeVideos: document.querySelector("#youtube-videos"),
+  youtubeAlmostFridayTv: document.querySelector("#youtube-almost-friday-tv"),
+  youtubeThatsABadIdea: document.querySelector("#youtube-thats-a-bad-idea"),
+  youtubeGameranxTv: document.querySelector("#youtube-gameranx-tv"),
   youtubeOnePiece: document.querySelector("#youtube-one-piece"),
   youtubeOnePieceTabs: document.querySelector("#youtube-one-piece-tabs"),
   youtubeOnePieceTimeline: document.querySelector("#youtube-one-piece-timeline"),
@@ -641,6 +662,60 @@ function renderYouTubeChannels(payload) {
   elements.youtubeVideos.innerHTML = cards.length ? cards.join("") : '<p class="empty">No One Piece videos found.</p>';
 }
 
+function renderYouTubeChannel(element, payload, currentVideoId = "", savedScroll = 0) {
+  if (!element) {
+    return;
+  }
+  const items = Array.isArray(payload?.items) ? payload.items : [];
+  const channelUrl = String(payload?.channel_url || "").trim();
+  if (!items.length) {
+    element.innerHTML = '<p class="empty">No videos found.</p>';
+    return;
+  }
+  const currentIndex = currentVideoId
+    ? items.findIndex((i) => String(i?.video_id || "").trim() === currentVideoId)
+    : -1;
+  element.innerHTML = items.map((item, index) => {
+    const videoId = String(item?.video_id || "").trim();
+    const title = escapeHtml(String(item?.title || "Untitled video").trim());
+    const videoUrl = String(item?.url || "").trim();
+    if (!videoUrl) {
+      return "";
+    }
+    const thumbnailUrl = escapeHtml(String(item?.thumbnail_url || "").trim());
+    const publishedText = escapeHtml(youtubePublishedText(item?.published_at));
+    const safeUrl = escapeHtml(videoUrl);
+    const progressClass = currentIndex >= 0
+      ? (index < currentIndex ? "is-unread" : (index === currentIndex ? "is-current" : "is-read"))
+      : "";
+    return `
+      <article class="youtube-video-card ${progressClass}" data-channel-video-id="${escapeHtml(videoId)}">
+        ${thumbnailUrl ? `<a href="${safeUrl}" target="_blank" rel="noreferrer"><img class="youtube-video-thumb" src="${thumbnailUrl}" alt="${title}" loading="lazy"></a>` : ""}
+        <div class="youtube-video-body">
+          <h4 class="youtube-video-title"><a href="${safeUrl}" target="_blank" rel="noreferrer" data-channel-video-id-link="${escapeHtml(videoId)}">${title}</a></h4>
+          ${publishedText ? `<p class="youtube-video-meta">${publishedText}</p>` : ""}
+          ${channelUrl ? `<a class="youtube-video-link" href="${escapeHtml(channelUrl)}" target="_blank" rel="noreferrer">View channel</a>` : ""}
+        </div>
+      </article>
+    `;
+  }).filter(Boolean).join("");
+
+  if (savedScroll > 0) {
+    element.scrollTo({ top: savedScroll, behavior: "auto" });
+  } else if (currentIndex >= 0 && currentVideoId) {
+    const currentCard = element.querySelector(`[data-channel-video-id="${CSS.escape(currentVideoId)}"]`);
+    if (currentCard) {
+      setTimeout(() => {
+        if (!element) return;
+        const containerRect = element.getBoundingClientRect();
+        const cardRect = currentCard.getBoundingClientRect();
+        const targetTop = element.scrollTop + (cardRect.top - containerRect.top) + (cardRect.height / 2) - (element.clientHeight / 2);
+        element.scrollTo({ top: Math.max(0, targetTop), behavior: "auto" });
+      }, 60);
+    }
+  }
+}
+
 function renderYouTubeOnePiece(payload) {
   if (!elements.youtubeOnePiece || !elements.youtubeOnePieceTimeline) {
     return;
@@ -894,6 +969,102 @@ function saveOnePieceScrollPreference() {
     // Ignore storage failures.
   }
   queueRemoteStateSync();
+}
+
+function loadAlmostFridayTvCurrentVideoPreference() {
+  try {
+    return String(localStorage.getItem(ALMOST_FRIDAY_TV_CURRENT_VIDEO_KEY) || "").trim();
+  } catch {
+    return "";
+  }
+}
+
+function saveAlmostFridayTvCurrentVideoPreference(videoId) {
+  try {
+    localStorage.setItem(ALMOST_FRIDAY_TV_CURRENT_VIDEO_KEY, String(videoId));
+  } catch {
+    // Ignore storage failures.
+  }
+}
+
+function loadAlmostFridayTvScrollPreference() {
+  try {
+    return Number(localStorage.getItem(ALMOST_FRIDAY_TV_SCROLL_KEY) || "0");
+  } catch {
+    return 0;
+  }
+}
+
+function saveAlmostFridayTvScrollPreference() {
+  try {
+    localStorage.setItem(ALMOST_FRIDAY_TV_SCROLL_KEY, String(state.almostFridayTvScroll));
+  } catch {
+    // Ignore storage failures.
+  }
+}
+
+function loadThatsABadIdeaCurrentVideoPreference() {
+  try {
+    return String(localStorage.getItem(THATS_A_BAD_IDEA_CURRENT_VIDEO_KEY) || "").trim();
+  } catch {
+    return "";
+  }
+}
+
+function saveThatsABadIdeaCurrentVideoPreference(videoId) {
+  try {
+    localStorage.setItem(THATS_A_BAD_IDEA_CURRENT_VIDEO_KEY, String(videoId));
+  } catch {
+    // Ignore storage failures.
+  }
+}
+
+function loadThatsABadIdeaScrollPreference() {
+  try {
+    return Number(localStorage.getItem(THATS_A_BAD_IDEA_SCROLL_KEY) || "0");
+  } catch {
+    return 0;
+  }
+}
+
+function saveThatsABadIdeaScrollPreference() {
+  try {
+    localStorage.setItem(THATS_A_BAD_IDEA_SCROLL_KEY, String(state.thatsABadIdeaScroll));
+  } catch {
+    // Ignore storage failures.
+  }
+}
+
+function loadGameranxTvCurrentVideoPreference() {
+  try {
+    return String(localStorage.getItem(GAMERANX_TV_CURRENT_VIDEO_KEY) || "").trim();
+  } catch {
+    return "";
+  }
+}
+
+function saveGameranxTvCurrentVideoPreference(videoId) {
+  try {
+    localStorage.setItem(GAMERANX_TV_CURRENT_VIDEO_KEY, String(videoId));
+  } catch {
+    // Ignore storage failures.
+  }
+}
+
+function loadGameranxTvScrollPreference() {
+  try {
+    return Number(localStorage.getItem(GAMERANX_TV_SCROLL_KEY) || "0");
+  } catch {
+    return 0;
+  }
+}
+
+function saveGameranxTvScrollPreference() {
+  try {
+    localStorage.setItem(GAMERANX_TV_SCROLL_KEY, String(state.gameranxTvScroll));
+  } catch {
+    // Ignore storage failures.
+  }
 }
 
 function loadReadingFolderPreference() {
@@ -6265,6 +6436,57 @@ async function loadYouTubeVideos() {
   }
 }
 
+async function loadAlmostFridayTv() {
+  if (!elements.youtubeAlmostFridayTv) {
+    return;
+  }
+  try {
+    const response = await fetchFresh(ALMOST_FRIDAY_TV_PATH);
+    if (!response.ok) {
+      throw new Error(`Could not load ${ALMOST_FRIDAY_TV_PATH}`);
+    }
+    const payload = await response.json();
+    state.almostFridayTvPayload = payload;
+    renderYouTubeChannel(elements.youtubeAlmostFridayTv, payload, state.almostFridayTvCurrentVideoId, state.almostFridayTvScroll);
+  } catch (error) {
+    elements.youtubeAlmostFridayTv.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
+async function loadThatsABadIdea() {
+  if (!elements.youtubeThatsABadIdea) {
+    return;
+  }
+  try {
+    const response = await fetchFresh(THATS_A_BAD_IDEA_PATH);
+    if (!response.ok) {
+      throw new Error(`Could not load ${THATS_A_BAD_IDEA_PATH}`);
+    }
+    const payload = await response.json();
+    state.thatsABadIdeaPayload = payload;
+    renderYouTubeChannel(elements.youtubeThatsABadIdea, payload, state.thatsABadIdeaCurrentVideoId, state.thatsABadIdeaScroll);
+  } catch (error) {
+    elements.youtubeThatsABadIdea.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
+async function loadGameranxTv() {
+  if (!elements.youtubeGameranxTv) {
+    return;
+  }
+  try {
+    const response = await fetchFresh(GAMERANX_TV_PATH);
+    if (!response.ok) {
+      throw new Error(`Could not load ${GAMERANX_TV_PATH}`);
+    }
+    const payload = await response.json();
+    state.gameranxTvPayload = payload;
+    renderYouTubeChannel(elements.youtubeGameranxTv, payload, state.gameranxTvCurrentVideoId, state.gameranxTvScroll);
+  } catch (error) {
+    elements.youtubeGameranxTv.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
 if (elements.youtubeOnePieceTabs) {
   elements.youtubeOnePieceTabs.addEventListener("click", (event) => {
     const button = event.target.closest("[data-one-piece-video-tab]");
@@ -6329,6 +6551,90 @@ if (elements.youtubeOnePiece) {
     saveOnePieceCurrentChapterPreference(chapter);
     renderYouTubeOnePiece(state.youtubePayload || {});
   });
+}
+
+if (elements.youtubeAlmostFridayTv) {
+  elements.youtubeAlmostFridayTv.addEventListener("click", (event) => {
+    const target =
+      event.target.closest("[data-channel-video-id-link]") ||
+      event.target.closest("[data-channel-video-id]");
+    if (!target) {
+      return;
+    }
+    const videoId = String(
+      target.getAttribute("data-channel-video-id-link") ||
+      target.getAttribute("data-channel-video-id") || ""
+    ).trim();
+    if (!videoId) {
+      return;
+    }
+    state.almostFridayTvCurrentVideoId = videoId;
+    state.almostFridayTvScroll = 0;
+    saveAlmostFridayTvCurrentVideoPreference(videoId);
+    saveAlmostFridayTvScrollPreference();
+    renderYouTubeChannel(elements.youtubeAlmostFridayTv, state.almostFridayTvPayload || {}, videoId, 0);
+  });
+
+  elements.youtubeAlmostFridayTv.addEventListener("scroll", () => {
+    state.almostFridayTvScroll = elements.youtubeAlmostFridayTv.scrollTop;
+    saveAlmostFridayTvScrollPreference();
+  }, { passive: true });
+}
+
+if (elements.youtubeThatsABadIdea) {
+  elements.youtubeThatsABadIdea.addEventListener("click", (event) => {
+    const target =
+      event.target.closest("[data-channel-video-id-link]") ||
+      event.target.closest("[data-channel-video-id]");
+    if (!target) {
+      return;
+    }
+    const videoId = String(
+      target.getAttribute("data-channel-video-id-link") ||
+      target.getAttribute("data-channel-video-id") || ""
+    ).trim();
+    if (!videoId) {
+      return;
+    }
+    state.thatsABadIdeaCurrentVideoId = videoId;
+    state.thatsABadIdeaScroll = 0;
+    saveThatsABadIdeaCurrentVideoPreference(videoId);
+    saveThatsABadIdeaScrollPreference();
+    renderYouTubeChannel(elements.youtubeThatsABadIdea, state.thatsABadIdeaPayload || {}, videoId, 0);
+  });
+
+  elements.youtubeThatsABadIdea.addEventListener("scroll", () => {
+    state.thatsABadIdeaScroll = elements.youtubeThatsABadIdea.scrollTop;
+    saveThatsABadIdeaScrollPreference();
+  }, { passive: true });
+}
+
+if (elements.youtubeGameranxTv) {
+  elements.youtubeGameranxTv.addEventListener("click", (event) => {
+    const target =
+      event.target.closest("[data-channel-video-id-link]") ||
+      event.target.closest("[data-channel-video-id]");
+    if (!target) {
+      return;
+    }
+    const videoId = String(
+      target.getAttribute("data-channel-video-id-link") ||
+      target.getAttribute("data-channel-video-id") || ""
+    ).trim();
+    if (!videoId) {
+      return;
+    }
+    state.gameranxTvCurrentVideoId = videoId;
+    state.gameranxTvScroll = 0;
+    saveGameranxTvCurrentVideoPreference(videoId);
+    saveGameranxTvScrollPreference();
+    renderYouTubeChannel(elements.youtubeGameranxTv, state.gameranxTvPayload || {}, videoId, 0);
+  });
+
+  elements.youtubeGameranxTv.addEventListener("scroll", () => {
+    state.gameranxTvScroll = elements.youtubeGameranxTv.scrollTop;
+    saveGameranxTvScrollPreference();
+  }, { passive: true });
 }
 
 if (elements.youtubeSection) {
@@ -7915,6 +8221,12 @@ async function bootstrapDashboard() {
   state.onePieceVideoTab = loadOnePieceVideoTabPreference();
   state.onePieceTimelineMode = loadOnePieceTimelineModePreference();
   state.onePieceScroll = loadOnePieceScrollPreference();
+  state.almostFridayTvCurrentVideoId = loadAlmostFridayTvCurrentVideoPreference();
+  state.almostFridayTvScroll = loadAlmostFridayTvScrollPreference();
+  state.thatsABadIdeaCurrentVideoId = loadThatsABadIdeaCurrentVideoPreference();
+  state.thatsABadIdeaScroll = loadThatsABadIdeaScrollPreference();
+  state.gameranxTvCurrentVideoId = loadGameranxTvCurrentVideoPreference();
+  state.gameranxTvScroll = loadGameranxTvScrollPreference();
   state.readingFolderId = loadReadingFolderPreference();
   const localReadingProgress = loadReadingProgressPreference();
   if (String(localReadingProgress.series_id || "").trim()) {
@@ -7943,6 +8255,9 @@ async function bootstrapDashboard() {
   loadLabiaShowtimes();
   loadGameReleases();
   loadYouTubeVideos();
+  loadAlmostFridayTv();
+  loadThatsABadIdea();
+  loadGameranxTv();
   loadNews();
   loadWatchlist();
   loadSpecials();

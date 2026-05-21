@@ -22,6 +22,7 @@ on:
           - news
           - media
           - digest
+          - youtube
 
 permissions:
   contents: write
@@ -73,6 +74,18 @@ jobs:
           TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python services/release_radar/scrape_imax.py
+
+      - name: Run Almost Friday TV scraper
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'youtube' }}
+        run: python services/youtube/scrape_almost_friday_tv.py
+
+      - name: Run That's A Bad Idea scraper
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'youtube' }}
+        run: python services/youtube/scrape_thats_a_bad_idea.py
+
+      - name: Run gameranx scraper
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'youtube' }}
+        run: python services/youtube/scrape_gameranx_tv.py
 
       - name: Run news scraper
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'news' }}
