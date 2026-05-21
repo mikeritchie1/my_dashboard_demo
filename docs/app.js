@@ -87,6 +87,7 @@ const GAMERANX_TV_CURRENT_VIDEO_KEY = "my-dashboard:gameranx-tv-current-video:v1
 const GAMERANX_TV_SCROLL_KEY = "my-dashboard:gameranx-tv-scroll:v1";
 const DAILY_GOALS_KEY = "my-dashboard:daily-goals:v1";
 const DAILY_GOALS_PROGRESS_KEY = "my-dashboard:daily-goals-progress:v1";
+const DAILY_GOALS_TS_KEY = "my-dashboard:daily-goals-ts:v1";
 const READING_FOLDER_ID_STORAGE_KEY = "my-dashboard:reading-folder-id:v1";
 const READING_PROGRESS_STORAGE_KEY = "my-dashboard:reading-progress:v1";
 const ONE_PIECE_TIMELINE_FULL_URL = "https://i0.wp.com/thelibraryofohara.com/wp-content/uploads/2024/03/one-piece-timeline-5.0-page-1.png?ssl=1&w=723";
@@ -202,7 +203,8 @@ const state = {
   gameranxTvCurrentVideoId: "",
   gameranxTvScroll: 0,
   dailyGoals: [],
-  dailyGoalsProgress: { total_points: 0, daily: {}, once_off_done: [] },
+  dailyGoalsSavedAt: 0,
+  dailyGoalsProgress: { total_points: 0, daily: {}, once_off_done: [], once_off_dates: {}, _ts: 0 },
   dailyGoalsNewType: "recurring",
   dailyGoalsAddOpen: false,
   dailyGoalsViewDate: "",
@@ -931,7 +933,6 @@ function saveOnePieceCurrentChapterPreference(value) {
   } catch {
     // Ignore storage failures.
   }
-  queueRemoteStateSync();
 }
 
 function loadOnePieceTimelineModePreference() {
@@ -949,7 +950,6 @@ function saveOnePieceTimelineModePreference(value) {
   } catch {
     // Ignore storage failures.
   }
-  queueRemoteStateSync();
 }
 
 function loadOnePieceVideoTabPreference() {
@@ -968,7 +968,6 @@ function saveOnePieceVideoTabPreference(value) {
   } catch {
     // Ignore storage failures.
   }
-  queueRemoteStateSync();
 }
 
 function loadOnePieceScrollPreference() {
@@ -1179,7 +1178,6 @@ function saveReadingProgressPreference() {
   } catch {
     // Ignore storage failures.
   }
-  queueRemoteStateSync();
 }
 
 function parseVolumeNumber(name) {
@@ -3677,7 +3675,6 @@ function saveThemePreference(theme) {
   } catch {
     // Ignore storage failures.
   }
-  queueRemoteStateSync();
 }
 
 function normalizeModuleId(label) {
@@ -3735,7 +3732,6 @@ function saveDashboardOrderPreference() {
   } catch {
     // Ignore localStorage failures.
   }
-  queueRemoteStateSync();
 }
 
 function applyDashboardOrderPreference() {
@@ -3784,7 +3780,6 @@ function saveDashboardOpenStatePreference() {
   } catch {
     // Ignore localStorage failures.
   }
-  queueRemoteStateSync();
 }
 
 function applyDashboardOpenStatePreference() {
@@ -3826,7 +3821,6 @@ function saveSubsectionOpenStatePreference() {
   } catch {
     // Ignore localStorage failures.
   }
-  queueRemoteStateSync();
 }
 
 function stateApiUrl() {
@@ -3859,9 +3853,10 @@ function collectDashboardSyncState() {
       page: Number(state.readingCurrentPage || 1),
     },
     daily_goals: Array.isArray(state.dailyGoals) ? state.dailyGoals : [],
+    daily_goals_ts: Number(state.dailyGoalsSavedAt || 0),
     daily_goals_progress: state.dailyGoalsProgress && typeof state.dailyGoalsProgress === "object"
       ? state.dailyGoalsProgress
-      : { total_points: 0, daily: {}, once_off_done: [] },
+      : { total_points: 0, daily: {}, once_off_done: [], once_off_dates: {}, _ts: 0 },
   };
 }
 
@@ -3981,15 +3976,21 @@ async function loadRemoteDashboardState() {
       }
       applySubsectionOpenStatePreference();
     }
-    if (Array.isArray(payload.daily_goals) && payload.daily_goals.length > 0) {
+    const localGoalsTs = Number(localStorage.getItem(DAILY_GOALS_TS_KEY) || "0");
+    const remoteGoalsTs = Number(payload.daily_goals_ts || 0);
+    if (remoteGoalsTs > localGoalsTs && Array.isArray(payload.daily_goals) && payload.daily_goals.length > 0) {
       state.dailyGoals = payload.daily_goals;
+      state.dailyGoalsSavedAt = remoteGoalsTs;
       try {
         localStorage.setItem(DAILY_GOALS_KEY, JSON.stringify(state.dailyGoals));
+        localStorage.setItem(DAILY_GOALS_TS_KEY, String(remoteGoalsTs));
       } catch {
         // Ignore storage failures.
       }
     }
-    if (payload.daily_goals_progress && typeof payload.daily_goals_progress === "object") {
+    const localProgress = loadDailyGoalsProgressFromStorage();
+    const remoteProgressTs = Number(payload.daily_goals_progress?._ts || 0);
+    if (remoteProgressTs > localProgress._ts && payload.daily_goals_progress && typeof payload.daily_goals_progress === "object") {
       state.dailyGoalsProgress = {
         total_points: Number(payload.daily_goals_progress.total_points || 0),
         daily: payload.daily_goals_progress.daily && typeof payload.daily_goals_progress.daily === "object"
@@ -3998,6 +3999,7 @@ async function loadRemoteDashboardState() {
           ? payload.daily_goals_progress.once_off_done : [],
         once_off_dates: payload.daily_goals_progress.once_off_dates && typeof payload.daily_goals_progress.once_off_dates === "object"
           ? payload.daily_goals_progress.once_off_dates : {},
+        _ts: remoteProgressTs,
       };
       try {
         localStorage.setItem(DAILY_GOALS_PROGRESS_KEY, JSON.stringify(state.dailyGoalsProgress));
@@ -8304,12 +8306,14 @@ function loadDailyGoalsFromStorage() {
 }
 
 function saveDailyGoalsToStorage() {
+  const ts = Date.now();
+  state.dailyGoalsSavedAt = ts;
   try {
     localStorage.setItem(DAILY_GOALS_KEY, JSON.stringify(state.dailyGoals));
+    localStorage.setItem(DAILY_GOALS_TS_KEY, String(ts));
   } catch {
     // Ignore storage failures.
   }
-  queueRemoteStateSync();
 }
 
 function loadDailyGoalsProgressFromStorage() {
@@ -8320,19 +8324,21 @@ function loadDailyGoalsProgressFromStorage() {
       total_points: Number(parsed.total_points || 0),
       daily: parsed.daily && typeof parsed.daily === "object" ? parsed.daily : {},
       once_off_done: Array.isArray(parsed.once_off_done) ? parsed.once_off_done : [],
+      once_off_dates: parsed.once_off_dates && typeof parsed.once_off_dates === "object" ? parsed.once_off_dates : {},
+      _ts: Number(parsed._ts || 0),
     };
   } catch {
-    return { total_points: 0, daily: {}, once_off_done: [] };
+    return { total_points: 0, daily: {}, once_off_done: [], once_off_dates: {}, _ts: 0 };
   }
 }
 
 function saveDailyGoalsProgressToStorage() {
+  state.dailyGoalsProgress._ts = Date.now();
   try {
     localStorage.setItem(DAILY_GOALS_PROGRESS_KEY, JSON.stringify(state.dailyGoalsProgress));
   } catch {
     // Ignore storage failures.
   }
-  queueRemoteStateSync();
 }
 
 function dailyGoalsDateKey(date) {
@@ -8359,7 +8365,9 @@ function isDailyGoalDoneOnDate(goalId, dateKey) {
 }
 
 function isOnceOffGoalDone(goalId) {
-  return (state.dailyGoalsProgress.once_off_done || []).includes(goalId);
+  const completedOn = state.dailyGoalsProgress.once_off_dates?.[goalId];
+  if (!completedOn) return false;
+  return completedOn === dailyGoalsViewKey();
 }
 
 function recalcTotalPoints() {
@@ -8456,6 +8464,7 @@ function toggleDailyGoalDone(goalId) {
   }
   prog.total_points = recalcTotalPoints();
   saveDailyGoalsProgressToStorage();
+  queueRemoteStateSync();
   renderDailyGoals();
 }
 
@@ -8508,6 +8517,7 @@ function saveGoalSidebar() {
   goal.type = String(elements.goalSidebarType?.getAttribute("data-goal-type") || "recurring");
   goal.description = String(elements.goalSidebarDesc?.value || "").trim();
   saveDailyGoalsToStorage();
+  queueRemoteStateSync();
   closeGoalSidebar();
   renderDailyGoals();
 }
@@ -8561,7 +8571,12 @@ function renderDailyGoals() {
   if (!list) return;
 
   const recurring = state.dailyGoals.filter((g) => g.type !== "once_off");
-  const onceOff = state.dailyGoals.filter((g) => g.type === "once_off");
+  const onceOff = state.dailyGoals.filter((g) => {
+    if (g.type !== "once_off") return false;
+    const completedOn = state.dailyGoalsProgress.once_off_dates?.[g.id];
+    if (!completedOn) return true;
+    return completedOn >= viewKey;
+  });
   const allGoals = state.dailyGoals;
 
   function goalHTML(goal) {
@@ -8744,6 +8759,7 @@ async function bootstrapDashboard() {
   state.gameranxTvCurrentVideoId = loadGameranxTvCurrentVideoPreference();
   state.gameranxTvScroll = loadGameranxTvScrollPreference();
   state.dailyGoals = loadDailyGoalsFromStorage();
+  state.dailyGoalsSavedAt = Number(localStorage.getItem(DAILY_GOALS_TS_KEY) || "0");
   state.dailyGoalsProgress = loadDailyGoalsProgressFromStorage();
   state.dailyGoalsViewDate = dailyGoalsTodayKey();
   seedYesterdayFromToday();
