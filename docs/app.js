@@ -3852,6 +3852,10 @@ function collectDashboardSyncState() {
       volume_id: String(state.readingCurrentVolumeId || "").trim(),
       page: Number(state.readingCurrentPage || 1),
     },
+    daily_goals: Array.isArray(state.dailyGoals) ? state.dailyGoals : [],
+    daily_goals_progress: state.dailyGoalsProgress && typeof state.dailyGoalsProgress === "object"
+      ? state.dailyGoalsProgress
+      : { total_points: 0, daily: {}, once_off_done: [] },
   };
 }
 
@@ -3958,6 +3962,30 @@ async function loadRemoteDashboardState() {
         // Ignore storage failures.
       }
       applySubsectionOpenStatePreference();
+    }
+    if (Array.isArray(payload.daily_goals) && payload.daily_goals.length > 0) {
+      state.dailyGoals = payload.daily_goals;
+      try {
+        localStorage.setItem(DAILY_GOALS_KEY, JSON.stringify(state.dailyGoals));
+      } catch {
+        // Ignore storage failures.
+      }
+    }
+    if (payload.daily_goals_progress && typeof payload.daily_goals_progress === "object") {
+      state.dailyGoalsProgress = {
+        total_points: Number(payload.daily_goals_progress.total_points || 0),
+        daily: payload.daily_goals_progress.daily && typeof payload.daily_goals_progress.daily === "object"
+          ? payload.daily_goals_progress.daily : {},
+        once_off_done: Array.isArray(payload.daily_goals_progress.once_off_done)
+          ? payload.daily_goals_progress.once_off_done : [],
+        once_off_dates: payload.daily_goals_progress.once_off_dates && typeof payload.daily_goals_progress.once_off_dates === "object"
+          ? payload.daily_goals_progress.once_off_dates : {},
+      };
+      try {
+        localStorage.setItem(DAILY_GOALS_PROGRESS_KEY, JSON.stringify(state.dailyGoalsProgress));
+      } catch {
+        // Ignore storage failures.
+      }
     }
     if (payload.collection_art_prefs && typeof payload.collection_art_prefs === "object") {
       try {
@@ -8258,6 +8286,7 @@ function saveDailyGoalsToStorage() {
   } catch {
     // Ignore storage failures.
   }
+  queueRemoteStateSync();
 }
 
 function loadDailyGoalsProgressFromStorage() {
@@ -8280,6 +8309,7 @@ function saveDailyGoalsProgressToStorage() {
   } catch {
     // Ignore storage failures.
   }
+  queueRemoteStateSync();
 }
 
 function dailyGoalsDateKey(date) {
