@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21T18:32:25Z",
+  "updated_at": "2026-05-21T20:28:44Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -4824,6 +4824,18 @@
       "stock": "In stock",
       "observed_on": "2026-05-21",
       "captured_at": "2026-05-21T18:32:25Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 66.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/trafalgar-law-st10-010-reprint-premium-booster-the-best/p/681050043",
+      "title": "Trafalgar Law (ST10-010) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-05-21",
+      "captured_at": "2026-05-21T20:28:44Z"
     }
   ]
 }
