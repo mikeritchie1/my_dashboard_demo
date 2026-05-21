@@ -1,21 +1,6 @@
 {
   "listings": [
     {
-      "card_number": "ST12-009",
-      "price": "3.0",
-      "title": "Elephant True Bluefin [Starter Deck: Zoro and Sanji]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/elephant-true-bluefin-starter-deck-zoro-and-sanji/p/680357563",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/542115_1024x1024_2x_1og8PDsMQ.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
       "card_number": "ST12-004",
       "price": "4.0",
       "title": "Humandrill [Starter Deck: Zoro and Sanji]",
@@ -27,66 +12,6 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/humandrill-starter-deck-zoro-and-sanji/p/680359790",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/542110_1024x1024_2x_bdMYC46Hn.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
-      "card_number": "ST12-015",
-      "price": "4.0",
-      "title": "Patty & Carne [Starter Deck: Zoro and Sanji]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/patty-carne-starter-deck-zoro-and-sanji/p/680357570",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/542125_1024x1024_2x_jZxccAc5l.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
-      "card_number": "ST22-012",
-      "price": "4.0",
-      "title": "Marco [Starter Deck: Ace & Newgate]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/marco-starter-deck-ace-newgate/p/680358933",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/647705_1024x1024_2x_TOWv3m7kR.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
-      "card_number": "ST25-002",
-      "price": "4.0",
-      "title": "Cabaji [Starter Deck: Blue Buggy]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/cabaji-starter-deck-blue-buggy/p/680358930",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634307_1024x1024_2x_apYUFBYDT.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
-      "card_number": "ST03-004",
-      "price": "5.0",
-      "title": "Gecko Moria [Starter Deck: The Seven Warlords of The Sea]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/gecko-moria-starter-deck-the-seven-warlords-of-the-sea/p/680358953",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/cc4ce9be-48bc-506e-ba75-89e2d18a447c_1024x1024_2x_NkKSHCpX8H.webp",
       "art_variant": "original",
       "scraped_at": "2026-05-20T09:04:14Z"
     },
@@ -166,81 +91,6 @@
       "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
-      "card_number": "ST15-003",
-      "price": "5.0",
-      "title": "Kingdew [Starter Deck: Red Edward.Newgate]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/kingdew-starter-deck-red-edward-newgate/p/680355844",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/580988_1024x1024_2x_lbB4jdo6Qd.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
-      "card_number": "ST17-001",
-      "price": "5.0",
-      "title": "Crocodile [Starter Deck: Blue Donquixote Doflamingo]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/crocodile-starter-deck-blue-donquixote-doflamingo/p/680357910",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/581016_1024x1024_2x_Xip785KuX.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
-      "card_number": "ST21-012",
-      "price": "5.0",
-      "title": "Brook [Starter Deck EX: Gear 5]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/brook-starter-deck-ex-gear-5/p/680355871",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/615586_1024x1024_2x_RTh6ZbUPG.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
-      "card_number": "ST21-016",
-      "price": "5.0",
-      "title": "Gum-Gum Dawn Whip [Starter Deck EX: Gear 5]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/gum-gum-dawn-whip-starter-deck-ex-gear-5/p/680355870",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/615594_1024x1024_2x_gHjQtyzo7.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
-      "card_number": "ST25-005",
-      "price": "5.0",
-      "title": "Mohji [Starter Deck: Blue Buggy]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/mohji-starter-deck-blue-buggy/p/680358923",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634309_1024x1024_2x_vSvjvgfw5.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
       "card_number": "OP05-076",
       "price": "6.0",
       "title": "When You're at Sea You Fight against Pirates!! OP05-076",
@@ -254,21 +104,6 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-05-20T14:26:17Z"
-    },
-    {
-      "card_number": "ST01-006",
-      "price": "7.0",
-      "title": "Tony Tony.Chopper [Starter Deck: Straw Hat Crew]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/680355856",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/ab3ecc5b-ca27-5c0b-87dc-64512617f072_1024x1024_2x_sKUFV0y_T.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "ST04-005",
@@ -316,36 +151,6 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "P-053",
-      "price": "8.0",
-      "title": "Nami (P-053) (Reprint) [Premium Booster -The Best-]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/nami-p-053-reprint-premium-booster-the-best/p/680357552",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596377_1024x1024_2x_KxcGxYO-2.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-16T17:44:36Z"
-    },
-    {
-      "card_number": "P-055",
-      "price": "8.0",
-      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/680357604",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596376_1024x1024_2x_k_bCN80rD.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-16T17:44:36Z"
-    },
-    {
       "card_number": "ST08-014",
       "price": "8.0",
       "title": "Gum-Gum Bell [Starter Deck: Monkey.D.Luffy]",
@@ -357,21 +162,6 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/gum-gum-bell-starter-deck-monkey-d-luffy/p/680359860",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/503231_1024x1024_2x_sSd-llm5-.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
-      "card_number": "P-030",
-      "price": "9.0",
-      "title": "Jinbe [Starter Deck: Blue Donquixote Doflamingo]",
-      "rarity": "Promo",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/jinbe-starter-deck-blue-donquixote-doflamingo/p/680357914",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/581011_1024x1024_2x_q1NRsR6-n.jpg",
       "art_variant": "original",
       "scraped_at": "2026-05-20T09:04:14Z"
     },
@@ -419,21 +209,6 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-05-20T14:26:17Z"
-    },
-    {
-      "card_number": "P-071",
-      "price": "15.0",
-      "title": "Marco [One Piece Promotion Cards]",
-      "rarity": "Promo",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/marco-one-piece-promotion-cards/p/680358917",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/577142_1024x1024_2x_kFraRaUw7.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "ST12-008",
@@ -541,21 +316,6 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "OP04-056",
-      "price": "30.0",
-      "title": "Gum-Gum Red Roc [Kingdoms of Intrigue]",
-      "rarity": "Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/gum-gum-red-roc-kingdoms-of-intrigue/p/680358919",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/516772_1024x1024_2x_neSlPD7cj.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
       "card_number": "OP05-082",
       "price": "30.0",
       "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
@@ -625,10 +385,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/680357603",
+      "url": "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/681046127",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
       "art_variant": "original",
-      "scraped_at": "2026-05-16T17:44:36Z"
+      "scraped_at": "2026-05-21T18:32:25Z"
     },
     {
       "card_number": "ST06-004",
@@ -661,21 +421,6 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "OP05-006",
-      "price": "40.0",
-      "title": "Koala [Awakening of the New Era]",
-      "rarity": "Super Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/koala-awakening-of-the-new-era/p/680355852",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/527663_1024x1024_2x_2YJSybPS7.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
       "card_number": "OP06-058",
       "price": "40.0",
       "title": "Gravity Blade Raging Tiger OP06-058",
@@ -689,21 +434,6 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-05-20T14:26:17Z"
-    },
-    {
-      "card_number": "OP07-057",
-      "price": "40.0",
-      "title": "Perfume Femur [500 Years in the Future]",
-      "rarity": "Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/perfume-femur-500-years-in-the-future/p/680357584",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/545847_1024x1024_2x_7tT97SKnt.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP07-057",
@@ -931,21 +661,6 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "OP08-047",
-      "price": "60.0",
-      "title": "Jozu [Two Legends]",
-      "rarity": "Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/jozu-two-legends/p/680358902",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/558075_1024x1024_2x_wfByjhWBU.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
       "card_number": "OP14-033",
       "price": "60.0",
       "title": "Perona OP14-033",
@@ -1126,21 +841,6 @@
       "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
-      "card_number": "OP06-058",
-      "price": "75.0",
-      "title": "Gravity Blade Raging Tiger [Wings of the Captain]",
-      "rarity": "Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/gravity-blade-raging-tiger-wings-of-the-captain/p/680358911",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/541073_1024x1024_2x_b5XTWQvsV.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
       "card_number": "OP10-005",
       "price": "75.0",
       "title": "Sanji OP10-005",
@@ -1212,21 +912,6 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/law-bepo-starter-deck-green-jewelry-bonney/p/680456764",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634621_1024x1024_2x_XjrEylz3I.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
-      "card_number": "EB01-003",
-      "price": "80.0",
-      "title": "Kid & Killer [Extra Booster: Memorial Collection]",
-      "rarity": "Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/kid-killer-extra-booster-memorial-collection/p/680355850",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/544526_1024x1024_2x_EghMylw1Z.webp",
       "art_variant": "original",
       "scraped_at": "2026-05-20T09:04:14Z"
     },
@@ -1319,21 +1004,6 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-05-20T14:26:17Z"
-    },
-    {
-      "card_number": "OP02-011",
-      "price": "90.0",
-      "title": "Vista [Paramount War]",
-      "rarity": "Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/vista-paramount-war/p/680357510",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/b16d56b1-3b69-551d-a88b-5c030c096ec3_1024x1024_2x_rHNgap255.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "ST24-004",
