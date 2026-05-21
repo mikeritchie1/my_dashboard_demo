@@ -2700,6 +2700,8 @@ function watchTypeLabel(item) {
 
 function movieLookupKey(title) {
   return String(title || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^\w\s]/g, "")
     .replace(/\s+/g, " ")
@@ -2836,7 +2838,17 @@ function watchlistHistoryLabel() {
 }
 
 function collectionPrimaryLabel() {
-  return state.watchlistActiveMedia === "games" ? "Games played" : "Movies watched";
+  if (state.watchlistActiveMedia === "games") {
+    return "Games played";
+  }
+  const labels = [...state.watchlistTypes].map((type) => WATCHLIST_TYPE_LABELS[type]).filter(Boolean);
+  if (!labels.length) {
+    return state.watchlistActiveMedia === "anime" ? "Anime watched" : "Movies watched";
+  }
+  if (labels.length === 1) {
+    return `${labels[0]} watched`;
+  }
+  return `${labels.slice(0, -1).join(", ")} and ${labels[labels.length - 1]} watched`;
 }
 
 function backlogEntries(payload) {

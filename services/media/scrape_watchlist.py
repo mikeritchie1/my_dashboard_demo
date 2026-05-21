@@ -5,6 +5,7 @@ import html
 import json
 import os
 import re
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -192,6 +193,11 @@ def block_is_bold(block: dict) -> bool:
     return rich_text_has_bold(value.get("rich_text", []))
 
 
+def console_text(value: str) -> str:
+    encoding = sys.stdout.encoding or "utf-8"
+    return str(value).encode(encoding, errors="replace").decode(encoding, errors="replace")
+
+
 def get_block_children(block_id: str, token: str, log_label: str = "") -> list[dict]:
     blocks: list[dict] = []
     cursor = ""
@@ -236,6 +242,7 @@ def should_descend(block: dict, depth: int, mode: str) -> bool:
             "anime",
             "now",
             "backlog",
+            "watched",
             "must watch",
         }:
             return True
@@ -265,9 +272,9 @@ def flatten_blocks(blocks: list[dict], token: str, depth: int = 0, log_prefix: s
         block_type = str(block.get("type", "unknown"))
         indent = "  " * max(0, depth)
         if log_prefix:
-            print(f"[notion] {log_prefix} {indent}- {block_type}: {name[:140]}")
+            print(console_text(f"[notion] {log_prefix} {indent}- {block_type}: {name[:140]}"))
         else:
-            print(f"[notion] {indent}- {block_type}: {name[:140]}")
+            print(console_text(f"[notion] {indent}- {block_type}: {name[:140]}"))
         if should_descend(block, depth, mode):
             children = get_block_children(block.get("id", ""), token, f"{log_prefix} children".strip())
             flattened.extend(flatten_blocks(children, token, depth + 1, log_prefix=log_prefix, mode=mode))
@@ -332,8 +339,11 @@ def extract_title_and_opinion(text: str) -> tuple[str, str]:
 
 
 def movie_key(title: str) -> str:
-    normalized = re.sub(r"\s+", " ", title).strip().lower()
+    normalized = unicodedata.normalize("NFKD", str(title or ""))
+    normalized = "".join(part for part in normalized if not unicodedata.combining(part))
+    normalized = re.sub(r"\s+", " ", normalized).strip().lower()
     normalized = re.sub(r"[^\w\s]", "", normalized)
+    normalized = re.sub(r"\s+", " ", normalized).strip()
     return normalized
 
 
@@ -460,10 +470,14 @@ def load_tmdb_manual_overrides() -> dict[str, dict]:
 def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
     current_domain = "movie"
     parent_domain = "movie"
+    parent_domain_depth = 0
+    anime_root_depth: int | None = None
     in_currently_watching = False
     in_now_section = False
     in_backlog_section = False
     backlog_container_depth: int | None = None
+    in_watched_section = False
+    watched_container_depth: int | None = None
     in_must_watch = False
     domain_started: dict[str, bool] = {"movie": False, "series": False}
     skip_until_anime_for_parent: str | None = None
@@ -489,6 +503,13 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
         normalized_text = clean_title(text)
         label = normalize_label(normalized_text)
         year = is_year_heading(text)
+        in_anime_root = anime_root_depth is not None and depth > anime_root_depth
+        is_section_like = bool(block.get("has_children")) or block_type.startswith("heading")
+
+        is_anime_heading = label in {"anime", "anime movies", "anime series"}
+
+        if anime_root_depth is not None and depth <= anime_root_depth and not is_anime_heading:
+            anime_root_depth = None
 
         # Backlog should only include descendants of the Backlog toggle/list.
         # If we return to the same depth (or higher) on another label, backlog ends.
@@ -500,10 +521,22 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
         ):
             in_backlog_section = False
             backlog_container_depth = None
+        if (
+            in_watched_section
+            and watched_container_depth is not None
+            and depth <= watched_container_depth
+            and label != "watched"
+        ):
+            in_watched_section = False
+            watched_container_depth = None
 
         if label in {"movies", "movie"}:
-            parent_domain = "movie"
-            current_domain = "movie"
+            if in_anime_root:
+                current_domain = "anime_movie"
+            else:
+                parent_domain = "movie"
+                parent_domain_depth = depth
+                current_domain = "movie"
             in_currently_watching = False
             in_now_section = False
             in_backlog_section = False
@@ -513,46 +546,76 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             active_year = ""
             continue
         if label in {"series", "tv series", "tv shows", "shows"}:
-            parent_domain = "series"
-            current_domain = "series"
+            if in_anime_root:
+                current_domain = "anime_series"
+            else:
+                parent_domain = "series"
+                parent_domain_depth = depth
+                current_domain = "series"
             in_currently_watching = False
             in_now_section = False
             in_backlog_section = False
             backlog_container_depth = None
+            in_watched_section = False
+            watched_container_depth = None
             in_must_watch = False
             skip_until_anime_for_parent = None
             active_year = ""
             continue
-        if re.match(r"^anime\b", label):
-            current_domain = "anime_movie" if parent_domain == "movie" else "anime_series"
+        if is_anime_heading:
+            if skip_until_anime_for_parent == parent_domain and depth > parent_domain_depth:
+                current_domain = "anime_movie" if parent_domain == "movie" else "anime_series"
+            else:
+                anime_root_depth = depth
+                current_domain = ""
             skip_until_anime_for_parent = None
             in_currently_watching = False
             in_now_section = False
             in_backlog_section = False
             backlog_container_depth = None
+            in_watched_section = False
+            watched_container_depth = None
             in_must_watch = False
             active_year = ""
             continue
         if (
-            "now watching" in label
-            or "currently watching" in label
-            or "currently showing" in label
-            or (("currently" in label or "current" in label) and ("watch" in label or "show" in label))
+            is_section_like
+            and (
+                "now watching" in label
+                or "currently watching" in label
+                or "currently showing" in label
+                or (("currently" in label or "current" in label) and ("watch" in label or "show" in label))
+            )
         ):
             in_currently_watching = True
             in_now_section = False
             in_backlog_section = False
             backlog_container_depth = None
+            in_watched_section = False
+            watched_container_depth = None
             in_must_watch = False
             active_year = ""
             continue
         if label == "now":
-            in_currently_watching = False
+            in_currently_watching = True
             in_now_section = True
             in_backlog_section = False
             backlog_container_depth = None
+            in_watched_section = False
+            watched_container_depth = None
             in_must_watch = False
-            skip_until_anime_for_parent = parent_domain
+            if current_domain in {"movie", "series"}:
+                skip_until_anime_for_parent = parent_domain
+            active_year = ""
+            continue
+        if label == "watched":
+            in_currently_watching = False
+            in_now_section = False
+            in_backlog_section = False
+            backlog_container_depth = None
+            in_watched_section = True
+            watched_container_depth = depth
+            in_must_watch = False
             active_year = ""
             continue
         if label == "backlog":
@@ -560,6 +623,8 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_now_section = False
             in_backlog_section = True
             backlog_container_depth = depth
+            in_watched_section = False
+            watched_container_depth = None
             in_must_watch = False
             active_year = ""
             continue
@@ -567,6 +632,8 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = True
             in_backlog_section = False
             backlog_container_depth = None
+            in_watched_section = False
+            watched_container_depth = None
             in_must_watch = True
             active_year = ""
             continue
@@ -574,6 +641,8 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = False
             in_backlog_section = False
             backlog_container_depth = None
+            in_watched_section = False
+            watched_container_depth = None
             in_must_watch = False
             active_year = ""
             continue
@@ -584,16 +653,16 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_now_section = False
             in_backlog_section = False
             backlog_container_depth = None
+            in_watched_section = False
+            watched_container_depth = None
             in_must_watch = False
             active_year = year
             years.setdefault(active_year, [])
             continue
 
-        # For top-level movie/series lists: only parse from first year until "Now",
-        # then resume once the "Anime" sub-block starts.
+        # For top-level movie/series lists: parse watched years plus Now/Backlog,
+        # while skipping non-selected helper lists under Now such as Maybe.
         if current_domain in {"movie", "series"}:
-            # Keep skipping normal top-level entries after "Now", but still allow
-            # titles inside "Now -> Must Watch" to be captured as currently watching.
             if skip_until_anime_for_parent == current_domain and not in_currently_watching and not in_backlog_section:
                 continue
             if not domain_started[current_domain] and not in_now_section and not in_backlog_section:
@@ -610,7 +679,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
         if current_domain in {"anime_movie", "anime_series"} and block.get("has_children") and block_type in {"toggle", "bulleted_list_item", "numbered_list_item", "paragraph"}:
             skip_children_below_depth = depth
 
-        if in_currently_watching and ((not in_now_section) or in_must_watch):
+        if in_currently_watching:
             if current_domain == "series":
                 current["series"].append({"title": title, "opinion": opinion})
             elif current_domain == "anime_movie":
@@ -630,6 +699,13 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
                 backlog["anime_series"].append({"title": title, "opinion": opinion})
             else:
                 backlog["movies"].append({"title": title, "opinion": opinion})
+            continue
+
+        if in_watched_section and watched_container_depth is not None and depth > watched_container_depth:
+            if current_domain in {"anime_movie", "anime_series"}:
+                anime_ungrouped.append({"type": current_domain, "title": title, "opinion": opinion})
+            elif current_domain in {"movie", "series"}:
+                years.setdefault("Watched", []).append({"type": current_domain, "title": title, "opinion": opinion})
             continue
 
         if active_year:
@@ -890,7 +966,21 @@ def load_movie_details_cache() -> dict[str, dict]:
         return {}
     if not isinstance(payload, dict):
         return {}
-    return {str(key): value for key, value in payload.items() if isinstance(value, dict)}
+    cache: dict[str, dict] = {}
+    for key, value in payload.items():
+        if not isinstance(value, dict):
+            continue
+        raw_key = str(key)
+        media_type = str(value.get("media_type") or "").strip()
+        title = str(value.get("title") or "").strip()
+        if media_type and title:
+            cache[detail_key(media_type, title)] = value
+        elif ":" in raw_key:
+            prefix, raw_title = raw_key.split(":", 1)
+            cache[f"{prefix}:{movie_key(raw_title)}"] = value
+        else:
+            cache[movie_key(raw_key)] = value
+    return cache
 
 
 def write_movie_details_cache(cache: dict[str, dict]) -> None:
