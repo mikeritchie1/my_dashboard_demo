@@ -1,11 +1,137 @@
 {
-  "source": "youtube-ytdlp",
-  "generated_at": "2026-05-21T09:29:54.481650Z",
+  "source": "youtube-rss",
+  "generated_at": "2026-05-22T07:50:51.771841Z",
   "channel_name": "That's A Bad Idea",
   "channel_id": "UCNwxZoU9bBq-UI3viJZ84FQ",
   "channel_url": "https://www.youtube.com/@thats_a_bad_idea",
-  "items_count": 70,
+  "items_count": 84,
   "items": [
+    {
+      "id": "yt-RT5C4TYUVdU",
+      "video_id": "RT5C4TYUVdU",
+      "title": "thanks for making our dreams come true. OBSESSION is now in theaters. #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/RT5C4TYUVdU",
+      "published_at": "2026-05-14T20:12:12+00:00",
+      "updated_at": "2026-05-19T11:03:17+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/RT5C4TYUVdU/hqdefault.jpg"
+    },
+    {
+      "id": "yt-WWQSFF4IxDc",
+      "video_id": "WWQSFF4IxDc",
+      "title": "He’s not paying for this #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/WWQSFF4IxDc",
+      "published_at": "2026-03-01T20:55:38+00:00",
+      "updated_at": "2026-05-04T15:21:51+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/WWQSFF4IxDc/hqdefault.jpg"
+    },
+    {
+      "id": "yt-8FLPQFi1B0g",
+      "video_id": "8FLPQFi1B0g",
+      "title": "his friends thought it’d be funny #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/8FLPQFi1B0g",
+      "published_at": "2026-02-18T20:11:54+00:00",
+      "updated_at": "2026-05-04T23:32:37+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/8FLPQFi1B0g/hqdefault.jpg"
+    },
+    {
+      "id": "yt-KMIztG4nyvg",
+      "video_id": "KMIztG4nyvg",
+      "title": "It’s just a thing they do #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/KMIztG4nyvg",
+      "published_at": "2026-02-13T20:46:47+00:00",
+      "updated_at": "2026-04-29T06:59:36+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/KMIztG4nyvg/hqdefault.jpg"
+    },
+    {
+      "id": "yt-lEtxsIkC9kQ",
+      "video_id": "lEtxsIkC9kQ",
+      "title": "He must’ve plugged it in wrong #relatable #comedy #shorts",
+      "url": "https://www.youtube.com/shorts/lEtxsIkC9kQ",
+      "published_at": "2026-01-24T20:34:33+00:00",
+      "updated_at": "2026-01-27T20:51:44+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/lEtxsIkC9kQ/hqdefault.jpg"
+    },
+    {
+      "id": "yt-nGWhz02CSiY",
+      "video_id": "nGWhz02CSiY",
+      "title": "Nobody wants to hear your dream! #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/nGWhz02CSiY",
+      "published_at": "2026-01-19T19:18:21+00:00",
+      "updated_at": "2026-04-13T18:43:16+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/nGWhz02CSiY/hqdefault.jpg"
+    },
+    {
+      "id": "yt-Pm0M4s5hPl4",
+      "video_id": "Pm0M4s5hPl4",
+      "title": "He didn’t expect it to get this busy #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/Pm0M4s5hPl4",
+      "published_at": "2026-01-12T20:25:06+00:00",
+      "updated_at": "2026-05-05T03:34:51+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/Pm0M4s5hPl4/hqdefault.jpg"
+    },
+    {
+      "id": "yt-aM9AdgwSA6I",
+      "video_id": "aM9AdgwSA6I",
+      "title": "i mean what was he supposed to say? @AmazonLuna #ad #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/aM9AdgwSA6I",
+      "published_at": "2025-12-23T20:39:17+00:00",
+      "updated_at": "2025-12-24T06:50:25+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/aM9AdgwSA6I/hqdefault.jpg"
+    },
+    {
+      "id": "yt-2HVyszUSrHI",
+      "video_id": "2HVyszUSrHI",
+      "title": "What do I do with my hands??? #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/2HVyszUSrHI",
+      "published_at": "2025-12-21T18:29:13+00:00",
+      "updated_at": "2026-04-29T06:41:28+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/2HVyszUSrHI/hqdefault.jpg"
+    },
+    {
+      "id": "yt-QBoZ0F2JM6Y",
+      "video_id": "QBoZ0F2JM6Y",
+      "title": "Family game night just got a big upgrade @AmazonLuna #ad",
+      "url": "https://www.youtube.com/shorts/QBoZ0F2JM6Y",
+      "published_at": "2025-12-17T19:32:40+00:00",
+      "updated_at": "2026-04-28T23:10:39+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/QBoZ0F2JM6Y/hqdefault.jpg"
+    },
+    {
+      "id": "yt-CNz23KIf5do",
+      "video_id": "CNz23KIf5do",
+      "title": "What does she even like? #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/CNz23KIf5do",
+      "published_at": "2025-12-16T19:09:31+00:00",
+      "updated_at": "2026-05-04T19:58:21+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/CNz23KIf5do/hqdefault.jpg"
+    },
+    {
+      "id": "yt-I-CvcK7kMqo",
+      "video_id": "I-CvcK7kMqo",
+      "title": "He doesn’t care what he wrote #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/I-CvcK7kMqo",
+      "published_at": "2025-12-10T19:29:23+00:00",
+      "updated_at": "2026-02-14T20:57:51+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/I-CvcK7kMqo/hqdefault.jpg"
+    },
+    {
+      "id": "yt-PwRmrzusMEI",
+      "video_id": "PwRmrzusMEI",
+      "title": "Dreams come true #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/PwRmrzusMEI",
+      "published_at": "2025-12-06T18:05:18+00:00",
+      "updated_at": "2026-02-14T03:07:48+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/PwRmrzusMEI/hqdefault.jpg"
+    },
+    {
+      "id": "yt-SkVpb-7zhbo",
+      "video_id": "SkVpb-7zhbo",
+      "title": "This place is CLEAN #comedy #relatable #shorts",
+      "url": "https://www.youtube.com/shorts/SkVpb-7zhbo",
+      "published_at": "2025-12-04T20:48:12+00:00",
+      "updated_at": "2026-04-12T09:01:08+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/SkVpb-7zhbo/hqdefault.jpg"
+    },
     {
       "id": "yt-WBq6I3bHSZs",
       "video_id": "WBq6I3bHSZs",

@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-05-21T10:15:15.593169Z",
+  "generated_at": "2026-05-22T07:50:52.050300Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
+    {
+      "id": "yt-pFqJBngRQM4",
+      "video_id": "pFqJBngRQM4",
+      "title": "15 Games With The Most REALISTIC NPCs",
+      "url": "https://www.youtube.com/watch?v=pFqJBngRQM4",
+      "published_at": "2026-05-21T15:55:11+00:00",
+      "updated_at": "2026-05-22T07:20:41+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/pFqJBngRQM4/hqdefault.jpg"
+    },
     {
       "id": "yt-70uWg4c76z4",
       "video_id": "70uWg4c76z4",
@@ -39,7 +48,7 @@
       "title": "7/10 Games We PLAY MORE THAN 10s",
       "url": "https://www.youtube.com/watch?v=r5wVVdEs5_k",
       "published_at": "2026-05-17T17:25:36+00:00",
-      "updated_at": "2026-05-18T07:20:19+00:00",
+      "updated_at": "2026-05-22T00:27:03+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/r5wVVdEs5_k/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-05-09T16:43:56+00:00",
       "updated_at": "2026-05-19T20:43:10+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/F_pa5D42Ctk/hqdefault.jpg"
-    },
-    {
-      "id": "yt-9p1UGg7BZJ4",
-      "video_id": "9p1UGg7BZJ4",
-      "title": "GTA 6 MOST EXPENSIVE GAME EVER? & MORE",
-      "url": "https://www.youtube.com/watch?v=9p1UGg7BZJ4",
-      "published_at": "2026-05-08T21:35:17+00:00",
-      "updated_at": "2026-05-16T00:46:35+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/9p1UGg7BZJ4/hqdefault.jpg"
     }
   ]
 }

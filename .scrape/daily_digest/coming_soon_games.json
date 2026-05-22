@@ -2,6 +2,14 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Lego Batman: Legacy of the Dark Knight",
+      "url": "https://rawg.io/games/lego-batman-legacy-of-the-dark-knight",
+      "image": "https://media.rawg.io/media/games/69a/69a6a1097f82210dbf8583f8e0d09123.jpg",
+      "release_date": "2026-05-22",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
       "title": "Bubsy 4D",
       "url": "https://rawg.io/games/bubsy-4d",
       "image": "https://media.rawg.io/media/screenshots/3f5/3f56e79671e3e144fefb3ad30e924c2d.jpg",
@@ -174,7 +182,7 @@
       "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
       "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
       "release_date": "2026-05-12",
-      "rating": "3.0",
+      "rating": "2.9",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
@@ -346,14 +354,6 @@
       "platforms": "PC"
     },
     {
-      "title": "Crossed Tiles",
-      "url": "https://rawg.io/games/crossed-tiles",
-      "image": "https://media.rawg.io/media/screenshots/806/806b1528b07339aca5528729c6167241.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
       "title": "inKonbini: One Store. Many Stories",
       "url": "https://rawg.io/games/inkonbini-one-store-many-stories",
       "image": "https://media.rawg.io/media/games/a24/a24a8acc39da3c992cbe9fb33a36dfd5.jpg",
@@ -365,6 +365,14 @@
       "title": "Magical Blush Demo",
       "url": "https://rawg.io/games/magical-blush-demo",
       "image": "https://media.rawg.io/media/screenshots/2fb/2fbc0b1f2fda6a32ed349397d6f0511d.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Crossed Tiles",
+      "url": "https://rawg.io/games/crossed-tiles",
+      "image": "https://media.rawg.io/media/screenshots/806/806b1528b07339aca5528729c6167241.jpg",
       "release_date": "2026-04-30",
       "rating": "0.0",
       "platforms": "PC"
@@ -392,25 +400,9 @@
       "release_date": "2026-04-30",
       "rating": "4.5",
       "platforms": "PC"
-    },
-    {
-      "title": "\u56e2\u6218\u4e0d\u80fd\u8f93",
-      "url": "https://rawg.io/games/tuan-zhan-bu-neng-shu",
-      "image": "https://media.rawg.io/media/screenshots/8e4/8e4a488f57390a1bc12e8c435e0bcae5.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [
-    {
-      "title": "Lego Batman: Legacy of the Dark Knight",
-      "url": "https://rawg.io/games/lego-batman-legacy-of-the-dark-knight",
-      "image": "https://media.rawg.io/media/games/69a/69a6a1097f82210dbf8583f8e0d09123.jpg",
-      "release_date": "2026-05-22",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
-    },
     {
       "title": "007 First Light",
       "url": "https://rawg.io/games/007-first-light",
@@ -450,6 +442,14 @@
       "release_date": "2026-06-05",
       "rating": "3.5",
       "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4"
+    },
+    {
+      "title": "NBA THE RUN",
+      "url": "https://rawg.io/games/nba-the-run",
+      "image": "https://media.rawg.io/media/screenshots/e98/e984db819db44aac1dcfa26900f5b18e.jpg",
+      "release_date": "2026-06-09",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
       "title": "Crushed In Time",

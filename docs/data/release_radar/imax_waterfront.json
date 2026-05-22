@@ -3,132 +3,17 @@
   "theatre": "Ster-Kinekor V&A Waterfront IMAX",
   "items": [
     {
-      "tmdb_id": 744,
-      "tmdb_url": "https://www.themoviedb.org/movie/744",
-      "tmdb_rating": "7.1",
-      "tmdb_votes": "9542",
-      "release_date": "1986-05-16",
-      "overview": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
-      "runtime_minutes": "110",
-      "genres": [
-        "Action",
-        "Drama",
-        "Romance"
-      ],
-      "directors": [
-        "Tony Scott"
-      ],
-      "actors": [
-        "Tom Cruise",
-        "Kelly McGillis",
-        "Val Kilmer",
-        "Anthony Edwards",
-        "Tom Skerritt",
-        "Michael Ironside",
-        "John Stockwell",
-        "Barry Tubb",
-        "Rick Rossovich",
-        "Tim Robbins"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
-      "poster_url": "https://image.tmdb.org/t/p/w342/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
-      "title": "Top Gun 40th Anniversary",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_topgun40thanniversary2d",
-      "source": "IMAX Waterfront",
-      "status": "now_playing",
-      "status_label": "Now playing",
-      "showtimes": [],
-      "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg"
-    },
-    {
-      "tmdb_id": 361743,
-      "tmdb_url": "https://www.themoviedb.org/movie/361743",
-      "tmdb_rating": "8.156",
-      "tmdb_votes": "10923",
-      "release_date": "2022-05-21",
-      "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
-      "runtime_minutes": "131",
-      "genres": [
-        "Action",
-        "Drama"
-      ],
-      "directors": [
-        "Joseph Kosinski"
-      ],
-      "actors": [
-        "Tom Cruise",
-        "Miles Teller",
-        "Jennifer Connelly",
-        "Bashir Salahuddin",
-        "Jon Hamm",
-        "Charles Parnell",
-        "Monica Barbaro",
-        "Lewis Pullman",
-        "Jay Ellis",
-        "Danny Ramirez"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
-      "poster_url": "https://image.tmdb.org/t/p/w342/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
-      "title": "Top Gun: Maverick Re-Release",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_topgunmaverickrerelease2d",
-      "source": "IMAX Waterfront",
-      "status": "now_playing",
-      "status_label": "Now playing",
-      "showtimes": [],
-      "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg"
-    },
-    {
-      "tmdb_id": 936075,
-      "tmdb_url": "https://www.themoviedb.org/movie/936075",
-      "tmdb_rating": "7.6",
-      "tmdb_votes": "791",
-      "release_date": "2026-04-22",
-      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-      "runtime_minutes": "128",
-      "genres": [
-        "Music",
-        "Drama"
-      ],
-      "directors": [
-        "Antoine Fuqua"
-      ],
-      "actors": [
-        "Jaafar Jackson",
-        "Colman Domingo",
-        "Nia Long",
-        "Juliano Krue Valdi",
-        "Miles Teller",
-        "KeiLyn Durrel Jones",
-        "Kendrick Sampson",
-        "Joseph David-Jones",
-        "Rhyan Hill",
-        "Jamal Henderson"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=k-YAcjaLuSI",
-      "poster_url": "https://image.tmdb.org/t/p/w342/tBtqTCimYm3DKck3t8A2mgJaKVK.jpg",
-      "title": "Michael",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_michael2d",
-      "source": "IMAX Waterfront",
-      "status": "now_playing",
-      "status_label": "Now playing",
-      "showtimes": [],
-      "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/tBtqTCimYm3DKck3t8A2mgJaKVK.jpg"
-    },
-    {
       "tmdb_id": 1228710,
       "tmdb_url": "https://www.themoviedb.org/movie/1228710",
-      "tmdb_rating": "6.2",
-      "tmdb_votes": "28",
-      "release_date": "2026-05-20",
+      "tmdb_rating": "6.6",
+      "tmdb_votes": "64",
+      "release_date": "2026-05-19",
       "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
       "runtime_minutes": "132",
       "genres": [
+        "Action",
         "Adventure",
-        "Science Fiction",
-        "Action"
+        "Science Fiction"
       ],
       "directors": [
         "Jon Favreau"

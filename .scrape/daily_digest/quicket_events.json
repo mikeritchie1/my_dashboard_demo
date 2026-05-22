@@ -1,103 +1,5 @@
 [
   {
-    "title": "BeerEx Africa 2026",
-    "start": "2026-05-21T18:00:00+02:00",
-    "end": "2026-05-23T23:00:00+02:00",
-    "venue": "The Wicket Expo Hall @ Newlands Cricket Ground",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "146 Campground Road, , Newlands, 7780, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0849691_247_247.png",
-    "url": "https://www.quicket.co.za/events/348738-beerex-africa-2026/",
-    "categories": [
-      "bar",
-      "sports"
-    ],
-    "location_key": "146 Campground Road, , Newlands, 7780, Cape Town, Western Cape, South Africa, The Wicket Expo Hall @ Newlands Cricket Ground, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Investor Evening",
-    "start": "2026-05-21T18:00:00+02:00",
-    "end": "2026-05-21T20:30:00+02:00",
-    "venue": "134 Edward Rd",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "134 Edward Road, , Oakdale, 7530, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0916916_247_247.png",
-    "url": "https://www.quicket.co.za/events/368243-investor-evening/",
-    "categories": [],
-    "location_key": "134 Edward Road, , Oakdale, 7530, Cape Town, Western Cape, South Africa, 134 Edward Rd, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "The inaugural VUSA Gala Dinner",
-    "start": "2026-05-21T18:30:00+02:00",
-    "end": "2026-05-22T00:00:00+02:00",
-    "venue": "MOYO Kirstenbosch",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Kirstenbosch National Botanical Gardens, Rhodes Drive, Wynberg NU (2), Cape Town, 7700, South Africa, , Wynberg NU (2), 7700, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0897070_247_247.png",
-    "url": "https://www.quicket.co.za/events/367238-the-inaugural-vusa-gala-dinner/",
-    "categories": [
-      "food",
-      "date-night"
-    ],
-    "location_key": "Kirstenbosch National Botanical Gardens, Rhodes Drive, Wynberg NU (2), Cape Town, 7700, South Africa, , Wynberg NU (2), 7700, Cape Town, Western Cape, South Africa, MOYO Kirstenbosch, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "RBHS Gala Music Concert 2026",
-    "start": "2026-05-21T19:30:00+02:00",
-    "end": "2026-05-21T21:30:00+02:00",
-    "venue": "RBHS Memorial Hall",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Canigou Avenue 17, Rondebosch, 7700, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0915156_247_247.png",
-    "url": "https://www.quicket.co.za/events/372161-rbhs-gala-music-concert-2026/",
-    "categories": [
-      "music"
-    ],
-    "location_key": "Canigou Avenue 17, Rondebosch, 7700, Cape Town, Western Cape, South Africa, RBHS Memorial Hall, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "York Road Primary - Jazz Night",
-    "start": "2026-05-22T18:00:00+02:00",
-    "end": "2026-05-23T00:00:00+02:00",
-    "venue": "33 Lower York Rd",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "33 Lower York Road, , Eden Klein, 7780, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0907233_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/370470-york-road-primary-jazz-night/",
-    "categories": [],
-    "location_key": "33 Lower York Road, , Eden Klein, 7780, Cape Town, Western Cape, South Africa, 33 Lower York Rd, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "Sin and Salvation – The Story of Johnny Cash",
     "start": "2026-05-22T18:00:00+02:00",
     "end": "2026-05-22T21:30:00+02:00",
@@ -131,6 +33,26 @@
       "music"
     ],
     "location_key": "Picton Street 20, Parow, 7500, Cape Town, Western Cape, South Africa, Hugo Lambrechts Music Centre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Chardonnay Crawl",
+    "start": "2026-05-22T18:30:00+02:00",
+    "end": "2026-05-22T21:00:00+02:00",
+    "venue": "Culture Wine Bar",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "103 Bree Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0918076_247_247.png",
+    "url": "https://www.quicket.co.za/events/374426-chardonnay-crawl/",
+    "categories": [
+      "bar"
+    ],
+    "location_key": "103 Bree Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, Culture Wine Bar, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -187,6 +109,26 @@
       "theatre"
     ],
     "location_key": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa, The Masque Theatre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Dearly Beloved: A Kiki Function by The House of Indecency",
+    "start": "2026-05-22T22:00:00+02:00",
+    "end": "2026-05-23T01:30:00+02:00",
+    "venue": "The Outlore Base",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Hout Street 80, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0916157_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/373906-dearly-beloved-a-kiki-function-by-the-house-of-indecency/",
+    "categories": [
+      "dj"
+    ],
+    "location_key": "Hout Street 80, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, The Outlore Base, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -472,6 +414,27 @@
     "missing_place": true
   },
   {
+    "title": "Mastandi Brunch Experience",
+    "start": "2026-05-24T14:00:00+02:00",
+    "end": "2026-05-24T22:00:00+02:00",
+    "venue": "Si Cantina Sociale",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "5A1 Silo District, Victoria & Alfred Waterfront, Cape Town, 8001, South Africa, Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0915648_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/373180-mastandi-brunch-experience/",
+    "categories": [
+      "food",
+      "outdoors"
+    ],
+    "location_key": "5A1 Silo District, Victoria & Alfred Waterfront, Cape Town, 8001, South Africa, Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa, Si Cantina Sociale, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "A Celebration of Coldplay with Me & Mr Green",
     "start": "2026-05-24T16:00:00+02:00",
     "end": "2026-05-24T19:30:00+02:00",
@@ -615,6 +578,24 @@
     "url": "https://www.quicket.co.za/events/361885-good-life-show-africa-2026-cape-town/",
     "categories": [],
     "location_key": "Corner of Heerengracht & Rua Bartholomeu Dias, Foreshore, 8001, Cape Town, Western Cape, South Africa, Cape Town International Convention Centre (CTICC 2), Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "That ’70s Band – Greatest Hits",
+    "start": "2026-05-29T18:00:00+02:00",
+    "end": "2026-05-29T21:30:00+02:00",
+    "venue": "Cafe Roux",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0893976_247_247.png",
+    "url": "https://www.quicket.co.za/events/365316-that-70s-band-greatest-hits/",
+    "categories": [],
+    "location_key": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa, Cafe Roux, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -775,6 +756,24 @@
     "missing_place": true
   },
   {
+    "title": "The Rouge Revue presents, Voltage Vixens",
+    "start": "2026-05-30T18:00:00+02:00",
+    "end": "2026-05-30T23:00:00+02:00",
+    "venue": "The Electric",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Canterbury Street 48, Zonnebloem, 7925, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0918495_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/360075-the-rouge-revue-presents-voltage-vixens/",
+    "categories": [],
+    "location_key": "Canterbury Street 48, Zonnebloem, 7925, Cape Town, Western Cape, South Africa, The Electric, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "Mr Gold Coast Continental and Miss South Africa Continental 2026 Preliminary Pageant",
     "start": "2026-05-30T18:00:00+02:00",
     "end": "2026-05-31T00:00:00+02:00",
@@ -793,19 +792,21 @@
     "missing_place": true
   },
   {
-    "title": "The Rouge Revue presents, Voltage Vixens",
+    "title": "Ladies Night",
     "start": "2026-05-30T18:00:00+02:00",
-    "end": "2026-05-30T23:00:00+02:00",
-    "venue": "The Electric",
+    "end": "2026-05-30T22:00:00+02:00",
+    "venue": "Cattle Baron Westlake",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "Canterbury Street 48, Zonnebloem, 7925, Cape Town, Western Cape, South Africa",
+    "address": "Westlake Drive, , Westlake, 7945, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/0918495_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/360075-the-rouge-revue-presents-voltage-vixens/",
-    "categories": [],
-    "location_key": "Canterbury Street 48, Zonnebloem, 7925, Cape Town, Western Cape, South Africa, The Electric, Cape Town, Western Cape, South Africa",
+    "image": "https://images.quicket.co.za/0897593_247_247.png",
+    "url": "https://www.quicket.co.za/events/367401-ladies-night/",
+    "categories": [
+      "bar"
+    ],
+    "location_key": "Westlake Drive, , Westlake, 7945, Cape Town, Western Cape, South Africa, Cattle Baron Westlake, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1130,7 +1131,7 @@
     "address": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/0916785_247_247.png",
+    "image": "https://images.quicket.co.za/0925166_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/364002-victor-masondo-bheki-khoza-live-caf-roux/",
     "categories": [],
     "location_key": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa, Cafe Roux, Cape Town, Western Cape, South Africa",
@@ -1300,6 +1301,28 @@
       "art"
     ],
     "location_key": "Darling Street , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, Cape Town City Hall, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "The Red Cup Party - Birthday Edition",
+    "start": "2026-06-06T19:00:00+02:00",
+    "end": "2026-06-07T02:00:00+02:00",
+    "venue": "Zevolis Bar & Kitchen",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "28 Main Road, , Rondebosch, 7701, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0909274_247_247.png",
+    "url": "https://www.quicket.co.za/events/363419-the-red-cup-party-birthday-edition/",
+    "categories": [
+      "club",
+      "bar",
+      "art"
+    ],
+    "location_key": "28 Main Road, , Rondebosch, 7701, Cape Town, Western Cape, South Africa, Zevolis Bar & Kitchen, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1816,10 +1839,10 @@
     "title": "Secrets of Summer NYE 2026",
     "start": "2026-12-31T15:00:00+02:00",
     "end": "2027-01-01T03:30:00+02:00",
-    "venue": "Black River Park Sports Complex (Opposite Amazon)",
+    "venue": "Black River Park Sports Complex (Opposite Riverlands Mall)",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "Fir Street, Observatory (Opposite Amazon), 7925, Cape Town, Western Cape, South Africa",
+    "address": "Fir Street, Observatory (Opposite Riverlands Mall), 7925, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0861800_247_247.jpeg",
@@ -1828,7 +1851,7 @@
       "outdoors",
       "sports"
     ],
-    "location_key": "Fir Street, Observatory (Opposite Amazon), 7925, Cape Town, Western Cape, South Africa, Black River Park Sports Complex (Opposite Amazon), Cape Town, Western Cape, South Africa",
+    "location_key": "Fir Street, Observatory (Opposite Riverlands Mall), 7925, Cape Town, Western Cape, South Africa, Black River Park Sports Complex (Opposite Riverlands Mall), Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1881,24 +1904,6 @@
     "currency": "",
     "image": "https://images.quicket.co.za/0893399_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/",
-    "categories": [],
-    "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "DISTRICT SIX MUSEUM: MARCH 2027 ADMISSION TICKETS",
-    "start": "2027-03-01T09:00:00+02:00",
-    "end": "2027-03-31T15:00:00+02:00",
-    "venue": "25A Buitenkant St",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0893402_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365072-district-six-museum-march-2027-admission-tickets/",
     "categories": [],
     "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
     "missing_location": false,

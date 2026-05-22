@@ -1,11 +1,137 @@
 {
-  "source": "youtube-ytdlp",
-  "generated_at": "2026-05-21T09:29:13.935059Z",
+  "source": "youtube-rss",
+  "generated_at": "2026-05-22T07:50:51.567690Z",
   "channel_name": "Almost Friday TV",
   "channel_id": "UCCgK6peZI5-FKDCWzMIFk2A",
   "channel_url": "https://www.youtube.com/@AlmostFridayTV",
-  "items_count": 92,
+  "items_count": 106,
   "items": [
+    {
+      "id": "yt-zE2M-QK_ZRA",
+      "video_id": "zE2M-QK_ZRA",
+      "title": "Well you just aren’t listening",
+      "url": "https://www.youtube.com/shorts/zE2M-QK_ZRA",
+      "published_at": "2026-05-21T19:54:11+00:00",
+      "updated_at": "2026-05-22T07:01:24+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/zE2M-QK_ZRA/hqdefault.jpg"
+    },
+    {
+      "id": "yt-aQ-HegAm6us",
+      "video_id": "aQ-HegAm6us",
+      "title": "the last person you hooked up with dies",
+      "url": "https://www.youtube.com/watch?v=aQ-HegAm6us",
+      "published_at": "2026-05-21T19:00:00+00:00",
+      "updated_at": "2026-05-21T19:12:14+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/aQ-HegAm6us/hqdefault.jpg"
+    },
+    {
+      "id": "yt-qaX0YNgwxhY",
+      "video_id": "qaX0YNgwxhY",
+      "title": "Full Video Out on our channel!",
+      "url": "https://www.youtube.com/shorts/qaX0YNgwxhY",
+      "published_at": "2026-05-19T22:42:32+00:00",
+      "updated_at": "2026-05-20T08:37:55+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/qaX0YNgwxhY/hqdefault.jpg"
+    },
+    {
+      "id": "yt-m07KoTJP_no",
+      "video_id": "m07KoTJP_no",
+      "title": "just not worth getting my hopes up",
+      "url": "https://www.youtube.com/shorts/m07KoTJP_no",
+      "published_at": "2026-05-19T01:32:42+00:00",
+      "updated_at": "2026-05-19T07:50:58+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/m07KoTJP_no/hqdefault.jpg"
+    },
+    {
+      "id": "yt-KNCxvuRXiFw",
+      "video_id": "KNCxvuRXiFw",
+      "title": "I mean it’s just not that hard to believe…",
+      "url": "https://www.youtube.com/shorts/KNCxvuRXiFw",
+      "published_at": "2026-05-18T18:42:42+00:00",
+      "updated_at": "2026-05-19T08:21:27+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/KNCxvuRXiFw/hqdefault.jpg"
+    },
+    {
+      "id": "yt-ctkYqiStWD0",
+      "video_id": "ctkYqiStWD0",
+      "title": "Wow yeah that doesn’t feel good",
+      "url": "https://www.youtube.com/shorts/ctkYqiStWD0",
+      "published_at": "2026-05-17T22:55:58+00:00",
+      "updated_at": "2026-05-18T06:28:31+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/ctkYqiStWD0/hqdefault.jpg"
+    },
+    {
+      "id": "yt-9pT5jvmplPM",
+      "video_id": "9pT5jvmplPM",
+      "title": "Let me know if you wanna see more vids like this!",
+      "url": "https://www.youtube.com/shorts/9pT5jvmplPM",
+      "published_at": "2026-05-11T23:36:29+00:00",
+      "updated_at": "2026-05-15T20:26:58+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/9pT5jvmplPM/hqdefault.jpg"
+    },
+    {
+      "id": "yt-5G5tmAVhXIE",
+      "video_id": "5G5tmAVhXIE",
+      "title": "I’m pulling out the good stuff to celebrate",
+      "url": "https://www.youtube.com/shorts/5G5tmAVhXIE",
+      "published_at": "2026-04-27T19:43:23+00:00",
+      "updated_at": "2026-05-17T22:54:45+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/5G5tmAVhXIE/hqdefault.jpg"
+    },
+    {
+      "id": "yt-tK-hDme3_-4",
+      "video_id": "tK-hDme3_-4",
+      "title": "I miss the rage",
+      "url": "https://www.youtube.com/shorts/tK-hDme3_-4",
+      "published_at": "2026-04-21T19:43:46+00:00",
+      "updated_at": "2026-04-25T18:37:09+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/tK-hDme3_-4/hqdefault.jpg"
+    },
+    {
+      "id": "yt-I7mpUUZBwWU",
+      "video_id": "I7mpUUZBwWU",
+      "title": "That should be the end of that",
+      "url": "https://www.youtube.com/shorts/I7mpUUZBwWU",
+      "published_at": "2026-04-21T00:04:30+00:00",
+      "updated_at": "2026-04-22T14:05:27+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/I7mpUUZBwWU/hqdefault.jpg"
+    },
+    {
+      "id": "yt-AY17eVVzU-s",
+      "video_id": "AY17eVVzU-s",
+      "title": "I’m glad we did this!",
+      "url": "https://www.youtube.com/shorts/AY17eVVzU-s",
+      "published_at": "2026-04-17T17:50:21+00:00",
+      "updated_at": "2026-05-04T23:07:01+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/AY17eVVzU-s/hqdefault.jpg"
+    },
+    {
+      "id": "yt-KBjtOzCzzfM",
+      "video_id": "KBjtOzCzzfM",
+      "title": "You reaaaallly should’ve just kept going",
+      "url": "https://www.youtube.com/shorts/KBjtOzCzzfM",
+      "published_at": "2026-04-16T19:45:47+00:00",
+      "updated_at": "2026-05-05T09:03:04+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/KBjtOzCzzfM/hqdefault.jpg"
+    },
+    {
+      "id": "yt-wZ0JTosoZFs",
+      "video_id": "wZ0JTosoZFs",
+      "title": "He has to stop doing this",
+      "url": "https://www.youtube.com/shorts/wZ0JTosoZFs",
+      "published_at": "2026-04-15T18:57:18+00:00",
+      "updated_at": "2026-04-20T07:59:36+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/wZ0JTosoZFs/hqdefault.jpg"
+    },
+    {
+      "id": "yt-mGCXuxKsiXc",
+      "video_id": "mGCXuxKsiXc",
+      "title": "I feel a vengeful spirit",
+      "url": "https://www.youtube.com/shorts/mGCXuxKsiXc",
+      "published_at": "2026-04-14T16:16:12+00:00",
+      "updated_at": "2026-04-17T10:10:29+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/mGCXuxKsiXc/hqdefault.jpg"
+    },
     {
       "id": "yt-9CwHa72pr0M",
       "video_id": "9CwHa72pr0M",
