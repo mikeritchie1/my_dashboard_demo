@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T20:00:20Z",
+  "updated_at": "2026-05-23T20:46:33Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -7404,6 +7404,54 @@
       "stock": "In stock",
       "observed_on": "2026-05-23",
       "captured_at": "2026-05-23T20:00:20Z"
+    },
+    {
+      "card_number": "OP07-072",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/porche-500-years-in-the-future",
+      "title": "Porche [500 Years in the Future]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-23",
+      "captured_at": "2026-05-23T20:46:33Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 91.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-23",
+      "captured_at": "2026-05-23T20:46:33Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "art_variant": "original",
+      "price": 165.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-23",
+      "captured_at": "2026-05-23T20:46:33Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "alternate",
+      "price": 523.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-23",
+      "captured_at": "2026-05-23T20:46:33Z"
     }
   ]
 }
