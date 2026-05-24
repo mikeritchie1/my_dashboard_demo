@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T12:58:01Z",
+  "updated_at": "2026-05-24T14:21:25Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -8580,6 +8580,18 @@
       "stock": "In stock",
       "observed_on": "2026-05-24",
       "captured_at": "2026-05-24T10:25:03Z"
+    },
+    {
+      "card_number": "P-055",
+      "art_variant": "original",
+      "price": 8.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/681353501",
+      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-05-24",
+      "captured_at": "2026-05-24T14:21:25Z"
     }
   ]
 }
