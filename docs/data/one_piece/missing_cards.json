@@ -437,14 +437,14 @@
     },
     {
       "card_number": "ST02-009",
-      "price": 60.0,
+      "price": 61.0,
       "title": "Trafalgar Law [Starter Deck: Worst Generation]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Starter Deck: Worst Generation",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R60.00",
+      "available_variants": "Near Mint Foil R61.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
       "art_variant": "original",
@@ -616,21 +616,6 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "OP10-071",
-      "price": 85.0,
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R85.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
-      "art_variant": "original",
-      "scraped_at": "2026-05-23T12:52:02Z"
-    },
-    {
       "card_number": "ST08-001",
       "price": 85.0,
       "title": "Monkey.D.Luffy [Starter Deck: Monkey.D.Luffy]",
@@ -644,6 +629,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/503233_1024x1024_2x_2s87ejRtD.webp",
       "art_variant": "original",
       "scraped_at": "2026-05-20T09:04:14Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "price": 88.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R88.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "art_variant": "original",
+      "scraped_at": "2026-05-23T12:52:02Z"
     },
     {
       "card_number": "EB02-041",

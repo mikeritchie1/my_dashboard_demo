@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T19:59:22Z",
+  "updated_at": "2026-05-24T20:51:44Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -8628,6 +8628,30 @@
       "stock": "In stock",
       "observed_on": "2026-05-24",
       "captured_at": "2026-05-24T15:54:09Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "art_variant": "original",
+      "price": 61.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-24",
+      "captured_at": "2026-05-24T20:51:44Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 88.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-24",
+      "captured_at": "2026-05-24T20:51:44Z"
     }
   ]
 }
