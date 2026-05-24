@@ -3458,6 +3458,34 @@
     ],
     "playtime_hours": 0
   },
+  "game_aaa:lego batman legacy of the dark knight": {
+    "title": "Lego Batman: Legacy of the Dark Knight",
+    "media_type": "game_aaa",
+    "website_url": "",
+    "rawg_url": "https://rawg.io/games/lego-batman-legacy-of-the-dark-knight",
+    "poster_url": "https://media.rawg.io/media/games/69a/69a6a1097f82210dbf8583f8e0d09123.jpg",
+    "description": "Lego Batman: Legacy of the Dark Knight is an upcoming Lego-themed action-adventure game developed by Traveller's Tales and published by Warner Bros. Games. It is the fourth installment in the Lego Batman video game series, and features an original story inspired by films and other media from the Batman franchise. Announced at Gamescom in 2025, the game is set to be released on Nintendo Switch 2, PlayStation 5, Windows, and Xbox Series X and Series S on May 29, 2026.",
+    "publishers": [
+      "Warner Bros. Interactive"
+    ],
+    "rating": 0.0,
+    "developers": [
+      "TT Games"
+    ],
+    "playtime_hours": 0,
+    "metacritic": null,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "platforms": [
+      "Xbox Series S/X",
+      "Nintendo Switch",
+      "PC",
+      "PlayStation 5"
+    ],
+    "release_date": "2026-05-22"
+  },
   "game_aaa:lies of p": {
     "title": "Lies of P",
     "media_type": "game_aaa",

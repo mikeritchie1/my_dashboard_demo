@@ -34,6 +34,14 @@
       "platforms": "Nintendo Switch"
     },
     {
+      "title": "a weird game about sausage",
+      "url": "https://rawg.io/games/a-weird-game-about-sausage",
+      "image": "https://media.rawg.io/media/screenshots/f59/f594a3004451ece29df08842269973b1.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Luna Abyss",
       "url": "https://rawg.io/games/luna-abyss",
       "image": "https://media.rawg.io/media/games/759/75938a44d83af478a137a8a2298c0f47.jpg",
@@ -42,9 +50,41 @@
       "platforms": "PC"
     },
     {
+      "title": "Holy Valkyrie ExS-TIA P Parallel Episode 1: Magical Girl Pastel Marie",
+      "url": "https://rawg.io/games/holy-valkyrie-exs-tia-p-parallel-episode-1-magical",
+      "image": "https://media.rawg.io/media/screenshots/86e/86ef0f7c9b03eb48cbf9a49d2d658c2e.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Holy Valkyrie ExS-TIA TS Parallel Episode 3: Twilight Sabre",
+      "url": "https://rawg.io/games/holy-valkyrie-exs-tia-ts-parallel-episode-3-twilig",
+      "image": "https://media.rawg.io/media/screenshots/408/408afa7fae1ca2744a90c0cad50e8482.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Holy Valkyrie ExS-TIA F Parallel Episode 2: Reunion",
+      "url": "https://rawg.io/games/holy-valkyrie-exs-tia-f-parallel-episode-2-reunion",
+      "image": "https://media.rawg.io/media/screenshots/ba8/ba80f184754a5e1916460a6f850866b3.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Coffee Talk Tokyo",
       "url": "https://rawg.io/games/coffee-talk-tokyo",
       "image": "https://media.rawg.io/media/screenshots/8ee/8eed3221af05ce5dc058bc1ecf148695.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "ZERO PARADES: For Dead Spies Bundle",
+      "url": "https://rawg.io/games/zero-parades-for-dead-spies-bundle",
+      "image": "https://media.rawg.io/media/screenshots/6f0/6f00ca365527633a9c05fc25025fa38f.jpg",
       "release_date": "2026-05-20",
       "rating": "0.0",
       "platforms": "PC"
@@ -62,8 +102,24 @@
       "url": "https://rawg.io/games/forza-horizon-6",
       "image": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
       "release_date": "2026-05-19",
-      "rating": "0.0",
+      "rating": "4.1",
       "platforms": "PC, Xbox Series S/X"
+    },
+    {
+      "title": "Girls' Dorm -Managing an all-girls' dormitory- After",
+      "url": "https://rawg.io/games/girls-dorm-managing-an-all-girls-dormitory-after",
+      "image": "https://media.rawg.io/media/screenshots/a5f/a5f1d1e5272c070b836be5e29f9c231f.jpg",
+      "release_date": "2026-05-18",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Girls' Dorm -Managing an all-girls' dormitory",
+      "url": "https://rawg.io/games/girls-dorm-managing-an-all-girls-dormitory",
+      "image": "https://media.rawg.io/media/screenshots/383/3834a800a93d79dae22bc697ef0cbcce.jpg",
+      "release_date": "2026-05-18",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Corsairs - Battle of the Caribbean",
@@ -85,6 +141,14 @@
       "title": "Furry Necromancer \ud83d\udc80",
       "url": "https://rawg.io/games/furry-necromancer",
       "image": "https://media.rawg.io/media/screenshots/fa9/fa939d7c029b804c7938ad068c534881.jpg",
+      "release_date": "2026-05-15",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Blind Savior",
+      "url": "https://rawg.io/games/blind-savior",
+      "image": "https://media.rawg.io/media/screenshots/805/8059d4601053a0a3f943cd51e1da6cbd.jpg",
       "release_date": "2026-05-15",
       "rating": "0.0",
       "platforms": "PC"
@@ -230,7 +294,7 @@
       "url": "https://rawg.io/games/mixtape",
       "image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
       "release_date": "2026-05-07",
-      "rating": "4.5",
+      "rating": "4.3",
       "platforms": "PC, Xbox Series S/X"
     },
     {
@@ -298,6 +362,14 @@
       "platforms": "PC"
     },
     {
+      "title": "inKONBINI: One Store. Many Stories Ultimate Supporters Pack",
+      "url": "https://rawg.io/games/inkonbini-one-store-many-stories-ultimate-supporte",
+      "image": "https://media.rawg.io/media/screenshots/72f/72fd43dbdf31c2fc0fb19f0db3556969.jpg",
+      "release_date": "2026-05-03",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "A Bumpy Ride",
       "url": "https://rawg.io/games/a-bumpy-ride",
       "image": "https://media.rawg.io/media/screenshots/959/9592e21ee37af0f3cb29dba595ee2f51.jpg",
@@ -327,78 +399,6 @@
       "image": "https://media.rawg.io/media/screenshots/80e/80eb78bb20bdd8e76cd5ff535e45a863.jpg",
       "release_date": "2026-05-01",
       "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Charm Studies",
-      "url": "https://rawg.io/games/charm-studies-2",
-      "image": "https://media.rawg.io/media/screenshots/345/345ced68a5275127e67aca02c37f9559.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC, macOS, Linux"
-    },
-    {
-      "title": "Saros",
-      "url": "https://rawg.io/games/saros",
-      "image": "https://media.rawg.io/media/games/be8/be86ee5cf3a427c784efec1661f9b194.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PlayStation 5"
-    },
-    {
-      "title": "Librarian: Tidy Up the Arcane Library!",
-      "url": "https://rawg.io/games/librarian-tidy-up-the-arcane-library",
-      "image": "https://media.rawg.io/media/screenshots/f55/f55e26672d03de9bf9e974d03159fc5e.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "inKonbini: One Store. Many Stories",
-      "url": "https://rawg.io/games/inkonbini-one-store-many-stories",
-      "image": "https://media.rawg.io/media/games/a24/a24a8acc39da3c992cbe9fb33a36dfd5.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": ""
-    },
-    {
-      "title": "Magical Blush Demo",
-      "url": "https://rawg.io/games/magical-blush-demo",
-      "image": "https://media.rawg.io/media/screenshots/2fb/2fbc0b1f2fda6a32ed349397d6f0511d.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Crossed Tiles",
-      "url": "https://rawg.io/games/crossed-tiles",
-      "image": "https://media.rawg.io/media/screenshots/806/806b1528b07339aca5528729c6167241.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Centre 18",
-      "url": "https://rawg.io/games/centre-18",
-      "image": "https://media.rawg.io/media/screenshots/1f1/1f1c3940c64596f892db1cc178309037.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Invincible VS",
-      "url": "https://rawg.io/games/invincible-vs",
-      "image": "https://media.rawg.io/media/screenshots/fdf/fdfec2a343d751fec655f551146976cb.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
-    {
-      "title": "Heroes of Might & Magic: Olden Era",
-      "url": "https://rawg.io/games/heroes-of-might-magic-olden-era",
-      "image": "https://media.rawg.io/media/screenshots/69e/69ece38d22dcc1c44de7ddb7901a1a41.jpg",
-      "release_date": "2026-04-30",
-      "rating": "4.5",
       "platforms": "PC"
     }
   ],
