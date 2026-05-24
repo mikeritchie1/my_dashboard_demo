@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T01:53:13Z",
+  "updated_at": "2026-05-24T05:58:00Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -8520,6 +8520,54 @@
       "stock": "",
       "observed_on": "2026-05-24",
       "captured_at": "2026-05-24T01:53:13Z"
+    },
+    {
+      "card_number": "OP15-020",
+      "art_variant": "original",
+      "price": 14.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/fire-fist-adventure-on-kamis-island",
+      "title": "Fire Fist [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-24",
+      "captured_at": "2026-05-24T05:58:00Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 87.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-24",
+      "captured_at": "2026-05-24T05:58:00Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 854.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
+      "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-24",
+      "captured_at": "2026-05-24T05:58:00Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1339.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-24",
+      "captured_at": "2026-05-24T05:58:00Z"
     }
   ]
 }
