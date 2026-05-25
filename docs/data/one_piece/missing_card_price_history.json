@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T14:27:07Z",
+  "updated_at": "2026-05-25T16:56:30Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -9804,6 +9804,18 @@
       "stock": "In stock",
       "observed_on": "2026-05-25",
       "captured_at": "2026-05-25T11:02:50Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 856.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
+      "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-25",
+      "captured_at": "2026-05-25T16:56:30Z"
     }
   ]
 }

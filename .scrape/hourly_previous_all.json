@@ -616,21 +616,6 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "ST08-001",
-      "price": "85.0",
-      "title": "Monkey.D.Luffy [Starter Deck: Monkey.D.Luffy]",
-      "rarity": "Leader",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/monkey-d-luffy-starter-deck-monkey-d-luffy/p/680705417",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/503233_1024x1024_2x_2s87ejRtD.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
-    },
-    {
       "card_number": "EB02-041",
       "price": "90.0",
       "title": "Merry Go EB02-041",
@@ -704,21 +689,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/546713_ed599c5b-3ea8-4f54-b724-6e273d6ef740.jpg?v=1763495310",
       "art_variant": "original",
       "scraped_at": "2026-05-25T14:27:07Z"
-    },
-    {
-      "card_number": "ST21-001",
-      "price": "100.0",
-      "title": "Monkey.D.Luffy [Starter Deck EX: Gear 5]",
-      "rarity": "Leader",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/monkey-d-luffy-starter-deck-ex-gear-5/p/680708038",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/615564_1024x1024_2x_oGJzN0Ciz.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "OP10-118",
@@ -929,21 +899,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564143.jpg?v=1763508739",
       "art_variant": "original",
       "scraped_at": "2026-05-25T14:27:07Z"
-    },
-    {
-      "card_number": "ST12-001",
-      "price": "190.0",
-      "title": "Roronoa Zoro & Sanji [Starter Deck: Zoro and Sanji]",
-      "rarity": "Leader",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/roronoa-zoro-sanji-starter-deck-zoro-and-sanji/p/680708045",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539151_1024x1024_2x_nGdVHkb8sc.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T09:04:14Z"
     },
     {
       "card_number": "EB02-017",
@@ -1157,14 +1112,14 @@
     },
     {
       "card_number": "OP14-084",
-      "price": "854.0",
+      "price": "856.0",
       "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R854.00",
+      "available_variants": "Near Mint Foil R856.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666913.jpg?v=1769205349",
       "art_variant": "alternate",
