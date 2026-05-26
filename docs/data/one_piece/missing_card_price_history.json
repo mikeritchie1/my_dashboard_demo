@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T07:56:44Z",
+  "updated_at": "2026-05-26T09:02:19Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -10860,6 +10860,90 @@
       "stock": "In stock",
       "observed_on": "2026-05-26",
       "captured_at": "2026-05-26T05:56:49Z"
+    },
+    {
+      "card_number": "OP08-079",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kaido-two-legends",
+      "title": "Kaido [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-26",
+      "captured_at": "2026-05-26T09:02:19Z"
+    },
+    {
+      "card_number": "EB04-038",
+      "art_variant": "original",
+      "price": 34.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/rosinante-law-the-azure-seas-seven",
+      "title": "Rosinante & Law [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-26",
+      "captured_at": "2026-05-26T09:02:19Z"
+    },
+    {
+      "card_number": "OP11-067",
+      "art_variant": "original",
+      "price": 41.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/charlotte-katakuri-067-a-fist-of-divine-speed",
+      "title": "Charlotte Katakuri (067) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-26",
+      "captured_at": "2026-05-26T09:02:19Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 78.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-26",
+      "captured_at": "2026-05-26T09:02:19Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "alternate",
+      "price": 525.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-26",
+      "captured_at": "2026-05-26T09:02:19Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 675.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-26",
+      "captured_at": "2026-05-26T09:02:19Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 852.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
+      "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-26",
+      "captured_at": "2026-05-26T09:02:19Z"
     }
   ]
 }
