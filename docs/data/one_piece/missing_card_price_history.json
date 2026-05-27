@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-27T19:11:50Z",
+  "updated_at": "2026-05-27T21:31:49Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -12096,6 +12096,30 @@
       "stock": "In stock",
       "observed_on": "2026-05-27",
       "captured_at": "2026-05-27T19:11:50Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 676.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-27",
+      "captured_at": "2026-05-27T21:31:49Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1336.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-27",
+      "captured_at": "2026-05-27T21:31:49Z"
     }
   ]
 }
