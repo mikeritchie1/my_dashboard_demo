@@ -466,6 +466,21 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
+      "card_number": "OP10-071",
+      "price": "66.0",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R66.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "art_variant": "original",
+      "scraped_at": "2026-05-23T12:52:02Z"
+    },
+    {
       "card_number": "ST10-010",
       "price": "66.0",
       "title": "Trafalgar Law (ST10-010) (Reprint) [Premium Booster -The Best-]",
@@ -539,21 +554,6 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-05-20T14:26:17Z"
-    },
-    {
-      "card_number": "OP10-071",
-      "price": "71.0",
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R71.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
-      "art_variant": "original",
-      "scraped_at": "2026-05-23T12:52:02Z"
     },
     {
       "card_number": "EB01-003",
@@ -1202,14 +1202,14 @@
     },
     {
       "card_number": "OP14-096",
-      "price": "1992.0",
+      "price": "1994.0",
       "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1992.00",
+      "available_variants": "Near Mint Foil R1994.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670874.jpg?v=1769205424",
       "art_variant": "alternate",
