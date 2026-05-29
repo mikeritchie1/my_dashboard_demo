@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-05-28T08:06:39.954745Z",
+  "generated_at": "2026-05-29T08:03:29.499332Z",
   "channel_name": "Almost Friday TV",
   "channel_id": "UCCgK6peZI5-FKDCWzMIFk2A",
   "channel_url": "https://www.youtube.com/@AlmostFridayTV",
-  "items_count": 93,
+  "items_count": 94,
   "items": [
+    {
+      "id": "yt-WWBYolWpnMk",
+      "video_id": "WWBYolWpnMk",
+      "title": "how it feels to cancel plans",
+      "url": "https://www.youtube.com/watch?v=WWBYolWpnMk",
+      "published_at": "2026-05-28T19:00:37+00:00",
+      "updated_at": "2026-05-28T19:44:22+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/WWBYolWpnMk/hqdefault.jpg"
+    },
     {
       "id": "yt-aQ-HegAm6us",
       "video_id": "aQ-HegAm6us",
