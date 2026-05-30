@@ -358,7 +358,7 @@
       "url": "https://www.toadtradertcg.com/product-page/wyper-op15-114",
       "image_url": "",
       "art_variant": "original",
-      "scraped_at": "2026-05-20T14:26:17Z"
+      "scraped_at": "2026-05-30T02:52:29Z"
     },
     {
       "card_number": "ST10-006",
@@ -374,6 +374,21 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-05-20T14:26:17Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "price": 59.0,
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Worst Generation",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R59.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
+      "art_variant": "original",
+      "scraped_at": "2026-05-29T08:03:09Z"
     },
     {
       "card_number": "EB02-011",
@@ -436,17 +451,17 @@
       "scraped_at": "2026-05-20T14:26:17Z"
     },
     {
-      "card_number": "ST02-009",
-      "price": 60.0,
-      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "card_number": "OP10-071",
+      "price": 63.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Worst Generation",
+      "set_name": "Royal Blood",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R60.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
+      "available_variants": "Near Mint Foil R63.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
       "art_variant": "original",
       "scraped_at": "2026-05-29T08:03:09Z"
     },
@@ -464,21 +479,6 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-05-20T14:26:17Z"
-    },
-    {
-      "card_number": "OP10-071",
-      "price": 66.0,
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R66.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
-      "art_variant": "original",
-      "scraped_at": "2026-05-29T08:03:09Z"
     },
     {
       "card_number": "ST10-010",
@@ -583,7 +583,7 @@
       "url": "https://www.toadtradertcg.com/product-page/sanji-op10-005",
       "image_url": "",
       "art_variant": "original",
-      "scraped_at": "2026-05-20T14:26:17Z"
+      "scraped_at": "2026-05-29T17:26:05Z"
     },
     {
       "card_number": "OP15-086",
@@ -641,21 +641,6 @@
       "stock": "",
       "available_variants": "",
       "url": "https://www.toadtradertcg.com/product-page/law-bepo-st24-004",
-      "image_url": "",
-      "art_variant": "original",
-      "scraped_at": "2026-05-20T14:26:17Z"
-    },
-    {
-      "card_number": "ST10-010",
-      "price": 95.0,
-      "title": "Trafalgar Law ST10-010",
-      "rarity": "",
-      "store": "Toad Trader TCG",
-      "set_name": "",
-      "condition": "",
-      "stock": "",
-      "available_variants": "",
-      "url": "https://www.toadtradertcg.com/product-page/trafalgar-law-st10-010",
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-05-20T14:26:17Z"
@@ -1067,14 +1052,14 @@
     },
     {
       "card_number": "OP14-033",
-      "price": 530.0,
+      "price": 529.0,
       "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R530.00",
+      "available_variants": "Near Mint Foil R529.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666527.jpg?v=1769205424",
       "art_variant": "alternate",
@@ -1093,7 +1078,7 @@
       "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-op15-119",
       "image_url": "",
       "art_variant": "original",
-      "scraped_at": "2026-05-20T14:26:17Z"
+      "scraped_at": "2026-05-30T02:52:29Z"
     },
     {
       "card_number": "OP04-056",
@@ -1127,14 +1112,14 @@
     },
     {
       "card_number": "OP14-084",
-      "price": 854.0,
+      "price": 880.0,
       "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R854.00",
+      "available_variants": "Near Mint Foil R880.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666913.jpg?v=1769205349",
       "art_variant": "alternate",
@@ -1187,14 +1172,14 @@
     },
     {
       "card_number": "OP14-031",
-      "price": 1324.0,
+      "price": 1305.0,
       "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1324.00",
+      "available_variants": "Near Mint Foil R1305.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
       "art_variant": "alternate",
@@ -1202,14 +1187,14 @@
     },
     {
       "card_number": "OP14-096",
-      "price": 2000.0,
+      "price": 2058.0,
       "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R2000.00",
+      "available_variants": "Near Mint Foil R2058.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670874.jpg?v=1769205424",
       "art_variant": "alternate",
