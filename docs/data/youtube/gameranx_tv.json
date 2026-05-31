@@ -1,18 +1,27 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-05-30T06:52:48.707481Z",
+  "generated_at": "2026-05-31T07:49:48.817390Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
     {
+      "id": "yt-cvoB4X4sJmU",
+      "video_id": "cvoB4X4sJmU",
+      "title": "10 WEIRD Gaming Stories of May 2026",
+      "url": "https://www.youtube.com/watch?v=cvoB4X4sJmU",
+      "published_at": "2026-05-30T16:05:05+00:00",
+      "updated_at": "2026-05-30T18:39:50+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/cvoB4X4sJmU/hqdefault.jpg"
+    },
+    {
       "id": "yt-UBg_VxMswrM",
       "video_id": "UBg_VxMswrM",
       "title": "GTA 6 REVIEWS \"IMPORTANT\", UNREAL ENGINE 6 REVEALED & MORE",
       "url": "https://www.youtube.com/watch?v=UBg_VxMswrM",
       "published_at": "2026-05-29T21:33:29+00:00",
-      "updated_at": "2026-05-30T05:59:29+00:00",
+      "updated_at": "2026-05-30T10:23:47+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/UBg_VxMswrM/hqdefault.jpg"
     },
     {
@@ -75,7 +84,7 @@
       "title": "10 Recent Games That SPOILED US",
       "url": "https://www.youtube.com/watch?v=gvnf8nm1Htg",
       "published_at": "2026-05-23T17:44:21+00:00",
-      "updated_at": "2026-05-26T22:53:08+00:00",
+      "updated_at": "2026-05-30T22:53:39+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/gvnf8nm1Htg/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-05-17T17:25:36+00:00",
       "updated_at": "2026-05-22T00:27:03+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/r5wVVdEs5_k/hqdefault.jpg"
-    },
-    {
-      "id": "yt-91hEZUXkbjo",
-      "video_id": "91hEZUXkbjo",
-      "title": "Subnautica 2: 10 Things The Game DOESN'T TELL YOU",
-      "url": "https://www.youtube.com/watch?v=91hEZUXkbjo",
-      "published_at": "2026-05-16T16:39:48+00:00",
-      "updated_at": "2026-05-29T13:17:18+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/91hEZUXkbjo/hqdefault.jpg"
     }
   ]
 }
