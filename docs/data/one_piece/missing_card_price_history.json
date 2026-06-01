@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01T14:46:45Z",
+  "updated_at": "2026-06-01T19:49:40Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -16560,6 +16560,18 @@
       "stock": "In stock",
       "observed_on": "2026-06-01",
       "captured_at": "2026-06-01T09:31:02Z"
+    },
+    {
+      "card_number": "P-024",
+      "art_variant": "original",
+      "price": 50.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-01",
+      "captured_at": "2026-06-01T19:49:40Z"
     }
   ]
 }
