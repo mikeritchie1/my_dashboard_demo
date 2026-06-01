@@ -4,57 +4,29 @@ One Piece Cards
 ---------------
 Added: 0
 
-Updated: 14
-1. Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards] | Knightly Gaming | 17.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards
-2. Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-] | GeekHaven | 30.0
-https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/682202476
-3. Porche [500 Years in the Future] | Big Bang Shop | 30.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/porche-500-years-in-the-future
-4. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 49.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards
-5. Donquixote Doflamingo [Royal Blood] | Knightly Gaming | 58.0
+Updated: 8
+1. Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-] | GeekHaven | 8.0
+https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/682261742
+2. Donquixote Doflamingo [Royal Blood] | Knightly Gaming | 57.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood
-6. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 60.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation
-7. Arlong (Alternate Art) [Extra Booster: Anime 25th Collection] | Big Bang Shop | 160.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection
-8. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 529.0
+3. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 526.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven
-9. Nami (054) (Alternate Art) [A Fist of Divine Speed] | Knightly Gaming | 683.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed
-10. Ms. All Sunday (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 885.0
+4. Ms. All Sunday (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 886.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven
-...and 4 more
+5. Gecko Moria (SP) | Tanuki Trader | 1235.0
+https://tanukitrader.co.za/product/gecko-moria-sp/
+6. Nami (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 1297.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven
+7. Ground Death (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 2081.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven
+8. Nami (TR) | Tanuki Trader | 3485.0
+https://tanukitrader.co.za/product/nami-tr/
 
-Removed: 42
-1. Thatch ST15-004 | Toad Trader TCG | 25.0
-https://www.toadtradertcg.com/product-page/thatch-st15-004
-2. Nami OP08-106 | Toad Trader TCG | 70.0
-https://www.toadtradertcg.com/product-page/nami-op08-106
-3. Enel EB02-052 | Toad Trader TCG | 480.0
-https://www.toadtradertcg.com/product-page/enel-eb02-052
-4. I Am Whitebeard!! ST22-015 | Toad Trader TCG | 13.0
-https://www.toadtradertcg.com/product-page/i-am-whitebeard-st22-015
-5. Boa Hancock ST17-004 | Toad Trader TCG | 160.0
-https://www.toadtradertcg.com/product-page/boa-hancock-st17-004
-6. Rob Lucci EB04-048 | Toad Trader TCG | 20.0
-https://www.toadtradertcg.com/product-page/rob-lucci-eb04-048
-7. Donquixote Doflamingo OP14-069 | Toad Trader TCG | 50.0
-https://www.toadtradertcg.com/product-page/donquixote-doflamingo-op14-069
-8. Monkey.D.Luffy ST21-014 | Toad Trader TCG | 50.0
-https://www.toadtradertcg.com/product-page/monkey-d-luffy-st21-014
-9. Monkey.D.Luffy OP10-118 | Toad Trader TCG | 110.0
-https://www.toadtradertcg.com/product-page/monkey-d-luffy-op10-118
-10. Mamaragan OP15-078 | Toad Trader TCG | 150.0
-https://www.toadtradertcg.com/product-page/mamaragan-op15-078
-...and 32 more
+Removed: 0
 
 New Releases
 ------------
-Added: 1
-1. Iron Lung
-https://pahe.ink/iron-lung-2026-web-dl-480p-720p-1080p/
+Added: 0
 
 Updated: 0
 
@@ -64,7 +36,9 @@ Coming Soon Movies
 ------------------
 Added: 0
 
-Updated: 0
+Updated: 1
+1. Masters of the Universe | 2026-06-05
+https://www.themoviedb.org/movie/454639
 
 Removed: 0
 
@@ -78,13 +52,15 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 0
+Added: 1
+1. Eternal Palace Sakura | 2026-06-01
+https://rawg.io/games/eternal-palace-sakura
 
-Updated: 1
-1. 007 First Light | 2026-05-27
-https://rawg.io/games/007-first-light
+Updated: 0
 
-Removed: 0
+Removed: 1
+1. HYPNOS (2026) | 2026-05-06
+https://rawg.io/games/hypnos-2026
 
 Coming Soon Games
 -----------------
@@ -92,7 +68,9 @@ Added: 0
 
 Updated: 0
 
-Removed: 0
+Removed: 1
+1. Eternal Palace Sakura | 2026-06-01
+https://rawg.io/games/eternal-palace-sakura
 
 Bandsintown Events
 ------------------
@@ -104,79 +82,79 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 43
-1. Madagascar, A Musical Adventure Jr. / El Shaddai Christian school / Durbanville | 2026-07-24T19:00:00+02:00 | El Shaddai Christian School Hall
-https://www.quicket.co.za/events/364353-madagascar-a-musical-adventure-jr-el-shaddai-christian-school-durbanville/
-2. Autistic Adults Social Coffee Meetup - Helderberg | 2026-06-06T10:00:00+02:00 | Sunset Books
-https://www.quicket.co.za/events/367704-autistic-adults-social-coffee-meetup-helderberg/
-3. Watershed Stripped Down @ café Roux | 2026-06-04T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/369435-watershed-stripped-down-caf-roux/
-4. Wonderland | 2026-06-28T16:00:00+02:00 | Cabo Beach
-https://www.quicket.co.za/events/376668-wonderland/
-5. SUPER DISKO | 2026-06-05T18:30:00+02:00 | Hotel Sky Cape Town
-https://www.quicket.co.za/events/375293-super-disko/
-6. Havana: First Thursday Experience | 2026-06-04T17:00:00+02:00 | 9 Albertus St
-https://www.quicket.co.za/events/378071-havana-first-thursday-experience/
-7. ALL BLACK EXPERIENCE | 2026-06-06T19:00:00+02:00 | TIK TOK BAR
-https://www.quicket.co.za/events/374636-all-black-experience/
-8. 10/06/2026 CPT MEGA Agent ....1 Day Program | 2026-06-10T08:30:00+02:00 | King David Golf Club
-https://www.quicket.co.za/events/377173-10062026-cpt-mega-agent-1-day-program/
-9. Byster | 2026-06-11T19:30:00+02:00 | Kaapstad Toneelhuis
-https://www.quicket.co.za/events/374951-byster/
-10. When Heaven and Earth Collide ... We were made to worship | 2026-08-15T10:00:00+02:00 | Die Bron Kerk
-https://www.quicket.co.za/events/319199-when-heaven-and-earth-collide-we-were-made-to-worship/
-...and 33 more
+Added: 11
+1. LITTLE FOREST NYE FESTIVAL 2026 | 2026-12-31T10:00:00+02:00 | Kromrivier Farm
+https://www.quicket.co.za/events/359325-little-forest-nye-festival-2026/
+2. 10/06/2026 CPT MEGA Agent 1 Day Program | 2026-06-10T08:45:00+02:00 | 5 St Georges Mall 8th Floor
+https://www.quicket.co.za/events/370060-10062026-cpt-mega-agent-1-day-program/
+3. Winter Wonderland 2026 | 2026-06-28T13:00:00+02:00 | 170 Bree St
+https://www.quicket.co.za/events/311101-winter-wonderland-2026/
+4. Cape Town Encounter Conference Junior High (Grade 7-9) | 2026-07-14T09:00:00+02:00 | Hillsong Church, Century City
+https://www.quicket.co.za/events/367971-cape-town-encounter-conference-junior-high-grade-7-9/
+5. DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS | 2027-01-02T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/
+6. Hallelujah Anyway #1 | 2026-06-13T19:00:00+02:00 | Merchant & Maker – Kommetjie
+https://www.quicket.co.za/events/375760-hallelujah-anyway-1/
+7. Takeaways by Nate Levinrad | 2026-06-18T20:00:00+02:00 | The Outlore Base
+https://www.quicket.co.za/events/377891-takeaways-by-nate-levinrad/
+8. The Two Oceans Aquarium: The Waterfront Duck Co Tours: Jan - March 2027 | 2027-01-01T10:00:00+02:00 | Two Oceans Aquarium - The Duck Boat
+https://www.quicket.co.za/events/369652-the-two-oceans-aquarium-the-waterfront-duck-co-tours-jan-march-2027/
+9. DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS | 2027-02-01T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/
+10. Festa Junina | Little Brazil 2026 | 2026-06-07T14:00:00+02:00 | Alphen Centre Constantia
+https://www.quicket.co.za/events/376529-festa-junina-little-brazil-2026/
+...and 1 more
 
-Updated: 0
+Updated: 1
+1. Secrets of Summer NYE 2026 | 2026-12-31T15:00:00+02:00 | Black River Park Sports Complex (Opposite Riverlands Mall)
+https://www.quicket.co.za/events/324924-secrets-of-summer-nye-2026/
 
-Removed: 43
-1. Andy's Club - Take 8 | 2026-05-30T18:00:00+02:00 | Reload, Flamingo Square Centre
-https://www.quicket.co.za/events/371263-andys-club-take-8/
-2. Prof Zee - Winter Warm-up Show - LIVE in Cape Town at Protea Hotel Fire & Ice! 30 May 2026 | 2026-05-30T20:00:00+02:00 | Protea Hotel Fire & Ice! Cape Town
-https://www.quicket.co.za/events/374098-prof-zee-winter-warm-up-show-live-in-cape-town-at-protea-hotel-fire-ice-30-may/
-3. Ladies Night | 2026-05-30T18:00:00+02:00 | Cattle Baron Westlake
-https://www.quicket.co.za/events/367401-ladies-night/
-4. Infrastructure as Code: Hands-On Deployment Workshop | 2026-05-30T10:00:00+02:00 | AWS Skills Center - Cape Town
-https://www.quicket.co.za/events/368897-infrastructure-as-code-hands-on-deployment-workshop/
-5. Raunchy Renditions Presents : Raunchy-oke | 2026-05-30T20:00:00+02:00 | Kaapstad Toneelhuis
-https://www.quicket.co.za/events/375291-raunchy-renditions-presents-raunchy-oke/
-6. POP UP COLLAB "EVOLVE STUDIOS" | 2026-05-30T15:00:00+02:00 | Evolve studio
-https://www.quicket.co.za/events/368978-pop-up-collab-evolve-studios/
-7. Mirage | 2026-05-30T20:00:00+02:00 | SPECTRA
-https://www.quicket.co.za/events/369049-mirage/
-8. That ’70s Band – Greatest Hits | 2026-05-30T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/365334-that-70s-band-greatest-hits/
-9. Netwerk24 en Die Burger se 2026 Wynproefees | 2026-05-30T11:00:00+02:00 | Meerendal Wine Estate
-https://www.quicket.co.za/events/362431-netwerk24-en-die-burger-se-2026-wynproefees/
-10. Cape Town Ceilidh Club 30 May 2026 | 2026-05-30T18:30:00+02:00 | Claremont Civic Centre
-https://www.quicket.co.za/events/371516-cape-town-ceilidh-club-30-may-2026/
-...and 33 more
+Removed: 11
+1. The Queen's Brunch | 2026-05-31T11:00:00+02:00 | Simon's Restaurant
+https://www.quicket.co.za/events/368525-the-queens-brunch/
+2. The Christian Game Show | 2026-05-31T16:30:00+02:00 | SHOOT. Studios
+https://www.quicket.co.za/events/376198-the-christian-game-show/
+3. Make a Mug Pottery Workshop | 2026-05-31T13:30:00+02:00 | Montebello Design Centre
+https://www.quicket.co.za/events/375861-make-a-mug-pottery-workshop/
+4. DISTRICT SIX MUSEUM: JUNE 2026 ADMISSION TICKETS | 2026-06-01T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365058-district-six-museum-june-2026-admission-tickets/
+5. Craft Shop: Assorted Edition | 2026-05-31T10:00:00+02:00 | 114 Lower Main Rd
+https://www.quicket.co.za/events/368664-craft-shop-assorted-edition/
+6. FUNKYHOUSESUNDAYS VOL.5 | 2026-05-31T14:00:00+02:00 | Maroon | Restaurant & Lounge Bar
+https://www.quicket.co.za/events/374938-funkyhousesundays-vol5/
+7. Everybody Loves Sundays w/Dwson | CPT | 31 May 2026 | 2026-05-31T13:00:00+02:00 | Defected Studio
+https://www.quicket.co.za/events/365027-everybody-loves-sundays-wdwson-cpt-31-may-2026/
+8. Victor Masondo & Bheki Khoza LIVE! @ café Roux | 2026-05-31T16:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/364002-victor-masondo-bheki-khoza-live-caf-roux/
+9. Social Link-Up: DayTime Groove | 2026-05-31T13:00:00+02:00 | Rooftop On Bree
+https://www.quicket.co.za/events/357472-social-link-up-daytime-groove/
+10. Cape Town's Original Sundaze Party | 2026-05-31T12:00:00+02:00 | Hotel Sky
+https://www.quicket.co.za/events/373365-cape-towns-original-sundaze-party/
+...and 1 more
 
 Webtickets Events
 -----------------
 Added: 4
-1. Moyo Kirstenbosch Indoor Concert Classics | From 31 May 2026 18:00 | Moyo, Kirstenbosch Gardens, Cape Town | R200 - R365
-https://www.webtickets.co.za/v2/event.aspx?itemid=1595900430
-2. Carmen | 31 May 2026 14:00 | Artscape, Opera House, Cape Town | R180 - R950
-https://www.webtickets.co.za/v2/event.aspx?itemid=1587944448
-3. The Jive Cape Town Funny Festival | from 28 May 2026 20:00 | R190 - R250
-https://www.webtickets.co.za/v2/event.aspx?itemid=1582738777
-4. We House Sundays | 31 May 2026 14:00 | ColorBox Studios, 3 Industry St, Paarden Eiland, Cape Town | From R200
-https://www.webtickets.co.za/v2/event.aspx?itemid=1595773580
+1. Please, don’t call me moffie | From 02 Jun 2026 19:00 | Artscape, Arena, Cape Town | R150
+https://www.webtickets.co.za/v2/event.aspx?itemid=1591455210
+2. Killer Queen - A LAMTA Dance Production | From 04 Jun 2026 20:00 | Theatre On The Bay, Camps Bay | R200 - R320
+https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134
+3. Cape Town Abseil | From 01 Jun 2026 | Table Mountain | R995 - R1100
+https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
+4. Sweat & Sound | 05 Jun 2026 18:00 | Protea Hotel Fire & Ice | R200 - R250 (Excl service fee)
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595851574
 
-Updated: 1
-1. Richard O'Brien's The Rocky Horror Show (CPT) | 31 May 2026 15:00 | Theatre On The Bay, Camps Bay | R295 - R495
-https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971
+Updated: 0
 
 Removed: 4
-1. All Access Opera - Carmen | 30 May 2026 14:00 | Artscape, Opera House, Cape Town | R80
-https://www.webtickets.co.za/v2/event.aspx?itemid=1591073661
-2. The Prince of Egypt - The Musical | From 30 May 2026 14:00 | The George Arts Theatre, 125 York St, George Central, George, 6529 | R170
-https://www.webtickets.co.za/v2/event.aspx?itemid=1586944542
-3. GESELS 2026 met Nataniël | 30 May 2026 11:00 | Drostdy Theatre, Cnr Alexander St &, Bird St, Stellenbosch | R310
-https://www.webtickets.co.za/v2/event.aspx?itemid=1590669537
-4. Power Series 4: Cold air. Hot brakes. Full send. | 30 May 2026 08:00 | Killarney International Raceway, 6 Potsdam Road, Table View | R10 - R850
-https://www.webtickets.co.za/v2/event.aspx?itemid=1595481760
+1. Carmen | 31 May 2026 14:00 | Artscape, Opera House, Cape Town | R180 - R950
+https://www.webtickets.co.za/v2/event.aspx?itemid=1587944448
+2. Moyo Kirstenbosch Indoor Concert Classics | From 31 May 2026 18:00 | Moyo, Kirstenbosch Gardens, Cape Town | R200 - R365
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595900430
+3. Richard O'Brien's The Rocky Horror Show (CPT) | 31 May 2026 15:00 | Theatre On The Bay, Camps Bay | R295 - R495
+https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971
+4. We House Sundays | 31 May 2026 14:00 | ColorBox Studios, 3 Industry St, Paarden Eiland, Cape Town | From R200
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595773580
 
 Google Calendar
 ---------------
