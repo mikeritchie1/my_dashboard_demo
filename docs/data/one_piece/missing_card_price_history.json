@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T05:53:44Z",
+  "updated_at": "2026-06-03T08:59:41Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -17652,6 +17652,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-03",
       "captured_at": "2026-06-03T05:53:44Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 898.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
+      "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-03",
+      "captured_at": "2026-06-03T08:59:41Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1280.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-03",
+      "captured_at": "2026-06-03T08:59:41Z"
     }
   ]
 }

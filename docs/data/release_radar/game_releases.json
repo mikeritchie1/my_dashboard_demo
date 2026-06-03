@@ -2,6 +2,14 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "The 7th Guest Remake",
+      "url": "https://rawg.io/games/the-7th-guest-remake",
+      "image": "https://media.rawg.io/media/screenshots/ef6/ef64a3aed53dccd10019ea72c3fcfd92.jpg",
+      "release_date": "2026-06-03",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Eternal Palace Sakura",
       "url": "https://rawg.io/games/eternal-palace-sakura",
       "image": "https://media.rawg.io/media/screenshots/693/693a515d1be6b244afeac62c7e3194ae.jpg",
@@ -42,20 +50,20 @@
       "platforms": "PC"
     },
     {
+      "title": "Cardburners",
+      "url": "https://rawg.io/games/cardburners",
+      "image": "https://media.rawg.io/media/screenshots/7b1/7b19d65479a13336f4977e83a7295b2f.jpg",
+      "release_date": "2026-05-28",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Mina the Hollower",
       "url": "https://rawg.io/games/mina-the-hollower",
       "image": "https://media.rawg.io/media/games/9e5/9e5914a9b6537391752af07412cd8ce3.jpg",
       "release_date": "2026-05-28",
       "rating": "0.0",
       "platforms": "PC, macOS, Linux"
-    },
-    {
-      "title": "Scale the Depths",
-      "url": "https://rawg.io/games/scale-the-depths",
-      "image": "https://media.rawg.io/media/screenshots/cbd/cbde5730e7e6808617d9909ad41345b9.jpg",
-      "release_date": "2026-05-27",
-      "rating": "0.0",
-      "platforms": ""
     },
     {
       "title": "868-BACK",
@@ -74,12 +82,28 @@
       "platforms": ""
     },
     {
+      "title": "Scale the Depths",
+      "url": "https://rawg.io/games/scale-the-depths",
+      "image": "https://media.rawg.io/media/screenshots/cbd/cbde5730e7e6808617d9909ad41345b9.jpg",
+      "release_date": "2026-05-27",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "007 First Light",
       "url": "https://rawg.io/games/007-first-light",
       "image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
       "release_date": "2026-05-27",
       "rating": "4.5",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
+      "title": "Rose & Locket",
+      "url": "https://rawg.io/games/rose-locket",
+      "image": "https://media.rawg.io/media/screenshots/342/34287e7b9355c6a64df7e41979ca114d.jpg",
+      "release_date": "2026-05-27",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "7 Days Before the End",
@@ -98,12 +122,28 @@
       "platforms": "PC"
     },
     {
+      "title": "Vortica",
+      "url": "https://rawg.io/games/vortica",
+      "image": "https://media.rawg.io/media/screenshots/753/753866358d7cbc05d491b08a3d90d6cd.jpg",
+      "release_date": "2026-05-25",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Paralives",
       "url": "https://rawg.io/games/paralives",
       "image": "https://media.rawg.io/media/screenshots/64a/64a39ca3b3be03ed98fa8dfe9d0df860.jpg",
       "release_date": "2026-05-25",
       "rating": "0.0",
       "platforms": "PC, macOS"
+    },
+    {
+      "title": "The Meter is Running",
+      "url": "https://rawg.io/games/the-meter-is-running",
+      "image": "https://media.rawg.io/media/screenshots/7e4/7e49b74bb7d82b2dc7641b86ec0e0ac3.jpg",
+      "release_date": "2026-05-23",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Lego Batman: Legacy of the Dark Knight",
@@ -128,6 +168,14 @@
       "release_date": "2026-05-21",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
+      "title": "Schrodinger's Cat Burglar",
+      "url": "https://rawg.io/games/schrodingers-cat-burglar",
+      "image": "https://media.rawg.io/media/screenshots/e12/e12c5e4f72c8edb76a7c35c621dde509.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Yoshi and the Mysterious Book",
@@ -346,71 +394,15 @@
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {
-      "title": "Directive 8020",
-      "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
-      "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
+      "title": "Greenhearth Necromancer",
+      "url": "https://rawg.io/games/greenhearth-necromancer",
+      "image": "https://media.rawg.io/media/screenshots/0df/0df008cc9f40d353cc2e0ba61d0f4e92.jpg",
       "release_date": "2026-05-12",
-      "rating": "3.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
-    {
-      "title": "Uncle Lee\u2019s Cookbook: Five Recipes for Disaster",
-      "url": "https://rawg.io/games/uncle-lees-cookbook-five-recipes-for-disaster",
-      "image": "https://media.rawg.io/media/screenshots/b32/b32dd3a1e02fa4651f46fce4a308f798.jpg",
-      "release_date": "2026-05-11",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Tennis Manager 26",
-      "url": "https://rawg.io/games/tennis-manager-26",
-      "image": "https://media.rawg.io/media/screenshots/160/16050902d2a7a76979250a0131a47535.jpg",
-      "release_date": "2026-05-11",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Battlestar Galactica: Scattered Hopes",
-      "url": "https://rawg.io/games/battlestar-galactica-scattered-hopes",
-      "image": "https://media.rawg.io/media/screenshots/84d/84d2168586f372e40fe68f17e1a70c5b.jpg",
-      "release_date": "2026-05-10",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "The Golden Caravan Demo",
-      "url": "https://rawg.io/games/the-golden-caravan-demo",
-      "image": "https://media.rawg.io/media/screenshots/4cc/4cc75c8d312a673ff4f430dd1b2bff52.jpg",
-      "release_date": "2026-05-10",
-      "rating": "0.0",
-      "platforms": "PC, macOS"
-    },
-    {
-      "title": "Wardrum",
-      "url": "https://rawg.io/games/wardrum",
-      "image": "https://media.rawg.io/media/screenshots/38a/38a7f212737e4fd7b30f4032aa666688.jpg",
-      "release_date": "2026-05-08",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Mixtape (2025)",
-      "url": "https://rawg.io/games/mixtape-2025",
-      "image": "https://media.rawg.io/media/screenshots/2e1/2e1a19d938c0e7a4a396924125923c38.jpg",
-      "release_date": "2026-05-07",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
     }
   ],
   "coming_soon": [
-    {
-      "title": "The 7th Guest Remake",
-      "url": "https://rawg.io/games/the-7th-guest-remake",
-      "image": "https://media.rawg.io/media/screenshots/ef6/ef64a3aed53dccd10019ea72c3fcfd92.jpg",
-      "release_date": "2026-06-03",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
     {
       "title": "Gothic 1 Remake",
       "url": "https://rawg.io/games/gothic-1-remake",

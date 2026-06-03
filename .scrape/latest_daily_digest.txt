@@ -4,37 +4,40 @@ One Piece Cards
 ---------------
 Added: 0
 
-Updated: 10
-1. Smoker [Starter Deck: Absolute Justice] | Big Bang Shop | 30.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice
-2. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 50.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards
-3. Sanji [One Piece Film: Red] | Big Bang Shop | 330.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red
-4. Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards] | Big Bang Shop | 375.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards
-5. Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards] | Big Bang Shop | 530.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards
-6. Nami (054) (Alternate Art) [A Fist of Divine Speed] | Knightly Gaming | 680.0
+Updated: 15
+1. Dracule Mihawk [Live Action Edition] | Big Bang Shop | 95.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition
+2. Arlong (Alternate Art) [Extra Booster: Anime 25th Collection] | Big Bang Shop | 130.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection
+3. Uta (Alternate Art) [Paramount War] | Big Bang Shop | 505.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-alternate-art-paramount-war
+4. Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards] | Big Bang Shop | 185.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards
+5. Uta (P-031) (Premium Card Collection -Uta-) [One Piece Promotion Cards] | Big Bang Shop | 270.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-p-031-premium-card-collection-uta-one-piece-promotion-cards
+6. Carrot (Parallel) [Two Legends] | Big Bang Shop | 440.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends
+7. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 531.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven
+8. Nami (054) (Alternate Art) [A Fist of Divine Speed] | Knightly Gaming | 684.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed
-7. Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-] | Big Bang Shop | 740.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best
-8. Ms. All Sunday (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 888.0
+9. Ms. All Sunday (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 898.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven
-9. Gecko Moria (SP) | Tanuki Trader | 1235.0
+10. Gecko Moria (SP) | Tanuki Trader | 1235.0
 https://tanukitrader.co.za/product/gecko-moria-sp/
-10. Nami (TR) | Tanuki Trader | 3485.0
-https://tanukitrader.co.za/product/nami-tr/
+...and 5 more
 
-Removed: 0
+Removed: 2
+1. Donquixote Doflamingo [Royal Blood] | Knightly Gaming | 57.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood
+2. Porche [500 Years in the Future] | Big Bang Shop | 30.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/porche-500-years-in-the-future
 
 New Releases
 ------------
-Added: 2
-1. Fuze
-https://pahe.ink/fuze-2026-web-dl-480p-720p-1080p/
-2. Hokum
-https://pahe.ink/hokum-2026-web-dl-480p-720p-1080p/
+Added: 1
+1. In the Grey
+https://pahe.ink/in-the-grey-2026-web-dl-480p-720p-1080p/
 
 Updated: 0
 
@@ -44,9 +47,7 @@ Coming Soon Movies
 ------------------
 Added: 0
 
-Updated: 1
-1. The End of Oak Street | 2026-08-14
-https://www.themoviedb.org/movie/1101383
+Updated: 0
 
 Removed: 0
 
@@ -60,43 +61,49 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 4
-1. Secrets of the Heart | 2026-05-29
-https://rawg.io/games/secrets-of-the-heart
-2. Kim's Farm | 2026-05-28
-https://rawg.io/games/kims-farm
-3. Stonemachia | 2026-05-26
-https://rawg.io/games/stonemachia
-4. Backrooms: The Wrong Door | 2026-05-30
-https://rawg.io/games/backrooms-the-wrong-door
-
-Updated: 2
-1. 007 First Light | 2026-05-27
-https://rawg.io/games/007-first-light
-2. Directive 8020 | 2026-05-12
-https://rawg.io/games/the-dark-pictures-directive-8020
-
-Removed: 4
-1. Mixtape | 2026-05-07
-https://rawg.io/games/mixtape
-2. Brigador Killers Demo | 2026-05-06
-https://rawg.io/games/brigador-killers-demo
-3. Will: Follow the Light | 2026-05-07
-https://rawg.io/games/will-follow-the-light
-4. B.E.S.T 2 | 2026-05-06
-https://rawg.io/games/best-2
-
-Coming Soon Games
------------------
-Added: 2
-1. Lords of the Fallen 2 | 2026-08-31
-https://rawg.io/games/lords-of-the-fallen-2-2
-2. Maseylia: Echoes of the past | 2026-06-19
-https://rawg.io/games/maseylia-echoes-of-the-past
+Added: 7
+1. The 7th Guest Remake | 2026-06-03
+https://rawg.io/games/the-7th-guest-remake
+2. The Meter is Running | 2026-05-23
+https://rawg.io/games/the-meter-is-running
+3. Schrodinger's Cat Burglar | 2026-05-21
+https://rawg.io/games/schrodingers-cat-burglar
+4. Vortica | 2026-05-25
+https://rawg.io/games/vortica
+5. Greenhearth Necromancer | 2026-05-12
+https://rawg.io/games/greenhearth-necromancer
+6. Rose & Locket | 2026-05-27
+https://rawg.io/games/rose-locket
+7. Cardburners | 2026-05-28
+https://rawg.io/games/cardburners
 
 Updated: 0
 
-Removed: 0
+Removed: 7
+1. Directive 8020 | 2026-05-12
+https://rawg.io/games/the-dark-pictures-directive-8020
+2. Uncle Lee’s Cookbook: Five Recipes for Disaster | 2026-05-11
+https://rawg.io/games/uncle-lees-cookbook-five-recipes-for-disaster
+3. Mixtape (2025) | 2026-05-07
+https://rawg.io/games/mixtape-2025
+4. The Golden Caravan Demo | 2026-05-10
+https://rawg.io/games/the-golden-caravan-demo
+5. Tennis Manager 26 | 2026-05-11
+https://rawg.io/games/tennis-manager-26
+6. Wardrum | 2026-05-08
+https://rawg.io/games/wardrum
+7. Battlestar Galactica: Scattered Hopes | 2026-05-10
+https://rawg.io/games/battlestar-galactica-scattered-hopes
+
+Coming Soon Games
+-----------------
+Added: 0
+
+Updated: 0
+
+Removed: 1
+1. The 7th Guest Remake | 2026-06-03
+https://rawg.io/games/the-7th-guest-remake
 
 Bandsintown Events
 ------------------
@@ -108,53 +115,71 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 8
-1. THIRST | 2026-06-06T16:00:00+02:00 | Infusion Rondebosch
-https://www.quicket.co.za/events/374586-thirst/
-2. DISTRICT SIX MUSEUM: MARCH 2027 ADMISSION TICKETS | 2027-03-01T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365072-district-six-museum-march-2027-admission-tickets/
-3. Sexponential E=MC³ - AskNicki's Formula for transforming your sex life - CT | 2026-06-25T18:00:00+02:00 | Youngblood Gallery
-https://www.quicket.co.za/events/374502-sexponential-emc-asknickis-formula-for-transforming-your-sex-life-ct/
-4. Rallim Colour Run 2026 | 2026-06-20T08:00:00+02:00 | Rallim - Main Field
-https://www.quicket.co.za/events/377282-rallim-colour-run-2026/
-5. Astronaut Dorothy Metcalf-Lindenburger at The German International School Cape Town 23 July 2026 | 2026-07-23T18:00:00+02:00 | German International School
-https://www.quicket.co.za/events/374650-astronaut-dorothy-metcalf-lindenburger-at-the-german-international-school-cape/
-6. Final Rush June Edition | 2026-06-15T20:00:00+02:00 | Evol
-https://www.quicket.co.za/events/376720-final-rush-june-edition/
-7. Abba Tribute show live at Triggerfish Brewing 2026 | 2026-06-27T20:30:00+02:00 | Triggerfish Brewing
-https://www.quicket.co.za/events/376342-abba-tribute-show-live-at-triggerfish-brewing-2026/
-8. Phil de Lange: Why are you like this? LIVE in Cape Town at The Protea Hotel Fire & Ice! 10 & 11 July 2026 | 2026-07-10T19:30:00+02:00 | Protea Hotel Fire & Ice! Cape Town
-https://www.quicket.co.za/events/378456-phil-de-lange-why-are-you-like-this-live-in-cape-town-at-the-protea-hotel-fire/
-
-Updated: 0
-
-Removed: 8
-1. THREE’S A CROWD | 2026-06-19T19:00:00+02:00 | Springbok Arms
-https://www.quicket.co.za/events/375037-threes-a-crowd/
-2. Mojo XXL Music Nights Ft. DJ Rene | 2026-06-26T19:00:00+02:00 | Mojo  Market
-https://www.quicket.co.za/events/377397-mojo-xxl-music-nights-ft-dj-rene/
-3. LITTLE FOREST NYE FESTIVAL 2026 | 2026-12-31T10:00:00+02:00 | Kromrivier Farm
-https://www.quicket.co.za/events/359325-little-forest-nye-festival-2026/
-4. Takeaways by Nate Levinrad | 2026-06-18T20:00:00+02:00 | The Outlore Base
-https://www.quicket.co.za/events/377891-takeaways-by-nate-levinrad/
-5. Winter Wonderland 2026 | 2026-06-28T13:00:00+02:00 | 170 Bree St
-https://www.quicket.co.za/events/311101-winter-wonderland-2026/
-6. 10/06/2026 CPT MEGA Agent ....1 Day Program | 2026-06-10T08:30:00+02:00 | King David Golf Club
-https://www.quicket.co.za/events/377173-10062026-cpt-mega-agent-1-day-program/
-7. 10/06/2026 CPT MEGA Agent 1 Day Program | 2026-06-10T08:45:00+02:00 | 5 St Georges Mall 8th Floor
+Added: 18
+1. Radisson Red Winter Playlist 2026 | 2026-06-06T19:00:00+02:00 | OUIBAR + Kitchn, Radisson RED V&A Waterfront Cape Town
+https://www.quicket.co.za/events/367503-radisson-red-winter-playlist-2026/
+2. Sexponential Book Launch - E=MC³ - transform your sex life - CT | 2026-06-25T18:00:00+02:00 | Youngblood Gallery
+https://www.quicket.co.za/events/374502-sexponential-book-launch-emc-transform-your-sex-life-ct/
+3. ¡Pulso! - Classical Guitar & Flamenco Dance Performance at Alliance Francaise | 2026-06-05T18:30:00+02:00 | Alliance Française du Cap
+https://www.quicket.co.za/events/370333-pulso-classical-guitar-flamenco-dance-performance-at-alliance-francaise/
+4. Feel, Sense & Write: A Guided Writing & Self-Expression Experience | 2026-06-06T18:15:00+02:00 | Allure Sensuality Emporium
+https://www.quicket.co.za/events/372052-feel-sense-write-a-guided-writing-self-expression-experience/
+5. Resisting Erasure: A Documentary of the 2025 Living Rights Festival | 2026-06-16T15:00:00+02:00 | Avalon Auditorium
+https://www.quicket.co.za/events/378161-resisting-erasure-a-documentary-of-the-2025-living-rights-festival/
+6. Crosby, Stills, Nash & Young: A Tribute to the Songs of a Generation | 2026-06-14T16:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/370140-crosby-stills-nash-young-a-tribute-to-the-songs-of-a-generation/
+7. 10/06/2026 CPT MEGA Agent 1 Day Program | 2026-06-10T08:45:00+02:00 | STBB Cape Town
 https://www.quicket.co.za/events/370060-10062026-cpt-mega-agent-1-day-program/
-8. Word of Mouth Pub Quiz | 2026-06-06T19:00:00+02:00 | Ganesh
-https://www.quicket.co.za/events/352731-word-of-mouth-pub-quiz/
+8. Fantasia & Universal Frequencies (Gaia) Presents - Dance of the fairies | 2026-06-05T21:00:00+02:00 | The Bunker
+https://www.quicket.co.za/events/374879-fantasia-universal-frequencies-gaia-presents-dance-of-the-fairies/
+9. Majik Forest: Run, walk, refresh | 2026-06-16T07:00:00+02:00 | Majik Forest Shopping Centre
+https://www.quicket.co.za/events/371411-majik-forest-run-walk-refresh/
+10. 10/06/2026 CPT MEGA Agent ....1 Day Program | 2026-06-10T08:30:00+02:00 | King David Mowbray Golf Club
+https://www.quicket.co.za/events/377173-10062026-cpt-mega-agent-1-day-program/
+...and 8 more
+
+Updated: 1
+1. SUPER DISKO | 2026-06-05T19:00:00+02:00 | Hotel Sky Cape Town
+https://www.quicket.co.za/events/375293-super-disko/
+
+Removed: 18
+1. Final Rush June Edition | 2026-06-15T20:00:00+02:00 | Evol
+https://www.quicket.co.za/events/376720-final-rush-june-edition/
+2. Rallim Colour Run 2026 | 2026-06-20T08:00:00+02:00 | Rallim - Main Field
+https://www.quicket.co.za/events/377282-rallim-colour-run-2026/
+3. DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS | 2027-02-01T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/
+4. The Second Circle Returns | 2026-06-04T18:00:00+02:00 | The Outlore Base
+https://www.quicket.co.za/events/377498-the-second-circle-returns/
+5. Club Thriller The Experience | 2026-09-05T19:00:00+02:00 | Galaxy Disco Restaurant
+https://www.quicket.co.za/events/368884-club-thriller-the-experience/
+6. Penthouse Society | 2026-06-27T12:00:00+02:00 | Hotel Sky Cape Town
+https://www.quicket.co.za/events/369857-penthouse-society/
+7. The Two Oceans Aquarium: The Waterfront Duck Co Tours: Jan - March 2027 | 2027-01-01T10:00:00+02:00 | Two Oceans Aquarium - The Duck Boat
+https://www.quicket.co.za/events/369652-the-two-oceans-aquarium-the-waterfront-duck-co-tours-jan-march-2027/
+8. The Aftermath | 2026-06-05T20:00:00+02:00 | Maroon | Restaurant & Lounge Bar
+https://www.quicket.co.za/events/371175-the-aftermath/
+9. JACK PAROW @ The NEW ARMCHAIR (SPRINGBOK ARMS) | 2026-06-26T20:00:00+02:00 | WOODSTOCK BREWERY
+https://www.quicket.co.za/events/371585-jack-parow-the-new-armchair-springbok-arms/
+10. Cape Town Business Summit 2026 | 2026-06-03T08:00:00+02:00 | Convention Square
+https://www.quicket.co.za/events/262019-cape-town-business-summit-2026/
+...and 8 more
 
 Webtickets Events
 -----------------
-Added: 0
+Added: 1
+1. Vinyl F1RST Thursdays (Special Edition) | 04 Jun 2026 18:00 | Protea Hotel Fire & Ice | FREE
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595890746
 
-Updated: 1
-1. Cape Town Abseil | From 02 Jun 2026 | Table Mountain | R995 - R1100
+Updated: 2
+1. Please, don’t call me moffie | From 03 Jun 2026 19:00 | Artscape, Arena, Cape Town | R150
+https://www.webtickets.co.za/v2/event.aspx?itemid=1591455210
+2. Cape Town Abseil | From 03 Jun 2026 | Table Mountain | R995 - R1100
 https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
 
-Removed: 0
+Removed: 1
+1. Sweat & Sound | 05 Jun 2026 18:00 | Protea Hotel Fire & Ice | R200 - R250 (Excl service fee)
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595851574
 
 Google Calendar
 ---------------

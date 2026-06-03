@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-02T08:42:59.150433Z",
+  "generated_at": "2026-06-03T09:00:05.235565Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
+    {
+      "id": "yt-ZRpbtvbT9Aw",
+      "video_id": "ZRpbtvbT9Aw",
+      "title": "Why This Witcher 3 Expansion Is Such A Big Deal",
+      "url": "https://www.youtube.com/watch?v=ZRpbtvbT9Aw",
+      "published_at": "2026-06-02T15:00:39+00:00",
+      "updated_at": "2026-06-03T08:22:08+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/ZRpbtvbT9Aw/hqdefault.jpg"
+    },
     {
       "id": "yt-a8FPXI8jUP0",
       "video_id": "a8FPXI8jUP0",
@@ -131,15 +140,6 @@
       "published_at": "2026-05-20T16:58:35+00:00",
       "updated_at": "2026-05-24T13:10:14+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/70uWg4c76z4/hqdefault.jpg"
-    },
-    {
-      "id": "yt-ElBSzgTCh84",
-      "video_id": "ElBSzgTCh84",
-      "title": "LEGO Batman: Legacy of The Dark Knight - Before You Buy",
-      "url": "https://www.youtube.com/watch?v=ElBSzgTCh84",
-      "published_at": "2026-05-19T17:36:31+00:00",
-      "updated_at": "2026-05-28T23:20:29+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/ElBSzgTCh84/hqdefault.jpg"
     }
   ]
 }
