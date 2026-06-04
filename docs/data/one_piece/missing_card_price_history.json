@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04T19:12:27Z",
+  "updated_at": "2026-06-04T21:22:11Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -18156,6 +18156,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-04",
       "captured_at": "2026-06-04T16:15:17Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 900.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
+      "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-04",
+      "captured_at": "2026-06-04T21:22:11Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2160.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-04",
+      "captured_at": "2026-06-04T21:22:11Z"
     }
   ]
 }
