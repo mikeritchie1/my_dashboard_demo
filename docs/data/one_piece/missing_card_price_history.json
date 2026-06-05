@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05T12:07:23Z",
+  "updated_at": "2026-06-05T15:45:46Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -18528,6 +18528,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-05",
       "captured_at": "2026-06-05T08:13:02Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "alternate",
+      "price": 534.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-05",
+      "captured_at": "2026-06-05T15:45:46Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1277.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-05",
+      "captured_at": "2026-06-05T15:45:46Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2213.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-05",
+      "captured_at": "2026-06-05T15:45:46Z"
     }
   ]
 }
