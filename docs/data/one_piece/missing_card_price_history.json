@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06T14:22:57Z",
+  "updated_at": "2026-06-06T16:00:39Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -18876,6 +18876,18 @@
       "stock": "In stock",
       "observed_on": "2026-06-06",
       "captured_at": "2026-06-06T10:48:18Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "art_variant": "original",
+      "price": 57.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-06",
+      "captured_at": "2026-06-06T16:00:39Z"
     }
   ]
 }
