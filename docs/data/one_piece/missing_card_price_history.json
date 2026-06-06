@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06T05:45:53Z",
+  "updated_at": "2026-06-06T08:21:01Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -18852,6 +18852,18 @@
       "stock": "In stock",
       "observed_on": "2026-06-06",
       "captured_at": "2026-06-06T05:45:53Z"
+    },
+    {
+      "card_number": "OP07-057",
+      "art_variant": "original",
+      "price": 375.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
+      "title": "Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-06",
+      "captured_at": "2026-06-06T08:21:01Z"
     }
   ]
 }
