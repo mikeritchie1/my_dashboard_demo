@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06T01:56:24Z",
+  "updated_at": "2026-06-06T05:45:53Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -18840,6 +18840,18 @@
       "stock": "In stock",
       "observed_on": "2026-06-06",
       "captured_at": "2026-06-06T01:56:24Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 770.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-06",
+      "captured_at": "2026-06-06T05:45:53Z"
     }
   ]
 }
