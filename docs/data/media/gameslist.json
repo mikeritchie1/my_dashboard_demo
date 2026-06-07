@@ -6,10 +6,6 @@
         {
           "title": "Directive 8020",
           "opinion": ""
-        },
-        {
-          "title": "007: First Light",
-          "opinion": ""
         }
       ],
       "indie": [
@@ -185,15 +181,7 @@
         "opinion": ""
       },
       {
-        "title": "Ninja Gaiden 4",
-        "opinion": ""
-      },
-      {
         "title": "Donkey Kong: Bananza",
-        "opinion": ""
-      },
-      {
-        "title": "Ghost of Yotei",
         "opinion": ""
       }
     ],
@@ -291,6 +279,16 @@
         {
           "type": "game_aaa",
           "title": "Mafia: The Old Country",
+          "opinion": ""
+        },
+        {
+          "type": "game_aaa",
+          "title": "007: First Light",
+          "opinion": ""
+        },
+        {
+          "type": "game_aaa",
+          "title": "Ghost of Yotei",
           "opinion": ""
         },
         {

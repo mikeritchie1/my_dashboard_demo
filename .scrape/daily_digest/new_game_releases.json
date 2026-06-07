@@ -2,6 +2,14 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Atre: Dominance Wars",
+      "url": "https://rawg.io/games/atre-dominance-wars",
+      "image": "https://media.rawg.io/media/screenshots/f7a/f7a430ca85ac908d75733e8b058ae063.jpg",
+      "release_date": "2026-06-07",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Gothic 1 Remake",
       "url": "https://rawg.io/games/gothic-1-remake",
       "image": "https://media.rawg.io/media/games/f24/f24d20c6fddb77fe83d39cbfd7d4687f.jpg",
@@ -18,12 +26,28 @@
       "platforms": "PC"
     },
     {
+      "title": "Fatekeeper",
+      "url": "https://rawg.io/games/fatekeeper",
+      "image": "https://media.rawg.io/media/screenshots/2ab/2ab6b2a2a0dd143aae68b5c83ae3fbee.jpg",
+      "release_date": "2026-06-02",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Eternal Palace Sakura",
       "url": "https://rawg.io/games/eternal-palace-sakura",
       "image": "https://media.rawg.io/media/screenshots/693/693a515d1be6b244afeac62c7e3194ae.jpg",
       "release_date": "2026-06-01",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Caribbean Frontier",
+      "url": "https://rawg.io/games/caribbean-frontier",
+      "image": "https://media.rawg.io/media/screenshots/5c2/5c2789da6a83f81867e7dde792387008.jpg",
+      "release_date": "2026-06-01",
+      "rating": "0.0",
+      "platforms": "PC, Linux"
     },
     {
       "title": "Backrooms: The Wrong Door",
@@ -72,6 +96,14 @@
       "release_date": "2026-05-28",
       "rating": "0.0",
       "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "Echo Generation 2",
+      "url": "https://rawg.io/games/echo-generation-2",
+      "image": "https://media.rawg.io/media/screenshots/e03/e03e950a96bc2974bf9d1e45e1fba3e7.jpg",
+      "release_date": "2026-05-27",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "868-BACK",
@@ -128,6 +160,14 @@
       "release_date": "2026-05-26",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Yerba Buena",
+      "url": "https://rawg.io/games/yerba-buena",
+      "image": "https://media.rawg.io/media/screenshots/e59/e59e2cd6bdad241b7f142c2ebe23ce3b.jpg",
+      "release_date": "2026-05-26",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5"
     },
     {
       "title": "Vortica",
@@ -234,14 +274,6 @@
       "platforms": "PC"
     },
     {
-      "title": "Phonopolis",
-      "url": "https://rawg.io/games/phonopolis",
-      "image": "https://media.rawg.io/media/games/044/044e2732dc470c41a6a2ac074bdf7fb0.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC, macOS"
-    },
-    {
       "title": "ZERO PARADES: For Dead Spies Bundle",
       "url": "https://rawg.io/games/zero-parades-for-dead-spies-bundle",
       "image": "https://media.rawg.io/media/screenshots/6f0/6f00ca365527633a9c05fc25025fa38f.jpg",
@@ -256,6 +288,14 @@
       "release_date": "2026-05-20",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Phonopolis",
+      "url": "https://rawg.io/games/phonopolis",
+      "image": "https://media.rawg.io/media/games/044/044e2732dc470c41a6a2ac074bdf7fb0.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
     },
     {
       "title": "Forza Horizon 6",
@@ -314,6 +354,14 @@
       "platforms": "PC"
     },
     {
+      "title": "Dead Spell",
+      "url": "https://rawg.io/games/dead-spell",
+      "image": "https://media.rawg.io/media/screenshots/fed/fed83d5cb832ab735923fdf123fba08c.jpg",
+      "release_date": "2026-05-15",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Backrooms: The Last Observer",
       "url": "https://rawg.io/games/backrooms-the-last-observer",
       "image": "https://media.rawg.io/media/screenshots/af7/af7e0a0396827d17c398831c54bcb085.jpg",
@@ -352,65 +400,9 @@
       "release_date": "2026-05-13",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Vultures - Scavengers of Death",
-      "url": "https://rawg.io/games/vultures-scavengers-of-death",
-      "image": "https://media.rawg.io/media/screenshots/de0/de0325bbad5c0ce779a0d956c7fb61a0.jpg",
-      "release_date": "2026-05-13",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Black Jacket",
-      "url": "https://rawg.io/games/black-jacket",
-      "image": "https://media.rawg.io/media/screenshots/16b/16b3b24cebc56923449cb2396517adfa.jpg",
-      "release_date": "2026-05-13",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "RoadOut",
-      "url": "https://rawg.io/games/roadout",
-      "image": "https://media.rawg.io/media/screenshots/58c/58cb75a2be085182d018c05c3d852bc5.jpg",
-      "release_date": "2026-05-13",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Sushi Duel",
-      "url": "https://rawg.io/games/sushi-duel",
-      "image": "https://media.rawg.io/media/screenshots/2d2/2d2b061e1e992665dfda8dcf22b4c80e.jpg",
-      "release_date": "2026-05-12",
-      "rating": "0.0",
-      "platforms": "PC, Xbox One, Xbox Series S/X"
-    },
-    {
-      "title": "Clockwork Ambrosia",
-      "url": "https://rawg.io/games/clockwork-ambrosia",
-      "image": "https://media.rawg.io/media/screenshots/3ef/3ef0787f01a9fd890ff7949fb49f8a8f.jpg",
-      "release_date": "2026-05-12",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Call of the Elder Gods",
-      "url": "https://rawg.io/games/call-of-the-elder-gods",
-      "image": "https://media.rawg.io/media/screenshots/a59/a59693f3a6250d80feda4912aef8e64a.jpg",
-      "release_date": "2026-05-12",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     }
   ],
   "coming_soon": [
-    {
-      "title": "Atre: Dominance Wars",
-      "url": "https://rawg.io/games/atre-dominance-wars",
-      "image": "https://media.rawg.io/media/screenshots/f7a/f7a430ca85ac908d75733e8b058ae063.jpg",
-      "release_date": "2026-06-07",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
     {
       "title": "NBA THE RUN",
       "url": "https://rawg.io/games/nba-the-run",
@@ -458,6 +450,14 @@
       "release_date": "2026-07-09",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Pit Panic",
+      "url": "https://rawg.io/games/pit-panic",
+      "image": "https://media.rawg.io/media/screenshots/957/95764a29aa590dbfc91c1d910624222c.jpg",
+      "release_date": "2026-07-20",
+      "rating": "0.0",
+      "platforms": ""
     },
     {
       "title": "Splatoon Raiders",

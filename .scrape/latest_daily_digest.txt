@@ -4,18 +4,18 @@ One Piece Cards
 ---------------
 Added: 0
 
-Updated: 18
+Updated: 19
 1. Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards] | Knightly Gaming | 16.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards
 2. Smoker [Starter Deck: Absolute Justice] | Big Bang Shop | 30.0
 https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice
-3. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 52.0
+3. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 53.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards
-4. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 60.0
+4. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 57.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation
 5. Dracule Mihawk [Live Action Edition] | Big Bang Shop | 95.0
 https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition
-6. Arlong (Alternate Art) [Extra Booster: Anime 25th Collection] | Big Bang Shop | 120.0
+6. Arlong (Alternate Art) [Extra Booster: Anime 25th Collection] | Big Bang Shop | 115.0
 https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection
 7. Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards] | Big Bang Shop | 190.0
 https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards
@@ -23,21 +23,19 @@ https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-0
 https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-p-031-premium-card-collection-uta-one-piece-promotion-cards
 9. Sanji [One Piece Film: Red] | Big Bang Shop | 340.0
 https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red
-10. Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards] | Big Bang Shop | 370.0
+10. Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards] | Big Bang Shop | 375.0
 https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards
-...and 8 more
+...and 9 more
 
-Removed: 3
-1. Trafalgar Law (ST10-010) (Reprint) [Premium Booster -The Best-] | GeekHaven | 66.0
-https://www.bobshop.co.za/trafalgar-law-st10-010-reprint-premium-booster-the-best/p/681988089
-2. Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-] | GeekHaven | 35.0
-https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/681983530
-3. Ms. All Sunday (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 902.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven
+Removed: 1
+1. Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-] | GeekHaven | 30.0
+https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/682202476
 
 New Releases
 ------------
-Added: 0
+Added: 1
+1. Office Romance
+https://pahe.ink/office-romance-2026-web-dl-480p-720p-1080p/
 
 Updated: 0
 
@@ -47,13 +45,13 @@ Coming Soon Movies
 ------------------
 Added: 0
 
-Updated: 2
-1. Disclosure Day | 2026-06-12
-https://www.themoviedb.org/movie/1275779
-2. National Theatre Live: Inter Alia | 2026-07-24
-https://www.themoviedb.org/movie/1454209
+Updated: 0
 
-Removed: 0
+Removed: 2
+1. Masters of the Universe | 2026-06-05
+https://www.themoviedb.org/movie/454639
+2. Power Ballad | 2026-06-05
+https://www.themoviedb.org/movie/1284016
 
 Open Air Cinema
 ---------------
@@ -65,29 +63,47 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 1
-1. Gothic 1 Remake | 2026-06-05
-https://rawg.io/games/gothic-1-remake
+Added: 6
+1. Caribbean Frontier | 2026-06-01
+https://rawg.io/games/caribbean-frontier
+2. Fatekeeper | 2026-06-02
+https://rawg.io/games/fatekeeper
+3. Dead Spell | 2026-05-15
+https://rawg.io/games/dead-spell
+4. Yerba Buena | 2026-05-26
+https://rawg.io/games/yerba-buena
+5. Atre: Dominance Wars | 2026-06-07
+https://rawg.io/games/atre-dominance-wars
+6. Echo Generation 2 | 2026-05-27
+https://rawg.io/games/echo-generation-2
 
 Updated: 0
 
-Removed: 1
-1. Greenhearth Necromancer | 2026-05-12
-https://rawg.io/games/greenhearth-necromancer
+Removed: 6
+1. Call of the Elder Gods | 2026-05-12
+https://rawg.io/games/call-of-the-elder-gods
+2. RoadOut | 2026-05-13
+https://rawg.io/games/roadout
+3. Clockwork Ambrosia | 2026-05-12
+https://rawg.io/games/clockwork-ambrosia
+4. Vultures - Scavengers of Death | 2026-05-13
+https://rawg.io/games/vultures-scavengers-of-death
+5. Sushi Duel | 2026-05-12
+https://rawg.io/games/sushi-duel
+6. Black Jacket | 2026-05-13
+https://rawg.io/games/black-jacket
 
 Coming Soon Games
 -----------------
-Added: 2
-1. Star Wars Zero Company | 2026-08-27
-https://rawg.io/games/star-wars-zero-company
-2. The Blood Of Dawnwalker | 2026-09-03
-https://rawg.io/games/the-blood-of-dawnwalker
+Added: 1
+1. Pit Panic | 2026-07-20
+https://rawg.io/games/pit-panic
 
 Updated: 0
 
 Removed: 1
-1. Gothic 1 Remake | 2026-06-05
-https://rawg.io/games/gothic-1-remake
+1. Atre: Dominance Wars | 2026-06-07
+https://rawg.io/games/atre-dominance-wars
 
 Bandsintown Events
 ------------------
@@ -99,75 +115,83 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 11
-1. WILLOWBRIDGE SHOPPING CENTRE BUBBLE PLANET | 2026-07-11T10:00:00+02:00 | Willowbridge Shopping Centre
-https://www.quicket.co.za/events/376829-willowbridge-shopping-centre-bubble-planet/
-2. Atlantis Art Exhibition | 2026-06-27T16:00:00+02:00 | Atlantis Multipurpose Sports Centre
-https://www.quicket.co.za/events/373573-atlantis-art-exhibition/
-3. Albert Frost & Jake Gunn | 2026-06-06T18:00:00+02:00 | Brass Bell
-https://www.quicket.co.za/events/369831-albert-frost-jake-gunn/
-4. DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS | 2027-01-02T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/
-5. Majik Forest: Run, walk, refresh | 2026-06-16T07:00:00+02:00 | Majik Forest Shopping Centre
-https://www.quicket.co.za/events/371411-majik-forest-run-walk-refresh/
-6. DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS | 2027-02-01T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/
-7. PechaKucha #69 Come in out the cold | 2026-07-09T18:30:00+02:00 | Homecoming Centre
-https://www.quicket.co.za/events/376068-pechakucha-69-come-in-out-the-cold/
-8. As Time Goes By | 2026-06-06T12:00:00+02:00 | NG Kerk Bloubergstrand
-https://www.quicket.co.za/events/368578-as-time-goes-by/
-9. Oh so 2000's Y2k Rave Edition | 2026-06-05T21:00:00+02:00 | Destiny Cape Town
-https://www.quicket.co.za/events/378521-oh-so-2000s-y2k-rave-edition/
-10. Bach in Dialogue | 2026-06-10T19:00:00+02:00 | St Andrew's Presbytarian Church, De Waterkant, Cape Town
-https://www.quicket.co.za/events/375777-bach-in-dialogue/
-...and 1 more
+Added: 37
+1. ALAS Academy presents Sessions in Bloom - VOL. 1 LIVE! @ café Roux | 2026-06-17T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/376775-alas-academy-presents-sessions-in-bloom-vol-1-live-caf-roux/
+2. A Gallery Evening By Scape Events | 2026-06-20T17:00:00+02:00 | Scape Events
+https://www.quicket.co.za/events/377580-a-gallery-evening-by-scape-events/
+3. WALLSCAPES | 2026-06-11T18:00:00+02:00 | Lime Tree Cafe
+https://www.quicket.co.za/events/375238-wallscapes/
+4. ARC Launch Event | Cape Town 2026 | 2026-06-10T09:00:00+02:00 | Urban Edge Church, Durbanville
+https://www.quicket.co.za/events/374367-arc-launch-event-cape-town-2026/
+5. Kultura Fees: Liewe Heksie en die Wals | 2026-08-01T10:00:00+02:00 | Curro Durbanville Theatre
+https://www.quicket.co.za/events/375540-kultura-fees-liewe-heksie-en-die-wals/
+6. Penthouse Society | 2026-06-27T12:00:00+02:00 | Hotel Sky Cape Town
+https://www.quicket.co.za/events/369857-penthouse-society/
+7. AFTERDARK lll | 2026-06-27T21:00:00+02:00 | Destiny Cape Town
+https://www.quicket.co.za/events/376723-afterdark-lll/
+8. Rallim Colour Run 2026 | 2026-06-20T08:00:00+02:00 | Rallim - Main Field
+https://www.quicket.co.za/events/377282-rallim-colour-run-2026/
+9. Phil de Lange: Why are you like this? LIVE in Cape Town at The Protea Hotel Fire & Ice! 10 & 11 July 2026 | 2026-07-10T19:30:00+02:00 | Protea Hotel Fire & Ice! Cape Town
+https://www.quicket.co.za/events/378456-phil-de-lange-why-are-you-like-this-live-in-cape-town-at-the-protea-hotel-fire/
+10. Vicious Aliens - Warehouse Rave - Vivic's Birthday Bash - 12 June - The Bunker - Book Now | 2026-06-12T20:00:00+02:00 | 41A Mansell Rd
+https://www.quicket.co.za/events/378372-vicious-aliens-warehouse-rave-vivics-birthday-bash-12-june-the-bunker-book-now/
+...and 27 more
 
 Updated: 2
-1. FRIENDS FEST FRIDAYS | 2026-06-05T17:00:00+02:00 | Maroon Bar and Lounge
-https://www.quicket.co.za/events/377528-friends-fest-fridays/
-2. Fantasia & Universal Frequencies (Gaia) Presents - Dance of the fairies | 2026-06-05T21:00:00+02:00 | The Bunker
-https://www.quicket.co.za/events/374879-fantasia-universal-frequencies-gaia-presents-dance-of-the-fairies/
+1. The Alignment Conversation with Lali Tokwe | 2026-06-13T12:00:00+02:00 | FaithPoint Church - Cape Town
+https://www.quicket.co.za/events/373326-the-alignment-conversation-with-lali-tokwe/
+2. Musical Mondays July | 2026-07-27T19:30:00+02:00 | The Outlore Base
+https://www.quicket.co.za/events/371861-musical-mondays-july/
 
-Removed: 11
-1. JACK PAROW @ WOODSTOCK BREWERY | 2026-06-26T20:00:00+02:00 | WOODSTOCK BREWERY
-https://www.quicket.co.za/events/371585-jack-parow-woodstock-brewery/
-2. Rewind 80's - 90's Old School Party | 2026-06-27T17:00:00+02:00 | 51st Avenue
-https://www.quicket.co.za/events/374946-rewind-80s-90s-old-school-party/
-3. ITSAHOUSE | 2026-06-04T18:00:00+02:00 | 70a Kloof St
-https://www.quicket.co.za/events/376323-itsahouse/
-4. 10/06/2026 CPT MEGA Agent ....1 Day Program | 2026-06-10T08:30:00+02:00 | King David Mowbray Golf Club
-https://www.quicket.co.za/events/377173-10062026-cpt-mega-agent-1-day-program/
-5. Byster | 2026-06-11T19:30:00+02:00 | Kaapstad Toneelhuis
-https://www.quicket.co.za/events/374951-byster/
-6. WALLSCAPES | 2026-06-11T18:00:00+02:00 | Lime Tree Cafe
-https://www.quicket.co.za/events/375238-wallscapes/
-7. Watershed Stripped Down @ café Roux | 2026-06-04T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/369435-watershed-stripped-down-caf-roux/
-8. Havana: First Thursday Experience | 2026-06-04T17:00:00+02:00 | 9 Albertus St
-https://www.quicket.co.za/events/378071-havana-first-thursday-experience/
-9. Kaas Kween Comedy night at Infusion Rondebosch | 2026-06-04T19:30:00+02:00 | Infusion Rondebosch
-https://www.quicket.co.za/events/377815-kaas-kween-comedy-night-at-infusion-rondebosch/
-10. Autistic Adults Social Coffee Meetup - Helderberg | 2026-06-06T10:00:00+02:00 | Sunset Books
-https://www.quicket.co.za/events/367704-autistic-adults-social-coffee-meetup-helderberg/
-...and 1 more
+Removed: 37
+1. The Fort Athletic Club | 2026-06-06T15:00:00+02:00 | The Fort Athletic Club
+https://www.quicket.co.za/events/377958-the-fort-athletic-club/
+2. The Aftermath | 2026-06-05T20:00:00+02:00 | Maroon | Restaurant & Lounge Bar
+https://www.quicket.co.za/events/371175-the-aftermath/
+3. Keenan Cerff LIVE in Cape Town at The Protea Hotel Fire & Ice! 05 & 06 June 2026 | 2026-06-05T19:00:00+02:00 | Protea Hotel Fire & Ice! Cape Town
+https://www.quicket.co.za/events/376426-keenan-cerff-live-in-cape-town-at-the-protea-hotel-fire-ice-05-06-june-2026/
+4. The Great Mass: Mozart's Mass in C Minor, K. 427/417, and Vesperae Solennes de Confessore KV 339 (Vespers for the Saints) | 2026-06-06T19:00:00+02:00 | Cape Town City Hall
+https://www.quicket.co.za/events/362128-the-great-mass-mozarts-mass-in-c-minor-k-427417-and-vesperae-solennes-de-confes/
+5. SUPER DISKO | 2026-06-05T19:00:00+02:00 | Hotel Sky Cape Town
+https://www.quicket.co.za/events/375293-super-disko/
+6. A Musical Comedy Parody Night: Vol 3 | 2026-06-06T20:00:00+02:00 | Ground Culture Cafe
+https://www.quicket.co.za/events/376195-a-musical-comedy-parody-night-vol-3/
+7. St Peters Church Mowbray Dance Evening | 2026-06-05T18:00:00+02:00 | St George's Cathedral
+https://www.quicket.co.za/events/374064-st-peters-church-mowbray-dance-evening/
+8. Feel, Sense & Write: A Guided Writing & Self-Expression Experience | 2026-06-06T18:15:00+02:00 | Allure Sensuality Emporium
+https://www.quicket.co.za/events/372052-feel-sense-write-a-guided-writing-self-expression-experience/
+9. ALL BLACK EXPERIENCE | 2026-06-06T19:00:00+02:00 | TIK TOK BAR
+https://www.quicket.co.za/events/374636-all-black-experience/
+10. GMC 60th Anniversary Celebration | 2026-06-07T09:00:00+02:00 | 208 Alice St
+https://www.quicket.co.za/events/364128-gmc-60th-anniversary-celebration/
+...and 27 more
 
 Webtickets Events
 -----------------
-Added: 1
-1. Sweat & Sound | 05 Jun 2026 18:00 | Protea Hotel Fire & Ice | R200 - R250 (Excl service fee)
-https://www.webtickets.co.za/v2/event.aspx?itemid=1595851574
+Added: 4
+1. Makin’ Magic – Family Magic Show | From 07 Jun 2026 12:00 | Artscape, Theatre, Cape Town | R165 - R180
+https://www.webtickets.co.za/v2/event.aspx?itemid=1590797635
+2. FynArts Festival 2026 | From 07 Jun 2026 12:00 | From R120
+https://www.webtickets.co.za/v2/event.aspx?itemid=1588256840
+3. VISIT TO FISH HOEK VALLEY MUSEUM | 08 Jun 2026 10:00 | Fish Hoek Valley Museum | R120 - R150
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595766943
+4. Seun | 07 Jun 2026 15:00 | The George Arts Theatre, 125 York Street, George Central | R200
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595285107
 
-Updated: 3
-1. Please, don’t call me moffie | From 05 Jun 2026 15:00 | Artscape, Arena, Cape Town | R150
-https://www.webtickets.co.za/v2/event.aspx?itemid=1591455210
-2. Killer Queen - A LAMTA Dance Production | From 05 Jun 2026 20:00 | Theatre On The Bay, Camps Bay | R200 - R320
-https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134
-3. Cape Town Abseil | From 05 Jun 2026 | Table Mountain | R995 - R1100
+Updated: 1
+1. Cape Town Abseil | From 07 Jun 2026 | Table Mountain | R995 - R1100
 https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
 
-Removed: 1
-1. Vinyl F1RST Thursdays (Special Edition) | 04 Jun 2026 18:00 | Protea Hotel Fire & Ice | FREE
-https://www.webtickets.co.za/v2/event.aspx?itemid=1595890746
+Removed: 4
+1. Killer Queen - A LAMTA Dance Production | From 05 Jun 2026 20:00 | Theatre On The Bay, Camps Bay | R200 - R320
+https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134
+2. Sweat & Sound | 05 Jun 2026 18:00 | Protea Hotel Fire & Ice | R200 - R250 (Excl service fee)
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595851574
+3. Please, don’t call me moffie | From 05 Jun 2026 15:00 | Artscape, Arena, Cape Town | R150
+https://www.webtickets.co.za/v2/event.aspx?itemid=1591455210
+4. The Jive Cape Town Funny Festival | from 28 May 2026 20:00 | R190 - R250
+https://www.webtickets.co.za/v2/event.aspx?itemid=1582738777
 
 Google Calendar
 ---------------

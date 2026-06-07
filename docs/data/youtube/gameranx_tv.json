@@ -1,18 +1,36 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-05T08:13:25.481481Z",
+  "generated_at": "2026-06-07T07:58:24.005398Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
     {
+      "id": "yt-j_-oXPAxou8",
+      "video_id": "j_-oXPAxou8",
+      "title": "10 BIGGEST REVEALS of Summer Game Fest 2026",
+      "url": "https://www.youtube.com/watch?v=j_-oXPAxou8",
+      "published_at": "2026-06-06T15:23:12+00:00",
+      "updated_at": "2026-06-07T07:07:00+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/j_-oXPAxou8/hqdefault.jpg"
+    },
+    {
+      "id": "yt-5Kuv7VI1eho",
+      "video_id": "5Kuv7VI1eho",
+      "title": "CDPROJEKT RED NEW OPEN WORLD GAME, PS5 EXCLUSIVE SALES CRASHING? & MORE",
+      "url": "https://www.youtube.com/watch?v=5Kuv7VI1eho",
+      "published_at": "2026-06-05T19:30:54+00:00",
+      "updated_at": "2026-06-05T19:44:36+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/5Kuv7VI1eho/hqdefault.jpg"
+    },
+    {
       "id": "yt-sNHzh7MYc90",
       "video_id": "sNHzh7MYc90",
       "title": "10 Games That Are DEEPER THAN WE THOUGHT",
       "url": "https://www.youtube.com/watch?v=sNHzh7MYc90",
       "published_at": "2026-06-04T16:50:02+00:00",
-      "updated_at": "2026-06-05T05:37:25+00:00",
+      "updated_at": "2026-06-05T09:04:51+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/sNHzh7MYc90/hqdefault.jpg"
     },
     {
@@ -111,7 +129,7 @@
       "title": "007 First Light - Before You Buy",
       "url": "https://www.youtube.com/watch?v=oTJSHLRYBhE",
       "published_at": "2026-05-26T21:09:14+00:00",
-      "updated_at": "2026-05-27T17:16:56+00:00",
+      "updated_at": "2026-06-05T14:12:35+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/oTJSHLRYBhE/hqdefault.jpg"
     },
     {
@@ -122,24 +140,6 @@
       "published_at": "2026-05-25T15:38:21+00:00",
       "updated_at": "2026-06-01T16:13:31+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/G2xUaiz2RH8/hqdefault.jpg"
-    },
-    {
-      "id": "yt-pNBbvHPb-qQ",
-      "video_id": "pNBbvHPb-qQ",
-      "title": "20 Best FREE Games We've EVER PLAYED",
-      "url": "https://www.youtube.com/watch?v=pNBbvHPb-qQ",
-      "published_at": "2026-05-24T16:58:43+00:00",
-      "updated_at": "2026-05-31T22:45:24+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/pNBbvHPb-qQ/hqdefault.jpg"
-    },
-    {
-      "id": "yt-gvnf8nm1Htg",
-      "video_id": "gvnf8nm1Htg",
-      "title": "10 Recent Games That SPOILED US",
-      "url": "https://www.youtube.com/watch?v=gvnf8nm1Htg",
-      "published_at": "2026-05-23T17:44:21+00:00",
-      "updated_at": "2026-05-30T22:53:39+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/gvnf8nm1Htg/hqdefault.jpg"
     }
   ]
 }
