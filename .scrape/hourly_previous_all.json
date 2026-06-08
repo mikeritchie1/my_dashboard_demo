@@ -976,21 +976,6 @@
       "scraped_at": "2026-06-05T23:56:39Z"
     },
     {
-      "card_number": "OP04-056",
-      "price": "740.0",
-      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
-      "rarity": "Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Premium Booster -The Best-",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R740.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
-      "art_variant": "alternate",
-      "scraped_at": "2026-06-05T23:56:39Z"
-    },
-    {
       "card_number": "OP09-118",
       "price": "750.0",
       "title": "Gol.D.Roger OP09-118 Regular",
@@ -1004,6 +989,21 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-06-07T20:58:34Z"
+    },
+    {
+      "card_number": "OP04-056",
+      "price": "760.0",
+      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
+      "rarity": "Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Premium Booster -The Best-",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R760.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
+      "art_variant": "alternate",
+      "scraped_at": "2026-06-05T23:56:39Z"
     },
     {
       "card_number": "P-072",
@@ -1067,14 +1067,14 @@
     },
     {
       "card_number": "OP06-106",
-      "price": "2615.0",
+      "price": "2665.0",
       "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Premium Booster -The Best-",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R2615.00",
+      "available_variants": "Near Mint Foil R2665.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
       "art_variant": "alternate",
