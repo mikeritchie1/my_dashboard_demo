@@ -24,6 +24,7 @@ DEFAULT_CHANNELS = [
         "url": "https://www.youtube.com/@PlotArmor",
     }
 ]
+STATIC_SERIES_KEYS = ("avatar_the_last_airbender",)
 
 ATOM_NS = {
     "atom": "http://www.w3.org/2005/Atom",
@@ -550,6 +551,24 @@ def load_existing_payload() -> dict:
     return payload
 
 
+def preserve_static_series(payload: dict) -> dict:
+    if not OUTPUT_PATH.exists():
+        return payload
+    try:
+        existing_payload = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return payload
+    existing_series = existing_payload.get("series", {}) if isinstance(existing_payload, dict) else {}
+    if not isinstance(existing_series, dict):
+        return payload
+    payload.setdefault("series", {})
+    for key in STATIC_SERIES_KEYS:
+        series_payload = existing_series.get(key)
+        if isinstance(series_payload, dict):
+            payload["series"][key] = series_payload
+    return payload
+
+
 def scrape_recent_channels(channels: list[dict], timeout: int, limit: int) -> list[dict]:
     recent_payloads: list[dict] = []
     cache = load_cache()
@@ -721,8 +740,12 @@ def scrape_channel_via_ytdlp(
 def write_payload(payload: dict) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
-    total_items = len(payload.get("series", {}).get("one_piece", {}).get("videos", []))
-    print(f"Wrote {total_items} video item(s) to {OUTPUT_PATH}", flush=True)
+    total_items = sum(
+        len(series.get("videos", []))
+        for series in payload.get("series", {}).values()
+        if isinstance(series, dict) and isinstance(series.get("videos", []), list)
+    )
+    print(f"Wrote {total_items} series video item(s) to {OUTPUT_PATH}", flush=True)
     one_piece = payload.get("series", {}).get("one_piece", {})
     start = int(one_piece.get("chapter_range_start") or 0)
     end = int(one_piece.get("chapter_range_end") or 0)
@@ -800,6 +823,7 @@ def main() -> int:
         payload = apply_manual_chapters(payload, timeout=max(5, args.timeout))
     if args.manual_only:
         payload = apply_manual_chapters(payload, timeout=max(5, args.timeout))
+    payload = preserve_static_series(payload)
     write_payload(payload)
     return 0
 

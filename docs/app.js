@@ -268,6 +268,7 @@ const elements = {
   youtubeThatsABadIdea: document.querySelector("#youtube-thats-a-bad-idea"),
   youtubeGameranxTv: document.querySelector("#youtube-gameranx-tv"),
   youtubeOnePiece: document.querySelector("#youtube-one-piece"),
+  youtubeAvatarTheLastAirbender: document.querySelector("#youtube-avatar-the-last-airbender"),
   youtubeOnePieceTabs: document.querySelector("#youtube-one-piece-tabs"),
   youtubeOnePieceTimeline: document.querySelector("#youtube-one-piece-timeline"),
   youtubeOnePieceTimelineTabs: document.querySelector("#youtube-one-piece-timeline-tabs"),
@@ -745,6 +746,51 @@ function renderYouTubeChannel(element, payload, currentVideoId = "", savedScroll
       }, 60);
     }
   }
+}
+
+function renderYouTubeSeries(element, seriesPayload) {
+  if (!element) {
+    return;
+  }
+  const items = Array.isArray(seriesPayload?.videos) ? seriesPayload.videos : [];
+  const playlistUrl = String(seriesPayload?.playlist_url || "").trim();
+  const channelUrl = String(seriesPayload?.channel_url || "").trim();
+  const channelName = String(seriesPayload?.channel_name || "").trim().replace(/\s*-\s*videos\s*$/i, "");
+  if (!items.length) {
+    element.innerHTML = '<p class="empty">No videos found.</p>';
+    return;
+  }
+  element.innerHTML = items.map((item) => {
+    const title = escapeHtml(String(item?.title || "Untitled video").trim());
+    const videoUrl = String(item?.url || "").trim();
+    if (!videoUrl) {
+      return "";
+    }
+    const thumbnailUrl = escapeHtml(String(item?.thumbnail_url || "").trim());
+    const safeUrl = escapeHtml(videoUrl);
+    const index = Number(item?.playlist_index || 0);
+    const metaParts = [];
+    if (Number.isInteger(index) && index > 0) {
+      metaParts.push(`Video ${index}`);
+    }
+    if (channelName) {
+      metaParts.push(channelName);
+    }
+    return `
+      <article class="youtube-video-card">
+        ${thumbnailUrl ? `<a href="${safeUrl}" target="_blank" rel="noreferrer"><img class="youtube-video-thumb" src="${thumbnailUrl}" alt="${title}" loading="lazy"></a>` : ""}
+        <div class="youtube-video-body">
+          ${item?.is_new ? '<span class="new-badge">New</span>' : ""}
+          ${metaParts.length ? `<p class="youtube-video-meta">${escapeHtml(metaParts.join(" • "))}</p>` : ""}
+          <h4 class="youtube-video-title"><a href="${safeUrl}" target="_blank" rel="noreferrer">${title}</a></h4>
+          <div class="youtube-video-meta">
+            ${playlistUrl ? `<a class="youtube-video-link" href="${escapeHtml(playlistUrl)}" target="_blank" rel="noreferrer">Open playlist</a>` : ""}
+            ${channelUrl ? `<a class="youtube-video-link" href="${escapeHtml(channelUrl)}" target="_blank" rel="noreferrer">View channel</a>` : ""}
+          </div>
+        </div>
+      </article>
+    `;
+  }).filter(Boolean).join("") || '<p class="empty">No videos found.</p>';
 }
 
 function renderYouTubeOnePiece(payload) {
@@ -6598,7 +6644,7 @@ async function loadNews() {
 }
 
 async function loadYouTubeVideos() {
-  if (!elements.youtubeOnePiece) {
+  if (!elements.youtubeOnePiece && !elements.youtubeAvatarTheLastAirbender) {
     return;
   }
   try {
@@ -6609,10 +6655,14 @@ async function loadYouTubeVideos() {
     const payload = await response.json();
     state.youtubePayload = payload;
     renderYouTubeOnePiece(payload);
+    renderYouTubeSeries(elements.youtubeAvatarTheLastAirbender, payload?.series?.avatar_the_last_airbender || {});
     syncOnePieceVideoTabs();
   } catch (error) {
     if (elements.youtubeOnePiece) {
       elements.youtubeOnePiece.innerHTML = `<p class="empty">${error.message}</p>`;
+    }
+    if (elements.youtubeAvatarTheLastAirbender) {
+      elements.youtubeAvatarTheLastAirbender.innerHTML = `<p class="empty">${error.message}</p>`;
     }
   }
 }
