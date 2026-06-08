@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08T19:56:25Z",
+  "updated_at": "2026-06-08T21:30:57Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -20820,6 +20820,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-08",
       "captured_at": "2026-06-08T19:56:25Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "art_variant": "original",
+      "price": 57.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-08",
+      "captured_at": "2026-06-08T21:30:57Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 689.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-08",
+      "captured_at": "2026-06-08T21:30:57Z"
     }
   ]
 }
