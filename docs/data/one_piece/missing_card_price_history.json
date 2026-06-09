@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09T05:57:20Z",
+  "updated_at": "2026-06-09T07:55:17Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -21780,6 +21780,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-09",
       "captured_at": "2026-06-09T05:57:20Z"
+    },
+    {
+      "card_number": "ST01-004",
+      "art_variant": "original",
+      "price": 345.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
+      "title": "Sanji [One Piece Film: Red]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-09",
+      "captured_at": "2026-06-09T07:55:17Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 1090.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-09",
+      "captured_at": "2026-06-09T07:55:17Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 3895.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
+      "title": "Zoro-Juurou (SP) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-09",
+      "captured_at": "2026-06-09T07:55:17Z"
     }
   ]
 }

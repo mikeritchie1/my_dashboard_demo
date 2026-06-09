@@ -2,6 +2,14 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "NBA THE RUN",
+      "url": "https://rawg.io/games/nba-the-run",
+      "image": "https://media.rawg.io/media/screenshots/e98/e984db819db44aac1dcfa26900f5b18e.jpg",
+      "release_date": "2026-06-09",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
       "title": "Atre: Dominance Wars",
       "url": "https://rawg.io/games/atre-dominance-wars",
       "image": "https://media.rawg.io/media/screenshots/f7a/f7a430ca85ac908d75733e8b058ae063.jpg",
@@ -16,6 +24,22 @@
       "release_date": "2026-06-05",
       "rating": "3.5",
       "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4"
+    },
+    {
+      "title": "Backrooms: Blackhole",
+      "url": "https://rawg.io/games/backrooms-blackhole",
+      "image": "https://media.rawg.io/media/screenshots/3e9/3e9821492ff88b209e4da8bbf2dd004f.jpg",
+      "release_date": "2026-06-05",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Gothic 1 Remake + Free Classic",
+      "url": "https://rawg.io/games/gothic-1-remake-free-classic",
+      "image": "https://media.rawg.io/media/screenshots/a12/a1262cc3d79fad2ebb3cedf6196f7692.jpg",
+      "release_date": "2026-06-04",
+      "rating": "0.0",
+      "platforms": ""
     },
     {
       "title": "The 7th Guest Remake",
@@ -210,20 +234,20 @@
       "platforms": "PC"
     },
     {
-      "title": "Zero Parades: For Dead Spies",
-      "url": "https://rawg.io/games/zero-parades-for-dead-spies",
-      "image": "https://media.rawg.io/media/games/52b/52bc4034309ecefe64b25e4c75a6b525.jpg",
-      "release_date": "2026-05-21",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
       "title": "Bubsy 4D",
       "url": "https://rawg.io/games/bubsy-4d",
       "image": "https://media.rawg.io/media/screenshots/3f5/3f56e79671e3e144fefb3ad30e924c2d.jpg",
       "release_date": "2026-05-21",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
+      "title": "Zero Parades: For Dead Spies",
+      "url": "https://rawg.io/games/zero-parades-for-dead-spies",
+      "image": "https://media.rawg.io/media/games/52b/52bc4034309ecefe64b25e4c75a6b525.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Yoshi and the Mysterious Book",
@@ -376,41 +400,9 @@
       "release_date": "2026-05-14",
       "rating": "0.0",
       "platforms": ""
-    },
-    {
-      "title": "ClosR",
-      "url": "https://rawg.io/games/closr",
-      "image": "https://media.rawg.io/media/screenshots/6e0/6e029ab098163bdf5e7bb5ed88b3b1e2.jpg",
-      "release_date": "2026-05-13",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Celsius Strays Demo",
-      "url": "https://rawg.io/games/celsius-strays-demo",
-      "image": "https://media.rawg.io/media/screenshots/0a6/0a6899a60176da4ec4abe04d8156f54e.jpg",
-      "release_date": "2026-05-13",
-      "rating": "0.0",
-      "platforms": "PC, macOS, Linux"
-    },
-    {
-      "title": "\u017divot Nen\u00ed Kr\u00e1sn\u00fd: Posledn\u00ed Exekuce",
-      "url": "https://rawg.io/games/zivot-neni-krasny-posledni-exekuce",
-      "image": "https://media.rawg.io/media/screenshots/aa7/aa7becd47613567740e4a76cf25217bd.jpg",
-      "release_date": "2026-05-13",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [
-    {
-      "title": "NBA THE RUN",
-      "url": "https://rawg.io/games/nba-the-run",
-      "image": "https://media.rawg.io/media/screenshots/e98/e984db819db44aac1dcfa26900f5b18e.jpg",
-      "release_date": "2026-06-09",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
     {
       "title": "Crushed In Time",
       "url": "https://rawg.io/games/crushed-in-time",
@@ -448,6 +440,14 @@
       "url": "https://rawg.io/games/assassins-creed-back-flag-resynced",
       "image": "https://media.rawg.io/media/screenshots/990/99088f6f170459244defd7afd9fce096.jpg",
       "release_date": "2026-07-09",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "The Alters: Last Variable",
+      "url": "https://rawg.io/games/the-alters-last-variable",
+      "image": "https://media.rawg.io/media/screenshots/c2c/c2c15aa0e7534185fa36c3210ee18541.jpg",
+      "release_date": "2026-07-13",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
@@ -500,6 +500,22 @@
       "platforms": "PC, PlayStation 5"
     },
     {
+      "title": "Defender of the Crown: The Legend Returns",
+      "url": "https://rawg.io/games/defender-of-the-crown-the-legend-returns",
+      "image": "https://media.rawg.io/media/screenshots/2c2/2c2751318377bdd9a8a8d5441b5afb58.jpg",
+      "release_date": "2026-08-12",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Mafia: The Old Country - Man of Honor",
+      "url": "https://rawg.io/games/mafia-the-old-country-man-of-honor",
+      "image": "https://media.rawg.io/media/screenshots/747/7471aaa7e49ed46fa3d4f69594bb9380.jpg",
+      "release_date": "2026-08-14",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
       "title": "Sinking City 2",
       "url": "https://rawg.io/games/sinking-city-2-2",
       "image": "https://media.rawg.io/media/screenshots/8f5/8f55c6c590a4eb8d97facbadfd8f605e.jpg",
@@ -520,6 +536,14 @@
       "url": "https://rawg.io/games/star-wars-zero-company",
       "image": "https://media.rawg.io/media/screenshots/faa/faa8c8ddde9c4ce33e5d6df5311378d3.jpg",
       "release_date": "2026-08-27",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "S.T.A.L.K.E.R. 2: Cost of Hope",
+      "url": "https://rawg.io/games/stalker-2-cost-of-hope",
+      "image": "https://media.rawg.io/media/screenshots/dfd/dfd84af21deeef2b53d2781023e484bc.jpg",
+      "release_date": "2026-08-31",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
