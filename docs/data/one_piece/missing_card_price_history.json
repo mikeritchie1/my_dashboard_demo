@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-10T08:12:07Z",
+  "updated_at": "2026-06-10T10:46:23Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -22812,6 +22812,54 @@
       "stock": "In stock",
       "observed_on": "2026-06-10",
       "captured_at": "2026-06-10T06:15:48Z"
+    },
+    {
+      "card_number": "ST01-004",
+      "art_variant": "original",
+      "price": 350.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
+      "title": "Sanji [One Piece Film: Red]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-10",
+      "captured_at": "2026-06-10T10:46:23Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 1220.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-10",
+      "captured_at": "2026-06-10T10:46:23Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1288.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-10",
+      "captured_at": "2026-06-10T10:46:23Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 3925.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
+      "title": "Zoro-Juurou (SP) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-10",
+      "captured_at": "2026-06-10T10:46:23Z"
     }
   ]
 }
