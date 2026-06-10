@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-09T07:55:39.218756Z",
+  "generated_at": "2026-06-10T08:12:29.998762Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
+    {
+      "id": "yt-UJ1jTet7uxg",
+      "video_id": "UJ1jTet7uxg",
+      "title": "Gothic 1 Remake - Before You Buy",
+      "url": "https://www.youtube.com/watch?v=UJ1jTet7uxg",
+      "published_at": "2026-06-09T18:38:49+00:00",
+      "updated_at": "2026-06-10T07:04:01+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/UJ1jTet7uxg/hqdefault.jpg"
+    },
     {
       "id": "yt-4zozsPPgpvY",
       "video_id": "4zozsPPgpvY",
@@ -48,7 +57,7 @@
       "title": "10 Games That Are DEEPER THAN WE THOUGHT",
       "url": "https://www.youtube.com/watch?v=sNHzh7MYc90",
       "published_at": "2026-06-04T16:50:02+00:00",
-      "updated_at": "2026-06-05T21:29:14+00:00",
+      "updated_at": "2026-06-09T19:54:19+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/sNHzh7MYc90/hqdefault.jpg"
     },
     {
@@ -75,7 +84,7 @@
       "title": "Why This Witcher 3 Expansion Is Such A Big Deal",
       "url": "https://www.youtube.com/watch?v=ZRpbtvbT9Aw",
       "published_at": "2026-06-02T15:00:39+00:00",
-      "updated_at": "2026-06-05T21:34:33+00:00",
+      "updated_at": "2026-06-09T21:08:04+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/ZRpbtvbT9Aw/hqdefault.jpg"
     },
     {
@@ -93,7 +102,7 @@
       "title": "Top 20 NEW Story Based Games of 2026",
       "url": "https://www.youtube.com/watch?v=SMwXRhhRwXA",
       "published_at": "2026-05-31T18:09:06+00:00",
-      "updated_at": "2026-06-05T21:34:16+00:00",
+      "updated_at": "2026-06-10T07:50:37+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/SMwXRhhRwXA/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-05-27T20:09:19+00:00",
       "updated_at": "2026-06-01T00:27:25+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/LRqL5ozXKZM/hqdefault.jpg"
-    },
-    {
-      "id": "yt-Crjse-HoP5I",
-      "video_id": "Crjse-HoP5I",
-      "title": "State of Play June 2026 - 10 Predictions We ARE DESPERATE FOR",
-      "url": "https://www.youtube.com/watch?v=Crjse-HoP5I",
-      "published_at": "2026-05-27T15:00:09+00:00",
-      "updated_at": "2026-06-05T21:33:16+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/Crjse-HoP5I/hqdefault.jpg"
     }
   ]
 }

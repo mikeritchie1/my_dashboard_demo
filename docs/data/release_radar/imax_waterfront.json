@@ -3,81 +3,43 @@
   "theatre": "Ster-Kinekor V&A Waterfront IMAX",
   "items": [
     {
-      "tmdb_id": 936075,
-      "tmdb_url": "https://www.themoviedb.org/movie/936075",
-      "tmdb_rating": "8.106",
-      "tmdb_votes": "1251",
-      "release_date": "2026-04-22",
-      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-      "runtime_minutes": "128",
+      "tmdb_id": 1275779,
+      "tmdb_url": "https://www.themoviedb.org/movie/1275779",
+      "tmdb_rating": "8.6",
+      "tmdb_votes": "13",
+      "release_date": "2026-06-10",
+      "overview": "A cybersecurity expert becomes a whistleblower to reveal secrets about aliens, putting him on the run from a corporation while a meteorologist experiences strange phenomena and joins forces with him to prove there's life beyond our knowledge.",
+      "runtime_minutes": "145",
       "genres": [
-        "Music",
-        "Drama"
+        "Mystery",
+        "Science Fiction",
+        "Thriller"
       ],
       "directors": [
-        "Antoine Fuqua"
+        "Steven Spielberg"
       ],
       "actors": [
-        "Jaafar Jackson",
+        "Josh O'Connor",
+        "Emily Blunt",
+        "Colin Firth",
+        "Eve Hewson",
         "Colman Domingo",
-        "Nia Long",
-        "Juliano Krue Valdi",
-        "Miles Teller",
-        "KeiLyn Durrel Jones",
-        "Kendrick Sampson",
-        "Joseph David-Jones",
-        "Rhyan Hill",
-        "Jamal Henderson"
+        "Wyatt Russell",
+        "Henry Lloyd-Hughes",
+        "Elizabeth Marvel",
+        "Michael Gaston",
+        "Gabby Beans"
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=k-YAcjaLuSI",
-      "poster_url": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
-      "title": "Michael",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_michael2d",
+      "trailer_url": "https://www.youtube.com/watch?v=icDuEHSxE-w",
+      "poster_url": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
+      "title": "Disclosure Day",
+      "url": "https://mydorpie.com/m/?page=m_waterimax_disclosureday2d",
       "source": "IMAX Waterfront",
       "status": "now_playing",
       "status_label": "Now playing",
       "showtimes": [],
       "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg"
-    },
-    {
-      "tmdb_id": 454639,
-      "tmdb_url": "https://www.themoviedb.org/movie/454639",
-      "tmdb_rating": "7.374",
-      "tmdb_votes": "131",
-      "release_date": "2026-06-03",
-      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "runtime_minutes": "141",
-      "genres": [
-        "Action",
-        "Fantasy",
-        "Science Fiction"
-      ],
-      "directors": [
-        "Travis Knight"
-      ],
-      "actors": [
-        "Nicholas Galitzine",
-        "Camila Mendes",
-        "Idris Elba",
-        "Jared Leto",
-        "Alison Brie",
-        "Jóhannes Haukur Jóhannesson",
-        "Jon Xue Zhang",
-        "Sam C. Wilson",
-        "Charlotte Riley",
-        "James Purefoy"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=rJSmz-zhDxE",
-      "poster_url": "https://image.tmdb.org/t/p/w342/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
-      "title": "The Masters of the Universe",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_themastersoftheuniverse2d",
-      "source": "IMAX Waterfront",
-      "status": "now_playing",
-      "status_label": "Now playing",
-      "showtimes": [],
-      "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg"
     }
   ]
 }

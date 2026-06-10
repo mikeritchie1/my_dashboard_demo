@@ -4,36 +4,33 @@ One Piece Cards
 ---------------
 Added: 0
 
-Updated: 12
-1. Nami (054) (Alternate Art) [A Fist of Divine Speed] | Knightly Gaming | 689.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed
-2. Arlong (Alternate Art) [Extra Booster: Anime 25th Collection] | Big Bang Shop | 120.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection
-3. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 54.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards
-4. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 57.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation
-5. Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-] | Big Bang Shop | 2665.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best
-6. Ground Death (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 2278.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven
-7. Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards] | Big Bang Shop | 200.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards
-8. Sanji [One Piece Film: Red] | Big Bang Shop | 345.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red
-9. Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-] | Big Bang Shop | 760.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best
-10. Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards] | Big Bang Shop | 1090.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards
-...and 2 more
+Updated: 4
+1. Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards] | Big Bang Shop | 380.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards
+2. Carrot (Parallel) [Two Legends] | Big Bang Shop | 445.0
+https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends
+3. Nami OP11-054 | Toad Trader TCG | 36.0
+https://www.toadtradertcg.com/product-page/nami-op11-054
+4. Ground Death OP14-096 | Toad Trader TCG | 102.0
+https://www.toadtradertcg.com/product-page/ground-death-op14-096
 
-Removed: 0
+Removed: 6
+1. Trafalgar Law [Starter Deck: Worst Generation] | Knightly Gaming | 57.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation
+2. Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards] | Knightly Gaming | 16.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards
+3. Nami (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 1279.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven
+4. Nami (TR) | Tanuki Trader | 3485.0
+https://tanukitrader.co.za/product/nami-tr/
+5. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 534.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven
+6. I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards] | Knightly Gaming | 54.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards
 
 New Releases
 ------------
-Added: 1
-1. Michael
-https://pahe.ink/michael-2026-web-dl-480p-720p-1080p/
+Added: 0
 
 Updated: 0
 
@@ -43,7 +40,9 @@ Coming Soon Movies
 ------------------
 Added: 0
 
-Updated: 0
+Updated: 1
+1. Disclosure Day | 2026-06-12
+https://www.themoviedb.org/movie/1275779
 
 Removed: 0
 
@@ -57,41 +56,37 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 3
-1. Backrooms: Blackhole | 2026-06-05
-https://rawg.io/games/backrooms-blackhole
-2. NBA THE RUN | 2026-06-09
-https://rawg.io/games/nba-the-run
-3. Gothic 1 Remake + Free Classic | 2026-06-04
-https://rawg.io/games/gothic-1-remake-free-classic
+Added: 4
+1. Underchoice | 2026-06-01
+https://rawg.io/games/underchoice
+2. Voidling Bound | 2026-06-09
+https://rawg.io/games/voidling-bound
+3. Crushed In Time | 2026-06-10
+https://rawg.io/games/crushed-in-time
+4. Insomnia: Chapter One | 2026-06-08
+https://rawg.io/games/insomnia-chapter-one
 
 Updated: 0
 
-Removed: 3
-1. Život Není Krásný: Poslední Exekuce | 2026-05-13
-https://rawg.io/games/zivot-neni-krasny-posledni-exekuce
-2. Celsius Strays Demo | 2026-05-13
-https://rawg.io/games/celsius-strays-demo
-3. ClosR | 2026-05-13
-https://rawg.io/games/closr
+Removed: 4
+1. Backrooms: The Last Observer | 2026-05-15
+https://rawg.io/games/backrooms-the-last-observer
+2. Blind Savior | 2026-05-15
+https://rawg.io/games/blind-savior
+3. Outbound | 2026-05-14
+https://rawg.io/games/outbound
+4. Dead Spell | 2026-05-15
+https://rawg.io/games/dead-spell
 
 Coming Soon Games
 -----------------
-Added: 4
-1. Mafia: The Old Country - Man of Honor | 2026-08-14
-https://rawg.io/games/mafia-the-old-country-man-of-honor
-2. The Alters: Last Variable | 2026-07-13
-https://rawg.io/games/the-alters-last-variable
-3. Defender of the Crown: The Legend Returns | 2026-08-12
-https://rawg.io/games/defender-of-the-crown-the-legend-returns
-4. S.T.A.L.K.E.R. 2: Cost of Hope | 2026-08-31
-https://rawg.io/games/stalker-2-cost-of-hope
+Added: 0
 
 Updated: 0
 
 Removed: 1
-1. NBA THE RUN | 2026-06-09
-https://rawg.io/games/nba-the-run
+1. Crushed In Time | 2026-06-10
+https://rawg.io/games/crushed-in-time
 
 Bandsintown Events
 ------------------
@@ -103,77 +98,71 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 12
-1. Dweba Afro Jazz Night with Kila G | 2026-06-26T18:00:00+02:00 | Dweba Art & Cafe
-https://www.quicket.co.za/events/375107-dweba-afro-jazz-night-with-kila-g/
-2. Met Woord en Lied | 2026-06-21T16:00:00+02:00 | St. Martini Lutheran Church
-https://www.quicket.co.za/events/376298-met-woord-en-lied/
-3. Palestine '36 | 2026-06-19T18:30:00+02:00 | Homecoming Centre
-https://www.quicket.co.za/events/377967-palestine-36/
-4. NOMADIC ORCHESTRA & DREAMEATER @ WOODSTOCK BREWERY | 2026-06-19T20:00:00+02:00 | Woodstock Brewery
-https://www.quicket.co.za/events/377828-nomadic-orchestra-dreameater-woodstock-brewery/
-5. 2026 CT Wilson Tournament  6   16 June | 2026-06-16T08:00:00+02:00 | Northern Suburbs of Cape Town (Eversdal, Parow area)
-https://www.quicket.co.za/events/377832-2026-ct-wilson-tournament-6-16-june/
-6. MANTIS | 2026-06-25T19:00:00+02:00 | Novalis Ubuntu Institute
-https://www.quicket.co.za/events/377392-mantis/
-7. Army After Dark: Festa Edition | 2026-06-12T19:00:00+02:00 | 354 Albert Rd
-https://www.quicket.co.za/events/371487-army-after-dark-festa-edition/
-8. Old School Vibes Redefined | 2026-06-13T16:00:00+02:00 | ColorBox Studios
-https://www.quicket.co.za/events/374571-old-school-vibes-redefined/
-9. A Sydney Back & Rare Collection Experience | 2026-06-10T17:30:00+02:00 | The Wine Room
-https://www.quicket.co.za/events/377035-a-sydney-back-rare-collection-experience/
-10. Bafana Bafana & Quiz! | 2026-06-11T18:30:00+02:00 | The Alma Cafe
-https://www.quicket.co.za/events/380634-bafana-bafana-quiz/
-...and 2 more
+Added: 16
+1. Flower Pressing Workshop & Creative Session | 2026-06-13T15:00:00+02:00 | 136 Bree St
+https://www.quicket.co.za/events/371415-flower-pressing-workshop-creative-session/
+2. Hallyu Club Night: 4th & 5th Gen | 2026-06-27T20:00:00+02:00 | The Spot Lounge
+https://www.quicket.co.za/events/371442-hallyu-club-night-4th-5th-gen/
+3. Wild Food Land Foraging Talk, Walk & Tasting - 13 June | 2026-06-13T11:00:00+02:00 | Veld and Sea
+https://www.quicket.co.za/events/370292-wild-food-land-foraging-talk-walk-tasting-13-june/
+4. DinnerOnUs Menu Tasting Event | 2026-06-13T16:00:00+02:00 | Makers Landing
+https://www.quicket.co.za/events/369597-dinneronus-menu-tasting-event/
+5. Hedonism Party — June 13, 2026 | 2026-06-13T20:00:00+02:00 | EPICURE CLUB
+https://www.quicket.co.za/events/374774-hedonism-party-june-13-2026/
+6. The Wild Talent Show –  An untamed fundraiser in aid of Nature Lore Academy | 2026-06-11T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/374369-the-wild-talent-show-an-untamed-fundraiser-in-aid-of-nature-lore-academy/
+7. Volk - Dark Notes, A Tiny Concert Series | 2026-06-10T18:00:00+02:00 | The Dark Horse Bar
+https://www.quicket.co.za/events/375427-volk-dark-notes-a-tiny-concert-series/
+8. Steve Graham's Monsters of Rock show - Simon's Restaurant, Groot Constantia | 2026-06-27T20:00:00+02:00 | Simon's Restaurant
+https://www.quicket.co.za/events/361683-steve-grahams-monsters-of-rock-show-simons-restaurant-groot-constantia/
+9. Insomnia | 2026-07-17T17:00:00+02:00 | Roxy Woodstock
+https://www.quicket.co.za/events/376958-insomnia/
+10. Protein Party | Hot Chocolate Edition | 2026-06-14T15:00:00+02:00 | The Ladder
+https://www.quicket.co.za/events/377013-protein-party-hot-chocolate-edition/
+...and 6 more
 
-Updated: 3
-1. AKING LIVE [FEAT. MAN MOTELS] AT WOODSTOCK BREWERY | 2026-06-12T19:00:00+02:00 | Woodstock Brewery
-https://www.quicket.co.za/events/375749-aking-live-feat-man-motels-at-woodstock-brewery/
-2. Vicious Aliens - Warehouse Rave - 12 June - The Bunker - Book Now | 2026-06-12T20:00:00+02:00 | 41A Mansell Rd
-https://www.quicket.co.za/events/378372-vicious-aliens-warehouse-rave-12-june-the-bunker-book-now/
-3. JACK PAROW @ WOODSTOCK BREWERY | 2026-06-26T20:00:00+02:00 | Woodstock Brewery
-https://www.quicket.co.za/events/371585-jack-parow-woodstock-brewery/
+Updated: 1
+1. Menu 001 | 2026-06-19T18:00:00+02:00 | The Loft Houtbay
+https://www.quicket.co.za/events/379964-menu-001/
 
-Removed: 12
-1. Honest Chocolate Workshop -  July 2026 | 2026-07-25T10:00:00+02:00 | Honest Chocolate Factory
-https://www.quicket.co.za/events/379589-honest-chocolate-workshop-july-2026/
-2. Youth Gospel Jam | 2026-06-19T19:00:00+02:00 | 6th Avenue & Boundary Road
-https://www.quicket.co.za/events/371108-youth-gospel-jam/
-3. Sip, Paint and Pair | 2026-06-21T11:00:00+02:00 | Beach Road
-https://www.quicket.co.za/events/362548-sip-paint-and-pair/
-4. Life Changers Holiday Club | 2026-06-29T07:30:00+02:00 | Life Changers Church
-https://www.quicket.co.za/events/375023-life-changers-holiday-club/
-5. Taste of Cape Town 2026 | 2026-11-28T11:00:00+02:00 | Green Point Cricket Club
-https://www.quicket.co.za/events/359707-taste-of-cape-town-2026/
-6. LITTLE FOREST NYE FESTIVAL 2026 | 2026-12-31T10:00:00+02:00 | Kromrivier Farm
-https://www.quicket.co.za/events/359325-little-forest-nye-festival-2026/
-7. Event: Handwritten The Founding Story Of Yuppiechef [CPT] | 2026-06-08T17:30:00+02:00 | Workshop 17 Watershed
-https://www.quicket.co.za/events/375434-event-handwritten-the-founding-story-of-yuppiechef-cpt/
-8. VAN PLETZEN & YO NAX @ Woodstock Brewery | 2026-07-31T20:00:00+02:00 | WOODSTOCK BREWERY
-https://www.quicket.co.za/events/378155-van-pletzen-yo-nax-woodstock-brewery/
-9. Club Thriller The Experience | 2026-09-05T19:00:00+02:00 | Galaxy Disco Restaurant
-https://www.quicket.co.za/events/368884-club-thriller-the-experience/
-10. Mojo XXL Music Nights Ft. DJ Rene | 2026-06-26T19:00:00+02:00 | Mojo  Market
-https://www.quicket.co.za/events/377397-mojo-xxl-music-nights-ft-dj-rene/
-...and 2 more
+Removed: 16
+1. 10/06/2026 CPT MEGA Agent 1 Day Program | 2026-06-10T08:45:00+02:00 | STBB Cape Town
+https://www.quicket.co.za/events/370060-10062026-cpt-mega-agent-1-day-program/
+2. Kultura Fees: Liewe Heksie en die Wals | 2026-08-01T10:00:00+02:00 | Curro Durbanville Theatre
+https://www.quicket.co.za/events/375540-kultura-fees-liewe-heksie-en-die-wals/
+3. The Soulful Reunion Festive Festival | 2026-12-19T10:00:00+02:00 | Royal Road Sports Ground
+https://www.quicket.co.za/events/369384-the-soulful-reunion-festive-festival/
+4. Nagskof with HelderbergFM | 2026-06-15T18:30:00+02:00 | Lord Charles Hotel, Somerset West, a Tribute Portfolio Hotel
+https://www.quicket.co.za/events/376763-nagskof-with-helderbergfm/
+5. The 'Women Who ROCK' Show - Simon's Restaurant | 2026-06-26T18:00:00+02:00 | Simon's Restaurant
+https://www.quicket.co.za/events/374082-the-women-who-rock-show-simons-restaurant/
+6. Sexponential Book Launch - E=MC³ - transform your sex life - CT | 2026-06-25T18:00:00+02:00 | Youngblood Gallery
+https://www.quicket.co.za/events/374502-sexponential-book-launch-emc-transform-your-sex-life-ct/
+7. All Black Blackout Pre Party | 2026-06-13T19:00:00+02:00 | Zevolis Bar & Kitchen
+https://www.quicket.co.za/events/368577-all-black-blackout-pre-party/
+8. Phil de Lange: Why are you like this? LIVE in Cape Town at The Protea Hotel Fire & Ice! 10 & 11 July 2026 | 2026-07-10T19:30:00+02:00 | Protea Hotel Fire & Ice! Cape Town
+https://www.quicket.co.za/events/378456-phil-de-lange-why-are-you-like-this-live-in-cape-town-at-the-protea-hotel-fire/
+9. BOLLYWOOD NIGHT SEMESTER SHUTDOWN | 2026-06-20T21:00:00+02:00 | BOTANIK SOCIAL HOUSE
+https://www.quicket.co.za/events/377349-bollywood-night-semester-shutdown/
+10. Abba Tribute show live at Triggerfish Brewing 2026 | 2026-06-27T20:30:00+02:00 | Triggerfish Brewing
+https://www.quicket.co.za/events/376342-abba-tribute-show-live-at-triggerfish-brewing-2026/
+...and 6 more
 
 Webtickets Events
 -----------------
 Added: 1
-1. Cape Town City FC vs Magesi FC | 10 Jun 2026 15:00 | Athlone Stadium, Athlone | FREE
-https://www.webtickets.co.za/v2/event.aspx?itemid=1596748052
+1. Gas Motorshow National Tour - CT | 10 Jun 2026 18:00 | Granger Bay Demountable Parking Area, Granger Road, Victoria & Alfred Waterfront, Cape Town | R395
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595529600
 
-Updated: 3
-1. FynArts Festival 2026 | From 09 Jun 2026 10:00 | From R120
+Updated: 2
+1. FynArts Festival 2026 | From 10 Jun 2026 08:00 | From R120
 https://www.webtickets.co.za/v2/event.aspx?itemid=1588256840
-2. Killer Queen - A LAMTA Dance Production | From 09 Jun 2026 20:00 | Theatre On The Bay, Camps Bay | R200 - R320
+2. Killer Queen - A LAMTA Dance Production | From 10 Jun 2026 20:00 | Theatre On The Bay, Camps Bay | R200 - R320
 https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134
-3. Cape Town Abseil | From 09 Jun 2026 | Table Mountain | R995 - R1100
-https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
 
 Removed: 1
-1. VISIT TO FISH HOEK VALLEY MUSEUM | 08 Jun 2026 10:00 | Fish Hoek Valley Museum | R120 - R150
-https://www.webtickets.co.za/v2/event.aspx?itemid=1595766943
+1. Cape Town Abseil | From 09 Jun 2026 | Table Mountain | R995 - R1100
+https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
 
 Google Calendar
 ---------------

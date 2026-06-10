@@ -3,7 +3,7 @@
     "title": "FynArts Festival 2026",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588256840",
     "image": "https://content.webtickets.co.za/fynarts/panel_FYNARTS2026_20260429_163009.jpg",
-    "date_text": "From 09 Jun 2026 10:00",
+    "date_text": "From 10 Jun 2026 08:00",
     "venue": "",
     "price": "From R120",
     "source": "Webtickets",
@@ -11,6 +11,38 @@
     "categories": [
       "festival",
       "art"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Cape Town City FC vs Magesi FC",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1596748052",
+    "image": "https://content.webtickets.co.za/capetownfc/panel_TICKETINGWEBSITEVSMAGESI - play offs 2_20260604_093620.jpg",
+    "date_text": "10 Jun 2026 15:00",
+    "venue": "Athlone Stadium, Athlone",
+    "price": "FREE",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Gas Motorshow National Tour - CT",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595529600",
+    "image": "https://content.webtickets.co.za/GASMAGAZINE/panel_national tour12_20260506_150507.jpg",
+    "date_text": "10 Jun 2026 18:00",
+    "venue": "Granger Bay Demountable Parking Area, Granger Road, Victoria & Alfred Waterfront, Cape Town",
+    "price": "R395",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "outdoors"
     ],
     "missing_location": true,
     "location_key": "",
@@ -38,7 +70,7 @@
     "title": "Killer Queen - A LAMTA Dance Production",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134",
     "image": "https://content.webtickets.co.za/PTProductions/panel_2fa14078-fa95-4083-9b94-0f282e084bf5_20260311_171208.jpeg",
-    "date_text": "From 09 Jun 2026 20:00",
+    "date_text": "From 10 Jun 2026 20:00",
     "venue": "Theatre On The Bay, Camps Bay",
     "price": "R200 - R320",
     "source": "Webtickets",
@@ -46,36 +78,6 @@
     "categories": [
       "theatre"
     ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 09 Jun 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Cape Town City FC vs Magesi FC",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1596748052",
-    "image": "https://content.webtickets.co.za/capetownfc/panel_TICKETINGWEBSITEVSMAGESI - play offs 2_20260604_093620.jpg",
-    "date_text": "10 Jun 2026 15:00",
-    "venue": "Athlone Stadium, Athlone",
-    "price": "FREE",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
