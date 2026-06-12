@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12T09:51:46Z",
+  "updated_at": "2026-06-12T12:47:56Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -24768,6 +24768,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-12",
       "captured_at": "2026-06-12T09:51:46Z"
+    },
+    {
+      "card_number": "OP05-076",
+      "art_variant": "original",
+      "price": 7.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/when-youre-at-sea-you-fight-against-pirates-awakening-of-the-new-era",
+      "title": "When You're at Sea You Fight against Pirates!! [Awakening of the New Era]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T12:47:56Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 48.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/zoro-juurou-starter-deck-purple-monkey-d-luffy",
+      "title": "Zoro-Juurou [Starter Deck: PURPLE Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T12:47:56Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 174.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-12",
+      "captured_at": "2026-06-12T12:47:56Z"
     }
   ]
 }
