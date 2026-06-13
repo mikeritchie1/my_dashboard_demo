@@ -3,16 +3,16 @@
   "dates": {},
   "items": [
     {
-      "title": "The Metropolitan Opera: El \u00daltimo Sue\u00f1o de Frida y Diego",
-      "url": "https://www.themoviedb.org/movie/1479653",
-      "image": "https://image.tmdb.org/t/p/w342/iroj6icowJNoh9KfdeE0ObdpFis.jpg",
-      "release_date": "2026-06-12"
+      "title": "Cocktail 2",
+      "url": "https://www.themoviedb.org/movie/1392469",
+      "image": "https://image.tmdb.org/t/p/w342/vJq0vuEV2ksMVl0sxsdBaU06FQL.jpg",
+      "release_date": "2026-06-19"
     },
     {
-      "title": "Disclosure Day",
-      "url": "https://www.themoviedb.org/movie/1275779",
-      "image": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
-      "release_date": "2026-06-12"
+      "title": "Minions & Monsters",
+      "url": "https://www.themoviedb.org/movie/1315772",
+      "image": "https://image.tmdb.org/t/p/w342/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "release_date": "2026-06-26"
     },
     {
       "title": "Jackass: Best and Last",
@@ -21,10 +21,34 @@
       "release_date": "2026-06-26"
     },
     {
+      "title": "The Get Out",
+      "url": "https://www.themoviedb.org/movie/1279493",
+      "image": "https://image.tmdb.org/t/p/w342/dKoz9NKjqFkurpSE5BPe3JUvncL.jpg",
+      "release_date": "2026-07-03"
+    },
+    {
+      "title": "Evil Dead Burn",
+      "url": "https://www.themoviedb.org/movie/1212763",
+      "image": "https://image.tmdb.org/t/p/w342/syGSQh7bqPHCFRhwHewHdR5EqjD.jpg",
+      "release_date": "2026-07-10"
+    },
+    {
       "title": "Moana",
       "url": "https://www.themoviedb.org/movie/1108427",
-      "image": "https://image.tmdb.org/t/p/w342/rQ0f1Y3t9w3DxVxuVydkgqQ2Hji.jpg",
-      "release_date": "2026-07-11"
+      "image": "https://image.tmdb.org/t/p/w342/jDrtrBDIFGDmwSJ52F987wz2Gkn.jpg",
+      "release_date": "2026-07-10"
+    },
+    {
+      "title": "Lucky Strike",
+      "url": "https://www.themoviedb.org/movie/1594914",
+      "image": "https://image.tmdb.org/t/p/w342/kzRAd7mj39ZY3FGNrDdZjqx56tn.jpg",
+      "release_date": "2026-07-17"
+    },
+    {
+      "title": "The Odyssey",
+      "url": "https://www.themoviedb.org/movie/1368337",
+      "image": "https://image.tmdb.org/t/p/w342/9C9PAnrZcB8x7YHNlBs4PUv0Z7K.jpg",
+      "release_date": "2026-07-17"
     },
     {
       "title": "National Theatre Live: Inter Alia",
@@ -33,10 +57,34 @@
       "release_date": "2026-07-24"
     },
     {
+      "title": "The Invite",
+      "url": "https://www.themoviedb.org/movie/950028",
+      "image": "https://image.tmdb.org/t/p/w342/vJRFj5ri9Zm7Tg0Tn7pBmOtXqKb.jpg",
+      "release_date": "2026-07-24"
+    },
+    {
+      "title": "Motor City",
+      "url": "https://www.themoviedb.org/movie/87513",
+      "image": "https://image.tmdb.org/t/p/w342/lGovcOtxugJPhfJjFKud9EbWtOA.jpg",
+      "release_date": "2026-07-24"
+    },
+    {
+      "title": "Spider-Man: Brand New Day",
+      "url": "https://www.themoviedb.org/movie/969681",
+      "image": "https://image.tmdb.org/t/p/w342/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
+      "release_date": "2026-07-31"
+    },
+    {
       "title": "The End of Oak Street",
       "url": "https://www.themoviedb.org/movie/1101383",
       "image": "https://image.tmdb.org/t/p/w342/60bRdW7JTXTaSMFgLHjcoS1fXHh.jpg",
       "release_date": "2026-08-14"
+    },
+    {
+      "title": "National Theatre Live: The Fifth Step",
+      "url": "https://www.themoviedb.org/movie/1507573",
+      "image": "https://image.tmdb.org/t/p/w342/f2FeCAeOadqj3leou4XTsHDR8pX.jpg",
+      "release_date": "2026-09-04"
     }
   ]
 }

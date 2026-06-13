@@ -10,6 +10,30 @@
       "platforms": ""
     },
     {
+      "title": "SPORTAL",
+      "url": "https://rawg.io/games/sportal",
+      "image": "https://media.rawg.io/media/screenshots/40c/40c77e273f69b2e2b081bbcc6d7bfb19.jpg",
+      "release_date": "2026-06-10",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Flower Outline",
+      "url": "https://rawg.io/games/flower-outline",
+      "image": "https://media.rawg.io/media/screenshots/58e/58ee9e7b62d7e06af83598af89e25f69.jpg",
+      "release_date": "2026-06-10",
+      "rating": "0.0",
+      "platforms": "PC, Linux"
+    },
+    {
+      "title": "Aisle Survive Demo",
+      "url": "https://rawg.io/games/aisle-survive-demo",
+      "image": "https://media.rawg.io/media/screenshots/443/443be229a59a0571ccda13ae21833be2.jpg",
+      "release_date": "2026-06-10",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "Voidling Bound",
       "url": "https://rawg.io/games/voidling-bound",
       "image": "https://media.rawg.io/media/screenshots/4e4/4e4ae84cce9b7e6f950c8fb29269a1cd.jpg",
@@ -32,6 +56,14 @@
       "release_date": "2026-06-08",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Mystic Courtesan Stories: Trainee Maria",
+      "url": "https://rawg.io/games/mystic-courtesan-stories-trainee-maria",
+      "image": "https://media.rawg.io/media/screenshots/9c3/9c3045f02924811ea631f70ed51c733a.jpg",
+      "release_date": "2026-06-07",
+      "rating": "0.0",
+      "platforms": ""
     },
     {
       "title": "Atre: Dominance Wars",
@@ -122,6 +154,30 @@
       "platforms": "PC"
     },
     {
+      "title": "One Move Away",
+      "url": "https://rawg.io/games/one-move-away",
+      "image": "https://media.rawg.io/media/screenshots/53c/53cc0537f8582c4168baa3138bbbae41.jpg",
+      "release_date": "2026-05-29",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Cheap Car Repair",
+      "url": "https://rawg.io/games/cheap-car-repair",
+      "image": "https://media.rawg.io/media/screenshots/43f/43fe0c6ffb8e53755592876c64151e9a.jpg",
+      "release_date": "2026-05-28",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Airport Baggage Simulator",
+      "url": "https://rawg.io/games/airport-baggage-simulator",
+      "image": "https://media.rawg.io/media/screenshots/bb1/bb1915d577b9c1979245de5c39ea6ce9.jpg",
+      "release_date": "2026-05-28",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "N.E.R.D",
       "url": "https://rawg.io/games/nerd-2",
       "image": "https://media.rawg.io/media/screenshots/12c/12c7bf17be556afb272996f1b5ae2d50.jpg",
@@ -198,7 +254,7 @@
       "url": "https://rawg.io/games/007-first-light",
       "image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
       "release_date": "2026-05-27",
-      "rating": "4.4",
+      "rating": "4.5",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {
@@ -298,6 +354,14 @@
       "platforms": "Nintendo Switch"
     },
     {
+      "title": "Clash of Critters",
+      "url": "https://rawg.io/games/clash-of-critters",
+      "image": "https://media.rawg.io/media/screenshots/5b6/5b6c88bf77426e48c4b3eab18ab364e9.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "iOS"
+    },
+    {
       "title": "a weird game about sausage",
       "url": "https://rawg.io/games/a-weird-game-about-sausage",
       "image": "https://media.rawg.io/media/screenshots/f59/f594a3004451ece29df08842269973b1.jpg",
@@ -334,70 +398,6 @@
       "url": "https://rawg.io/games/holy-valkyrie-exs-tia-f-parallel-episode-2-reunion",
       "image": "https://media.rawg.io/media/screenshots/ba8/ba80f184754a5e1916460a6f850866b3.jpg",
       "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "ZERO PARADES: For Dead Spies Bundle",
-      "url": "https://rawg.io/games/zero-parades-for-dead-spies-bundle",
-      "image": "https://media.rawg.io/media/screenshots/6f0/6f00ca365527633a9c05fc25025fa38f.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Coffee Talk Tokyo",
-      "url": "https://rawg.io/games/coffee-talk-tokyo",
-      "image": "https://media.rawg.io/media/screenshots/ab8/ab8b7f365180a440529ceed4b7276c6d.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Phonopolis",
-      "url": "https://rawg.io/games/phonopolis",
-      "image": "https://media.rawg.io/media/games/044/044e2732dc470c41a6a2ac074bdf7fb0.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC, macOS"
-    },
-    {
-      "title": "Forza Horizon 6",
-      "url": "https://rawg.io/games/forza-horizon-6",
-      "image": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
-      "release_date": "2026-05-19",
-      "rating": "4.3",
-      "platforms": "PC, Xbox Series S/X"
-    },
-    {
-      "title": "Girls' Dorm -Managing an all-girls' dormitory- After",
-      "url": "https://rawg.io/games/girls-dorm-managing-an-all-girls-dormitory-after",
-      "image": "https://media.rawg.io/media/screenshots/a5f/a5f1d1e5272c070b836be5e29f9c231f.jpg",
-      "release_date": "2026-05-18",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Girls' Dorm -Managing an all-girls' dormitory",
-      "url": "https://rawg.io/games/girls-dorm-managing-an-all-girls-dormitory",
-      "image": "https://media.rawg.io/media/screenshots/383/3834a800a93d79dae22bc697ef0cbcce.jpg",
-      "release_date": "2026-05-18",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Corsairs - Battle of the Caribbean",
-      "url": "https://rawg.io/games/corsairs-battle-of-the-caribbean",
-      "image": "https://media.rawg.io/media/screenshots/ac0/ac0157a39c43d49bf2662e441f9a1322.jpg",
-      "release_date": "2026-05-17",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Nightmariners",
-      "url": "https://rawg.io/games/nightmariners",
-      "image": "https://media.rawg.io/media/screenshots/833/833280f544da478f4c3b2092f689913c.jpg",
-      "release_date": "2026-05-15",
       "rating": "0.0",
       "platforms": "PC"
     }
@@ -452,6 +452,14 @@
       "platforms": ""
     },
     {
+      "title": "Cornhole Hero",
+      "url": "https://rawg.io/games/cornhole-hero",
+      "image": "https://media.rawg.io/media/screenshots/d0b/d0b0fa8928f0c83ba6719ea6fcf62224.jpg",
+      "release_date": "2026-07-22",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "Splatoon Raiders",
       "url": "https://rawg.io/games/splatoon-raiders",
       "image": "https://media.rawg.io/media/games/818/8186b959ba7c061024ec3f4ad23e4496.jpg",
@@ -460,9 +468,17 @@
       "platforms": ""
     },
     {
+      "title": "Aisle Survive",
+      "url": "https://rawg.io/games/aisle-survive",
+      "image": "https://media.rawg.io/media/screenshots/801/801db2ca8b3aeaea087e2611db3227ba.jpg",
+      "release_date": "2026-07-27",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "Halo Campaign Evolved",
       "url": "https://rawg.io/games/halo-campaign-evolved",
-      "image": "https://media.rawg.io/media/screenshots/cea/cea7e2e717aa3c66d4f3197d5b901866.jpg",
+      "image": "https://media.rawg.io/media/screenshots/c44/c445c015eb08b156eed3f047f9718508.jpg",
       "release_date": "2026-07-28",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
@@ -486,7 +502,7 @@
     {
       "title": "Marvel Tokon: Fighting Souls",
       "url": "https://rawg.io/games/marvel-tokon-fighting-souls",
-      "image": "https://media.rawg.io/media/screenshots/a17/a170c96a9baf7ff99cd85f5ca296d869.jpeg",
+      "image": "https://media.rawg.io/media/screenshots/4ba/4ba7897954c31431c9b38cf18b9e9fdf.jpeg",
       "release_date": "2026-08-06",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5"

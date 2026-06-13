@@ -5,15 +5,15 @@
     {
       "tmdb_id": 1275779,
       "tmdb_url": "https://www.themoviedb.org/movie/1275779",
-      "tmdb_rating": "7.5",
-      "tmdb_votes": "98",
+      "tmdb_rating": "7.155",
+      "tmdb_votes": "161",
       "release_date": "2026-06-10",
       "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
       "runtime_minutes": "145",
       "genres": [
+        "Action",
         "Science Fiction",
-        "Thriller",
-        "Action"
+        "Thriller"
       ],
       "directors": [
         "Steven Spielberg"
@@ -27,11 +27,11 @@
         "Wyatt Russell",
         "Elizabeth Marvel",
         "Henry Lloyd-Hughes",
-        "Michael Gaston",
-        "Gabby Beans"
+        "Courtney Grace",
+        "Michael Gaston"
       ],
       "trailer_url": "https://www.youtube.com/watch?v=icDuEHSxE-w",
-      "poster_url": "https://image.tmdb.org/t/p/w342/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
       "title": "Disclosure Day",
       "url": "https://mydorpie.com/m/?page=m_waterimax_disclosureday2d",
       "source": "IMAX Waterfront",
@@ -39,7 +39,7 @@
       "status_label": "Now playing",
       "showtimes": [],
       "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/259wnijEJoJLPuZuscxDTqwnypw.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg"
     }
   ]
 }
