@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T08:43:56Z",
+  "updated_at": "2026-06-13T11:08:13Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -25692,6 +25692,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-13",
       "captured_at": "2026-06-13T05:13:50Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 46.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/zoro-juurou-starter-deck-purple-monkey-d-luffy",
+      "title": "Zoro-Juurou [Starter Deck: PURPLE Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-13",
+      "captured_at": "2026-06-13T11:08:13Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 171.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-13",
+      "captured_at": "2026-06-13T11:08:13Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1264.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-13",
+      "captured_at": "2026-06-13T11:08:13Z"
     }
   ]
 }
