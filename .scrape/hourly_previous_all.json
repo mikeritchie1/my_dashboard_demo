@@ -647,6 +647,21 @@
     },
     {
       "card_number": "EB02-017",
+      "price": "141.0",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Extra Booster: Anime 25th Collection",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R141.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/629110.jpg?v=1752765998",
+      "art_variant": "original",
+      "scraped_at": "2026-06-13T21:00:46Z"
+    },
+    {
+      "card_number": "EB02-017",
       "price": "164.0",
       "title": "Nami EB02-017",
       "rarity": "",

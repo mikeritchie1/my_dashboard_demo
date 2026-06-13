@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T19:04:45Z",
+  "updated_at": "2026-06-13T21:00:46Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -25764,6 +25764,18 @@
       "stock": "In stock",
       "observed_on": "2026-06-13",
       "captured_at": "2026-06-13T15:27:25Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 141.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-13",
+      "captured_at": "2026-06-13T21:00:46Z"
     }
   ]
 }
