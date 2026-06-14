@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14T17:07:14Z",
+  "updated_at": "2026-06-14T19:04:31Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -26760,6 +26760,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-14",
       "captured_at": "2026-06-14T15:03:55Z"
+    },
+    {
+      "card_number": "OP08-023",
+      "art_variant": "alternate",
+      "price": 450.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
+      "title": "Carrot (Parallel) [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T19:04:31Z"
+    },
+    {
+      "card_number": "OP06-106",
+      "art_variant": "alternate",
+      "price": 2630.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
+      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T19:04:31Z"
     }
   ]
 }
