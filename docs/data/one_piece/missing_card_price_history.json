@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14T08:20:09Z",
+  "updated_at": "2026-06-14T10:42:54Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -26556,6 +26556,174 @@
       "stock": "In stock",
       "observed_on": "2026-06-14",
       "captured_at": "2026-06-14T07:12:30Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 12.0,
+      "store": "Toad Trader TCG",
+      "url": "https://www.toadtradertcg.com/product-page/merry-go-eb02-041",
+      "title": "Merry Go EB02-041",
+      "condition": "",
+      "stock": "",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "EB02-031",
+      "art_variant": "original",
+      "price": 13.0,
+      "store": "Toad Trader TCG",
+      "url": "https://www.toadtradertcg.com/product-page/hope-eb02-031",
+      "title": "Hope EB02-031",
+      "condition": "",
+      "stock": "",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "OP05-082",
+      "art_variant": "original",
+      "price": 19.0,
+      "store": "Toad Trader TCG",
+      "url": "https://www.toadtradertcg.com/product-page/shirahoshi-op05-082",
+      "title": "Shirahoshi OP05-082",
+      "condition": "",
+      "stock": "",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "OP05-082",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/683788727",
+      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "original",
+      "price": 36.0,
+      "store": "Toad Trader TCG",
+      "url": "https://www.toadtradertcg.com/product-page/nami-op11-054",
+      "title": "Nami OP11-054",
+      "condition": "",
+      "stock": "",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 38.0,
+      "store": "Toad Trader TCG",
+      "url": "https://www.toadtradertcg.com/product-page/gravity-blade-raging-tiger-op06-058",
+      "title": "Gravity Blade Raging Tiger OP06-058",
+      "condition": "",
+      "stock": "",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "EB02-044",
+      "art_variant": "original",
+      "price": 42.0,
+      "store": "Toad Trader TCG",
+      "url": "https://www.toadtradertcg.com/product-page/sengoku-eb02-044",
+      "title": "Sengoku EB02-044",
+      "condition": "",
+      "stock": "",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "EB02-011",
+      "art_variant": "original",
+      "price": 43.0,
+      "store": "Toad Trader TCG",
+      "url": "https://www.toadtradertcg.com/product-page/arlong-eb02-011",
+      "title": "Arlong EB02-011",
+      "condition": "",
+      "stock": "",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 82.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "EB02-011",
+      "art_variant": "original",
+      "price": 119.0,
+      "store": "Toad Trader TCG",
+      "url": "https://www.toadtradertcg.com/product-page/arlong-eb02-011-1",
+      "title": "Arlong EB02-011",
+      "condition": "",
+      "stock": "",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "EB02-011",
+      "art_variant": "alternate",
+      "price": 125.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection",
+      "title": "Arlong (Alternate Art) [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 140.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 694.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2382.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T10:42:54Z"
     }
   ]
 }
