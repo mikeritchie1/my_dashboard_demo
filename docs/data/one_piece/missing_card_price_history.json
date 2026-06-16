@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T13:22:07Z",
+  "updated_at": "2026-06-16T18:25:25Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -28104,6 +28104,210 @@
       "stock": "In stock",
       "observed_on": "2026-06-16",
       "captured_at": "2026-06-16T02:15:54Z"
+    },
+    {
+      "card_number": "ST22-015",
+      "art_variant": "original",
+      "price": 13.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/i-am-whitebeard-starter-deck-ace-newgate",
+      "title": "I Am Whitebeard!! [Starter Deck: Ace & Newgate]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "original",
+      "price": 29.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-adventure-on-kamis-island-1",
+      "title": "Monkey.D.Luffy [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 31.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
+      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "ST22-002",
+      "art_variant": "original",
+      "price": 42.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/izo-starter-deck-ace-newgate",
+      "title": "Izo [Starter Deck: Ace & Newgate]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "OP08-047",
+      "art_variant": "original",
+      "price": 45.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends",
+      "title": "Jozu [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 50.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "P-024",
+      "art_variant": "original",
+      "price": 58.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "ST15-004",
+      "art_variant": "original",
+      "price": 67.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thatch-starter-deck-red-edward-newgate",
+      "title": "Thatch [Starter Deck: Red Edward.Newgate]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 76.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "original",
+      "price": 87.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-the-azure-seas-seven",
+      "title": "Nami [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 142.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 172.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 258.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 266.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "alternate",
+      "price": 508.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 697.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1229.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-16",
+      "captured_at": "2026-06-16T18:25:25Z"
     }
   ]
 }
