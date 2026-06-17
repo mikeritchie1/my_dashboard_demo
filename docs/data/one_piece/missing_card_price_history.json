@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17T19:15:58Z",
+  "updated_at": "2026-06-17T21:51:16Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -28968,6 +28968,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-17",
       "captured_at": "2026-06-17T16:32:57Z"
+    },
+    {
+      "card_number": "OP08-047",
+      "art_variant": "original",
+      "price": 43.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends",
+      "title": "Jozu [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-17",
+      "captured_at": "2026-06-17T21:51:16Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 136.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-17",
+      "captured_at": "2026-06-17T21:51:16Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 690.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-17",
+      "captured_at": "2026-06-17T21:51:16Z"
     }
   ]
 }
