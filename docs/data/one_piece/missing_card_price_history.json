@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T19:20:37Z",
+  "updated_at": "2026-06-19T20:58:28Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -30300,6 +30300,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-19",
       "captured_at": "2026-06-19T17:07:56Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 33.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
+      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-19",
+      "captured_at": "2026-06-19T20:58:28Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 256.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-19",
+      "captured_at": "2026-06-19T20:58:28Z"
     }
   ]
 }
