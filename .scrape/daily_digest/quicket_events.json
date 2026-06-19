@@ -1,99 +1,5 @@
 [
   {
-    "title": "Export Readiness Masterclass",
-    "start": "2026-06-18T11:00:00+02:00",
-    "end": "2026-06-18T14:00:00+02:00",
-    "venue": "Makers Landing",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "The Cruise Terminal, Victoria & Alfred Waterfront, Cape Town, 8001, South Africa, , Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0938063_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/380368-export-readiness-masterclass/",
-    "categories": [],
-    "location_key": "The Cruise Terminal, Victoria & Alfred Waterfront, Cape Town, 8001, South Africa, , Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa, Makers Landing, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "'On the Verge' Fundraiser starring Methuseleh",
-    "start": "2026-06-18T18:00:00+02:00",
-    "end": "2026-06-18T21:30:00+02:00",
-    "venue": "Cafe Roux",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0908298_247_247.png",
-    "url": "https://www.quicket.co.za/events/371010-on-the-verge-fundraiser-starring-methuseleh/",
-    "categories": [],
-    "location_key": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa, Cafe Roux, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Madame Jojo's Drag Competition",
-    "start": "2026-06-18T19:00:00+02:00",
-    "end": "2026-06-18T23:00:00+02:00",
-    "venue": "Mavericks Revue Bar",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Barrack Street 68, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0927871_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/377431-madame-jojos-drag-competition/",
-    "categories": [
-      "bar"
-    ],
-    "location_key": "Barrack Street 68, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, Mavericks Revue Bar, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Dead Dreams and a Drinking Problem",
-    "start": "2026-06-18T19:30:00+02:00",
-    "end": "2026-06-19T20:30:00+02:00",
-    "venue": "The Masque Theatre",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0921883_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/373178-dead-dreams-and-a-drinking-problem/",
-    "categories": [
-      "theatre"
-    ],
-    "location_key": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa, The Masque Theatre, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Takeaways by Nate Levinrad",
-    "start": "2026-06-18T20:00:00+02:00",
-    "end": "2026-06-18T21:30:00+02:00",
-    "venue": "The Outlore Base",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Hout Street 80, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0929001_247_247.png",
-    "url": "https://www.quicket.co.za/events/377891-takeaways-by-nate-levinrad/",
-    "categories": [],
-    "location_key": "Hout Street 80, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, The Outlore Base, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "Menu 001",
     "start": "2026-06-19T18:00:00+02:00",
     "end": "2026-06-20T02:00:00+02:00",
@@ -241,6 +147,26 @@
       "family"
     ],
     "location_key": "183 Campground Road, Newlands, 7700, Cape Town, Western Cape, South Africa, The Sufi Temple, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Radisson Red Father's Day",
+    "start": "2026-06-20T16:00:00+02:00",
+    "end": "2026-06-20T20:00:00+02:00",
+    "venue": "OUIBAR + Kitchn, Radisson RED V&A Waterfront Cape Town",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "No. 6 Silo, Silo Square, Victoria & Alfred Waterfront, Cape Town, 8001, Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0935950_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/380710-radisson-red-fathers-day/",
+    "categories": [
+      "bar"
+    ],
+    "location_key": "No. 6 Silo, Silo Square, Victoria & Alfred Waterfront, Cape Town, 8001, Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa, OUIBAR + Kitchn, Radisson RED V&A Waterfront Cape Town, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -424,6 +350,26 @@
     "missing_place": true
   },
   {
+    "title": "Selective Live Music experience with Sound Legacy Band",
+    "start": "2026-06-21T15:00:00+02:00",
+    "end": "2026-06-21T21:00:00+02:00",
+    "venue": "2 Roodehek St",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "2 Roodehek Street, , Gardens, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0920302_247_247.png",
+    "url": "https://www.quicket.co.za/events/375076-selective-live-music-experience-with-sound-legacy-band/",
+    "categories": [
+      "music"
+    ],
+    "location_key": "2 Roodehek Street, , Gardens, 8001, Cape Town, Western Cape, South Africa, 2 Roodehek St, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "VWS Father’s Day Quiz Night @ café Roux",
     "start": "2026-06-21T16:00:00+02:00",
     "end": "2026-06-21T19:30:00+02:00",
@@ -536,6 +482,26 @@
       "theatre"
     ],
     "location_key": "68 Orange Street, , Gardens, 8000, Cape Town, Western Cape, South Africa, The Labia Theatre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Herschel Inter-House Singing & Dance",
+    "start": "2026-06-25T18:00:00+02:00",
+    "end": "2026-06-25T21:00:00+02:00",
+    "venue": "Herschel Girls School",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Herschel Road 21, Claremont, 7708, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0940105_247_247.png",
+    "url": "https://www.quicket.co.za/events/356493-herschel-inter-house-singing-dance/",
+    "categories": [
+      "dj"
+    ],
+    "location_key": "Herschel Road 21, Claremont, 7708, Cape Town, Western Cape, South Africa, Herschel Girls School, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -694,6 +660,24 @@
       "dj"
     ],
     "location_key": "490 Century Boulevard, , Century City, 7446, Cape Town, Western Cape, South Africa, Canal Walk Shopping Centre - Auditorium Entrance 12, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Woolworths Tygervalley",
+    "start": "2026-06-27T11:00:00+02:00",
+    "end": "2026-06-27T13:00:00+02:00",
+    "venue": "Woolworths Tyger Valley",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Bill Bezuidenhout Avenue, , Bellville Park, 7530, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0907469_247_247.png",
+    "url": "https://www.quicket.co.za/events/370710-woolworths-tygervalley/",
+    "categories": [],
+    "location_key": "Bill Bezuidenhout Avenue, , Bellville Park, 7530, Cape Town, Western Cape, South Africa, Woolworths Tyger Valley, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1340,6 +1324,26 @@
     "missing_place": true
   },
   {
+    "title": "Baked Shakespeare at The Masque Theatre: Romeo & Juliet",
+    "start": "2026-07-08T19:30:00+02:00",
+    "end": "2026-07-12T20:50:00+02:00",
+    "venue": "The Masque Theatre",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0909378_247_247.png",
+    "url": "https://www.quicket.co.za/events/371359-baked-shakespeare-at-the-masque-theatre-romeo-juliet/",
+    "categories": [
+      "theatre"
+    ],
+    "location_key": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa, The Masque Theatre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "PechaKucha #69 Come in out the cold",
     "start": "2026-07-09T18:30:00+02:00",
     "end": "2026-07-09T21:30:00+02:00",
@@ -1616,6 +1620,26 @@
     "currency": "",
     "image": "https://images.quicket.co.za/0925200_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/376602-kultura-fees-alfred-adriaan-positive-strokes/",
+    "categories": [
+      "theatre"
+    ],
+    "location_key": "2 Akademia Avenue, Groot Phesantekraal Estate, Durbanville, Cape Town, 7550, Cape Farms, 7550, Cape Town, Western Cape, South Africa, Curro Durbanville Theatre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Kultura Fees: Alfred Adriaan – Positive Strokes",
+    "start": "2026-08-01T19:00:00+02:00",
+    "end": "2026-08-01T21:30:00+02:00",
+    "venue": "Curro Durbanville Theatre",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "2 Akademia Avenue, Groot Phesantekraal Estate, Durbanville, Cape Town, 7550, Cape Farms, 7550, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0921734_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/375537-kultura-fees-alfred-adriaan-positive-strokes/",
     "categories": [
       "theatre"
     ],
@@ -1912,24 +1936,6 @@
     "url": "https://www.quicket.co.za/events/369652-the-two-oceans-aquarium-the-waterfront-duck-co-tours-jan-march-2027/",
     "categories": [],
     "location_key": "Dock Road, , Victoria & Alfred Waterfront, 8002, Cape Town, Western Cape, South Africa, Two Oceans Aquarium - The Duck Boat, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS",
-    "start": "2027-01-02T09:00:00+02:00",
-    "end": "2027-01-30T15:00:00+02:00",
-    "venue": "25A Buitenkant St",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0893392_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/",
-    "categories": [],
-    "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true

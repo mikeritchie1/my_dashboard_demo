@@ -2,33 +2,31 @@ Daily dashboard digest
 
 One Piece Cards
 ---------------
-Added: 0
+Added: 1
+1. Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards] | Knightly Gaming | 70.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-illustration-box-vol-4-one-piece-promotion-cards
 
-Updated: 9
-1. Jozu [Two Legends] | Knightly Gaming | 47.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends
-2. Sanji [Royal Blood] | Knightly Gaming | 60.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-royal-blood
-3. Thatch [Starter Deck: Red Edward.Newgate] | Knightly Gaming | 66.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/thatch-starter-deck-red-edward-newgate
-4. Merry Go [One Piece Promotion Cards] | Knightly Gaming | 71.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards
-5. Nami [Extra Booster: Anime 25th Collection] | Knightly Gaming | 126.0
+Updated: 8
+1. Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-] | GeekHaven | 35.0
+https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/684318802
+2. Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2] | Knightly Gaming | 37.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2
+3. Nami [Extra Booster: Anime 25th Collection] | Knightly Gaming | 123.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection
-6. Trafalgar Law [Ultra Deck - The Three Captains] | Knightly Gaming | 170.0
+4. Trafalgar Law [Ultra Deck - The Three Captains] | Knightly Gaming | 169.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains
-7. Sanji & Pudding [Extra Booster: Anime 25th Collection] | Knightly Gaming | 257.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection
-8. Uta [Starter Deck: Red Shanks] | Knightly Gaming | 257.0
+5. Uta [Starter Deck: Red Shanks] | Knightly Gaming | 249.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks
-9. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 495.0
+6. Perona (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 526.0
 https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven
+7. Nami (054) (Alternate Art) [A Fist of Divine Speed] | Knightly Gaming | 701.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed
+8. Nami (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 1206.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven
 
-Removed: 2
-1. Monkey.D.Luffy [Adventure on Kami's Island] | Knightly Gaming | 29.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-adventure-on-kamis-island-1
-2. Nami (TR) | Tanuki Trader | 3485.0
-https://tanukitrader.co.za/product/nami-tr/
+Removed: 1
+1. I Am Whitebeard!! [Starter Deck: Ace & Newgate] | Knightly Gaming | 13.0
+https://www.knightlygaming.co.za/collections/one-piece-singles/products/i-am-whitebeard-starter-deck-ace-newgate
 
 New Releases
 ------------
@@ -42,11 +40,7 @@ Coming Soon Movies
 ------------------
 Added: 0
 
-Updated: 2
-1. Moana | 2026-07-10
-https://www.themoviedb.org/movie/1108427
-2. Spider-Man: Brand New Day | 2026-07-31
-https://www.themoviedb.org/movie/969681
+Updated: 0
 
 Removed: 0
 
@@ -61,26 +55,32 @@ Removed: 0
 New Game Releases
 -----------------
 Added: 1
-1. The Adventures of Elliot: The Millennium Tales | 2026-06-18
-https://rawg.io/games/the-adventures-of-elliot-the-millenium-tales
+1. Maseylia: Echoes of the past | 2026-06-19
+https://rawg.io/games/maseylia-echoes-of-the-past
 
-Updated: 1
-1. 007 First Light | 2026-05-27
+Updated: 2
+1. Gothic 1 Remake | 2026-06-05
+https://rawg.io/games/gothic-1-remake
+2. 007 First Light | 2026-05-27
 https://rawg.io/games/007-first-light
 
 Removed: 1
-1. Zero Parades: For Dead Spies | 2026-05-21
-https://rawg.io/games/zero-parades-for-dead-spies
+1. Schrodinger's Cat Burglar | 2026-05-21
+https://rawg.io/games/schrodingers-cat-burglar
 
 Coming Soon Games
 -----------------
-Added: 0
+Added: 2
+1. Trine 6: Together in Time | 2026-09-17
+https://rawg.io/games/trine-6-together-in-time
+2. Trails in the Sky 2nd Chapter | 2026-09-17
+https://rawg.io/games/trails-in-the-sky-2nd-chapter
 
 Updated: 0
 
 Removed: 1
-1. The Adventures of Elliot: The Millennium Tales | 2026-06-18
-https://rawg.io/games/the-adventures-of-elliot-the-millenium-tales
+1. Maseylia: Echoes of the past | 2026-06-19
+https://rawg.io/games/maseylia-echoes-of-the-past
 
 Bandsintown Events
 ------------------
@@ -93,50 +93,44 @@ Removed: 0
 Quicket Events
 --------------
 Added: 6
-1. Bad Jews: Live Podcast Event (Cape Town) | 2026-06-23T19:00:00+02:00 | Neuroscience Institute, University of Cape Town
-https://www.quicket.co.za/events/380399-bad-jews-live-podcast-event-cape-town/
-2. MANBAND 3 | 2026-07-02T20:00:00+02:00 | Kalk Bay Theatre
-https://www.quicket.co.za/events/124018-manband-3/
-3. SpiritSong - One Family | 2026-06-20T14:00:00+02:00 | The Sufi Temple
-https://www.quicket.co.za/events/377118-spiritsong-one-family/
-4. Irreplaceably Human - Cape Town | 2026-07-28T08:30:00+02:00 | Allan Gray
-https://www.quicket.co.za/events/377638-irreplaceably-human-cape-town/
-5. Ian Burgess-Simpson Pianos presents William Berger, Louise Howlett & Albert Combrink | 2026-06-20T19:00:00+02:00 | Ian Burgess-Simpson Pianos
-https://www.quicket.co.za/events/379928-ian-burgess-simpson-pianos-presents-william-berger-louise-howlett-albert-combri/
-6. Gay Gaze | 2026-06-27T15:00:00+02:00 | WELLNESS meets EVENTS (W.E)
-https://www.quicket.co.za/events/380494-gay-gaze/
+1. Woolworths Tygervalley | 2026-06-27T11:00:00+02:00 | Woolworths Tyger Valley
+https://www.quicket.co.za/events/370710-woolworths-tygervalley/
+2. Radisson Red Father's Day | 2026-06-20T16:00:00+02:00 | OUIBAR + Kitchn, Radisson RED V&A Waterfront Cape Town
+https://www.quicket.co.za/events/380710-radisson-red-fathers-day/
+3. Selective Live Music experience with Sound Legacy Band | 2026-06-21T15:00:00+02:00 | 2 Roodehek St
+https://www.quicket.co.za/events/375076-selective-live-music-experience-with-sound-legacy-band/
+4. Herschel Inter-House Singing & Dance | 2026-06-25T18:00:00+02:00 | Herschel Girls School
+https://www.quicket.co.za/events/356493-herschel-inter-house-singing-dance/
+5. Kultura Fees: Alfred Adriaan – Positive Strokes | 2026-08-01T19:00:00+02:00 | Curro Durbanville Theatre
+https://www.quicket.co.za/events/375537-kultura-fees-alfred-adriaan-positive-strokes/
+6. Baked Shakespeare at The Masque Theatre: Romeo & Juliet | 2026-07-08T19:30:00+02:00 | The Masque Theatre
+https://www.quicket.co.za/events/371359-baked-shakespeare-at-the-masque-theatre-romeo-juliet/
 
-Updated: 2
-1. Paint a DOOS | 2026-06-20T16:00:00+02:00 | 10A Kloof Nek Rd
-https://www.quicket.co.za/events/378061-paint-a-doos/
-2. Internet Athi presents Polymorphism: A Live Album Experience | 2026-06-26T20:30:00+02:00 | Star Theatre
-https://www.quicket.co.za/events/367092-internet-athi-presents-polymorphism-a-live-album-experience/
+Updated: 0
 
 Removed: 6
-1. Crushing On Movie Club Presents: Police Academy | 2026-06-24T18:00:00+02:00 | Stoep Startup Coworking Space
-https://www.quicket.co.za/events/381067-crushing-on-movie-club-presents-police-academy/
-2. ALAS Academy presents Sessions in Bloom - VOL. 1 LIVE! @ café Roux | 2026-06-17T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/376775-alas-academy-presents-sessions-in-bloom-vol-1-live-caf-roux/
-3. The music of Neil Diamond by Johan Liebenberg | Kapstadt Brauhaus Strand | 2026-06-17T19:30:00+02:00 | Kapstadt Brauhaus Strand
-https://www.quicket.co.za/events/376011-the-music-of-neil-diamond-by-johan-liebenberg-kapstadt-brauhaus-strand/
-4. Steve Graham's Monsters of Rock show - Simon's Restaurant, Groot Constantia | 2026-06-27T20:00:00+02:00 | Simon's Restaurant
-https://www.quicket.co.za/events/361683-steve-grahams-monsters-of-rock-show-simons-restaurant-groot-constantia/
-5. Paint 'n Sip portrait series on pre-designed canvas board | 2026-06-27T19:30:00+02:00 | Woodstock Brewery
-https://www.quicket.co.za/events/380335-paint-n-sip-portrait-series-on-pre-designed-canvas-board/
-6. NIGHT IN KIN CPT | 2026-06-17T17:00:00+02:00 | Roxy Woodstock
-https://www.quicket.co.za/events/373784-night-in-kin-cpt/
+1. Dead Dreams and a Drinking Problem | 2026-06-18T19:30:00+02:00 | The Masque Theatre
+https://www.quicket.co.za/events/373178-dead-dreams-and-a-drinking-problem/
+2. Export Readiness Masterclass | 2026-06-18T11:00:00+02:00 | Makers Landing
+https://www.quicket.co.za/events/380368-export-readiness-masterclass/
+3. Takeaways by Nate Levinrad | 2026-06-18T20:00:00+02:00 | The Outlore Base
+https://www.quicket.co.za/events/377891-takeaways-by-nate-levinrad/
+4. 'On the Verge' Fundraiser starring Methuseleh | 2026-06-18T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/371010-on-the-verge-fundraiser-starring-methuseleh/
+5. DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS | 2027-01-02T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/
+6. Madame Jojo's Drag Competition | 2026-06-18T19:00:00+02:00 | Mavericks Revue Bar
+https://www.quicket.co.za/events/377431-madame-jojos-drag-competition/
 
 Webtickets Events
 -----------------
 Added: 0
 
-Updated: 3
-1. Killer Queen - A LAMTA Dance Production | From 18 Jun 2026 20:00 | Theatre On The Bay, Camps Bay | R200 - R320
+Updated: 2
+1. Killer Queen - A LAMTA Dance Production | From 19 Jun 2026 20:00 | Theatre On The Bay, Camps Bay | R200 - R320
 https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134
-2. Cape Town Abseil | From 18 Jun 2026 | Table Mountain | R995 - R1100
+2. Cape Town Abseil | From 19 Jun 2026 | Table Mountain | R995 - R1100
 https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
-3. ORPHEUS IN THE UNDERWORLD | From 19 Jun 2026 19:00 | Artscape, Opera House, Cape Town | R225 - R650
-https://www.webtickets.co.za/v2/event.aspx?itemid=1582354185
 
 Removed: 0
 

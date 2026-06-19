@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-18T08:58:12.848508Z",
+  "generated_at": "2026-06-19T09:08:32.988334Z",
   "channel_name": "Almost Friday TV",
   "channel_id": "UCCgK6peZI5-FKDCWzMIFk2A",
   "channel_url": "https://www.youtube.com/@AlmostFridayTV",
-  "items_count": 96,
+  "items_count": 97,
   "items": [
+    {
+      "id": "yt-m-nCwGuBaOw",
+      "video_id": "m-nCwGuBaOw",
+      "title": "my best friend replaced me.",
+      "url": "https://www.youtube.com/watch?v=m-nCwGuBaOw",
+      "published_at": "2026-06-18T19:40:37+00:00",
+      "updated_at": "2026-06-19T09:05:36+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/m-nCwGuBaOw/hqdefault.jpg"
+    },
     {
       "id": "yt-si8ABjGmvBk",
       "video_id": "si8ABjGmvBk",

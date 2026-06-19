@@ -1,54 +1,5 @@
 [
   {
-    "title": "The Jive Cape Town Funny Festival",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582738777",
-    "image": "https://content.webtickets.co.za/baxtertheatre/panel_AC_ FunnyFest_Auditorium_20251202_103850.jpg",
-    "date_text": "from 28 May 2026 20:00",
-    "venue": "",
-    "price": "R190 - R250",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "festival"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Killer Queen - A LAMTA Dance Production",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134",
-    "image": "https://content.webtickets.co.za/PTProductions/panel_2fa14078-fa95-4083-9b94-0f282e084bf5_20260311_171208.jpeg",
-    "date_text": "From 18 Jun 2026 20:00",
-    "venue": "Theatre On The Bay, Camps Bay",
-    "price": "R200 - R320",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 18 Jun 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "Dozi @ Bush Lapa",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1596625853",
     "image": "https://content.webtickets.co.za/heroldsbay/panel_Dozi-Web-Tickets_20260602_090529.jpg",
@@ -77,6 +28,55 @@
       "art",
       "theatre"
     ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The Jive Cape Town Funny Festival",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582738777",
+    "image": "https://content.webtickets.co.za/baxtertheatre/panel_AC_ FunnyFest_Auditorium_20251202_103850.jpg",
+    "date_text": "from 28 May 2026 20:00",
+    "venue": "",
+    "price": "R190 - R250",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "festival"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Killer Queen - A LAMTA Dance Production",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_2fa14078-fa95-4083-9b94-0f282e084bf5_20260311_171208.jpeg",
+    "date_text": "From 19 Jun 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R200 - R320",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 19 Jun 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,

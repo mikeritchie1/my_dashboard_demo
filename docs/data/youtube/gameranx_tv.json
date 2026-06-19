@@ -1,18 +1,27 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-18T08:58:13.574491Z",
+  "generated_at": "2026-06-19T09:08:33.328151Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
     {
+      "id": "yt-Jk2qkjHdYPc",
+      "video_id": "Jk2qkjHdYPc",
+      "title": "Why The HELL is NOBODY Buying Games?",
+      "url": "https://www.youtube.com/watch?v=Jk2qkjHdYPc",
+      "published_at": "2026-06-18T16:34:02+00:00",
+      "updated_at": "2026-06-18T20:54:24+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/Jk2qkjHdYPc/hqdefault.jpg"
+    },
+    {
       "id": "yt-y52qPEY6fVY",
       "video_id": "y52qPEY6fVY",
       "title": "20 BEST Games of 2026 [FIRST HALF]",
       "url": "https://www.youtube.com/watch?v=y52qPEY6fVY",
       "published_at": "2026-06-17T18:33:24+00:00",
-      "updated_at": "2026-06-18T01:17:20+00:00",
+      "updated_at": "2026-06-18T09:10:13+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/y52qPEY6fVY/hqdefault.jpg"
     },
     {
@@ -84,7 +93,7 @@
       "title": "10 Games That REWARD You For Being CRAZY",
       "url": "https://www.youtube.com/watch?v=a2F5zAE01fs",
       "published_at": "2026-06-11T15:27:47+00:00",
-      "updated_at": "2026-06-12T06:02:22+00:00",
+      "updated_at": "2026-06-18T16:43:58+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/a2F5zAE01fs/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-06-06T15:23:12+00:00",
       "updated_at": "2026-06-16T08:08:02+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/j_-oXPAxou8/hqdefault.jpg"
-    },
-    {
-      "id": "yt-5Kuv7VI1eho",
-      "video_id": "5Kuv7VI1eho",
-      "title": "CDPROJEKT RED NEW OPEN WORLD GAME, PS5 EXCLUSIVE SALES CRASHING? & MORE",
-      "url": "https://www.youtube.com/watch?v=5Kuv7VI1eho",
-      "published_at": "2026-06-05T19:30:54+00:00",
-      "updated_at": "2026-06-05T19:44:36+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/5Kuv7VI1eho/hqdefault.jpg"
     }
   ]
 }
