@@ -46,6 +46,21 @@
       "scraped_at": "2026-06-14T10:42:54Z"
     },
     {
+      "card_number": "OP06-058",
+      "price": "30.0",
+      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Premium Booster -The Best- Vol. 2",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R30.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/656129.jpg?v=1760629865",
+      "art_variant": "original",
+      "scraped_at": "2026-06-19T14:34:30Z"
+    },
+    {
       "card_number": "ST06-004",
       "price": "30.0",
       "title": "Smoker [Starter Deck: Absolute Justice]",
@@ -59,21 +74,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
       "art_variant": "original",
       "scraped_at": "2026-06-16T18:25:25Z"
-    },
-    {
-      "card_number": "OP06-058",
-      "price": "31.0",
-      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
-      "rarity": "Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Premium Booster -The Best- Vol. 2",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R31.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/656129.jpg?v=1760629865",
-      "art_variant": "original",
-      "scraped_at": "2026-06-19T14:34:30Z"
     },
     {
       "card_number": "P-053",
@@ -407,14 +407,14 @@
     },
     {
       "card_number": "OP14-031",
-      "price": "1176.0",
+      "price": "1172.0",
       "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1176.00",
+      "available_variants": "Near Mint Foil R1172.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
       "art_variant": "alternate",
