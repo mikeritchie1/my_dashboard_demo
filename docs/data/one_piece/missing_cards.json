@@ -40,10 +40,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/683788727",
+      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/684521606",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
       "art_variant": "original",
-      "scraped_at": "2026-06-14T10:42:54Z"
+      "scraped_at": "2026-06-20T19:04:39Z"
     },
     {
       "card_number": "ST06-004",
@@ -389,6 +389,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666527.jpg?v=1769205424",
       "art_variant": "alternate",
       "scraped_at": "2026-06-19T14:34:30Z"
+    },
+    {
+      "card_number": "OP09-118",
+      "price": 693.0,
+      "title": "Gol.D.Roger [Emperors in the New World]",
+      "rarity": "Secret Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Emperors in the New World",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R693.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gol-d-roger-emperors-in-the-new-world",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/597064.jpg?v=1769010870",
+      "art_variant": "original",
+      "scraped_at": "2026-06-20T19:04:39Z"
     },
     {
       "card_number": "OP11-054",

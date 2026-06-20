@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T17:11:22Z",
+  "updated_at": "2026-06-20T19:04:39Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -30912,6 +30912,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-20",
       "captured_at": "2026-06-20T15:27:11Z"
+    },
+    {
+      "card_number": "OP05-082",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/684521606",
+      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-06-20",
+      "captured_at": "2026-06-20T19:04:39Z"
+    },
+    {
+      "card_number": "OP09-118",
+      "art_variant": "original",
+      "price": 693.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gol-d-roger-emperors-in-the-new-world",
+      "title": "Gol.D.Roger [Emperors in the New World]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-20",
+      "captured_at": "2026-06-20T19:04:39Z"
     }
   ]
 }
