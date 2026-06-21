@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T19:08:54Z",
+  "updated_at": "2026-06-21T21:01:34Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -33756,6 +33756,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-21",
       "captured_at": "2026-06-21T15:44:22Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 35.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
+      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-21",
+      "captured_at": "2026-06-21T21:01:34Z"
+    },
+    {
+      "card_number": "OP08-047",
+      "art_variant": "original",
+      "price": 45.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends",
+      "title": "Jozu [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-21",
+      "captured_at": "2026-06-21T21:01:34Z"
     }
   ]
 }
