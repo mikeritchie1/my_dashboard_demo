@@ -136,7 +136,7 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-        run: python services/daily_digest/send_daily_digest.py
+        run: python services/daily_digest/send_daily_digest.py --no-email
 
       - name: Commit updated data
         run: |
