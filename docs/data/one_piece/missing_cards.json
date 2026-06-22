@@ -151,21 +151,6 @@
       "scraped_at": "2026-06-21T08:39:01Z"
     },
     {
-      "card_number": "ST15-004",
-      "price": 66.0,
-      "title": "Thatch [Starter Deck: Red Edward.Newgate]",
-      "rarity": "Common",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Red Edward.Newgate",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R66.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thatch-starter-deck-red-edward-newgate",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/580989.jpg?v=1748615251",
-      "art_variant": "original",
-      "scraped_at": "2026-06-21T08:39:01Z"
-    },
-    {
       "card_number": "ST12-003",
       "price": 70.0,
       "title": "Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards]",
@@ -372,36 +357,6 @@
       "available_variants": "Near Mint Foil R547.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666527.jpg?v=1769205424",
-      "art_variant": "alternate",
-      "scraped_at": "2026-06-21T08:39:01Z"
-    },
-    {
-      "card_number": "OP11-054",
-      "price": 722.0,
-      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "A Fist of Divine Speed",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R722.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/632422.jpg?v=1757718637",
-      "art_variant": "alternate",
-      "scraped_at": "2026-06-21T08:39:01Z"
-    },
-    {
-      "card_number": "OP14-031",
-      "price": 1146.0,
-      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Azure Sea's Seven",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R1146.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
       "art_variant": "alternate",
       "scraped_at": "2026-06-21T08:39:01Z"
     },
