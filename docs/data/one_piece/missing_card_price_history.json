@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T07:53:51Z",
+  "updated_at": "2026-06-23T08:31:54Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -5472,90 +5472,6 @@
       "stock": "In stock",
       "observed_on": "2026-06-19",
       "captured_at": "2026-06-19T06:04:13Z"
-    },
-    {
-      "card_number": "EB02-011",
-      "art_variant": "alternate",
-      "price": 120.0,
-      "store": "Big Bang Shop",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection",
-      "title": "Arlong (Alternate Art) [Extra Booster: Anime 25th Collection]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "OP06-106",
-      "art_variant": "alternate",
-      "price": 2565.0,
-      "store": "Big Bang Shop",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
-      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "OP08-023",
-      "art_variant": "alternate",
-      "price": 440.0,
-      "store": "Big Bang Shop",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
-      "title": "Carrot (Parallel) [Two Legends]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "OP11-054",
-      "art_variant": "alternate",
-      "price": 699.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
-      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "OP14-031",
-      "art_variant": "alternate",
-      "price": 1206.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
-      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "OP14-033",
-      "art_variant": "alternate",
-      "price": 523.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
-      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "OP14-096",
-      "art_variant": "alternate",
-      "price": 2570.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
-      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
     },
     {
       "card_number": "OP11-054",
@@ -30602,18 +30518,6 @@
       "captured_at": "2026-06-19T07:17:27Z"
     },
     {
-      "card_number": "EB02-017",
-      "art_variant": "original",
-      "price": 123.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
-      "title": "Nami [Extra Booster: Anime 25th Collection]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
       "card_number": "EB02-026",
       "art_variant": "original",
       "price": 112.0,
@@ -30638,18 +30542,6 @@
       "captured_at": "2026-06-19T07:17:27Z"
     },
     {
-      "card_number": "EB02-035",
-      "art_variant": "original",
-      "price": 257.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
-      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
       "card_number": "EB02-041",
       "art_variant": "original",
       "price": 12.0,
@@ -30658,18 +30550,6 @@
       "title": "Merry Go EB02-041",
       "condition": "",
       "stock": "",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "EB02-041",
-      "art_variant": "original",
-      "price": 71.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
-      "title": "Merry Go [One Piece Promotion Cards]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
       "observed_on": "2026-06-19",
       "captured_at": "2026-06-19T07:17:27Z"
     },
@@ -30734,18 +30614,6 @@
       "captured_at": "2026-06-19T07:17:27Z"
     },
     {
-      "card_number": "OP06-058",
-      "art_variant": "original",
-      "price": 38.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
-      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
       "card_number": "OP06-106",
       "art_variant": "original",
       "price": 78.0,
@@ -30782,18 +30650,6 @@
       "captured_at": "2026-06-19T07:17:27Z"
     },
     {
-      "card_number": "OP07-057",
-      "art_variant": "original",
-      "price": 370.0,
-      "store": "Big Bang Shop",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
-      "title": "Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
       "card_number": "OP08-023",
       "art_variant": "original",
       "price": 30.0,
@@ -30818,18 +30674,6 @@
       "captured_at": "2026-06-19T07:17:27Z"
     },
     {
-      "card_number": "OP08-047",
-      "art_variant": "original",
-      "price": 47.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends",
-      "title": "Jozu [Two Legends]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
       "card_number": "OP09-118",
       "art_variant": "original",
       "price": 750.0,
@@ -30850,18 +30694,6 @@
       "title": "Sanji OP10-005",
       "condition": "",
       "stock": "",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "OP10-005",
-      "art_variant": "original",
-      "price": 61.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-royal-blood",
-      "title": "Sanji [Royal Blood]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
       "observed_on": "2026-06-19",
       "captured_at": "2026-06-19T07:17:27Z"
     },
@@ -30998,30 +30830,6 @@
       "captured_at": "2026-06-19T07:17:27Z"
     },
     {
-      "card_number": "P-024",
-      "art_variant": "original",
-      "price": 58.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
-      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "P-026",
-      "art_variant": "original",
-      "price": 15.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards",
-      "title": "Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards]",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
       "card_number": "P-033",
       "art_variant": "original",
       "price": 6500.0,
@@ -31030,78 +30838,6 @@
       "title": "Monkey.D.Luffy (Event Pack Vol. 2) – One Piece Promotion Cards",
       "condition": "",
       "stock": "1 in stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "P-052",
-      "art_variant": "original",
-      "price": 95.0,
-      "store": "Big Bang Shop",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition",
-      "title": "Dracule Mihawk [Live Action Edition]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "P-072",
-      "art_variant": "original",
-      "price": 1425.0,
-      "store": "Big Bang Shop",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
-      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "ST01-004",
-      "art_variant": "original",
-      "price": 365.0,
-      "store": "Big Bang Shop",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
-      "title": "Sanji [One Piece Film: Red]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "ST02-009",
-      "art_variant": "original",
-      "price": 55.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
-      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "ST05-004",
-      "art_variant": "original",
-      "price": 205.0,
-      "store": "Big Bang Shop",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
-      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "ST06-004",
-      "art_variant": "original",
-      "price": 30.0,
-      "store": "Big Bang Shop",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
-      "title": "Smoker [Starter Deck: Absolute Justice]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
       "observed_on": "2026-06-19",
       "captured_at": "2026-06-19T07:17:27Z"
     },
@@ -31126,18 +30862,6 @@
       "title": "Trafalgar Law ST10-010 Regular",
       "condition": "",
       "stock": "",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "ST10-010",
-      "art_variant": "original",
-      "price": 169.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
-      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
       "observed_on": "2026-06-19",
       "captured_at": "2026-06-19T07:17:27Z"
     },
@@ -31214,18 +30938,6 @@
       "captured_at": "2026-06-19T07:17:27Z"
     },
     {
-      "card_number": "ST15-004",
-      "art_variant": "original",
-      "price": 66.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thatch-starter-deck-red-edward-newgate",
-      "title": "Thatch [Starter Deck: Red Edward.Newgate]",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
       "card_number": "ST15-005",
       "art_variant": "original",
       "price": 48.0,
@@ -31246,18 +30958,6 @@
       "title": "Boa Hancock ST17-004",
       "condition": "",
       "stock": "",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "ST18-004",
-      "art_variant": "original",
-      "price": 3905.0,
-      "store": "Big Bang Shop",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
-      "title": "Zoro-Juurou (SP) [Legacy of the Master]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
       "observed_on": "2026-06-19",
       "captured_at": "2026-06-19T07:17:27Z"
     },
@@ -31310,18 +31010,6 @@
       "captured_at": "2026-06-19T07:17:27Z"
     },
     {
-      "card_number": "ST22-002",
-      "art_variant": "original",
-      "price": 42.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/izo-starter-deck-ace-newgate",
-      "title": "Izo [Starter Deck: Ace & Newgate]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
       "card_number": "ST22-015",
       "art_variant": "original",
       "price": 15.0,
@@ -31330,18 +31018,6 @@
       "title": "I Am Whitebeard!! ST22-015",
       "condition": "",
       "stock": "",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:17:27Z"
-    },
-    {
-      "card_number": "ST23-001",
-      "art_variant": "original",
-      "price": 259.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
-      "title": "Uta [Starter Deck: Red Shanks]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
       "observed_on": "2026-06-19",
       "captured_at": "2026-06-19T07:17:27Z"
     },
@@ -31538,18 +31214,6 @@
       "captured_at": "2026-06-19T07:34:49Z"
     },
     {
-      "card_number": "OP05-082",
-      "art_variant": "original",
-      "price": 30.0,
-      "store": "GeekHaven",
-      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/683788727",
-      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:34:49Z"
-    },
-    {
       "card_number": "OP06-035",
       "art_variant": "original",
       "price": 125.0,
@@ -31652,30 +31316,6 @@
       "store": "GeekHaven",
       "url": "https://www.bobshop.co.za/jinbe-starter-deck-blue-donquixote-doflamingo/p/684319660",
       "title": "Jinbe [Starter Deck: Blue Donquixote Doflamingo]",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:34:49Z"
-    },
-    {
-      "card_number": "P-053",
-      "art_variant": "original",
-      "price": 35.0,
-      "store": "GeekHaven",
-      "url": "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/684318802",
-      "title": "Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-]",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T07:34:49Z"
-    },
-    {
-      "card_number": "P-055",
-      "art_variant": "original",
-      "price": 8.0,
-      "store": "GeekHaven",
-      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/683847439",
-      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
       "condition": "Second Hand",
       "stock": "In stock",
       "observed_on": "2026-06-19",
@@ -32028,18 +31668,6 @@
       "stock": "In stock",
       "observed_on": "2026-06-19",
       "captured_at": "2026-06-19T07:34:49Z"
-    },
-    {
-      "card_number": "ST12-003",
-      "art_variant": "original",
-      "price": 70.0,
-      "store": "Knightly Gaming",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-illustration-box-vol-4-one-piece-promotion-cards",
-      "title": "Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards]",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "observed_on": "2026-06-19",
-      "captured_at": "2026-06-19T09:08:14Z"
     },
     {
       "card_number": "ST23-001",
@@ -35076,6 +34704,198 @@
       "stock": "In stock",
       "observed_on": "2026-06-23",
       "captured_at": "2026-06-23T06:37:50Z"
+    },
+    {
+      "card_number": "EB02-004",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-accino-extra-booster-memorial-collection",
+      "title": "Don Accino [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "OP14-057",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dont-worry-im-here-the-azure-seas-seven",
+      "title": "Don't Worry!! I'm Here!! [The Azure Sea's Seven]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-green-compass-starter-deck-straw-hat-crew",
+      "title": "DON!! Card // Green Compass [Starter Deck: Straw Hat Crew]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "OP08-096",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/peoples-dreams-dont-ever-end-two-legends",
+      "title": "People's Dreams Don't Ever End!! [Two Legends]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 5.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-legacy-of-the-master",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "OP08-096",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "Marvellous Hobbies",
+      "url": "https://marvelloushobbies.com/product/peoples-dreams-dont-ever-end-two-legends-op08/",
+      "title": "People’s Dreams Don’t Ever End!! – OP08-096 – Two Legends (OP08)",
+      "condition": "",
+      "stock": "31 in stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Marvellous Hobbies",
+      "url": "https://marvelloushobbies.com/product/don-card-don-op02-paramount-war/",
+      "title": "DON!! Card – Don!! – OP02: Paramount War",
+      "condition": "",
+      "stock": "7 in stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 16.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-ultra-deck-the-three-captains",
+      "title": "DON!! Card [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 50.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-boa-hancock-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Boa Hancock) - Extra Booster: One Piece Heroines Edition",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 70.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-nami-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Nami) - Extra Booster: One Piece Heroines Edition",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 70.0,
+      "store": "Marvellous Hobbies",
+      "url": "https://marvelloushobbies.com/product/don-card-iceberg-premium-booster-the-best-prb-01/",
+      "title": "DON!! Card (Iceberg) – Premium Booster -The Best- (PRB-01)",
+      "condition": "",
+      "stock": "3 in stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 230.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-egghead-gold-the-azure-seas-seven-foil",
+      "title": "DON!! Card (Egghead) (Gold) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 669.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-hannyabal-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 775.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-foxy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Foxy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 3840.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-boa-hancock-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Boa Hancock) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-23",
+      "captured_at": "2026-06-23T08:24:16Z"
     }
   ]
 }

@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import shutil
 import smtplib
 import subprocess
@@ -29,6 +30,9 @@ COMBINED_JSON = ONE_PIECE_DATA_DIR / "missing_cards.json"
 LATEST_REPORT = Path(".scrape/latest_new_cards.txt")
 MATCH_KEY = ("card_number", "store", "url")
 CHANGE_FIELDS = ("price", "stock", "condition", "available_variants")
+HOURLY_MAX_PRICE = 100.0
+ALERT_CARD_NUMBER_RE = re.compile(r"^(?:OP|EB)\d{2}-\d{3}$")
+DON_TITLE_RE = re.compile(r"\bDON!!|\bDON(?:!!)?\s+CARD\b", re.IGNORECASE)
 
 
 def normalized_store(value: str) -> str:
@@ -106,9 +110,20 @@ def filter_rows_by_max_price(rows: list[dict[str, str]], max_price: float | None
     kept: list[dict[str, str]] = []
     for row in rows:
         price = numeric_price(row)
-        if price is None or price <= max_price:
+        if price is not None and price < max_price:
             kept.append(row)
     return kept
+
+
+def is_alert_set(row: dict[str, str]) -> bool:
+    card_number = (row.get("card_number") or "").strip().upper()
+    title = (row.get("title") or "").strip()
+    return ALERT_CARD_NUMBER_RE.fullmatch(card_number) is not None or DON_TITLE_RE.search(title) is not None
+
+
+def filter_alert_additions(rows: list[dict[str, str]], max_price: float) -> list[dict[str, str]]:
+    """Keep only newly added OP/EB/DON listings strictly below the alert ceiling."""
+    return filter_rows_by_max_price([row for row in rows if is_alert_set(row)], max_price)
 
 
 def card_line(row: dict[str, str]) -> str:
@@ -136,7 +151,6 @@ def card_section(title: str, rows: list[dict[str, str]]) -> list[str]:
 def build_email_body(
     store: str,
     additions: list[dict[str, str]],
-    changes: list[dict[str, str]],
     window_label: str,
     include_all: list[dict[str, str]] | None = None,
 ) -> str:
@@ -145,8 +159,6 @@ def build_email_body(
         lines.extend(card_section(f"New {window_label}", additions))
     else:
         lines += [f"New {window_label}: 0", ""]
-    if changes:
-        lines.extend(card_section(f"Changed {window_label}", changes))
     if include_all is not None:
         lines.extend(card_section("All current listings", include_all))
     return "\n".join(lines).strip() + "\n"
@@ -192,7 +204,7 @@ def save_snapshot(path: Path, rows: list[dict[str, str]]) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Email new/changed missing-card listings since the last snapshot.")
+    parser = argparse.ArgumentParser(description="Email newly added OP/EB/DON card listings since the last snapshot.")
     parser.add_argument("--no-scrape", action="store_true", help="Skip running the scraper first.")
     parser.add_argument("--store", default=os.environ.get("CARD_STORE", "all"),
                         help="Store to check: all, knightly, bigbang, marvellous, or tanuki.")
@@ -207,7 +219,7 @@ def main() -> int:
         "--max-price",
         type=float,
         default=None,
-        help="Only include listings with price <= max-price. Default: auto-apply R50 for hourly scope only.",
+        help="Only include listings strictly below this price. Default: R100 for hourly alerts.",
     )
     args = parser.parse_args()
 
@@ -216,10 +228,8 @@ def main() -> int:
     window_label = args.window_label.strip() or "since last email"
     snapshot = previous_snapshot_path(store, args.snapshot_scope)
 
-    # Reduce hourly alert spam by default; keep daily/non-hourly unbounded.
-    max_price = args.max_price
-    if max_price is None and snapshot_scope == "hourly":
-        max_price = 50.0
+    # Notification policy: only newly added OP/EB/DON cards strictly under R100 by default.
+    max_price = args.max_price if args.max_price is not None else HOURLY_MAX_PRICE
 
     if not args.no_scrape:
         run_scraper(store)
@@ -236,25 +246,24 @@ def main() -> int:
         return 0
 
     previous = read_rows(snapshot, store)
-    additions, changes = diff_rows(today, previous)
-    additions = filter_rows_by_max_price(additions, max_price)
-    changes = filter_rows_by_max_price(changes, max_price)
+    additions, _changes = diff_rows(today, previous)
+    additions = filter_alert_additions(additions, max_price)
 
-    include_all = filter_rows_by_max_price(today, max_price) if args.mode == "all" else None
-    body = build_email_body(store, additions, changes, window_label, include_all)
+    include_all = filter_alert_additions(today, max_price) if args.mode == "all" else None
+    body = build_email_body(store, additions, window_label, include_all)
     write_latest_report(body, args.snapshot_scope)
 
-    if not additions and not changes:
+    if not additions:
         save_snapshot(snapshot, today)
-        print(f"No additions or changes {window_label} for {store}. Snapshot updated.")
+        print(f"No new OP/EB/DON cards under R{max_price:g} {window_label} for {store}. Snapshot updated.")
         return 0
 
-    subject = f"One Piece cards: {len(additions)} new, {len(changes)} changed ({store})"
+    subject = f"One Piece cards: {len(additions)} new OP/EB/DON under R{max_price:g} ({store})"
     if not args.no_email:
         send_email(subject, body)
     save_snapshot(snapshot, today)
     action = "Prepared report" if args.no_email else "Sent email"
-    print(f"{action}: {len(additions)} new, {len(changes)} changed for {store}.")
+    print(f"{action}: {len(additions)} new OP/EB/DON cards under R{max_price:g} for {store}.")
     return 0
 
 

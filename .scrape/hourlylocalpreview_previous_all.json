@@ -1,8 +1,38 @@
 {
   "listings": [
     {
+      "card_number": "EB02-004",
+      "price": "2.0",
+      "title": "Don Accino [Extra Booster: Anime 25th Collection]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "Extra Booster: Anime 25th Collection",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R2.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-accino-extra-booster-memorial-collection",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/629093.jpg?v=1752766082",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "OP14-057",
+      "price": "2.0",
+      "title": "Don't Worry!! I'm Here!! [The Azure Sea's Seven]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "The Azure Sea's Seven",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R2.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dont-worry-im-here-the-azure-seas-seven",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/671395.jpg?v=1769205067",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
+    },
+    {
       "card_number": "DON!!",
-      "price": 3.0,
+      "price": "3.0",
       "title": "DON!! Card // Green Compass [Starter Deck: Straw Hat Crew]",
       "rarity": "DON!!",
       "store": "Knightly Gaming",
@@ -16,8 +46,23 @@
       "scraped_at": "2026-06-23T08:24:16Z"
     },
     {
+      "card_number": "OP08-096",
+      "price": "3.0",
+      "title": "People's Dreams Don't Ever End!! [Two Legends]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "Two Legends",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R3.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/peoples-dreams-dont-ever-end-two-legends",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/558133.jpg?v=1733895903",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
+    },
+    {
       "card_number": "DON!!",
-      "price": 5.0,
+      "price": "5.0",
       "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
       "rarity": "",
       "store": "Big Bang Shop",
@@ -32,7 +77,7 @@
     },
     {
       "card_number": "DON!!",
-      "price": 5.0,
+      "price": "5.0",
       "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
       "rarity": "DON!!",
       "store": "Knightly Gaming",
@@ -47,7 +92,7 @@
     },
     {
       "card_number": "OP08-096",
-      "price": 5.0,
+      "price": "5.0",
       "title": "People’s Dreams Don’t Ever End!! – OP08-096 – Two Legends (OP08)",
       "rarity": "",
       "store": "Marvellous Hobbies",
@@ -62,7 +107,7 @@
     },
     {
       "card_number": "DON!!",
-      "price": 10.0,
+      "price": "10.0",
       "title": "DON!! Card – Don!! – OP02: Paramount War",
       "rarity": "",
       "store": "Marvellous Hobbies",
@@ -77,7 +122,7 @@
     },
     {
       "card_number": "P-026",
-      "price": 14.0,
+      "price": "14.0",
       "title": "Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards]",
       "rarity": "Promo",
       "store": "Knightly Gaming",
@@ -92,7 +137,7 @@
     },
     {
       "card_number": "DON!!",
-      "price": 16.0,
+      "price": "16.0",
       "title": "DON!! Card [Ultra Deck - The Three Captains]",
       "rarity": "DON!!",
       "store": "Knightly Gaming",
@@ -107,7 +152,7 @@
     },
     {
       "card_number": "ST21-017",
-      "price": 20.0,
+      "price": "20.0",
       "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
       "rarity": "Common",
       "store": "Big Bang Shop",
@@ -122,7 +167,7 @@
     },
     {
       "card_number": "ST06-004",
-      "price": 30.0,
+      "price": "30.0",
       "title": "Smoker [Starter Deck: Absolute Justice]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
@@ -137,7 +182,7 @@
     },
     {
       "card_number": "OP06-058",
-      "price": 35.0,
+      "price": "35.0",
       "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
@@ -152,7 +197,7 @@
     },
     {
       "card_number": "ST22-002",
-      "price": 42.0,
+      "price": "42.0",
       "title": "Izo [Starter Deck: Ace & Newgate]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
@@ -167,7 +212,7 @@
     },
     {
       "card_number": "OP08-047",
-      "price": 49.0,
+      "price": "49.0",
       "title": "Jozu [Two Legends]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
@@ -182,7 +227,7 @@
     },
     {
       "card_number": "DON!!",
-      "price": 50.0,
+      "price": "50.0",
       "title": "DON!! Card (Boa Hancock) - Extra Booster: One Piece Heroines Edition",
       "rarity": "",
       "store": "Big Bang Shop",
@@ -197,7 +242,7 @@
     },
     {
       "card_number": "ST02-009",
-      "price": 54.0,
+      "price": "54.0",
       "title": "Trafalgar Law [Starter Deck: Worst Generation]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
@@ -212,7 +257,7 @@
     },
     {
       "card_number": "P-024",
-      "price": 58.0,
+      "price": "58.0",
       "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
       "rarity": "Promo",
       "store": "Knightly Gaming",
@@ -227,7 +272,7 @@
     },
     {
       "card_number": "DON!!",
-      "price": 70.0,
+      "price": "70.0",
       "title": "DON!! Card (Nami) - Extra Booster: One Piece Heroines Edition",
       "rarity": "",
       "store": "Big Bang Shop",
@@ -242,7 +287,7 @@
     },
     {
       "card_number": "DON!!",
-      "price": 70.0,
+      "price": "70.0",
       "title": "DON!! Card (Iceberg) – Premium Booster -The Best- (PRB-01)",
       "rarity": "",
       "store": "Marvellous Hobbies",
@@ -257,7 +302,7 @@
     },
     {
       "card_number": "ST12-003",
-      "price": 72.0,
+      "price": "72.0",
       "title": "Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
@@ -272,7 +317,7 @@
     },
     {
       "card_number": "EB02-041",
-      "price": 90.0,
+      "price": "90.0",
       "title": "Merry Go [One Piece Promotion Cards]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
@@ -287,7 +332,7 @@
     },
     {
       "card_number": "P-052",
-      "price": 100.0,
+      "price": "100.0",
       "title": "Dracule Mihawk [Live Action Edition]",
       "rarity": "Promo",
       "store": "Big Bang Shop",
@@ -302,7 +347,7 @@
     },
     {
       "card_number": "EB02-011",
-      "price": 125.0,
+      "price": "125.0",
       "title": "Arlong (Alternate Art) [Extra Booster: Anime 25th Collection]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
@@ -317,7 +362,7 @@
     },
     {
       "card_number": "EB02-017",
-      "price": 125.0,
+      "price": "125.0",
       "title": "Nami [Extra Booster: Anime 25th Collection]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
@@ -332,7 +377,7 @@
     },
     {
       "card_number": "ST05-004",
-      "price": 210.0,
+      "price": "210.0",
       "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
@@ -347,7 +392,7 @@
     },
     {
       "card_number": "DON!!",
-      "price": 230.0,
+      "price": "230.0",
       "title": "DON!! Card (Egghead) (Gold) - The Azure Sea's Seven Foil",
       "rarity": "",
       "store": "Big Bang Shop",
@@ -362,7 +407,7 @@
     },
     {
       "card_number": "ST23-001",
-      "price": 244.0,
+      "price": "244.0",
       "title": "Uta [Starter Deck: Red Shanks]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
@@ -377,7 +422,7 @@
     },
     {
       "card_number": "EB02-035",
-      "price": 264.0,
+      "price": "264.0",
       "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
@@ -392,7 +437,7 @@
     },
     {
       "card_number": "EB02-052",
-      "price": 315.0,
+      "price": "315.0",
       "title": "Enel [Extra Booster: Anime 25th Collection]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
@@ -407,7 +452,7 @@
     },
     {
       "card_number": "OP07-057",
-      "price": 365.0,
+      "price": "365.0",
       "title": "Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards]",
       "rarity": "Rare",
       "store": "Big Bang Shop",
@@ -422,7 +467,7 @@
     },
     {
       "card_number": "ST01-004",
-      "price": 375.0,
+      "price": "375.0",
       "title": "Sanji [One Piece Film: Red]",
       "rarity": "Common",
       "store": "Big Bang Shop",
@@ -437,7 +482,7 @@
     },
     {
       "card_number": "OP08-023",
-      "price": 445.0,
+      "price": "445.0",
       "title": "Carrot (Parallel) [Two Legends]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
@@ -452,7 +497,7 @@
     },
     {
       "card_number": "OP14-033",
-      "price": 553.0,
+      "price": "553.0",
       "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
@@ -467,7 +512,7 @@
     },
     {
       "card_number": "DON!!",
-      "price": 669.0,
+      "price": "669.0",
       "title": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
       "rarity": "DON!!",
       "store": "Knightly Gaming",
@@ -482,7 +527,7 @@
     },
     {
       "card_number": "DON!!",
-      "price": 775.0,
+      "price": "775.0",
       "title": "DON!! Card (Foxy) (Gold) [Premium Booster -The Best- Vol. 2]",
       "rarity": "DON!!",
       "store": "Big Bang Shop",
@@ -497,7 +542,7 @@
     },
     {
       "card_number": "P-072",
-      "price": 1375.0,
+      "price": "1375.0",
       "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
       "rarity": "Promo",
       "store": "Big Bang Shop",
@@ -512,7 +557,7 @@
     },
     {
       "card_number": "OP06-106",
-      "price": 2570.0,
+      "price": "2570.0",
       "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
@@ -527,7 +572,7 @@
     },
     {
       "card_number": "OP14-096",
-      "price": 2646.0,
+      "price": "2646.0",
       "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
@@ -542,7 +587,7 @@
     },
     {
       "card_number": "DON!!",
-      "price": 3840.0,
+      "price": "3840.0",
       "title": "DON!! Card (Boa Hancock) (Gold) [Premium Booster -The Best- Vol. 2]",
       "rarity": "DON!!",
       "store": "Big Bang Shop",
@@ -557,7 +602,7 @@
     },
     {
       "card_number": "ST18-004",
-      "price": 3960.0,
+      "price": "3960.0",
       "title": "Zoro-Juurou (SP) [Legacy of the Master]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",

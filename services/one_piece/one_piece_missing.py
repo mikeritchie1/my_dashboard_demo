@@ -263,6 +263,21 @@ def normalize_card_number(value: object) -> str | None:
     return None
 
 
+def is_don_title(value: object) -> bool:
+    """Return true for actual DON card naming, without matching names like Don't."""
+    title = clean_text(value)
+    return re.search(r"\bDON!!|\bDON(?:!!)?\s+CARD\b", title, re.IGNORECASE) is not None
+
+
+def searched_card_number(card_number: str | None, title: object, missing: set[str]) -> str:
+    """Return the listing identifier when it is a missing card or any DON card."""
+    if is_don_title(title):
+        return card_number or "DON!!"
+    if card_number and card_number in missing:
+        return card_number
+    return ""
+
+
 def load_sheet_rows(path: Path, sheet_name: str) -> list[dict[int, str]]:
     with ZipFile(path) as archive:
         shared_strings: list[str] = []
@@ -854,13 +869,15 @@ def match_knightly(missing: set[str], products: list[dict]) -> list[dict[str, ob
     matches: list[dict[str, object]] = []
     for product in products:
         body = product.get("body_html") or ""
+        title = product.get("title") or ""
         card_number = normalize_card_number(body_field(body, "Card Number"))
         rarity = body_field(body, "Rarity")
-        if not card_number:
+        if not card_number and not is_don_title(title):
             card_number, inferred_rarity = resolve_card_info_from_image(product, card_number="", rarity=rarity)
             if inferred_rarity and not rarity:
                 rarity = inferred_rarity
-        if not card_number or card_number not in missing:
+        card_number = searched_card_number(card_number, title, missing)
+        if not card_number:
             continue
 
         available_variants = [
@@ -875,7 +892,7 @@ def match_knightly(missing: set[str], products: list[dict]) -> list[dict[str, ob
             {
                 "store": "Knightly Gaming",
                 "card_number": card_number,
-                "title": product.get("title") or "",
+                "title": title,
                 "set_name": body_field(body, "Set Name"),
                 "rarity": rarity,
                 "condition": cheapest.get("title") or "",
@@ -921,13 +938,15 @@ def match_big_bang(missing: set[str], products: list[dict]) -> list[dict[str, ob
     matches: list[dict[str, object]] = []
     for product in products:
         body = product.get("body_html") or ""
+        title = product.get("title") or ""
         card_number = normalize_card_number(body_field(body, "Card Number"))
         rarity = body_field(body, "Rarity")
-        if not card_number:
+        if not card_number and not is_don_title(title):
             card_number, inferred_rarity = resolve_card_info_from_image(product, card_number="", rarity=rarity)
             if inferred_rarity and not rarity:
                 rarity = inferred_rarity
-        if not card_number or card_number not in missing:
+        card_number = searched_card_number(card_number, title, missing)
+        if not card_number:
             continue
 
         available_variants = [
@@ -942,7 +961,7 @@ def match_big_bang(missing: set[str], products: list[dict]) -> list[dict[str, ob
             {
                 "store": "Big Bang Shop",
                 "card_number": card_number,
-                "title": product.get("title") or "",
+                "title": title,
                 "set_name": body_field(body, "Set Name"),
                 "rarity": rarity,
                 "condition": cheapest.get("title") or "",
@@ -1059,8 +1078,9 @@ def category_set_name(product: dict) -> str:
 def match_marvellous(missing: set[str], products: list[dict]) -> list[dict[str, object]]:
     matches: list[dict[str, object]] = []
     for product in products:
+        title = clean_text(product.get("name"))
         permalink = str(product.get("permalink") or "").lower()
-        if "one-piece" not in permalink and "one_piece" not in permalink:
+        if "one-piece" not in permalink and "one_piece" not in permalink and not is_don_title(title):
             continue
         search_text = " ".join(
             str(product.get(key) or "")
@@ -1068,11 +1088,12 @@ def match_marvellous(missing: set[str], products: list[dict]) -> list[dict[str, 
         )
         card_number = normalize_card_number(search_text)
         rarity = category_rarity(product)
-        if not card_number:
+        if not card_number and not is_don_title(title):
             card_number, inferred_rarity = resolve_card_info_from_image(product, card_number="", rarity=rarity)
             if inferred_rarity and not rarity:
                 rarity = inferred_rarity
-        if not card_number or card_number not in missing:
+        card_number = searched_card_number(card_number, title, missing)
+        if not card_number:
             continue
         if not product.get("is_in_stock") or not product.get("is_purchasable"):
             continue
@@ -1083,7 +1104,7 @@ def match_marvellous(missing: set[str], products: list[dict]) -> list[dict[str, 
             {
                 "store": "Marvellous Hobbies",
                 "card_number": card_number,
-                "title": clean_text(product.get("name")),
+                "title": title,
                 "set_name": "",
                 "rarity": rarity,
                 "condition": "",
@@ -1125,17 +1146,19 @@ def fetch_tanuki_products() -> list[dict]:
 def match_tanuki(missing: set[str], products: list[dict]) -> list[dict[str, object]]:
     matches: list[dict[str, object]] = []
     for product in products:
+        title = clean_text(product.get("name"))
         search_text = " ".join(
             str(product.get(key) or "")
             for key in ["sku", "name", "description", "short_description", "permalink"]
         )
         card_number = normalize_card_number(search_text)
         rarity = category_rarity(product)
-        if not card_number:
+        if not card_number and not is_don_title(title):
             card_number, inferred_rarity = resolve_card_info_from_image(product, card_number="", rarity=rarity)
             if inferred_rarity and not rarity:
                 rarity = inferred_rarity
-        if not card_number or card_number not in missing:
+        card_number = searched_card_number(card_number, title, missing)
+        if not card_number:
             continue
         if not product.get("is_in_stock") or not product.get("is_purchasable"):
             continue
@@ -1146,7 +1169,7 @@ def match_tanuki(missing: set[str], products: list[dict]) -> list[dict[str, obje
             {
                 "store": "Tanuki Trader",
                 "card_number": card_number,
-                "title": clean_text(product.get("name")),
+                "title": title,
                 "set_name": category_set_name(product),
                 "rarity": rarity,
                 "condition": "",
@@ -1323,6 +1346,7 @@ def fetch_toad_products() -> list[dict]:
 def match_toad(missing: set[str], products: list[dict]) -> list[dict[str, object]]:
     matches: list[dict[str, object]] = []
     for product in products:
+        title = clean_text(product.get("name"))
         permalink = str(product.get("permalink") or "").lower()
         category_names = " ".join(woo_category_names(product)).lower()
         if "one-piece" not in permalink and "one piece" not in category_names:
@@ -1333,11 +1357,12 @@ def match_toad(missing: set[str], products: list[dict]) -> list[dict[str, object
         )
         card_number = normalize_card_number(search_text)
         rarity = category_rarity(product)
-        if not card_number:
+        if not card_number and not is_don_title(title):
             card_number, inferred_rarity = resolve_card_info_from_image(product, card_number="", rarity=rarity)
             if inferred_rarity and not rarity:
                 rarity = inferred_rarity
-        if not card_number or card_number not in missing:
+        card_number = searched_card_number(card_number, title, missing)
+        if not card_number:
             continue
         if not product.get("is_in_stock") or not product.get("is_purchasable"):
             continue
@@ -1348,7 +1373,7 @@ def match_toad(missing: set[str], products: list[dict]) -> list[dict[str, object
             {
                 "store": "Toad Trader TCG",
                 "card_number": card_number,
-                "title": clean_text(product.get("name")),
+                "title": title,
                 "set_name": category_set_name(product),
                 "rarity": rarity,
                 "condition": "",
@@ -1443,7 +1468,7 @@ def _parse_bobshop_seller_page(
         if one_piece_only:
             has_card_code = normalize_card_number(title) is not None
             mentions_one_piece = "ONE PIECE" in title_upper
-            if not has_card_code and not mentions_one_piece:
+            if not has_card_code and not mentions_one_piece and not is_don_title(title):
                 continue
         price_rand = float(data.get("amount") or 0)
         url = str(data.get("url") or "")
@@ -1637,7 +1662,7 @@ def match_geek_haven(
         images = product.get("images") or []
         image_url = str(images[0].get("src") or "") if images else ""
 
-        if not card_number:
+        if not card_number and not is_don_title(name):
             cache_key = _geek_cache_key(product)
             cached = cache.get(cache_key) or {}
             cached_image = str(cached.get("image_url") or "")
@@ -1675,7 +1700,8 @@ def match_geek_haven(
                     "updated_at": _now_iso(),
                 }
 
-        if not card_number or card_number not in missing:
+        card_number = searched_card_number(card_number, name, missing)
+        if not card_number:
             continue
         matches.append(
             {
@@ -1717,12 +1743,13 @@ def match_collectiverse(missing: set[str], products: list[dict]) -> list[dict[st
     for product in products:
         name = str(product.get("name") or "")
         card_number = normalize_card_number(name)
-        if not card_number:
+        if not card_number and not is_don_title(name):
             misses += 1
             if misses <= 20 or misses % 50 == 0:
                 print(f"CollectiVerse: title card-number miss {misses} -> {name[:100]}", flush=True)
             continue
-        if card_number not in missing:
+        card_number = searched_card_number(card_number, name, missing)
+        if not card_number:
             continue
         images = product.get("images") or []
         matches.append(

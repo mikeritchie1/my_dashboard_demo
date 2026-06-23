@@ -186,9 +186,10 @@ One Piece config:
 
 One Piece automation:
 
-- Daily dashboard update still runs the One Piece scrape and the daily digest compares against the daily snapshot, so the email shows day-to-day added/removed changes.
-- Hourly One Piece card check runs `services/one_piece/notify_new_cards.py` every hour with its own `hourly` snapshot and only sends email when new card listings appear in the last hour.
-- Hourly workflow file: `.github/workflows/hourly-one-piece-card-check.yml`
+- The hourly workflow scrapes all One Piece stores and emails only newly added OP/EB listings or cards with `DON`/`DON!!` in the title, priced below R100. Price/stock updates and removed listings do not trigger email.
+- The missing-card list is loaded fresh from the configured Google Drive workbook each run, so new sets such as OP16 are searched as soon as they appear on the `Missing` sheet.
+- One Piece is excluded from the daily scraper and daily dashboard digest.
+- Hourly workflow file: `.github/workflows/hourly-update.yml`
 
 ### Release Radar
 

@@ -41,7 +41,7 @@ jobs:
           --mode new
           --snapshot-scope hourly
           --window-label "in the last hour"
-          --no-email
+          --max-price 100
 
       - name: Update metadata
         run: >

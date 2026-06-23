@@ -83,13 +83,6 @@ def load_specials(path: Path) -> list[Item]:
 
 
 SECTIONS = [
-    Section(
-        "One Piece Cards",
-        DATA_DIR / "one_piece" / "missing_cards.json",
-        load_json_items("listings"),
-        ("card_number", "store", "url"),
-        REPO_DIR / ".scrape" / "previous_missing_cards.json",
-    ),
     Section("New Releases", DATA_DIR / "release_radar" / "pahe_latest.json", load_json_items("items")),
     Section("Coming Soon Movies", DATA_DIR / "release_radar" / "coming_soon.json", load_json_items("items")),
     Section("Open Air Cinema", DATA_DIR / "release_radar" / "galileo_movies.json", load_json_items("items")),
