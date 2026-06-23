@@ -1,6 +1,51 @@
 {
   "listings": [
     {
+      "card_number": "DON!!",
+      "price": "3.0",
+      "title": "DON!! Card // Green Compass [Starter Deck: Straw Hat Crew]",
+      "rarity": "DON!!",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Straw Hat Crew",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R3.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-green-compass-starter-deck-straw-hat-crew",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/549343.jpg?v=1733898914",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "5.0",
+      "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R5.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/686650.jpg?v=1780510130",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "5.0",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "rarity": "DON!!",
+      "store": "Knightly Gaming",
+      "set_name": "Legacy of the Master",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R5.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-legacy-of-the-master",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/646574_in_1000x1000_8c143a87-f432-4018-94c6-527b7637214d.jpg?v=1768836277",
+      "art_variant": "alternate",
+      "scraped_at": "2026-06-23T08:24:16Z"
+    },
+    {
       "card_number": "P-055",
       "price": "8.0",
       "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
@@ -13,7 +58,97 @@
       "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/684621708",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596376_1024x1024_2x_k_bCN80rD.jpg",
       "art_variant": "original",
-      "scraped_at": "2026-06-21T15:44:22Z"
+      "scraped_at": "2026-06-23T10:26:30Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "9.0",
+      "title": "DON!! Card (Alternate Art) [A Fist of Divine Speed]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-a-fist-of-divine-speed/p/684738363",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/636742_1000x1000_crqA_lZ1g.webp",
+      "art_variant": "alternate",
+      "scraped_at": "2026-06-23T10:26:30Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "9.0",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-legacy-of-the-master/p/684738362",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/646574_in_1000x1000_8c143a87-f432-4018-94c6-527b7637214d_1024x1024_2x_sst2JIpUAs.jpg",
+      "art_variant": "alternate",
+      "scraped_at": "2026-06-23T10:26:30Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "9.0",
+      "title": "DON!! Card (Gol.D.Roger) [Carrying On His Will]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/don-card-gol-d-roger-carrying-on-his-will/p/684738361",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/660744_1000x1000_UCx4hrWnx.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T10:26:30Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "10.0",
+      "title": "DON!! Card (Alternate Art) [Emperors in the New World]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-emperors-in-the-new-world/p/684738366",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/604246_1024x1024_2x_SajGWit4d.jpg",
+      "art_variant": "alternate",
+      "scraped_at": "2026-06-23T10:26:30Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "13.0",
+      "title": "DON!! Card (Alternate Art) [Royal Blood]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-royal-blood/p/684738368",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/624357_1024x1024_2x_UofAQeyhDN.jpg",
+      "art_variant": "alternate",
+      "scraped_at": "2026-06-23T10:26:30Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "14.0",
+      "title": "DON!! Card (Alternate Art) [Wings of the Captain]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-wings-of-the-captain/p/684738365",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/541671_1024x1024_2x_EO8slCrxC.webp",
+      "art_variant": "alternate",
+      "scraped_at": "2026-06-23T10:26:30Z"
     },
     {
       "card_number": "P-026",
@@ -31,6 +166,36 @@
       "scraped_at": "2026-06-21T08:39:01Z"
     },
     {
+      "card_number": "DON!!",
+      "price": "16.0",
+      "title": "DON!! Card [Ultra Deck - The Three Captains]",
+      "rarity": "DON!!",
+      "store": "Knightly Gaming",
+      "set_name": "Ultra Deck - The Three Captains",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R16.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-ultra-deck-the-three-captains",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/527633.jpg?v=1733906031",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "20.0",
+      "title": "DON!! Card (Katakuri) [Premium Booster -The Best-]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/don-card-katakuri-premium-booster-the-best/p/684738367",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/593812_1024x1024_2x_2OOSeCvup.jpg",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T10:26:30Z"
+    },
+    {
       "card_number": "ST21-017",
       "price": "20.0",
       "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
@@ -43,7 +208,7 @@
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/615595_e14a633f-70a8-4440-9b66-bdf671208b84.jpg?v=1763494290",
       "art_variant": "original",
-      "scraped_at": "2026-06-22T17:23:09Z"
+      "scraped_at": "2026-06-23T08:24:16Z"
     },
     {
       "card_number": "OP05-082",
@@ -58,7 +223,7 @@
       "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/684521606",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
       "art_variant": "original",
-      "scraped_at": "2026-06-21T02:30:44Z"
+      "scraped_at": "2026-06-23T10:26:30Z"
     },
     {
       "card_number": "ST06-004",
@@ -76,21 +241,6 @@
       "scraped_at": "2026-06-21T08:39:01Z"
     },
     {
-      "card_number": "OP06-058",
-      "price": "35.0",
-      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
-      "rarity": "Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Premium Booster -The Best- Vol. 2",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R35.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/656129.jpg?v=1760629865",
-      "art_variant": "original",
-      "scraped_at": "2026-06-21T08:39:01Z"
-    },
-    {
       "card_number": "P-053",
       "price": "35.0",
       "title": "Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-]",
@@ -103,7 +253,22 @@
       "url": "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/684318802",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
       "art_variant": "original",
-      "scraped_at": "2026-06-21T02:30:44Z"
+      "scraped_at": "2026-06-23T10:26:30Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "price": "39.0",
+      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Premium Booster -The Best- Vol. 2",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R39.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/656129.jpg?v=1760629865",
+      "art_variant": "original",
+      "scraped_at": "2026-06-21T08:39:01Z"
     },
     {
       "card_number": "ST22-002",
@@ -122,18 +287,33 @@
     },
     {
       "card_number": "OP08-047",
-      "price": "49.0",
+      "price": "48.0",
       "title": "Jozu [Two Legends]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "Two Legends",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R49.00",
+      "available_variants": "Near Mint Foil R48.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/558075.jpg?v=1733896308",
       "art_variant": "original",
       "scraped_at": "2026-06-21T08:39:01Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "50.0",
+      "title": "DON!! Card (Boa Hancock) - Extra Booster: One Piece Heroines Edition",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R50.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-boa-hancock-extra-booster-one-piece-heroines-edition",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/s-l225.jpg?v=1777729019",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
     },
     {
       "card_number": "ST02-009",
@@ -166,6 +346,21 @@
       "scraped_at": "2026-06-21T08:39:01Z"
     },
     {
+      "card_number": "DON!!",
+      "price": "70.0",
+      "title": "DON!! Card (Nami) - Extra Booster: One Piece Heroines Edition",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R70.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-nami-extra-booster-one-piece-heroines-edition",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/677560_4c06803e-2d84-4587-b7cb-4210b9245ca3.jpg?v=1771408649",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
+    },
+    {
       "card_number": "ST12-003",
       "price": "72.0",
       "title": "Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards]",
@@ -179,6 +374,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/650728.jpg?v=1772488189",
       "art_variant": "original",
       "scraped_at": "2026-06-21T08:39:01Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "80.0",
+      "title": "DON!! Card (Trafalgar Law) [Premium Booster -The Best-]",
+      "rarity": "",
+      "store": "GeekHaven",
+      "set_name": "",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "available_variants": "",
+      "url": "https://www.bobshop.co.za/don-card-trafalgar-law-premium-booster-the-best/p/684738364",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/593825_1024x1024_2x_abhLd4OcC.webp",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T10:26:30Z"
     },
     {
       "card_number": "EB02-041",
@@ -254,6 +464,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
       "art_variant": "original",
       "scraped_at": "2026-06-21T08:39:01Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "230.0",
+      "title": "DON!! Card (Egghead) (Gold) - The Azure Sea's Seven Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R230.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-egghead-gold-the-azure-seas-seven-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/672190_f77f1e6e-2186-4836-92a7-ac4ffea17090.jpg?v=1768558787",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
     },
     {
       "card_number": "ST23-001",
@@ -361,6 +586,36 @@
       "scraped_at": "2026-06-21T08:39:01Z"
     },
     {
+      "card_number": "DON!!",
+      "price": "669.0",
+      "title": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "rarity": "DON!!",
+      "store": "Knightly Gaming",
+      "set_name": "Premium Booster -The Best- Vol. 2",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R669.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-hannyabal-gold-premium-booster-the-best-vol-2",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/655123.jpg?v=1760630778",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "775.0",
+      "title": "DON!! Card (Foxy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "rarity": "DON!!",
+      "store": "Big Bang Shop",
+      "set_name": "Premium Booster -The Best- Vol. 2",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R775.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-foxy-gold-premium-booster-the-best-vol-2",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/655487.jpg?v=1763505340",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
+    },
+    {
       "card_number": "P-072",
       "price": "1375.0",
       "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
@@ -392,18 +647,33 @@
     },
     {
       "card_number": "OP14-096",
-      "price": "2646.0",
+      "price": "2658.0",
       "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R2646.00",
+      "available_variants": "Near Mint Foil R2658.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670874.jpg?v=1769205424",
       "art_variant": "alternate",
       "scraped_at": "2026-06-21T08:39:01Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": "3840.0",
+      "title": "DON!! Card (Boa Hancock) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "rarity": "DON!!",
+      "store": "Big Bang Shop",
+      "set_name": "Premium Booster -The Best- Vol. 2",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R3840.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-boa-hancock-gold-premium-booster-the-best-vol-2",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/655116_a2efa249-5097-443c-bdcc-83eccf7017f4.jpg?v=1763505297",
+      "art_variant": "original",
+      "scraped_at": "2026-06-23T08:24:16Z"
     },
     {
       "card_number": "ST18-004",
