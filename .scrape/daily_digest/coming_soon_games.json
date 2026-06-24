@@ -186,6 +186,14 @@
       "platforms": "PC"
     },
     {
+      "title": "Solarpunk",
+      "url": "https://rawg.io/games/solarpunk",
+      "image": "https://media.rawg.io/media/screenshots/db7/db73b899db9417aad265b3178e78ace1.jpg",
+      "release_date": "2026-06-08",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
       "title": "Mystic Courtesan Stories: Trainee Maria",
       "url": "https://rawg.io/games/mystic-courtesan-stories-trainee-maria",
       "image": "https://media.rawg.io/media/screenshots/9c3/9c3045f02924811ea631f70ed51c733a.jpg",
@@ -392,14 +400,6 @@
       "release_date": "2026-05-27",
       "rating": "4.5",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
-    },
-    {
-      "title": "Rose & Locket",
-      "url": "https://rawg.io/games/rose-locket",
-      "image": "https://media.rawg.io/media/screenshots/342/34287e7b9355c6a64df7e41979ca114d.jpg",
-      "release_date": "2026-05-27",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [

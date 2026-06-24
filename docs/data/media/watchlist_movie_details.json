@@ -8040,6 +8040,23 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
+  "movie:carolina caroline": {
+    "title": "Carolina Caroline?",
+    "media_type": "movie",
+    "poster_url": null,
+    "runtime_minutes": null,
+    "tmdb_url": null,
+    "genres": null,
+    "actors": null,
+    "trailer_url": null,
+    "description": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "overview": null,
+    "rating": null,
+    "tmdb_id": null
+  },
   "movie:caught stealing": {
     "title": "Caught Stealing",
     "rating": 6.9,
@@ -11040,6 +11057,23 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
+  "movie:i love boosters": {
+    "title": "I Love Boosters?",
+    "media_type": "movie",
+    "poster_url": null,
+    "runtime_minutes": null,
+    "tmdb_url": null,
+    "genres": null,
+    "actors": null,
+    "trailer_url": null,
+    "description": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "overview": null,
+    "rating": null,
+    "tmdb_id": null
+  },
   "movie:i saw the tv glow": {
     "title": "I Saw The TV Glow",
     "rating": 6.1,
@@ -13612,6 +13646,23 @@
     "runtime_minutes": 86,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:power ballad": {
+    "title": "Power Ballad?",
+    "media_type": "movie",
+    "poster_url": null,
+    "runtime_minutes": null,
+    "tmdb_url": null,
+    "genres": null,
+    "actors": null,
+    "trailer_url": null,
+    "description": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "overview": null,
+    "rating": null,
+    "tmdb_id": null
   },
   "movie:predator badlands": {
     "title": "Predator: Badlands",
@@ -18992,6 +19043,23 @@
     "runtime_minutes": 107,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:tuner": {
+    "title": "Tuner",
+    "media_type": "movie",
+    "poster_url": null,
+    "runtime_minutes": null,
+    "tmdb_url": null,
+    "genres": null,
+    "actors": null,
+    "trailer_url": null,
+    "description": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "overview": null,
+    "rating": null,
+    "tmdb_id": null
   },
   "movie:tusk": {
     "title": "Tusk",

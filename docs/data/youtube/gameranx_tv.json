@@ -1,18 +1,27 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-23T07:54:16.639133Z",
+  "generated_at": "2026-06-24T07:45:04.912469Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
     {
+      "id": "yt-AxjKHf0ob5Y",
+      "video_id": "AxjKHf0ob5Y",
+      "title": "10 Upcoming AAA Games That Aren't Like Any Other Games",
+      "url": "https://www.youtube.com/watch?v=AxjKHf0ob5Y",
+      "published_at": "2026-06-23T16:49:55+00:00",
+      "updated_at": "2026-06-24T07:00:36+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/AxjKHf0ob5Y/hqdefault.jpg"
+    },
+    {
       "id": "yt-xABoUEs7jjE",
       "video_id": "xABoUEs7jjE",
-      "title": "10 Games To Play If You're DESPERATE FOR GTA 6",
+      "title": "10 Recent Games To PLAY BEFORE GTA 6",
       "url": "https://www.youtube.com/watch?v=xABoUEs7jjE",
       "published_at": "2026-06-22T16:38:49+00:00",
-      "updated_at": "2026-06-23T07:17:28+00:00",
+      "updated_at": "2026-06-23T16:52:15+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/xABoUEs7jjE/hqdefault.jpg"
     },
     {
@@ -57,7 +66,7 @@
       "title": "20 BEST Games of 2026 [FIRST HALF]",
       "url": "https://www.youtube.com/watch?v=y52qPEY6fVY",
       "published_at": "2026-06-17T18:33:24+00:00",
-      "updated_at": "2026-06-21T00:43:31+00:00",
+      "updated_at": "2026-06-23T11:27:34+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/y52qPEY6fVY/hqdefault.jpg"
     },
     {
@@ -93,7 +102,7 @@
       "title": "Top 20 NEW Games of 2026 [Second Half]",
       "url": "https://www.youtube.com/watch?v=c46KMTqwRiA",
       "published_at": "2026-06-14T16:54:58+00:00",
-      "updated_at": "2026-06-18T00:50:48+00:00",
+      "updated_at": "2026-06-24T04:47:17+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/c46KMTqwRiA/hqdefault.jpg"
     },
     {
@@ -111,7 +120,7 @@
       "title": "CRIMSON DESERT CHANGING ITS STORY? XBOX COMEBACK PLAN & MORE",
       "url": "https://www.youtube.com/watch?v=V97MnAqTN1s",
       "published_at": "2026-06-12T20:19:00+00:00",
-      "updated_at": "2026-06-13T14:08:30+00:00",
+      "updated_at": "2026-06-23T12:47:12+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/V97MnAqTN1s/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-06-11T15:27:47+00:00",
       "updated_at": "2026-06-18T16:43:58+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/a2F5zAE01fs/hqdefault.jpg"
-    },
-    {
-      "id": "yt-LXNJOD6Cv0k",
-      "video_id": "LXNJOD6Cv0k",
-      "title": "10 Most IMPROVED Games of 2026 That Play Different",
-      "url": "https://www.youtube.com/watch?v=LXNJOD6Cv0k",
-      "published_at": "2026-06-10T16:18:03+00:00",
-      "updated_at": "2026-06-21T16:47:56+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/LXNJOD6Cv0k/hqdefault.jpg"
     }
   ]
 }

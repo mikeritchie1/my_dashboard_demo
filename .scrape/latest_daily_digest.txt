@@ -1,53 +1,20 @@
 Daily dashboard digest
 
-One Piece Cards
----------------
-Added: 1
-1. Gum-Gum Mole Pistol [Starter Deck EX: Gear 5] | Big Bang Shop | 20.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-mole-pistol-starter-deck-ex-gear-5
-
-Updated: 19
-1. Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards] | Knightly Gaming | 14.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards
-2. Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2] | Knightly Gaming | 35.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2
-3. Jozu [Two Legends] | Knightly Gaming | 49.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends
-4. Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards] | Knightly Gaming | 72.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-illustration-box-vol-4-one-piece-promotion-cards
-5. Merry Go [One Piece Promotion Cards] | Knightly Gaming | 90.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards
-6. Dracule Mihawk [Live Action Edition] | Big Bang Shop | 100.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition
-7. Arlong (Alternate Art) [Extra Booster: Anime 25th Collection] | Big Bang Shop | 125.0
-https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection
-8. Nami [Extra Booster: Anime 25th Collection] | Knightly Gaming | 125.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection
-9. Uta [Starter Deck: Red Shanks] | Knightly Gaming | 244.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks
-10. Sanji & Pudding [Extra Booster: Anime 25th Collection] | Knightly Gaming | 264.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection
-...and 9 more
-
-Removed: 7
-1. Nami (Alternate Art) [The Azure Sea's Seven] | Knightly Gaming | 1146.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven
-2. Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-] | GeekHaven | 8.0
-https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/684621708
-3. Trafalgar Law [Ultra Deck - The Three Captains] | Knightly Gaming | 165.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains
-4. Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-] | GeekHaven | 30.0
-https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/684521606
-5. Thatch [Starter Deck: Red Edward.Newgate] | Knightly Gaming | 66.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/thatch-starter-deck-red-edward-newgate
-6. Nami (054) (Alternate Art) [A Fist of Divine Speed] | Knightly Gaming | 722.0
-https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed
-7. Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-] | GeekHaven | 35.0
-https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/684318802
-
 New Releases
 ------------
-Added: 0
+Added: 6
+1. I Love Boosters
+https://pahe.ink/i-love-boosters-2026-web-dl-480p-720p-1080p/
+2. Voicemails for Isabelle
+https://pahe.ink/voicemails-for-isabelle-2026-web-dl-480p-720p-1080p/
+3. Tuner
+https://pahe.ink/tuner-2026-web-dl-480p-720p-1080p/
+4. Carolina Caroline
+https://pahe.ink/carolina-caroline-2026-web-dl-480p-720p-1080p/
+5. Power Ballad
+https://pahe.ink/power-ballad-2026-web-dl-480p-720p-1080p/
+6. Husbands in Action
+https://pahe.ink/husbands-in-action-2026-web-dl-480p-720p-1080p/
 
 Updated: 0
 
@@ -57,7 +24,11 @@ Coming Soon Movies
 ------------------
 Added: 0
 
-Updated: 0
+Updated: 2
+1. Moana | 2026-07-10
+https://www.themoviedb.org/movie/1108427
+2. The Invite | 2026-07-24
+https://www.themoviedb.org/movie/950028
 
 Removed: 0
 
@@ -71,35 +42,15 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 6
-1. Space Ends | 2026-06-19
-https://rawg.io/games/space-ends
-2. Castles and Manors - Escape Room Bundle | 2026-06-21
-https://rawg.io/games/castles-and-manors-escape-room-bundle
-3. Space Grunts: Chrono Shard | 2026-06-21
-https://rawg.io/games/space-grunts-chrono-shard
-4. MAK: Survival | 2026-06-19
-https://rawg.io/games/mak-survival
-5. Junkster | 2026-06-16
-https://rawg.io/games/junkster
-6. mc2games Escape Room Marathon | 2026-06-21
-https://rawg.io/games/mc2games-escape-room-marathon
+Added: 1
+1. Solarpunk | 2026-06-08
+https://rawg.io/games/solarpunk
 
 Updated: 0
 
-Removed: 6
-1. Vortica | 2026-05-25
-https://rawg.io/games/vortica
-2. Unbound Drift | 2026-05-26
-https://rawg.io/games/unbound-drift
-3. 7 Days Before the End | 2026-05-26
-https://rawg.io/games/7-days-before-the-end
-4. Stonemachia | 2026-05-26
-https://rawg.io/games/stonemachia
-5. Paralives | 2026-05-25
-https://rawg.io/games/paralives
-6. Yerba Buena | 2026-05-26
-https://rawg.io/games/yerba-buena
+Removed: 1
+1. Rose & Locket | 2026-05-27
+https://rawg.io/games/rose-locket
 
 Coming Soon Games
 -----------------
@@ -119,71 +70,69 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 16
-1. Margaux Fouché presents An Evening with Adele | 2026-06-26T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/378056-margaux-fouch-presents-an-evening-with-adele/
-2. DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS | 2027-01-02T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/
-3. [SOLD OUT] Shibari Rope Class to Jam | First suspension harness | 2026-06-25T18:45:00+02:00 | Unit G19, Embodiment Rope Space
-https://www.quicket.co.za/events/371930-sold-out-shibari-rope-class-to-jam-first-suspension-harness/
-4. DISTRICT SIX MUSEUM: MARCH 2027 ADMISSION TICKETS | 2027-03-01T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365072-district-six-museum-march-2027-admission-tickets/
-5. The Good Table | 2026-06-30T18:00:00+02:00 | Honest Chocolate/The Gin Bar
-https://www.quicket.co.za/events/380080-the-good-table/
-6. DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS | 2027-02-01T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/
-7. Ashtray | 2026-06-26T19:30:00+02:00 | Kaapstad Toneelhuis
-https://www.quicket.co.za/events/374950-ashtray/
-8. Ready, Set, Grow: A Supportive Morning for Expectant & New Parents focused on confidence, skills, and support. | 2026-08-22T09:30:00+02:00 | The Annex Restaurant & Venue
-https://www.quicket.co.za/events/378356-ready-set-grow-a-supportive-morning-for-expectant-new-parents-focused-on-confid/
-9. The Biz presents Motown Memoirs LIVE! @ café Roux | 2026-06-25T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/371003-the-biz-presents-motown-memoirs-live-caf-roux/
-10. Jireh Parent's Night Out - The Wild Edition | 2026-07-24T20:30:00+02:00 | Destino GrandWest
-https://www.quicket.co.za/events/371077-jireh-parents-night-out-the-wild-edition/
-...and 6 more
-
-Updated: 2
-1. Time to Ignite - Cape Town | 2026-06-27T09:00:00+02:00 | Canal Walk Shopping Centre - Auditorium Entrance 12
-https://www.quicket.co.za/events/375623-time-to-ignite-cape-town/
-2. Speelfilm | Feature Film: Silas en die Ysbeer op Tafelberg | 2026-08-19T16:00:00+02:00 | Rotunda at The Bay Hotel
-https://www.quicket.co.za/events/381090-speelfilm-feature-film-silas-en-die-ysbeer-op-tafelberg/
-
-Removed: 16
-1. Pelagos Cape Town Grand Opening | Acoustic Sessions featuring Hannah Ray | 2026-07-01T18:00:00+02:00 | Cape Town Club
-https://www.quicket.co.za/events/376374-pelagos-cape-town-grand-opening-acoustic-sessions-featuring-hannah-ray/
-2. House Pour Edition 001 | 2026-07-04T16:00:00+02:00 | 54 Shortmarket St
-https://www.quicket.co.za/events/380460-house-pour-edition-001/
-3. Last Thursdays, Comedy in a Surf Shop | 2026-06-25T20:00:00+02:00 | Atlantic Surf Collective
+Added: 10
+1. Not Just Dads: Coffee Catch-Up | 2026-06-28T10:00:00+02:00 | Nice Cafe
+https://www.quicket.co.za/events/380926-not-just-dads-coffee-catch-up/
+2. Last Thursdays, Comedy in a Surf Shop | 2026-06-25T20:00:00+02:00 | Atlantic Surf Collective
 https://www.quicket.co.za/events/379882-last-thursdays-comedy-in-a-surf-shop/
-4. Wren Hinds Band LIVE @ The Imaginarium | 2026-06-27T17:30:00+02:00 | The Imaginarium, Baskloof Fynbos Nature Reserve
-https://www.quicket.co.za/events/375830-wren-hinds-band-live-the-imaginarium/
-5. Dinner with Olifantsberg - CPT | 2026-06-24T18:30:00+02:00 | Tannin
-https://www.quicket.co.za/events/375759-dinner-with-olifantsberg-cpt/
-6. Amy Ayanda & Akeeda | 2026-06-27T18:30:00+02:00 | The Alma Cafe
-https://www.quicket.co.za/events/377916-amy-ayanda-akeeda/
-7. Skilpadvlei Quiz Night | 2026-07-03T19:00:00+02:00 | Skilpadvlei Wine Farm
-https://www.quicket.co.za/events/381018-skilpadvlei-quiz-night/
-8. Astronaut Dorothy Metcalf-Lindenburger at Parklands College 3 August 2026 | 2026-08-03T18:00:00+02:00 | Parklands College,Secondary Faculty, Curie Hall
-https://www.quicket.co.za/events/374813-astronaut-dorothy-metcalf-lindenburger-at-parklands-college-3-august-2026/
-9. QUEER TEMPLE for Women* | 2026-06-27T17:30:00+02:00 | The Spice Yard
+3. Game of stoners | 2026-06-27T14:00:00+02:00 | Dunkley Square
+https://www.quicket.co.za/events/368036-game-of-stoners/
+4. Zuke Demo Day | 2026-06-25T16:00:00+02:00 | Parow Golf Club
+https://www.quicket.co.za/events/376681-zuke-demo-day/
+5. The Royal Celebration | 2026-06-26T18:00:00+02:00 | Duchess Lounge
+https://www.quicket.co.za/events/371526-the-royal-celebration/
+6. Footloose The Musical | 2026-08-04T19:00:00+02:00 | Clegg Hall (WBHS)
+https://www.quicket.co.za/events/383234-footloose-the-musical/
+7. Industry Networking Event | 2026-06-25T18:00:00+02:00 | Let's Get Reel Studios
+https://www.quicket.co.za/events/376849-industry-networking-event/
+8. QUEER TEMPLE for Women* | 2026-06-27T17:30:00+02:00 | The Spice Yard
 https://www.quicket.co.za/events/327689-queer-temple-for-women/
-10. A Pink Room Games Night EXTRAvaganza! | 2026-06-25T19:00:00+02:00 | The Gorgeous George Hotel
-https://www.quicket.co.za/events/379607-a-pink-room-games-night-extravaganza/
-...and 6 more
+9. FinMaster x Exclusive Books Fun Day at Cavendish Square | 2026-06-27T11:00:00+02:00 | Cavendish Square
+https://www.quicket.co.za/events/380689-finmaster-x-exclusive-books-fun-day-at-cavendish-square/
+10. Club Koooooos - Decorex After Hours Party | 2026-06-25T18:30:00+02:00 | CLUB KLOOF
+https://www.quicket.co.za/events/381946-club-koooooos-decorex-after-hours-party/
+
+Updated: 4
+1. Global Wellness Day South Africa | 2026-06-27T09:00:00+02:00 | Protea Hotel Cape Town Mowbray
+https://www.quicket.co.za/events/382587-global-wellness-day-south-africa/
+2. Gandalf's Reunion Show 2026 | 2026-06-27T14:00:00+02:00 | Trenchtown
+https://www.quicket.co.za/events/370809-gandalfs-reunion-show-2026/
+3. AFTER SOIREE | 2026-06-28T16:00:00+02:00 | THE DISTRICT
+https://www.quicket.co.za/events/377090-after-soiree/
+4. Baked Shakespeare at The Masque Theatre: Romeo & Juliet | 2026-07-08T19:30:00+02:00 | The Masque Theatre
+https://www.quicket.co.za/events/371359-baked-shakespeare-at-the-masque-theatre-romeo-juliet/
+
+Removed: 10
+1. Get On Co. Indie Night @ café Roux | 2026-06-23T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/379875-get-on-co-indie-night-caf-roux/
+2. Century City Men's Night | 2026-06-23T18:00:00+02:00 | Hillsong Church, Century City
+https://www.quicket.co.za/events/379981-century-city-mens-night/
+3. Cape Town Business Basics Masterclass | 2026-07-11T10:00:00+02:00 | Lagoon Beach Hotel & Spa
+https://www.quicket.co.za/events/367152-cape-town-business-basics-masterclass/
+4. Musical Mondays July | 2026-07-27T19:30:00+02:00 | The Outlore Base
+https://www.quicket.co.za/events/371861-musical-mondays-july/
+5. First Friday at Cape Point Vineyards | 2026-07-03T18:00:00+02:00 | Cape Point Vineyards
+https://www.quicket.co.za/events/380899-first-friday-at-cape-point-vineyards/
+6. Speelfilm | Feature Film: Silas en die Ysbeer op Tafelberg | 2026-08-19T16:00:00+02:00 | Rotunda at The Bay Hotel
+https://www.quicket.co.za/events/381090-speelfilm-feature-film-silas-en-die-ysbeer-op-tafelberg/
+7. Almost Famous | 2026-07-18T19:00:00+02:00 | Joshua Generation
+https://www.quicket.co.za/events/361197-almost-famous/
+8. DISTRICT SIX MUSEUM: MARCH 2027 ADMISSION TICKETS | 2027-03-01T09:00:00+02:00 | 25A Buitenkant St
+https://www.quicket.co.za/events/365072-district-six-museum-march-2027-admission-tickets/
+9. Insomnia | 2026-07-17T17:00:00+02:00 | Roxy Woodstock
+https://www.quicket.co.za/events/376958-insomnia/
+10. Secrets of Summer NYE 2026 | 2026-12-31T15:00:00+02:00 | Black River Park Sports Complex (Opposite Riverlands Mall)
+https://www.quicket.co.za/events/324924-secrets-of-summer-nye-2026/
 
 Webtickets Events
 -----------------
-Added: 1
-1. Tulbagh Christmas in Winter 2026 | From 26 Jun 2026 16:00 | Church Street Tulbagh and surrounding wine farms | From R225
-https://www.webtickets.co.za/v2/event.aspx?itemid=1583490083
+Added: 0
 
 Updated: 1
-1. Cape Town Abseil | From 23 Jun 2026 | Table Mountain | R995 - R1100
+1. Cape Town Abseil | From 24 Jun 2026 | Table Mountain | R995 - R1100
 https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
 
-Removed: 1
-1. Behind The Music with Rodney Trudgeon – The Second Movement | 22 Jun 2026 18:30 | Artscape Opera Bar | R180 - R200
-https://www.webtickets.co.za/v2/event.aspx?itemid=1593803194
+Removed: 0
 
 Google Calendar
 ---------------

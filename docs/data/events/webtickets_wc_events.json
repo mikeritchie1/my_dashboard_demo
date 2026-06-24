@@ -1,20 +1,5 @@
 [
   {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 23 Jun 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "FEED YOUR NEED FOR SPEED AT KILLARNEY ROBOT RACING!",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597396069",
     "image": "https://content.webtickets.co.za/KillarneyEvents/panel_260624 Robot Racing Webtickets 1110 x 740_20260615_151705.jpg",
@@ -26,6 +11,21 @@
     "categories": [
       "sports"
     ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 24 Jun 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
