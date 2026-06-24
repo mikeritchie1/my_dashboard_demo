@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T18:26:18Z",
+  "updated_at": "2026-06-24T20:25:29Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -36012,6 +36012,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-24",
       "captured_at": "2026-06-24T16:10:24Z"
+    },
+    {
+      "card_number": "ST06-004",
+      "art_variant": "original",
+      "price": 35.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
+      "title": "Smoker [Starter Deck: Absolute Justice]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-24",
+      "captured_at": "2026-06-24T20:25:29Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 183.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-24",
+      "captured_at": "2026-06-24T20:25:29Z"
     }
   ]
 }

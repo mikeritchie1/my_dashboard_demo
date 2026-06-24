@@ -226,21 +226,6 @@
       "scraped_at": "2026-06-23T10:26:30Z"
     },
     {
-      "card_number": "ST06-004",
-      "price": "30.0",
-      "title": "Smoker [Starter Deck: Absolute Justice]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Starter Deck: Absolute Justice",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R30.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
-      "art_variant": "original",
-      "scraped_at": "2026-06-21T08:39:01Z"
-    },
-    {
       "card_number": "P-053",
       "price": "35.0",
       "title": "Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-]",
@@ -254,6 +239,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
       "art_variant": "original",
       "scraped_at": "2026-06-23T10:26:30Z"
+    },
+    {
+      "card_number": "ST06-004",
+      "price": "35.0",
+      "title": "Smoker [Starter Deck: Absolute Justice]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Starter Deck: Absolute Justice",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R35.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
+      "art_variant": "original",
+      "scraped_at": "2026-06-21T08:39:01Z"
     },
     {
       "card_number": "OP06-058",
@@ -449,6 +449,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/629103_f877edaa-ce3c-427b-a220-36abc674e11c.jpg?v=1763498691",
       "art_variant": "alternate",
       "scraped_at": "2026-06-21T08:39:01Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "price": "183.0",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Azure Sea's Seven",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R183.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/671427.jpg?v=1769204968",
+      "art_variant": "original",
+      "scraped_at": "2026-06-24T20:25:29Z"
     },
     {
       "card_number": "ST05-004",
