@@ -1,26 +1,9 @@
 [
   {
-    "title": "FEED YOUR NEED FOR SPEED AT KILLARNEY ROBOT RACING!",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597396069",
-    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_260624 Robot Racing Webtickets 1110 x 740_20260615_151705.jpg",
-    "date_text": "24 Jun 2026 18:30",
-    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
-    "price": "R70",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "sports"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "Cape Town Abseil",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
     "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 24 Jun 2026",
+    "date_text": "From 25 Jun 2026",
     "venue": "Table Mountain",
     "price": "R995 - R1100",
     "source": "Webtickets",
@@ -76,6 +59,23 @@
     "region": "Western Cape",
     "categories": [
       "bar"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Zeitz MOCAA presents Pan-African Film Screening: About Some Meaningless Events (1974), directed by Mostafa Derkaoui",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1596829461",
+    "image": "https://content.webtickets.co.za/zeitzmocaa/panel_Webtickets_Screening_20260605_164709.png",
+    "date_text": "26 Jun 2026 18:00",
+    "venue": "The Labia Theatre, Orange Street, Gardens, Cape Town, South Africa",
+    "price": "R30",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
     ],
     "missing_location": true,
     "location_key": "",

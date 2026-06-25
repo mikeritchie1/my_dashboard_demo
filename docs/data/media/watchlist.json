@@ -3,23 +3,19 @@
   "currently_watching": {
     "movies": [
       {
+        "title": "The Sheep Detectives",
+        "opinion": ""
+      },
+      {
         "title": "Tuner",
         "opinion": ""
       },
       {
-        "title": "I Love Boosters?",
+        "title": "I Love Boosters",
         "opinion": ""
       },
       {
-        "title": "Power Ballad?",
-        "opinion": ""
-      },
-      {
-        "title": "Carolina Caroline?",
-        "opinion": ""
-      },
-      {
-        "title": "1984",
+        "title": "Carolina Caroline",
         "opinion": ""
       },
       {
@@ -1142,6 +1138,11 @@
           "type": "movie",
           "title": "Good Luck, Have Fun, Don’t Die",
           "opinion": "Liked"
+        },
+        {
+          "type": "movie",
+          "title": "Diary Of A Wimp Kid",
+          "opinion": ""
         },
         {
           "type": "series",

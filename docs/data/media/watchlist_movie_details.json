@@ -6276,23 +6276,6 @@
     ],
     "runtime_minutes": 121
   },
-  "movie:1984": {
-    "title": "1984",
-    "media_type": "movie",
-    "rating": null,
-    "actors": null,
-    "trailer_url": null,
-    "number_of_seasons": null,
-    "directors": null,
-    "genres": null,
-    "overview": null,
-    "description": null,
-    "tmdb_id": null,
-    "runtime_minutes": null,
-    "poster_url": null,
-    "release_date": null,
-    "tmdb_url": null
-  },
   "movie:a clockwork orange": {
     "title": "A Clockwork Orange",
     "rating": 8.2,
@@ -8787,6 +8770,23 @@
       "Robert Rodriguez"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=nJb0yXRHdi4"
+  },
+  "movie:diary of a wimp kid": {
+    "title": "Diary Of A Wimp Kid",
+    "media_type": "movie",
+    "trailer_url": null,
+    "release_date": null,
+    "tmdb_url": null,
+    "runtime_minutes": null,
+    "description": null,
+    "poster_url": null,
+    "overview": null,
+    "directors": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "rating": null,
+    "tmdb_id": null,
+    "actors": null
   },
   "movie:didi": {
     "title": "Didi",
@@ -13647,23 +13647,6 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:power ballad": {
-    "title": "Power Ballad?",
-    "media_type": "movie",
-    "poster_url": null,
-    "runtime_minutes": null,
-    "tmdb_url": null,
-    "genres": null,
-    "actors": null,
-    "trailer_url": null,
-    "description": null,
-    "number_of_seasons": null,
-    "release_date": null,
-    "directors": null,
-    "overview": null,
-    "rating": null,
-    "tmdb_id": null
-  },
   "movie:predator badlands": {
     "title": "Predator: Badlands",
     "rating": 7.7,
@@ -18068,6 +18051,23 @@
     "runtime_minutes": 133,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:the sheep detectives": {
+    "title": "The Sheep Detectives",
+    "media_type": "movie",
+    "trailer_url": null,
+    "release_date": null,
+    "tmdb_url": null,
+    "runtime_minutes": null,
+    "description": null,
+    "poster_url": null,
+    "overview": null,
+    "directors": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "rating": null,
+    "tmdb_id": null,
+    "actors": null
   },
   "movie:the substance": {
     "title": "The Substance",

@@ -2,6 +2,14 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Star Fox",
+      "url": "https://rawg.io/games/star-fox-2",
+      "image": "https://media.rawg.io/media/games/bac/bacf2182d40d3785051a2161f7a3aa84.jpg",
+      "release_date": "2026-06-25",
+      "rating": "0.0",
+      "platforms": "Nintendo Switch"
+    },
+    {
       "title": "Space Grunts: Chrono Shard",
       "url": "https://rawg.io/games/space-grunts-chrono-shard",
       "image": "https://media.rawg.io/media/screenshots/edc/edcb9e46a8987a123d64c89f93c9159d.jpg",
@@ -122,17 +130,17 @@
       "platforms": "PC"
     },
     {
-      "title": "Crushed In Time",
-      "url": "https://rawg.io/games/crushed-in-time",
-      "image": "https://media.rawg.io/media/games/67b/67b8ca361688922a71e441445fe892d4.jpg",
+      "title": "SPORTAL",
+      "url": "https://rawg.io/games/sportal",
+      "image": "https://media.rawg.io/media/screenshots/40c/40c77e273f69b2e2b081bbcc6d7bfb19.jpg",
       "release_date": "2026-06-10",
       "rating": "0.0",
       "platforms": ""
     },
     {
-      "title": "SPORTAL",
-      "url": "https://rawg.io/games/sportal",
-      "image": "https://media.rawg.io/media/screenshots/40c/40c77e273f69b2e2b081bbcc6d7bfb19.jpg",
+      "title": "Crushed In Time",
+      "url": "https://rawg.io/games/crushed-in-time",
+      "image": "https://media.rawg.io/media/games/67b/67b8ca361688922a71e441445fe892d4.jpg",
       "release_date": "2026-06-10",
       "rating": "0.0",
       "platforms": ""
@@ -392,25 +400,9 @@
       "release_date": "2026-05-27",
       "rating": "0.0",
       "platforms": ""
-    },
-    {
-      "title": "007 First Light",
-      "url": "https://rawg.io/games/007-first-light",
-      "image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
-      "release_date": "2026-05-27",
-      "rating": "4.5",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     }
   ],
   "coming_soon": [
-    {
-      "title": "Star Fox",
-      "url": "https://rawg.io/games/star-fox-2",
-      "image": "https://media.rawg.io/media/games/bac/bacf2182d40d3785051a2161f7a3aa84.jpg",
-      "release_date": "2026-06-25",
-      "rating": "0.0",
-      "platforms": "Nintendo Switch"
-    },
     {
       "title": "Assassin's Creed Back Flag Resynced",
       "url": "https://rawg.io/games/assassins-creed-back-flag-resynced",
