@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-25T16:13:00Z",
+  "updated_at": "2026-06-25T18:59:39Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -37632,6 +37632,18 @@
       "stock": "In stock",
       "observed_on": "2026-06-25",
       "captured_at": "2026-06-25T16:13:00Z"
+    },
+    {
+      "card_number": "P-053",
+      "art_variant": "original",
+      "price": 35.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/685144584",
+      "title": "Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-06-25",
+      "captured_at": "2026-06-25T18:59:39Z"
     }
   ]
 }
