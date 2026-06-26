@@ -10,6 +10,14 @@
       "platforms": "Nintendo Switch"
     },
     {
+      "title": "Cozy Cleaner",
+      "url": "https://rawg.io/games/cozy-cleaner",
+      "image": "https://media.rawg.io/media/screenshots/f0d/f0da5084afbdd2e4320a019d3d67599e.jpg",
+      "release_date": "2026-06-22",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Space Grunts: Chrono Shard",
       "url": "https://rawg.io/games/space-grunts-chrono-shard",
       "image": "https://media.rawg.io/media/screenshots/edc/edcb9e46a8987a123d64c89f93c9159d.jpg",
@@ -32,6 +40,14 @@
       "release_date": "2026-06-21",
       "rating": "0.0",
       "platforms": ""
+    },
+    {
+      "title": "Treasure Beach",
+      "url": "https://rawg.io/games/treasure-beach",
+      "image": "https://media.rawg.io/media/screenshots/3a4/3a42f69a7400810607528727269a9820.jpg",
+      "release_date": "2026-06-20",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Maseylia: Echoes of the past",
@@ -384,22 +400,6 @@
       "release_date": "2026-05-27",
       "rating": "0.0",
       "platforms": ""
-    },
-    {
-      "title": "The Big Hollow: 1982",
-      "url": "https://rawg.io/games/the-big-hollow-1982",
-      "image": "https://media.rawg.io/media/screenshots/d68/d68738bb4ab8e0f9da9c70270710f784.jpg",
-      "release_date": "2026-05-27",
-      "rating": "0.0",
-      "platforms": ""
-    },
-    {
-      "title": "Scale the Depths",
-      "url": "https://rawg.io/games/scale-the-depths",
-      "image": "https://media.rawg.io/media/screenshots/cbd/cbde5730e7e6808617d9909ad41345b9.jpg",
-      "release_date": "2026-05-27",
-      "rating": "0.0",
-      "platforms": ""
     }
   ],
   "coming_soon": [
@@ -450,6 +450,14 @@
       "release_date": "2026-07-22",
       "rating": "0.0",
       "platforms": ""
+    },
+    {
+      "title": "Grim Dawn - Fangs of Asterkarn",
+      "url": "https://rawg.io/games/grim-dawn-fangs-of-asterkarn",
+      "image": "https://media.rawg.io/media/screenshots/884/884c3018196e0d5c935d65b80cc431de.jpg",
+      "release_date": "2026-07-23",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Splatoon Raiders",
@@ -602,6 +610,30 @@
       "release_date": "2026-09-17",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
+    },
+    {
+      "title": "Silent Hill: Townfall",
+      "url": "https://rawg.io/games/silent-hill-townfall-2",
+      "image": "https://media.rawg.io/media/games/8ff/8ff55788736c59fcb7b814d862c2ae6f.jpeg",
+      "release_date": "2026-09-24",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Control Resonant",
+      "url": "https://rawg.io/games/control-resonant",
+      "image": "https://media.rawg.io/media/screenshots/5b8/5b812f73e4c5df28630747c52f57170b.jpg",
+      "release_date": "2026-09-24",
+      "rating": "4.4",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Silent Hill Townfall",
+      "url": "https://rawg.io/games/silent-hill-townfall",
+      "image": "https://media.rawg.io/media/games/d1c/d1c4e52d3084231530fcab5d90033d42.jpg",
+      "release_date": "2026-09-24",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5"
     }
   ]
 }

@@ -15,9 +15,27 @@
       "release_date": "2026-06-26"
     },
     {
+      "title": "Solo Mio",
+      "url": "https://www.themoviedb.org/movie/1291335",
+      "image": "https://image.tmdb.org/t/p/w342/efSsZJaddeq0LOABZqpCXdMxv9P.jpg",
+      "release_date": "2026-07-03"
+    },
+    {
       "title": "The Get Out",
       "url": "https://www.themoviedb.org/movie/1279493",
       "image": "https://image.tmdb.org/t/p/w342/dKoz9NKjqFkurpSE5BPe3JUvncL.jpg",
+      "release_date": "2026-07-03"
+    },
+    {
+      "title": "Alpha",
+      "url": "https://www.themoviedb.org/movie/1122030",
+      "image": "https://image.tmdb.org/t/p/w342/fQRbBCbqortBDx3PixdpU50oVDj.jpg",
+      "release_date": "2026-07-03"
+    },
+    {
+      "title": "Nagabandham",
+      "url": "https://www.themoviedb.org/movie/1442396",
+      "image": "https://image.tmdb.org/t/p/w342/7r4QUxZ454CSIRLWa1vjNyBG5xk.jpg",
       "release_date": "2026-07-03"
     },
     {
@@ -72,6 +90,12 @@
       "title": "The End of Oak Street",
       "url": "https://www.themoviedb.org/movie/1101383",
       "image": "https://image.tmdb.org/t/p/w342/60bRdW7JTXTaSMFgLHjcoS1fXHh.jpg",
+      "release_date": "2026-08-14"
+    },
+    {
+      "title": "Sunny Dancer",
+      "url": "https://www.themoviedb.org/movie/1280015",
+      "image": "https://image.tmdb.org/t/p/w342/d7yOPcBc099HHhmZGS9eMzMruAL.jpg",
       "release_date": "2026-08-14"
     },
     {

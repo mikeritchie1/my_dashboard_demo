@@ -2,11 +2,7 @@ Daily dashboard digest
 
 New Releases
 ------------
-Added: 2
-1. The Sheep Detectives
-https://pahe.ink/the-sheep-detectives-2026-web-dl-480p-720p-1080p/
-2. Hungry
-https://pahe.ink/hungry-2026-web-dl-480p-720p-1080p/
+Added: 0
 
 Updated: 0
 
@@ -14,7 +10,15 @@ Removed: 0
 
 Coming Soon Movies
 ------------------
-Added: 0
+Added: 4
+1. Nagabandham | 2026-07-03
+https://www.themoviedb.org/movie/1442396
+2. Alpha | 2026-07-03
+https://www.themoviedb.org/movie/1122030
+3. Solo Mio | 2026-07-03
+https://www.themoviedb.org/movie/1291335
+4. Sunny Dancer | 2026-08-14
+https://www.themoviedb.org/movie/1280015
 
 Updated: 0
 
@@ -30,25 +34,35 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 1
-1. Star Fox | 2026-06-25
-https://rawg.io/games/star-fox-2
+Added: 2
+1. Cozy Cleaner | 2026-06-22
+https://rawg.io/games/cozy-cleaner
+2. Treasure Beach | 2026-06-20
+https://rawg.io/games/treasure-beach
 
 Updated: 0
 
-Removed: 1
-1. 007 First Light | 2026-05-27
-https://rawg.io/games/007-first-light
+Removed: 2
+1. The Big Hollow: 1982 | 2026-05-27
+https://rawg.io/games/the-big-hollow-1982
+2. Scale the Depths | 2026-05-27
+https://rawg.io/games/scale-the-depths
 
 Coming Soon Games
 -----------------
-Added: 0
+Added: 4
+1. Grim Dawn - Fangs of Asterkarn | 2026-07-23
+https://rawg.io/games/grim-dawn-fangs-of-asterkarn
+2. Silent Hill Townfall | 2026-09-24
+https://rawg.io/games/silent-hill-townfall
+3. Silent Hill: Townfall | 2026-09-24
+https://rawg.io/games/silent-hill-townfall-2
+4. Control Resonant | 2026-09-24
+https://rawg.io/games/control-resonant
 
 Updated: 0
 
-Removed: 1
-1. Star Fox | 2026-06-25
-https://rawg.io/games/star-fox-2
+Removed: 0
 
 Bandsintown Events
 ------------------
@@ -60,67 +74,67 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 10
-1. Paint 'n Sip portrait series on pre-designed canvas board | 2026-06-27T19:30:00+02:00 | Woodstock Brewery
-https://www.quicket.co.za/events/380335-paint-n-sip-portrait-series-on-pre-designed-canvas-board/
-2. Century City School's Out Party | 2026-06-26T12:30:00+02:00 | Hillsong Church, Century City
-https://www.quicket.co.za/events/380200-century-city-schools-out-party/
-3. Secrets of Summer NYE 2026 | 2026-12-31T15:00:00+02:00 | Black River Park Sports Complex (Opposite Riverlands Mall)
-https://www.quicket.co.za/events/324924-secrets-of-summer-nye-2026/
-4. OBZ Books Comedy Nights Chapter 24 by Why Did Comedy | 2026-06-25T20:00:00+02:00 | 76 Lower Main Rd
-https://www.quicket.co.za/events/382789-obz-books-comedy-nights-chapter-24-by-why-did-comedy/
-5. Suits & Sneakers presents: "Better Humaning" with Brad Shorkend (Cape Town edition) | 2026-06-25T17:00:00+02:00 | The Tryst Woodstock
-https://www.quicket.co.za/events/380650-suits-sneakers-presents-better-humaning-with-brad-shorkend-cape-town-edition/
-6. Extra Ordinary Evening: Exceptional Wine & Artisanal Cheese | 2026-07-01T17:30:00+02:00 | The Wine Shop Cape Town
-https://www.quicket.co.za/events/382326-extra-ordinary-evening-exceptional-wine-artisanal-cheese/
-7. SAFMA Western Cape Networking Event at Discovery Century City | 2026-07-31T15:45:00+02:00 | Discovery Group (Cape Town Head Office)
-https://www.quicket.co.za/events/381689-safma-western-cape-networking-event-at-discovery-century-city/
-8. Kaas Kween Comedy night at Infusion Table View | 2026-06-30T19:30:00+02:00 | Infusion Social Club Table View
-https://www.quicket.co.za/events/383441-kaas-kween-comedy-night-at-infusion-table-view/
-9. Suits & Sneakers presents: "The Blueprint of a Comeback" with Gord Laws | 2026-07-08T17:00:00+02:00 | The Tryst Woodstock
-https://www.quicket.co.za/events/383469-suits-sneakers-presents-the-blueprint-of-a-comeback-with-gord-laws/
-10. Solstice II - Women's only climbing event | 2026-06-27T18:00:00+02:00 | CityROCK Cape Town - Indoor Climbing Gym
-https://www.quicket.co.za/events/376202-solstice-ii-womens-only-climbing-event/
+Added: 13
+1. Wine & Pleasure Toys Pairing | 2026-06-27T15:00:00+02:00 | Allure Sensuality Emporium
+https://www.quicket.co.za/events/373198-wine-pleasure-toys-pairing/
+2. Throwback Party 1 Aug 2026 | 2026-08-01T18:30:00+02:00 | Zwaanswyk Academy Hall
+https://www.quicket.co.za/events/378495-throwback-party-1-aug-2026/
+3. James Stewart & John Ellis - celebration of Sting & The Police at THE LOFT | 2026-07-24T18:00:00+02:00 | The Loft
+https://www.quicket.co.za/events/380818-james-stewart-john-ellis-celebration-of-sting-the-police-at-the-loft/
+4. Financial Future Summit | 2026-07-01T08:00:00+02:00 | Woodstock
+https://www.quicket.co.za/events/374510-financial-future-summit/
+5. Prime - CPT - Earth Tones Edition - Club Paradise - 4 July 2026 | 2026-07-04T21:00:00+02:00 | Club Paradise
+https://www.quicket.co.za/events/380264-prime-cpt-earth-tones-edition-club-paradise-4-july-2026/
+6. Auldfield @The Brass Bell | 2026-06-26T19:30:00+02:00 | Brass Bell Kalk Bay
+https://www.quicket.co.za/events/380323-auldfield-the-brass-bell/
+7. Fashion Dump Film Screening | 2026-07-05T14:00:00+02:00 | The Labia Theatre
+https://www.quicket.co.za/events/377626-fashion-dump-film-screening/
+8. Di Rosen Fundraiser with RockSteady | 2026-06-28T13:00:00+02:00 | Woodstock Brewery
+https://www.quicket.co.za/events/361357-di-rosen-fundraiser-with-rocksteady/
+9. Get together experience and Homeboys unplugged Sunday | 2026-06-28T15:00:00+02:00 | Busy Corner
+https://www.quicket.co.za/events/380507-get-together-experience-and-homeboys-unplugged-sunday/
+10. Stand up. At RED | 2026-06-26T18:30:00+02:00 | OUI Bar & KTCHN
+https://www.quicket.co.za/events/380302-stand-up-at-red/
+...and 3 more
 
 Updated: 1
-1. Sexponential Book Launch - E=MC³ - transform your sex life - CT | 2026-06-25T18:30:00+02:00 | Youngblood Gallery
-https://www.quicket.co.za/events/374502-sexponential-book-launch-emc-transform-your-sex-life-ct/
+1. Atlantis Art Exhibition | 2026-07-10T18:00:00+02:00 | Atlantis Multipurpose Sports Centre
+https://www.quicket.co.za/events/373573-atlantis-art-exhibition/
 
-Removed: 10
-1. Minnesota Boychoir with Cape Town Children's Choir  - Hugo Lambrechts Auditorium | 2026-06-24T19:00:00+02:00 | Hugo Lambrechts Auditorium
-https://www.quicket.co.za/events/375656-minnesota-boychoir-with-cape-town-childrens-choir-hugo-lambrechts-auditorium/
-2. DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS | 2027-01-02T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/
-3. Fashion Dump Film Screening | 2026-07-05T14:00:00+02:00 | The Labia Theatre
-https://www.quicket.co.za/events/377626-fashion-dump-film-screening/
-4. Property Insights & International Buyers | 2026-08-13T09:00:00+02:00 | King David Mowbray Golf Club
-https://www.quicket.co.za/events/378279-property-insights-international-buyers/
-5. Business Women Network Cape Town: Women, Wine & Warm Connections (June 2026) | 2026-06-24T17:30:00+02:00 | Mount Manor Guesthouse and Suits
-https://www.quicket.co.za/events/381158-business-women-network-cape-town-women-wine-warm-connections-june-2026/
-6. Out of Mined Premiere | 2026-06-24T20:00:00+02:00 | The Labia Theatre
-https://www.quicket.co.za/events/377868-out-of-mined-premiere/
-7. Get On Co. Band Night @ café Roux | 2026-06-24T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/379913-get-on-co-band-night-caf-roux/
-8. Prime - CPT - Earth Tones Edition - Club Paradise - 4 July 2026 | 2026-07-04T21:00:00+02:00 | Club Paradise
-https://www.quicket.co.za/events/380264-prime-cpt-earth-tones-edition-club-paradise-4-july-2026/
-9. Let’s Gather Table Linen: Winter Wardrobe Inspiration & Breakfast Gathering | 2026-10-03T13:00:00+02:00 | Chocolat Bistro
-https://www.quicket.co.za/events/377183-lets-gather-table-linen-winter-wardrobe-inspiration-breakfast-gathering/
-10. DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS | 2027-02-01T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/
+Removed: 13
+1. Last Thursdays, Comedy in a Surf Shop | 2026-06-25T20:00:00+02:00 | Atlantic Surf Collective
+https://www.quicket.co.za/events/379882-last-thursdays-comedy-in-a-surf-shop/
+2. [SOLD OUT] Shibari Rope Class to Jam | First suspension harness | 2026-06-25T18:45:00+02:00 | Unit G19, Embodiment Rope Space
+https://www.quicket.co.za/events/371930-sold-out-shibari-rope-class-to-jam-first-suspension-harness/
+3. Exclusive culinary event brought to you by Woolworths TASTE and Blue Elephant Royal Thai cuisine | 2026-06-25T17:00:00+02:00 | Food Fanatics & The Homestead Venue
+https://www.quicket.co.za/events/376184-exclusive-culinary-event-brought-to-you-by-woolworths-taste-and-blue-elephant-r/
+4. Industry Networking Event | 2026-06-25T18:00:00+02:00 | Let's Get Reel Studios
+https://www.quicket.co.za/events/376849-industry-networking-event/
+5. The Two Oceans Aquarium: The Waterfront Duck Co Tours: Jan - March 2027 | 2027-01-01T10:00:00+02:00 | Two Oceans Aquarium - The Duck Boat
+https://www.quicket.co.za/events/369652-the-two-oceans-aquarium-the-waterfront-duck-co-tours-jan-march-2027/
+6. MANTIS | 2026-06-25T19:00:00+02:00 | Novalis Ubuntu Institute
+https://www.quicket.co.za/events/377392-mantis/
+7. Herschel Inter-House Singing & Dance | 2026-06-25T18:00:00+02:00 | Herschel Girls School
+https://www.quicket.co.za/events/356493-herschel-inter-house-singing-dance/
+8. The Biz presents Motown Memoirs LIVE! @ café Roux | 2026-06-25T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/371003-the-biz-presents-motown-memoirs-live-caf-roux/
+9. OBZ Books Comedy Nights Chapter 24 by Why Did Comedy | 2026-06-25T20:00:00+02:00 | 76 Lower Main Rd
+https://www.quicket.co.za/events/382789-obz-books-comedy-nights-chapter-24-by-why-did-comedy/
+10. Sexponential Book Launch - E=MC³ - transform your sex life - CT | 2026-06-25T18:30:00+02:00 | Youngblood Gallery
+https://www.quicket.co.za/events/374502-sexponential-book-launch-emc-transform-your-sex-life-ct/
+...and 3 more
 
 Webtickets Events
 -----------------
 Added: 1
-1. Zeitz MOCAA presents Pan-African Film Screening: About Some Meaningless Events (1974), directed by Mostafa Derkaoui | 26 Jun 2026 18:00 | The Labia Theatre, Orange Street, Gardens, Cape Town, South Africa | R30
-https://www.webtickets.co.za/v2/event.aspx?itemid=1596829461
+1. Here & Now: A Luther Vandross Tribute | From 26 Jun 2026 20:00 | Artscape, Opera House, Cape Town | R250 - R300
+https://www.webtickets.co.za/v2/event.aspx?itemid=1588359980
 
-Updated: 1
-1. Cape Town Abseil | From 25 Jun 2026 | Table Mountain | R995 - R1100
-https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
+Updated: 0
 
 Removed: 1
-1. FEED YOUR NEED FOR SPEED AT KILLARNEY ROBOT RACING! | 24 Jun 2026 18:30 | Killarney International Raceway, 6 Potsdam Road, Table View | R70
-https://www.webtickets.co.za/v2/event.aspx?itemid=1597396069
+1. Cape Town Abseil | From 25 Jun 2026 | Table Mountain | R995 - R1100
+https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
 
 Google Calendar
 ---------------

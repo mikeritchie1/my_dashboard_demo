@@ -8788,6 +8788,23 @@
     "tmdb_id": null,
     "actors": null
   },
+  "movie:diary of a wimp kid rodrick rules": {
+    "title": "Diary Of A Wimp Kid: Rodrick Rules",
+    "media_type": "movie",
+    "description": null,
+    "overview": null,
+    "rating": null,
+    "trailer_url": null,
+    "poster_url": null,
+    "tmdb_id": null,
+    "runtime_minutes": null,
+    "directors": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "tmdb_url": null,
+    "actors": null,
+    "genres": null
+  },
   "movie:didi": {
     "title": "Didi",
     "media_type": "movie",

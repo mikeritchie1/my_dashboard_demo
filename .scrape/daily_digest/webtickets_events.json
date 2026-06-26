@@ -1,20 +1,5 @@
 [
   {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 25 Jun 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "CG Ice Rink",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595691483",
     "image": "https://content.webtickets.co.za/CapegateShoppingCentre/panel_CG_Ice Rink_Social_Webtickets Image_20260518_113654.png",
@@ -75,6 +60,25 @@
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Here & Now: A Luther Vandross Tribute",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588359980",
+    "image": "https://content.webtickets.co.za/artscape/panel_Here & Now CPT_webtickets_20260212_144150.png",
+    "date_text": "From 26 Jun 2026 20:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "R250 - R300",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "dj",
+      "art",
       "theatre"
     ],
     "missing_location": true,
