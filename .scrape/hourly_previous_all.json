@@ -496,21 +496,6 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "ST05-004",
-      "price": "215.0",
-      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R215.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "ST23-001",
       "price": "218.0",
       "title": "Uta [Starter Deck: Red Shanks]",
@@ -522,6 +507,21 @@
       "available_variants": "Near Mint Foil R218.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/633761.jpg?v=1757956074",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "price": "225.0",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R225.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
     },

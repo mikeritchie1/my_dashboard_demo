@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27T18:58:26Z",
+  "updated_at": "2026-06-27T20:05:45Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -42396,6 +42396,18 @@
       "stock": "In stock",
       "observed_on": "2026-06-27",
       "captured_at": "2026-06-27T18:58:26Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "art_variant": "original",
+      "price": 225.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T20:05:45Z"
     }
   ]
 }
