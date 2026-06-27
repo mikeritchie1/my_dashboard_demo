@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27T01:53:13Z",
+  "updated_at": "2026-06-27T05:42:34Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -41976,6 +41976,210 @@
       "stock": "In stock",
       "observed_on": "2026-06-27",
       "captured_at": "2026-06-27T01:53:13Z"
+    },
+    {
+      "card_number": "OP16-057",
+      "art_variant": "original",
+      "price": 1.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/captain-buggys-our-savior-the-time-of-battle",
+      "title": "Captain Buggy's Our Savior!! [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP16-089",
+      "art_variant": "original",
+      "price": 1.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-the-time-of-battle",
+      "title": "Dracule Mihawk [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP16-019",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/lets-show-em-what-were-made-of-the-time-of-battle",
+      "title": "Let's Show 'Em What We're Made Of!! [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP16-037",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-3galdino-the-time-of-battle",
+      "title": "Mr.3(Galdino) [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP16-044",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle-1",
+      "title": "Emporio.Ivankov [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP16-102",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/avalo-pizarro-the-time-of-battle",
+      "title": "Avalo Pizarro [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP16-117",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/black-hole-the-time-of-battle",
+      "title": "Black Hole [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP16-052",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-the-time-of-battle-1",
+      "title": "Monkey.D.Luffy [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP16-058",
+      "art_variant": "original",
+      "price": 4.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/the-prisoners-are-rioting-the-time-of-battle",
+      "title": "The Prisoners Are Rioting!! [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP08-047",
+      "art_variant": "original",
+      "price": 54.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends",
+      "title": "Jozu [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 92.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 159.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-double-pack-set-vol-11-luffy-and-ace-the-time-of-battle",
+      "title": "DON!! Card (Double Pack Set Vol. 11) (Luffy and Ace) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 167.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP16-014",
+      "art_variant": "alternate",
+      "price": 188.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/marco-alternate-art-the-time-of-battle",
+      "title": "Marco (Alternate Art) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 236.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "alternate",
+      "price": 1382.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/boa-hancock-alternate-art-the-time-of-battle",
+      "title": "Boa Hancock (Alternate Art) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2704.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-27",
+      "captured_at": "2026-06-27T05:42:34Z"
     }
   ]
 }
