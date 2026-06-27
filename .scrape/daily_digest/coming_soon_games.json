@@ -2,12 +2,36 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Harvest Moon: The Winds of Anthos Complete",
+      "url": "https://rawg.io/games/harvest-moon-the-winds-of-anthos-complete",
+      "image": "https://media.rawg.io/media/screenshots/115/115197ed5e8571ea737306bc6ca07805.jpg",
+      "release_date": "2026-06-25",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "Star Fox",
       "url": "https://rawg.io/games/star-fox-2",
       "image": "https://media.rawg.io/media/games/bac/bacf2182d40d3785051a2161f7a3aa84.jpg",
       "release_date": "2026-06-25",
       "rating": "0.0",
       "platforms": "Nintendo Switch"
+    },
+    {
+      "title": "Heavenly Island",
+      "url": "https://rawg.io/games/heavenly-island",
+      "image": "https://media.rawg.io/media/screenshots/a9c/a9c8f09e296680b5061d08bc1a10799a.jpg",
+      "release_date": "2026-06-23",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Iron Sky: Invasion UHD Director's Cut",
+      "url": "https://rawg.io/games/iron-sky-invasion-uhd-directors-cut",
+      "image": "https://media.rawg.io/media/screenshots/ff7/ff7aee50082603a4a33aa28aa4bbd7f1.jpg",
+      "release_date": "2026-06-23",
+      "rating": "0.0",
+      "platforms": ""
     },
     {
       "title": "Cozy Cleaner",
@@ -42,6 +66,14 @@
       "platforms": ""
     },
     {
+      "title": "Immortal Cards",
+      "url": "https://rawg.io/games/immortal-cards",
+      "image": "https://media.rawg.io/media/screenshots/f45/f45532fd74fc045fd2504d5dc4101310.jpg",
+      "release_date": "2026-06-21",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Treasure Beach",
       "url": "https://rawg.io/games/treasure-beach",
       "image": "https://media.rawg.io/media/screenshots/3a4/3a42f69a7400810607528727269a9820.jpg",
@@ -70,6 +102,22 @@
       "url": "https://rawg.io/games/space-ends",
       "image": "https://media.rawg.io/media/screenshots/6b3/6b3f9d0ad7744f95f953db2d365756a0.jpg",
       "release_date": "2026-06-19",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Purge Directive",
+      "url": "https://rawg.io/games/purge-directive",
+      "image": "https://media.rawg.io/media/screenshots/a7c/a7cf6643f15a7fc64be790c532ec68e1.jpg",
+      "release_date": "2026-06-19",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Backrooms: The Void",
+      "url": "https://rawg.io/games/backrooms-the-void",
+      "image": "https://media.rawg.io/media/screenshots/3a0/3a0db4e923e378f9e3350f0016b825c1.jpg",
+      "release_date": "2026-06-18",
       "rating": "0.0",
       "platforms": "PC"
     },
@@ -258,9 +306,33 @@
       "platforms": ""
     },
     {
+      "title": "Wellspring",
+      "url": "https://rawg.io/games/wellspring-2",
+      "image": "https://media.rawg.io/media/screenshots/176/1761ed0ea423abf60b0935fa60470185.jpg",
+      "release_date": "2026-06-04",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "The 7th Guest Remake",
       "url": "https://rawg.io/games/the-7th-guest-remake",
       "image": "https://media.rawg.io/media/screenshots/ef6/ef64a3aed53dccd10019ea72c3fcfd92.jpg",
+      "release_date": "2026-06-03",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Dig You Fools",
+      "url": "https://rawg.io/games/dig-you-fools",
+      "image": "https://media.rawg.io/media/screenshots/202/202d08e546918d2c9db63887aeb6732c.jpg",
+      "release_date": "2026-06-03",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Spa World",
+      "url": "https://rawg.io/games/spa-world",
+      "image": "https://media.rawg.io/media/screenshots/23c/23c8a4912ec93d0b849f5c8a8793047d.jpg",
       "release_date": "2026-06-03",
       "rating": "0.0",
       "platforms": "PC"
@@ -298,6 +370,14 @@
       "platforms": "PC, Linux"
     },
     {
+      "title": "Darkstone Restoration Demo",
+      "url": "https://rawg.io/games/darkstone-restoration-demo",
+      "image": "https://media.rawg.io/media/screenshots/538/538527093e75269704af833b899dd851.jpg",
+      "release_date": "2026-05-31",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "Backrooms: The Wrong Door",
       "url": "https://rawg.io/games/backrooms-the-wrong-door",
       "image": "https://media.rawg.io/media/screenshots/f48/f4812f4f3a6cd7dae8030a405626c961.jpg",
@@ -320,86 +400,6 @@
       "release_date": "2026-05-29",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Cheap Car Repair",
-      "url": "https://rawg.io/games/cheap-car-repair",
-      "image": "https://media.rawg.io/media/screenshots/43f/43fe0c6ffb8e53755592876c64151e9a.jpg",
-      "release_date": "2026-05-28",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Airport Baggage Simulator",
-      "url": "https://rawg.io/games/airport-baggage-simulator",
-      "image": "https://media.rawg.io/media/screenshots/bb1/bb1915d577b9c1979245de5c39ea6ce9.jpg",
-      "release_date": "2026-05-28",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "N.E.R.D",
-      "url": "https://rawg.io/games/nerd-2",
-      "image": "https://media.rawg.io/media/screenshots/12c/12c7bf17be556afb272996f1b5ae2d50.jpg",
-      "release_date": "2026-05-28",
-      "rating": "0.0",
-      "platforms": ""
-    },
-    {
-      "title": "Cardburners",
-      "url": "https://rawg.io/games/cardburners",
-      "image": "https://media.rawg.io/media/screenshots/7b1/7b19d65479a13336f4977e83a7295b2f.jpg",
-      "release_date": "2026-05-28",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Kim's Farm",
-      "url": "https://rawg.io/games/kims-farm",
-      "image": "https://media.rawg.io/media/screenshots/812/81296e02806f699a7a00497ae96a9feb.jpg",
-      "release_date": "2026-05-28",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "FORENSIC - M.E. Protocol",
-      "url": "https://rawg.io/games/forensic-me-protocol",
-      "image": "https://media.rawg.io/media/screenshots/898/89858a84d1679366d5ac1ea2e825fbe4.jpg",
-      "release_date": "2026-05-28",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "The Remake the End of the Greatest RPG of All Time_Data",
-      "url": "https://rawg.io/games/the-remake-the-end-of-the-greatest-rpg-of-all-time",
-      "image": "https://media.rawg.io/media/screenshots/d51/d51dc17fc02738fce2dd56442e0b3b7d.jpg",
-      "release_date": "2026-05-28",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Mina the Hollower",
-      "url": "https://rawg.io/games/mina-the-hollower",
-      "image": "https://media.rawg.io/media/games/9e5/9e5914a9b6537391752af07412cd8ce3.jpg",
-      "release_date": "2026-05-28",
-      "rating": "0.0",
-      "platforms": "PC, macOS, Linux"
-    },
-    {
-      "title": "Echo Generation 2",
-      "url": "https://rawg.io/games/echo-generation-2",
-      "image": "https://media.rawg.io/media/screenshots/e03/e03e950a96bc2974bf9d1e45e1fba3e7.jpg",
-      "release_date": "2026-05-27",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "868-BACK",
-      "url": "https://rawg.io/games/868-back",
-      "image": "https://media.rawg.io/media/screenshots/92a/92af4a55918fea3ae2348c9dc2dfe08b.jpg",
-      "release_date": "2026-05-27",
-      "rating": "0.0",
-      "platforms": ""
     }
   ],
   "coming_soon": [
@@ -524,6 +524,14 @@
       "platforms": "PC, PlayStation 5"
     },
     {
+      "title": "Sandustry",
+      "url": "https://rawg.io/games/sandustry",
+      "image": "https://media.rawg.io/media/screenshots/0db/0db3e4f60898624b5bf100ca27a73953.jpg",
+      "release_date": "2026-08-12",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "Defender of the Crown: The Legend Returns",
       "url": "https://rawg.io/games/defender-of-the-crown-the-legend-returns",
       "image": "https://media.rawg.io/media/screenshots/2c2/2c2751318377bdd9a8a8d5441b5afb58.jpg",
@@ -634,6 +642,14 @@
       "release_date": "2026-09-24",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5"
+    },
+    {
+      "title": "Onimusha: Way Of The Sword",
+      "url": "https://rawg.io/games/onimusha-way-of-the-sword",
+      "image": "https://media.rawg.io/media/screenshots/965/9653d36f42d6a7a360c99963253384ff.jpg",
+      "release_date": "2026-09-25",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
     }
   ]
 }

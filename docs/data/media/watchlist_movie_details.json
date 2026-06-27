@@ -2208,6 +2208,23 @@
     ],
     "tmdb_url": "https://www.themoviedb.org/movie/149870"
   },
+  "anime_movie:uzumaki": {
+    "title": "Uzumaki",
+    "media_type": "anime_movie",
+    "tmdb_id": null,
+    "trailer_url": null,
+    "poster_url": null,
+    "number_of_seasons": null,
+    "genres": null,
+    "actors": null,
+    "rating": null,
+    "description": null,
+    "runtime_minutes": null,
+    "tmdb_url": null,
+    "release_date": null,
+    "directors": null,
+    "overview": null
+  },
   "anime_movie:weathering with you": {
     "title": "Weathering With You",
     "media_type": "anime_movie",
@@ -8787,6 +8804,23 @@
     "rating": null,
     "tmdb_id": null,
     "actors": null
+  },
+  "movie:diary of a wimp kid dog days": {
+    "title": "Diary Of A Wimp Kid: Dog Days",
+    "media_type": "movie",
+    "tmdb_id": null,
+    "trailer_url": null,
+    "poster_url": null,
+    "number_of_seasons": null,
+    "genres": null,
+    "actors": null,
+    "rating": null,
+    "description": null,
+    "runtime_minutes": null,
+    "tmdb_url": null,
+    "release_date": null,
+    "directors": null,
+    "overview": null
   },
   "movie:diary of a wimp kid rodrick rules": {
     "title": "Diary Of A Wimp Kid: Rodrick Rules",

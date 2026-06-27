@@ -1,5 +1,45 @@
 {
   "source": "https://mydorpie.com/Cinemas/Cape-Town/Ster-Kinekor/VA-Waterfront-Movies/IMAX",
   "theatre": "Ster-Kinekor V&A Waterfront IMAX",
-  "items": []
+  "items": [
+    {
+      "tmdb_id": 1081003,
+      "tmdb_url": "https://www.themoviedb.org/movie/1081003",
+      "tmdb_rating": "6.256",
+      "tmdb_votes": "127",
+      "release_date": "2026-06-23",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "runtime_minutes": "108",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "directors": [
+        "Craig Gillespie"
+      ],
+      "actors": [
+        "Milly Alcock",
+        "Eve Ridley",
+        "Matthias Schoenaerts",
+        "Jason Momoa",
+        "David Krumholtz",
+        "Emily Beecham",
+        "David Corenswet",
+        "Kadiff Kirwan",
+        "Thalissa Teixeira",
+        "Ferdinand Kingsley"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=tzlY8XD1CGg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "title": "Supergirl",
+      "url": "https://mydorpie.com/m/?page=m_waterimax_supergirl2d",
+      "source": "IMAX Waterfront",
+      "status": "now_playing",
+      "status_label": "Now playing",
+      "showtimes": [],
+      "format": "IMAX 2D",
+      "image": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg"
+    }
+  ]
 }

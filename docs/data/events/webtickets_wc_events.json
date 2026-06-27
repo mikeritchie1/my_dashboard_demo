@@ -1,9 +1,44 @@
 [
   {
+    "title": "ROUND 5 OF THE POWER SERIES – RACING FROM THE HEART",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597011847",
+    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_Killarney WebticketsPower_20260609_103758.jpg",
+    "date_text": "27 Jun 2026 08:00",
+    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
+    "price": "R10 - R850",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "sports"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "KILLARNEY SPINNING",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597761131",
+    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_260627 Spin Outlaws Webtickets 1110 x 740_20260623_140948.jpg",
+    "date_text": "27 Jun 2026 09:00",
+    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
+    "price": "R10 - R100",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "sports"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
     "title": "CG Ice Rink",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595691483",
     "image": "https://content.webtickets.co.za/CapegateShoppingCentre/panel_CG_Ice Rink_Social_Webtickets Image_20260518_113654.png",
-    "date_text": "From 26 Jun 2026 10:00",
+    "date_text": "From 27 Jun 2026 10:00",
     "venue": "Capegate Shopping Centre, Ent 6 Undercover Parking, Cape Town, Western Cape",
     "price": "R70",
     "source": "Webtickets",
@@ -17,27 +52,10 @@
     "place_key": ""
   },
   {
-    "title": "Puss in Boots",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591358060",
-    "image": "https://content.webtickets.co.za/baxtertheatre/panel_Webtickets PIB_20260325_111953.jpg",
-    "date_text": "26 June - 18 July 2026",
-    "venue": "The Pam Golding Theatre at The Baxter",
-    "price": "R250 - R300",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "Tulbagh Christmas in Winter 2026",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1583490083",
     "image": "https://content.webtickets.co.za/TulbaghTourism/panel_tulbagh_20251215_094622.jpg",
-    "date_text": "From 26 Jun 2026 16:00",
+    "date_text": "From 27 Jun 2026 10:00",
     "venue": "Church Street Tulbagh and surrounding wine farms",
     "price": "From R225",
     "source": "Webtickets",
@@ -51,34 +69,15 @@
     "place_key": ""
   },
   {
-    "title": "Zeitz MOCAA presents Pan-African Film Screening: About Some Meaningless Events (1974), directed by Mostafa Derkaoui",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1596829461",
-    "image": "https://content.webtickets.co.za/zeitzmocaa/panel_Webtickets_Screening_20260605_164709.png",
-    "date_text": "26 Jun 2026 18:00",
-    "venue": "The Labia Theatre, Orange Street, Gardens, Cape Town, South Africa",
-    "price": "R30",
+    "title": "Canal Walk Theatre presents Peter Pan",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595763497",
+    "image": "https://content.webtickets.co.za/hyprop/panel_Peter Pan - JPG_20260520_145845.jpg",
+    "date_text": "From 27 Jun 2026 11:00",
+    "venue": "Centre Court, Canal Walk Shopping Centre, Cape Town",
+    "price": "R75 - R130",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Here & Now: A Luther Vandross Tribute",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588359980",
-    "image": "https://content.webtickets.co.za/artscape/panel_Here & Now CPT_webtickets_20260212_144150.png",
-    "date_text": "From 26 Jun 2026 20:00",
-    "venue": "Artscape, Opera House, Cape Town",
-    "price": "R250 - R300",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "dj",
-      "art",
       "theatre"
     ],
     "missing_location": true,

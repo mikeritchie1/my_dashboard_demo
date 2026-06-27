@@ -1,27 +1,36 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-26T07:57:24.877452Z",
+  "generated_at": "2026-06-27T06:55:59.617618Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
     {
+      "id": "yt-fORW84YP97E",
+      "video_id": "fORW84YP97E",
+      "title": "XBOX RAISES CONSOLE PRICES, STEAM MACHINE IS CRAZY EXPENSIVE & MORE",
+      "url": "https://www.youtube.com/watch?v=fORW84YP97E",
+      "published_at": "2026-06-26T20:43:03+00:00",
+      "updated_at": "2026-06-26T22:58:37+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/fORW84YP97E/hqdefault.jpg"
+    },
+    {
       "id": "yt-cVgIgvmW6SA",
       "video_id": "cVgIgvmW6SA",
       "title": "10 Things Game Companies NEED TO STOP DOING",
       "url": "https://www.youtube.com/watch?v=cVgIgvmW6SA",
       "published_at": "2026-06-25T17:39:47+00:00",
-      "updated_at": "2026-06-26T00:35:39+00:00",
+      "updated_at": "2026-06-26T09:18:38+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/cVgIgvmW6SA/hqdefault.jpg"
     },
     {
       "id": "yt-AKueD2E2oUw",
       "video_id": "AKueD2E2oUw",
-      "title": "10 NEW Games of July 2026 To Keep An EYE ON",
+      "title": "Top 10 NEW Games of July 2026",
       "url": "https://www.youtube.com/watch?v=AKueD2E2oUw",
       "published_at": "2026-06-25T15:24:17+00:00",
-      "updated_at": "2026-06-25T21:11:24+00:00",
+      "updated_at": "2026-06-26T09:53:38+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/AKueD2E2oUw/hqdefault.jpg"
     },
     {
@@ -30,7 +39,7 @@
       "title": "GTA 6 Price & Ultimate Edition REVEALED",
       "url": "https://www.youtube.com/watch?v=wQ1KM1_Sbmk",
       "published_at": "2026-06-24T16:45:07+00:00",
-      "updated_at": "2026-06-25T07:25:38+00:00",
+      "updated_at": "2026-06-26T10:20:17+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/wQ1KM1_Sbmk/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-06-14T16:54:58+00:00",
       "updated_at": "2026-06-24T04:47:17+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/c46KMTqwRiA/hqdefault.jpg"
-    },
-    {
-      "id": "yt-ad9eRo_KCFI",
-      "video_id": "ad9eRo_KCFI",
-      "title": "20 Games That FORCED YOU TO CHEAT",
-      "url": "https://www.youtube.com/watch?v=ad9eRo_KCFI",
-      "published_at": "2026-06-13T16:12:49+00:00",
-      "updated_at": "2026-06-20T17:31:32+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/ad9eRo_KCFI/hqdefault.jpg"
     }
   ]
 }

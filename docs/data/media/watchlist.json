@@ -35,6 +35,10 @@
       {
         "title": "Spider-Noir",
         "opinion": ""
+      },
+      {
+        "title": "The Bear",
+        "opinion": ""
       }
     ],
     "anime_movies": [
@@ -1147,6 +1151,11 @@
         {
           "type": "movie",
           "title": "Diary Of A Wimp Kid: Rodrick Rules",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Diary Of A Wimp Kid: Dog Days",
           "opinion": ""
         },
         {
@@ -3022,6 +3031,11 @@
         {
           "type": "anime_movie",
           "title": "One Piece: The Cursed Holy Sword",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "Uzumaki",
           "opinion": ""
         },
         {

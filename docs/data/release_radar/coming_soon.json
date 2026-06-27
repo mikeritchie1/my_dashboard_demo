@@ -3,18 +3,6 @@
   "dates": {},
   "items": [
     {
-      "title": "Minions & Monsters",
-      "url": "https://www.themoviedb.org/movie/1315772",
-      "image": "https://image.tmdb.org/t/p/w342/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
-      "release_date": "2026-06-26"
-    },
-    {
-      "title": "Jackass: Best and Last",
-      "url": "https://www.themoviedb.org/movie/1612018",
-      "image": "https://image.tmdb.org/t/p/w342/tfgccePxnswMqhmtxafliLlcCVR.jpg",
-      "release_date": "2026-06-26"
-    },
-    {
       "title": "Solo Mio",
       "url": "https://www.themoviedb.org/movie/1291335",
       "image": "https://image.tmdb.org/t/p/w342/efSsZJaddeq0LOABZqpCXdMxv9P.jpg",
@@ -24,6 +12,12 @@
       "title": "The Get Out",
       "url": "https://www.themoviedb.org/movie/1279493",
       "image": "https://image.tmdb.org/t/p/w342/dKoz9NKjqFkurpSE5BPe3JUvncL.jpg",
+      "release_date": "2026-07-03"
+    },
+    {
+      "title": "Jackass: Best and Last",
+      "url": "https://www.themoviedb.org/movie/1612018",
+      "image": "https://image.tmdb.org/t/p/w342/tfgccePxnswMqhmtxafliLlcCVR.jpg",
       "release_date": "2026-07-03"
     },
     {
@@ -103,6 +97,12 @@
       "url": "https://www.themoviedb.org/movie/1507573",
       "image": "https://image.tmdb.org/t/p/w342/f2FeCAeOadqj3leou4XTsHDR8pX.jpg",
       "release_date": "2026-09-04"
+    },
+    {
+      "title": "Forgotten Island",
+      "url": "https://www.themoviedb.org/movie/1465063",
+      "image": "https://image.tmdb.org/t/p/w342/kW1fH2jZZM5tVHwNaDdUOUXJvWU.jpg",
+      "release_date": "2026-09-25"
     }
   ]
 }
