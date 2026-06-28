@@ -3,8 +3,8 @@ Daily dashboard digest
 New Releases
 ------------
 Added: 1
-1. Little Brother
-https://pahe.ink/little-brother-2026-web-dl-480p-720p-1080p/
+1. Finding Emily
+https://pahe.ink/finding-emily-2026-web-dl-480p-720p-1080p/
 
 Updated: 0
 
@@ -12,17 +12,11 @@ Removed: 0
 
 Coming Soon Movies
 ------------------
-Added: 1
-1. Forgotten Island | 2026-09-25
-https://www.themoviedb.org/movie/1465063
+Added: 0
 
-Updated: 1
-1. Jackass: Best and Last | 2026-07-03
-https://www.themoviedb.org/movie/1612018
+Updated: 0
 
-Removed: 1
-1. Minions & Monsters | 2026-06-26
-https://www.themoviedb.org/movie/1315772
+Removed: 0
 
 Open Air Cinema
 ---------------
@@ -34,59 +28,17 @@ Removed: 0
 
 New Game Releases
 -----------------
-Added: 10
-1. Darkstone Restoration Demo | 2026-05-31
-https://rawg.io/games/darkstone-restoration-demo
-2. Purge Directive | 2026-06-19
-https://rawg.io/games/purge-directive
-3. Spa World | 2026-06-03
-https://rawg.io/games/spa-world
-4. Heavenly Island | 2026-06-23
-https://rawg.io/games/heavenly-island
-5. Harvest Moon: The Winds of Anthos Complete | 2026-06-25
-https://rawg.io/games/harvest-moon-the-winds-of-anthos-complete
-6. Wellspring | 2026-06-04
-https://rawg.io/games/wellspring-2
-7. Backrooms: The Void | 2026-06-18
-https://rawg.io/games/backrooms-the-void
-8. Iron Sky: Invasion UHD Director's Cut | 2026-06-23
-https://rawg.io/games/iron-sky-invasion-uhd-directors-cut
-9. Dig You Fools | 2026-06-03
-https://rawg.io/games/dig-you-fools
-10. Immortal Cards | 2026-06-21
-https://rawg.io/games/immortal-cards
+Added: 0
 
-Updated: 0
+Updated: 1
+1. Gothic 1 Remake | 2026-06-05
+https://rawg.io/games/gothic-1-remake
 
-Removed: 10
-1. Kim's Farm | 2026-05-28
-https://rawg.io/games/kims-farm
-2. Mina the Hollower | 2026-05-28
-https://rawg.io/games/mina-the-hollower
-3. Echo Generation 2 | 2026-05-27
-https://rawg.io/games/echo-generation-2
-4. 868-BACK | 2026-05-27
-https://rawg.io/games/868-back
-5. The Remake the End of the Greatest RPG of All Time_Data | 2026-05-28
-https://rawg.io/games/the-remake-the-end-of-the-greatest-rpg-of-all-time
-6. Airport Baggage Simulator | 2026-05-28
-https://rawg.io/games/airport-baggage-simulator
-7. Cardburners | 2026-05-28
-https://rawg.io/games/cardburners
-8. N.E.R.D | 2026-05-28
-https://rawg.io/games/nerd-2
-9. Cheap Car Repair | 2026-05-28
-https://rawg.io/games/cheap-car-repair
-10. FORENSIC - M.E. Protocol | 2026-05-28
-https://rawg.io/games/forensic-me-protocol
+Removed: 0
 
 Coming Soon Games
 -----------------
-Added: 2
-1. Sandustry | 2026-08-12
-https://rawg.io/games/sandustry
-2. Onimusha: Way Of The Sword | 2026-09-25
-https://rawg.io/games/onimusha-way-of-the-sword
+Added: 0
 
 Updated: 0
 
@@ -102,77 +54,75 @@ Removed: 0
 
 Quicket Events
 --------------
-Added: 14
-1. First Friday at Cape Point Vineyards | 2026-07-03T18:00:00+02:00 | Cape Point Vineyards
-https://www.quicket.co.za/events/380899-first-friday-at-cape-point-vineyards/
-2. The Colour of Celebration | 2026-07-31T18:00:00+02:00 | Rooftop on Bree
-https://www.quicket.co.za/events/367960-the-colour-of-celebration/
-3. Speelfilm | Feature Film: Al wat ek weet | 2026-08-21T18:00:00+02:00 | Rotunda at The Bay Hotel
-https://www.quicket.co.za/events/381078-speelfilm-feature-film-al-wat-ek-weet/
-4. Shibari Workshop Cape Town | Partial suspensions | 2026-06-27T09:45:00+02:00 | Unit G19, Embodiment Rope Space
-https://www.quicket.co.za/events/371932-shibari-workshop-cape-town-partial-suspensions/
-5. Insomnia | 2026-07-17T17:00:00+02:00 | Roxy Woodstock
-https://www.quicket.co.za/events/376958-insomnia/
-6. Mojo XXL Music Nights Ft. Francois Van Coke | 2026-07-31T19:00:00+02:00 | Mojo  Market
-https://www.quicket.co.za/events/383869-mojo-xxl-music-nights-ft-francois-van-coke/
-7. DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS | 2027-01-02T09:00:00+02:00 | 25A Buitenkant St
-https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/
-8. Back To Winter | 2026-06-27T18:00:00+02:00 | Busy Corner
-https://www.quicket.co.za/events/381748-back-to-winter/
-9. Deep Down Sundays | 2026-06-27T16:00:00+02:00 | Chronic & Co.
-https://www.quicket.co.za/events/376223-deep-down-sundays/
-10. Cape Town Business Basics Masterclass | 2026-07-11T10:00:00+02:00 | Lagoon Beach Hotel & Spa
-https://www.quicket.co.za/events/367152-cape-town-business-basics-masterclass/
-...and 4 more
+Added: 33
+1. Paneelbespreking: Die krag in kort | Panel Discussion: The power of short + Onafhanklike Kortfilm: Aasvoëls | Independent Short Film: Vultures | 2026-08-19T14:00:00+02:00 | Rotunda at The Bay Hotel
+https://www.quicket.co.za/events/381471-paneelbespreking-die-krag-in-kort-panel-discussion-the-power-of-short-onafhankl/
+2. Think Camp | MakeCraft - 3D Modelling & Redstone Engineering in Minecraft | Grades 2 - 5 | 13 July | 2026-07-13T08:00:00+02:00 | Rondebosch Sports Club
+https://www.quicket.co.za/events/383958-think-camp-makecraft-3d-modelling-redstone-engineering-in-minecraft-grades-2-5/
+3. Onafhanklike speelfilm | Independent Feature Film: Variasies op 'n tema | 2026-08-19T19:00:00+02:00 | Theatre on The Bay
+https://www.quicket.co.za/events/381421-onafhanklike-speelfilm-independent-feature-film-variasies-op-n-tema/
+4. Masicorp Presents: A Night of Music, Laughter and Giving | 2026-07-17T18:00:00+02:00 | Cafe Roux
+https://www.quicket.co.za/events/376387-masicorp-presents-a-night-of-music-laughter-and-giving/
+5. FOKOFPOLISIEKAR @ WOODSTOCK BREWERY | 2026-08-14T20:00:00+02:00 | Woodstock Brewery
+https://www.quicket.co.za/events/375753-fokofpolisiekar-woodstock-brewery/
+6. Astronaut Dorothy Metcalf-Lindenburger at Parklands College 3 August 2026 | 2026-08-03T18:00:00+02:00 | Parklands College,Secondary Faculty, Curie Hall
+https://www.quicket.co.za/events/374813-astronaut-dorothy-metcalf-lindenburger-at-parklands-college-3-august-2026/
+7. Property Insights & International Buyers | 2026-08-13T09:00:00+02:00 | King David Mowbray Golf Club
+https://www.quicket.co.za/events/378279-property-insights-international-buyers/
+8. Think Camp | MakeCraft - 3D Modelling & Redstone Engineering in Minecraft | Grades 2 - 5 | 7 July | 2026-07-07T08:00:00+02:00 | Rondebosch Sports Club
+https://www.quicket.co.za/events/380943-think-camp-makecraft-3d-modelling-redstone-engineering-in-minecraft-grades-2-5/
+9. Kaas Kween Comedy night at Infusion Rondebosch | 2026-07-02T19:30:00+02:00 | Infusion Rondebosch
+https://www.quicket.co.za/events/383820-kaas-kween-comedy-night-at-infusion-rondebosch/
+10. Washington DC Youth Orchestra at St. George's Cathedral | 2026-07-08T19:00:00+02:00 | St. George's Cathedral
+https://www.quicket.co.za/events/376885-washington-dc-youth-orchestra-at-st-georges-cathedral/
+...and 23 more
 
 Updated: 0
 
-Removed: 14
-1. Dweba Afro Jazz Night with Kila G | 2026-06-26T18:00:00+02:00 | Dweba Art & Cafe
-https://www.quicket.co.za/events/375107-dweba-afro-jazz-night-with-kila-g/
-2. NERVE 001 | 2026-06-26T20:00:00+02:00 | Biblio Nightclub
-https://www.quicket.co.za/events/377725-nerve-001/
-3. Ashtray | 2026-06-26T19:30:00+02:00 | Kaapstad Toneelhuis
-https://www.quicket.co.za/events/374950-ashtray/
-4. JACK PAROW @ WOODSTOCK BREWERY | 2026-06-26T20:00:00+02:00 | Woodstock Brewery
-https://www.quicket.co.za/events/371585-jack-parow-woodstock-brewery/
-5. The 'Women Who ROCK' Show - Simon's Restaurant | 2026-06-26T18:00:00+02:00 | Simon's Restaurant
-https://www.quicket.co.za/events/374082-the-women-who-rock-show-simons-restaurant/
-6. Stand up. At RED | 2026-06-26T18:30:00+02:00 | OUI Bar & KTCHN
-https://www.quicket.co.za/events/380302-stand-up-at-red/
-7. Margaux Fouché presents An Evening with Adele | 2026-06-26T18:00:00+02:00 | Cafe Roux
-https://www.quicket.co.za/events/378056-margaux-fouch-presents-an-evening-with-adele/
-8. Cape Town Mushroom walk with leading Ethnomycologist | 2026-06-27T08:30:00+02:00 | Newlands Forest
-https://www.quicket.co.za/events/381278-cape-town-mushroom-walk-with-leading-ethnomycologist/
-9. Auldfield @The Brass Bell | 2026-06-26T19:30:00+02:00 | Brass Bell Kalk Bay
-https://www.quicket.co.za/events/380323-auldfield-the-brass-bell/
-10. The Royal Celebration | 2026-06-26T18:00:00+02:00 | Duchess Lounge
-https://www.quicket.co.za/events/371526-the-royal-celebration/
-...and 4 more
+Removed: 33
+1. AFTERDARK lll | 2026-06-27T21:00:00+02:00 | Destiny Cape Town
+https://www.quicket.co.za/events/376723-afterdark-lll/
+2. Social Link-Up | 2026-06-27T13:00:00+02:00 | Rooftop On Bree
+https://www.quicket.co.za/events/380476-social-link-up/
+3. Gandalf's Reunion Show 2026 | 2026-06-27T14:00:00+02:00 | Trenchtown
+https://www.quicket.co.za/events/370809-gandalfs-reunion-show-2026/
+4. So Rnb - Shades Of Nude | 2026-06-27T17:00:00+02:00 | ColorBox Studios
+https://www.quicket.co.za/events/376326-so-rnb-shades-of-nude/
+5. QUEER TEMPLE for Women* | 2026-06-27T17:30:00+02:00 | The Spice Yard
+https://www.quicket.co.za/events/327689-queer-temple-for-women/
+6. Emo Night Presents: Bring Me The Horizon Forever! | 2026-06-27T20:00:00+02:00 | Evol
+https://www.quicket.co.za/events/371470-emo-night-presents-bring-me-the-horizon-forever/
+7. Abba Tribute show live at Triggerfish Brewing 2026 | 2026-06-27T20:30:00+02:00 | Triggerfish Brewing
+https://www.quicket.co.za/events/376342-abba-tribute-show-live-at-triggerfish-brewing-2026/
+8. Gay Gaze | 2026-06-27T15:00:00+02:00 | WELLNESS meets EVENTS (W.E)
+https://www.quicket.co.za/events/380494-gay-gaze/
+9. SINATRA IN THE CELLAR AT LOURENSFORD | 2026-06-27T18:30:00+02:00 | Lourensford Wine Estate
+https://www.quicket.co.za/events/360159-sinatra-in-the-cellar-at-lourensford/
+10. Time to Ignite - Cape Town | 2026-06-27T09:00:00+02:00 | Canal Walk Shopping Centre - Auditorium Entrance 12
+https://www.quicket.co.za/events/375623-time-to-ignite-cape-town/
+...and 23 more
 
 Webtickets Events
 -----------------
-Added: 3
+Added: 2
+1. Cape Town Abseil | From 28 Jun 2026 | Table Mountain | R995 - R1100
+https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391
+2. Zeitz MOCAA Children's Winter Holiday Programme - One Press Wonders | From 29 Jun 2026 10:00 | Zeitz Museum of Contemporary Art Africa, Cape Town | R150
+https://www.webtickets.co.za/v2/event.aspx?itemid=1597592889
+
+Updated: 3
+1. Tulbagh Christmas in Winter 2026 | From 28 Jun 2026 10:00 | Church Street Tulbagh and surrounding wine farms | From R225
+https://www.webtickets.co.za/v2/event.aspx?itemid=1583490083
+2. CG Ice Rink | From 28 Jun 2026 10:00 | Capegate Shopping Centre, Ent 6 Undercover Parking, Cape Town, Western Cape | R70
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595691483
+3. Canal Walk Theatre presents Peter Pan | From 28 Jun 2026 11:00 | Centre Court, Canal Walk Shopping Centre, Cape Town | R75 - R130
+https://www.webtickets.co.za/v2/event.aspx?itemid=1595763497
+
+Removed: 2
 1. ROUND 5 OF THE POWER SERIES – RACING FROM THE HEART | 27 Jun 2026 08:00 | Killarney International Raceway, 6 Potsdam Road, Table View | R10 - R850
 https://www.webtickets.co.za/v2/event.aspx?itemid=1597011847
-2. Canal Walk Theatre presents Peter Pan | From 27 Jun 2026 11:00 | Centre Court, Canal Walk Shopping Centre, Cape Town | R75 - R130
-https://www.webtickets.co.za/v2/event.aspx?itemid=1595763497
-3. KILLARNEY SPINNING | 27 Jun 2026 09:00 | Killarney International Raceway, 6 Potsdam Road, Table View | R10 - R100
+2. KILLARNEY SPINNING | 27 Jun 2026 09:00 | Killarney International Raceway, 6 Potsdam Road, Table View | R10 - R100
 https://www.webtickets.co.za/v2/event.aspx?itemid=1597761131
-
-Updated: 2
-1. CG Ice Rink | From 27 Jun 2026 10:00 | Capegate Shopping Centre, Ent 6 Undercover Parking, Cape Town, Western Cape | R70
-https://www.webtickets.co.za/v2/event.aspx?itemid=1595691483
-2. Tulbagh Christmas in Winter 2026 | From 27 Jun 2026 10:00 | Church Street Tulbagh and surrounding wine farms | From R225
-https://www.webtickets.co.za/v2/event.aspx?itemid=1583490083
-
-Removed: 3
-1. Zeitz MOCAA presents Pan-African Film Screening: About Some Meaningless Events (1974), directed by Mostafa Derkaoui | 26 Jun 2026 18:00 | The Labia Theatre, Orange Street, Gardens, Cape Town, South Africa | R30
-https://www.webtickets.co.za/v2/event.aspx?itemid=1596829461
-2. Puss in Boots | 26 June - 18 July 2026 | The Pam Golding Theatre at The Baxter | R250 - R300
-https://www.webtickets.co.za/v2/event.aspx?itemid=1591358060
-3. Here & Now: A Luther Vandross Tribute | From 26 Jun 2026 20:00 | Artscape, Opera House, Cape Town | R250 - R300
-https://www.webtickets.co.za/v2/event.aspx?itemid=1588359980
 
 Google Calendar
 ---------------
