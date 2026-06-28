@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-28T16:53:54Z",
+  "updated_at": "2026-06-28T17:56:40Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -43956,6 +43956,18 @@
       "stock": "In stock",
       "observed_on": "2026-06-28",
       "captured_at": "2026-06-28T16:53:54Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 3765.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-boa-hancock-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Boa Hancock) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-28",
+      "captured_at": "2026-06-28T17:56:40Z"
     }
   ]
 }
