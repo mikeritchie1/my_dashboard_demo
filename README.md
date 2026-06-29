@@ -1,295 +1,221 @@
-# My Dashboard
+# Personal Dashboard
 
-Local dashboard plus scraper services for media, news, One Piece cards, release radar, and events/specials.
+A self-built personal dashboard that aggregates data from 15+ sources into a single static interface, kept fresh by automated GitHub Actions pipelines running daily and hourly.
 
-## Dashboard
+Built entirely with **Python** (standard library, no third-party HTTP/scraping frameworks) and **vanilla JavaScript** — no backend server, no frontend framework.
 
-Serve the dashboard from the repo root:
+---
+
+## What it does
+
+The dashboard is a single-page web app (`docs/index.html`) that reads from a collection of JSON files updated by Python scrapers on a schedule. Each module is fully independent.
+
+| Module | Description |
+|---|---|
+| **Media Hub** | Movies, series, anime, and games pulled from Notion, enriched with TMDB/RAWG metadata (posters, ratings, genres) |
+| **Reading List** | Books and manga tracked via Notion, with personal ratings |
+| **Events & Venues** | Curated local venue list with geocoded coordinates; live event listings from Bandsintown, Quicket, and Webtickets |
+| **Google Calendar** | Upcoming calendar events (birthdays, reminders) |
+| **One Piece Cards** | Real-time card availability and pricing from 4 SA online stores, with hourly email alerts for new stock |
+| **Release Radar** | Upcoming movies (TMDB), new game releases (RAWG), IMAX showtimes, and latest movie releases |
+| **News** | Curated RSS/Atom feeds across 8 topic categories — global, local, games, F1, entertainment, climbing |
+| **YouTube** | Latest uploads from subscribed channels, fetched without the YouTube API |
+| **Game Hub** | Personal tabletop/RPG module notes and loadout tracker |
+| **Game Lab** | Browser games (Snake, sliding puzzle, DVD bounce) |
+| **Timeline** | Personal photo/memory timeline |
+| **Weather** | 7-day forecast via Open-Meteo |
+
+---
+
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      GitHub Actions                          │
+│   Daily (4am UTC)          Hourly                           │
+│   ─────────────────        ───────                          │
+│   News, media, events,     One Piece card checks            │
+│   release radar, YouTube,  + email notification             │
+│   reading list, digest                                      │
+└────────────────┬────────────────────────────────────────────┘
+                 │  commits JSON to repo
+                 ▼
+┌─────────────────────────────────────────────────────────────┐
+│                  docs/data/  (JSON files)                    │
+│  events/   media/   news/   release_radar/   one_piece/     │
+│  youtube/  reading_list.json   metadata.json   ...          │
+└────────────────┬────────────────────────────────────────────┘
+                 │  loaded by browser fetch()
+                 ▼
+┌─────────────────────────────────────────────────────────────┐
+│           docs/index.html + app.js + styles.css             │
+│           Static dashboard — served anywhere                 │
+│           (GitHub Pages, local HTTP server, etc.)            │
+└─────────────────────────────────────────────────────────────┘
+                 │  UI state persistence
+                 ▼
+┌──────────────────────────────────────────────────────────────┐
+│         Cloudflare Worker + KV  (optional)                   │
+│         Stores active tabs, scroll state across sessions     │
+└──────────────────────────────────────────────────────────────┘
+```
+
+Key design decisions:
+- **No server** — the dashboard is a static site; scrapers run in CI and push their output
+- **No third-party scraping libraries** — all HTTP requests use Python's `urllib.request`
+- **Data is the source of truth** — each module's JSON file is the contract between scraper and UI
+- **Incremental updates** — scrapers detect changes against a previous snapshot and only write diffs
+
+---
+
+## Tech stack
+
+**Backend (scraping & automation)**
+- Python 3.13 — standard library only (except `Pillow` for one image utility)
+- GitHub Actions — daily + hourly scheduled workflows
+- SMTP — email notifications for One Piece card alerts and daily digest
+
+**Frontend**
+- HTML5, CSS3, Vanilla JavaScript (no build step, no bundler)
+- Served with `python -m http.server` or any static host
+
+**APIs**
+- [TMDB](https://www.themoviedb.org/documentation/api) — movie and TV metadata
+- [RAWG](https://rawg.io/apidocs) — video game database
+- [Notion API](https://developers.notion.com/) — user lists (watchlist, games, reading, specials)
+- [Google Calendar API](https://developers.google.com/calendar) — calendar events
+- [Google Places API](https://developers.google.com/maps/documentation/places) — venue geocoding
+- [Open-Meteo](https://open-meteo.com/) — weather (no API key required)
+- [Nominatim](https://nominatim.org/) — fallback geocoding
+
+**Infrastructure**
+- GitHub Pages — static hosting
+- Cloudflare Workers + KV — optional state persistence
+
+---
+
+## Project layout
+
+```
+my-dashboard/
+├── docs/                        # Static dashboard (served as the site)
+│   ├── index.html
+│   ├── app.js
+│   ├── styles.css
+│   └── data/                    # JSON data files read by the dashboard
+│       ├── events/
+│       ├── media/
+│       ├── news/
+│       ├── one_piece/
+│       ├── release_radar/
+│       ├── youtube/
+│       ├── game_hub/
+│       ├── game_lab/
+│       ├── timeline/
+│       └── reading_list.json
+├── services/                    # Python scrapers
+│   ├── common/                  # Shared utilities (Notion client, secrets)
+│   ├── events/                  # Bandsintown, Quicket, Webtickets, Google Calendar
+│   ├── media/                   # TMDB/RAWG watchlist enrichment
+│   ├── one_piece/               # 4 store scrapers + card matching + notifications
+│   ├── release_radar/           # Pahe, TMDB upcoming, RAWG games, IMAX
+│   ├── youtube/                 # Channel scrapers
+│   ├── daily_digest/            # Email digest
+│   └── scrape_*.py              # Module-level entry points
+├── cloudflare-state-worker/     # Cloudflare Worker for state persistence
+├── tests/                       # Integration and scraper tests
+├── env.py                       # Non-secret configuration constants
+├── secrets.env.example          # Template for required secrets
+├── requirements.txt             # Python dependencies
+└── run_local_dashboard_update.py  # Local runner (calls module wrappers)
+```
+
+---
+
+## Local setup
+
+**Prerequisites:** Python 3.11+ (3.13 recommended)
 
 ```powershell
+# 1. Clone the repo
+git clone <repo-url>
+cd my-dashboard
+
+# 2. Create and activate a virtual environment
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1       # Windows PowerShell
+# source .venv/bin/activate        # Linux / macOS
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Copy secrets template and fill in your API keys
+cp secrets.env.example secrets.env
+# Edit secrets.env with your keys
+
+# 5. Serve the dashboard
 python -m http.server 8080
+# Open http://localhost:8080/docs/
 ```
 
-Open:
+The dashboard ships with pre-populated demo data — you can browse it immediately without running any scrapers.
 
-```text
-http://localhost:8080/docs/
-```
+---
 
-Dashboard files live in:
-
-- `docs/index.html`
-- `docs/app.js`
-- `docs/styles.css`
-
-Runtime data lives in `data/`. The dashboard copy lives in `docs/data/` and is refreshed by the wrapper scripts.
-
-## Data Shape
-
-Each dashboard module has data under `data/<module>/`, service code under `services/<module>/`, and module config in `data/<module>/config.json`.
-
-Events, specials, and places are linked like this:
-
-- `data/events/places.json`: Cape Town places by name. A place has `name`, `address`, `location_key`, `type`, `tags`, map URLs, and `missing_location`. It does not store `lat` or `lng`.
-- `data/events/locations.json`: address/location strings mapped to coordinates.
-- `data/events/specials.json`: specials grouped by day. Each special links to a place with `place` and `place_key`; if no place exists it has `missing_place`.
-- Event source JSON files: events can link to a place with `place_key` or to an address with `location_key`. If neither can be resolved, the dashboard shows the corner `X`.
-
-## Scraping
-
-Use the module-level wrappers in `services/` for normal scraping. All wrappers accept:
-
-- `--hard`: recreate selected generated data from scratch where applicable.
-- `--skip-geocode`: for `scrape_events.py`, skip the final geocode pass.
-- `--source`: scrape one source instead of all sources in that module.
-- `--limit`: max items per supported source. `0` means no limit where supported.
-- `--max-pages`: max listing pages per supported source. `0` means source default/all.
-
-### Events
-
-Run all event sources:
+## Running scrapers locally
 
 ```powershell
-python services/scrape_events.py
-python services/scrape_events.py --skip-geocode
-```
-
-This runs in two phases:
-- Scrape sources (specials, places, Bandsintown, Quicket, Webtickets, Google Calendar).
-- Final geocode pass across all event/place `location_key` values, updating `locations.json` incrementally after each hit.
-
-Run one source hard with a test limit:
-
-```powershell
-python services/scrape_events.py --source bandsintown --hard --limit 10 --max-pages 10
-```
-
-Allowed sources:
-
-- `all`
-- `specials`
-- `bandsintown`
-- `quicket`
-- `webtickets`
-- `google-calendar`
-
-Standalone geocode pass:
-
-```powershell
-python services/events/geocode_event_locations.py
-python services/events/geocode_event_locations.py --hard
-```
-
-Extra Bandsintown option:
-
-```powershell
-python services/scrape_events.py --source bandsintown --genre metal --limit 10
-python services/scrape_events.py --source bandsintown --genre all --limit 10
-```
-
-Individual event source scripts:
-
-```powershell
-python services/events/scrape_specials.py --hard
-python services/events/scrape_bandsintown_events.py --hard --genre metal --limit 10 --max-pages 10
-python services/events/scrape_quicket_events.py --hard --limit 10 --pages 10 --days 365
-python services/events/scrape_webtickets_events.py --hard --limit 10 --max-pages 10
-python services/events/scrape_google_calendar.py --hard
-```
-
-Events config:
-
-- `data/events/config.json`
-- `docs/data/events/config.json`
-
-Bandsintown dashboard genre buttons are configured at `bandsintown.genre_filters`.
-
-### Media
-
-Run media/watchlist scraping:
-
-```powershell
-python services/scrape_media.py
-```
-
-Examples:
-
-```powershell
-python services/scrape_media.py --hard
-python services/scrape_media.py --source watchlist --type movies
-python services/scrape_media.py --source games --type games --hard
-```
-
-Allowed sources:
-
-- `all`
-- `watchlist`
-- `games`
-
-Allowed types:
-
-- `all`
-- `movies`
-- `series`
-- `anime`
-- `games`
-
-Individual source script:
-
-```powershell
-python services/media/scrape_watchlist.py --scope both --type all --hard
-```
-
-Manual TMDB overrides (for missing/wrong matches):
-
-- File: `docs/data/media/tmdb_manual_overrides.json`
-- Add entries with `title`, `media_type` (`movie`, `series`, or `anime`), and `tmdb_url`.
-- During scraping, matching titles use this TMDB URL/id first, then fall back to normal search if no override exists.
-
-Media config:
-
-- `data/media/config.json`
-
-### One Piece
-
-Run all One Piece store scrapes:
-
-```powershell
-python services/scrape_one_piece.py
-```
-
-Examples:
-
-```powershell
-python services/scrape_one_piece.py --source tanuki
-python services/scrape_one_piece.py --source all --hard
-```
-
-Allowed sources:
-
-- `all`
-- `bigbang`
-- `knightly`
-- `marvellous`
-- `tanuki`
-
-Individual source script:
-
-```powershell
-python services/one_piece/find_missing_cards.py all
-python services/one_piece/find_missing_cards.py tanuki
-```
-
-One Piece config:
-
-- `data/one_piece/config.json`
-
-One Piece automation:
-
-- The hourly workflow scrapes all One Piece stores and emails only newly added OP/EB listings or cards with `DON`/`DON!!` in the title, priced below R100. Price/stock updates and removed listings do not trigger email.
-- The missing-card list is loaded fresh from the configured Google Drive workbook each run, so new sets such as OP16 are searched as soon as they appear on the `Missing` sheet.
-- One Piece is excluded from the daily scraper and daily dashboard digest.
-- Hourly workflow file: `.github/workflows/hourly-update.yml`
-
-### Release Radar
-
-Run all release radar sources:
-
-```powershell
-python services/scrape_release_radar.py
-```
-
-Examples:
-
-```powershell
-python services/scrape_release_radar.py --source pahe --hard --limit 10
-python services/scrape_release_radar.py --source coming-soon --limit 10 --max-pages 3
-python services/scrape_release_radar.py --source imax --limit 4
-python services/scrape_release_radar.py --source games --limit 10 --max-pages 3
-```
-
-Allowed sources:
-
-- `all`
-- `pahe`
-- `coming-soon`
-- `imax`
-- `games`
-
-Individual source scripts:
-
-```powershell
-python services/release_radar/scrape_releases.py
-python services/release_radar/scrape_coming_soon.py
-python services/release_radar/scrape_imax.py
-python services/release_radar/scrape_game_releases.py
-```
-
-Release radar sources:
-
-- `pahe`: latest movie releases from Pahe.
-- `coming-soon`: upcoming movies from TMDB, sorted by release date and excluding movies released today or earlier.
-- `imax`: Ster-Kinekor V&A Waterfront IMAX listings, split into `Now playing` and `Coming soon`, enriched with TMDB poster/detail data.
-- `games`: new and upcoming game releases from RAWG, with coming-soon games sorted by release date and stale released games removed.
-
-Release radar config:
-
-- `data/release_radar/config.json`
-
-### News
-
-News pulls curated RSS/Atom feeds for global, South African, games, entertainment, and climbing headlines.
-
-```powershell
-python services/scrape_news.py
-python services/scrape_news.py --limit 6
-python services/scrape_news.py --source local-file
-```
-
-Allowed sources:
-
-- `all`
-- `rss`
-- `local-file`
-
-News config:
-
-- `data/news/config.json`
-
-Important/breaking filtering:
-
-- Dashboard now prefers `top_items` from `data/news/news.json` when available.
-- Tune `importance_threshold`, `breaking_threshold`, `max_top_items_per_category`, and `category_max_age_hours` in `data/news/config.json`.
-
-News scraping sources by topic:
-
-- `Global`: BBC World, Al Jazeera, The Guardian World
-- `South Africa`: GroundUp, IOL South Africa
-- `Cape Town`: Cape Town ETC, IOL Cape Times
-- `Cape Town Events`: What’s On in Cape Town (events feed), Events in Cape Town (feed), and Wesgro Travel Events (scraped from event listings)
-- `Games`: GameSpot, PC Gamer, PlayStation Blog
-- `F1`: BBC Sport F1, Motorsport.com F1
-- `F1 Snapshot`: auto-generated pinned module with current Driver/Constructor standings, race schedule, completed race results, and race highlights. Structured standings/results come from Jolpica/Ergast; race highlights are matched from Wikipedia race summaries plus F1 race-report feeds from Autosport, RaceFans, RACER, and Motorsport.com.
-- `Entertainment`: Variety, The Hollywood Reporter, Deadline
-- `Climbing`: Gripped, GearJunkie Climbing, Alpinist
-
-## Local Full Update
-
-The older local update runner still works and now calls the module wrappers:
-
-```powershell
+# Run everything
 python run_local_dashboard_update.py all
-python run_local_dashboard_update.py events
-python run_local_dashboard_update.py media
-python run_local_dashboard_update.py cards
-python run_local_dashboard_update.py releases
+
+# Run individual modules
 python run_local_dashboard_update.py news
+python run_local_dashboard_update.py media
+python run_local_dashboard_update.py events
+python run_local_dashboard_update.py releases
+python run_local_dashboard_update.py youtube
+python run_local_dashboard_update.py reading
 ```
+
+Module wrappers support `--hard`, `--source`, `--limit`, and `--max-pages` flags — see the service scripts for details.
+
+---
 
 ## Secrets
 
-Secrets are read from environment variables, `secrets.env`, or `env.py` helpers depending on the scraper. Start from:
+All secrets are read from environment variables or a local `secrets.env` file (git-ignored). Copy `secrets.env.example` to get started:
 
-```text
-secrets.env.example
-```
+| Variable | Used by |
+|---|---|
+| `NOTION_TOKEN` | Media watchlist, games, reading list, specials |
+| `TMDB_BEARER_TOKEN` / `TMDB_API_KEY` | Movie/TV metadata and IMAX showtimes |
+| `RAWG_API_KEY` | Game library and release radar |
+| `GOOGLE_API_KEY` | Google Calendar events |
+| `GOOGLE_PLACES_API_KEY` | Venue geocoding |
+| `GOOGLE_CALENDAR_IDS` | Comma-separated calendar IDs to sync |
+| `SCRAPE_OP_MISSING_CARDS_DRIVE_URL` | Google Drive link for One Piece missing-card list |
+| `SMTP_*` / `EMAIL_*` | Email notifications (daily digest, card alerts) |
+
+In CI, these are stored as GitHub repository secrets and injected as environment variables by the workflow.
+
+---
+
+## Automation
+
+### Daily workflow (4am UTC)
+
+Runs: news, media, events, release radar, YouTube scrapers, reading list, daily digest email.
+
+### Hourly workflow
+
+Runs: One Piece card scrapers across all configured stores. If new stock appears for cards on the missing list and priced below a threshold, an email alert is sent.
+
+Both workflows commit any changed data back to the repo, so the GitHub Pages site is always up to date.
+
+---
+
+## Cloudflare Worker (optional)
+
+The `cloudflare-state-worker/` directory contains a minimal Cloudflare Worker that persists dashboard UI state (active tab, filters) in Cloudflare KV. This lets the dashboard remember your position across page reloads without a backend.
+
+See [`docs/cloudflare-state-setup.md`](docs/cloudflare-state-setup.md) for setup instructions.

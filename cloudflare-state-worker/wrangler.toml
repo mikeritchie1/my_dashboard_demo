@@ -4,5 +4,5 @@ compatibility_date = "2026-05-15"
 
 [[kv_namespaces]]
 binding = "DASH_STATE"
-id = "18569d2437fe4cd5baae3ba93b7839ef"
-preview_id = "REPLACE_WITH_KV_PREVIEW_NAMESPACE_ID"
+id = "your-kv-namespace-id-here"
+preview_id = "your-kv-preview-namespace-id-here"

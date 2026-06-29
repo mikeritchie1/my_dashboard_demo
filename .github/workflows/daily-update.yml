@@ -101,7 +101,7 @@ jobs:
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'media' || inputs.task == 'reading' }}
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          NOTION_READING_PAGE_URL: https://app.notion.com/p/My-Reading-2d157df8191880a7a23dfc431800dbe6
+          NOTION_READING_PAGE_URL: ${{ secrets.NOTION_READING_PAGE_URL }}
         run: python services/scrape_reading_list.py
 
       - name: Run specials events

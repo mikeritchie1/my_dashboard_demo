@@ -2,15 +2,15 @@
   "generated_at": "2026-06-29T11:02:35.217015+02:00",
   "items": [
     {
-      "source_calendar_id": "0g3a09rbfv6p1840rbvbhtfff4@group.calendar.google.com",
+      "source_calendar_id": "demo-calendar-id@group.calendar.google.com",
       "type": "birthday",
-      "title": "Reg Groblers Birthday",
-      "date": "2026-07-23",
-      "start": "2026-07-23",
-      "end": "2026-07-24",
+      "title": "Demo Birthday",
+      "date": "2026-08-15",
+      "start": "2026-08-15",
+      "end": "2026-08-16",
       "location": "",
       "description": "",
-      "url": "https://www.google.com/calendar/event?eid=NjhhY2drYzlsaHYyOXE4dW8yMmE1MnZwdTdfMjAyNjA3MjMgMGczYTA5cmJmdjZwMTg0MHJidmJodGZmZjRAZw"
+      "url": ""
     }
   ]
 }

@@ -4,3 +4,5 @@ secrets.env
 .cache/
 .scrape/
 .venv/
+cloudflare-state-worker/.wrangler/
+.claude/
