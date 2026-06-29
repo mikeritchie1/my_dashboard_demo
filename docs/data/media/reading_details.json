@@ -3,227 +3,27 @@
     "title": "1984",
     "media_type": "book",
     "poster_url": "https://covers.openlibrary.org/b/id/14351142-L.jpg",
-    "release_date": "2021",
-    "authors": [
-      "George Orwell",
-      "Amélie Audiberti"
-    ],
-    "directors": [
-      "George Orwell",
-      "Amélie Audiberti"
-    ],
-    "open_library_url": "https://openlibrary.org/works/OL30827457W"
+    "release_date": "1949",
+    "authors": ["George Orwell"],
+    "directors": ["George Orwell"],
+    "open_library_url": "https://openlibrary.org/works/OL1168007W"
   },
-  "book:brave new world": {
-    "title": "Brave New World",
+  "book:dune": {
+    "title": "Dune",
     "media_type": "book",
+    "poster_url": "https://covers.openlibrary.org/b/id/8231941-L.jpg",
+    "release_date": "1965",
+    "authors": ["Frank Herbert"],
+    "directors": ["Frank Herbert"],
+    "open_library_url": "https://openlibrary.org/works/OL18389W"
+  },
+  "manga:berserk": {
+    "title": "Berserk",
+    "media_type": "manga",
     "poster_url": "https://covers.openlibrary.org/b/id/8231823-L.jpg",
-    "release_date": "1932",
-    "genres": [
-      "Utopias",
-      "Brainwashing",
-      "Moral and ethical aspects of Science",
-      "Fiction",
-      "Science and state",
-      "Social problems",
-      "Passivity (Psychology)",
-      "Culture"
-    ],
-    "authors": [
-      "Aldous Huxley"
-    ],
-    "directors": [
-      "Aldous Huxley"
-    ],
-    "rating": 3.968017,
-    "number_of_pages": 240,
-    "open_library_url": "https://openlibrary.org/works/OL64365W"
-  },
-  "book:dark matter": {
-    "title": "Dark Matter",
-    "media_type": "book",
-    "poster_url": "https://covers.openlibrary.org/b/id/7436634-L.jpg",
-    "release_date": "2016",
-    "genres": [
-      "Kidnapping",
-      "Fiction",
-      "Reality",
-      "Science Fiction",
-      "Psychological",
-      "New York Times bestseller",
-      "Technological",
-      "Suspense"
-    ],
-    "authors": [
-      "Blake Crouch"
-    ],
-    "directors": [
-      "Blake Crouch"
-    ],
-    "rating": 4.035294,
-    "number_of_pages": 360,
-    "open_library_url": "https://openlibrary.org/works/OL17358795W"
-  },
-  "book:dungeon crawler carl": {
-    "title": "Dungeon Crawler Carl",
-    "media_type": "book",
-    "poster_url": "https://covers.openlibrary.org/b/id/15143022-L.jpg",
-    "release_date": "2020",
-    "genres": [
-      "series:Dungeon Crawler Carl",
-      "genre:LitRPG",
-      "genre:science fantasy"
-    ],
-    "authors": [
-      "Matt Dinniman"
-    ],
-    "directors": [
-      "Matt Dinniman"
-    ],
-    "rating": 4.714286,
-    "number_of_pages": 465,
-    "open_library_url": "https://openlibrary.org/works/OL24593432W"
-  },
-  "book:enders game": {
-    "title": "Enders Game",
-    "media_type": "book",
-    "poster_url": "https://covers.openlibrary.org/b/id/12996033-L.jpg",
-    "release_date": "1985",
-    "genres": [
-      "New York Times bestseller",
-      "nyt:mass_market_paperback=2011-07-30",
-      "military education",
-      "end of the world",
-      "prize:nebula",
-      "hegemony",
-      "space warfare",
-      "child soldiers"
-    ],
-    "authors": [
-      "Orson Scott Card"
-    ],
-    "directors": [
-      "Orson Scott Card"
-    ],
-    "rating": 4.3481483,
-    "number_of_pages": 330,
-    "open_library_url": "https://openlibrary.org/works/OL49488W"
-  },
-  "book:harry potter and the philosophers stone": {
-    "title": "Harry Potter and the Philosopher's Stone",
-    "media_type": "book",
-    "poster_url": "https://covers.openlibrary.org/b/id/15155833-L.jpg",
-    "release_date": "1997",
-    "genres": [
-      "series:Harry_Potter",
-      "Ghosts",
-      "Monsters",
-      "Vampires",
-      "Witches",
-      "Challenges and Overcoming Obstacles",
-      "Magic and Supernatural",
-      "Cleverness"
-    ],
-    "authors": [
-      "J. K. Rowling"
-    ],
-    "directors": [
-      "J. K. Rowling"
-    ],
-    "rating": 4.214073,
-    "number_of_pages": 302,
-    "open_library_url": "https://openlibrary.org/works/OL82563W"
-  },
-  "book:speaker of the dead": {
-    "title": "Speaker of the Dead",
-    "media_type": "book",
-    "poster_url": "https://covers.openlibrary.org/b/id/786107-L.jpg",
-    "release_date": "1991",
-    "genres": [
-      "Fiction, science fiction, collections & anthologies"
-    ],
-    "authors": [
-      "Orson Scott Card"
-    ],
-    "directors": [
-      "Orson Scott Card"
-    ],
-    "number_of_pages": 810,
-    "open_library_url": "https://openlibrary.org/works/OL49620W"
-  },
-  "book:the metamorphosis": {
-    "title": "The Metamorphosis",
-    "media_type": "book",
-    "poster_url": "https://covers.openlibrary.org/b/id/745649-L.jpg",
-    "release_date": "2003",
-    "genres": [
-      "Adaptations",
-      "Graphic novels",
-      "Fiction",
-      "Families",
-      "Alienation",
-      "Comic books, strips",
-      "Comics & graphic novels, general",
-      "Continental european fiction (fictional works by one author)"
-    ],
-    "authors": [
-      "Kuper, Peter"
-    ],
-    "directors": [
-      "Kuper, Peter"
-    ],
-    "rating": 3.2,
-    "number_of_pages": 77,
-    "open_library_url": "https://openlibrary.org/works/OL5728072W"
-  },
-  "manga:one piece": {
-    "title": "One Piece",
-    "media_type": "manga",
-    "poster_url": "https://covers.openlibrary.org/b/id/1020563-L.jpg",
-    "release_date": "1997",
-    "genres": [
-      "franchise:ONE PIECE",
-      "series:ONE PIECE",
-      "form:manga",
-      "form:manga volume",
-      "form:graphic novel",
-      "genre:adventure",
-      "genre:comedy drama",
-      "genre:science fantasy"
-    ],
-    "authors": [
-      "尾田栄一郎"
-    ],
-    "directors": [
-      "尾田栄一郎"
-    ],
-    "rating": 4.0,
-    "number_of_pages": 208,
-    "open_library_url": "https://openlibrary.org/works/OL8215661W"
-  },
-  "manga:uzumaki": {
-    "title": "Uzumaki",
-    "media_type": "manga",
-    "poster_url": "https://covers.openlibrary.org/b/id/11888471-L.jpg",
-    "release_date": "2013",
-    "genres": [
-      "Death",
-      "Spirals",
-      "Comic books, strips",
-      "Comics & graphic novels, manga, horror",
-      "Spirals--comic books, strips, etc",
-      "Death--comic books, strips, etc",
-      "Pn6790.j33 i8713 2013",
-      "741.5/952"
-    ],
-    "authors": [
-      "Junji Itō"
-    ],
-    "directors": [
-      "Junji Itō"
-    ],
-    "rating": 4.428571,
-    "number_of_pages": 653,
-    "open_library_url": "https://openlibrary.org/works/OL19720088W"
+    "release_date": "1989",
+    "authors": ["Kentaro Miura"],
+    "directors": ["Kentaro Miura"],
+    "open_library_url": "https://openlibrary.org/works/OL20805750W"
   }
 }

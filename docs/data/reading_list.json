@@ -2,60 +2,22 @@
   "source": "notion",
   "currently_watching": {
     "books": [
-      {
-        "title": "Dungeon Crawler Carl",
-        "opinion": ""
-      },
-      {
-        "title": "Dark Matter",
-        "opinion": ""
-      }
+      { "title": "Dune", "opinion": "" },
+      { "title": "The Name of the Wind", "opinion": "" }
     ],
     "manga": [
-      {
-        "title": "One Piece",
-        "opinion": ""
-      },
-      {
-        "title": "Uzumaki",
-        "opinion": ""
-      }
+      { "title": "Berserk", "opinion": "" },
+      { "title": "Vagabond", "opinion": "" }
     ]
   },
   "history_by_year": [
     {
       "year": "Read",
       "entries": [
-        {
-          "type": "book",
-          "title": "Enders Game",
-          "opinion": "Liked"
-        },
-        {
-          "type": "book",
-          "title": "Speaker of the Dead",
-          "opinion": "Disliked"
-        },
-        {
-          "type": "book",
-          "title": "Harry Potter and the Philosopher's Stone",
-          "opinion": "Liked"
-        },
-        {
-          "type": "book",
-          "title": "The Metamorphosis",
-          "opinion": "Mixed"
-        },
-        {
-          "type": "book",
-          "title": "1984",
-          "opinion": "Loved"
-        },
-        {
-          "type": "book",
-          "title": "Brave New World",
-          "opinion": "Liked"
-        }
+        { "type": "book", "title": "1984", "opinion": "Loved" },
+        { "type": "book", "title": "Brave New World", "opinion": "Liked" },
+        { "type": "book", "title": "Ender's Game", "opinion": "Liked" },
+        { "type": "manga", "title": "Attack on Titan", "opinion": "Loved" }
       ]
     }
   ]
