@@ -1,12 +1,12 @@
 # Personal Dashboard
 
-A self-built personal dashboard that aggregates data from 15+ sources into a single interface, kept fresh by automated GitHub Actions pipelines running daily and hourly.
+A self-built personal dashboard that pulls data from 15+ sources into a single interface, kept up to date by GitHub Actions pipelines running daily and hourly.
 
 ---
 
 ## What it does
 
-The dashboard is a single-page web app (`docs/index.html`) that reads from a collection of JSON files updated by Python scrapers on a schedule. Each module is fully independent.
+The dashboard is a single-page app (`docs/index.html`) that reads from JSON files updated by Python scrapers on a schedule. Each module is fully independent.
 
 | Module | Description |
 |---|---|
@@ -15,10 +15,10 @@ The dashboard is a single-page web app (`docs/index.html`) that reads from a col
 | **Events & Venues** | Live event listings from Bandsintown, Quicket, and Webtickets, combined with a curated venue database. Venues are geocoded and events tagged by category and genre |
 | **Google Calendar** | Upcoming personal calendar events pulled across multiple Google Calendar IDs |
 | **One Piece Cards** | Hourly scrape of card availability and pricing across 4 stores. Cross-references a configurable missing-card list, tracks price history, and sends email alerts for new stock below a set threshold |
-| **Release Radar** | Upcoming and recent movies (TMDB), new game releases (RAWG), IMAX showtimes, and latest movie releases — aggregated into a single view |
-| **News** | Ranked articles from 20+ RSS/Atom feeds across 8 categories. An importance scoring system surfaces breaking and high-signal stories, with a dedicated F1 Snapshot showing live standings, race schedule, and results |
+| **Release Radar** | Upcoming and recent movies (TMDB), new game releases (RAWG), IMAX showtimes, and latest releases aggregated into a single view |
+| **News** | Ranked articles from 20+ RSS/Atom feeds across 8 categories. An importance scoring system surfaces breaking stories, with a dedicated F1 Snapshot showing live standings, race schedule, and results |
 | **YouTube** | Latest uploads from configured channels, grouped by series with thumbnail previews |
-| **Game Hub** | A reference companion for tabletop/co-op game sessions — stores build loadouts, module notes, and ability breakdowns per campaign, browsable mid-session |
+| **Game Hub** | A reference companion for tabletop/co-op game sessions - stores build loadouts, module notes, and ability breakdowns per campaign |
 | **Game Lab** | A sandbox for quickly building and testing browser game ideas. New games drop in as self-contained HTML/JS/CSS bundles and are picked up automatically via a manifest |
 | **Timeline** | Chronological photo and memory feed driven by a date-stamped manifest |
 | **Weather** | 7-day forecast with daily high/low temperatures via Open-Meteo |
@@ -28,67 +28,51 @@ The dashboard is a single-page web app (`docs/index.html`) that reads from a col
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                      GitHub Actions                          │
-│   Daily (4am UTC)          Hourly                           │
-│   ─────────────────        ───────                          │
-│   News, media, events,     One Piece card checks            │
-│   release radar, YouTube,  + email notification             │
-│   reading list, digest                                      │
-└────────────────┬────────────────────────────────────────────┘
-                 │  commits JSON to repo
-                 ▼
-┌─────────────────────────────────────────────────────────────┐
-│                  docs/data/  (JSON files)                    │
-│  events/   media/   news/   release_radar/   one_piece/     │
-│  youtube/  reading_list.json   metadata.json   ...          │
-└────────────────┬────────────────────────────────────────────┘
-                 │  loaded by browser fetch()
-                 ▼
-┌─────────────────────────────────────────────────────────────┐
-│           docs/index.html + app.js + styles.css             │
-│           Static dashboard — served anywhere                 │
-│           (GitHub Pages, local HTTP server, etc.)            │
-└─────────────────────────────────────────────────────────────┘
-                 │  UI state persistence
-                 ▼
-┌──────────────────────────────────────────────────────────────┐
-│         Cloudflare Worker + KV  (optional)                   │
-│         Stores active tabs, scroll state across sessions     │
-└──────────────────────────────────────────────────────────────┘
+GitHub Actions (daily + hourly)
+        |
+        | commits updated JSON
+        v
+docs/data/  (JSON files per module)
+        |
+        | loaded by the frontend
+        v
+docs/index.html + app.js + styles.css
+        |
+        | UI state (tabs, filters)
+        v
+Cloudflare Worker + KV  (optional)
 ```
 
-Key design decisions:
-- **CI-driven data pipeline** — scrapers run in GitHub Actions and push updated JSON, keeping the frontend always in sync without a running server
-- **Lightweight scraping layer** — all HTTP requests use Python's `urllib.request`, keeping the dependency surface minimal
-- **Data as contract** — each module's JSON file is the agreed schema between scraper and UI, making modules fully independent
-- **Incremental updates** — scrapers diff against a previous snapshot and only write what changed
+Key decisions:
+- Scrapers run in CI and push updated JSON, so the site is always in sync
+- Each module's JSON file is the contract between scraper and frontend, keeping them fully decoupled
+- Scrapers diff against a previous snapshot and only write what changed
 
 ---
 
 ## Tech stack
 
-**Backend (scraping & automation)**
+**Backend**
 - Python 3.13
-- GitHub Actions — daily + hourly scheduled workflows
-- SMTP — email notifications for One Piece card alerts and daily digest
+- GitHub Actions - daily and hourly scheduled workflows
+- SMTP - email notifications for card alerts and daily digest
 
 **Frontend**
 - HTML5, CSS3, JavaScript
 - Hosted on GitHub Pages
 
 **APIs**
-- [TMDB](https://www.themoviedb.org/documentation/api) — movie and TV metadata
-- [RAWG](https://rawg.io/apidocs) — video game database
-- [Notion API](https://developers.notion.com/) — user lists (watchlist, games, reading, specials)
-- [Google Calendar API](https://developers.google.com/calendar) — calendar events
-- [Google Places API](https://developers.google.com/maps/documentation/places) — venue geocoding
-- [Open-Meteo](https://open-meteo.com/) — weather
-- [Nominatim](https://nominatim.org/) — fallback geocoding
+- [TMDB](https://www.themoviedb.org/documentation/api) - movie and TV metadata
+- [RAWG](https://rawg.io/apidocs) - video game database
+- [Notion API](https://developers.notion.com/) - user lists (watchlist, games, reading, specials)
+- [Google Calendar API](https://developers.google.com/calendar) - calendar events
+- [Google Places API](https://developers.google.com/maps/documentation/places) - venue geocoding
+- [Open-Meteo](https://open-meteo.com/) - weather
+- [Nominatim](https://nominatim.org/) - fallback geocoding
 
 **Infrastructure**
-- GitHub Pages — static hosting
-- Cloudflare Workers + KV — optional state persistence
+- GitHub Pages
+- Cloudflare Workers + KV
 
 ---
 
@@ -100,7 +84,7 @@ my-dashboard/
 │   ├── index.html
 │   ├── app.js
 │   ├── styles.css
-│   └── data/                    # JSON data files read by the dashboard
+│   └── data/                    # JSON data files
 │       ├── events/
 │       ├── media/
 │       ├── news/
@@ -121,52 +105,46 @@ my-dashboard/
 │   ├── daily_digest/            # Email digest
 │   └── scrape_*.py              # Module-level entry points
 ├── cloudflare-state-worker/     # Cloudflare Worker for state persistence
-├── tests/                       # Integration and scraper tests
-├── env.py                       # Non-secret configuration constants
+├── tests/
+├── env.py                       # Non-secret config constants
 ├── secrets.env.example          # Template for required secrets
-├── requirements.txt             # Python dependencies
-└── run_local_dashboard_update.py  # Local runner (calls module wrappers)
+├── requirements.txt
+└── run_local_dashboard_update.py
 ```
 
 ---
 
 ## Local setup
 
-**Prerequisites:** Python 3.11+ (3.13 recommended)
+**Prerequisites:** Python 3.11+
 
 ```powershell
-# 1. Clone the repo
 git clone <repo-url>
 cd my-dashboard
 
-# 2. Create and activate a virtual environment
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1       # Windows PowerShell
+.\.venv\Scripts\Activate.ps1       # Windows
 # source .venv/bin/activate        # Linux / macOS
 
-# 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Copy secrets template and fill in your API keys
 cp secrets.env.example secrets.env
-# Edit secrets.env with your keys
+# fill in your API keys
 
-# 5. Serve the dashboard
 python -m http.server 8080
-# Open http://localhost:8080/docs/
+# open http://localhost:8080/docs/
 ```
 
-The dashboard ships with pre-populated demo data — you can browse it immediately without running any scrapers.
+The repo ships with pre-populated demo data so you can browse the dashboard straight away.
 
 ---
 
 ## Running scrapers locally
 
 ```powershell
-# Run everything
 python run_local_dashboard_update.py all
 
-# Run individual modules
+# or individual modules
 python run_local_dashboard_update.py news
 python run_local_dashboard_update.py media
 python run_local_dashboard_update.py events
@@ -175,13 +153,13 @@ python run_local_dashboard_update.py youtube
 python run_local_dashboard_update.py reading
 ```
 
-Module wrappers support `--hard`, `--source`, `--limit`, and `--max-pages` flags — see the service scripts for details.
+Wrappers support `--hard`, `--source`, `--limit`, and `--max-pages` flags - see the service scripts for details.
 
 ---
 
 ## Secrets
 
-All secrets are read from environment variables or a local `secrets.env` file (git-ignored). Copy `secrets.env.example` to get started:
+Secrets are read from environment variables or a local `secrets.env` file (git-ignored). Copy `secrets.env.example` to get started:
 
 | Variable | Used by |
 |---|---|
@@ -191,24 +169,20 @@ All secrets are read from environment variables or a local `secrets.env` file (g
 | `GOOGLE_API_KEY` | Google Calendar events |
 | `GOOGLE_PLACES_API_KEY` | Venue geocoding |
 | `GOOGLE_CALENDAR_IDS` | Comma-separated calendar IDs to sync |
-| `SCRAPE_OP_MISSING_CARDS_DRIVE_URL` | Google Drive link for One Piece missing-card list |
+| `SCRAPE_OP_MISSING_CARDS_DRIVE_URL` | Google Drive link for the One Piece missing-card list |
 | `SMTP_*` / `EMAIL_*` | Email notifications (daily digest, card alerts) |
 
-In CI, these are stored as GitHub repository secrets and injected as environment variables by the workflow.
+In CI these are stored as GitHub repository secrets.
 
 ---
 
 ## Automation
 
-### Daily workflow (4am UTC)
+**Daily (4am UTC):** news, media, events, release radar, YouTube, reading list, daily digest email.
 
-Runs: news, media, events, release radar, YouTube scrapers, reading list, daily digest email.
+**Hourly:** One Piece card scrapers across all configured stores. Sends an email alert if new stock appears for cards on the missing list below the configured price threshold.
 
-### Hourly workflow
-
-Runs: One Piece card scrapers across all configured stores. If new stock appears for cards on the missing list and priced below a threshold, an email alert is sent.
-
-Both workflows commit any changed data back to the repo, so the GitHub Pages site is always up to date.
+Both workflows commit updated data back to the repo so the site stays current.
 
 ---
 
