@@ -1,8 +1,6 @@
 # Personal Dashboard
 
-A self-built personal dashboard that aggregates data from 15+ sources into a single static interface, kept fresh by automated GitHub Actions pipelines running daily and hourly.
-
-Built entirely with **Python** (standard library, no third-party HTTP/scraping frameworks) and **vanilla JavaScript** — no backend server, no frontend framework.
+A self-built personal dashboard that aggregates data from 15+ sources into a single interface, kept fresh by automated GitHub Actions pipelines running daily and hourly.
 
 ---
 
@@ -61,23 +59,23 @@ The dashboard is a single-page web app (`docs/index.html`) that reads from a col
 ```
 
 Key design decisions:
-- **No server** — the dashboard is a static site; scrapers run in CI and push their output
-- **No third-party scraping libraries** — all HTTP requests use Python's `urllib.request`
-- **Data is the source of truth** — each module's JSON file is the contract between scraper and UI
-- **Incremental updates** — scrapers detect changes against a previous snapshot and only write diffs
+- **CI-driven data pipeline** — scrapers run in GitHub Actions and push updated JSON, keeping the frontend always in sync without a running server
+- **Lightweight scraping layer** — all HTTP requests use Python's `urllib.request`, keeping the dependency surface minimal
+- **Data as contract** — each module's JSON file is the agreed schema between scraper and UI, making modules fully independent
+- **Incremental updates** — scrapers diff against a previous snapshot and only write what changed
 
 ---
 
 ## Tech stack
 
 **Backend (scraping & automation)**
-- Python 3.13 — standard library only (except `Pillow` for one image utility)
+- Python 3.13
 - GitHub Actions — daily + hourly scheduled workflows
 - SMTP — email notifications for One Piece card alerts and daily digest
 
 **Frontend**
-- HTML5, CSS3, Vanilla JavaScript (no build step, no bundler)
-- Served with `python -m http.server` or any static host
+- HTML5, CSS3, JavaScript
+- Hosted on GitHub Pages
 
 **APIs**
 - [TMDB](https://www.themoviedb.org/documentation/api) — movie and TV metadata
@@ -85,7 +83,7 @@ Key design decisions:
 - [Notion API](https://developers.notion.com/) — user lists (watchlist, games, reading, specials)
 - [Google Calendar API](https://developers.google.com/calendar) — calendar events
 - [Google Places API](https://developers.google.com/maps/documentation/places) — venue geocoding
-- [Open-Meteo](https://open-meteo.com/) — weather (no API key required)
+- [Open-Meteo](https://open-meteo.com/) — weather
 - [Nominatim](https://nominatim.org/) — fallback geocoding
 
 **Infrastructure**
@@ -98,7 +96,7 @@ Key design decisions:
 
 ```
 my-dashboard/
-├── docs/                        # Static dashboard (served as the site)
+├── docs/                        # Dashboard (served as the site)
 │   ├── index.html
 │   ├── app.js
 │   ├── styles.css
@@ -216,6 +214,6 @@ Both workflows commit any changed data back to the repo, so the GitHub Pages sit
 
 ## Cloudflare Worker (optional)
 
-The `cloudflare-state-worker/` directory contains a minimal Cloudflare Worker that persists dashboard UI state (active tab, filters) in Cloudflare KV. This lets the dashboard remember your position across page reloads without a backend.
+The `cloudflare-state-worker/` directory contains a Cloudflare Worker that persists dashboard UI state (active tab, filters) in Cloudflare KV, so your position is remembered across page reloads.
 
 See [`docs/cloudflare-state-setup.md`](docs/cloudflare-state-setup.md) for setup instructions.
