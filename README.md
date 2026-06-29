@@ -1,5 +1,7 @@
 # Personal Dashboard
 
+> **Demo version.** This is a sanitised copy of the private repo with all personal data, real API credentials, and live service connections removed. It's intended to show the structure and code rather than the running product.
+
 A self-built personal dashboard that pulls data from 15+ sources into a single interface, kept up to date by GitHub Actions pipelines running daily and hourly.
 
 ---
@@ -186,8 +188,6 @@ Both workflows commit updated data back to the repo so the site stays current.
 
 ---
 
-## Cloudflare Worker (optional)
+## Cloudflare Worker
 
-The `cloudflare-state-worker/` directory contains a Cloudflare Worker that persists dashboard UI state (active tab, filters) in Cloudflare KV, so your position is remembered across page reloads.
-
-See [`docs/cloudflare-state-setup.md`](docs/cloudflare-state-setup.md) for setup instructions.
+A small Cloudflare Worker backed by KV storage that handles UI state persistence - things like which tab is active and any filter selections. This means the dashboard remembers where you left off across page reloads and sessions without needing a traditional backend. The worker lives in `cloudflare-state-worker/` and is deployed separately from the main site.
