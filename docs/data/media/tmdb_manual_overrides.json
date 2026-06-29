@@ -61,6 +61,21 @@
       "title": "Centimetres Per Second",
       "media_type": "anime",
       "tmdb_url": "https://www.themoviedb.org/movie/38142-5"
+    },
+    {
+      "title": "Diary Of A Wimp Kid",
+      "media_type": "movie",
+      "tmdb_url": "https://www.themoviedb.org/movie/33217-diary-of-a-wimpy-kid"
+    },
+    {
+      "title": "Diary Of A Wimp Kid: Rodrick Rules",
+      "media_type": "movie",
+      "tmdb_url": "https://www.themoviedb.org/movie/60307-diary-of-a-wimpy-kid-rodrick-rules"
+    },
+    {
+      "title": "Diary Of A Wimp Kid: Dog Days",
+      "media_type": "movie",
+      "tmdb_url": "https://www.themoviedb.org/movie/82650-diary-of-a-wimpy-kid-dog-days"
     }
   ]
 }

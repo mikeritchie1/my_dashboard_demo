@@ -292,7 +292,7 @@ def parse_reading_list(flat_blocks: list[tuple[dict[str, Any], int]]) -> dict[st
 
 
 def detail_key(media_type: str, title: str) -> str:
-    normalized = re.sub(r"[^\w\s]", " ", str(title or "").lower())
+    normalized = re.sub(r"[^\w\s]", "", str(title or "").lower())
     normalized = re.sub(r"\s+", " ", normalized).strip()
     return f"{media_type}:{normalized}"
 
