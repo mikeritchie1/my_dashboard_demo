@@ -10,18 +10,18 @@ The dashboard is a single-page web app (`docs/index.html`) that reads from a col
 
 | Module | Description |
 |---|---|
-| **Media Hub** | Watchlist and game library synced from Notion, automatically enriched with TMDB/RAWG metadata — posters, ratings, genres, trailers, cast, and runtime. Tracks status (currently watching, backlog, history) across movies, series, anime, AAA games, indie games, and co-op titles, with a configurable 5-level opinion rating system |
-| **Reading List** | Books and manga tracked via Notion with currently-reading and history-by-year views. Each entry carries an opinion rating, and the full reading history is browsable by year |
-| **Events & Venues** | Aggregates live event listings from Bandsintown, Quicket, and Webtickets, combined with a curated venue database. All venues are geocoded via Google Places and Nominatim, with coordinates stored in an incremental location cache. Events are tagged by category (music, art, food, nightlife, etc.) and filterable by genre |
-| **Google Calendar** | Syncs upcoming events from multiple Google Calendar IDs, surfacing birthdays, reminders, and personal events alongside the public event feed |
-| **One Piece Cards** | Scrapes card availability and pricing across 4 online stores hourly, cross-referencing against a configurable missing-card list. Detects new listings, tracks price history over time, and sends targeted email alerts when cards of interest appear below a price threshold |
-| **Release Radar** | Unified view of upcoming and recently released content: movies from TMDB (sorted by release date, filtered by region), new game releases from RAWG, IMAX showtimes enriched with TMDB poster/trailer data, and latest movie releases scraped from a release aggregator |
-| **News** | Pulls and ranks articles from 20+ RSS/Atom feeds across 8 categories — Global, South Africa, Cape Town, Games, F1, Entertainment, Climbing, and local Events. An importance scoring system weighs sources and keywords to surface breaking or high-signal stories, with configurable thresholds and per-category age limits. Includes a live F1 Snapshot module with driver standings, constructor standings, race schedule, and race highlights |
-| **YouTube** | Tracks latest uploads from configured channels using RSS feeds and yt-dlp, with chapter metadata support and a local channel ID cache. Presents videos grouped by channel series with thumbnails and publish times |
-| **Game Hub** | A structured reference hub for tabletop and co-op game sessions — stores module notes, build loadouts, ability breakdowns, and strategy screenshots per campaign. Designed as a quick-reference companion during play sessions, with a manifest-driven layout that makes adding new game modules straightforward |
-| **Game Lab** | An embedded sandbox for rapidly prototyping and testing browser-based game ideas. Ships with a few working examples (Snake, a sliding-tile puzzle, a DVD-logo bounce game) that serve as starting templates — new games can be dropped in as self-contained HTML/JS/CSS bundles and are automatically surfaced via a manifest |
-| **Timeline** | A chronological photo and memory feed, driven by a date-stamped manifest. New entries are added by dropping images into the photos directory and updating the manifest — no database required |
-| **Weather** | 7-day forecast with daily high/low temperatures and weather codes, pulled from the Open-Meteo API and rendered as a compact week-at-a-glance strip |
+| **Media Hub** | Movies, series, anime, and games synced from Notion, enriched with TMDB/RAWG metadata (posters, ratings, genres). Tracks watchlist, backlog, and history with a personal rating system |
+| **Reading List** | Books and manga tracked via Notion, with currently-reading and year-by-year history views |
+| **Events & Venues** | Live event listings from Bandsintown, Quicket, and Webtickets, combined with a curated venue database. Venues are geocoded and events tagged by category and genre |
+| **Google Calendar** | Upcoming personal calendar events pulled across multiple Google Calendar IDs |
+| **One Piece Cards** | Hourly scrape of card availability and pricing across 4 stores. Cross-references a configurable missing-card list, tracks price history, and sends email alerts for new stock below a set threshold |
+| **Release Radar** | Upcoming and recent movies (TMDB), new game releases (RAWG), IMAX showtimes, and latest movie releases — aggregated into a single view |
+| **News** | Ranked articles from 20+ RSS/Atom feeds across 8 categories. An importance scoring system surfaces breaking and high-signal stories, with a dedicated F1 Snapshot showing live standings, race schedule, and results |
+| **YouTube** | Latest uploads from configured channels, grouped by series with thumbnail previews |
+| **Game Hub** | A reference companion for tabletop/co-op game sessions — stores build loadouts, module notes, and ability breakdowns per campaign, browsable mid-session |
+| **Game Lab** | A sandbox for quickly building and testing browser game ideas. New games drop in as self-contained HTML/JS/CSS bundles and are picked up automatically via a manifest |
+| **Timeline** | Chronological photo and memory feed driven by a date-stamped manifest |
+| **Weather** | 7-day forecast with daily high/low temperatures via Open-Meteo |
 
 ---
 
