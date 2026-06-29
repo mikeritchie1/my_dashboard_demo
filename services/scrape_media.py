@@ -10,11 +10,12 @@ from pathlib import Path
 REPO_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = REPO_DIR / "docs" / "data" / "media"
 OUTPUTS = ["watchlist.json", "gameslist.json", "watchlist_movie_details.json", "games_details.json"]
+READING_OUTPUTS = [REPO_DIR / "docs" / "data" / "reading_list.json", DATA_DIR / "reading_details.json"]
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run media/watchlist scrapes.")
-    parser.add_argument("--source", choices=["all", "watchlist", "games"], default="all", help="Which media source to scrape.")
+    parser.add_argument("--source", choices=["all", "watchlist", "games", "reading"], default="all", help="Which media source to scrape.")
     parser.add_argument("--hard", action="store_true", help="Recreate selected output/cache data from scratch.")
     parser.add_argument("--limit", type=int, default=0, help="Accepted for wrapper consistency; media scrape is not item-limited.")
     parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; Notion pagination is automatic.")
@@ -27,13 +28,24 @@ def main() -> int:
             if path.exists():
                 print(f"Removing stale media output: {path}", flush=True)
                 path.unlink()
+        if args.source in {"all", "reading"}:
+            for path in READING_OUTPUTS:
+                if path.exists():
+                    print(f"Removing stale reading output: {path}", flush=True)
+                    path.unlink()
 
-    scope = "both" if args.source == "all" else args.source
-    command = [sys.executable, "services/media/scrape_watchlist.py", "--scope", scope, "--type", args.type]
-    if args.hard:
-        command.append("--hard")
-    print(f"Running media scrape: {' '.join(command)}", flush=True)
-    subprocess.run(command, cwd=REPO_DIR, check=True)
+    if args.source != "reading":
+        scope = "both" if args.source == "all" else args.source
+        command = [sys.executable, "services/media/scrape_watchlist.py", "--scope", scope, "--type", args.type]
+        if args.hard:
+            command.append("--hard")
+        print(f"Running media scrape: {' '.join(command)}", flush=True)
+        subprocess.run(command, cwd=REPO_DIR, check=True)
+
+    if args.source in {"all", "reading"}:
+        command = [sys.executable, "services/scrape_reading_list.py"]
+        print(f"Running reading scrape: {' '.join(command)}", flush=True)
+        subprocess.run(command, cwd=REPO_DIR, check=True)
     return 0
 
 

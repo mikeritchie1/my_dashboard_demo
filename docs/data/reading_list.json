@@ -1,0 +1,62 @@
+{
+  "source": "https://app.notion.com/p/My-Reading-2d157df8191880a7a23dfc431800dbe6",
+  "currently_watching": {
+    "books": [
+      {
+        "title": "Dungeon Crawler Carl",
+        "opinion": ""
+      },
+      {
+        "title": "Dark Matter",
+        "opinion": ""
+      }
+    ],
+    "manga": [
+      {
+        "title": "One Piece",
+        "opinion": ""
+      },
+      {
+        "title": "Uzumaki",
+        "opinion": ""
+      }
+    ]
+  },
+  "history_by_year": [
+    {
+      "year": "Read",
+      "entries": [
+        {
+          "type": "book",
+          "title": "Enders Game",
+          "opinion": "Liked"
+        },
+        {
+          "type": "book",
+          "title": "Speaker of the Dead",
+          "opinion": "Disliked"
+        },
+        {
+          "type": "book",
+          "title": "Harry Potter and the Philosopher's Stone",
+          "opinion": "Liked"
+        },
+        {
+          "type": "book",
+          "title": "The Metamorphosis",
+          "opinion": "Mixed"
+        },
+        {
+          "type": "book",
+          "title": "1984",
+          "opinion": "Loved"
+        },
+        {
+          "type": "book",
+          "title": "Brave New World",
+          "opinion": "Liked"
+        }
+      ]
+    }
+  ]
+}

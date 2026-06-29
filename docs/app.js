@@ -17,7 +17,8 @@ const YOUTUBE_PATH = "./data/youtube/latest_uploads.json";
 const ALMOST_FRIDAY_TV_PATH = "./data/youtube/almost_friday_tv.json";
 const THATS_A_BAD_IDEA_PATH = "./data/youtube/thats_a_bad_idea.json";
 const GAMERANX_TV_PATH = "./data/youtube/gameranx_tv.json";
-const READING_MANIFEST_PATH = "./data/reading_manifest.json";
+const READING_LIST_PATH = "./data/reading_list.json";
+const READING_DETAILS_PATH = "./data/media/reading_details.json";
 const CONFIG_PATH = "../config.json";
 const SPECIALS_PATH = "./data/events/specials.json";
 const PLACES_PATH = "./data/events/places.json";
@@ -42,12 +43,16 @@ const WATCHLIST_MEDIA_CONFIG = {
   screen: { label: "Movies + Series", types: ["movie", "series"] },
   anime: { label: "Anime", types: ["anime_movie", "anime_series"] },
   games: { label: "Games", types: ["game_aaa", "game_indie", "game_coop", "game_couch_coop", "game_lan"] },
+  books: { label: "Books", types: ["book"] },
+  manga: { label: "Manga", types: ["manga"] },
 };
 const WATCHLIST_TYPE_LABELS = {
   movie: "Movie",
   series: "Series",
   anime_movie: "Anime Movie",
   anime_series: "Anime Series",
+  book: "Book",
+  manga: "Manga",
   game_aaa: "Single-player",
   game_indie: "Indie",
   game_coop: "Co-op",
@@ -89,8 +94,6 @@ const GAMERANX_TV_SCROLL_KEY = "my-dashboard:gameranx-tv-scroll:v1";
 const DAILY_GOALS_KEY = "my-dashboard:daily-goals:v1";
 const DAILY_GOALS_PROGRESS_KEY = "my-dashboard:daily-goals-progress:v1";
 const DAILY_GOALS_TS_KEY = "my-dashboard:daily-goals-ts:v1";
-const READING_FOLDER_ID_STORAGE_KEY = "my-dashboard:reading-folder-id:v1";
-const READING_PROGRESS_STORAGE_KEY = "my-dashboard:reading-progress:v1";
 const ONE_PIECE_TIMELINE_FULL_URL = "https://i0.wp.com/thelibraryofohara.com/wp-content/uploads/2024/03/one-piece-timeline-5.0-page-1.png?ssl=1&w=723";
 const ONE_PIECE_TIMELINE_SIMPLIFIED_URL = "https://i.imgur.com/hgDYRFS.png";
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
@@ -210,15 +213,6 @@ const state = {
   dailyGoalsAddOpen: false,
   dailyGoalsViewDate: "",
   dailyGoalsSidebarId: "",
-  readingDriveConnected: false,
-  readingFolderId: "",
-  readingManifest: null,
-  readingSeries: [],
-  readingCurrentSeriesId: "",
-  readingVolumes: [],
-  readingCurrentVolumeId: "",
-  readingCurrentPage: 1,
-  readingPagesByVolume: {},
 };
 
 const elements = {
@@ -333,12 +327,6 @@ const elements = {
   gameHubContent: document.querySelector("#game-hub-content"),
   gameLabButtons: document.querySelector("#game-lab-buttons"),
   gameLabContent: document.querySelector("#game-lab-content"),
-  readingVolumeButtons: document.querySelector("#reading-volume-buttons"),
-  readingProgressLabel: document.querySelector("#reading-progress-label"),
-  readingPrevPage: document.querySelector("#reading-prev-page"),
-  readingNextPage: document.querySelector("#reading-next-page"),
-  readingPageImage: document.querySelector("#reading-page-image"),
-  readingEmpty: document.querySelector("#reading-empty"),
 };
 const mapRangeButtons = [...document.querySelectorAll(".map-range-button[data-range]")];
 const mapViewTabButtons = [...document.querySelectorAll(".map-view-tab[data-map-view-tab]")];
@@ -359,7 +347,6 @@ let onePieceStripDragBound = false;
 let remoteStateLoaded = false;
 let remoteStateSaveTimer = null;
 let remoteStatePullTimer = null;
-const readingPrefetchCache = new Map();
 const markerIcons = {
   places: L.icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
@@ -1139,391 +1126,6 @@ function saveGameranxTvScrollPreference() {
     // Ignore storage failures.
   }
 }
-
-function loadReadingFolderPreference() {
-  try {
-    return String(localStorage.getItem(READING_FOLDER_ID_STORAGE_KEY) || "").trim();
-  } catch {
-    return "";
-  }
-}
-
-function saveReadingFolderPreference(value) {
-  try {
-    localStorage.setItem(READING_FOLDER_ID_STORAGE_KEY, String(value || "").trim());
-  } catch {
-    // Ignore storage failures.
-  }
-}
-
-function loadReadingProgressPreference() {
-  try {
-    const raw = localStorage.getItem(READING_PROGRESS_STORAGE_KEY) || "";
-    const parsed = raw ? JSON.parse(raw) : {};
-    if (!parsed || typeof parsed !== "object") {
-      return {};
-    }
-    return parsed;
-  } catch {
-    return {};
-  }
-}
-
-function readingVolumePageMap(progressPayload = null) {
-  const payload = progressPayload && typeof progressPayload === "object"
-    ? progressPayload
-    : loadReadingProgressPreference();
-  const raw = payload?.volume_pages;
-  if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
-    return {};
-  }
-  const out = {};
-  for (const [volumeId, page] of Object.entries(raw)) {
-    const key = String(volumeId || "").trim();
-    const value = Number(page || 0);
-    if (!key || !Number.isInteger(value) || value < 1) {
-      continue;
-    }
-    out[key] = value;
-  }
-  return out;
-}
-
-function setStoredPageForCurrentVolume() {
-  const volumeId = String(state.readingCurrentVolumeId || "").trim();
-  const page = Number(state.readingCurrentPage || 1);
-  if (!volumeId || !Number.isInteger(page) || page < 1) {
-    return;
-  }
-  const progress = loadReadingProgressPreference();
-  const map = readingVolumePageMap(progress);
-  map[volumeId] = page;
-  progress.volume_pages = map;
-  try {
-    localStorage.setItem(READING_PROGRESS_STORAGE_KEY, JSON.stringify(progress));
-  } catch {
-    // Ignore storage failures.
-  }
-}
-
-function saveReadingProgressPreference() {
-  const previous = loadReadingProgressPreference();
-  const volumePages = readingVolumePageMap(previous);
-  const currentVolumeId = String(state.readingCurrentVolumeId || "").trim();
-  const currentPage = Number(state.readingCurrentPage || 1);
-  if (currentVolumeId && Number.isInteger(currentPage) && currentPage > 0) {
-    volumePages[currentVolumeId] = currentPage;
-  }
-  const payload = {
-    folder_id: String(state.readingFolderId || "").trim(),
-    series_id: String(state.readingCurrentSeriesId || "").trim(),
-    volume_id: currentVolumeId,
-    page: currentPage,
-    volume_pages: volumePages,
-  };
-  try {
-    localStorage.setItem(READING_PROGRESS_STORAGE_KEY, JSON.stringify(payload));
-  } catch {
-    // Ignore storage failures.
-  }
-}
-
-function parseVolumeNumber(name) {
-  const value = String(name || "");
-  const match = value.match(/(\d{1,4})/);
-  return match ? Number(match[1]) : Number.POSITIVE_INFINITY;
-}
-
-function readingVolumeLabel(volume) {
-  const name = String(volume?.name || "").trim();
-  return name || "Volume";
-}
-
-async function loadReadingManifest() {
-  try {
-    const response = await fetchFresh(READING_MANIFEST_PATH);
-    if (!response.ok) {
-      throw new Error(`Could not load ${READING_MANIFEST_PATH}`);
-    }
-    const payload = await response.json();
-    state.readingManifest = payload;
-    const series = Array.isArray(payload?.series) ? payload.series : [];
-    state.readingSeries = series.map((item) => ({
-      id: String(item?.id || ""),
-      name: String(item?.name || ""),
-      cover_image_url: String(item?.cover_image_url || ""),
-    }));
-    const pagesByVolume = {};
-    for (const seriesItem of series) {
-      const volumes = Array.isArray(seriesItem?.volumes) ? seriesItem.volumes : [];
-      for (const volume of volumes) {
-        const volumeId = String(volume?.id || "");
-        const pages = Array.isArray(volume?.pages) ? volume.pages : [];
-        pagesByVolume[volumeId] = pages.map((page) => ({
-          id: String(page?.id || ""),
-          name: String(page?.name || ""),
-          image_url: String(page?.image_url || ""),
-        }));
-      }
-    }
-    state.readingPagesByVolume = pagesByVolume;
-  } catch (error) {
-    state.readingManifest = null;
-    state.readingSeries = [];
-    state.readingVolumes = [];
-    state.readingPagesByVolume = {};
-    if (elements.readingVolumeButtons) {
-      elements.readingVolumeButtons.innerHTML = `<p class="empty">${escapeHtml(error?.message || "Could not load reading data.")}</p>`;
-    }
-  }
-}
-
-function renderReadingViewerState() {
-  if (!elements.readingProgressLabel || !elements.readingPageImage || !elements.readingEmpty) {
-    return;
-  }
-  const volume = state.readingVolumes.find((item) => item.id === state.readingCurrentVolumeId) || null;
-  const series = state.readingSeries.find((item) => item.id === state.readingCurrentSeriesId) || null;
-  const pages = volume ? (state.readingPagesByVolume[volume.id] || []) : [];
-  const totalPages = pages.length;
-  const currentPage = Math.max(1, Math.min(totalPages || 1, Number(state.readingCurrentPage || 1)));
-  const labelVolume = volume ? readingVolumeLabel(volume) : "No volume";
-  const labelSeries = series ? `${readingVolumeLabel(series)} · ` : "";
-  elements.readingProgressLabel.textContent = `${labelSeries}${labelVolume} · Page ${totalPages ? currentPage : 0}/${totalPages || 0}`;
-  if (elements.readingPrevPage) {
-    elements.readingPrevPage.disabled = !totalPages || currentPage <= 1;
-  }
-  if (elements.readingNextPage) {
-    elements.readingNextPage.disabled = !totalPages || currentPage >= totalPages;
-  }
-}
-
-function renderReadingVolumeButtons() {
-  if (!elements.readingVolumeButtons) {
-    return;
-  }
-  const series = Array.isArray(state.readingSeries) ? state.readingSeries : [];
-  if (!state.readingCurrentSeriesId) {
-    if (!series.length) {
-      elements.readingVolumeButtons.innerHTML = "<p class=\"empty\">No folders found in My Readings.</p>";
-      return;
-    }
-    elements.readingVolumeButtons.innerHTML = series
-      .map((item) => `
-        <button type="button" class="reading-folder-block" data-reading-series-id="${escapeHtml(item.id)}">
-          ${item.cover_image_url ? `<img class="reading-folder-cover" src="${escapeHtml(item.cover_image_url)}" alt="${escapeHtml(readingVolumeLabel(item))}" loading="lazy">` : `<div class="reading-folder-cover reading-folder-cover-empty">No cover</div>`}
-          <span class="reading-folder-title">${escapeHtml(readingVolumeLabel(item))}</span>
-        </button>
-      `)
-      .join("");
-    return;
-  }
-  const volumes = Array.isArray(state.readingVolumes) ? state.readingVolumes : [];
-  if (!volumes.length) {
-    elements.readingVolumeButtons.innerHTML = "<p class=\"empty\">No volume folders found in selected series.</p>";
-    return;
-  }
-  const backButton = "<button type=\"button\" class=\"watchlist-category-button\" data-reading-series-back=\"1\">Back to folders</button>";
-  elements.readingVolumeButtons.innerHTML = volumes
-    .map((volume) => {
-      const isSelected = volume.id === state.readingCurrentVolumeId;
-      return `
-        <button type="button" class="reading-folder-block${isSelected ? " is-selected" : ""}" data-reading-volume-id="${escapeHtml(volume.id)}">
-          ${volume.cover_image_url ? `<img class="reading-folder-cover" src="${escapeHtml(volume.cover_image_url)}" alt="${escapeHtml(readingVolumeLabel(volume))}" loading="lazy">` : `<div class="reading-folder-cover reading-folder-cover-empty">No cover</div>`}
-          <span class="reading-folder-title">${escapeHtml(readingVolumeLabel(volume))}</span>
-        </button>
-      `;
-    })
-    .join("");
-  elements.readingVolumeButtons.insertAdjacentHTML("afterbegin", backButton);
-}
-
-function cleanupReadingPrefetchCache(keepUrls = new Set()) {
-  for (const key of readingPrefetchCache.keys()) {
-    if (!keepUrls.has(key)) {
-      readingPrefetchCache.delete(key);
-    }
-  }
-}
-
-function prefetchReadingImage(url) {
-  const clean = String(url || "").trim();
-  if (!clean) {
-    return;
-  }
-  if (readingPrefetchCache.has(clean)) {
-    return;
-  }
-  const img = new Image();
-  img.decoding = "async";
-  img.loading = "eager";
-  img.src = clean;
-  readingPrefetchCache.set(clean, img);
-}
-
-function prefetchReadingWindow(volumeId, currentPage) {
-  const pages = state.readingPagesByVolume[volumeId] || [];
-  if (!pages.length) {
-    cleanupReadingPrefetchCache(new Set());
-    return;
-  }
-  const currentIndex = Math.max(0, Math.min(pages.length - 1, Number(currentPage || 1) - 1));
-  const indices = [currentIndex - 2, currentIndex - 1, currentIndex, currentIndex + 1, currentIndex + 2]
-    .filter((index) => index >= 0 && index < pages.length);
-  const keep = new Set();
-  for (const index of indices) {
-    const url = String(pages[index]?.image_url || "").trim();
-    if (!url) {
-      continue;
-    }
-    keep.add(url);
-    prefetchReadingImage(url);
-  }
-  cleanupReadingPrefetchCache(keep);
-}
-
-async function showCurrentReadingPage() {
-  if (!elements.readingPageImage || !elements.readingEmpty) {
-    return;
-  }
-  const volumeId = String(state.readingCurrentVolumeId || "").trim();
-  const pages = state.readingPagesByVolume[volumeId] || [];
-  if (!volumeId || !pages.length) {
-    elements.readingPageImage.style.display = "none";
-    elements.readingPageImage.removeAttribute("src");
-    elements.readingEmpty.hidden = false;
-    renderReadingViewerState();
-    return;
-  }
-  const pageIndex = Math.max(0, Math.min(pages.length - 1, Number(state.readingCurrentPage || 1) - 1));
-  const pageItem = pages[pageIndex];
-  try {
-    const imageUrl = String(pageItem?.image_url || "").trim();
-    if (!imageUrl) {
-      throw new Error("Could not load reader page.");
-    }
-    elements.readingPageImage.src = imageUrl;
-    elements.readingPageImage.style.display = "block";
-    elements.readingEmpty.hidden = true;
-    prefetchReadingWindow(volumeId, Number(state.readingCurrentPage || 1));
-    saveReadingProgressPreference();
-  } catch (error) {
-    elements.readingPageImage.style.display = "none";
-    elements.readingPageImage.removeAttribute("src");
-    elements.readingEmpty.hidden = false;
-    elements.readingEmpty.textContent = error?.message || "Could not load reader page.";
-  }
-  renderReadingViewerState();
-}
-
-async function loadReadingPagesForVolume(volumeId) {
-  if (!volumeId) {
-    return;
-  }
-}
-
-async function setReadingVolume(volumeId) {
-  const target = String(volumeId || "").trim();
-  if (!target) {
-    return;
-  }
-  state.readingCurrentVolumeId = target;
-  const progress = loadReadingProgressPreference();
-  const savedPages = readingVolumePageMap(progress);
-  state.readingCurrentPage = savedPages[target] || 1;
-  renderReadingVolumeButtons();
-  renderReadingViewerState();
-  await loadReadingPagesForVolume(target);
-  await showCurrentReadingPage();
-}
-
-async function loadReadingVolumesForSeries(seriesId) {
-  const series = Array.isArray(state.readingManifest?.series) ? state.readingManifest.series : [];
-  const selected = series.find((item) => String(item?.id || "") === String(seriesId || ""));
-  const files = Array.isArray(selected?.volumes) ? selected.volumes.map((volume) => ({
-    id: String(volume?.id || ""),
-    name: String(volume?.name || ""),
-    cover_image_url: String(volume?.cover_image_url || ""),
-  })) : [];
-  files.sort((left, right) => {
-    const leftNum = parseVolumeNumber(left?.name);
-    const rightNum = parseVolumeNumber(right?.name);
-    if (leftNum !== rightNum) return leftNum - rightNum;
-    return String(left?.name || "").localeCompare(String(right?.name || ""));
-  });
-  state.readingVolumes = files;
-}
-
-async function loadReadingVolumes() {
-  if (elements.readingVolumeButtons) {
-    elements.readingVolumeButtons.innerHTML = "<p class=\"empty\">Loading volumes...</p>";
-  }
-  await loadReadingManifest();
-  if (!state.readingSeries.length) {
-    renderReadingVolumeButtons();
-    renderReadingViewerState();
-    return;
-  }
-  const storedProgress = loadReadingProgressPreference();
-  const preferredSeriesId = String(storedProgress.series_id || state.readingCurrentSeriesId || "").trim();
-  state.readingCurrentSeriesId = preferredSeriesId && state.readingSeries.some((item) => item.id === preferredSeriesId)
-    ? preferredSeriesId
-    : "";
-  if (state.readingCurrentSeriesId) {
-    await loadReadingVolumesForSeries(state.readingCurrentSeriesId);
-  } else {
-    state.readingVolumes = [];
-  }
-  renderReadingVolumeButtons();
-  const preferredVolumeId = String(storedProgress.volume_id || state.readingCurrentVolumeId || "").trim();
-  const defaultVolumeId = preferredVolumeId && state.readingVolumes.some((item) => item.id === preferredVolumeId)
-    ? preferredVolumeId
-    : (state.readingVolumes[0]?.id || "");
-  if (defaultVolumeId) {
-    state.readingCurrentPage = Math.max(1, Number(storedProgress.page || 1));
-    state.readingCurrentVolumeId = defaultVolumeId;
-    await loadReadingPagesForVolume(defaultVolumeId);
-    const pageCount = (state.readingPagesByVolume[defaultVolumeId] || []).length;
-    const savedPages = readingVolumePageMap(storedProgress);
-    const preferredPage = savedPages[defaultVolumeId] || state.readingCurrentPage;
-    state.readingCurrentPage = Math.min(Math.max(1, preferredPage), Math.max(1, pageCount));
-    await showCurrentReadingPage();
-  } else {
-    renderReadingViewerState();
-  }
-}
-
-async function refreshReadingDataPreserveSelection() {
-  const previousSeriesId = String(state.readingCurrentSeriesId || "").trim();
-  const previousVolumeId = String(state.readingCurrentVolumeId || "").trim();
-  const previousPage = Number(state.readingCurrentPage || 1);
-  await loadReadingManifest();
-  if (!state.readingSeries.length) {
-    renderReadingVolumeButtons();
-    renderReadingViewerState();
-    return;
-  }
-  if (previousSeriesId && state.readingSeries.some((item) => item.id === previousSeriesId)) {
-    state.readingCurrentSeriesId = previousSeriesId;
-    await loadReadingVolumesForSeries(previousSeriesId);
-  } else {
-    state.readingCurrentSeriesId = "";
-    state.readingVolumes = [];
-  }
-  if (state.readingCurrentSeriesId && previousVolumeId && state.readingVolumes.some((item) => item.id === previousVolumeId)) {
-    state.readingCurrentVolumeId = previousVolumeId;
-    const totalPages = (state.readingPagesByVolume[previousVolumeId] || []).length;
-    const savedPages = readingVolumePageMap();
-    const preferredPage = savedPages[previousVolumeId] || previousPage;
-    state.readingCurrentPage = Math.max(1, Math.min(preferredPage, Math.max(1, totalPages)));
-  } else {
-    state.readingCurrentVolumeId = "";
-    state.readingCurrentPage = 1;
-  }
-  renderReadingVolumeButtons();
-  await showCurrentReadingPage();
-}
-
 
 function isNewListing(row) {
   const raw = String(row.scraped_at || "").trim();
@@ -2875,6 +2477,12 @@ function safeWatchType(item) {
   if (lowered === "anime_movie" || lowered === "anime_movies") {
     return "anime_movie";
   }
+  if (lowered === "book" || lowered === "books") {
+    return "book";
+  }
+  if (lowered === "manga" || lowered === "mangas") {
+    return "manga";
+  }
   if (lowered === "aaa" || lowered === "game_aaa") {
     return "game_aaa";
   }
@@ -3079,6 +2687,7 @@ function detailsForTitle(payload, type, title) {
 
 function watchlistRatingText(type, details = {}) {
   const isGame = String(type || "").startsWith("game_");
+  const isReading = type === "book" || type === "manga";
   if (isGame) {
     const rawMetacritic = details?.metacritic;
     const hasMetacritic = rawMetacritic !== null && rawMetacritic !== undefined && String(rawMetacritic).trim() !== "";
@@ -3091,6 +2700,10 @@ function watchlistRatingText(type, details = {}) {
       return `${(rawgRating * 2).toFixed(1)} / 10`;
     }
     return "";
+  }
+  if (isReading) {
+    const ratingValue = Number(details?.rating);
+    return Number.isFinite(ratingValue) && ratingValue > 0 ? `${ratingValue.toFixed(1)} / 5` : "";
   }
   const ratingValue = Number(details?.rating);
   if (!Number.isFinite(ratingValue)) {
@@ -3175,9 +2788,10 @@ function watchlistHistoryLabel() {
   }
   const labels = [...state.watchlistTypes].map((type) => WATCHLIST_TYPE_LABELS[type]).filter(Boolean);
   const gameOnly = [...state.watchlistTypes].every((type) => String(type || "").startsWith("game_"));
-  const actionWord = gameOnly ? "played" : "watched";
+  const readingOnly = [...state.watchlistTypes].every((type) => ["book", "manga"].includes(String(type || "")));
+  const actionWord = gameOnly ? "played" : readingOnly ? "read" : "watched";
   if (!labels.length) {
-    return gameOnly ? "Played" : "Watched";
+    return gameOnly ? "Played" : readingOnly ? "Read" : "Watched";
   }
   if (labels.length === 1) {
     return `${labels[0]} ${actionWord}`;
@@ -3191,6 +2805,12 @@ function watchlistHistoryLabel() {
 function collectionPrimaryLabel() {
   if (state.watchlistActiveMedia === "games") {
     return "Games played";
+  }
+  if (state.watchlistActiveMedia === "books") {
+    return "Books read";
+  }
+  if (state.watchlistActiveMedia === "manga") {
+    return "Manga read";
   }
   const labels = [...state.watchlistTypes].map((type) => WATCHLIST_TYPE_LABELS[type]).filter(Boolean);
   if (!labels.length) {
@@ -3210,6 +2830,8 @@ function backlogEntries(payload) {
     series: Array.isArray(backlog.series) ? backlog.series : [],
     anime_movie: Array.isArray(backlog.anime_movies) ? backlog.anime_movies : [],
     anime_series: Array.isArray(backlog.anime_series) ? backlog.anime_series : [],
+    book: Array.isArray(backlog.books) ? backlog.books : [],
+    manga: Array.isArray(backlog.manga) ? backlog.manga : [],
     game_aaa: Array.isArray(backlog.game_aaa) ? backlog.game_aaa : [],
     game_indie: Array.isArray(backlog.game_indie) ? backlog.game_indie : [],
     game_coop: Array.isArray(backlog.game_coop) ? backlog.game_coop : [],
@@ -3435,6 +3057,7 @@ function openWatchlistDetail(type, title) {
   const description = stripHtmlTags(details.description || details.overview || "") || "No description yet.";
   const directors = joinList(details.directors) || "Unknown";
   const actors = joinList(details.actors) || "Unknown";
+  const authors = joinList(details.authors || details.directors) || "Unknown";
   const publishers = joinList(details.publishers) || "Unknown";
   const developers = joinList(details.developers) || "Unknown";
   const platforms = joinList(details.platforms) || "";
@@ -3448,6 +3071,7 @@ function openWatchlistDetail(type, title) {
   const trailerUrl = String(details.trailer_url || "").trim();
   const tmdbUrl = String(details.tmdb_url || "").trim();
   const rawgUrl = String(details.rawg_url || "").trim();
+  const openLibraryUrl = String(details.open_library_url || "").trim();
   const websiteUrl = String(details.website_url || "").trim();
   const safeTitle = escapeHtml(title);
   const sourceItem = findWatchlistItem(state.watchlistPayload, type, title);
@@ -3458,10 +3082,13 @@ function openWatchlistDetail(type, title) {
   const isSeriesLike = type === "series" || type === "anime_series";
   const isMovieLike = type === "movie" || type === "anime_movie";
   const isGameLike = type.startsWith("game_");
+  const isReadingLike = type === "book" || type === "manga";
+  const pageCount = Number(details.number_of_pages);
   const timingBits = [
     releaseDate,
     isMovieLike ? runtime : isSeriesLike ? seasonsText : "",
     isGameLike ? playtime : "",
+    isReadingLike && Number.isFinite(pageCount) && pageCount > 0 ? `${pageCount} pages` : "",
   ].filter(Boolean);
   const genreLine = genres;
   const posterHtml = posterUrl
@@ -3484,6 +3111,8 @@ function openWatchlistDetail(type, title) {
             ? `<p><strong>Publishers:</strong> ${escapeHtml(publishers)}</p>
                <p><strong>Developers:</strong> ${escapeHtml(developers)}</p>
                ${platforms ? `<p><strong>Platforms:</strong> ${escapeHtml(platforms)}</p>` : ""}`
+            : isReadingLike
+              ? `<p><strong>Authors:</strong> ${escapeHtml(authors)}</p>`
             : `<p><strong>${isMovieLike ? "Directors" : "Creators"}:</strong> ${escapeHtml(directors)}</p>
                <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>`
         }
@@ -3491,6 +3120,7 @@ function openWatchlistDetail(type, title) {
           ${trailerUrl ? `<a href="${trailerUrl}" target="_blank" rel="noreferrer">Trailer</a>` : ""}
           ${tmdbUrl ? `<a href="${tmdbUrl}" target="_blank" rel="noreferrer">TMDB</a>` : ""}
           ${rawgUrl ? `<a href="${rawgUrl}" target="_blank" rel="noreferrer">RAWG</a>` : ""}
+          ${openLibraryUrl ? `<a href="${openLibraryUrl}" target="_blank" rel="noreferrer">Open Library</a>` : ""}
           ${websiteUrl ? `<a href="${websiteUrl}" target="_blank" rel="noreferrer">Website</a>` : ""}
         </div>
       </div>
@@ -3507,6 +3137,8 @@ function watchlistCurrentSources(payload) {
     series: arr(current.series),
     anime_series: arr(current.anime_series || current.anime),
     anime_movie: arr(current.anime_movies || current.anime_movie),
+    book: arr(current.books || current.book),
+    manga: arr(current.manga),
     game_aaa: arr(current.game_aaa || gameBucket.aaa),
     game_indie: arr(current.game_indie || gameBucket.indie),
     game_coop: arr(current.game_coop || gameBucket.coop),
@@ -3527,7 +3159,8 @@ function renderWatchlistCurrent(payload) {
     .filter((section) => section.items.length);
   if (elements.watchlistCurrentTitle) {
     const gameOnly = [...state.watchlistTypes].every((type) => String(type || "").startsWith("game_"));
-    elements.watchlistCurrentTitle.textContent = gameOnly ? "Currently playing" : "Currently watching";
+    const readingOnly = [...state.watchlistTypes].every((type) => ["book", "manga"].includes(String(type || "")));
+    elements.watchlistCurrentTitle.textContent = gameOnly ? "Currently playing" : readingOnly ? "Currently reading" : "Currently watching";
   }
 
   if (!sections.length) {
@@ -3679,12 +3312,22 @@ function applyOpinionLevelStyles() {
 
 async function loadWatchlist() {
   try {
-    const [envResponse, watchlistResponse, gameslistResponse, detailsResponse, gamesDetailsResponse] = await Promise.all([
+    const [
+      envResponse,
+      watchlistResponse,
+      gameslistResponse,
+      readingResponse,
+      detailsResponse,
+      gamesDetailsResponse,
+      readingDetailsResponse,
+    ] = await Promise.all([
       fetchFresh(CONFIG_PATH),
       fetchFresh(WATCHLIST_PATH),
       fetchFresh(GAMESLIST_PATH),
+      fetchFresh(READING_LIST_PATH),
       fetchFresh(WATCHLIST_MOVIE_DETAILS_PATH),
       fetchFresh(GAMES_DETAILS_PATH),
+      fetchFresh(READING_DETAILS_PATH),
     ]);
     if (envResponse.ok) {
       try {
@@ -3701,25 +3344,34 @@ async function loadWatchlist() {
     }
     const watchlistPayload = await watchlistResponse.json();
     const gamesPayload = gameslistResponse.ok ? await gameslistResponse.json() : {};
+    const readingPayload = readingResponse.ok ? await readingResponse.json() : {};
     const mergedPayload = { ...(watchlistPayload || {}) };
     const mergedCurrent = { ...(mergedPayload.currently_watching || {}) };
     const gamesCurrent = gamesPayload?.currently_watching?.games;
     if (gamesCurrent && typeof gamesCurrent === "object") {
       mergedCurrent.games = gamesCurrent;
     }
+    const readingCurrent = readingPayload?.currently_watching;
+    if (readingCurrent && typeof readingCurrent === "object") {
+      mergedCurrent.books = Array.isArray(readingCurrent.books) ? readingCurrent.books : [];
+      mergedCurrent.manga = Array.isArray(readingCurrent.manga) ? readingCurrent.manga : [];
+    }
     mergedPayload.currently_watching = mergedCurrent;
     const watchHistory = Array.isArray(mergedPayload.history_by_year) ? mergedPayload.history_by_year : [];
     const gamesHistory = Array.isArray(gamesPayload?.history_by_year) ? gamesPayload.history_by_year : [];
-    mergedPayload.history_by_year = [...watchHistory, ...gamesHistory];
+    const readingHistory = Array.isArray(readingPayload?.history_by_year) ? readingPayload.history_by_year : [];
+    mergedPayload.history_by_year = [...watchHistory, ...gamesHistory, ...readingHistory];
     const watchBacklog = mergedPayload.backlog && typeof mergedPayload.backlog === "object" ? mergedPayload.backlog : {};
     const gamesBacklog = gamesPayload?.backlog && typeof gamesPayload.backlog === "object" ? gamesPayload.backlog : {};
     mergedPayload.backlog = { ...watchBacklog, ...gamesBacklog };
     state.watchlistPayload = mergedPayload;
     const movieDetails = detailsResponse.ok ? await detailsResponse.json() : {};
     const gameDetails = gamesDetailsResponse.ok ? await gamesDetailsResponse.json() : {};
+    const readingDetails = readingDetailsResponse.ok ? await readingDetailsResponse.json() : {};
     state.watchlistDetails = {
       ...(movieDetails && typeof movieDetails === "object" ? movieDetails : {}),
       ...(gameDetails && typeof gameDetails === "object" ? gameDetails : {}),
+      ...(readingDetails && typeof readingDetails === "object" ? readingDetails : {}),
     };
     renderWatchlistAll();
   } catch (error) {
@@ -3926,11 +3578,6 @@ function collectDashboardSyncState() {
     subsection_open: loadSubsectionOpenStatePreference(),
     collection_art_prefs:
       state.collectionArtPrefs && typeof state.collectionArtPrefs === "object" ? state.collectionArtPrefs : {},
-    reading_progress: {
-      folder_id: String(state.readingFolderId || "").trim(),
-      volume_id: String(state.readingCurrentVolumeId || "").trim(),
-      page: Number(state.readingCurrentPage || 1),
-    },
     daily_goals: Array.isArray(state.dailyGoals) ? state.dailyGoals : [],
     daily_goals_ts: Number(state.dailyGoalsSavedAt || 0),
     daily_goals_progress: state.dailyGoalsProgress && typeof state.dailyGoalsProgress === "object"
@@ -4138,35 +3785,6 @@ async function loadRemoteDashboardState() {
         // Ignore storage failures.
       }
       state.collectionArtPrefs = loadCollectionArtPrefs();
-    }
-    if (payload.reading_progress && typeof payload.reading_progress === "object") {
-      const remoteFolderId = String(payload.reading_progress.folder_id || "").trim();
-      const remoteVolumeId = String(payload.reading_progress.volume_id || "").trim();
-      const remotePage = Number(payload.reading_progress.page || 1);
-      if (remoteFolderId) {
-        state.readingFolderId = remoteFolderId;
-        saveReadingFolderPreference(remoteFolderId);
-      }
-    if (remoteVolumeId) {
-      state.readingCurrentVolumeId = remoteVolumeId;
-    }
-      const remoteSeriesId = String(payload.reading_progress.series_id || "").trim();
-      if (remoteSeriesId) {
-        state.readingCurrentSeriesId = remoteSeriesId;
-      }
-      if (Number.isInteger(remotePage) && remotePage > 0) {
-        state.readingCurrentPage = remotePage;
-      }
-      if (payload.reading_progress.volume_pages && typeof payload.reading_progress.volume_pages === "object") {
-        const localProgress = loadReadingProgressPreference();
-        localProgress.volume_pages = readingVolumePageMap(payload.reading_progress);
-        try {
-          localStorage.setItem(READING_PROGRESS_STORAGE_KEY, JSON.stringify(localProgress));
-        } catch {
-          // Ignore storage failures.
-        }
-      }
-      saveReadingProgressPreference();
     }
   } catch {
     // Ignore remote load failures.
@@ -6909,77 +6527,6 @@ if (elements.youtubeSection) {
   });
 }
 
-if (elements.readingVolumeButtons) {
-  elements.readingVolumeButtons.addEventListener("click", async (event) => {
-    const backButton = event.target.closest("[data-reading-series-back]");
-    if (backButton) {
-      state.readingCurrentSeriesId = "";
-      state.readingCurrentVolumeId = "";
-      state.readingCurrentPage = 1;
-      state.readingVolumes = [];
-      renderReadingVolumeButtons();
-      renderReadingViewerState();
-      saveReadingProgressPreference();
-      return;
-    }
-    const seriesButton = event.target.closest("[data-reading-series-id]");
-    if (seriesButton) {
-      const seriesId = String(seriesButton.getAttribute("data-reading-series-id") || "").trim();
-      if (!seriesId) return;
-      state.readingCurrentSeriesId = seriesId;
-      state.readingCurrentVolumeId = "";
-      state.readingCurrentPage = 1;
-      await loadReadingVolumesForSeries(seriesId);
-      renderReadingVolumeButtons();
-      renderReadingViewerState();
-      saveReadingProgressPreference();
-      return;
-    }
-    const button = event.target.closest("[data-reading-volume-id]");
-    if (!button) {
-      return;
-    }
-    const volumeId = String(button.getAttribute("data-reading-volume-id") || "").trim();
-    if (!volumeId) {
-      return;
-    }
-    await setReadingVolume(volumeId);
-  });
-}
-
-if (elements.readingPrevPage) {
-  elements.readingPrevPage.addEventListener("click", async () => {
-    await nudgeReadingPage(-1);
-  });
-}
-
-if (elements.readingNextPage) {
-  elements.readingNextPage.addEventListener("click", async () => {
-    await nudgeReadingPage(1);
-  });
-}
-
-async function nudgeReadingPage(step) {
-  const delta = Number(step || 0);
-  if (!delta) {
-    return;
-  }
-  await refreshReadingDataPreserveSelection();
-  const pages = state.readingPagesByVolume[state.readingCurrentVolumeId] || [];
-  const totalPages = pages.length;
-  if (!totalPages) {
-    return;
-  }
-  const currentPage = Number(state.readingCurrentPage || 1);
-  const nextPage = Math.max(1, Math.min(totalPages, currentPage + delta));
-  if (nextPage === currentPage) {
-    return;
-  }
-  state.readingCurrentPage = nextPage;
-  setStoredPageForCurrentVolume();
-  await showCurrentReadingPage();
-}
-
 function showMyLocation() {
   if (!navigator.geolocation) {
     alert("Location is not available in this browser.");
@@ -8962,24 +8509,10 @@ async function bootstrapDashboard() {
   state.dailyGoalsViewDate = dailyGoalsTodayKey();
   seedYesterdayFromToday();
   renderDailyGoals();
-  state.readingFolderId = loadReadingFolderPreference();
-  const localReadingProgress = loadReadingProgressPreference();
-  if (String(localReadingProgress.series_id || "").trim()) {
-    state.readingCurrentSeriesId = String(localReadingProgress.series_id || "").trim();
-  }
-  if (String(localReadingProgress.volume_id || "").trim()) {
-    state.readingCurrentVolumeId = String(localReadingProgress.volume_id || "").trim();
-  }
-  if (Number.isInteger(Number(localReadingProgress.page || 0)) && Number(localReadingProgress.page) > 0) {
-    state.readingCurrentPage = Number(localReadingProgress.page);
-  }
   await loadRemoteDashboardState();
   startRemoteStatePull();
   syncOnePieceVideoTabs();
   syncOnePieceTimelineTabs();
-  renderReadingViewerState();
-  renderReadingVolumeButtons();
-  void loadReadingVolumes();
   loadCollection();
   setHeaderDate();
   loadMetadata();
