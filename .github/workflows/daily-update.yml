@@ -1,8 +1,6 @@
 name: Daily update
 
 on:
-  schedule:
-    - cron: "0 4 * * *"
   workflow_dispatch:
     inputs:
       task:
@@ -25,7 +23,7 @@ on:
           - youtube
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: dashboard-data-updates
@@ -33,6 +31,7 @@ concurrency:
 
 jobs:
   update-dashboard:
+    if: ${{ false }}
     runs-on: ubuntu-latest
 
     steps:

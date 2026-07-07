@@ -1,12 +1,10 @@
 name: Hourly update
 
 on:
-  schedule:
-    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: dashboard-data-updates
@@ -14,6 +12,7 @@ concurrency:
 
 jobs:
   hourly-update:
+    if: ${{ false }}
     runs-on: ubuntu-latest
 
     steps:
